@@ -1,0 +1,1 @@
+# Esquema Estudio/MetodoComplementario (placeholder)

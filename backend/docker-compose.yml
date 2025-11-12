@@ -1,0 +1,15 @@
+# docker-compose (placeholder). Se completará en Fase 4.
+
+services:
+  db:
+    image: postgres:15
+    container_name: neuroclinic_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: neuroclinic
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data

@@ -1,0 +1,1 @@
+# Rutas / Endpoints (placeholder)
