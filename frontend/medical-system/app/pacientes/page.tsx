@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Plus, Eye, Edit, Calendar, RefreshCw, Phone, CheckSquare, X } from "lucide-react" 
+import { Plus, Eye, Edit, Calendar, RefreshCw, Phone, CheckSquare, X, ArrowUp, ArrowDown } from "lucide-react" 
 import { cn } from "@/lib/utils" // <-- Importamos 'cn' para clases condicionales
 
 import {
@@ -52,6 +52,7 @@ function PaginaPacientes() {
   
   const [terminoBusqueda, setTerminoBusqueda] = useState("")
   const [filtros, setFiltros] = useState<FiltrosPaciente>({})
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc") // NUEVO: Estado de ordenamiento
 
   useEffect(() => {
     cargarPacientes()
@@ -70,7 +71,7 @@ function PaginaPacientes() {
   }
 
   const pacientesFiltrados = useMemo(() => {
-    return pacientes.filter(paciente => {
+    let pacientesFiltrados = pacientes.filter(paciente => {
       // 1. Filtros avanzados
       if (filtros.obraSocial && paciente.obraSocial !== filtros.obraSocial) return false
       if (filtros.sexo && paciente.sexo !== filtros.sexo) return false
@@ -93,7 +94,24 @@ function PaginaPacientes() {
       }
       return true
     });
-  }, [pacientes, filtros, terminoBusqueda]);
+
+    // NUEVA LÓGICA DE ORDENAMIENTO
+    pacientesFiltrados.sort((a, b) => {
+      const nombreA = `${a.apellido}, ${a.nombre}`.toLowerCase();
+      const nombreB = `${b.apellido}, ${b.nombre}`.toLowerCase();
+      
+      if (nombreA < nombreB) {
+        return sortOrder === "asc" ? -1 : 1;
+      }
+      if (nombreA > nombreB) {
+        return sortOrder === "asc" ? 1 : -1;
+      }
+      return 0;
+    });
+    
+    return pacientesFiltrados;
+
+  }, [pacientes, filtros, terminoBusqueda, sortOrder]); // <-- Dependencia añadida
 
   const manejarCambioFiltro = (id: keyof FiltrosPaciente, value: string | number) => {
     const valorLimpio = (value === "todos" || value === "") ? undefined : String(value);
@@ -181,6 +199,10 @@ function PaginaPacientes() {
           onFiltrosChange={manejarCambioFiltro}
           obrasSocialesDisponibles={obrasSocialesDisponibles}
           onLimpiarFiltros={limpiarFiltros}
+
+          // Props para el ordenamiento
+          sortOrder={sortOrder}
+          onSortOrderChange={setSortOrder}
         />
 
         {/* Tabla de Pacientes */}

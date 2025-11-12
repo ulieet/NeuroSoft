@@ -23,7 +23,9 @@ import {
   RefreshCw,
   Filter,
   X,
-  Plus, // Importar 'Plus'
+  Plus,
+  ArrowDown, // <--- Importado
+  ArrowUp, // <--- Importado
 } from "lucide-react";
 
 import {
@@ -89,9 +91,10 @@ export default function PaginaHistorias() {
   const [historias, setHistorias] = useState<HistoriaClinica[]>([]);
   const [pacientes, setPacientes] = useState<Paciente[]>([]);
   const [estaCargando, setEstaCargando] = useState(true);
-  const [mostrarFiltros, setMostrarFiltros] = useState(false);
+  const [mostrarFiltros, setMostrarFiltros] = useState(false); // MODIFICADO: Mostrar filtros por default
   const [terminoBusqueda, setTerminoBusqueda] = useState("");
   const [filtros, setFiltros] = useState<FiltrosHistoria>({});
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc"); // MODIFICADO: Estado para ordenamiento (A-Z)
 
   // --- Montaje seguro ---
   useEffect(() => {
@@ -138,8 +141,24 @@ export default function PaginaHistorias() {
         );
       });
     }
+
+    // --- LÓGICA DE ORDENAMIENTO CORREGIDA ---
+    resultados.sort((a, b) => {
+      const nombreA = obtenerNombrePaciente(a.pacienteId).toLowerCase();
+      const nombreB = obtenerNombrePaciente(b.pacienteId).toLowerCase();
+      
+      if (nombreA < nombreB) {
+        return sortOrder === "asc" ? -1 : 1;
+      }
+      if (nombreA > nombreB) {
+        return sortOrder === "asc" ? 1 : -1;
+      }
+      // Si los nombres son iguales, ordena por fecha (descendente como secundario)
+      return new Date(b.fecha).getTime() - new Date(a.fecha).getTime();
+    });
+
     return resultados;
-  }, [historias, filtros, terminoBusqueda, mapaPacientes]);
+  }, [historias, filtros, terminoBusqueda, mapaPacientes, sortOrder]); // <-- Dependencia añadida
 
   // --- Handlers ---
   const manejarCambioFiltro = (id: keyof FiltrosHistoria, value: string | number) => {
@@ -208,7 +227,7 @@ export default function PaginaHistorias() {
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Cabecera --- MODIFICACIÓN AQUÍ --- */}
+        {/* Cabecera */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h1 className="text-2xl font-bold">Historias Clínicas</h1>
@@ -216,7 +235,7 @@ export default function PaginaHistorias() {
               Gestiona las historias clínicas importadas y validadas
             </p>
           </div>
-          <div className="flex flex-wrap gap-2"> {/* Flex-wrap para mejor responsive */}
+          <div className="flex flex-wrap gap-2"> 
             <Button variant="outline" onClick={manejarRefrescar} disabled={estaCargando}>
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
@@ -241,7 +260,6 @@ export default function PaginaHistorias() {
                 disabled={estaCargando}
               />
             </label>
-            {/* BOTÓN MODIFICADO */}
             <Button asChild>
               <a href="/pacientes?redirect_to=nueva_historia">
                 <Plus className="mr-2 h-4 w-4" />
@@ -250,8 +268,6 @@ export default function PaginaHistorias() {
             </Button>
           </div>
         </div>
-        {/* --- FIN DE MODIFICACIÓN --- */}
-
 
         {/* Tarjetas de resumen */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -316,6 +332,21 @@ export default function PaginaHistorias() {
                   onChange={(e) => setTerminoBusqueda(e.target.value)}
                 />
               </div>
+
+              {/* --- BOTÓN DE ORDENAR CORREGIDO --- */}
+              <Button
+                variant="outline"
+                onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
+                className="w-full sm:w-auto"
+              >
+                {sortOrder === "asc" ? (
+                  <ArrowUp className="mr-2 h-4 w-4" />
+                ) : (
+                  <ArrowDown className="mr-2 h-4 w-4" />
+                )}
+                Paciente ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+              </Button>
+
               {hayFiltrosActivos && (
                 <Button variant="ghost" onClick={limpiarFiltros}>
                   <X className="mr-2 h-4 w-4" />

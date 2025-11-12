@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Search, Filter, X } from "lucide-react"
+import { Search, Filter, X, ArrowUp, ArrowDown } from "lucide-react"
 import type { FiltrosPaciente } from "@/lib/almacen-datos" 
 
 interface BarraBusquedaFiltrosProps {
@@ -19,6 +19,10 @@ interface BarraBusquedaFiltrosProps {
   obrasSocialesDisponibles: string[]
   
   onLimpiarFiltros: () => void
+
+  // Props para ordenamiento
+  sortOrder: "asc" | "desc"
+  onSortOrderChange: (order: "asc" | "desc") => void
 }
 
 export function BarraBusquedaFiltros({
@@ -27,12 +31,16 @@ export function BarraBusquedaFiltros({
   filtros,
   onFiltrosChange,
   obrasSocialesDisponibles,
-  onLimpiarFiltros
+  onLimpiarFiltros,
+  // Destructurar nuevas props
+  sortOrder,
+  onSortOrderChange
 }: BarraBusquedaFiltrosProps) {
   
-  const [mostrarFiltros, setMostrarFiltros] = useState(false)
+  const [mostrarFiltros, setMostrarFiltros] = useState(true); // MODIFICADO: Mostrar filtros por default
   
   const contadorFiltrosActivos = Object.values(filtros).some(v => v !== undefined && v !== 0);
+  const SortIcon = sortOrder === "asc" ? ArrowUp : ArrowDown; // NUEVO: Icono dinámico
   const hayBusquedaActiva = contadorFiltrosActivos || terminoBusqueda !== "";
 
   return (
@@ -57,6 +65,16 @@ export function BarraBusquedaFiltros({
               <Filter className="mr-2 h-4 w-4" />
               {mostrarFiltros ? "Ocultar Filtros" : "Mostrar Filtros"}
             </Button>
+
+            {/* --- NUEVO BOTÓN DE ORDENAR -- */}
+            <Button
+              variant="outline"
+              onClick={() => onSortOrderChange(sortOrder === "asc" ? "desc" : "asc")}
+            >
+              <SortIcon className="mr-2 h-4 w-4" />
+              ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+            </Button>
+
             {hayBusquedaActiva && (
               <Button variant="ghost" onClick={onLimpiarFiltros}>
                 <X className="mr-2 h-4 w-4" />

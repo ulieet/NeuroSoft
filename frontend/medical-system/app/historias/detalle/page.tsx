@@ -44,7 +44,8 @@ import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
   obtenerEdadPaciente,
-  eliminarHistoriaClinica, // <-- 4. Importar la nueva función
+  eliminarHistoriaClinica,
+  modificarHistoriaClinica, // <-- NUEVA IMPORTACIÓN
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
@@ -139,6 +140,27 @@ function PaginaDetalleHistoria() {
     }
   }
 
+  // --- 8. Handler para validar ---
+  const handleValidarHistoria = () => {
+    if (!historia) return;
+
+    // Creamos el objeto actualizado
+    const historiaValidada = {
+      ...historia,
+      estado: "validada" as "validada", // Forzamos el tipo
+    };
+
+    try {
+      modificarHistoriaClinica(historia.id, historiaValidada);
+      // Actualizamos el estado local para que la UI reaccione
+      setHistoria(historiaValidada);
+      alert("Historia validada con éxito.");
+    } catch (error) {
+      console.error(error);
+      alert("Error al validar la historia.");
+    }
+  }
+
 
   // --- Cálculos Derivados (basados en los requisitos del PDF) ---
   const edadInicioSintomas = (paciente && historia?.fechaInicioEnfermedad)
@@ -211,14 +233,16 @@ function PaginaDetalleHistoria() {
           </div>
           {/* --- 7. BOTONES DE ACCIÓN (MODIFICADO) --- */}
           <div className="flex flex-wrap gap-2"> {/* flex-wrap para responsive */}
+            
+            {/* --- BOTÓN DE VALIDAR MODIFICADO --- */}
             {historia.estado === "pendiente" && (
-              <Button asChild>
-                <a href={`/historias/validar?id=${historia.id}`}>
-                  <Check className="mr-2 h-4 w-4" />
-                  Validar Datos
-                </a>
+              <Button onClick={handleValidarHistoria}>
+                <Check className="mr-2 h-4 w-4" />
+                Validar Historia
               </Button>
             )}
+            {/* --- FIN DE MODIFICACIÓN --- */}
+
             <Button variant="outline" asChild>
               <a href={`/historias/editar?id=${historia.id}`}>
                 <Edit className="mr-2 h-4 w-4" />
