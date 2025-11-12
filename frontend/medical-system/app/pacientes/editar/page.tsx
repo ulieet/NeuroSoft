@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { useRouter } from "next/navigation" 
+import { useEffect, useState, Suspense } from "react"
+import { useRouter, useSearchParams } from "next/navigation" 
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -9,60 +9,86 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowLeft, Save } from "lucide-react"
-import { agregarPaciente, type Paciente } from "@/lib/almacen-datos"
+import { ArrowLeft, Save, RefreshCw } from "lucide-react"
 
-export default function PaginaNuevoPaciente() {
+import { 
+  obtenerPacientePorId, 
+  modificarPaciente, 
+  type Paciente 
+} from "@/lib/almacen-datos"
+
+function PaginaEditarPaciente() {
   const router = useRouter()
-  // Estado del formulario (sin email y direccion)
-  const [formData, setFormData] = useState({
-    nombre: "",
-    apellido: "",
-    dni: "",
-    fechaNacimiento: "",
-    sexo: "",
-    telefono: "",
-    // email: "", // ELIMINADO
-    // direccion: "", // ELIMINADO
-    obraSocial: "",
-    numeroAfiliado: "",
-    observaciones: "",
-  })
+  const searchParams = useSearchParams()
+  const pacienteId = Number(searchParams.get("id"))
+
+  // El formulario se carga con un Paciente completo
+  const [formData, setFormData] = useState<Paciente | null>(null)
+  const [estaCargando, setEstaCargando] = useState(true)
+
+  useEffect(() => {
+    if (pacienteId) {
+      const paciente = obtenerPacientePorId(pacienteId)
+      if (paciente) {
+        setFormData(paciente)
+      }
+      setEstaCargando(false)
+    }
+  }, [pacienteId])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
-    setFormData((prev) => ({ ...prev, [id]: value }))
+    setFormData((prev) => (prev ? { ...prev, [id]: value } : null))
   }
 
   const handleSelectChange = (id: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [id]: value }))
+    setFormData((prev) => (prev ? { ...prev, [id]: value } : null))
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    if (!formData) return
     
-    // Validación actualizada
+    // Validación
     if (!formData.nombre || !formData.apellido || !formData.dni || !formData.fechaNacimiento || !formData.sexo || !formData.telefono || !formData.obraSocial) {
       alert("Por favor, complete todos los campos marcados con *")
       return
     }
 
-    const nuevoPaciente: Omit<Paciente, "id"> = {
-      ...formData,
-      // Agregamos campos vacíos para que coincida con la interfaz
-      email: "", 
-      direccion: "",
-      fechaRegistro: new Date().toISOString(),
-    }
-
     try {
-      agregarPaciente(nuevoPaciente)
-      alert("Paciente registrado con éxito")
-      router.push("/pacientes") 
+      modificarPaciente(pacienteId, formData)
+      alert("Paciente modificado con éxito")
+      router.push(`/pacientes/detalle?id=${pacienteId}`) // Volvemos al detalle
     } catch (error) {
       console.error(error)
-      alert("Error al registrar el paciente")
+      alert("Error al modificar el paciente")
     }
+  }
+
+  if (estaCargando) {
+    return (
+      <MedicalLayout currentPage="pacientes">
+        <div className="flex items-center justify-center min-h-[400px]">
+          <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
+          <p className="ml-2">Cargando paciente...</p>
+        </div>
+      </MedicalLayout>
+    )
+  }
+
+  if (!formData) {
+    return (
+      <MedicalLayout currentPage="pacientes">
+        <div className="flex items-center justify-center min-h-[400px]">
+          <Card>
+            <CardHeader><CardTitle>Paciente no encontrado</CardTitle></CardHeader>
+            <CardContent>
+              <Button asChild><a href="/pacientes"><ArrowLeft className="mr-2 h-4 w-4" />Volver</a></Button>
+            </CardContent>
+          </Card>
+        </div>
+      </MedicalLayout>
+    )
   }
 
   return (
@@ -72,13 +98,13 @@ export default function PaginaNuevoPaciente() {
           {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
-              <a href="/pacientes">
+              <a href={`/pacientes/detalle?id=${pacienteId}`}>
                 <ArrowLeft className="h-4 w-4" />
               </a>
             </Button>
             <div>
-              <h1 className="text-2xl font-bold text-balance">Registrar Nuevo Paciente</h1>
-              <p className="text-muted-foreground">Completa la información del paciente</p>
+              <h1 className="text-2xl font-bold text-balance">Editar Paciente</h1>
+              <p className="text-muted-foreground">Modificando a: {formData.apellido}, {formData.nombre}</p>
             </div>
           </div>
 
@@ -94,17 +120,17 @@ export default function PaginaNuevoPaciente() {
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="nombre">Nombre *</Label>
-                      <Input id="nombre" placeholder="Ingrese el nombre" value={formData.nombre} onChange={handleChange} required />
+                      <Input id="nombre" value={formData.nombre} onChange={handleChange} required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="apellido">Apellido *</Label>
-                      <Input id="apellido" placeholder="Ingrese el apellido" value={formData.apellido} onChange={handleChange} required />
+                      <Input id="apellido" value={formData.apellido} onChange={handleChange} required />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <Label htmlFor="dni">DNI *</Label>
-                      <Input id="dni" placeholder="12.345.678" value={formData.dni} onChange={handleChange} required />
+                      <Label htmlFor="dni">DNI * (No editable)</Label>
+                      <Input id="dni" value={formData.dni} readOnly disabled />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="fechaNacimiento">Fecha de Nacimiento *</Label>
@@ -115,9 +141,7 @@ export default function PaginaNuevoPaciente() {
                     <div className="space-y-2">
                       <Label htmlFor="sexo">Sexo *</Label>
                       <Select value={formData.sexo} onValueChange={(v) => handleSelectChange("sexo", v)} required>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Seleccione el sexo" />
-                        </SelectTrigger>
+                        <SelectTrigger><SelectValue /></SelectTrigger>
                         <SelectContent>
                           <SelectItem value="Femenino">Femenino</SelectItem>
                           <SelectItem value="Masculino">Masculino</SelectItem>
@@ -125,7 +149,7 @@ export default function PaginaNuevoPaciente() {
                         </SelectContent>
                       </Select>
                     </div>
-                    <div className="space-y-2">
+                     <div className="space-y-2">
                       <Label htmlFor="telefono">Teléfono *</Label>
                       <Input id="telefono" placeholder="11-2345-6789" value={formData.telefono} onChange={handleChange} required />
                     </div>
@@ -143,9 +167,7 @@ export default function PaginaNuevoPaciente() {
                     <div className="space-y-2">
                       <Label htmlFor="obraSocial">Obra Social *</Label>
                       <Select value={formData.obraSocial} onValueChange={(v) => handleSelectChange("obraSocial", v)} required>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Seleccione la obra social" />
-                        </SelectTrigger>
+                        <SelectTrigger><SelectValue /></SelectTrigger>
                         <SelectContent>
                           <SelectItem value="OSDE">OSDE</SelectItem>
                           <SelectItem value="Swiss Medical">Swiss Medical</SelectItem>
@@ -158,12 +180,12 @@ export default function PaginaNuevoPaciente() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="numeroAfiliado">Número de Afiliado</Label>
-                      <Input id="numeroAfiliado" placeholder="Número de afiliado" value={formData.numeroAfiliado} onChange={handleChange} />
+                      <Input id="numeroAfiliado" value={formData.numeroAfiliado} onChange={handleChange} />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="observaciones">Observaciones</Label>
-                    <Textarea id="observaciones" placeholder="Notas adicionales sobre el paciente..." rows={4} value={formData.observaciones} onChange={handleChange} />
+                    <Textarea id="observaciones" rows={4} value={formData.observaciones} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -178,10 +200,10 @@ export default function PaginaNuevoPaciente() {
                 <CardContent className="space-y-4">
                   <Button type="submit" className="w-full">
                     <Save className="mr-2 h-4 w-4" />
-                    Guardar Paciente
+                    Guardar Cambios
                   </Button>
                   <Button variant="outline" className="w-full bg-transparent" asChild>
-                    <a href="/pacientes">Cancelar</a>
+                    <a href={`/pacientes/detalle?id=${pacienteId}`}>Cancelar</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -190,5 +212,20 @@ export default function PaginaNuevoPaciente() {
         </div>
       </form>
     </MedicalLayout>
+  )
+}
+
+// Envolvemos en Suspense para que useSearchParams funcione
+export default function PaginaEditarPacienteSuspense() {
+  return (
+    <Suspense fallback={
+      <MedicalLayout currentPage="pacientes">
+         <div className="flex items-center justify-center min-h-[400px]">
+           <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
+         </div>
+      </MedicalLayout>
+    }>
+      <PaginaEditarPaciente />
+    </Suspense>
   )
 }

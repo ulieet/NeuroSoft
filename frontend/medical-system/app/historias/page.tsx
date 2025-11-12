@@ -1,14 +1,13 @@
-"use client"
+"use client";
 
-import type React from "react"
-
-import { useEffect, useState } from "react"
-import { MedicalLayout } from "@/components/medical-layout"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import type React from "react";
+import { useEffect, useState, useMemo } from "react";
+import { MedicalLayout } from "@/components/medical-layout";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import {
   Search,
   Upload,
@@ -24,208 +23,209 @@ import {
   RefreshCw,
   Filter,
   X,
-} from "lucide-react"
-import {
-  getMedicalHistories,
-  getPatients,
-  initializeSampleData,
-  importFromJSON,
-  exportToJSON,
-  filterMedicalHistories,
-  type MedicalHistory,
-  type Patient,
-  type HistoryFilters,
-} from "@/lib/data-store"
-import { AdvancedFilters } from "./components/advanced-filters"
+} from "lucide-react";
 
+import {
+  obtenerHistoriasClinicas,
+  obtenerPacientes,
+  inicializarDatosDeEjemplo,
+  importarDesdeJSON,
+  exportarAJSON,
+  filtrarHistoriasClinicas,
+  type HistoriaClinica,
+  type Paciente,
+  type FiltrosHistoria,
+} from "@/lib/almacen-datos";
+
+import { FiltrosAvanzados } from "./components/filtros-avanzados";
+
+// --- Helpers visuales ---
 const getEstadoBadge = (estado: string) => {
   switch (estado) {
     case "validada":
       return (
         <Badge className="bg-green-100 text-green-800 border-green-200">
-          <CheckCircle className="w-3 h-3 mr-1" />
-          Validada
+          <CheckCircle className="w-3 h-3 mr-1" /> Validada
         </Badge>
-      )
+      );
     case "pendiente":
       return (
         <Badge variant="secondary">
-          <Clock className="w-3 h-3 mr-1" />
-          Pendiente
+          <Clock className="w-3 h-3 mr-1" /> Pendiente
         </Badge>
-      )
+      );
     case "error":
       return (
         <Badge variant="destructive">
-          <AlertCircle className="w-3 h-3 mr-1" />
-          Error
+          <AlertCircle className="w-3 h-3 mr-1" /> Error
         </Badge>
-      )
+      );
     default:
-      return <Badge variant="outline">{estado}</Badge>
+      return <Badge variant="outline">{estado}</Badge>;
   }
-}
+};
 
 const getCriticidadBadge = (nivel?: string) => {
-  if (!nivel) return null
-
+  if (!nivel) return null;
   switch (nivel) {
     case "critico":
-      return <Badge variant="destructive">Crítico</Badge>
+      return <Badge variant="destructive">Crítico</Badge>;
     case "alto":
-      return <Badge className="bg-orange-100 text-orange-800 border-orange-200">Alto</Badge>
+      return <Badge className="bg-orange-100 text-orange-800 border-orange-200">Alto</Badge>;
     case "medio":
-      return <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200">Medio</Badge>
+      return <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200">Medio</Badge>;
     case "bajo":
-      return <Badge variant="outline">Bajo</Badge>
+      return <Badge variant="outline">Bajo</Badge>;
     default:
-      return null
+      return null;
   }
-}
+};
 
-export default function HistoriasPage() {
-  const [historias, setHistorias] = useState<MedicalHistory[]>([])
-  const [patients, setPatients] = useState<Patient[]>([])
-  const [searchTerm, setSearchTerm] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
-  const [showFilters, setShowFilters] = useState(false)
+// --- Componente principal ---
+export default function PaginaHistorias() {
+  // ✅ Estado base
+  const [mounted, setMounted] = useState(false);
+  const [historias, setHistorias] = useState<HistoriaClinica[]>([]);
+  const [pacientes, setPacientes] = useState<Paciente[]>([]);
+  const [estaCargando, setEstaCargando] = useState(true);
+  const [mostrarFiltros, setMostrarFiltros] = useState(false);
+  const [terminoBusqueda, setTerminoBusqueda] = useState("");
+  const [filtros, setFiltros] = useState<FiltrosHistoria>({});
 
-  const [filters, setFilters] = useState<HistoryFilters>({})
-
-  const loadData = () => {
-    initializeSampleData()
-    setHistorias(getMedicalHistories())
-    setPatients(getPatients())
-  }
-
+  // --- Montaje seguro ---
   useEffect(() => {
-    loadData()
-  }, [])
+    setMounted(true);
+  }, []);
 
-  const getPatientName = (pacienteId: number) => {
-    const patient = patients.find((p) => p.id === pacienteId)
-    return patient ? `${patient.apellido}, ${patient.nombre}` : "Desconocido"
-  }
+  // --- Carga de datos una vez montado ---
+  useEffect(() => {
+    if (!mounted) return;
+    inicializarDatosDeEjemplo();
+    setHistorias(obtenerHistoriasClinicas());
+    setPacientes(obtenerPacientes());
+    setEstaCargando(false);
+  }, [mounted]);
 
-  const getPatientDNI = (pacienteId: number) => {
-    const patient = patients.find((p) => p.id === pacienteId)
-    return patient?.dni || "N/A"
-  }
+  // --- Helpers de pacientes ---
+  const mapaPacientes = useMemo(() => new Map(pacientes.map(p => [p.id, p])), [pacientes]);
 
-  const filteredHistorias = (() => {
-    let results = historias
+  const obtenerNombrePaciente = (pacienteId: number) => {
+    const p = mapaPacientes.get(pacienteId);
+    return p ? `${p.apellido}, ${p.nombre}` : "Desconocido";
+  };
 
-    // Apply advanced filters first
-    if (Object.keys(filters).length > 0) {
-      const processedFilters = { ...filters }
+  const obtenerDNIPaciente = (pacienteId: number) =>
+    mapaPacientes.get(pacienteId)?.dni || "N/A";
 
-      if (filters.patologia?.includes("|")) {
-        const pathologies = filters.patologia.split("|")
-        results = results.filter((h) =>
-          pathologies.some(
-            (p) =>
-              h.patologia?.toLowerCase().includes(p.toLowerCase()) ||
-              h.diagnostico.toLowerCase().includes(p.toLowerCase()),
-          ),
-        )
-        delete processedFilters.patologia
-      }
+  // --- Lógica de filtrado ---
+  const historiasFiltradas = useMemo(() => {
+    if (!historias.length) return [];
+    let resultados = filtrarHistoriasClinicas(filtros);
 
-      if (filters.medicamento?.includes("|")) {
-        const medications = filters.medicamento.split("|")
-        results = results.filter((h) =>
-          h.medicamentos?.some((m) => medications.some((med) => m.toLowerCase().includes(med.toLowerCase()))),
-        )
-        delete processedFilters.medicamento
-      }
-
-      results = filterMedicalHistories(processedFilters)
-    }
-
-    // Then apply search term
-    if (searchTerm) {
-      results = results.filter((historia) => {
-        const patientName = getPatientName(historia.pacienteId).toLowerCase()
-        const patientDNI = getPatientDNI(historia.pacienteId)
-        const diagnostico = historia.diagnostico.toLowerCase()
-        const patologia = historia.patologia?.toLowerCase() || ""
-        const search = searchTerm.toLowerCase()
-
+    if (terminoBusqueda) {
+      const busqueda = terminoBusqueda.toLowerCase();
+      resultados = resultados.filter((h) => {
+        const nombre = obtenerNombrePaciente(h.pacienteId).toLowerCase();
+        const dni = obtenerDNIPaciente(h.pacienteId);
+        const diagnostico = h.diagnostico.toLowerCase();
+        const patologia = h.patologia?.toLowerCase() || "";
         return (
-          patientName.includes(search) ||
-          patientDNI.includes(search) ||
-          diagnostico.includes(search) ||
-          patologia.includes(search)
-        )
-      })
+          nombre.includes(busqueda) ||
+          dni.includes(busqueda) ||
+          diagnostico.includes(busqueda) ||
+          patologia.includes(busqueda)
+        );
+      });
     }
+    return resultados;
+  }, [historias, filtros, terminoBusqueda, mapaPacientes]);
 
-    return results
-  })()
+  // --- Handlers ---
+  const manejarCambioFiltro = (id: keyof FiltrosHistoria, value: string | number) => {
+    const valorLimpio = value === "todos" || value === "" ? undefined : String(value);
+    const camposNumericos: (keyof FiltrosHistoria)[] = [
+      "edad",
+      "edadInicioEnfermedad",
+      "tiempoEvolucion",
+      "escalaEDSS",
+    ];
+    const valorFinal = camposNumericos.includes(id)
+      ? Number(valorLimpio) || undefined
+      : valorLimpio;
+    setFiltros((prev) => ({ ...prev, [id]: valorFinal }));
+  };
 
-  const handleImport = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0]
-    if (!file) return
+  const limpiarFiltros = () => {
+    setFiltros({});
+    setTerminoBusqueda("");
+  };
 
-    setIsLoading(true)
+  const manejarImportacion = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    setEstaCargando(true);
     try {
-      await importFromJSON(file)
-      loadData()
-      alert("Datos importados correctamente")
+      await importarDesdeJSON(file);
+      inicializarDatosDeEjemplo();
+      setHistorias(obtenerHistoriasClinicas());
+      setPacientes(obtenerPacientes());
+      alert("Datos importados correctamente");
     } catch (error) {
-      alert("Error al importar el archivo JSON")
+      alert("Error al importar el archivo JSON");
     } finally {
-      setIsLoading(false)
-      event.target.value = ""
+      setEstaCargando(false);
+      event.target.value = "";
     }
-  }
+  };
 
-  const handleExport = () => {
-    const jsonData = exportToJSON()
-    const blob = new Blob([jsonData], { type: "application/json" })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement("a")
-    a.href = url
-    a.download = `historias-clinicas-${new Date().toISOString().split("T")[0]}.json`
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
-  }
+  const manejarExportacion = () => {
+    const jsonData = exportarAJSON();
+    const blob = new Blob([jsonData], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `historias-clinicas-${new Date().toISOString().split("T")[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
-  const handleRefresh = () => {
-    loadData()
-  }
+  const manejarRefrescar = () => {
+    setEstaCargando(true);
+    inicializarDatosDeEjemplo();
+    setHistorias(obtenerHistoriasClinicas());
+    setPacientes(obtenerPacientes());
+    setEstaCargando(false);
+  };
 
-  const clearFilters = () => {
-    setFilters({})
-    setSearchTerm("")
-  }
+  const hayFiltrosActivos =
+    Object.values(filtros).some((v) => v !== undefined) || terminoBusqueda !== "";
 
-  const activeFiltersCount = Object.keys(filters).filter(
-    (key) => filters[key as keyof HistoryFilters] !== undefined,
-  ).length
+  // --- 🔒 Evita errores de hidratación: no renderices hasta que esté montado ---
+  if (!mounted) return <div className="p-6 text-muted-foreground">Cargando...</div>;
 
+  // --- Render principal ---
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Header */}
+        {/* Cabecera */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-balance">Historias Clínicas</h1>
-            <p className="text-muted-foreground">Gestiona las historias clínicas importadas y validadas</p>
+            <h1 className="text-2xl font-bold">Historias Clínicas</h1>
+            <p className="text-muted-foreground">
+              Gestiona las historias clínicas importadas y validadas
+            </p>
           </div>
           <div className="flex gap-2">
-            <Button variant="outline" onClick={handleRefresh} disabled={isLoading}>
-              <RefreshCw className={`mr-2 h-4 w-4 ${isLoading ? "animate-spin" : ""}`} />
+            <Button variant="outline" onClick={manejarRefrescar} disabled={estaCargando}>
+              <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
             </Button>
-            <Button variant="outline" onClick={handleExport}>
+            <Button variant="outline" onClick={manejarExportacion}>
               <Download className="mr-2 h-4 w-4" />
               Exportar
             </Button>
             <label htmlFor="import-json">
-              <Button asChild disabled={isLoading}>
+              <Button asChild disabled={estaCargando}>
                 <span>
                   <Upload className="mr-2 h-4 w-4" />
                   Importar JSON
@@ -236,64 +236,62 @@ export default function HistoriasPage() {
                 type="file"
                 accept=".json"
                 className="hidden"
-                onChange={handleImport}
-                disabled={isLoading}
+                onChange={manejarImportacion}
+                disabled={estaCargando}
               />
             </label>
           </div>
         </div>
 
-        {/* Stats Cards */}
+        {/* Tarjetas de resumen */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Historias</CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+            <CardHeader>
+              <CardTitle>Total Historias</CardTitle>
+              <CardDescription>
+                <FileText className="inline h-4 w-4 mr-2" />
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">{historias.length}</div>
-              <p className="text-xs text-muted-foreground">Registradas en el sistema</p>
+            <CardContent className="text-2xl font-bold">{historias.length}</CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Pendientes</CardTitle>
+              <CardDescription>
+                <Clock className="inline h-4 w-4 mr-2" />
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-2xl font-bold text-orange-600">
+              {historias.filter((h) => h.estado === "pendiente").length}
             </CardContent>
           </Card>
+
           <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Pendientes</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
+            <CardHeader>
+              <CardTitle>Validadas</CardTitle>
+              <CardDescription>
+                <CheckCircle className="inline h-4 w-4 mr-2" />
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold text-orange-600">
-                {historias.filter((h) => h.estado === "pendiente").length}
-              </div>
-              <p className="text-xs text-muted-foreground">Requieren validación</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Validadas</CardTitle>
-              <CheckCircle className="h-4 w-4 text-muted-foreground" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold text-green-600">
-                {historias.filter((h) => h.estado === "validada").length}
-              </div>
-              <p className="text-xs text-muted-foreground">Completadas</p>
+            <CardContent className="text-2xl font-bold text-green-600">
+              {historias.filter((h) => h.estado === "validada").length}
             </CardContent>
           </Card>
         </div>
 
-        {/* Search and Filters */}
+        {/* Busqueda y filtros */}
         <Card>
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle>Buscar y Filtrar Historias</CardTitle>
-              <Button variant="outline" size="sm" onClick={() => setShowFilters(!showFilters)}>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setMostrarFiltros(!mostrarFiltros)}
+              >
                 <Filter className="mr-2 h-4 w-4" />
-                Filtros Avanzados
-                {activeFiltersCount > 0 && (
-                  <Badge variant="secondary" className="ml-2">
-                    {activeFiltersCount}
-                  </Badge>
-                )}
+                {mostrarFiltros ? "Ocultar Filtros" : "Mostrar Filtros"}
               </Button>
             </div>
           </CardHeader>
@@ -304,37 +302,41 @@ export default function HistoriasPage() {
                 <Input
                   placeholder="Buscar por paciente, diagnóstico, patología o DNI..."
                   className="pl-10"
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  value={terminoBusqueda}
+                  onChange={(e) => setTerminoBusqueda(e.target.value)}
                 />
               </div>
-              {activeFiltersCount > 0 && (
-                <Button variant="outline" onClick={clearFilters}>
+              {hayFiltrosActivos && (
+                <Button variant="ghost" onClick={limpiarFiltros}>
                   <X className="mr-2 h-4 w-4" />
-                  Limpiar Filtros
+                  Limpiar Búsqueda y Filtros
                 </Button>
               )}
             </div>
 
-            {showFilters && <AdvancedFilters filters={filters} onFiltersChange={setFilters} />}
+            {mostrarFiltros && (
+              <FiltrosAvanzados filtros={filtros} onFiltrosChange={manejarCambioFiltro} />
+            )}
           </CardContent>
         </Card>
 
-        {/* Histories Table */}
+        {/* Tabla */}
         <Card>
           <CardHeader>
             <CardTitle>Lista de Historias Clínicas</CardTitle>
             <CardDescription>
-              {filteredHistorias.length === historias.length
-                ? "Todas las historias clínicas importadas y procesadas"
-                : `Mostrando ${filteredHistorias.length} de ${historias.length} historias`}
+              {historiasFiltradas.length} historias encontradas
             </CardDescription>
           </CardHeader>
           <CardContent>
-            {filteredHistorias.length === 0 ? (
+            {estaCargando ? (
               <div className="text-center py-8 text-muted-foreground">
-                {searchTerm || activeFiltersCount > 0
-                  ? "No se encontraron historias clínicas con los criterios seleccionados"
+                Cargando datos...
+              </div>
+            ) : historiasFiltradas.length === 0 ? (
+              <div className="text-center py-8 text-muted-foreground">
+                {hayFiltrosActivos
+                  ? "No se encontraron historias con los criterios seleccionados"
                   : "No hay historias clínicas registradas"}
               </div>
             ) : (
@@ -345,53 +347,59 @@ export default function HistoriasPage() {
                       <TableHead>Paciente</TableHead>
                       <TableHead>Fecha Consulta</TableHead>
                       <TableHead>Diagnóstico</TableHead>
+                      <TableHead>EDSS</TableHead>
                       <TableHead>Estado</TableHead>
                       <TableHead>Criticidad</TableHead>
-                      <TableHead>Médico</TableHead>
                       <TableHead className="text-right">Acciones</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {filteredHistorias.map((historia) => (
-                      <TableRow key={historia.id}>
+                    {historiasFiltradas.map((h) => (
+                      <TableRow key={h.id}>
                         <TableCell>
                           <div>
-                            <div className="font-medium">{getPatientName(historia.pacienteId)}</div>
+                            <div className="font-medium">
+                              {obtenerNombrePaciente(h.pacienteId)}
+                            </div>
                             <div className="text-sm text-muted-foreground flex items-center gap-1">
                               <User className="h-3 w-3" />
-                              DNI: {getPatientDNI(historia.pacienteId)}
+                              DNI: {obtenerDNIPaciente(h.pacienteId)}
                             </div>
                           </div>
                         </TableCell>
                         <TableCell>
                           <div className="flex items-center gap-1">
                             <Calendar className="h-3 w-3 text-muted-foreground" />
-                            {new Date(historia.fecha).toLocaleDateString("es-AR")}
+                            {new Date(h.fecha).toLocaleDateString("es-AR")}
                           </div>
                         </TableCell>
                         <TableCell>
                           <div className="max-w-xs">
-                            <div className="truncate font-medium" title={historia.diagnostico}>
-                              {historia.diagnostico}
+                            <div className="truncate font-medium" title={h.diagnostico}>
+                              {h.diagnostico}
                             </div>
-                            {historia.patologia && (
-                              <div className="text-xs text-muted-foreground truncate">{historia.patologia}</div>
+                            {h.patologia && (
+                              <div className="text-xs text-muted-foreground truncate">
+                                {h.patologia}
+                              </div>
                             )}
                           </div>
                         </TableCell>
-                        <TableCell>{getEstadoBadge(historia.estado)}</TableCell>
-                        <TableCell>{getCriticidadBadge(historia.nivelCriticidad)}</TableCell>
-                        <TableCell>{historia.medico}</TableCell>
+                        <TableCell>
+                          {h.escalaEDSS !== undefined ? h.escalaEDSS.toFixed(1) : "N/A"}
+                        </TableCell>
+                        <TableCell>{getEstadoBadge(h.estado)}</TableCell>
+                        <TableCell>{getCriticidadBadge(h.nivelCriticidad)}</TableCell>
                         <TableCell className="text-right">
                           <div className="flex items-center justify-end gap-2">
                             <Button variant="ghost" size="sm" asChild>
-                              <a href={`/historias/detalle?id=${historia.id}`}>
+                              <a href={`/historias/detalle?id=${h.id}`}>
                                 <Eye className="h-4 w-4" />
                               </a>
                             </Button>
-                            {historia.estado === "pendiente" && (
+                            {h.estado === "pendiente" && (
                               <Button variant="ghost" size="sm" asChild>
-                                <a href={`/historias/validar?id=${historia.id}`}>
+                                <a href={`/historias/validar?id=${h.id}`}>
                                   <Edit className="h-4 w-4" />
                                 </a>
                               </Button>
@@ -408,5 +416,5 @@ export default function HistoriasPage() {
         </Card>
       </div>
     </MedicalLayout>
-  )
+  );
 }
