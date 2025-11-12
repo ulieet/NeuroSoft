@@ -1,12 +1,15 @@
 "use client"
 
-import { useEffect, useState, useMemo } from "react"
+// --- IMPORTS ---
+import { useEffect, useState, useMemo, Suspense } from "react" 
+import { useSearchParams } from "next/navigation" 
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Plus, Eye, Edit, Calendar, RefreshCw, Phone } from "lucide-react" // Importamos 'Phone'
+import { Plus, Eye, Edit, Calendar, RefreshCw, Phone, CheckSquare, X } from "lucide-react" 
+import { cn } from "@/lib/utils" // <-- Importamos 'cn' para clases condicionales
 
 import {
   obtenerPacientes,
@@ -19,7 +22,30 @@ import {
 
 import { BarraBusquedaFiltros } from "@/app/pacientes/components/filtros"
 
-export default function PaginaPacientes() {
+// --- WRAPPER DE SUSPENSE ---
+export default function PaginaPacientesSuspense() {
+  return (
+    <Suspense fallback={
+      <MedicalLayout currentPage="pacientes">
+         <div className="flex items-center justify-center min-h-[400px]">
+           <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
+           <p className="ml-2">Cargando pacientes...</p>
+         </div>
+      </MedicalLayout>
+    }>
+      <PaginaPacientes />
+    </Suspense>
+  )
+}
+
+// --- COMPONENTE PRINCIPAL ---
+function PaginaPacientes() {
+  const searchParams = useSearchParams()
+  const redirectTo = searchParams.get("redirect_to")
+  
+  // --- NUEVO ESTADO ---
+  const [selectedPacienteId, setSelectedPacienteId] = useState<number | null>(null)
+
   const [pacientes, setPacientes] = useState<Paciente[]>([])
   const [estaCargando, setEstaCargando] = useState(false)
   const [obrasSocialesDisponibles, setObrasSocialesDisponibles] = useState<string[]>([])
@@ -84,6 +110,7 @@ export default function PaginaPacientes() {
   const limpiarFiltros = () => {
     setFiltros({})
     setTerminoBusqueda("")
+    setSelectedPacienteId(null) // Limpiar selección también
   }
 
   const obtenerConteoHistorias = (pacienteId: number) => {
@@ -98,20 +125,51 @@ export default function PaginaPacientes() {
         {/* Cabecera */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-balance">Gestión de Pacientes</h1>
-            <p className="text-muted-foreground">Administra la información de todos los pacientes</p>
+            <h1 className="text-2xl font-bold text-balance">
+              {redirectTo === "nueva_historia" 
+                ? "Seleccionar Paciente" 
+                : "Gestión de Pacientes"}
+            </h1>
+            <p className="text-muted-foreground">
+              {redirectTo === "nueva_historia"
+                ? "Haz clic en una fila para seleccionar un paciente"
+                : "Administra la información de todos los pacientes"}
+            </p>
           </div>
           <div className="flex gap-2">
             <Button variant="outline" onClick={cargarPacientes} disabled={estaCargando}>
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
             </Button>
-            <Button asChild>
-              <a href="/pacientes/nuevo">
-                <Plus className="mr-2 h-4 w-4" />
-                Nuevo Paciente
-              </a>
-            </Button>
+            
+            {/* --- MODIFICACIÓN DE BOTONES EN CABECERA --- */}
+            {redirectTo === "nueva_historia" ? (
+              <>
+                <Button variant="outline" asChild>
+                  <a href="/historias">
+                    <X className="mr-2 h-4 w-4" />
+                    Cancelar
+                  </a>
+                </Button>
+                <Button 
+                  asChild 
+                  disabled={!selectedPacienteId} // Deshabilitado si no hay selección
+                >
+                  <a href={`/historias/nuevo?pacienteId=${selectedPacienteId}`}>
+                    <CheckSquare className="mr-2 h-4 w-4" />
+                    Seleccionar
+                  </a>
+                </Button>
+              </>
+            ) : (
+              <Button asChild>
+                <a href="/pacientes/nuevo">
+                  <Plus className="mr-2 h-4 w-4" />
+                  Nuevo Paciente
+                </a>
+              </Button>
+            )}
+            {/* --- FIN DE MODIFICACIÓN --- */}
           </div>
         </div>
 
@@ -141,7 +199,7 @@ export default function PaginaPacientes() {
                     <TableHead>Apellido y Nombre</TableHead>
                     <TableHead>DNI</TableHead>
                     <TableHead>Obra Social</TableHead>
-                    <TableHead>Teléfono</TableHead> {/* <-- Columna agregada */}
+                    <TableHead>Teléfono</TableHead> 
                     <TableHead>Historias</TableHead>
                     <TableHead className="text-right">Acciones</TableHead>
                   </TableRow>
@@ -151,14 +209,25 @@ export default function PaginaPacientes() {
                     <TableRow><TableCell colSpan={6} className="text-center py-8">Cargando...</TableCell></TableRow>
                   ) : pacientesFiltrados.length === 0 ? (
                     <TableRow>
-                      {/* --- Colspan a 6 --- */}
                       <TableCell colSpan={6} className="text-center text-muted-foreground py-8">
                         {hayFiltrosActivos ? "No se encontraron pacientes con esos filtros" : "No hay pacientes registrados"}
                       </TableCell>
                     </TableRow>
                   ) : (
                     pacientesFiltrados.map((paciente) => (
-                      <TableRow key={paciente.id}>
+                      // --- MODIFICACIÓN DE FILA ---
+                      <TableRow 
+                        key={paciente.id}
+                        onClick={() => {
+                          if (redirectTo === "nueva_historia") {
+                            setSelectedPacienteId(paciente.id)
+                          }
+                        }}
+                        className={cn(
+                          redirectTo === "nueva_historia" && "cursor-pointer",
+                          selectedPacienteId === paciente.id && "bg-secondary" // Estilo de fila seleccionada
+                        )}
+                      >
                         <TableCell>
                           <div>
                             <div className="font-medium">
@@ -174,7 +243,6 @@ export default function PaginaPacientes() {
                         <TableCell>
                           <Badge variant="outline">{paciente.obraSocial}</Badge>
                         </TableCell>
-                        {/* --- Celda agregada --- */}
                         <TableCell>
                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
                             <Phone className="h-3 w-3" />
@@ -184,19 +252,28 @@ export default function PaginaPacientes() {
                         <TableCell>
                           <Badge variant="secondary">{obtenerConteoHistorias(paciente.id)} historias</Badge>
                         </TableCell>
+                        {/* --- MODIFICACIÓN DE CELDA DE ACCIONES --- */}
                         <TableCell className="text-right">
-                          <div className="flex items-center justify-end gap-2">
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={`/pacientes/detalle?id=${paciente.id}`}>
-                                <Eye className="h-4 w-4" />
-                              </a>
-                            </Button>
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={`/pacientes/editar?id=${paciente.id}`}>
-                                <Edit className="h-4 w-4" />
-                              </a>
-                            </Button>
-                          </div>
+                          {redirectTo === "nueva_historia" ? (
+                            // En modo selección, mostramos un indicador si está seleccionado
+                            selectedPacienteId === paciente.id && (
+                              <span className="text-primary font-medium text-xs">Seleccionado</span>
+                            )
+                          ) : (
+                            // Modo normal: botones de Ver y Editar
+                            <div className="flex items-center justify-end gap-2">
+                              <Button variant="ghost" size="sm" asChild>
+                                <a href={`/pacientes/detalle?id=${paciente.id}`}>
+                                  <Eye className="h-4 w-4" />
+                                </a>
+                              </Button>
+                              <Button variant="ghost" size="sm" asChild>
+                                <a href={`/pacientes/editar?id=${paciente.id}`}>
+                                  <Edit className="h-4 w-4" />
+                                </a>
+                              </Button>
+                            </div>
+                          )}
                         </TableCell>
                       </TableRow>
                     ))

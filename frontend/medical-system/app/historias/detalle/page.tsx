@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, Suspense } from "react"
-import { useSearchParams } from "next/navigation"
+import { useSearchParams, useRouter } from "next/navigation" // <-- 1. Importar useRouter
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -16,20 +16,35 @@ import {
   Calendar, 
   RefreshCw, 
   Stethoscope, 
-  ClipboardList, // (Portapapeles para Síntomas/Anamnesis)
-  Brain,          // (Cerebro para Diagnóstico)
-  Pill,           // (Píldora para Tratamiento)
-  FlaskConical,   // (Matraz para Estudios)
-  TrendingUp,     // (Gráfico para Índices)
-  FileDown,       // (Exportar)
-  Check           // (Validar)
+  ClipboardList, 
+  Brain,          
+  Pill,           
+  FlaskConical,   
+  TrendingUp,     
+  FileDown,       
+  Check,
+  Trash // <-- 2. Importar Trash
 } from "lucide-react"
+
+// 3. Importar AlertDialog
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 // Importaciones del almacén de datos
 import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
   obtenerEdadPaciente,
+  eliminarHistoriaClinica, // <-- 4. Importar la nueva función
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
@@ -80,6 +95,7 @@ const getBadgeSiNo = (valor?: boolean) => {
 
 function PaginaDetalleHistoria() {
   const searchParams = useSearchParams()
+  const router = useRouter() // <-- 5. Inicializar router
   const historiaId = Number(searchParams.get("id"))
 
   const [historia, setHistoria] = useState<HistoriaClinica | null>(null)
@@ -97,9 +113,7 @@ function PaginaDetalleHistoria() {
       setEstaCargando(true)
       const hist = obtenerHistoriaClinicaPorId(historiaId)
       
-      // --- CORRECCIÓN DE TIPEADO ---
-      setHistoria(hist || null) // Asigna null si es undefined
-      // --- FIN CORRECCIÓN ---
+      setHistoria(hist || null) 
       
       if (hist) {
         const pac = obtenerPacientePorId(hist.pacienteId)
@@ -110,6 +124,21 @@ function PaginaDetalleHistoria() {
 
     cargarDatos()
   }, [historiaId])
+
+  // --- 6. Handler para eliminar ---
+  const handleEliminarHistoria = () => {
+    if (!historia || !paciente) return
+    try {
+      eliminarHistoriaClinica(historia.id)
+      alert("Historia clínica eliminada.")
+      // Volvemos al perfil del paciente
+      router.push(`/pacientes/detalle?id=${paciente.id}`)
+    } catch (error) {
+      console.error(error)
+      alert("Error al eliminar la historia.")
+    }
+  }
+
 
   // --- Cálculos Derivados (basados en los requisitos del PDF) ---
   const edadInicioSintomas = (paciente && historia?.fechaInicioEnfermedad)
@@ -180,7 +209,8 @@ function PaginaDetalleHistoria() {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          {/* --- 7. BOTONES DE ACCIÓN (MODIFICADO) --- */}
+          <div className="flex flex-wrap gap-2"> {/* flex-wrap para responsive */}
             {historia.estado === "pendiente" && (
               <Button asChild>
                 <a href={`/historias/validar?id=${historia.id}`}>
@@ -199,6 +229,34 @@ function PaginaDetalleHistoria() {
               <FileDown className="mr-2 h-4 w-4" />
               Exportar
             </Button>
+
+            {/* --- BOTÓN DE ELIMINAR HISTORIA --- */}
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="destructive" size="sm">
+                  <Trash className="mr-2 h-4 w-4" />
+                  Eliminar
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>¿Está seguro de eliminar esta historia?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Esta acción no se puede deshacer. Esto eliminará permanentemente la
+                    historia clínica de la fecha <span className="font-bold">{new Date(historia.fecha).toLocaleDateString("es-AR")}</span> 
+                    {" "}para el paciente <span className="font-bold">{paciente.apellido}, {paciente.nombre}</span>.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancelar</AlertDialogCancel>
+                  <AlertDialogAction onClick={handleEliminarHistoria}>
+                    Confirmar Eliminación
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+            {/* --- FIN DEL BOTÓN --- */}
+
           </div>
         </div>
 

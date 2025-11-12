@@ -23,6 +23,7 @@ import {
   RefreshCw,
   Filter,
   X,
+  Plus, // Importar 'Plus'
 } from "lucide-react";
 
 import {
@@ -207,7 +208,7 @@ export default function PaginaHistorias() {
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Cabecera */}
+        {/* Cabecera --- MODIFICACIÓN AQUÍ --- */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h1 className="text-2xl font-bold">Historias Clínicas</h1>
@@ -215,7 +216,7 @@ export default function PaginaHistorias() {
               Gestiona las historias clínicas importadas y validadas
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2"> {/* Flex-wrap para mejor responsive */}
             <Button variant="outline" onClick={manejarRefrescar} disabled={estaCargando}>
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
@@ -225,7 +226,7 @@ export default function PaginaHistorias() {
               Exportar
             </Button>
             <label htmlFor="import-json">
-              <Button asChild disabled={estaCargando}>
+              <Button asChild disabled={estaCargando} variant="outline">
                 <span>
                   <Upload className="mr-2 h-4 w-4" />
                   Importar JSON
@@ -240,8 +241,17 @@ export default function PaginaHistorias() {
                 disabled={estaCargando}
               />
             </label>
+            {/* BOTÓN MODIFICADO */}
+            <Button asChild>
+              <a href="/pacientes?redirect_to=nueva_historia">
+                <Plus className="mr-2 h-4 w-4" />
+                Crear de Cero
+              </a>
+            </Button>
           </div>
         </div>
+        {/* --- FIN DE MODIFICACIÓN --- */}
+
 
         {/* Tarjetas de resumen */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">

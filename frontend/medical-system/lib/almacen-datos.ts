@@ -60,6 +60,8 @@ const CLAVES_STORAGE = {
   HISTORIAS: "neuroclinic_historias",
 }
 
+
+
 // --- FUNCIONES DE PACIENTES (CRUD) ---
 export function obtenerPacientes(): Paciente[] {
   if (typeof window === "undefined") return []
@@ -69,6 +71,14 @@ export function obtenerPacientes(): Paciente[] {
 
 export function obtenerPacientePorId(id: number): Paciente | undefined {
   return obtenerPacientes().find((p) => p.id === id)
+}
+
+export function modificarPaciente(id: number, datosActualizados: Paciente): void {
+  let pacientes = obtenerPacientes()
+  pacientes = pacientes.map(p => 
+    p.id === id ? { ...datosActualizados, id: p.id } : p
+  )
+  guardarPacientes(pacientes)
 }
 
 export function guardarPacientes(pacientes: Paciente[]): void {
@@ -87,12 +97,18 @@ export function agregarPaciente(paciente: Omit<Paciente, "id">): Paciente {
 }
 
 // --- NUEVA FUNCIÓN ---
-export function modificarPaciente(id: number, datosActualizados: Paciente): void {
+
+
+export function eliminarPaciente(id: number): void {
+  // Elimina al paciente
   let pacientes = obtenerPacientes()
-  pacientes = pacientes.map(p => 
-    p.id === id ? { ...datosActualizados, id: p.id } : p
-  )
+  pacientes = pacientes.filter(p => p.id !== id)
   guardarPacientes(pacientes)
+
+  // Elimina todas sus historias asociadas (importante)
+  let historias = obtenerHistoriasClinicas()
+  historias = historias.filter(h => h.pacienteId !== id)
+  guardarHistoriasClinicas(historias)
 }
 
 // --- FUNCIONES DE HISTORIAS (CRUD) ---
@@ -134,6 +150,12 @@ export function modificarHistoriaClinica(id: number, datosActualizados: Historia
   historias = historias.map(h => 
     h.id === id ? { ...datosActualizados, id: h.id } : h
   )
+  guardarHistoriasClinicas(historias)
+}
+
+export function eliminarHistoriaClinica(id: number): void {
+  let historias = obtenerHistoriasClinicas()
+  historias = historias.filter(h => h.id !== id)
   guardarHistoriasClinicas(historias)
 }
 

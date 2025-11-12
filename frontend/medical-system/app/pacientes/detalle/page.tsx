@@ -1,17 +1,31 @@
 "use client"
 
 import { useEffect, useState, Suspense } from "react"
-import { useSearchParams } from "next/navigation"
+import { useSearchParams, useRouter } from "next/navigation" // <-- 1. Importar useRouter
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Edit, FileText, Plus, RefreshCw, TrendingUp } from "lucide-react"
+import { ArrowLeft, Edit, FileText, Plus, RefreshCw, TrendingUp, Trash } from "lucide-react" // <-- 2. Importar Trash
 import { Badge } from "@/components/ui/badge"
+
+// 3. Importar AlertDialog
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 // Importaciones en español
 import {
   obtenerPacientePorId,
   obtenerLineaTiempoPaciente,
+  eliminarPaciente, // <-- 4. Importar la nueva función
   type Paciente,
   type LineaTiempoPaciente,
 } from "@/lib/almacen-datos"
@@ -32,6 +46,7 @@ export default function PaginaDetallePacienteSuspense() {
 
 function PaginaDetallePaciente() {
   const searchParams = useSearchParams()
+  const router = useRouter() // <-- 5. Inicializar router
   const patientId = Number(searchParams.get("id"))
 
   // Estado en español
@@ -55,6 +70,19 @@ function PaginaDetallePaciente() {
       setLineaTiempo(datosLineaTiempo)
     }
     setEstaCargando(false)
+  }
+
+  // --- 6. Handler para eliminar ---
+  const handleEliminarPaciente = () => {
+    if (!paciente) return
+    try {
+      eliminarPaciente(paciente.id)
+      alert("Paciente y todas sus historias han sido eliminados.")
+      router.push("/pacientes") // Redirigir a la lista
+    } catch (error) {
+      console.error(error)
+      alert("Error al eliminar el paciente.")
+    }
   }
 
   if (estaCargando && !paciente) {
@@ -142,12 +170,20 @@ function PaginaDetallePaciente() {
                   <div className="text-center py-8 text-muted-foreground">
                     <FileText className="h-12 w-12 mx-auto mb-4 opacity-50" />
                     <p>No hay historias clínicas registradas para este paciente</p>
-                    <Button className="mt-4" asChild>
-                      <a href="/historias/importar">
-                        <Plus className="mr-2 h-4 w-4" />
-                        Agregar Primera Historia
-                      </a>
-                    </Button>
+                    <div className="flex justify-center gap-4 mt-4">
+                      <Button asChild>
+                        <a href="/historias/importar">
+                          <Plus className="mr-2 h-4 w-4" />
+                          Importar Historia
+                        </a>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <a href={`/historias/nuevo?pacienteId=${paciente.id}`}>
+                          <Plus className="mr-2 h-4 w-4" />
+                          Crear de Cero
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 ) : (
                   <TablaHistorias historias={lineaTiempo.historias} />
@@ -228,15 +264,49 @@ function PaginaDetallePaciente() {
                 <Button className="w-full" asChild>
                   <a href="/historias/importar">
                     <Plus className="mr-2 h-4 w-4" />
-                    Nueva Historia
+                    Importar Historia
+                  </a>
+                </Button>
+                <Button className="w-full" variant="outline" asChild>
+                  <a href={`/historias/nuevo?pacienteId=${paciente.id}`}>
+                    <Plus className="mr-2 h-4 w-4" />
+                    Crear Historia de Cero
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
                   <a href={`/pacientes/editar?id=${paciente.id}`}>
                     <Edit className="mr-2 h-4 w-4" />
-                    Editar Datos
+                    Editar Datos Paciente
                   </a>
                 </Button>
+                
+                {/* --- 7. BOTÓN DE ELIMINAR PACIENTE --- */}
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <Button variant="destructive" className="w-full">
+                      <Trash className="mr-2 h-4 w-4" />
+                      Eliminar Paciente
+                    </Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent>
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>¿Está absolutamente seguro?</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        Esta acción no se puede deshacer. Esto eliminará permanentemente al paciente
+                        <span className="font-bold"> {paciente.apellido}, {paciente.nombre}</span> y 
+                        todas sus <span className="font-bold">{lineaTiempo?.historias.length || 0}</span> historias clínicas asociadas.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancelar</AlertDialogCancel>
+                      <AlertDialogAction onClick={handleEliminarPaciente}>
+                        Confirmar Eliminación
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+                {/* --- FIN DEL BOTÓN --- */}
+
               </CardContent>
             </Card>
           </div>
