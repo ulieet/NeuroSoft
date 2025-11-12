@@ -1,14 +1,29 @@
+"use client" // <-- REQUERIDO
+
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Calendar } from "lucide-react"
-import type { MedicalHistory } from "@/lib/data-store"
+import type { HistoriaClinica } from "@/lib/almacen-datos"
 
-interface PatientHistoriesTableProps {
-  historias: MedicalHistory[]
+interface TablaHistoriasProps {
+  historias: HistoriaClinica[]
 }
 
-export function PatientHistoriesTable({ historias }: PatientHistoriesTableProps) {
+const getEstadoBadge = (estado: string) => {
+   switch (estado) {
+    case "validada":
+      return <Badge className="bg-green-100 text-green-800 border-green-200">Validada</Badge>
+    case "pendiente":
+      return <Badge variant="secondary">Pendiente</Badge>
+    case "error":
+      return <Badge variant="destructive">Error</Badge>
+    default:
+      return <Badge variant="outline">{estado}</Badge>
+  }
+}
+
+export function TablaHistorias({ historias }: TablaHistoriasProps) {
   return (
     <Table>
       <TableHeader>
@@ -31,7 +46,7 @@ export function PatientHistoriesTable({ historias }: PatientHistoriesTableProps)
             </TableCell>
             <TableCell>{historia.diagnostico}</TableCell>
             <TableCell>
-              <Badge variant={historia.estado === "validada" ? "default" : "secondary"}>{historia.estado}</Badge>
+              {getEstadoBadge(historia.estado)}
             </TableCell>
             <TableCell>{historia.medico}</TableCell>
             <TableCell className="text-right">
