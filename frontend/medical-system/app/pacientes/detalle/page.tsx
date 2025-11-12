@@ -13,7 +13,6 @@ import {
   type PatientTimeline as TimelineType,
 } from "@/lib/data-store"
 import { PatientInfoCard } from "../components/patient-info-card"
-import { PatientContactCard } from "../components/patient-contact-card"
 import { PatientMedicalCard } from "../components/patient-medical-card"
 import { PatientHistoriesTable } from "../components/patient-histories-table"
 import { Badge } from "@/components/ui/badge"
@@ -95,8 +94,6 @@ export default function DetallePacientePage() {
           {/* Patient Information */}
           <div className="lg:col-span-2 space-y-6">
             <PatientInfoCard patient={patient} />
-
-            <PatientContactCard patient={patient} />
 
             <Card>
               <CardHeader>

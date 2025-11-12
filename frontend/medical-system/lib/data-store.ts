@@ -41,7 +41,6 @@ const STORAGE_KEYS = {
   HISTORIES: "neuroclinic_histories",
 }
 
-// Patient operations
 export function getPatients(): Patient[] {
   if (typeof window === "undefined") return []
   const data = localStorage.getItem(STORAGE_KEYS.PATIENTS)
