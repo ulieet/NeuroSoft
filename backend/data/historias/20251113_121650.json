@@ -1,0 +1,52 @@
+{
+  "id": "20251113_121650",
+  "estado": "pendiente_validacion",
+  "dedup_key": "F:2024-09-20|DX:fibrilación auricular paroxística (i48.0) en paciente sin cardiopatía estructural significativa.|H:ffd2ec8c328df929ab4d7c5781708fbc9222221964348c14b7dcb125c400cc58",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "uploads\\historia_20251113_121650.docx"
+    },
+    "paciente": {
+      "nombre": null,
+      "dni": null
+    },
+    "consulta": {
+      "fecha": "2024-09-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Fibrilación Auricular Paroxística (I48.0) en paciente sin cardiopatía estructural significativa.",
+      "forma": null,
+      "fecha_inicio": "2024-09-01",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "comercial": null,
+        "molecula": "Apixaban",
+        "inicio": null,
+        "estado": "Activo",
+        "dosis": "5 mg",
+        "via": null,
+        "frecuencia": null
+      }
+    ],
+    "episodios": [],
+    "texto_original": "Síntomas principales:\nCurso de 3 meses con palpitaciones rápidas e irregulares, de inicio súbito y finalización espontánea, que duran entre 10 minutos y 1 hora, asociadas a disnea leve y sensación de mareo. Los episodios se desencadenan principalmente con estrés emocional.\nEvolución al 20/09/24:\nLa paciente presenta episodios con menor frecuencia (1 vez cada 15 días), pero de mayor duración (hasta 2 horas). El último ECG intercrítico (01/09/24) mostró ritmo sinusal normal.\nEstudios realizados:\nLaboratorio rutina gral. 18/09/24: Glucemia 95 mg/dl, urea y creatinina normales. Hemograma completo s/p. TSH 2.1 $\\mu UI/ml$.\nLaboratorio especial 05/08/24: Troponinas negativas, Dímero D normal. Perfil lipídico levemente elevado (Colesterol total 220 mg/dl).\nECG de 12 derivaciones (05/08/24): Durante un episodio, se registró Fibrilación Auricular (FA) de alta respuesta ventricular (150-180 lpm), que revirtió espontáneamente a ritmo sinusal.\nHolter de 24 hs (10/08/24): 3 episodios documentados de FA paroxística. Carga de arritmia total menor al 1%.\nEcocardiograma Doppler (12/08/24): Fracción de eyección del ventrículo izquierdo (FEVI) conservada (60%). Aurícula izquierda levemente dilatada (4.5 cm). Válvulas cardíacas normales.\nDiagnóstico:\nFibrilación Auricular Paroxística (I48.0) en paciente sin cardiopatía estructural significativa.\nComentario:\nLa paciente requiere iniciar tratamiento con un anticoagulante oral directo (DOAC) para reducir el riesgo de accidente cerebrovascular, ya que su puntaje CHA2DS2-VASc es 2 (por edad e hipertensión arterial ficticia previa). Se recomienda un Betabloqueante para el control de la frecuencia y evaluación para posible Ablación por Radiofrecuencia si los episodios persisten o aumentan. Es crucial el seguimiento estricto para monitorear la progresión a FA persistente.\nSolicitud:\nURGENTE: Indicación y cobertura al 100% de Apixaban 5 mg, 1 comprimido cada 12 horas. Tratamiento Prolongado (mínimo 1 año).",
+    "confidencia": {
+      "forma": "Baja",
+      "edss": "Baja",
+      "puncion_lumbar": "Baja"
+    }
+  },
+  "validada": null
+}
