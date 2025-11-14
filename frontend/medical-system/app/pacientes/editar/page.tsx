@@ -170,9 +170,16 @@ function PaginaEditarPaciente() {
                         <SelectTrigger><SelectValue /></SelectTrigger>
                         <SelectContent>
                           <SelectItem value="OSDE">OSDE</SelectItem>
+                          <SelectItem value="OSPE">OSPE</SelectItem>
+                          <SelectItem value="OSPSA">OSPSA</SelectItem>
+                          <SelectItem value="OSPOCE">OSPOCE</SelectItem>
                           <SelectItem value="Swiss Medical">Swiss Medical</SelectItem>
                           <SelectItem value="Galeno">Galeno</SelectItem>
                           <SelectItem value="Medicus">Medicus</SelectItem>
+                          <SelectItem value="IOMA">IOMA</SelectItem>
+                          <SelectItem value="OSECAC">OSECAC</SelectItem>
+                          <SelectItem value="UOCRA">UOCRA</SelectItem>
+                          <SelectItem value="PAMI">PAMI</SelectItem>
                           <SelectItem value="Particular">Particular</SelectItem>
                           <SelectItem value="Otra">Otra</SelectItem>
                         </SelectContent>
