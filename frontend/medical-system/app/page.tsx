@@ -13,7 +13,7 @@ export default function Dashboard() {
             <CardDescription>Función principal del sistema - Cargar y procesar archivos médicos</CardDescription>
           </CardHeader>
           <CardContent>
-            <Button size="lg" className="w-full h-16 text-lg" asChild>
+            <Button size="lg" className="w-full h-16 text-lg [&_svg]:stroke-current [&_svg]:fill-current [&_div]:text-inherit"asChild>
               <a href="/historias/importar">
                 <Upload className="mr-4 h-8 w-8" />
                 <div className="text-left">
