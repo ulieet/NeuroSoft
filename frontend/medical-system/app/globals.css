@@ -122,3 +122,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components {
+  [data-slot="button"]:hover {
+    filter: brightness(0.92);
+  }
+
+  [data-slot="button"]:hover,
+  [data-slot="button"]:hover * {
+    color: inherit !important;
+  }
+  [data-slot="button"] svg {
+    stroke: currentColor !important;
+    fill: currentColor !important;
+  }
+}
