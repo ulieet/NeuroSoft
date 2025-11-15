@@ -125,7 +125,8 @@
 
 
 @layer components {
-  [data-slot="button"]:hover {
+  [data-slot="button"] a:hover,
+  [data-slot="button"]:not([data-as-child="true"]):hover {
     filter: brightness(0.92);
   }
 
@@ -133,8 +134,5 @@
   [data-slot="button"]:hover * {
     color: inherit !important;
   }
-  [data-slot="button"] svg {
-    stroke: currentColor !important;
-    fill: currentColor !important;
-  }
 }
+
