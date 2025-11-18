@@ -149,11 +149,9 @@ def _merge_rmn_por_fecha(rmn_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]
 def _extract_paciente_nombre(text: str) -> Optional[str]:
     """
     Extrae nombre del paciente SOLO en casos donde:
-    - La línea empieza con 'Apellido y Nombre:' / similares
+    - La línea es algo tipo 'Apellido y Nombre: ...'
     - O está en la línea siguiente a 'Apellido y Nombre:'
-    - O la línea empieza con 'Paciente: ...'
-
-    Evita agarrar frases del tipo 'La paciente presenta...'
+    - O es una línea de encabezado 'Paciente: ...' (no 'Paciente estuporoso')
     """
 
     lineas = text.splitlines()
@@ -166,8 +164,9 @@ def _extract_paciente_nombre(text: str) -> Optional[str]:
         r"^\s*nombre[s]?\s+y\s+apellido[s]?\s*:?\s*(.+)$",
         flags=re.IGNORECASE,
     )
+    # Nota: acá exigimos ':' y permitimos un '-' antes (caso '-Paciente: Julián...')
     patron_paciente = re.compile(
-        r"^\s*paciente\s*:?\s*(.+)$",
+        r"^\s*-?\s*paciente\s*:\s*(.+)$",
         flags=re.IGNORECASE,
     )
 
@@ -177,6 +176,8 @@ def _extract_paciente_nombre(text: str) -> Optional[str]:
             m = patron.search(linea)
             if m:
                 contenido = m.group(1).strip()
+                # Si viene mezclado con edad/sexo en la misma línea, cortamos ahí
+                contenido = re.split(r"\s+-Edad\b", contenido)[0].strip()
                 if contenido:
                     return contenido
 
@@ -495,6 +496,23 @@ def process(file_path: str) -> Dict[str, Any]:
                 # RR u otras formas “remitentes”
                 forma = f
                 conf_forma = "Media" if "diagn" not in sec_name.lower() else "Alta"
+    
+        # Post-procesado del diagnóstico para casos tipo "Diagnostico nosológico"
+    if diagnostico and "nosol" in diagnostico.lower():
+        lineas = text.splitlines()
+        for i, linea in enumerate(lineas):
+            if re.search(r"diagn[oó]stico\s+nosol[oó]gico", linea, flags=re.IGNORECASE):
+                # buscamos la primera línea no vacía después de "Diagnostico nosológico"
+                for j in range(i + 1, len(lineas)):
+                    s = lineas[j].strip()
+                    if s:
+                        diagnostico = s
+                        break
+                break
+
+    # Normalización adicional: si el diagnóstico resultante menciona esclerosis
+    if diagnostico and "esclerosis" in diagnostico.lower():
+        diagnostico = "Esclerosis múltiple"
 
 
     # EDSS
@@ -519,6 +537,21 @@ def process(file_path: str) -> Dict[str, Any]:
         if k in sections and not fecha_inicio:
             fecha_inicio = _find_fecha(sections[k])
 
+        # Ajuste extra: si fecha_inicio coincide con la fecha de consulta,
+    # intentamos buscar una fecha anterior en el texto (ej. Padecimiento actual).
+    if fecha_consulta and (fecha_inicio is None or fecha_inicio >= fecha_consulta):
+        fechas_en_texto = []
+        for linea in text.splitlines():
+            f = _find_fecha(linea)
+            if f:
+                fechas_en_texto.append(f)
+
+        # Nos quedamos con la fecha más antigua que sea anterior a la consulta
+        fechas_menores = [f for f in fechas_en_texto if f < fecha_consulta]
+        if fechas_menores:
+            fecha_inicio = sorted(fechas_menores)[0]
+
+
     # Complementarios: RMN + punción lumbar
     rmn_raw = _extract_rmn(text)
     rmn = _merge_rmn_por_fecha(rmn_raw)
@@ -537,6 +570,14 @@ def process(file_path: str) -> Dict[str, Any]:
     }
 
     puncion, conf_puncion = _extract_puncion(text)
+
+        # Fallback: si se menciona líquido cefalorraquídeo, asumimos que se hizo LCR
+    t_low = text.lower()
+    if not puncion.get("realizada") and "liquido cefalorraquideo" in t_low.replace("í", "i").replace("é", "e"):
+        puncion["realizada"] = True
+        if conf_puncion == "Baja":
+            conf_puncion = "Media"
+
 
     # Tratamientos (usamos sección específica si existe + texto completo como respaldo)
     tratamientos = _extract_tratamientos(sections.get("tratamiento", "") + "\n" + text)
