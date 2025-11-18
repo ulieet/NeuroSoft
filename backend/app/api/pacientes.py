@@ -1,0 +1,1 @@
+# Endpoints de pacientes (placeholder)

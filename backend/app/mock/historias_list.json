@@ -1,0 +1,19 @@
+{
+  "total": 3,
+  "pendientes": 1,
+  "validadas": 2,
+  "items": [
+    {
+      "id": "h_0001",
+      "paciente": { "nombre": "Ana Pérez", "dni": "30123456", "sexo": "F", "edad": 37 },
+      "diagnostico": "Esclerosis múltiple",
+      "forma": "RR",
+      "edss": 2.5,
+      "molecula_actual": "Interferón beta-1a",
+      "puncion_lumbar": true,
+      "fecha_consulta": "2020-11-16",
+      "estado": "Validada",
+      "medico": "Dr. Rodríguez"
+    }
+  ]
+}

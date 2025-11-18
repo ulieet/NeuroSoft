@@ -1,0 +1,1 @@
+# Esquema Tratamiento (placeholder)

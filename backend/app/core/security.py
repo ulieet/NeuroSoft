@@ -1,0 +1,1 @@
+# Seguridad/autenticación (placeholder)
