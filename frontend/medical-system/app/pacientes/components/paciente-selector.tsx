@@ -1,5 +1,4 @@
 // frontend/medical-system/app/pacientes/components/paciente-selector.tsx
-
 "use client"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -75,20 +74,22 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                                     <TableHead>Apellido y Nombre (DNI)</TableHead>
                                     <TableHead>Obra Social</TableHead>
                                     <TableHead className="text-right">Historias</TableHead> 
-                                    <TableHead className="text-right">Selección</TableHead>
+                                    {/* Columna "Selección" removida */}
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
                                 {estaCargando ? (
-                                    <TableRow><TableCell colSpan={4} className="text-center py-8">Cargando...</TableCell></TableRow>
+                                    <TableRow><TableCell colSpan={3} className="text-center py-8">Cargando...</TableCell></TableRow>
                                 ) : pacientesFiltrados.length === 0 ? (
                                     <TableRow>
-                                        <TableCell colSpan={4} className="text-center text-muted-foreground py-8">
+                                        <TableCell colSpan={3} className="text-center text-muted-foreground py-8">
                                             {hayFiltrosActivos ? "No se encontraron pacientes con esos filtros" : "No hay pacientes registrados"}
                                         </TableCell>
                                     </TableRow>
                                 ) : (
-                                    pacientesFiltrados.map((paciente) => (
+                                    pacientesFiltrados.map((paciente) => {
+                                        const count = obtenerConteoHistorias ? obtenerConteoHistorias(paciente.id) : (paciente.historias?.length ?? 0)
+                                        return (
                                         <TableRow 
                                             key={paciente.id}
                                             onClick={() => onSelectPaciente(paciente.id)}
@@ -98,26 +99,24 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                                             )}
                                         >
                                             <TableCell>
-                                                <div className="font-medium">
-                                                    {paciente.apellido}, {paciente.nombre}
+                                                <div>
+                                                    <div className="font-medium">{paciente.apellido}, {paciente.nombre} ({paciente.dni})</div>
+                                                    <div className="text-sm text-muted-foreground">
+                                                        {new Date(paciente.fechaNacimiento).toLocaleDateString("es-AR")}
+                                                    </div>
                                                 </div>
-                                                <div className="text-sm text-muted-foreground font-mono">
-                                                    DNI: {paciente.dni}
-                                                </div>
                                             </TableCell>
-                                            <TableCell>
-                                                <Badge variant="outline">{paciente.obraSocial}</Badge>
-                                            </TableCell>
+                                            <TableCell><Badge variant="outline">{paciente.obraSocial}</Badge></TableCell>
                                             <TableCell className="text-right">
-                                                <Badge variant="secondary">{obtenerConteoHistorias(paciente.id)} historias</Badge>
+                                                {/* Badge con fondo celeste claro y texto azul (simula el aspecto original) */}
+                                                <Badge className="bg-sky-100 text-sky-800 border-0 px-2 py-1">
+                                                    {count} {count === 1 ? "historia" : "historias"}
+                                                </Badge>
                                             </TableCell>
-                                            <TableCell className="text-right">
-                                                {selectedPacienteId === paciente.id && (
-                                                    <span className="text-primary font-medium text-xs">Seleccionado</span>
-                                                )}
-                                            </TableCell>
+
+                                            {/* Se eliminó la celda de selección (checkbox/botón) para dejar solo las 3 columnas */}
                                         </TableRow>
-                                    ))
+                                    )})
                                 )}
                             </TableBody>
                         </Table>
@@ -125,5 +124,5 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                 </CardContent>
             </Card>
         </div>
-    );
-};
+    )
+}
