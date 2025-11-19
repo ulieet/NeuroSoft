@@ -18,8 +18,8 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
     { name: "Dashboard", href: "/", icon: BarChart3, current: currentPage === "dashboard" },
     { name: "Pacientes", href: "/pacientes", icon: Users, current: currentPage === "pacientes" },
     { name: "Historias Clínicas", href: "/historias", icon: FileText, current: currentPage === "historias" },
-    { name: "Análisis", href: "/analisis", icon: TrendingUp, current: currentPage === "analisis" },
-    { name: "Reportes", href: "/reportes", icon: BarChart3, current: currentPage === "reportes" },
+    { name: "Análisis por paciente", href: "/analisis", icon: TrendingUp, current: currentPage === "analisis" },
+    { name: "Reportes Generales", href: "/reportes", icon: BarChart3, current: currentPage === "reportes" },
   ]
 
   return (

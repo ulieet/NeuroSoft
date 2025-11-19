@@ -23,6 +23,8 @@ export interface Medicamento {
   molecula?: string
   dosis?: string
   frecuencia?: string
+  tolerancia?: boolean   
+
 }
 export interface EstudioComplementario {
   puncionLumbar: boolean

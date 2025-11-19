@@ -1,0 +1,56 @@
+{
+  "resumen_general": {
+    "total_pacientes": 247,
+    "historias_registradas": 1429,
+    "promedio_edad_diagnostico": 32.5,
+    "promedio_edad_actual": 45.1,
+    "porcentaje_femenino": 68.4
+  },
+  "kpis_em": {
+    "pacientes_neda3": 0.45,
+    "arr_promedio": 0.52,
+    "tiempo_a_edss_6_0_promedio": 12.8,
+    "porcentaje_boc_positivas": 88.5
+  },
+  "discapacidad_y_progression": {
+    "distribucion_formas_evolutivas": [
+      { "forma": "EMRR (Recurrente-Remitente)", "conteo": 180, "color": "#06b6d4" },
+      { "forma": "EMSP (Secundaria Progresiva)", "conteo": 50, "color": "#f97316" },
+      { "forma": "EMPP (Primaria Progresiva)", "conteo": 17, "color": "#ef4444" }
+    ],
+    "edss_progresion_historica": [
+      { "periodo": "0-2 años", "edss_promedio": 1.5, "arr": 1.2 },
+      { "periodo": "2-5 años", "edss_promedio": 2.5, "arr": 0.8 },
+      { "periodo": "5+ años", "edss_promedio": 4.0, "arr": 0.3 }
+    ]
+  },
+  "tratamiento_dmt": {
+    "uso_dmt_actual": [
+      { "dmt": "Interferón Beta 1a", "pacientes": 60, "color": "#0ea5e9" },
+      { "dmt": "Fingolimod", "pacientes": 80, "color": "#8b5cf6" },
+      { "dmt": "Natalizumab", "pacientes": 40, "color": "#6366f1" },
+      { "dmt": "Ocrelizumab", "pacientes": 45, "color": "#4b5563" },
+      { "dmt": "Otros/Ninguno", "pacientes": 22, "color": "#a1a1aa" }
+    ],
+    "motivos_cambio_dmt": [
+      { "motivo": "Falla Terapéutica (Actividad)", "porcentaje": 55, "color": "#ef4444" },
+      { "motivo": "Efectos Adversos (Intolerancia)", "porcentaje": 30, "color": "#f97316" },
+      { "motivo": "Riesgo/Otro (PML, Embarazo)", "porcentaje": 15, "color": "#a1a1aa" }
+    ]
+  },
+  "neuroimagen": {
+    "conteo_lcr": 190,
+    "conteo_rmn_total": 247,
+    "porcentaje_atrofia_reportada": 25.5,
+    "actividad_rmn_bianual": [
+      { "semestre": "1er Semestre", "activos": 30, "inactivos": 200 }, 
+      { "semestre": "2do Semestre", "activos": 25, "inactivos": 210 }
+    ]
+  },
+  "tratamiento_soporte": [
+    { "name": "Kinesiología", "value": 120, "color": "#0ea5e9" },
+    { "name": "Terapia Cognitiva", "value": 75, "color": "#06b6d4" },
+    { "name": "Rehabilitación (General)", "value": 45, "color": "#0891b2" },
+    { "name": "Fonoaudiología", "value": 30, "color": "#4b5563" }
+  ]
+}
