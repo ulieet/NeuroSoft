@@ -1,8 +1,10 @@
+// frontend/medical-system/lib/almacen-datos.ts
+
 "use client"
 
 import datosDeEjemplo from "@/public/datos-ejemplo.json"
 
-// --- INTERFACES EN ESPAÑOL ---
+// --- INTERFACES ---
 export interface Paciente {
   id: number
   nombre: string
@@ -18,19 +20,21 @@ export interface Paciente {
   fechaRegistro: string
   observaciones: string
 }
+
 export interface Medicamento {
   droga: string
   molecula?: string
   dosis?: string
   frecuencia?: string
   tolerancia?: boolean   
-
 }
+
 export interface EstudioComplementario {
   puncionLumbar: boolean
   examenLCR: boolean
   texto: string
 }
+
 export interface HistoriaClinica {
   id: number
   pacienteId: number
@@ -54,6 +58,10 @@ export interface HistoriaClinica {
   nivelCriticidad?: "bajo" | "medio" | "alto" | "critico"
   observacionesMedicacion?: string
   adjuntos?: { nombre: string; url: string }[]
+  
+  // --- NUEVOS CAMPOS PARA ANÁLISIS ---
+  tratamientosSoporte?: string[] 
+  motivoCambioTratamiento?: string 
 }
 
 // --- CLAVES DE STORAGE ---
@@ -61,8 +69,6 @@ const CLAVES_STORAGE = {
   PACIENTES: "neuroclinic_pacientes",
   HISTORIAS: "neuroclinic_historias",
 }
-
-
 
 // --- FUNCIONES DE PACIENTES (CRUD) ---
 export function obtenerPacientes(): Paciente[] {
@@ -98,16 +104,11 @@ export function agregarPaciente(paciente: Omit<Paciente, "id">): Paciente {
   return nuevoPaciente
 }
 
-// --- NUEVA FUNCIÓN ---
-
-
 export function eliminarPaciente(id: number): void {
-  // Elimina al paciente
   let pacientes = obtenerPacientes()
   pacientes = pacientes.filter(p => p.id !== id)
   guardarPacientes(pacientes)
 
-  // Elimina todas sus historias asociadas (importante)
   let historias = obtenerHistoriasClinicas()
   historias = historias.filter(h => h.pacienteId !== id)
   guardarHistoriasClinicas(historias)
@@ -146,7 +147,6 @@ export function agregarHistoriaClinica(historia: Omit<HistoriaClinica, "id">): H
   return nuevaHistoria
 }
 
-// --- NUEVA FUNCIÓN ---
 export function modificarHistoriaClinica(id: number, datosActualizados: HistoriaClinica): void {
   let historias = obtenerHistoriasClinicas()
   historias = historias.map(h => 
@@ -233,12 +233,14 @@ function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
 export function obtenerEdadPaciente(fechaNacimiento: string): number {
   return calcularAnios(fechaNacimiento);
 }
+
 export interface FiltrosPaciente {
   obraSocial?: string
   sexo?: string
   edadMin?: number
   edadMax?: number
 }
+
 export interface FiltrosHistoria {
   patologia?: string
   fechaDesde?: string
@@ -252,12 +254,12 @@ export interface FiltrosHistoria {
   tiempoEvolucion?: number
   escalaEDSS?: number
 }
+
 export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClinica[] {
   let historias = obtenerHistoriasClinicas()
   const pacientes = obtenerPacientes()
   const hoy = new Date().toISOString(); 
 
-  // (Filtros simples: patologia, fecha, medicamento, estado, criticidad)
   if (filtros.patologia) {
     const patologias = filtros.patologia.split("|").map(p => p.toLowerCase())
     historias = historias.filter((h) =>
@@ -287,7 +289,6 @@ export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClin
     historias = historias.filter((h) => h.nivelCriticidad === filtros.criticidad)
   }
 
-  // (Filtros Complejos: Paciente y Cálculos)
   historias = historias.filter((historia) => {
     const paciente = pacientes.find((p) => p.id === historia.pacienteId)
     if (!paciente) return false
@@ -315,6 +316,7 @@ export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClin
   })
   return historias
 }
+
 export interface LineaTiempoPaciente {
   paciente: Paciente
   historias: HistoriaClinica[]
@@ -324,6 +326,7 @@ export interface LineaTiempoPaciente {
   medicamentosUsados: string[]
   diagnosticos: string[]
 }
+
 export function obtenerLineaTiempoPaciente(pacienteId: number): LineaTiempoPaciente | null {
   const paciente = obtenerPacientePorId(pacienteId)
   if (!paciente) return null
@@ -344,5 +347,65 @@ export function obtenerLineaTiempoPaciente(pacienteId: number): LineaTiempoPacie
     ultimaConsulta: historias.length > 0 ? historias[0].fecha : "",
     medicamentosUsados: Array.from(medicamentosSet),
     diagnosticos: Array.from(diagnosticosSet),
+  }
+}
+
+// --- NUEVA FUNCIÓN DE ANÁLISIS CENTRALIZADO ---
+export function obtenerAnalisisDePaciente(pacienteId: number) {
+  const paciente = obtenerPacientePorId(pacienteId)
+  if (!paciente) return null
+
+  // Obtenemos historias y las ordenamos por fecha ascendente
+  const historias = obtenerHistoriasPorPacienteId(pacienteId).sort(
+    (a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
+  )
+  
+  const dmtConFechas = historias.map(h => {
+    // Intentamos obtener el DMT de los medicamentos o del campo tratamiento
+    const dmt = h.medicamentos && h.medicamentos.length > 0 
+                ? h.medicamentos.map(m => m.droga).join(", ") 
+                : h.tratamiento || "Sin Registro";
+    
+    // Verificamos tolerancia en los medicamentos
+    const intoleranciaDetectada = h.medicamentos?.some(m => m.tolerancia === false);
+    
+    return {
+      dmt: dmt,
+      fecha: new Date(h.fecha).toLocaleDateString('es-AR'),
+      edss: h.escalaEDSS || 0,
+      tolerancia: !intoleranciaDetectada,
+      estado: !intoleranciaDetectada ? 'Tolerado' : 'Intolerancia',
+      motivo: h.motivoCambioTratamiento || h.motivoConsulta
+    }
+  })
+
+  const progresionEDSS = historias.map(h => ({
+    fecha: new Date(h.fecha).toLocaleDateString('es-AR'),
+    edss: h.escalaEDSS || 0,
+  }))
+
+  let cambiosDMT = 0
+  let intolerancia = 0
+  for (let i = 1; i < historias.length; i++) {
+    // Lógica simple de detección de cambio comparando strings de tratamiento
+    const tratamientoPrev = historias[i-1].tratamiento || (historias[i-1].medicamentos?.[0]?.droga || "");
+    const tratamientoCurr = historias[i].tratamiento || (historias[i].medicamentos?.[0]?.droga || "");
+    
+    if (tratamientoCurr !== tratamientoPrev && tratamientoCurr !== "") cambiosDMT++
+    
+    const tieneIntolerancia = historias[i].medicamentos?.some(m => m.tolerancia === false);
+    if (tieneIntolerancia) intolerancia++
+  }
+
+  const tratamientosSoporte = [...new Set(historias.flatMap(h => h.tratamientosSoporte || []))]
+
+  return {
+    paciente,
+    dmtConFechas,
+    progresionEDSS,
+    cambiosDMT,
+    intolerancia,
+    tratamientosSoporte,
+    totalHistorias: historias.length
   }
 }
