@@ -19,8 +19,7 @@ El objetivo es crear un Sistema de Gestión de Historias Clínicas (EHR) enfocad
 - Importar historias clínicas desde archivos (.doc/.docx) y JSON.
 - Exportar datos en JSON.
 - Filtrar y buscar pacientes e historias con criterios complejos.
-- Visualizar reportes y estadísticas sobre los datos.
-
+-Visualizar reportes, estadísticas, y realizar análisis de progresión de la enfermedad por paciente
 
 
 3. EL "CONTRATO" DE LA API (EL ARCHIVO CLAVE)
@@ -61,41 +60,44 @@ export interface Paciente {
 Modelo de Datos: Historia Clínica y Sub-modelos
 ---
 export interface Medicamento {
-  droga: string
-  molecula?: string
-  dosis?: string
-  frecuencia?: string
+  droga: string
+  molecula?: string
+  dosis?: string
+  frecuencia?: string
+  tolerancia?: boolean 
 }
 
 export interface EstudioComplementario {
-  puncionLumbar: boolean
-  examenLCR: boolean
-  texto: string // Para RMN, Laboratorios, etc.
+  puncionLumbar: boolean
+  examenLCR: boolean
+  texto: string // Para RMN, Laboratorios, etc.
 }
 
 export interface HistoriaClinica {
-  id: number
-  pacienteId: number
-  fecha: string // Formato ISO (YYYY-MM-DD)
-  diagnostico: string
-  codigoDiagnostico?: string // CIE-10
-  formaEvolutiva?: string    
-  fechaInicioEnfermedad?: string
-  escalaEDSS?: number        
-  estado: "validada" | "pendiente" | "error"
-  medico: string
-  motivoConsulta: string
-  anamnesis: string // Síntomas
-  examenFisico: string
-  estudiosComplementarios?: EstudioComplementario
-  medicamentos?: Medicamento[]
-  tratamiento: string // Comentario general de tratamiento
-  evolucion: string
-  fechaImportacion: string // Fecha de creación del registro
-  patologia?: string // Categoría (ej: Migraña, Esclerosis Múltiple)
-  nivelCriticidad?: "bajo" | "medio" | "alto" | "critico"
-  observacionesMedicacion?: string
-  adjuntos?: { nombre: string; url: string }[]
+  id: number
+  pacienteId: number
+  fecha: string // Formato ISO (YYYY-MM-DD)
+  diagnostico: string
+  codigoDiagnostico?: string // CIE-10
+  formaEvolutiva?: string    
+  fechaInicioEnfermedad?: string
+  escalaEDSS?: number        
+  estado: "validada" | "pendiente" | "error"
+  medico: string
+  motivoConsulta: string
+  anamnesis: string // Síntomas
+  examenFisico: string
+  estudiosComplementarios?: EstudioComplementario
+  medicamentos?: Medicamento[]
+  tratamiento: string // Comentario general de tratamiento
+  evolucion: string
+  fechaImportacion: string // Fecha de creación del registro
+  patologia?: string // Categoría (ej: Migraña, Esclerosis Múltiple)
+  nivelCriticidad?: "bajo" | "medio" | "alto" | "critico"
+  observacionesMedicacion?: string
+  adjuntos?: { nombre: string; url: string }[]
+  tratamientosSoporte?: string[] // Tratamientos complementarios, no DMT
+  motivoCambioTratamiento?: string // Razón principal para cambiar el DMT
 }
 
 
@@ -168,6 +170,10 @@ Función: filtrarHistoriasClinicas(filtros)
 Endpoint: GET /api/historias/filtrar
 Descripción: **Endpoint clave.** Recibe todos los filtros de la interfaz `FiltrosHistoria` (ver `lib/almacen-datos.ts` y `app/historias/components/filtros-avanzados.tsx`) como *query params* (ej. `?patologia=Migraña&sexo=Femenino&edad=42...`) y devuelve la lista de historias filtradas.
 
+Función: obtenerAnalisisDePaciente(pacienteId) 
+Endpoint: GET /api/pacientes/:id/analisis 
+Descripción: Nuevo Endpoint. Devuelve un objeto agregado con métricas clave de análisis para el paciente (progresión EDSS, historial de DMT con fechas y motivos/tolerancia, tratamientos de soporte, etc.). Utilizado por la nueva página /analisis.
+
 
 6. TAREAS CRÍTICAS DEL BACKEND
 ------------------------------
@@ -195,6 +201,7 @@ Además de los endpoints CRUD, el backend es responsable de la lógica de negoci
     - `GET /api/reportes/estadisticas-globales`: Devuelve conteos (total pacientes, total historias, pendientes).
     - `GET /api/reportes/diagnosticos`: Devuelve un conteo de historias agrupadas por `diagnostico` o `patologia` para el gráfico de torta.
     - `GET /api/reportes/consultas-mensuales`: Devuelve un conteo de historias agrupadas por mes para el gráfico de barras.
+    - `GET /api/pacientes/:id/analisis` : Debe implementar la lógica de agregación y cálculo (ej. detección de cambios de tratamiento, cálculo de progresión EDSS) descrita en la función obtenerAnalisisDePaciente.
 
 6.4. Lógica de Filtrado Compleja
 - Páginas: `app/historias/page.tsx`, `app/pacientes/page.tsx`
@@ -209,100 +216,106 @@ Además de los endpoints CRUD, el backend es responsable de la lógica de negoci
 - Estado Actual: Inexistente. El frontend simula un usuario "Dr. Rodríguez".
 - Tarea del Backend: Implementar un sistema de autenticación (ej. JWT) para proteger todos los endpoints. El `medico` en `HistoriaClinica` debería asociarse al usuario autenticado.
 
+ESTRUCTURA DE DIRECTORIOS 
 
-
-ESTRUCTURA DE DIRECTORIOS
 frontend/medical-system/
 │
-├── app/                            # App Router (Rutas y Páginas)
-│   │
-│   ├── analisis/
-│   │   └── page.tsx                # Dashboard de análisis y tendencias (Placeholder).
-│   │
-│   ├── historias/                  # Módulo de Gestión de Historias Clínicas
-│   │   ├── components/
-│   │   │   └── filtros-avanzados.tsx # Filtros complejos (Patología, Medicamento, Rango Fechas).
-│   │   ├── detalle/
-│   │   │   └── page.tsx            # Vista individual. Botón "Validar" y "Eliminar".
-│   │   ├── editar/
-│   │   │   └── page.tsx            # Formulario de edición. Permite cambiar estado a "Validada".
-│   │   ├── importar/
-│   │   │   └── page.tsx            # UI de subida de archivos (Drag & Drop). Simula proceso NLP.
-│   │   ├── nuevo/
-│   │   │   └── page.tsx            # Creación de historia. Requiere ?pacienteId=...
-│   │   └── page.tsx                # Listado general de historias con búsqueda.
-│   │
-│   ├── pacientes/                  # Módulo de Gestión de Pacientes
-│   │   ├── components/
-│   │   │   ├── filtros.tsx         # Barra de búsqueda y filtros demográficos (Edad, Sexo).
-│   │   │   ├── info-medica.tsx     # Card de resumen (Obra Social, Afiliado).
-│   │   │   ├── info-personal.tsx   # Card de datos filiatorios.
-│   │   │   └── tabla-historias.tsx # Historial médico embebido en el perfil.
-│   │   ├── detalle/
-│   │   │   └── page.tsx            # Perfil 360° del paciente + Línea de tiempo.
-│   │   ├── editar/
-│   │   │   └── page.tsx            # Edición de datos demográficos.
-│   │   ├── nuevo/
-│   │   │   └── page.tsx            # Alta de paciente.
-│   │   └── page.tsx                # Listado maestro de pacientes.
-│   │
-│   ├── reportes/
-│   │   ├── loading.tsx             # Estado de carga para gráficos pesados.
-│   │   └── page.tsx                # Dashboard estadístico (Recharts: Tortas y Barras).
-│   │
-│   ├── globals.css                 # Estilos globales y variables de Tailwind/Shadcn.
-│   ├── layout.tsx                  # Root Layout. Envuelve la app (Fuentes, Analytics).
-│   └── page.tsx                    # Dashboard Principal (Accesos directos, Resumen global).
+├── app/                            # App Router (Rutas y Páginas)
+│   │
+│   ├── analisis/
+│   │   └── page.tsx                # **NUEVA PÁGINA:** Dashboard de análisis y tendencias de paciente (Curvas EDSS, cambios DMT, etc.).
+│   │
+│   ├── historias/                  # Módulo de Gestión de Historias Clínicas
+│   │   ├── components/
+│   │   │   └── filtros-avanzados.tsx # Filtros complejos (Patología, Medicamento, Rango Fechas).
+│   │   ├── detalle/
+│   │   │   └── page.tsx            # Vista individual. Botón "Validar" y "Eliminar".
+│   │   ├── editar/
+│   │   │   └── page.tsx            # Formulario de edición. Permite cambiar estado a "Validada".
+│   │   ├── importar/
+│   │   │   └── page.tsx            # UI de subida de archivos (Drag & Drop). Simula proceso NLP.
+│   │   ├── nuevo/
+│   │   │   └── page.tsx            # Creación de historia. Requiere ?pacienteId=...
+│   │   └── page.tsx                # Listado general de historias con búsqueda.
+│   │
+│   ├── pacientes/                  # Módulo de Gestión de Pacientes
+│   │   ├── components/
+│   │   │   ├── filtros.tsx         # Barra de búsqueda y filtros demográficos (Edad, Sexo).
+│   │   │   ├── info-medica.tsx     # Card de resumen (Obra Social, Afiliado).
+│   │   │   ├── info-personal.tsx   # Card de datos filiatorios.
+│   │   │   **└── paciente-selector.tsx # NUEVO COMPONENTE: Tabla reutilizable para seleccionar un paciente de la lista.**
+│   │   │   └── tabla-historias.tsx # Historial médico embebido en el perfil.
+│   │   ├── detalle/
+│   │   │   └── page.tsx            # Perfil 360° del paciente + Línea de tiempo.
+│   │   ├── editar/
+│   │   │   └── page.tsx            # Edición de datos demográficos.
+│   │   ├── nuevo/
+│   │   │   └── page.tsx            # Alta de paciente.
+│   │   └── page.tsx                # Listado maestro de pacientes.
+│   │
+│   ├── reportes/
+│   │   ├── loading.tsx             # Estado de carga para gráficos pesados.
+│   │   └── page.tsx                # **NUEVA PÁGINA :** Dashboard estadístico (Recharts: Tortas y Barras).
+│   │
+│   ├── globals.css                 # Estilos globales y variables de Tailwind/Shadcn.
+│   ├── layout.tsx                  # Root Layout. Envuelve la app (Fuentes, Analytics).
+│   └── page.tsx                    # Dashboard Principal (Accesos directos, Resumen global).
 │
-├── components/                     # Componentes Reutilizables
-│   │
-│   ├── ui/                         # Biblioteca de componentes base (Shadcn/UI)
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   ├── dialog.tsx              # Modales (usado en confirmaciones).
-│   │   ├── table.tsx
-│   │   ├── toast.tsx               # Notificaciones flotantes.
-│   │   └── ... (otros primitivos de UI)
-│   │
-│   ├── medical-layout.tsx          # Shell principal de la App (Sidebar + Header responsive).
-│   └── theme-provider.tsx          # Contexto para modo oscuro/claro.
+├── components/                     # Componentes Reutilizables
+│   │
+│   ├── ui/                         # Biblioteca de componentes base (Shadcn/UI)
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── dialog.tsx              # Modales (usado en confirmaciones).
+│   │   ├── table.tsx
+│   │   ├── toast.tsx               # Notificaciones flotantes.
+│   │   └── ... (otros primitivos de UI)
+│   │
+│   ├── medical-layout.tsx          # Shell principal de la App (Sidebar + Header responsive).
+│   └── theme-provider.tsx          # Contexto para modo oscuro/claro.
 │
-├── hooks/                          # Hooks personalizados de React
-│   ├── use-mobile.ts               # Detección de viewport móvil para el Sidebar.
-│   └── use-toast.ts                # Hook para disparar notificaciones (success/error).
+├── hooks/                          # Hooks personalizados de React
+│   ├── use-mobile.ts               # Detección de viewport móvil para el Sidebar.
+│   **└── use-pacientes-listado.ts**     **# Hook utilizado por paciente-selector.tsx**
+│   └── use-toast.ts                # Hook para disparar notificaciones (success/error).
 │
-├── lib/                            # Lógica de Negocio y Utilidades
-│   │
-│   ├── almacen-datos.ts            # [CRÍTICO] Simulación de Backend/DB (LocalStorage).
-│   │                               # Define interfaces: Paciente, HistoriaClinica.
-│   │                               # Contiene funciones CRUD exportadas.
-│   │
-│   └── utils.ts                    # Helper 'cn' para fusionar clases Tailwind.
+├── lib/                            # Lógica de Negocio y Utilidades
+│   │
+│   ├── almacen-datos.ts            # [CRÍTICO] Simulación de Backend/DB (LocalStorage).
+│   │                               # Define interfaces: Paciente, HistoriaClinica (con nuevos campos).
+│   │                               # Contiene funciones CRUD y ahora **lógica de análisis (obtenerAnalisisDePaciente)** exportadas.
+│   │
+│   └── utils.ts                    # Helper 'cn' para fusionar clases Tailwind.
 │
-├── public/                         # Activos Estáticos
-│   ├── datos-ejemplo.json          # Seed data (Datos semilla) para inicializar la app.
-│   ├── placeholder-user.jpg        # Avatar por defecto.
-│   └── ... (svgs, logos)
+├── public/                         # Activos Estáticos
+│   ├── datos-ejemplo.json          # Seed data (Datos semilla) para inicializar la app.
+│   ├── placeholder-user.jpg        # Avatar por defecto.
+│   └── ... (svgs, logos)
 │
-├── components.json                 # Configuración de Shadcn/UI.
-├── next.config.mjs                 # Configuración de Next.js.
-├── package.json                    # Dependencias (Recharts, Lucide, Hook Form, Zod).
+├── components.json                 # Configuración de Shadcn/UI.
+├── next.config.mjs                 # Configuración de Next.js.
+├── package.json                    # Dependencias (Recharts, Lucide, Hook Form, Zod).
 ├── postcss.config.mjs
-├── tailwind.config.ts              # (Implícito/Integrado) Configuración de estilos.
-└── tsconfig.json                   # Configuración de TypeScript.
-
+├── tailwind.config.ts              # (Implícito/Integrado) Configuración de estilos.
+└── tsconfig.json                   # Configuración de TypeScript.
 
 
 FLUJOS DE UI CLAVE
-1. NAVEGACIÓN PRINCIPAL
-• Componente: components/medical-layout.tsx
+1 NAVEGACIÓN PRINCIPAL 
+• Componente: components/medical-layout.tsx 
 • Lógica: Renderiza el Sidebar lateral en escritorio y un Drawer en móvil. Mantiene el estado activo de la ruta actual.
-2. GESTIÓN DE DATOS (MOCK)
-• Archivo: lib/almacen-datos.ts
+
+2 GESTIÓN DE DATOS (MOCK) 
+• Archivo: lib/almacen-datos.ts 
 • Funcionamiento: Al cargar la app, verifica si hay datos en LocalStorage. Si no, carga public/datos-ejemplo.json. Todas las páginas consumen funciones de este archivo en lugar de hacer fetch real (por ahora).
-3. IMPORTACIÓN DE ARCHIVOS
-• Ruta: app/historias/importar/page.tsx
-• UI: Área de Drag & Drop.
+
+3 IMPORTACIÓN DE ARCHIVOS 
+• Ruta: app/historias/importar/page.tsx 
+• UI: Área de Drag & Drop. 
 • Simulación: Muestra una barra de progreso y al finalizar "extrae" datos hardcodeados para mostrar cómo se vería la respuesta del backend NLP.
+
+4 SELECCIÓN DE PACIENTE 
+• Componente: app/pacientes/components/paciente-selector.tsx 
+• Uso: Componente de lista de pacientes reutilizable que permite seleccionar un paciente. Es utilizado en flujos donde se necesita elegir un paciente (ej. para crear una nueva historia, o en la nueva página /analisis).
 
 
