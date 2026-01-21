@@ -1,5 +1,3 @@
-// frontend/medical-system/app/analisis/page.tsx
-
 "use client"
 
 import { useState, useMemo } from "react"
@@ -12,59 +10,47 @@ import {
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-import { Download, TrendingUp } from 'lucide-react'
+import { Download, TrendingUp, Clock, AlertTriangle, Pill } from 'lucide-react'
 
 import { PacienteListadoSelector } from '@/app/pacientes/components/paciente-selector' 
 
-
-// --- MOCK DE PACIENTES ---
 const pacientesData = [
   {
     id: 1,
     nombre: "Juan García (EMRR - Switch)",
     historias: [
-      { fecha: "2023-01-01", dmt: "Interferón Beta", edss: 2.0, tratamientosSoporte: ["Kinesiología"], tolerancia: true, motivo: "Inicio" },
-      { fecha: "2023-08-15", dmt: "Interferón Beta", edss: 2.5, tratamientosSoporte: ["Kinesiología"], tolerancia: false, motivo: "Intolerancia" },
-      { fecha: "2024-03-20", dmt: "Fingolimod", edss: 2.0, tratamientosSoporte: ["Terapia Cognitiva"], tolerancia: true, motivo: "Switch por Intolerancia Previa" },
+      { fecha: "2022-01-01", dmt: "Interferón Beta", edss: 2.0, tratamientosSoporte: ["Kinesiología"], tolerancia: true, motivo: "Inicio" },
+      { fecha: "2022-06-01", dmt: "Interferón Beta", edss: 2.0, tratamientosSoporte: ["Kinesiología"], tolerancia: false, motivo: "Intolerancia" },
+      { fecha: "2022-07-15", dmt: "Glatiramer", edss: 2.0, tratamientosSoporte: [], tolerancia: true, motivo: "Switch" },
+      // Aquí salta a 2.5 después de probar 2 drogas
+      { fecha: "2023-08-15", dmt: "Fingolimod", edss: 2.5, tratamientosSoporte: ["Kinesiología"], tolerancia: true, motivo: "Progresión" },
+      { fecha: "2024-03-20", dmt: "Fingolimod", edss: 2.5, tratamientosSoporte: ["Terapia Cognitiva"], tolerancia: true, motivo: "Control" },
     ]
   },
   {
     id: 2,
-    nombre: "María López (EMSP - Progresión)",
+    nombre: "María López (EMSP - Progresión Rápida)",
     historias: [
-      { fecha: "2023-02-01", dmt: "Natalizumab", edss: 5.5, tratamientosSoporte: ["Fisioterapia"], tolerancia: true, motivo: "Inicio" },
-      { fecha: "2023-08-01", dmt: "Natalizumab", edss: 6.0, tratamientosSoporte: ["Fisioterapia", "Fonoaudiología"], tolerancia: true, motivo: "Progresión (EDSS 6.0)" },
-      { fecha: "2024-03-01", dmt: "Ocrelizumab", edss: 6.5, tratamientosSoporte: ["Fisioterapia", "Fonoaudiología"], tolerancia: true, motivo: "Switch por Falla Terapéutica" },
-    ]
-  },
-  {
-    id: 3,
-    nombre: "Carlos Rodríguez (EMRR - Estable)",
-    historias: [
-      { fecha: "2023-05-20", dmt: "Teriflunomida", edss: 1.5, tratamientosSoporte: ["Rehabilitación"], tolerancia: true, motivo: "Inicio" },
-      { fecha: "2024-01-10", dmt: "Teriflunomida", edss: 1.5, tratamientosSoporte: ["Rehabilitación"], tolerancia: true, motivo: "Estable" },
+      { fecha: "2023-01-01", dmt: "Natalizumab", edss: 5.0, tratamientosSoporte: ["Fisioterapia"], tolerancia: true, motivo: "Inicio" },
+      { fecha: "2023-06-01", dmt: "Natalizumab", edss: 5.5, tratamientosSoporte: ["Fisioterapia"], tolerancia: true, motivo: "Empeoramiento" },
+      { fecha: "2023-12-01", dmt: "Ocrelizumab", edss: 6.0, tratamientosSoporte: ["Fisioterapia", "Fonoaudiología"], tolerancia: false, motivo: "Falla/Progresión" },
+      { fecha: "2024-03-01", dmt: "Rituximab", edss: 6.5, tratamientosSoporte: ["Silla de ruedas"], tolerancia: true, motivo: "Switch" },
     ]
   },
 ]
 
+// Función auxiliar para diferencia de meses
+function diffMeses(fecha1: Date, fecha2: Date) {
+    let meses = (fecha2.getFullYear() - fecha1.getFullYear()) * 12;
+    meses -= fecha1.getMonth();
+    meses += fecha2.getMonth();
+    return meses <= 0 ? 0 : meses;
+}
 
 export default function AnalisisPage() {
 
   const [pacienteSeleccionado, setPacienteSeleccionado] = useState<number | null>(null)
   
-  const [filtros, setFiltros] = useState({
-    fechaInicio: "",
-    fechaFin: "",
-  })
-
-  const handleFiltroChange = (campo: string, valor: string) => {
-    setFiltros((prev) => ({
-      ...prev,
-      [campo]: valor,
-    }))
-  }
-
-
   // === LÓGICA DE ANÁLISIS ===
   const analisisPaciente = useMemo(() => {
     if (!pacienteSeleccionado) return null
@@ -72,8 +58,10 @@ export default function AnalisisPage() {
     const paciente = pacientesData.find(p => p.id === pacienteSeleccionado)
     if (!paciente) return null
 
-    const historias = paciente.historias.sort((a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime())
+    // Ordenar cronológicamente
+    const historias = [...paciente.historias].sort((a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime())
     
+    // 1. Datos básicos para tabla y gráfico
     const dmtConFechas = historias.map(h => ({
       dmt: h.dmt,
       fecha: new Date(h.fecha).toLocaleDateString('es-AR'),
@@ -88,14 +76,72 @@ export default function AnalisisPage() {
       edss: h.edss,
     }))
 
+    // 2. Cálculo Global
     let cambiosDMT = 0
     let intolerancia = 0
     for (let i = 1; i < historias.length; i++) {
       if (historias[i].dmt !== historias[i - 1].dmt) cambiosDMT++
       if (!historias[i].tolerancia) intolerancia++
     }
+    // Revisar la primera historia también por intolerancia
+    if (!historias[0].tolerancia) intolerancia++;
 
     const tratamientosSoporte = [...new Set(historias.flatMap(h => h.tratamientosSoporte))]
+
+    // 3. NUEVO: Análisis de Intervalos de Progresión (EDSS a EDSS)
+    // Agrupamos los periodos donde el EDSS se mantuvo o cambió
+    const intervalos = [];
+    
+    // Si no hay historias, no hay intervalos
+    if (historias.length > 0) {
+        let edssInicial = historias[0].edss;
+        let fechaInicio = new Date(historias[0].fecha);
+        let dmtsEnIntervalo = new Set([historias[0].dmt]);
+        let intoleranciasEnIntervalo = historias[0].tolerancia ? 0 : 1;
+        
+        for (let i = 1; i < historias.length; i++) {
+            const h = historias[i];
+            const fechaActual = new Date(h.fecha);
+
+            // Si el EDSS cambia, cerramos el intervalo anterior
+            if (h.edss !== edssInicial) {
+                const meses = diffMeses(fechaInicio, fechaActual);
+                intervalos.push({
+                    cambio: `EDSS ${edssInicial} → ${h.edss}`,
+                    tiempo: meses < 1 ? "< 1 mes" : `${meses} meses`,
+                    dmtsUsados: Array.from(dmtsEnIntervalo).join(", "),
+                    cantidadCambios: dmtsEnIntervalo.size > 0 ? dmtsEnIntervalo.size - 1 : 0, // -1 porque 1 es el base
+                    intolerancias: intoleranciasEnIntervalo,
+                    severidad: h.edss > edssInicial ? 'empeoro' : 'mejoro'
+                });
+
+                // Reset para el nuevo intervalo
+                edssInicial = h.edss;
+                fechaInicio = fechaActual;
+                dmtsEnIntervalo = new Set([h.dmt]);
+                intoleranciasEnIntervalo = h.tolerancia ? 0 : 1;
+            } else {
+                // Si el EDSS se mantiene, acumulamos datos del intervalo
+                dmtsEnIntervalo.add(h.dmt);
+                if (!h.tolerancia) intoleranciasEnIntervalo++;
+            }
+        }
+        
+        // Agregamos el intervalo final (hasta el presente/último registro)
+        // Opcional: mostrar "Estable en X desde..."
+        const ultimaFecha = new Date(historias[historias.length-1].fecha);
+        const mesesFinales = diffMeses(fechaInicio, ultimaFecha);
+        if (mesesFinales > 0) {
+             intervalos.push({
+                cambio: `Estable en EDSS ${edssInicial}`,
+                tiempo: `${mesesFinales} meses (actual)`,
+                dmtsUsados: Array.from(dmtsEnIntervalo).join(", "),
+                cantidadCambios: dmtsEnIntervalo.size > 0 ? dmtsEnIntervalo.size - 1 : 0,
+                intolerancias: intoleranciasEnIntervalo,
+                severidad: 'neutral'
+            });
+        }
+    }
 
     return {
       dmtConFechas,
@@ -103,6 +149,7 @@ export default function AnalisisPage() {
       cambiosDMT,
       intolerancia,
       tratamientosSoporte,
+      intervalos, // <--- Dato nuevo
       totalHistorias: historias.length
     }
   }, [pacienteSeleccionado])
@@ -207,7 +254,7 @@ export default function AnalisisPage() {
                   <Card>
                     <CardHeader>
                       <CardTitle className="text-lg flex items-center gap-2">
-                        <TrendingUp className="h-4 w-4" /> Progresión EDSS
+                        <TrendingUp className="h-4 w-4" /> Curva de Discapacidad (EDSS)
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -216,20 +263,85 @@ export default function AnalisisPage() {
                           <LineChart data={analisisPaciente.progresionEDSS}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="fecha" />
-                            <YAxis domain={[0, 7]} />
+                            <YAxis domain={[0, 10]} ticks={[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]} />
                             <Tooltip />
-                            <Line type="monotone" dataKey="edss" stroke="#0ea5e9" strokeWidth={2} />
+                            <Line type="stepAfter" dataKey="edss" stroke="#0ea5e9" strokeWidth={3} dot={{r: 4}} />
                           </LineChart>
                         </ResponsiveContainer>
                       </div>
                     </CardContent>
                   </Card>
 
+                  {/* NUEVA SECCIÓN: ANÁLISIS DE INTERVALOS (Lo que pediste) */}
+                  <Card className="border-l-4 border-l-blue-500">
+                    <CardHeader>
+                        <CardTitle className="text-lg flex items-center gap-2">
+                            <Clock className="h-5 w-5" /> Análisis de Intervalos (Hitos EDSS)
+                        </CardTitle>
+                        <p className="text-sm text-muted-foreground">
+                            Detalle de tiempo, medicación e intolerancias entre cambios de discapacidad.
+                        </p>
+                    </CardHeader>
+                    <CardContent>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Cambio EDSS</TableHead>
+                                    <TableHead>Tiempo Transcurrido</TableHead>
+                                    <TableHead>Medicamentos en el lapso</TableHead>
+                                    <TableHead className="text-center">Intolerancias</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {analisisPaciente.intervalos.length === 0 ? (
+                                    <TableRow>
+                                        <TableCell colSpan={4} className="text-center text-muted-foreground">
+                                            No hay suficientes datos para calcular intervalos de progresión.
+                                        </TableCell>
+                                    </TableRow>
+                                ) : (
+                                    analisisPaciente.intervalos.map((intervalo, idx) => (
+                                        <TableRow key={idx}>
+                                            <TableCell className="font-bold">
+                                                <div className="flex items-center gap-2">
+                                                    {intervalo.severidad === 'empeoro' && <TrendingUp className="h-4 w-4 text-red-500" />}
+                                                    {intervalo.severidad === 'mejoro' && <TrendingUp className="h-4 w-4 text-green-500 rotate-180" />}
+                                                    {intervalo.cambio}
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>{intervalo.tiempo}</TableCell>
+                                            <TableCell>
+                                                <div className="flex flex-col gap-1">
+                                                    <span className="text-sm">{intervalo.dmtsUsados}</span>
+                                                    {intervalo.cantidadCambios > 0 && (
+                                                        <span className="text-xs text-orange-600 bg-orange-100 px-2 py-0.5 rounded w-fit">
+                                                            {intervalo.cantidadCambios} cambio(s)
+                                                        </span>
+                                                    )}
+                                                </div>
+                                            </TableCell>
+                                            <TableCell className="text-center">
+                                                {intervalo.intolerancias > 0 ? (
+                                                    <div className="flex items-center justify-center gap-1 text-red-600 font-medium">
+                                                        <AlertTriangle className="h-4 w-4" />
+                                                        {intervalo.intolerancias}
+                                                    </div>
+                                                ) : (
+                                                    <span className="text-muted-foreground">-</span>
+                                                )}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))
+                                )}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                  </Card>
 
-                  {/* TABLA DE HISTÓRICO DE DMT */}
+                  {/* TABLA DE HISTÓRICO RAW (DMT) */}
                   <Card>
                     <CardHeader>
-                      <CardTitle className="text-lg">Histórico de Terapias DMT</CardTitle>
+                      <CardTitle className="text-lg flex items-center gap-2"><Pill className="h-5 w-5"/> Histórico Detallado de Terapias</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="overflow-x-auto">
@@ -273,7 +385,7 @@ export default function AnalisisPage() {
                   {analisisPaciente.tratamientosSoporte.length > 0 && (
                     <Card>
                       <CardHeader>
-                        <CardTitle className="text-lg">Tratamientos de Soporte</CardTitle>
+                        <CardTitle className="text-lg">Tratamientos de Soporte Recibidos</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="flex flex-wrap gap-2">
