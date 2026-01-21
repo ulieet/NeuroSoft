@@ -1,4 +1,3 @@
-// frontend/medical-system/app/pacientes/components/paciente-selector.tsx
 
 "use client"
 

@@ -135,12 +135,6 @@ function PaginaDetallePaciente() {
               DNI: {paciente.dni} • Registrado el {new Date(paciente.fechaRegistro).toLocaleDateString("es-AR")}
             </p>
           </div>
-          <Button asChild>
-            <a href={`/pacientes/editar?id=${paciente.id}`}>
-              <Edit className="mr-2 h-4 w-4" />
-              Editar
-            </a>
-          </Button>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -262,12 +256,6 @@ function PaginaDetallePaciente() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button className="w-full" asChild>
-                  <a href="/historias/importar">
-                    <Plus className="mr-2 h-4 w-4" />
-                    Importar Historia
-                  </a>
-                </Button>
-                <Button className="w-full" variant="outline" asChild>
                   <a href={`/historias/nuevo?pacienteId=${paciente.id}`}>
                     <Plus className="mr-2 h-4 w-4" />
                     Crear Historia de Cero
@@ -280,7 +268,6 @@ function PaginaDetallePaciente() {
                   </a>
                 </Button>
                 
-                {/* --- 7. BOTÓN DE ELIMINAR PACIENTE --- */}
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <Button variant="destructive" className="w-full">
