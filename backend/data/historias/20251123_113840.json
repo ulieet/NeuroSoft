@@ -1,12 +1,12 @@
 {
-  "id": "20251113_202104",
+  "id": "20251123_113840",
   "estado": "pendiente_validacion",
   "dedup_key": "F:2025-10-30|DX:guillain barre faringo branquial|H:66b53765c9dbd9a4285581546e9ad1a8cf70e0dbade0a6379a0c744d5cbd6827",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "DOCX",
-      "nombre_archivo": "uploads\\historia_20251113_202104.docx"
+      "nombre_archivo": "uploads\\historia_20251123_113840.docx"
     },
     "paciente": {
       "nombre": "Julián García",

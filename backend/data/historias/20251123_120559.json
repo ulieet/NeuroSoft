@@ -1,16 +1,16 @@
 {
-  "id": "20251112_204141",
+  "id": "20251123_120559",
   "estado": "pendiente_validacion",
   "dedup_key": "F:2020-11-16|DX:esclerosis múltiple|H:acd9fbb320a6703267a3c689649dfaa703e170f70f9902b4c18a6d934fdc3300",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "PDF",
-      "nombre_archivo": "uploads\\historia_20251112_204141.pdf"
+      "nombre_archivo": "uploads\\historia_20251123_120559.pdf"
     },
     "paciente": {
-      "nombre": null,
-      "dni": ""
+      "nombre": "DNI:                              Fecha de Nacimiento: 02/02/92",
+      "dni": null
     },
     "consulta": {
       "fecha": "2020-11-16",
@@ -34,14 +34,17 @@
           "fecha": "2017-03-23",
           "actividad": null,
           "gd": null,
-          "regiones": []
+          "regiones": [
+            "supratentorial"
+          ]
         },
         {
           "fecha": "2019-03-26",
           "actividad": null,
           "gd": null,
           "regiones": [
-            "infratentorial"
+            "infratentorial",
+            "supratentorial"
           ]
         },
         {
@@ -61,7 +64,10 @@
         "comercial": null,
         "molecula": "Interferón beta-1a",
         "inicio": null,
-        "estado": "Activo"
+        "estado": "Activo",
+        "dosis": null,
+        "via": null,
+        "frecuencia": null
       }
     ],
     "episodios": [],

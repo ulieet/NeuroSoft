@@ -1,12 +1,12 @@
 {
-  "id": "20251113_121650",
+  "id": "20251123_114656",
   "estado": "pendiente_validacion",
   "dedup_key": "F:2024-09-20|DX:fibrilación auricular paroxística (i48.0) en paciente sin cardiopatía estructural significativa.|H:ffd2ec8c328df929ab4d7c5781708fbc9222221964348c14b7dcb125c400cc58",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "DOCX",
-      "nombre_archivo": "uploads\\historia_20251113_121650.docx"
+      "nombre_archivo": "uploads\\historia_20251123_114656.docx"
     },
     "paciente": {
       "nombre": null,
@@ -37,7 +37,7 @@
         "estado": "Activo",
         "dosis": "5 mg",
         "via": null,
-        "frecuencia": null
+        "frecuencia": "1 comprimido cada 12 h"
       }
     ],
     "episodios": [],

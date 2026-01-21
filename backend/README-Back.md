@@ -6,6 +6,14 @@ Proyecto Seminario – Grupo 21
 
 ---
 
+Quick start
+-----------
+1. cd backend
+2. python -m venv venv && source venv/bin/activate
+3. pip install -r requirements.txt
+4. uvicorn app.main:app --reload --port 8000
+
+
 ## 📌 Descripción General
 
 Este backend implementa la **Fase 4** del proyecto Seminario (Grupo 21), específicamente el **módulo de Historias Clínicas**, que incluye:
@@ -106,6 +114,8 @@ Pasa el documento a nlp_service.process()
 Genera un borrador clínico estructurado
 
 Calcula una huella clínica (dedup_key)
+
+La dedup_key combina DNI del paciente + fecha de consulta; si una nueva importación tiene la misma huella clínica, se devuelve HTTP 409 “Historia duplicada”.
 
 Guarda la historia en data/historias/{id}.json
 
@@ -347,15 +357,19 @@ Trabajar sin BD mientras dura el proyecto Seminario.
 Migrar fácilmente a una BD real en una fase futura.
 
 ✔ Estado de Implementación – Fase 4
-Fase	Estado	Detalles
-4.1	✅ Listo	Importación de PDF/DOCX, guardado en uploads/
-4.2	✅ Listo	Módulo de IA/NLP basado en reglas, validado con casos reales (EM + FA)
-4.3	✅ Backend listo	Endpoints y persistencia de validación
-4.3	⏳ Frontend pendiente	Falta pantalla React de revisión/edición
-4.4	⏳ Próximo	Motor clínico avanzado (tendencias, actividad, progresión)
-4.5	❌ No iniciado	Reportes (gráficos, estadísticas, exportaciones)
-4.6	❌ No iniciado	Anonimización
-4.7	❌ No iniciado	Filtros avanzados / exploración de cohortes
+-----------------------------------
+
+Fase | Estado | Detalles
+---- | ------ | --------
+4.1 | ✅ Listo | Importación de PDF/DOCX, guardado en `uploads/`.
+4.2 | ✅ Listo | Módulo de IA/NLP basado en reglas, validado con casos reales (EM + FA).
+4.3 | ✅ Backend listo | Endpoints de listado, borrador y validación + persistencia en `data/historias/{id}.json`.
+4.3 | ✅ Frontend integrado | Pantallas React de importación, listado y validación (`/historias/importar`, `/historias`, `/historias/validar`) consumen estos endpoints.
+4.4 | ⏳ Próximo | Motor clínico avanzado (tendencias, actividad, progresión).
+4.5 | ❌ No iniciado | Reportes (gráficos, estadísticas, exportaciones).
+4.6 | ❌ No iniciado | Anonimización.
+4.7 | ❌ No iniciado | Filtros avanzados / exploración de cohortes.
+
 
 🧪 Pruebas
 Swagger / OpenAPI disponible en:
@@ -372,6 +386,35 @@ Ver el borrador generado (GET /historias/{id}/borrador)
 Validar historias (PATCH /historias/{id}/validacion)
 
 Ver deduplicación en acción (subiendo la misma historia más de una vez)
+
+🔗 Integración actual con el frontend NeuroClinic (Next.js)
+----------------------------------------------------------
+
+El backend ya está integrado con el frontend `frontend/medical-system` (proyecto NeuroClinic) para la Fase 4 del Seminario:
+
+- `POST /importaciones/historias`
+  - Consumido por `app/historias/importar/page.tsx`.
+  - La pantalla permite subir varios archivos o carpetas completas y, por cada documento:
+    - muestra el estado del procesamiento,
+    - enseña un resumen del borrador IA (paciente, fecha, diagnóstico, forma),
+    - maneja el código `409 Conflict` como **“Historia duplicada”** sin exponer detalles técnicos al usuario.
+
+- `GET /historias`
+  - Consumido por `app/historias/page.tsx`.
+  - La tabla de Historias Clínicas se alimenta de este endpoint (no de mocks) y muestra:
+    - ID, diagnóstico, forma clínica, fecha de consulta,
+    - estado (`pendiente_validacion` | `validada`).
+
+- `GET /historias/{id}/borrador`
+  - Consumido por `app/historias/validar/page.tsx`.
+  - Precarga los campos del formulario de validación con lo que extrajo el motor de IA.
+
+- `PATCH /historias/{id}/validacion`
+  - También consumido por `app/historias/validar/page.tsx`.
+  - Recibe los datos corregidos por el profesional y actualiza `data/historias/{id}.json`, cambiando:
+    - `"estado": "pendiente_validacion"` → `"estado": "validada"`,
+    - rellenando el bloque `"validada": { ... }` con la versión revisada.
+
 
 🛠 Instalación y ejecución
 Requerimientos

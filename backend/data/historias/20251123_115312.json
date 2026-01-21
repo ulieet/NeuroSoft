@@ -1,12 +1,12 @@
 {
-  "id": "20251113_004445",
-  "estado": "pendiente_validacion",
+  "id": "20251123_115312",
+  "estado": "validada",
   "dedup_key": "DNI:31998442|F:2021-08-03",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "DOCX",
-      "nombre_archivo": "uploads\\historia_20251113_004445.docx"
+      "nombre_archivo": "uploads\\historia_20251123_115312.docx"
     },
     "paciente": {
       "nombre": "Pérez, Mariana Soledad",
@@ -76,5 +76,18 @@
       "puncion_lumbar": "Alta"
     }
   },
-  "validada": null
+  "validada": {
+    "paciente": {
+      "nombre": "Pérez, Mariana Soledad",
+      "dni": "31998442"
+    },
+    "consulta": {
+      "fecha": "2021-08-03"
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis múltiple",
+      "forma": "RR"
+    },
+    "estado": "validada"
+  }
 }

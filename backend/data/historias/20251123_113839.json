@@ -1,12 +1,12 @@
 {
-  "id": "20251113_184409",
-  "estado": "pendiente_validacion",
+  "id": "20251123_113839",
+  "estado": "validada",
   "dedup_key": "DNI:27552908|F:2022-03-22",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "PDF",
-      "nombre_archivo": "uploads\\historia_20251113_184409.pdf"
+      "nombre_archivo": "uploads\\historia_20251123_113839.pdf"
     },
     "paciente": {
       "nombre": "Ramírez, Carlos Esteban",
@@ -73,5 +73,16 @@
       "puncion_lumbar": "Alta"
     }
   },
-  "validada": null
+  "validada": {
+    "paciente": {
+      "nombre": "Ramírez, Carlos Esteban",
+      "dni": "27552908"
+    },
+    "consulta": {
+      "fecha": "2022-03-22"
+    },
+    "diagnostico": "Esclerosis múltiple",
+    "forma": null,
+    "observaciones": null
+  }
 }
