@@ -42,10 +42,7 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                 <h3 className="text-lg font-semibold text-muted-foreground">
                     Búsqueda y Selección de Paciente
                 </h3>
-                <Button variant="outline" onClick={cargarPacientes} disabled={estaCargando}>
-                    <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
-                    Refrescar
-                </Button>
+            
             </div>
             
             <BarraBusquedaFiltros
@@ -63,7 +60,7 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                 <CardHeader>
                     <CardTitle>Lista de Pacientes</CardTitle>
                     <CardDescription>
-                        {pacientesFiltrados.length} pacientes encontrados. **Haga click en la fila para seleccionar.**
+                        {pacientesFiltrados.length} pacientes encontrados.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -74,7 +71,6 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                                     <TableHead>Apellido y Nombre (DNI)</TableHead>
                                     <TableHead>Obra Social</TableHead>
                                     <TableHead className="text-right">Historias</TableHead> 
-                                    <TableHead className="text-right">Selección</TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody>

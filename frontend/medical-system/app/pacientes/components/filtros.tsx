@@ -106,7 +106,6 @@ export function BarraBusquedaFiltros({
               </Select>
             </div>
             
-            {/* Filtro Sexo */}
             <div className="space-y-2">
               <Label htmlFor="filtro-sexo">Sexo</Label>
               <Select

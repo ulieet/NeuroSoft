@@ -306,7 +306,6 @@ export default function PaginaHistorias() {
               Refrescar
             </Button>
             
-            {/* 🔹 Botón Importar con color estándar (Azul Marino / Default) */}
             <Button 
               asChild 
               variant="default" 
@@ -441,9 +440,7 @@ export default function PaginaHistorias() {
           </CardContent>
         </Card>
 
-        {/* 🔹 Tarjeta Principal de la Lista */}
         <Card>
-          {/* 🔹 MODIFICADO: Header ahora contiene el título Y el botón de Validar Todas */}
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
             <div className="space-y-1">
               <CardTitle>Lista de Historias Clínicas</CardTitle>
@@ -452,9 +449,8 @@ export default function PaginaHistorias() {
               </CardDescription>
             </div>
 
-            {/* 🔹 Botón movido aquí: Validar Todas */}
             <Button 
-              variant="default" // Color estándar (azul marino)
+              variant="default" 
               size="sm"
               onClick={manejarValidarTodas}
               disabled={estaCargando || procesandoValidacion || totalPendientes === 0}
@@ -515,7 +511,7 @@ export default function PaginaHistorias() {
                             {h.fecha_consulta
                               ? new Date(
                                   h.fecha_consulta
-                                ).toLocaleDateString("es-AR", {timeZone: 'UTC'}) // Forzar UTC para visualización correcta
+                                ).toLocaleDateString("es-AR", {timeZone: 'UTC'}) 
                               : "—"}
                           </div>
                         </TableCell>

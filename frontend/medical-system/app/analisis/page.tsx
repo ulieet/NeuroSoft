@@ -10,10 +10,11 @@ import {
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-import { Download, TrendingUp, Clock, AlertTriangle, Pill } from 'lucide-react'
+import { Download, TrendingUp, Clock, AlertTriangle, Pill, ArrowLeft, Search } from 'lucide-react'
 
 import { PacienteListadoSelector } from '@/app/pacientes/components/paciente-selector' 
 
+// Datos Mockeados
 const pacientesData = [
   {
     id: 1,
@@ -38,7 +39,6 @@ const pacientesData = [
   },
 ]
 
-// Función auxiliar para diferencia de meses
 function diffMeses(fecha1: Date, fecha2: Date) {
     let meses = (fecha2.getFullYear() - fecha1.getFullYear()) * 12;
     meses -= fecha1.getMonth();
@@ -50,17 +50,18 @@ export default function AnalisisPage() {
 
   const [pacienteSeleccionado, setPacienteSeleccionado] = useState<number | null>(null)
   
+  // 1. Buscamos el objeto paciente por separado
+  const pacienteObj = useMemo(() => {
+    return pacientesData.find(p => p.id === pacienteSeleccionado)
+  }, [pacienteSeleccionado])
+
   // === LÓGICA DE ANÁLISIS ===
   const analisisPaciente = useMemo(() => {
-    if (!pacienteSeleccionado) return null
-    
-    const paciente = pacientesData.find(p => p.id === pacienteSeleccionado)
-    if (!paciente) return null
+    if (!pacienteObj) return null
 
     // Ordenar cronológicamente
-    const historias = [...paciente.historias].sort((a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime())
+    const historias = [...pacienteObj.historias].sort((a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime())
     
-    // 1. Datos básicos para tabla y gráfico
     const dmtConFechas = historias.map(h => ({
       dmt: h.dmt,
       fecha: new Date(h.fecha).toLocaleDateString('es-AR'),
@@ -75,23 +76,17 @@ export default function AnalisisPage() {
       edss: h.edss,
     }))
 
-    // 2. Cálculo Global
     let cambiosDMT = 0
     let intolerancia = 0
     for (let i = 1; i < historias.length; i++) {
       if (historias[i].dmt !== historias[i - 1].dmt) cambiosDMT++
       if (!historias[i].tolerancia) intolerancia++
     }
-    // Revisar la primera historia también por intolerancia
-    if (!historias[0].tolerancia) intolerancia++;
+    if (historias.length > 0 && !historias[0].tolerancia) intolerancia++;
 
     const tratamientosSoporte = [...new Set(historias.flatMap(h => h.tratamientosSoporte))]
 
-    // 3. NUEVO: Análisis de Intervalos de Progresión (EDSS a EDSS)
-    // Agrupamos los periodos donde el EDSS se mantuvo o cambió
     const intervalos = [];
-    
-    // Si no hay historias, no hay intervalos
     if (historias.length > 0) {
         let edssInicial = historias[0].edss;
         let fechaInicio = new Date(historias[0].fecha);
@@ -102,32 +97,27 @@ export default function AnalisisPage() {
             const h = historias[i];
             const fechaActual = new Date(h.fecha);
 
-            // Si el EDSS cambia, cerramos el intervalo anterior
             if (h.edss !== edssInicial) {
                 const meses = diffMeses(fechaInicio, fechaActual);
                 intervalos.push({
                     cambio: `EDSS ${edssInicial} → ${h.edss}`,
                     tiempo: meses < 1 ? "< 1 mes" : `${meses} meses`,
                     dmtsUsados: Array.from(dmtsEnIntervalo).join(", "),
-                    cantidadCambios: dmtsEnIntervalo.size > 0 ? dmtsEnIntervalo.size - 1 : 0, // -1 porque 1 es el base
+                    cantidadCambios: dmtsEnIntervalo.size > 0 ? dmtsEnIntervalo.size - 1 : 0,
                     intolerancias: intoleranciasEnIntervalo,
                     severidad: h.edss > edssInicial ? 'empeoro' : 'mejoro'
                 });
 
-                // Reset para el nuevo intervalo
                 edssInicial = h.edss;
                 fechaInicio = fechaActual;
                 dmtsEnIntervalo = new Set([h.dmt]);
                 intoleranciasEnIntervalo = h.tolerancia ? 0 : 1;
             } else {
-                // Si el EDSS se mantiene, acumulamos datos del intervalo
                 dmtsEnIntervalo.add(h.dmt);
                 if (!h.tolerancia) intoleranciasEnIntervalo++;
             }
         }
         
-        // Agregamos el intervalo final (hasta el presente/último registro)
-        // Opcional: mostrar "Estable en X desde..."
         const ultimaFecha = new Date(historias[historias.length-1].fecha);
         const mesesFinales = diffMeses(fechaInicio, ultimaFecha);
         if (mesesFinales > 0) {
@@ -148,14 +138,14 @@ export default function AnalisisPage() {
       cambiosDMT,
       intolerancia,
       tratamientosSoporte,
-      intervalos, // <--- Dato nuevo
+      intervalos,
       totalHistorias: historias.length
     }
-  }, [pacienteSeleccionado])
+  }, [pacienteObj])
 
 
   const exportarReporte = (formato: string) => {
-    console.log(`Exportando reporte individual en formato ${formato}`)
+    alert(`Exportando reporte individual en formato ${formato}...`)
   }
 
 
@@ -163,55 +153,84 @@ export default function AnalisisPage() {
     <MedicalLayout currentPage="analisis">
       <div className="space-y-8">
         
-        <div>
-          <h1 className="text-3xl font-bold">Análisis de Progresión por Paciente</h1>
-          <p className="text-muted-foreground mt-2">
-            Seguimiento individual de la progresión EDSS, cambios de terapias y tratamientos de soporte.
-          </p>
-        </div>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Opciones de Reporte</CardTitle>
-          </CardHeader>
-          <CardContent>
-          
-            <div className="mt-4 flex gap-2">
-              <Button onClick={() => exportarReporte("pdf")} disabled={!analisisPaciente}>
-                <Download className="mr-2 h-4 w-4" />
-                Exportar PDF individual
+        {/* --- CABECERA --- */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-4">
+            
+            {/* Flecha Volver: Solo si hay selección */}
+            {pacienteSeleccionado && (
+              <Button variant="ghost" size="icon" onClick={() => setPacienteSeleccionado(null)}>
+                <ArrowLeft className="h-5 w-5" />
               </Button>
+            )}
+
+            <div>
+              <h1 className="text-3xl font-bold">Análisis de Progresión por Paciente</h1>
+              <p className="text-muted-foreground mt-2">
+                {pacienteSeleccionado 
+                  ? (pacienteObj 
+                      ? `Análisis clínico de ${pacienteObj.nombre}`
+                      : "Paciente no encontrado"
+                    )
+                  : "Seguimiento individual de la progresión EDSS, cambios de terapias y tratamientos de soporte."
+                }
+              </p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
 
-
+          {/* 🔹 BOTÓN EXPORTAR: Ahora usa variant="default" (Azul Marino) */}
+          {pacienteSeleccionado && analisisPaciente && (
+            <Button variant="default" onClick={() => exportarReporte("pdf")}>
+              <Download className="mr-2 h-4 w-4" />
+              Exportar PDF individual
+            </Button>
+          )}
+        </div>
+        
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold">Análisis Individualizado</h2>
-
+          
           {!pacienteSeleccionado ? (
             
-            <PacienteListadoSelector
-              onSelectPaciente={setPacienteSeleccionado}
-              selectedPacienteId={pacienteSeleccionado}
-            />
+            // 1. VISTA: SELECTOR DE PACIENTE
+            <Card>
+                <CardHeader>
+                    <CardTitle>Búsqueda de Paciente</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <PacienteListadoSelector
+                        onSelectPaciente={setPacienteSeleccionado}
+                        selectedPacienteId={pacienteSeleccionado}
+                    />
+                </CardContent>
+            </Card>
+
+          ) : !analisisPaciente ? (
+
+            // 2. VISTA: NO ENCONTRADO
+            <Card className="border-l-4 border-l-yellow-500 bg-yellow-50/50">
+              <CardContent className="flex flex-col items-center justify-center py-12 space-y-4">
+                <div className="bg-yellow-100 p-3 rounded-full">
+                  <Search className="h-8 w-8 text-yellow-600" />
+                </div>
+                <div className="text-center space-y-1">
+                  <h3 className="text-xl font-semibold text-gray-900">No se encontraron datos</h3>
+                  <p className="text-muted-foreground max-w-md mx-auto">
+                    No pudimos encontrar registros de análisis para el paciente seleccionado o el ID no es válido.
+                  </p>
+                </div>
+                <Button 
+                  onClick={() => setPacienteSeleccionado(null)}
+                  className="mt-4"
+                >
+                  Volver a la búsqueda
+                </Button>
+              </CardContent>
+            </Card>
 
           ) : (
-            <div className="space-y-6">
-              <h3 className="text-xl font-bold">
-                Detalles para {pacientesData.find(p => p.id === pacienteSeleccionado)?.nombre}
-              </h3>
-
-              <Button 
-                variant="outline"
-                onClick={() => setPacienteSeleccionado(null)}
-              >
-                 Seleccionar Otro Paciente
-              </Button>
-
-              {analisisPaciente && (
-                <>
-
+            // 3. VISTA: DASHBOARD DE ANÁLISIS
+            <div className="space-y-6 animate-in fade-in duration-500">
+              
                   {/* TARJETAS RESUMEN */}
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                     <Card>
@@ -271,7 +290,7 @@ export default function AnalisisPage() {
                     </CardContent>
                   </Card>
 
-                  {/* NUEVA SECCIÓN: ANÁLISIS DE INTERVALOS (Lo que pediste) */}
+                  {/* ANÁLISIS DE INTERVALOS */}
                   <Card className="border-l-4 border-l-blue-500">
                     <CardHeader>
                         <CardTitle className="text-lg flex items-center gap-2">
@@ -400,9 +419,6 @@ export default function AnalisisPage() {
                       </CardContent>
                     </Card>
                   )}
-
-                </>
-              )}
 
             </div>
           )}
