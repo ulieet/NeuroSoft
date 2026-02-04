@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, Suspense } from "react"
-import { useSearchParams, useRouter } from "next/navigation" // <-- 1. Importar useRouter
+import { useSearchParams, useRouter } from "next/navigation"
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -11,9 +11,7 @@ import { Separator } from "@/components/ui/separator"
 import { 
   ArrowLeft, 
   Edit, 
-  FileText, 
   User, 
-  Calendar, 
   RefreshCw, 
   Stethoscope, 
   ClipboardList, 
@@ -23,10 +21,9 @@ import {
   TrendingUp,     
   FileDown,       
   Check,
-  Trash // <-- 2. Importar Trash
+  Trash 
 } from "lucide-react"
 
-// 3. Importar AlertDialog
 import {
   AlertDialog,
   AlertDialogAction,
@@ -39,25 +36,20 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
-// Importaciones del almacén de datos
 import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
   obtenerEdadPaciente,
   eliminarHistoriaClinica,
-  modificarHistoriaClinica, // <-- NUEVA IMPORTACIÓN
+  modificarHistoriaClinica,
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
 
-/**
- * Calcula la diferencia de años entre dos fechas.
- * Si la fechaFin no se provee, usa la fecha actual (hoy).
- */
 function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
   if (!fechaInicioStr) return 0;
   const fechaInicio = new Date(fechaInicioStr);
-  const fechaFin = fechaFinStr ? new Date(fechaFinStr) : new Date(); // Hoy por defecto
+  const fechaFin = fechaFinStr ? new Date(fechaFinStr) : new Date(); 
   
   let anios = fechaFin.getFullYear() - fechaInicio.getFullYear();
   const mes = fechaFin.getMonth() - fechaInicio.getMonth();
@@ -67,7 +59,6 @@ function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
   return anios > 0 ? anios : 0;
 }
 
-// --- Helpers para Badges ---
 const getEstadoBadge = (estado: string) => {
   switch (estado) {
     case "validada": return <Badge className="bg-green-100 text-green-800 border-green-200"><Check className="w-3 h-3 mr-1" />Validada</Badge>
@@ -92,18 +83,15 @@ const getBadgeSiNo = (valor?: boolean) => {
     : <Badge variant="outline">No</Badge>
 }
 
-// --- Componente de la Página ---
-
 function PaginaDetalleHistoria() {
   const searchParams = useSearchParams()
-  const router = useRouter() // <-- 5. Inicializar router
+  const router = useRouter()
   const historiaId = Number(searchParams.get("id"))
 
   const [historia, setHistoria] = useState<HistoriaClinica | null>(null)
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
 
-  // --- Carga de Datos ---
   useEffect(() => {
     if (!historiaId) {
       setEstaCargando(false)
@@ -126,33 +114,26 @@ function PaginaDetalleHistoria() {
     cargarDatos()
   }, [historiaId])
 
-  // --- 6. Handler para eliminar ---
   const handleEliminarHistoria = () => {
     if (!historia || !paciente) return
     try {
       eliminarHistoriaClinica(historia.id)
       alert("Historia clínica eliminada.")
-      // Volvemos al perfil del paciente
-      router.push(`/pacientes/detalle?id=${paciente.id}`)
+      router.push(`/historias`) 
     } catch (error) {
       console.error(error)
       alert("Error al eliminar la historia.")
     }
   }
 
-  // --- 8. Handler para validar ---
   const handleValidarHistoria = () => {
     if (!historia) return;
-
-    // Creamos el objeto actualizado
     const historiaValidada = {
       ...historia,
-      estado: "validada" as "validada", // Forzamos el tipo
+      estado: "validada" as "validada",
     };
-
     try {
       modificarHistoriaClinica(historia.id, historiaValidada);
-      // Actualizamos el estado local para que la UI reaccione
       setHistoria(historiaValidada);
       alert("Historia validada con éxito.");
     } catch (error) {
@@ -161,8 +142,6 @@ function PaginaDetalleHistoria() {
     }
   }
 
-
-  // --- Cálculos Derivados (basados en los requisitos del PDF) ---
   const edadInicioSintomas = (paciente && historia?.fechaInicioEnfermedad)
     ? calcularAnios(paciente.fechaNacimiento, historia.fechaInicioEnfermedad)
     : null
@@ -171,7 +150,6 @@ function PaginaDetalleHistoria() {
     ? calcularAnios(historia.fechaInicioEnfermedad)
     : null
 
-  // --- Renderizado de Carga y Error ---
   if (estaCargando) {
      return (
        <MedicalLayout currentPage="historias">
@@ -206,7 +184,6 @@ function PaginaDetalleHistoria() {
     )
   }
 
-  // --- Renderizado Principal ---
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
@@ -214,8 +191,7 @@ function PaginaDetalleHistoria() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
-              {/* Botón para volver al perfil del paciente */}
-              <a href={`/pacientes/detalle?id=${paciente.id}`}> 
+              <a href="/historias"> 
                 <ArrowLeft className="h-4 w-4" />
               </a>
             </Button>
@@ -231,17 +207,15 @@ function PaginaDetalleHistoria() {
               </p>
             </div>
           </div>
-          {/* --- 7. BOTONES DE ACCIÓN (MODIFICADO) --- */}
-          <div className="flex flex-wrap gap-2"> {/* flex-wrap para responsive */}
+          
+          <div className="flex flex-wrap gap-2"> 
             
-            {/* --- BOTÓN DE VALIDAR MODIFICADO --- */}
             {historia.estado === "pendiente" && (
               <Button onClick={handleValidarHistoria}>
                 <Check className="mr-2 h-4 w-4" />
                 Validar Historia
               </Button>
             )}
-            {/* --- FIN DE MODIFICACIÓN --- */}
 
             <Button variant="outline" asChild>
               <a href={`/historias/editar?id=${historia.id}`}>
@@ -254,7 +228,6 @@ function PaginaDetalleHistoria() {
               Exportar
             </Button>
 
-            {/* --- BOTÓN DE ELIMINAR HISTORIA --- */}
             <AlertDialog>
               <AlertDialogTrigger asChild>
                 <Button variant="destructive" size="sm">
@@ -279,41 +252,38 @@ function PaginaDetalleHistoria() {
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
-            {/* --- FIN DEL BOTÓN --- */}
 
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           
-          {/* --- Columna Principal (Orden del PDF) --- */}
+          {/* --- Columna Principal (Izquierda) --- */}
           <div className="lg:col-span-2 space-y-6">
             
-            {/* Card: Datos Principales */}
+            {/* 🔹 MOVIDO AQUÍ: Card Paciente */}
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Stethoscope className="h-5 w-5" />
-                  Datos de la Consulta
-                </CardTitle>
+                <CardTitle>Paciente</CardTitle>
               </CardHeader>
-              <CardContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Médico</p>
-                  <p className="text-base">{historia.medico}</p>
+              <CardContent className="space-y-3">
+                <div className="font-semibold">{paciente.apellido}, {paciente.nombre}</div>
+                <div className="text-sm text-muted-foreground">
+                  <span className="font-mono">{paciente.dni}</span> • {obtenerEdadPaciente(paciente.fechaNacimiento)} años
                 </div>
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Estado</p>
-                  {getEstadoBadge(historia.estado)}
+                 <div className="text-sm text-muted-foreground">
+                  {paciente.obraSocial} • Afiliado: {paciente.numeroAfiliado || "N/A"}
                 </div>
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Nivel Criticidad</p>
-                  {getCriticidadBadge(historia.nivelCriticidad)}
-                </div>
+                <Button variant="outline" className="w-full sm:w-auto" asChild>
+                  <a href={`/pacientes/detalle?id=${paciente.id}`}>
+                    <User className="mr-2 h-4 w-4" />
+                    Ver Perfil Completo
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
-            {/* Card: Síntomas y Evolución (del PDF) */}
+            {/* Card: Síntomas y Evolución */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -344,7 +314,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Estudios Realizados (del PDF) */}
+            {/* Card: Estudios Realizados */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -371,7 +341,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Diagnóstico (del PDF) */}
+            {/* Card: Diagnóstico */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -399,7 +369,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Tratamiento y Comentario (del PDF) */}
+            {/* Card: Tratamiento */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -452,32 +422,30 @@ function PaginaDetalleHistoria() {
 
           </div>
 
-          {/* --- Barra Lateral --- */}
+          {/* --- Barra Lateral (Derecha) --- */}
           <div className="space-y-6">
             
-            {/* Card: Paciente (Info del PDF) */}
+            {/* 🔹 MOVIDO AQUÍ: Datos de la Consulta (Sin Médico) */}
             <Card>
               <CardHeader>
-                <CardTitle>Paciente</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <Stethoscope className="h-5 w-5" />
+                  Datos de la Consulta
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="font-semibold">{paciente.apellido}, {paciente.nombre}</div>
-                <div className="text-sm text-muted-foreground">
-                  <span className="font-mono">{paciente.dni}</span> • {obtenerEdadPaciente(paciente.fechaNacimiento)} años
+              <CardContent className="space-y-4"> {/* Ajustado para barra lateral */}
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Estado</p>
+                  {getEstadoBadge(historia.estado)}
                 </div>
-                 <div className="text-sm text-muted-foreground">
-                  {paciente.obraSocial} • Afiliado: {paciente.numeroAfiliado || "N/A"}
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Nivel Criticidad</p>
+                  {getCriticidadBadge(historia.nivelCriticidad)}
                 </div>
-                <Button variant="outline" className="w-full" asChild>
-                  <a href={`/pacientes/detalle?id=${paciente.id}`}>
-                    <User className="mr-2 h-4 w-4" />
-                    Ver Perfil Completo
-                  </a>
-                </Button>
               </CardContent>
             </Card>
 
-            {/* Card: Índices (Info de los PDF) */}
+            {/* Card: Índices */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -534,7 +502,6 @@ function PaginaDetalleHistoria() {
   )
 }
 
-// Exportamos el componente envuelto en Suspense
 export default function PaginaDetalleHistoriaSuspenseWrapper() {
   return (
     <Suspense fallback={

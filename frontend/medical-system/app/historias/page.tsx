@@ -2,6 +2,7 @@
 
 import type React from "react";
 import { useEffect, useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { MedicalLayout } from "@/components/medical-layout";
 import {
   Card,
@@ -22,27 +23,78 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
   Search,
   Upload,
-  Eye,
-  Edit,
   FileText,
-  Calendar,
   CheckCircle,
   Clock,
   AlertCircle,
-  Download,
   RefreshCw,
   X,
   ArrowDown,
   ArrowUp,
+  CheckCheck,
+  Filter,
+  FileInput
 } from "lucide-react";
 
 import {
   listarHistorias,
   importarHistoriaArchivo,
+  autoValidarHistoria,
   type HistoriaResumen,
 } from "@/lib/api-historias";
+
+const coincideFecha = (storedDate: string | null | undefined, search: string) => {
+  if (!storedDate) return false;
+  if (!search) return true;
+
+  const cleanSearch = search.trim();
+  
+  if (storedDate.includes(cleanSearch)) return true;
+
+  const partesFecha = storedDate.split("T")[0].split("-"); 
+  if (partesFecha.length < 3) return false;
+
+  const sYear = parseInt(partesFecha[0], 10);
+  const sMonth = parseInt(partesFecha[1], 10);
+  const sDay = parseInt(partesFecha[2], 10);
+
+  const parts = cleanSearch.split(/[\/\-\.\s]+/).map(p => parseInt(p, 10)).filter(n => !isNaN(n));
+
+  if (parts.length === 0) return false;
+
+  if (parts.length === 3) {
+    let [d, m, y] = parts;
+    if (y < 100) y += 2000; 
+    return d === sDay && m === sMonth && y === sYear;
+  }
+
+  if (parts.length === 2) {
+    const [p1, p2] = parts;
+    if (p2 > 31) { 
+       let y = p2;
+       if (y < 100) y += 2000;
+       return p1 === sMonth && y === sYear;
+    }
+    return p1 === sDay && p2 === sMonth;
+  }
+
+  if (parts.length === 1) {
+    const p = parts[0];
+    if (p > 31) return p === sYear; 
+    return p === sDay || p === sMonth; 
+  }
+
+  return false;
+};
 
 const getEstadoBadge = (estado: string) => {
   switch (estado) {
@@ -70,10 +122,17 @@ const getEstadoBadge = (estado: string) => {
 };
 
 export default function PaginaHistorias() {
+  const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const [historias, setHistorias] = useState<HistoriaResumen[]>([]);
   const [estaCargando, setEstaCargando] = useState(true);
+  const [procesandoValidacion, setProcesandoValidacion] = useState(false);
+  
+  // Filtros
   const [terminoBusqueda, setTerminoBusqueda] = useState("");
+  const [filtroEstado, setFiltroEstado] = useState("todos");
+  const [filtroFecha, setFiltroFecha] = useState("");
+  
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
   const [error, setError] = useState<string | null>(null);
 
@@ -102,20 +161,34 @@ export default function PaginaHistorias() {
   const historiasFiltradas = useMemo(() => {
     let resultados = [...historias];
 
+    // 1. Filtro Texto
     if (terminoBusqueda) {
       const busq = terminoBusqueda.toLowerCase();
       resultados = resultados.filter((h) => {
         const diag = (h.diagnostico ?? "").toLowerCase();
         const forma = (h.forma ?? "").toLowerCase();
         const id = (h.id ?? "").toLowerCase();
+        const paciente = (h.paciente?.nombre ?? "").toLowerCase();
         return (
           diag.includes(busq) ||
           forma.includes(busq) ||
-          id.includes(busq)
+          id.includes(busq) ||
+          paciente.includes(busq)
         );
       });
     }
 
+    // 2. Filtro Estado
+    if (filtroEstado !== "todos") {
+      resultados = resultados.filter((h) => h.estado === filtroEstado);
+    }
+
+    // 3. Filtro Fecha Inteligente
+    if (filtroFecha) {
+      resultados = resultados.filter((h) => coincideFecha(h.fecha_consulta, filtroFecha));
+    }
+
+    // Ordenamiento
     resultados.sort((a, b) => {
       const diagA = (a.diagnostico ?? "").toLowerCase();
       const diagB = (b.diagnostico ?? "").toLowerCase();
@@ -129,11 +202,10 @@ export default function PaginaHistorias() {
     });
 
     return resultados;
-  }, [historias, terminoBusqueda, sortOrder]);
+  }, [historias, terminoBusqueda, filtroEstado, filtroFecha, sortOrder]);
 
   const totalPendientes = useMemo(
-    () =>
-      historias.filter((h) => h.estado === "pendiente_validacion").length,
+    () => historias.filter((h) => h.estado === "pendiente_validacion").length,
     [historias]
   );
 
@@ -142,10 +214,44 @@ export default function PaginaHistorias() {
     [historias]
   );
 
-  const hayFiltrosActivos = terminoBusqueda !== "";
+  const hayFiltrosActivos = terminoBusqueda !== "" || filtroEstado !== "todos" || filtroFecha !== "";
 
   const limpiarFiltros = () => {
     setTerminoBusqueda("");
+    setFiltroEstado("todos");
+    setFiltroFecha("");
+  };
+
+  const manejarValidarTodas = async () => {
+    const pendientesParaValidar = historiasFiltradas.filter(h => h.estado === "pendiente_validacion");
+
+    if (pendientesParaValidar.length === 0) {
+      alert("No hay historias pendientes en la lista actual para validar.");
+      return;
+    }
+
+    if (!confirm(`¿Confirmas la validación automática de ${pendientesParaValidar.length} historias?`)) {
+      return;
+    }
+
+    try {
+      setProcesandoValidacion(true);
+      
+      await Promise.all(
+        pendientesParaValidar.map((h) => 
+          autoValidarHistoria(h.id)
+            .catch(e => console.error(`Error validando ${h.id}`, e))
+        )
+      );
+      
+      alert("Validación masiva finalizada. Recargando datos...");
+      await cargarHistorias();
+    } catch (error) {
+      console.error(error);
+      alert("Hubo un problema procesando algunas historias.");
+    } finally {
+      setProcesandoValidacion(false);
+    }
   };
 
   const manejarImportacion = async (
@@ -168,19 +274,6 @@ export default function PaginaHistorias() {
     }
   };
 
-  const manejarExportacion = () => {
-    const jsonData = JSON.stringify(historias, null, 2);
-    const blob = new Blob([jsonData], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `historias-clinicas-${new Date()
-      .toISOString()
-      .split("T")[0]}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
   const manejarRefrescar = () => {
     void cargarHistorias();
   };
@@ -195,11 +288,11 @@ export default function PaginaHistorias() {
           <div>
             <h1 className="text-2xl font-bold">Historias Clínicas</h1>
             <p className="text-muted-foreground">
-              Gestiona las historias clínicas importadas y validadas (backend
-              fase 4.3)
+              Gestiona las historias clínicas importadas y validadas
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
+            
             <Button
               variant="outline"
               onClick={manejarRefrescar}
@@ -212,15 +305,23 @@ export default function PaginaHistorias() {
               />
               Refrescar
             </Button>
-            <Button variant="outline" onClick={manejarExportacion}>
-              <Download className="mr-2 h-4 w-4" />
-              Exportar JSON (local)
+            
+            {/* 🔹 Botón Importar con color estándar (Azul Marino / Default) */}
+            <Button 
+              asChild 
+              variant="default" 
+            >
+              <a href="/historias/importar">
+                <FileInput className="mr-2 h-4 w-4" />
+                Importar Historias
+              </a>
             </Button>
+
             <label htmlFor="import-file">
               <Button asChild disabled={estaCargando} variant="outline">
                 <span>
                   <Upload className="mr-2 h-4 w-4" />
-                  Subir PDF / DOCX
+                  Subir PDF
                 </span>
               </Button>
               <input
@@ -275,17 +376,44 @@ export default function PaginaHistorias() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Buscar Historias</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <Filter className="h-5 w-5" />
+              Filtros y Búsqueda
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col gap-4 md:flex-row">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
-                  placeholder="Buscar por diagnóstico, forma o ID de historia..."
+                  placeholder="Buscar por paciente, diagnóstico..."
                   className="pl-10"
                   value={terminoBusqueda}
                   onChange={(e) => setTerminoBusqueda(e.target.value)}
+                />
+              </div>
+
+              <div className="w-full md:w-48">
+                <Select value={filtroEstado} onValueChange={setFiltroEstado}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Estado" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="todos">Todos los estados</SelectItem>
+                    <SelectItem value="validada">Validada</SelectItem>
+                    <SelectItem value="pendiente_validacion">Pendiente</SelectItem>
+                    <SelectItem value="error">Error</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="w-full md:w-auto">
+                <Input 
+                  type="text" 
+                  placeholder="Fecha (ej: 3/2/2024)"
+                  value={filtroFecha}
+                  onChange={(e) => setFiltroFecha(e.target.value)}
+                  className="w-full md:w-48"
                 />
               </div>
 
@@ -294,33 +422,48 @@ export default function PaginaHistorias() {
                 onClick={() =>
                   setSortOrder(sortOrder === "asc" ? "desc" : "asc")
                 }
-                className="w-full sm:w-auto"
+                className="w-full md:w-auto"
               >
                 {sortOrder === "asc" ? (
                   <ArrowUp className="mr-2 h-4 w-4" />
                 ) : (
                   <ArrowDown className="mr-2 h-4 w-4" />
                 )}
-                Diagnóstico ({sortOrder === "asc" ? "A-Z" : "Z-A"})
+                A-Z
               </Button>
 
               {hayFiltrosActivos && (
-                <Button variant="ghost" onClick={limpiarFiltros}>
-                  <X className="mr-2 h-4 w-4" />
-                  Limpiar búsqueda
+                <Button variant="ghost" onClick={limpiarFiltros} className="px-2">
+                  <X className="h-4 w-4" />
                 </Button>
               )}
             </div>
           </CardContent>
         </Card>
 
+        {/* 🔹 Tarjeta Principal de la Lista */}
         <Card>
-          <CardHeader>
-            <CardTitle>Lista de Historias Clínicas</CardTitle>
-            <CardDescription>
-              {historiasFiltradas.length} historias encontradas
-            </CardDescription>
+          {/* 🔹 MODIFICADO: Header ahora contiene el título Y el botón de Validar Todas */}
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
+            <div className="space-y-1">
+              <CardTitle>Lista de Historias Clínicas</CardTitle>
+              <CardDescription>
+                {historiasFiltradas.length} historias encontradas
+              </CardDescription>
+            </div>
+
+            {/* 🔹 Botón movido aquí: Validar Todas */}
+            <Button 
+              variant="default" // Color estándar (azul marino)
+              size="sm"
+              onClick={manejarValidarTodas}
+              disabled={estaCargando || procesandoValidacion || totalPendientes === 0}
+            >
+              <CheckCheck className={`mr-2 h-4 w-4 ${procesandoValidacion ? "animate-spin" : ""}`} />
+              Validar Pendientes ({historiasFiltradas.filter(h => h.estado === 'pendiente_validacion').length})
+            </Button>
           </CardHeader>
+
           <CardContent>
             {error && (
               <div className="mb-4 text-sm text-red-600">{error}</div>
@@ -342,26 +485,37 @@ export default function PaginaHistorias() {
                   <TableHeader>
                     <TableRow>
                       <TableHead>ID</TableHead>
-                      <TableHead>Fecha Consulta</TableHead>
+                      <TableHead>Paciente</TableHead>
+                      <TableHead>Fecha</TableHead>
                       <TableHead>Diagnóstico</TableHead>
                       <TableHead>Forma clínica</TableHead>
                       <TableHead>Estado</TableHead>
-                      <TableHead className="text-right">Acciones</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {historiasFiltradas.map((h) => (
-                      <TableRow key={h.id}>
+                      <TableRow 
+                        key={h.id}
+                        className="cursor-pointer hover:bg-muted/50 transition-colors"
+                        onClick={() => router.push(`/historias/detalle?id=${h.id}`)}
+                      >
                         <TableCell className="font-mono text-xs">
                           {h.id}
                         </TableCell>
                         <TableCell>
+                          <div className="font-medium">
+                            {h.paciente?.nombre ? h.paciente.nombre : <span className="text-muted-foreground italic">Desconocido</span>}
+                          </div>
+                          {h.paciente?.dni && (
+                            <div className="text-xs text-muted-foreground">DNI: {h.paciente.dni}</div>
+                          )}
+                        </TableCell>
+                        <TableCell>
                           <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3 text-muted-foreground" />
                             {h.fecha_consulta
                               ? new Date(
                                   h.fecha_consulta
-                                ).toLocaleDateString("es-AR")
+                                ).toLocaleDateString("es-AR", {timeZone: 'UTC'}) // Forzar UTC para visualización correcta
                               : "—"}
                           </div>
                         </TableCell>
@@ -381,22 +535,6 @@ export default function PaginaHistorias() {
                           )}
                         </TableCell>
                         <TableCell>{getEstadoBadge(h.estado)}</TableCell>
-                        <TableCell className="text-right">
-                          <div className="flex items-center justify-end gap-2">
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={`/historias/detalle?id=${h.id}`}>
-                                <Eye className="h-4 w-4" />
-                              </a>
-                            </Button>
-                            {h.estado === "pendiente_validacion" && (
-                              <Button variant="ghost" size="sm" asChild>
-                                <a href={`/historias/validar?id=${h.id}`}>
-                                  <Edit className="h-4 w-4" />
-                                </a>
-                              </Button>
-                            )}
-                          </div>
-                        </TableCell>
                       </TableRow>
                     ))}
                   </TableBody>

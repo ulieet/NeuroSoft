@@ -22,7 +22,6 @@ const pacientesData = [
       { fecha: "2022-01-01", dmt: "Interferón Beta", edss: 2.0, tratamientosSoporte: ["Kinesiología"], tolerancia: true, motivo: "Inicio" },
       { fecha: "2022-06-01", dmt: "Interferón Beta", edss: 2.0, tratamientosSoporte: ["Kinesiología"], tolerancia: false, motivo: "Intolerancia" },
       { fecha: "2022-07-15", dmt: "Glatiramer", edss: 2.0, tratamientosSoporte: [], tolerancia: true, motivo: "Switch" },
-      // Aquí salta a 2.5 después de probar 2 drogas
       { fecha: "2023-08-15", dmt: "Fingolimod", edss: 2.5, tratamientosSoporte: ["Kinesiología"], tolerancia: true, motivo: "Progresión" },
       { fecha: "2024-03-20", dmt: "Fingolimod", edss: 2.5, tratamientosSoporte: ["Terapia Cognitiva"], tolerancia: true, motivo: "Control" },
     ]
@@ -207,7 +206,7 @@ export default function AnalisisPage() {
                 variant="outline"
                 onClick={() => setPacienteSeleccionado(null)}
               >
-                ← Seleccionar Otro Paciente
+                 Seleccionar Otro Paciente
               </Button>
 
               {analisisPaciente && (

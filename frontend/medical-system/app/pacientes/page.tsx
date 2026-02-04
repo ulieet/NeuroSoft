@@ -1,15 +1,13 @@
-// frontend/medical-system/app/pacientes/page.tsx
-
 "use client"
 
 import { useEffect, useState, Suspense } from "react" 
-import { useSearchParams } from "next/navigation" 
+import { useSearchParams, useRouter } from "next/navigation" // 🔹 Importamos useRouter
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Plus, Eye, Edit, Calendar, RefreshCw, Phone, CheckSquare, X } from "lucide-react" 
+import { Plus, Calendar, RefreshCw, Phone, CheckSquare, X } from "lucide-react" 
 import { PacienteListadoSelector } from "@/app/pacientes/components/paciente-selector"
 import { BarraBusquedaFiltros } from "@/app/pacientes/components/filtros"
 import { usePacientesListado } from "@/hooks/use-pacientes-listado"
@@ -30,6 +28,7 @@ export default function PaginaPacientesSuspense() {
 }
 
 function PaginaPacientes() {
+  const router = useRouter() // 🔹 Inicializamos router
   const searchParams = useSearchParams()
   const redirectTo = searchParams.get("redirect_to")
   const [selectedPacienteId, setSelectedPacienteId] = useState<number | null>(null)
@@ -132,21 +131,25 @@ function PaginaPacientes() {
                     <TableHead>Obra Social</TableHead>
                     <TableHead>Teléfono</TableHead> 
                     <TableHead>Historias</TableHead>
-                    <TableHead className="text-right">Acciones</TableHead>
+                    {/* 🔹 Eliminada columna Acciones */}
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {estaCargando ? (
-                    <TableRow><TableCell colSpan={6} className="text-center py-8">Cargando...</TableCell></TableRow>
+                    <TableRow><TableCell colSpan={5} className="text-center py-8">Cargando...</TableCell></TableRow>
                   ) : pacientesFiltrados.length === 0 ? (
                     <TableRow>
-                      <TableCell colSpan={6} className="text-center text-muted-foreground py-8">
+                      <TableCell colSpan={5} className="text-center text-muted-foreground py-8">
                         {hayFiltrosActivos ? "No se encontraron pacientes con esos filtros" : "No hay pacientes registrados"}
                       </TableCell>
                     </TableRow>
                   ) : (
                     pacientesFiltrados.map((paciente) => (
-                      <TableRow key={paciente.id}>
+                      <TableRow 
+                        key={paciente.id}
+                        className="cursor-pointer hover:bg-muted/50 transition-colors"
+                        onClick={() => router.push(`/pacientes/detalle?id=${paciente.id}`)}
+                      >
                         <TableCell>
                           <div>
                             <div className="font-medium">{paciente.apellido}, {paciente.nombre}</div>
@@ -167,20 +170,7 @@ function PaginaPacientes() {
                         <TableCell>
                           <Badge variant="secondary">{obtenerConteoHistorias(paciente.id)} historias</Badge>
                         </TableCell>
-                        <TableCell className="text-right">
-                          <div className="flex items-center justify-end gap-2">
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={`/pacientes/detalle?id=${paciente.id}`}>
-                                <Eye className="h-4 w-4" />
-                              </a>
-                            </Button>
-                            <Button variant="ghost" size="sm" asChild>
-                              <a href={`/pacientes/editar?id=${paciente.id}`}>
-                                <Edit className="h-4 w-4" />
-                              </a>
-                            </Button>
-                          </div>
-                        </TableCell>
+                        {/* 🔹 Eliminada celda Acciones */}
                       </TableRow>
                     ))
                   )}

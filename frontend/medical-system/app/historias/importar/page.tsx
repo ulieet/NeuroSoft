@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -10,12 +9,14 @@ import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Upload, FileText, CheckCircle, AlertCircle, X, Loader2 } from "lucide-react"
 
+// CAMBIO 1: Agregamos fileObject para guardar el archivo binario real
 interface UploadedFile {
   id: string
   name: string
   size: number
   status: "pending" | "processing" | "completed" | "error"
   progress: number
+  fileObject: File // <--- Importante: Aquí guardamos el archivo real para enviarlo
   extractedData?: {
     paciente: string
     fecha: string
@@ -45,7 +46,6 @@ export default function ImportarHistoriasPage() {
     e.preventDefault()
     e.stopPropagation()
     setDragActive(false)
-
     const droppedFiles = Array.from(e.dataTransfer.files)
     handleFiles(droppedFiles)
   }
@@ -58,13 +58,23 @@ export default function ImportarHistoriasPage() {
   }
 
   const handleFiles = (fileList: File[]) => {
-    const newFiles: UploadedFile[] = fileList.map((file) => ({
-      id: Math.random().toString(36).substr(2, 9),
-      name: file.name,
-      size: file.size,
-      status: "pending",
-      progress: 0,
-    }))
+    const newFiles: UploadedFile[] = fileList.map((file) => {
+      // 1. Validamos la extensión AQUÍ MISMO
+      const name = file.name.toLowerCase();
+      const esValido = name.endsWith(".doc") || name.endsWith(".docx") || name.endsWith(".pdf");
+
+      return {
+        id: Math.random().toString(36).substr(2, 9),
+        name: file.name,
+        size: file.size,
+        // 2. Si es válido queda 'pending', si no, pasa directo a 'error'
+        status: esValido ? "pending" : "error",
+        progress: 0,
+        fileObject: file,
+        // 3. Mensaje de error explicativo si falla
+        error: esValido ? undefined : "Error: Formato no permitido. Solo .doc, .docx o .pdf"
+      };
+    })
 
     setFiles((prev) => [...prev, ...newFiles])
   }
@@ -73,40 +83,77 @@ export default function ImportarHistoriasPage() {
     setFiles((prev) => prev.filter((file) => file.id !== id))
   }
 
+  // CAMBIO 2 y 3: Lógica real de procesamiento con Fetch al Backend
   const processFiles = async () => {
     setIsProcessing(true)
 
     for (const file of files) {
       if (file.status === "pending") {
-        // Simular procesamiento
-        setFiles((prev) => prev.map((f) => (f.id === file.id ? { ...f, status: "processing" } : f)))
+        // 1. Actualizar estado a procesando
+        setFiles((prev) => prev.map((f) => (f.id === file.id ? { ...f, status: "processing", progress: 50 } : f)))
 
-        // Simular progreso
-        for (let progress = 0; progress <= 100; progress += 10) {
-          await new Promise((resolve) => setTimeout(resolve, 200))
-          setFiles((prev) => prev.map((f) => (f.id === file.id ? { ...f, progress } : f)))
+        try {
+          // 2. Preparar el envío del archivo
+          const formData = new FormData()
+          formData.append("file", file.fileObject) // 'file' debe coincidir con el parámetro en FastAPI
+
+          // 3. Llamada al Backend (FastAPI)
+          const response = await fetch("http://127.0.0.1:8000/importaciones/historias", {
+            method: "POST",
+            body: formData,
+          })
+
+          if (!response.ok) {
+            // Manejar error si el backend responde 4xx o 5xx (ej. Duplicado 409)
+            const errorData = await response.json().catch(() => ({}))
+            throw new Error(errorData.detail || "Error al procesar en el servidor")
+          }
+
+          const backendData = await response.json()
+          console.log("Respuesta Backend:", backendData)
+
+          // 4. Mapear la respuesta del Backend a la estructura del Frontend
+          // Nota: Ajusta estas claves según lo que devuelva exactamente tu 'borrador' de FastAPI
+          const mappedData = {
+            paciente: backendData.borrador?.paciente?.nombre || "No detectado",
+            fecha: backendData.borrador?.consulta?.fecha || "No detectada",
+            diagnostico: backendData.borrador?.diagnostico || "No detectado",
+            // Si el backend devuelve array de sintomas, úsalo, si no, array vacío
+            sintomas: backendData.borrador?.sintomas || [], 
+            // Convertimos la lista de medicamentos a string si viene como array
+            tratamiento: Array.isArray(backendData.borrador?.tratamientos) 
+              ? backendData.borrador.tratamientos.map((t: any) => `${t.molecula} ${t.dosis || ''}`).join(", ") 
+              : "No detectado"
+          }
+
+          // 5. Marcar como completado con datos reales
+          setFiles((prev) =>
+            prev.map((f) =>
+              f.id === file.id
+                ? {
+                    ...f,
+                    status: "completed",
+                    progress: 100,
+                    extractedData: mappedData,
+                  }
+                : f,
+            ),
+          )
+        } catch (error: any) {
+          console.error("Error subiendo archivo:", error)
+          setFiles((prev) =>
+            prev.map((f) =>
+              f.id === file.id
+                ? {
+                    ...f,
+                    status: "error",
+                    progress: 0,
+                    error: error.message || "Error de conexión",
+                  }
+                : f,
+            ),
+          )
         }
-
-        // Simular extracción de datos
-        const mockExtractedData = {
-          paciente: "González, María Elena",
-          fecha: "2024-01-15",
-          diagnostico: "Migraña con aura típica",
-          sintomas: ["Cefalea pulsátil", "Fotofobia", "Náuseas", "Aura visual"],
-          tratamiento: "Sumatriptán 50mg vía oral. Profilaxis con Topiramato 25mg/día.",
-        }
-
-        setFiles((prev) =>
-          prev.map((f) =>
-            f.id === file.id
-              ? {
-                  ...f,
-                  status: "completed",
-                  extractedData: mockExtractedData,
-                }
-              : f,
-          ),
-        )
       }
     }
 
@@ -189,21 +236,45 @@ export default function ImportarHistoriasPage() {
                     <p className="text-sm text-muted-foreground">
                       Formatos soportados: .doc, .docx (máximo 10MB por archivo)
                     </p>
-                    <div className="pt-4">
-                      <Button asChild>
-                        <label htmlFor="file-upload" className="cursor-pointer">
-                          Seleccionar Archivos
-                        </label>
-                      </Button>
-                      <input
-                        id="file-upload"
-                        type="file"
-                        multiple
-                        accept=".doc,.docx"
-                        onChange={handleFileInput}
-                        className="hidden"
-                      />
-                    </div>
+                    {/* LO NUEVO A PEGAR: */}
+                  <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
+                    
+                    {/* Botón 1: Archivos Sueltos (El que ya tenías) */}
+                    <Button asChild>
+                      <label htmlFor="file-upload" className="cursor-pointer">
+                        Seleccionar Archivos
+                      </label>
+                    </Button>
+                    <input
+                      id="file-upload"
+                      type="file"
+                      multiple
+                      accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                      onChange={handleFileInput}
+                      className="hidden"
+                    />
+
+                    {/* Separador visual */}
+                    <span className="text-xs text-muted-foreground">- O -</span>
+
+                    {/* Botón 2: Carpeta Completa (El nuevo) */}
+                    <Button asChild variant="secondary">
+                      <label htmlFor="folder-upload" className="cursor-pointer">
+                        Subir Carpeta Completa
+                      </label>
+                    </Button>
+                    <input
+                      id="folder-upload"
+                      type="file"
+                      // @ts-expect-error: atributo no estándar
+                      webkitdirectory=""
+                      directory=""
+                      multiple
+                      onChange={handleFileInput}
+                      className="hidden"
+                    />
+                    
+                  </div>
                   </div>
                 </div>
               </CardContent>
@@ -253,7 +324,7 @@ export default function ImportarHistoriasPage() {
 
                         {file.status === "completed" && file.extractedData && (
                           <div className="mt-3 p-3 bg-muted rounded-lg">
-                            <h4 className="font-medium mb-2">Datos Extraídos:</h4>
+                            <h4 className="font-medium mb-2">Datos Extraídos (IA):</h4>
                             <div className="grid grid-cols-1 gap-2 text-sm">
                               <div>
                                 <strong>Paciente:</strong> {file.extractedData.paciente}
@@ -265,7 +336,7 @@ export default function ImportarHistoriasPage() {
                                 <strong>Diagnóstico:</strong> {file.extractedData.diagnostico}
                               </div>
                               <div>
-                                <strong>Síntomas:</strong> {file.extractedData.sintomas.join(", ")}
+                                <strong>Síntomas:</strong> {file.extractedData.sintomas.length > 0 ? file.extractedData.sintomas.join(", ") : "-"}
                               </div>
                               <div>
                                 <strong>Tratamiento:</strong> {file.extractedData.tratamiento}
