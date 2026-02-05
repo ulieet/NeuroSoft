@@ -9,12 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, CheckCircle2, Loader2 } from "lucide-react";
-
-import {
-  obtenerBorrador,
-  validarHistoria,
-  type HistoriaBorrador,
-} from "@/lib/api-historias";
+import { validarHistoria, BASE_URL } from "@/lib/api-historias";
 
 export default function PaginaValidarHistoria() {
   const searchParams = useSearchParams();
@@ -25,8 +20,11 @@ export default function PaginaValidarHistoria() {
   const [guardando, setGuardando] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [exito, setExito] = useState<string | null>(null);
-  const [borrador, setBorrador] = useState<HistoriaBorrador | null>(null);
 
+  // Variable para guardar el JSON original completo (para no perder datos que no editamos)
+  const [datosCompletos, setDatosCompletos] = useState<any>(null);
+
+  // Variable para el formulario visible
   const [form, setForm] = useState({
     paciente_nombre: "",
     paciente_dni: "",
@@ -47,18 +45,34 @@ export default function PaginaValidarHistoria() {
       try {
         setError(null);
         setCargando(true);
-        const data = await obtenerBorrador(id);
-        setBorrador(data);
 
+        // 1. Pedimos datos al backend
+        const res = await fetch(`${BASE_URL}/historias/${id}/borrador`);
+        if (!res.ok) throw new Error("No se pudo cargar la historia");
+
+        const data = await res.json();
+        setDatosCompletos(data); // Guardamos TODO el objeto
+
+        // 2. Extraemos lo que necesitamos para el formulario
+        const b = data.borrador || {};
+        const pac = b.paciente || {};
+        const enf = b.enfermedad || {};
+        const cons = b.consulta || {};
+
+        // 3. Rellenamos los inputs
         setForm({
-          paciente_nombre: data.paciente?.nombre ?? "",
-          paciente_dni: data.paciente?.dni ?? "",
-          fecha_consulta: data.consulta?.fecha ?? "",
-          diagnostico: data.diagnostico ?? "",
-          forma: data.forma ?? "",
-          observaciones: "",
+          paciente_nombre: pac.nombre || "",
+          paciente_dni: pac.dni || "",
+          // Convertimos fecha a formato YYYY-MM-DD para el input type="date"
+          fecha_consulta: cons.fecha ? cons.fecha.split("T")[0] : "",
+          diagnostico: enf.diagnostico || "",
+          forma: enf.forma || "",
+          // Agregamos el código OMS como sugerencia si existe
+          observaciones: enf.codigo ? `Código sugerido: ${enf.codigo}` : "",
         });
+
       } catch (err: any) {
+        console.error(err);
         setError(err.message ?? "Error al cargar el borrador");
       } finally {
         setCargando(false);
@@ -84,27 +98,37 @@ export default function PaginaValidarHistoria() {
       setError(null);
       setExito(null);
 
-      // ⚠️ Ajustar este payload si el backend espera otra estructura
+      // Armamos el paquete final mezclando lo editado con lo original
       const payload = {
         paciente: {
           nombre: form.paciente_nombre || null,
           dni: form.paciente_dni || null,
+          // Mantenemos datos ocultos (obra social, etc)
+          fecha_nacimiento: datosCompletos?.borrador?.paciente?.fecha_nacimiento,
+          obra_social: datosCompletos?.borrador?.paciente?.obra_social,
+          nro_afiliado: datosCompletos?.borrador?.paciente?.nro_afiliado,
         },
         consulta: {
           fecha: form.fecha_consulta || null,
+          medico: datosCompletos?.borrador?.consulta?.medico
         },
         diagnostico: form.diagnostico || null,
         forma: form.forma || null,
         observaciones: form.observaciones || null,
+        
+        // Mantenemos los arrays complejos tal cual vinieron del backend
+        complementarios: datosCompletos?.borrador?.complementarios,
+        tratamientos: datosCompletos?.borrador?.tratamientos,
+        secciones_texto: datosCompletos?.borrador?.secciones_texto
       };
 
       await validarHistoria(id, payload);
       setExito("Historia validada correctamente.");
 
-      // Opcional: volver al listado después de unos segundos
+      // Volvemos al listado después de 1.5 segundos
       setTimeout(() => {
         router.push("/historias");
-      }, 1200);
+      }, 1500);
     } catch (err: any) {
       setError(err.message ?? "Error al guardar la validación");
     } finally {
@@ -154,24 +178,26 @@ export default function PaginaValidarHistoria() {
                 )}
 
                 <div className="space-y-4">
-                  <div>
-                    <Label htmlFor="paciente_nombre">Nombre del paciente</Label>
-                    <Input
-                      id="paciente_nombre"
-                      name="paciente_nombre"
-                      value={form.paciente_nombre}
-                      onChange={handleChange}
-                    />
-                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <Label htmlFor="paciente_nombre">Nombre del paciente</Label>
+                        <Input
+                        id="paciente_nombre"
+                        name="paciente_nombre"
+                        value={form.paciente_nombre}
+                        onChange={handleChange}
+                        />
+                    </div>
 
-                  <div>
-                    <Label htmlFor="paciente_dni">DNI</Label>
-                    <Input
-                      id="paciente_dni"
-                      name="paciente_dni"
-                      value={form.paciente_dni}
-                      onChange={handleChange}
-                    />
+                    <div>
+                        <Label htmlFor="paciente_dni">DNI</Label>
+                        <Input
+                        id="paciente_dni"
+                        name="paciente_dni"
+                        value={form.paciente_dni}
+                        onChange={handleChange}
+                        />
+                    </div>
                   </div>
 
                   <div>
@@ -180,7 +206,7 @@ export default function PaginaValidarHistoria() {
                       id="fecha_consulta"
                       name="fecha_consulta"
                       type="date"
-                      value={form.fecha_consulta ?? ""}
+                      value={form.fecha_consulta}
                       onChange={handleChange}
                     />
                   </div>
@@ -194,7 +220,7 @@ export default function PaginaValidarHistoria() {
                       name="diagnostico"
                       value={form.diagnostico}
                       onChange={handleChange}
-                      rows={3}
+                      rows={2}
                     />
                   </div>
 

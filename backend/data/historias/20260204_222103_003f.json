@@ -1,0 +1,67 @@
+{
+  "id": "20260204_222103_003f",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:26565077|F:1978-06-23|H:85c16e33a0",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC",
+      "nombre_archivo": "uploads\\historia_20260204_222103_003f.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea.",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "1978-06-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis múltiple",
+      "codigo": "OMS-340",
+      "forma": "RR",
+      "fecha_inicio": "2016-01-29",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-12-18",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2016-01-06",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "inicio": "2016-04-07",
+        "estado": "Activo"
+      }
+    ],
+    "episodios": [],
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata-\nSERVICIO DE NEUROLOGÍA \nSECCIÓN DE ENFERMEDADES DESMIELINIZANTES \n RESUMEN DE HISTORIA CLÍNICA. La Plata, 11 de Octubre de 2016\n \nApellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78\nDirección: calle 650 e/ 2y 3 s/n° 427. La Plata. Teléfono: (0221) 491-0420/ 15- 6180643 \nObra Social: IOMA\t\t nº de afiliado: K265650774/00\nAsistida desde: 29/01/16 \n\nAntecedente personales: -Portadora de Hemofilia A (dosaje de F VIII: 30%).-Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ \nAntecedentes familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC.\n\nSíntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio. Fatiga creciente. Infecciones urinarias a repetición+ constipación pertinaz- \nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral+ elementos esfinterianos vesico-rectales.-\nEstudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%.- -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh).- \n-Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1.-rectificación c. cervical. \n-RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada.- \n-RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros.-\n- Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg.-\n\nDiagnóstico: Esclerosis Múltiple a Recaídas en actividad actual (OMS: 340).-\nNota: NO REQUIERE DE NINGÚN OTRO ESTUDIO PARA CONFIRMAR DIAGNÓSTICO, CUMPLE CRITERIOS SOBRADAMENTE CLINICOS, RADIOLÓGICOS Y DE LABORATIORIO DE DESCARTE.-\n\nTratamiento: -Interferón B1ar.: 12 MUI . 3 veces/semana x vía SC. desde 07/04/16.- \n\n Atte. Dr. Vétere Santiago A. \n\n\n\n\n\n",
+    "confidencia": {
+      "forma": "Alta"
+    }
+  },
+  "validada": null
+}

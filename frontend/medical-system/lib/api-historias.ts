@@ -51,6 +51,7 @@ export async function listarHistorias(): Promise<HistoriaResumen[]> {
     if (!res.ok) throw new Error("Backend error");
     
     const data = await res.json();
+    // Aseguramos que data sea un array, o extraemos la propiedad correcta
     if (Array.isArray(data)) return data;
     if (data && Array.isArray(data.items)) return data.items;
     return [];
@@ -65,12 +66,13 @@ export async function listarHistorias(): Promise<HistoriaResumen[]> {
       const pacientesLocales = obtenerPacientes();
 
       return historiasLocales.map((h) => {
-        const paciente = pacientesLocales.find((p) => p.id === h.pacienteId);
+        // Ojo: h.pacienteId ahora es string en tu nuevo almacen-datos
+        const paciente = pacientesLocales.find((p) => String(p.id) === String(h.pacienteId));
         let estadoMapped: string = h.estado;
         if (h.estado === "pendiente") estadoMapped = "pendiente_validacion";
 
         return {
-          id: h.id.toString(), 
+          id: String(h.id), 
           estado: estadoMapped,
           paciente: paciente
             ? { nombre: `${paciente.nombre} ${paciente.apellido}`, dni: paciente.dni }
@@ -90,7 +92,7 @@ export async function importarHistoriaArchivo(file: File) {
   try {
     const formData = new FormData();
     formData.append("file", file);
-    // Damos un poco más de tiempo para subir archivos (5s)
+    // Damos un poco más de tiempo para subir archivos (5s) por si hay que abrir Word
     const res = await fetchWithTimeout(`${BASE_URL}/importaciones/historias`, {
       method: "POST",
       body: formData,
@@ -119,8 +121,10 @@ export async function obtenerBorrador(id: string): Promise<HistoriaBorrador> {
     const raw = await res.json();
     return raw.borrador || {};
   } catch (error) {
+    console.warn("Usando borrador local (fallback)");
     if (typeof window !== "undefined") {
-      const hLocal = obtenerHistoriaClinicaPorId(Number(id));
+      // AQUÍ ESTABA EL ERROR: No usamos Number(id) ni parseInt
+      const hLocal = obtenerHistoriaClinicaPorId(id); 
       if (hLocal) {
          return {
            paciente: { nombre: "Paciente Local", dni: "123" },
@@ -157,11 +161,11 @@ export async function autoValidarHistoria(id: string): Promise<void> {
     
     // 2. Fallback Local
     if (typeof window !== "undefined") {
-      const idNum = parseInt(id, 10);
-      const historiaLocal = obtenerHistoriaClinicaPorId(idNum);
+      // AQUÍ TAMBIÉN: Usamos el ID como string directo
+      const historiaLocal = obtenerHistoriaClinicaPorId(id);
       
       if (historiaLocal) {
-        modificarHistoriaClinica(idNum, {
+        modificarHistoriaClinica(id, {
           ...historiaLocal,
           estado: "validada"
         });
@@ -176,7 +180,6 @@ export async function autoValidarHistoria(id: string): Promise<void> {
 
 export async function validarHistoria(id: string, payload: any): Promise<void> {
    // Wrapper simple para validación manual
-   // Podríamos usar la misma lógica de fallback si quisieras
    try {
       const res = await fetchWithTimeout(`${BASE_URL}/historias/${id}/validacion`, {
         method: "PATCH",
@@ -187,10 +190,10 @@ export async function validarHistoria(id: string, payload: any): Promise<void> {
    } catch (e) {
       // Fallback local para validación manual
       if (typeof window !== "undefined") {
-        const idNum = parseInt(id, 10);
-        const h = obtenerHistoriaClinicaPorId(idNum);
+        // AQUÍ TAMBIÉN: Usamos el ID como string
+        const h = obtenerHistoriaClinicaPorId(id);
         if (h) {
-           modificarHistoriaClinica(idNum, { ...h, ...payload, estado: "validada" });
+           modificarHistoriaClinica(id, { ...h, ...payload, estado: "validada" });
            return;
         }
       }

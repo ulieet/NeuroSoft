@@ -1,16 +1,18 @@
 {
-  "id": "20251123_113839",
+  "id": "20260203_131032",
   "estado": "validada",
   "dedup_key": "DNI:27552908|F:2022-03-22",
   "borrador": {
     "estado": "Procesado",
     "fuente": {
       "tipo": "PDF",
-      "nombre_archivo": "uploads\\historia_20251123_113839.pdf"
+      "nombre_archivo": "uploads\\historia_20260203_131032.pdf"
     },
     "paciente": {
       "nombre": "Ramírez, Carlos Esteban",
-      "dni": "27552908"
+      "dni": "27552908",
+      "fecha_nacimiento": "1985-07-08",
+      "obra_social": "OSDE"
     },
     "consulta": {
       "fecha": "2022-03-22",
@@ -18,8 +20,8 @@
     },
     "enfermedad": {
       "diagnostico": "Esclerosis múltiple",
-      "forma": null,
-      "fecha_inicio": "2019-10-01",
+      "forma": "RR",
+      "fecha_inicio": "2019-10-03",
       "edss": null
     },
     "complementarios": {
@@ -68,21 +70,74 @@
     "episodios": [],
     "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “SAN MARTIN” \nSERVICIO DE NEUROLOGÍA \nSECCIÓN DE ENFERMEDADES DESMIELINIZANTES – URGENTE \n \nRESUMEN DE HISTORIA CLÍNICA. \nLa Plata, 22 de Marzo de 2022 \n \nApellido y nombre: Ramírez, Carlos Esteban \nDNI: 27.552.908 \nFecha de nacimiento: 08/07/1985 \nDirección: Av. 13 Nº 745 – La Plata \nTeléfono: 221-523-9098 \nObra Social: OSDE — nº de afiliado: 4532-221 \nAsistido desde: 03/10/19 \n \nSíntomas principales: \nPaciente con curso desmielinizante remitente, con dos eventos clínicos: \n(1°) Octubre 2019: parestesias en miembros inferiores hasta nivel T10, marcha inestable. \nDuración 3 semanas. \n(2°) Abril 2020: diplopía horizontal fluctuante, nistagmo evocado, fatiga marcada y temblor \nintencional leve. \n \nEvolución al 22/03/22: \nSin nuevos brotes desde 2020. RMN 02/02/22 inactiva. \n \nEstudios realizados: \n- Laboratorio básico 15/10/19: normal excepto leve linfocitosis. \n\n- Laboratorio especial 10/10/19 y 12/03/20: todas las inmunologías y serologías negativas. \n- Ecodoppler 18/10/19: s/p. \n- LCR 20/10/19: bandas oligoclonales positivas, índice IgG elevado (12 mg/dl). \n- RMN 17/10/19: lesiones múltiples; una occipital izquierda con captación Gd(+). \n- RMN con angio 08/03/20: lesiones estables, sin actividad. \n- RMN de médula 19/10/19: lesión T6-T7. \n- Última RMN 02/02/22: sin actividad. \n \nDiagnóstico: \nEsclerosis Múltiple Remitente (OMS 340). \n \nComentario: \nContinuar con Interferón Beta 1b 8 MUI SC día por medio. Cobertura 100% PMO. No \ndiscontinuar salvo indicación médica. \n \nSolicito URGENTE: \nContinuidad de Interferón Beta 1b 8 MUI, 14 dosis/28 días. \nTratamiento Prolongado. \n \nSERVICIO DE NEUROLOGÍA \n \n",
     "confidencia": {
-      "forma": "Baja",
+      "forma": "Alta",
       "edss": "Baja",
       "puncion_lumbar": "Alta"
     }
   },
   "validada": {
-    "paciente": {
-      "nombre": "Ramírez, Carlos Esteban",
-      "dni": "27552908"
-    },
-    "consulta": {
-      "fecha": "2022-03-22"
-    },
-    "diagnostico": "Esclerosis múltiple",
-    "forma": null,
-    "observaciones": null
+    "estado": "validada",
+    "validada": {
+      "paciente": {
+        "nombre": "Ramírez, Carlos Esteban",
+        "dni": "27552908",
+        "obra_social": "OSDE",
+        "fecha_nacimiento": "1985-07-08"
+      },
+      "consulta": {
+        "fecha": "2022-03-22"
+      },
+      "enfermedad": {
+        "diagnostico": "Esclerosis múltiple",
+        "forma": "RR",
+        "edss": null,
+        "fecha_inicio": "2019-10-03"
+      },
+      "tratamiento": "Interferón beta-1b 8 MUI día por medio",
+      "tratamientos": [
+        {
+          "comercial": null,
+          "molecula": "Interferón beta-1b",
+          "inicio": null,
+          "estado": "Activo",
+          "dosis": "8 MUI",
+          "via": "SC",
+          "frecuencia": "día por medio"
+        }
+      ],
+      "complementarios": {
+        "rmn": [
+          {
+            "fecha": "2022-02-02",
+            "actividad": "Inactiva",
+            "gd": null,
+            "regiones": []
+          },
+          {
+            "fecha": "2019-10-17",
+            "actividad": null,
+            "gd": "Positiva",
+            "regiones": []
+          },
+          {
+            "fecha": "2020-03-08",
+            "actividad": null,
+            "gd": null,
+            "regiones": []
+          },
+          {
+            "fecha": "2019-10-19",
+            "actividad": null,
+            "gd": null,
+            "regiones": []
+          }
+        ],
+        "puncion_lumbar": {
+          "realizada": true,
+          "bandas": "Sí"
+        }
+      },
+      "observaciones_validacion": ""
+    }
   }
 }

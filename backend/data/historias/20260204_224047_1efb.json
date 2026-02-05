@@ -1,0 +1,79 @@
+{
+  "id": "20260204_224047_1efb",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:30958955|F:2011-12-12|H:3389224c26",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC",
+      "nombre_archivo": "uploads\\historia_20260204_224047_1efb.doc"
+    },
+    "paciente": {
+      "nombre": "Maffei, Matias Nicolas.",
+      "dni": "30958955",
+      "fecha_nacimiento": "1984-07-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9605596378/40"
+    },
+    "consulta": {
+      "fecha": "2011-12-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis múltiple",
+      "codigo": "OMS-340",
+      "forma": "RR",
+      "fecha_inicio": "2007-04-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2007-02-12",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2009-02-12",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2011-11-09",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferon",
+        "inicio": null,
+        "estado": "Activo",
+        "dosis": "12MUI",
+        "frecuencia": null
+      }
+    ],
+    "episodios": [],
+    "secciones_texto": {
+      "sintomas": "principales: múltiples  compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral.-\nAntecedente destacable: - a los 10años de edad crisis comicial afebril, de tipo generalizada (¿); único evento.\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico.\n- sensitivo superficial y propioceptivo congruente, con Romberg.\n- cerebeloso axial y apendicular.\n- de fatiga.",
+      "antecedentes": "RESUMEN DE\nLa Plata,12 de Diciembre de 2011\nApellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84\nDirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468\nObra Social: IOMA\t\t\t\t Nº de afiliado: 9605596378/40\nInicio de la afección: año 2006 Asistido desde: 13/04/07"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN”\nSERVICIO DE NEUROLOGÍA\nSECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE\nRESUMEN DE HISTORIA CLÍNICA\n La Plata,12 de Diciembre de 2011\nApellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84\nDirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468\nObra Social: IOMA\t\t\t\t Nº de afiliado: 9605596378/40\nInicio de la afección: año 2006 Asistido desde: 13/04/07\n\nSíntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral.- \n\nAntecedente destacable: - a los 10años de edad crisis comicial afebril, de tipo generalizada (¿); único evento. \n\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico.\n - sensitivo superficial y propioceptivo congruente, con Romberg.\n - cerebeloso axial y apendicular. \n - de fatiga.\nEstudios realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético. Actividad de Enzima Convertidora de Angiostensina en plasma. Serología para VIH1 y 2. IgG e IgA anti-Endomisio. IgG anti-Gliadina: Todo lo anterior: Negativo o s/p.- \n-19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p.\n-12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral. En la más reciente del 09/11/11 se destaca un claro incremento en el número, del tamaño y de la actividad actual lesional (volcado de Gd. IV), además de aparición de agujeros negros en T1.\n-12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad.-\n-17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente.\n\nDiagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340).\n\nComentario: Debe continuar sin interrupción con la terapia inmunomoduladora pero debido a que ha desarrollado al menos un brote reciente (que mereció terapia Inmunosupresora esteroidea oral) sumado al hecho que incremento su déficit motor por paraparesia y fallos del equilibrio y a que fue evaluado por RMN de cerebro reciente (09/11/11) que muestra en múltiples topografías lesionales imágenes periventriculares alguna con neta actividad actual, además de un incremento en el número de las mismas y de agujeros negros, es evidente entonces que por clínica e imágenes ha desarrollado un incremento en el numero, tamaño y actividad de las lesiones y a que a pesar de terapia de rescate con Inmunosupresión no logra frenarse la progresión lesional y discapacidad, ya no puede esperarse más respuesta a Copolimero-I(Copaxone) que recibe desde hace años y debe cambiar el tipo de inmunmodulador a Interferón de alta dosis y aplicación (como: Rebif o Blastoferón o Inmunomas de 12MUI= 44Mcgrs., 3 veces por semana por vía SC), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. \n\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles.\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. \nBibliografía respaldatoria: \n- PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636.\n- INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686.\n- EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. \n- Medicina (Buenos Aires) 2001; 61:470-480\n\nSolicito: Urgente. INTERFERON beta 1ª-r: 12MUI., JERINGAS PRELLENADAS DE 12 MUI. c/u. \n(44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), =\n 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre.- \nAsí sucesivamente, Tratamiento prolongado.-\n Atte. Dr. Vétere Santiago A. \n",
+    "confidencia": {
+      "forma": "Alta"
+    }
+  },
+  "validada": null
+}

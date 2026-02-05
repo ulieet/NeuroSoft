@@ -16,12 +16,14 @@ import {
   Stethoscope, 
   ClipboardList, 
   Brain,          
-  Pill,           
-  FlaskConical,   
-  TrendingUp,     
-  FileDown,       
+  Pill,            
+  FlaskConical,    
+  TrendingUp,      
+  FileDown,        
   Check,
-  Trash 
+  Trash,
+  Calendar,
+  ScanEye
 } from "lucide-react"
 
 import {
@@ -41,16 +43,24 @@ import {
   obtenerPacientePorId,
   obtenerEdadPaciente,
   eliminarHistoriaClinica,
-  modificarHistoriaClinica,
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
 
-function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
-  if (!fechaInicioStr) return 0;
+import { BASE_URL } from "@/lib/api-historias"
+
+// --- HELPERS VISUALES Y LÓGICOS ---
+
+const mostrarDato = (dato: string | null | undefined) => {
+  return dato && dato.trim() !== "" ? dato : "—";
+}
+
+function calcularAnios(fechaInicioStr?: string, fechaFinStr?: string): number | null {
+  if (!fechaInicioStr) return null;
   const fechaInicio = new Date(fechaInicioStr);
+  if (isNaN(fechaInicio.getTime())) return null;
+
   const fechaFin = fechaFinStr ? new Date(fechaFinStr) : new Date(); 
-  
   let anios = fechaFin.getFullYear() - fechaInicio.getFullYear();
   const mes = fechaFin.getMonth() - fechaInicio.getMonth();
   if (mes < 0 || (mes === 0 && fechaFin.getDate() < fechaInicio.getDate())) {
@@ -62,10 +72,12 @@ function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
 const getEstadoBadge = (estado: string) => {
   switch (estado) {
     case "validada": return <Badge className="bg-green-100 text-green-800 border-green-200"><Check className="w-3 h-3 mr-1" />Validada</Badge>
-    case "pendiente": return <Badge variant="secondary">Pendiente</Badge>
+    case "pendiente": 
+    case "pendiente_validacion": return <Badge variant="secondary">Pendiente</Badge>
     default: return <Badge variant="destructive">Error</Badge>
   }
 }
+
 const getCriticidadBadge = (nivel?: string) => {
   if (!nivel) return <Badge variant="outline">N/A</Badge>
   switch (nivel) {
@@ -76,6 +88,7 @@ const getCriticidadBadge = (nivel?: string) => {
     default: return <Badge variant="outline">{nivel}</Badge>
   }
 }
+
 const getBadgeSiNo = (valor?: boolean) => {
   if (valor === undefined) return <Badge variant="outline">N/A</Badge>
   return valor 
@@ -83,37 +96,188 @@ const getBadgeSiNo = (valor?: boolean) => {
     : <Badge variant="outline">No</Badge>
 }
 
+// --- RENDERIZADOR ESPECIAL PARA RMN (Traído de tu código original) ---
+const renderizarRMN = (textoJson?: string) => {
+  if (!textoJson) return <p className="text-sm text-muted-foreground">Sin datos registrados.</p>;
+
+  try {
+    const datos = JSON.parse(textoJson);
+    if (!Array.isArray(datos) || datos.length === 0) {
+      return <p className="text-sm text-muted-foreground">Sin datos estructurados.</p>;
+    }
+
+    return (
+      <div className="space-y-3">
+        {datos.map((rmn: any, index: number) => (
+          <div key={index} className="border rounded-md p-3 text-sm bg-card shadow-sm">
+            <div className="flex items-center gap-2 mb-2 font-medium text-primary">
+              <Calendar className="h-4 w-4" />
+              {/* Ajuste de fecha para evitar desfase de zona horaria al mostrar */}
+              <span>{rmn.fecha ? rmn.fecha.split('-').reverse().join('/') : "Fecha desconocida"}</span>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-2 text-muted-foreground">
+              <div>
+                <span className="block text-xs font-semibold text-foreground">Actividad:</span>
+                {rmn.actividad === "Activa" ? (
+                  <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Activa</Badge>
+                ) : (
+                  rmn.actividad || "—"
+                )}
+              </div>
+              <div>
+                <span className="block text-xs font-semibold text-foreground">Gadolinio (Gd):</span>
+                {rmn.gd === "Positiva" ? (
+                  <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Positiva</Badge>
+                ) : (
+                  rmn.gd || "—"
+                )}
+              </div>
+            </div>
+
+            {rmn.regiones && rmn.regiones.length > 0 && (
+              <div className="mt-2 pt-2 border-t border-dashed">
+                <span className="block text-xs font-semibold text-foreground mb-1">Regiones Afectadas:</span>
+                <div className="flex flex-wrap gap-1">
+                  {rmn.regiones.map((reg: string, i: number) => (
+                    <Badge key={i} variant="outline" className="text-xs px-1 py-0 h-5 bg-muted/50">
+                      {reg}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  } catch (e) {
+    return <p className="text-sm text-muted-foreground whitespace-pre-wrap">{textoJson}</p>;
+  }
+};
+
 function PaginaDetalleHistoria() {
   const searchParams = useSearchParams()
   const router = useRouter()
-  const historiaId = Number(searchParams.get("id"))
+  const historiaId = searchParams.get("id")
 
   const [historia, setHistoria] = useState<HistoriaClinica | null>(null)
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
 
+  // --- LÓGICA DE CARGA DE DATOS (Backend + Mapeo) ---
   useEffect(() => {
     if (!historiaId) {
       setEstaCargando(false)
       return
     }
     
-    const cargarDatos = () => {
+    const cargarDatos = async () => {
       setEstaCargando(true)
-      const hist = obtenerHistoriaClinicaPorId(historiaId)
       
-      setHistoria(hist || null) 
-      
-      if (hist) {
-        const pac = obtenerPacientePorId(hist.pacienteId)
-        setPaciente(pac || null)
+      try {
+        // Intentamos cargar desde el Backend Real
+        const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`);
+        
+        if (res.ok) {
+          const data = await res.json();
+          const borrador = data.borrador || {};
+          const pInfo = borrador.paciente || {};
+          const enf = borrador.enfermedad || {};
+          const cons = borrador.consulta || {};
+          
+          let nombre = pInfo.nombre || "";
+          let apellido = "";
+          if (nombre.includes(",")) {
+            const partes = nombre.split(",");
+            apellido = partes[0].trim();
+            nombre = partes[1].trim();
+          }
+
+          const pac: Paciente = {
+            id: historiaId,
+            nombre: nombre,
+            apellido: apellido,
+            dni: pInfo.dni || "",
+            fechaNacimiento: pInfo.fecha_nacimiento || "", 
+            sexo: "",
+            telefono: "",
+            email: "",
+            direccion: "",
+            obraSocial: pInfo.obra_social || "",           
+            numeroAfiliado: pInfo.nro_afiliado || "",      
+            fechaRegistro: new Date().toISOString(),
+            observaciones: ""
+          };
+          setPaciente(pac);
+
+          const hist: HistoriaClinica = {
+            id: data.id,
+            pacienteId: historiaId,
+            fecha: cons.fecha || new Date().toISOString(),
+            diagnostico: enf.diagnostico || "",
+            codigoDiagnostico: enf.codigo,
+            formaEvolutiva: enf.forma,
+            fechaInicioEnfermedad: enf.fecha_inicio,
+            escalaEDSS: enf.edss,
+            estado: data.estado === "pendiente_validacion" ? "pendiente" : data.estado,
+            medico: cons.medico || "",
+            motivoConsulta: "", // A veces no se extrae directamente
+            anamnesis: borrador.texto_original || "", // Usamos texto original como anamnesis completa
+            // Intentamos llenar con las secciones si existen (Fusión de lógica)
+            examenFisico: borrador.secciones_texto?.examen_fisico || "", 
+            evolucion: "", 
+            fechaImportacion: new Date().toISOString(),
+            // Mapeamos tratamientos a la estructura de medicamentos visual
+            medicamentos: (borrador.tratamientos || []).map((t: any) => ({
+                droga: t.molecula || t.droga || "Sin nombre",
+                molecula: t.molecula,
+                dosis: t.dosis,
+                frecuencia: t.frecuencia,
+                estado: t.estado, // Añadido para mostrar si es Activo/Suspendido
+                tolerancia: true 
+            })),
+            tratamiento: "", // Campo libre extra
+            estudiosComplementarios: {
+              puncionLumbar: borrador.complementarios?.puncion_lumbar?.realizada || false,
+              examenLCR: false,
+              // Guardamos el JSON stringificado para que renderizarRMN lo procese después
+              texto: borrador.complementarios?.rmn 
+                ? JSON.stringify(borrador.complementarios.rmn) 
+                : ""
+            },
+            // Campos adicionales para UI
+            nivelCriticidad: "medio", // Mock por ahora para que se vea el badge
+            patologia: "Neurología" // Mock por ahora
+          };
+          setHistoria(hist);
+          setEstaCargando(false);
+          return; 
+        }
+      } catch (error) {
+        console.warn("Backend falló, intentando local...", error);
       }
+
+      // Fallback a LocalStorage si falla backend
+      const histLocal = obtenerHistoriaClinicaPorId(historiaId);
+      if (histLocal) {
+        setHistoria(histLocal);
+        const pacLocal = obtenerPacientePorId(histLocal.pacienteId);
+        setPaciente(pacLocal || null);
+      }
+      
       setEstaCargando(false)
     }
 
     cargarDatos()
   }, [historiaId])
 
+  // Lógica de navegación para validar (del código original)
+  const handleValidarHistoria = () => {
+    router.push(`/historias/validar?id=${historiaId}`);
+  }
+
+  // Lógica de eliminación (del código visual)
   const handleEliminarHistoria = () => {
     if (!historia || !paciente) return
     try {
@@ -126,22 +290,7 @@ function PaginaDetalleHistoria() {
     }
   }
 
-  const handleValidarHistoria = () => {
-    if (!historia) return;
-    const historiaValidada = {
-      ...historia,
-      estado: "validada" as "validada",
-    };
-    try {
-      modificarHistoriaClinica(historia.id, historiaValidada);
-      setHistoria(historiaValidada);
-      alert("Historia validada con éxito.");
-    } catch (error) {
-      console.error(error);
-      alert("Error al validar la historia.");
-    }
-  }
-
+  // Cálculos para UI
   const edadInicioSintomas = (paciente && historia?.fechaInicioEnfermedad)
     ? calcularAnios(paciente.fechaNacimiento, historia.fechaInicioEnfermedad)
     : null
@@ -155,7 +304,7 @@ function PaginaDetalleHistoria() {
        <MedicalLayout currentPage="historias">
          <div className="flex items-center justify-center min-h-[400px]">
            <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-           <p className="ml-2">Cargando datos de la historia...</p>
+           <p className="ml-2">Cargando datos...</p>
          </div>
        </MedicalLayout>
      )
@@ -168,7 +317,9 @@ function PaginaDetalleHistoria() {
           <Card>
             <CardHeader>
               <CardTitle>Historia no encontrada</CardTitle>
-              <CardDescription>La historia solicitada (ID: {historiaId}) no existe.</CardDescription>
+              <CardDescription>
+                La historia (ID: {historiaId}) no existe en el sistema.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild>
@@ -184,10 +335,12 @@ function PaginaDetalleHistoria() {
     )
   }
 
+  // --- RENDERIZADO VISUAL MEJORADO ---
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Cabecera */}
+        
+        {/* Cabecera y Acciones */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
@@ -210,6 +363,7 @@ function PaginaDetalleHistoria() {
           
           <div className="flex flex-wrap gap-2"> 
             
+            {/* Botón Validar solo si está pendiente */}
             {historia.estado === "pendiente" && (
               <Button onClick={handleValidarHistoria}>
                 <Check className="mr-2 h-4 w-4" />
@@ -223,11 +377,13 @@ function PaginaDetalleHistoria() {
                 Editar
               </a>
             </Button>
+            
             <Button variant="outline">
               <FileDown className="mr-2 h-4 w-4" />
               Exportar
             </Button>
 
+            {/* Diálogo de Eliminación Seguro */}
             <AlertDialog>
               <AlertDialogTrigger asChild>
                 <Button variant="destructive" size="sm">
@@ -261,18 +417,22 @@ function PaginaDetalleHistoria() {
           {/* --- Columna Principal (Izquierda) --- */}
           <div className="lg:col-span-2 space-y-6">
             
-            {/* 🔹 MOVIDO AQUÍ: Card Paciente */}
+            {/* Card Paciente */}
             <Card>
               <CardHeader>
                 <CardTitle>Paciente</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <div className="font-semibold">{paciente.apellido}, {paciente.nombre}</div>
+                <div className="font-semibold">
+                  {paciente.apellido} {paciente.nombre ? ", " + paciente.nombre : ""}
+                </div>
                 <div className="text-sm text-muted-foreground">
-                  <span className="font-mono">{paciente.dni}</span> • {obtenerEdadPaciente(paciente.fechaNacimiento)} años
+                  DNI: <span className="font-mono">{mostrarDato(paciente.dni)}</span>
+                  <span className="mx-2">•</span>
+                  Edad: {obtenerEdadPaciente(paciente.fechaNacimiento)} años
                 </div>
                  <div className="text-sm text-muted-foreground">
-                  {paciente.obraSocial} • Afiliado: {paciente.numeroAfiliado || "N/A"}
+                  {mostrarDato(paciente.obraSocial)} • Afiliado: {mostrarDato(paciente.numeroAfiliado)}
                 </div>
                 <Button variant="outline" className="w-full sm:w-auto" asChild>
                   <a href={`/pacientes/detalle?id=${paciente.id}`}>
@@ -283,60 +443,20 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Síntomas y Evolución */}
+            {/* Card: Síntomas y Evolución (Anamnesis completa) */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <ClipboardList className="h-5 w-5" />
-                  Síntomas, Anamnesis y Evolución
+                  Texto de la Historia
                 </CardTitle>
+                <CardDescription>Texto extraído del documento original</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Motivo de Consulta</p>
-                  <p className="text-base whitespace-pre-wrap">{historia.motivoConsulta}</p>
-                </div>
-                <Separator />
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Síntomas Principales / Anamnesis</p>
-                  <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.anamnesis}</p>
-                </div>
-                <Separator />
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Examen Físico</p>
-                  <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.examenFisico}</p>
-                </div>
-                 <Separator />
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Evolución</p>
-                  <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.evolucion}</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card: Estudios Realizados */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <FlaskConical className="h-5 w-5" />
-                  Estudios Realizados
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium">Punción Lumbar</span>
-                  {getBadgeSiNo(historia.estudiosComplementarios?.puncionLumbar)}
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium">Examen LCR</span>
-                  {getBadgeSiNo(historia.estudiosComplementarios?.examenLCR)}
-                </div>
-                <Separator />
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Notas (RMN, Laboratorios, etc.)</p>
-                  <p className="text-sm text-muted-foreground whitespace-pre-wrap">
-                    {historia.estudiosComplementarios?.texto || "Sin notas."}
-                  </p>
+                <div className="max-h-[400px] overflow-y-auto bg-muted/30 p-4 rounded-md border">
+                   <p className="text-sm text-muted-foreground whitespace-pre-wrap leading-relaxed">
+                     {historia.anamnesis || "Sin texto disponible."}
+                   </p>
                 </div>
               </CardContent>
             </Card>
@@ -352,71 +472,61 @@ function PaginaDetalleHistoria() {
               <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <p className="text-sm font-medium text-muted-foreground">Diagnóstico Principal</p>
-                    <p className="text-base font-semibold">{historia.diagnostico}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">Patología (Categoría)</p>
-                    <p className="text-base">{historia.patologia || "N/A"}</p>
+                    <p className="text-base font-semibold">{mostrarDato(historia.diagnostico)}</p>
                   </div>
                   <div>
                     <p className="text-sm font-medium text-muted-foreground">Código (CIE-10 / OMS)</p>
-                    <p className="text-base font-mono">{historia.codigoDiagnostico || "N/A"}</p>
+                    <p className="text-base font-mono">{mostrarDato(historia.codigoDiagnostico)}</p>
                   </div>
                    <div>
                     <p className="text-sm font-medium text-muted-foreground">Forma Evolutiva</p>
-                    <p className="text-base">{historia.formaEvolutiva || "N/A"}</p>
+                    <p className="text-base">{mostrarDato(historia.formaEvolutiva)}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Categoría</p>
+                    <p className="text-base">{mostrarDato(historia.patologia)}</p>
                   </div>
               </CardContent>
             </Card>
 
-            {/* Card: Tratamiento */}
+            {/* Card: Tratamiento (Con tabla estilizada) */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Pill className="h-5 w-5" />
-                  Tratamiento y Solicitud
+                  Tratamiento y Medicación
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm font-medium text-muted-foreground">Medicamentos Recetados</p>
                 {(!historia.medicamentos || historia.medicamentos.length === 0) ? (
-                  <p className="text-sm text-muted-foreground">No se registraron medicamentos.</p>
+                  <p className="text-sm text-muted-foreground">No se registraron medicamentos en el borrador.</p>
                 ) : (
-                  <div className="overflow-x-auto">
+                  <div className="overflow-x-auto border rounded-md">
                     <Table>
                       <TableHeader>
                         <TableRow>
-                          <TableHead>Droga</TableHead>
                           <TableHead>Molécula</TableHead>
                           <TableHead>Dosis</TableHead>
-                          <TableHead>Frecuencia</TableHead>
+                          <TableHead>Estado</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        {historia.medicamentos.map((med, index) => (
+                        {historia.medicamentos.map((med: any, index: number) => (
                           <TableRow key={index}>
-                            <TableCell className="font-medium">{med.droga}</TableCell>
-                            <TableCell>{med.molecula || "N/A"}</TableCell>
-                            <TableCell>{med.dosis || "N/A"}</TableCell>
-                            <TableCell>{med.frecuencia || "N/A"}</TableCell>
+                            <TableCell className="font-medium">{med.molecula || med.droga}</TableCell>
+                            <TableCell>{med.dosis || "—"}</TableCell>
+                            <TableCell>
+                                {med.estado === "Activo" 
+                                    ? <Badge variant="secondary" className="bg-green-100 text-green-800 hover:bg-green-100">Activo</Badge> 
+                                    : <Badge variant="outline">{med.estado || "—"}</Badge>
+                                }
+                            </TableCell>
                           </TableRow>
                         ))}
                       </TableBody>
                     </Table>
                   </div>
                 )}
-                
-                {historia.observacionesMedicacion && (
-                   <div className="p-3 bg-muted rounded-md mt-2">
-                     <p className="text-sm font-medium text-foreground">Observaciones (Medicación)</p>
-                     <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.observacionesMedicacion}</p>
-                   </div>
-                )}
-                
-                <Separator />
-                
-                <p className="text-sm font-medium text-muted-foreground">Otras Terapias / Comentario General</p>
-                <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.tratamiento || "No se indicaron otras terapias."}</p>
               </CardContent>
             </Card>
 
@@ -425,7 +535,7 @@ function PaginaDetalleHistoria() {
           {/* --- Barra Lateral (Derecha) --- */}
           <div className="space-y-6">
             
-            {/* 🔹 MOVIDO AQUÍ: Datos de la Consulta (Sin Médico) */}
+            {/* Card: Datos de Consulta */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -433,7 +543,7 @@ function PaginaDetalleHistoria() {
                   Datos de la Consulta
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4"> {/* Ajustado para barra lateral */}
+              <CardContent className="space-y-4">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Estado</p>
                   {getEstadoBadge(historia.estado)}
@@ -445,7 +555,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Índices */}
+            {/* Card: Índices Clave */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -456,41 +566,65 @@ function PaginaDetalleHistoria() {
               <CardContent className="space-y-4">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Grado Discapacidad (EDSS)</p>
-                  <p className="text-xl font-bold">{historia.escalaEDSS?.toFixed(1) ?? "N/A"}</p>
+                  <p className="text-xl font-bold">
+                    {historia.escalaEDSS ?? <span className="text-sm font-normal text-muted-foreground italic">No reportado</span>}
+                  </p>
                 </div>
                 <Separator />
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground">Edad Inicio de Síntomas</p>
-                  <p className="text-base">{edadInicioSintomas ? `${edadInicioSintomas} años` : "N/A"}</p>
+                  <p className="text-sm font-medium text-muted-foreground">Edad Inicio Síntomas</p>
+                  <p className="text-base">{edadInicioSintomas !== null ? `${edadInicioSintomas} años` : "—"}</p>
                 </div>
                  <div>
                   <p className="text-sm font-medium text-muted-foreground">Tiempo de Evolución</p>
-                  <p className="text-base">{tiempoEvolucion ? `${tiempoEvolucion} años` : "N/A"}</p>
+                  <p className="text-base">{tiempoEvolucion !== null ? `${tiempoEvolucion} años` : "—"}</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Card: Estudios (Con RMN renderizada) */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                   <FlaskConical className="h-5 w-5" />
+                   Estudios
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium">Punción Lumbar</span>
+                  {getBadgeSiNo(historia.estudiosComplementarios?.puncionLumbar)}
+                </div>
+                <Separator />
+                 <div>
+                  <p className="text-sm font-medium text-muted-foreground mb-2 flex items-center gap-2">
+                    <ScanEye className="h-4 w-4"/> Resonancia Magnética
+                  </p>
+                  <div className="max-h-80 overflow-y-auto">
+                    {/* Renderizador especial para RMN que teníamos antes */}
+                    {renderizarRMN(historia.estudiosComplementarios?.texto)}
+                  </div>
                 </div>
               </CardContent>
             </Card>
             
-            {/* Card: Metadatos */}
+             {/* Card: Metadatos */}
              <Card>
               <CardHeader>
-                <CardTitle>Metadatos de la Historia</CardTitle>
+                <CardTitle>Metadatos</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground">Médico</p>
-                  <p className="text-sm">{historia.medico}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Estado</p>
-                  {getEstadoBadge(historia.estado)}
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">ID de Historia</p>
-                  <p className="text-sm font-mono">{historia.id}</p>
+                  <p className="text-sm font-medium text-muted-foreground">ID Interno</p>
+                  <p className="text-xs font-mono break-all">{historia.id}</p>
                 </div>
                  <div>
-                  <p className="text-sm font-medium text-muted-foreground">Fecha de Importación</p>
-                  <p className="text-sm">{new Date(historia.fechaImportacion).toLocaleString("es-AR")}</p>
+                  <p className="text-sm font-medium text-muted-foreground">Médico</p>
+                  <p className="text-sm">{mostrarDato(historia.medico)}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Importado el</p>
+                  <p className="text-xs text-muted-foreground">{new Date(historia.fechaImportacion).toLocaleString("es-AR")}</p>
                 </div>
               </CardContent>
             </Card>
@@ -504,14 +638,7 @@ function PaginaDetalleHistoria() {
 
 export default function PaginaDetalleHistoriaSuspenseWrapper() {
   return (
-    <Suspense fallback={
-      <MedicalLayout currentPage="historias">
-        <div className="flex items-center justify-center min-h-[400px]">
-           <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-           <p className="ml-2">Cargando...</p>
-         </div>
-      </MedicalLayout>
-    }>
+    <Suspense fallback={<div>Cargando...</div>}>
       <PaginaDetalleHistoria />
     </Suspense>
   )
