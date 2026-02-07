@@ -10,10 +10,10 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
-import { ArrowLeft, Save, RefreshCw, Brain, Pill, FlaskConical, Stethoscope, ClipboardList, TrendingUp, User } from "lucide-react"
+import { ArrowLeft, Save, RefreshCw, Brain, Pill, FlaskConical, User, TrendingUp, ClipboardList } from "lucide-react"
 
 import {
-  obtenerPacientePorId, // Actualizado
+  obtenerPacientePorId, 
   agregarHistoriaClinica,
   type HistoriaClinica,
   type Paciente,
@@ -38,11 +38,15 @@ const estadoInicialHistoria: Partial<HistoriaClinica> = {
   escalaEDSS: undefined,
   estado: "pendiente", 
   medico: "Dr. Rodríguez", 
-  motivoConsulta: "",
-  anamnesis: "",
+  
+  // Nuevos campos iniciales vacíos
+  sintomasPrincipales: "",
+  antecedentes: "",
+  agrupacionSindromica: "",
+  
   examenFisico: "",
   estudiosComplementarios: { puncionLumbar: false, examenLCR: false, texto: "" },
-  tratamiento: "",
+  tratamiento: "", // Esto ahora será la justificación
   evolucion: "",
   fechaImportacion: new Date().toISOString(),
   medicamentos: [],
@@ -50,24 +54,22 @@ const estadoInicialHistoria: Partial<HistoriaClinica> = {
   nivelCriticidad: "medio",
 }
 
-
 function PaginaNuevaHistoria() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const pacienteIdParam = searchParams.get("pacienteId")
 
-  // --- ESTADO PARA MOSTRAR EL NOMBRE ---
   const [pacienteSeleccionado, setPacienteSeleccionado] = useState<Paciente | null>(null) 
   const [estaGuardando, setEstaGuardando] = useState(false)
   const [estaCargando, setEstaCargando] = useState(true)
   
   // Estado del formulario
   const [formData, setFormData] = useState<Partial<HistoriaClinica>>(estadoInicialHistoria)
-  // Estado para el JSON de medicamentos
-  const [medicamentosJson, setMedicamentosJson] = useState("[]")
+  
+  // Estado para medicamentos como string simple (separado por comas)
+  const [medicamentosInput, setMedicamentosInput] = useState("")
 
   useEffect(() => {
-    // Si no hay ID en la URL, redirigir al selector
     if (!pacienteIdParam) {
       router.replace("/pacientes?redirect_to=nueva_historia")
       return
@@ -125,26 +127,27 @@ function PaginaNuevaHistoria() {
     e.preventDefault()
     setEstaGuardando(true)
 
-    // La validación del ID ya se hizo en el useEffect
     if (!formData.pacienteId) {
       alert("Error: No hay paciente seleccionado.")
       setEstaGuardando(false)
       return
     }
 
-    let medicamentosParseados: Medicamento[] = []
-    try {
-      medicamentosParseados = JSON.parse(medicamentosJson)
-    } catch {
-      alert("El formato JSON de los medicamentos es inválido. Por favor, corrígelo.")
-      setEstaGuardando(false)
-      return
-    }
+    // Convertir string de medicamentos (separado por comas) a array de objetos
+    const listaMedicamentos: Medicamento[] = medicamentosInput
+      .split(",")
+      .map(item => item.trim())
+      .filter(item => item !== "")
+      .map(nombre => ({
+        droga: nombre,
+        dosis: "",     // Valor por defecto
+        estado: "Activo" // Valor por defecto
+      }))
 
     const datosCompletos = {
       ...estadoInicialHistoria, 
       ...formData,
-      medicamentos: medicamentosParseados,
+      medicamentos: listaMedicamentos,
     }
 
     try {
@@ -158,7 +161,6 @@ function PaginaNuevaHistoria() {
     }
   }
 
-  // --- Renderizado de Carga ---
   if (estaCargando || !pacienteSeleccionado) {
     return (
       <MedicalLayout currentPage="historias">
@@ -182,8 +184,8 @@ function PaginaNuevaHistoria() {
               </a>
             </Button>
             <div>
-              <h1 className="text-2xl font-bold text-balance">Crear Nueva Historia Clínica</h1>
-              <p className="text-muted-foreground">Complete el formulario para registrar una nueva consulta</p>
+              <h1 className="text-2xl font-bold text-balance">Crear Resumen de Historia Clínica</h1>
+              <p className="text-muted-foreground">Formulario para auditoría y solicitud de medicamentos</p>
             </div>
           </div>
 
@@ -195,10 +197,9 @@ function PaginaNuevaHistoria() {
               {/* Card: Paciente y Consulta */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Paciente y Consulta</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* --- CAMPO DE PACIENTE (MODIFICADO) --- */}
                   <div className="space-y-2 sm:col-span-2">
                     <Label htmlFor="pacienteNombre">Paciente *</Label>
                     <Input 
@@ -207,40 +208,47 @@ function PaginaNuevaHistoria() {
                       disabled 
                       className="font-medium"
                     />
-                    <CardDescription>
-                      Para cambiar de paciente, <a href="/pacientes?redirect_to=nueva_historia" className="text-primary underline">vuelve a la selección</a>.
-                    </CardDescription>
                   </div>
-                  {/* --- FIN DE MODIFICACIÓN --- */}
 
                   <div className="space-y-2">
-                    <Label htmlFor="fecha">Fecha de Consulta *</Label>
+                    <Label htmlFor="fecha">Fecha de Emisión *</Label>
                     <Input id="fecha" type="date" value={formData.fecha} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="medico">Médico Tratante</Label>
+                    <Label htmlFor="medico">Médico Firmante</Label>
                     <Input id="medico" value={formData.medico} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Card: Anamnesis */}
+              {/* Card: Cuadro Clínico */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Anamnesis y Examen Físico</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  
+                  {/* SÍNTOMAS PRINCIPALES (Ex Anamnesis) */}
                   <div className="space-y-2">
-                    <Label htmlFor="motivoConsulta">Motivo de Consulta</Label>
-                    <Textarea id="motivoConsulta" placeholder="Motivo principal..." value={formData.motivoConsulta} onChange={handleChange} />
+                    <Label htmlFor="sintomasPrincipales">Síntomas Principales / Enfermedad Actual</Label>
+                    <Textarea id="sintomasPrincipales" placeholder="Describa los brotes, remisiones y síntomas actuales..." rows={5} value={formData.sintomasPrincipales} onChange={handleChange} />
                   </div>
+
+                  {/* ANTECEDENTES */}
                   <div className="space-y-2">
-                    <Label htmlFor="anamnesis">Anamnesis / Síntomas</Label>
-                    <Textarea id="anamnesis" placeholder="Detalle de síntomas, etc." rows={5} value={formData.anamnesis} onChange={handleChange} />
+                    <Label htmlFor="antecedentes">Antecedentes (Personales/Familiares)</Label>
+                    <Textarea id="antecedentes" placeholder="Antecedentes relevantes..." rows={2} value={formData.antecedentes} onChange={handleChange} />
                   </div>
+
+                  {/* AGRUPACIÓN SINDRÓMICA */}
+                  <div className="space-y-2">
+                    <Label htmlFor="agrupacionSindromica">Agrupación Sindrómica</Label>
+                    <Textarea id="agrupacionSindromica" placeholder="Ej: Piramidalismo, Sensitivo, etc." rows={2} value={formData.agrupacionSindromica} onChange={handleChange} />
+                  </div>
+
                   <div className="space-y-2">
                     <Label htmlFor="examenFisico">Examen Físico</Label>
-                    <Textarea id="examenFisico" placeholder="Resultados del examen físico" rows={3} value={formData.examenFisico} onChange={handleChange} />
+                    <Textarea id="examenFisico" placeholder="Hallazgos del examen físico..." rows={3} value={formData.examenFisico} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -253,19 +261,19 @@ function PaginaNuevaHistoria() {
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="diagnostico">Diagnóstico Principal *</Label>
-                    <Input id="diagnostico" placeholder="Ej: Migraña con aura" value={formData.diagnostico} onChange={handleChange} required />
+                    <Input id="diagnostico" placeholder="Ej: Esclerosis Múltiple (OMS 340)" value={formData.diagnostico} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="patologia">Patología (Categoría)</Label>
-                    <Input id="patologia" placeholder="Ej: Migraña" value={formData.patologia} onChange={handleChange} />
+                    <Label htmlFor="patologia">Categoría</Label>
+                    <Input id="patologia" placeholder="Ej: Desmielinizante" value={formData.patologia} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="codigoDiagnostico">Código (CIE-10)</Label>
-                    <Input id="codigoDiagnostico" placeholder="Ej: G43.1" value={formData.codigoDiagnostico} onChange={handleChange} />
+                    <Input id="codigoDiagnostico" placeholder="Ej: G35" value={formData.codigoDiagnostico} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="formaEvolutiva">Forma Evolutiva</Label>
-                    <Input id="formaEvolutiva" placeholder="Ej: Recaída" value={formData.formaEvolutiva} onChange={handleChange} />
+                    <Input id="formaEvolutiva" placeholder="Ej: Recaídas y remisiones" value={formData.formaEvolutiva} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -273,7 +281,7 @@ function PaginaNuevaHistoria() {
               {/* Card: Evolución y EDSS */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Evolución y Escalas</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Evolución</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -295,8 +303,8 @@ function PaginaNuevaHistoria() {
                     </Select>
                   </div>
                   <div className="space-y-2 sm:col-span-2">
-                    <Label htmlFor="evolucion">Evolución</Label>
-                    <Textarea id="evolucion" placeholder="Comentarios sobre la evolución..." rows={3} value={formData.evolucion} onChange={handleChange} />
+                    <Label htmlFor="evolucion">Resumen de Evolución</Label>
+                    <Textarea id="evolucion" placeholder="Estabilidad clínica, recaídas recientes..." rows={3} value={formData.evolucion} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -315,20 +323,12 @@ function PaginaNuevaHistoria() {
                     />
                     <Label htmlFor="puncionLumbar" className="font-normal">Punción Lumbar</Label>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox
-                      id="examenLCR"
-                      checked={formData.estudiosComplementarios?.examenLCR}
-                      onCheckedChange={(checked) => handleEstudioChange("examenLCR", !!checked)}
-                    />
-                    <Label htmlFor="examenLCR" className="font-normal">Examen LCR</Label>
-                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="estudiosTexto">Notas (RMN, Laboratorios, etc.)</Label>
+                    <Label htmlFor="estudiosTexto">Notas (RMN, Laboratorios, Potenciales)</Label>
                     <Textarea
                       id="estudiosTexto"
-                      placeholder="Detalles de otros estudios..."
-                      rows={3}
+                      placeholder="Detalles de RMN, laboratorio de rutina, bandas oligoclonales..."
+                      rows={4}
                       value={formData.estudiosComplementarios?.texto}
                       onChange={(e) => handleEstudioChange("texto", e.target.value)}
                     />
@@ -339,33 +339,31 @@ function PaginaNuevaHistoria() {
               {/* Card: Tratamiento */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Tratamiento y Medicación</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Plan Terapéutico</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  
+                  {/* Comentario Justificación (Crucial en los docs) */}
                   <div className="space-y-2">
-                    <Label htmlFor="tratamiento">Otras Terapias / Comentario General</Label>
-                    <Textarea id="tratamiento" placeholder="Indicaciones generales, fisioterapia, etc." rows={3} value={formData.tratamiento} onChange={handleChange} />
+                    <Label htmlFor="tratamiento">Comentario / Justificación Médica</Label>
+                    <CardDescription>
+                        Texto legal/médico justificando la continuidad del tratamiento.
+                    </CardDescription>
+                    <Textarea id="tratamiento" placeholder="El paciente debe continuar sin interrupción..." rows={4} value={formData.tratamiento} onChange={handleChange} />
                   </div>
+                  
+                  {/* INPUT SIMPLE PARA MEDICAMENTOS (Solicito) */}
                   <div className="space-y-2">
-                    <Label htmlFor="medicamentosJson">Medicamentos (Formato JSON)</Label>
-                   <CardDescription>
-  Formato: [{`{"droga": "Ejemplo", "dosis": "10mg"}`}]
-</CardDescription>
-
-
-
-                    <Textarea
-                      id="medicamentosJson"
-                      placeholder='[{"droga": "SumaTriptan", "dosis": "50mg"}]'
-                      rows={5}
-                      value={medicamentosJson}
-                      onChange={(e) => setMedicamentosJson(e.target.value)}
-                      className="font-mono"
+                    <Label htmlFor="medicamentosInput">Medicación Solicitada</Label>
+                    <CardDescription>
+                      Ingresa los medicamentos separados por comas.
+                    </CardDescription>
+                    <Input
+                      id="medicamentosInput"
+                      placeholder="Ej: Rebif 44mcg, Ibuprofeno"
+                      value={medicamentosInput}
+                      onChange={(e) => setMedicamentosInput(e.target.value)}
                     />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="observacionesMedicacion">Observaciones (Medicación)</Label>
-                    <Textarea id="observacionesMedicacion" placeholder="Efectos, adherencia..." rows={2} value={formData.observacionesMedicacion} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -384,9 +382,8 @@ function PaginaNuevaHistoria() {
                     <Select value={formData.estado} onValueChange={(v) => handleSelectChange("estado", v)}>
                       <SelectTrigger id="estado"><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="pendiente">Pendiente</SelectItem>
-                        <SelectItem value="validada">Validada</SelectItem>
-                        <SelectItem value="error">Error</SelectItem>
+                        <SelectItem value="pendiente">Borrador</SelectItem>
+                        <SelectItem value="validada">Finalizado</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -398,13 +395,13 @@ function PaginaNuevaHistoria() {
                         <SelectItem value="bajo">Bajo</SelectItem>
                         <SelectItem value="medio">Medio</SelectItem>
                         <SelectItem value="alto">Alto</SelectItem>
-                        <SelectItem value="critico">Crítico</SelectItem>
+                        <SelectItem value="critico">Crítico (Urgente)</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <Button type="submit" className="w-full" disabled={estaGuardando}>
                     <Save className="mr-2 h-4 w-4" />
-                    {estaGuardando ? "Guardando..." : "Guardar Historia"}
+                    {estaGuardando ? "Guardando..." : "Guardar Resumen"}
                   </Button>
                   <Button variant="outline" className="w-full bg-transparent" asChild>
                     <a href={"/pacientes?redirect_to=nueva_historia"}>Cancelar</a>
@@ -419,7 +416,6 @@ function PaginaNuevaHistoria() {
   )
 }
 
-// Envolvemos el componente principal en Suspense
 export default function PaginaNuevaHistoriaSuspenseWrapper() {
   return (
     <Suspense

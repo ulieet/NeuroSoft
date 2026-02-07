@@ -6,7 +6,7 @@ import datosDeEjemplo from "@/public/datos-ejemplo.json"
 
 // --- INTERFACES ACTUALIZADAS (ID STRING) ---
 export interface Paciente {
-  id: string  // <--- CAMBIO CRÍTICO: de number a string
+  id: string  
   nombre: string
   apellido: string
   dni: string
@@ -26,7 +26,8 @@ export interface Medicamento {
   molecula?: string
   dosis?: string
   frecuencia?: string
-  tolerancia?: boolean   
+  tolerancia?: boolean
+  estado?: string   
 }
 
 export interface EstudioComplementario {
@@ -36,8 +37,8 @@ export interface EstudioComplementario {
 }
 
 export interface HistoriaClinica {
-  id: string // <--- CAMBIO CRÍTICO: de number a string para aceptar "20260203_123456"
-  pacienteId: string // <--- CAMBIO CRÍTICO
+  id: string 
+  pacienteId: string 
   fecha: string 
   diagnostico: string
   codigoDiagnostico?: string 
@@ -46,8 +47,16 @@ export interface HistoriaClinica {
   escalaEDSS?: number        
   estado: "validada" | "pendiente" | "error"
   medico: string
-  motivoConsulta: string
-  anamnesis: string 
+  
+  // --- CAMPOS NUEVOS AGREGADOS ---
+  sintomasPrincipales?: string
+  antecedentes?: string
+  agrupacionSindromica?: string
+  // ------------------------------
+
+  motivoConsulta?: string // <--- AHORA OPCIONAL
+  anamnesis?: string      // <--- AHORA OPCIONAL
+  
   examenFisico: string
   estudiosComplementarios?: EstudioComplementario
   medicamentos?: Medicamento[]
@@ -165,10 +174,6 @@ export function inicializarDatosDeEjemplo(): void {
   if (typeof window === "undefined") return;
   const pacientes = localStorage.getItem(CLAVES_STORAGE.PACIENTES)
   
-  // Nota: Si tus datos de ejemplo en JSON tienen IDs numéricos (1, 2, 3), 
-  // esto podría dar error de tipo, pero funcionará en runtime porque JS es flexible.
-  // Idealmente, convierte los IDs del JSON a string.
-  
   if (!pacientes) {
     const pacientesEjemplo = datosDeEjemplo.pacientes as unknown as Paciente[]
     const historiasEjemplo = datosDeEjemplo.historias as unknown as HistoriaClinica[] 
@@ -267,7 +272,7 @@ export interface FiltrosHistoria {
 export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClinica[] {
   let historias = obtenerHistoriasClinicas()
   const pacientes = obtenerPacientes()
-  const hoy = new Date().toISOString(); 
+  // const hoy = new Date().toISOString(); 
 
   if (filtros.patologia) {
     const patologias = filtros.patologia.split("|").map(p => p.toLowerCase())
@@ -285,12 +290,10 @@ export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClin
   if (filtros.fechaHasta) {
     historias = historias.filter((h) => new Date(h.fecha) <= new Date(filtros.fechaHasta!))
   }
-  // ... (Resto de filtros igual) ...
   
   historias = historias.filter((historia) => {
     const paciente = pacientes.find((p) => p.id === historia.pacienteId)
     if (!paciente) return false
-    // ... (Lógica de filtrado igual) ...
     return true
   })
   return historias
@@ -304,8 +307,6 @@ export function obtenerAnalisisDePaciente(pacienteId: string) { // ID String
   const historias = obtenerHistoriasPorPacienteId(pacienteId).sort(
     (a, b) => new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
   )
-  
-  // ... (Lógica de análisis igual) ...
   
   const dmtConFechas = historias.map(h => {
      const dmt = h.medicamentos && h.medicamentos.length > 0 
@@ -364,7 +365,6 @@ export function obtenerLineaTiempoPaciente(pacienteId: string): LineaTiempoPacie
   const paciente = obtenerPacientePorId(pacienteId)
   if (!paciente) return null
   const historias = obtenerHistoriasPorPacienteId(pacienteId)
-  // ... (Resto igual) ...
   const medicamentosSet = new Set<string>()
   const diagnosticosSet = new Set<string>()
   historias.forEach((h) => {

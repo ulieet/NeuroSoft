@@ -23,7 +23,9 @@ import {
   Check,
   Trash,
   Calendar,
-  ScanEye
+  ScanEye,
+  History,
+  Activity
 } from "lucide-react"
 
 import {
@@ -96,7 +98,7 @@ const getBadgeSiNo = (valor?: boolean) => {
     : <Badge variant="outline">No</Badge>
 }
 
-// --- RENDERIZADOR ESPECIAL PARA RMN (Traído de tu código original) ---
+// --- RENDERIZADOR ESPECIAL PARA RMN ---
 const renderizarRMN = (textoJson?: string) => {
   if (!textoJson) return <p className="text-sm text-muted-foreground">Sin datos registrados.</p>;
 
@@ -112,7 +114,6 @@ const renderizarRMN = (textoJson?: string) => {
           <div key={index} className="border rounded-md p-3 text-sm bg-card shadow-sm">
             <div className="flex items-center gap-2 mb-2 font-medium text-primary">
               <Calendar className="h-4 w-4" />
-              {/* Ajuste de fecha para evitar desfase de zona horaria al mostrar */}
               <span>{rmn.fecha ? rmn.fecha.split('-').reverse().join('/') : "Fecha desconocida"}</span>
             </div>
             
@@ -165,7 +166,7 @@ function PaginaDetalleHistoria() {
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
 
-  // --- LÓGICA DE CARGA DE DATOS (Backend + Mapeo) ---
+  // --- LÓGICA DE CARGA DE DATOS ---
   useEffect(() => {
     if (!historiaId) {
       setEstaCargando(false)
@@ -176,7 +177,6 @@ function PaginaDetalleHistoria() {
       setEstaCargando(true)
       
       try {
-        // Intentamos cargar desde el Backend Real
         const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`);
         
         if (res.ok) {
@@ -222,33 +222,34 @@ function PaginaDetalleHistoria() {
             escalaEDSS: enf.edss,
             estado: data.estado === "pendiente_validacion" ? "pendiente" : data.estado,
             medico: cons.medico || "",
-            motivoConsulta: "", // A veces no se extrae directamente
-            anamnesis: borrador.texto_original || "", // Usamos texto original como anamnesis completa
-            // Intentamos llenar con las secciones si existen (Fusión de lógica)
+            
+            // --- NUEVOS CAMPOS ADAPTADOS A LOS DOCS ---
+            sintomasPrincipales: borrador.secciones_texto?.sintomas_principales || borrador.texto_original || "",
+            antecedentes: borrador.secciones_texto?.antecedentes || "",
+            agrupacionSindromica: borrador.secciones_texto?.agrupacion_sindromica || "",
+            
             examenFisico: borrador.secciones_texto?.examen_fisico || "", 
-            evolucion: "", 
+            evolucion: borrador.secciones_texto?.evolucion || "", // Si existe en backend
+            
             fechaImportacion: new Date().toISOString(),
-            // Mapeamos tratamientos a la estructura de medicamentos visual
             medicamentos: (borrador.tratamientos || []).map((t: any) => ({
                 droga: t.molecula || t.droga || "Sin nombre",
                 molecula: t.molecula,
                 dosis: t.dosis,
                 frecuencia: t.frecuencia,
-                estado: t.estado, // Añadido para mostrar si es Activo/Suspendido
+                estado: t.estado, 
                 tolerancia: true 
             })),
-            tratamiento: "", // Campo libre extra
+            tratamiento: borrador.secciones_texto?.comentario || "", // Mapeado a "Comentario" del doc
             estudiosComplementarios: {
               puncionLumbar: borrador.complementarios?.puncion_lumbar?.realizada || false,
               examenLCR: false,
-              // Guardamos el JSON stringificado para que renderizarRMN lo procese después
               texto: borrador.complementarios?.rmn 
                 ? JSON.stringify(borrador.complementarios.rmn) 
                 : ""
             },
-            // Campos adicionales para UI
-            nivelCriticidad: "medio", // Mock por ahora para que se vea el badge
-            patologia: "Neurología" // Mock por ahora
+            nivelCriticidad: "medio", 
+            patologia: "Neurología" 
           };
           setHistoria(hist);
           setEstaCargando(false);
@@ -258,7 +259,6 @@ function PaginaDetalleHistoria() {
         console.warn("Backend falló, intentando local...", error);
       }
 
-      // Fallback a LocalStorage si falla backend
       const histLocal = obtenerHistoriaClinicaPorId(historiaId);
       if (histLocal) {
         setHistoria(histLocal);
@@ -272,12 +272,10 @@ function PaginaDetalleHistoria() {
     cargarDatos()
   }, [historiaId])
 
-  // Lógica de navegación para validar (del código original)
   const handleValidarHistoria = () => {
     router.push(`/historias/validar?id=${historiaId}`);
   }
 
-  // Lógica de eliminación (del código visual)
   const handleEliminarHistoria = () => {
     if (!historia || !paciente) return
     try {
@@ -290,7 +288,6 @@ function PaginaDetalleHistoria() {
     }
   }
 
-  // Cálculos para UI
   const edadInicioSintomas = (paciente && historia?.fechaInicioEnfermedad)
     ? calcularAnios(paciente.fechaNacimiento, historia.fechaInicioEnfermedad)
     : null
@@ -317,16 +314,10 @@ function PaginaDetalleHistoria() {
           <Card>
             <CardHeader>
               <CardTitle>Historia no encontrada</CardTitle>
-              <CardDescription>
-                La historia (ID: {historiaId}) no existe en el sistema.
-              </CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <a href="/historias">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Volver a Historias
-                </a>
+                <a href="/historias"><ArrowLeft className="mr-2 h-4 w-4" />Volver</a>
               </Button>
             </CardContent>
           </Card>
@@ -335,129 +326,144 @@ function PaginaDetalleHistoria() {
     )
   }
 
-  // --- RENDERIZADO VISUAL MEJORADO ---
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
         
-        {/* Cabecera y Acciones */}
+        {/* Cabecera */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
-              <a href="/historias"> 
-                <ArrowLeft className="h-4 w-4" />
-              </a>
+              <a href="/historias"><ArrowLeft className="h-4 w-4" /></a>
             </Button>
             <div className="flex-1">
-              <h1 className="text-2xl font-bold text-balance">
-                Resumen de Historia Clínica
-              </h1>
-              <p className="text-muted-foreground">
-                Paciente: {paciente.apellido}, {paciente.nombre}
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Fecha de Consulta: {new Date(historia.fecha).toLocaleDateString("es-AR")}
-              </p>
+              <h1 className="text-2xl font-bold text-balance">Resumen de Historia Clínica</h1>
+              <p className="text-muted-foreground">Paciente: {paciente.apellido}, {paciente.nombre}</p>
+              <p className="text-sm text-muted-foreground">Fecha: {new Date(historia.fecha).toLocaleDateString("es-AR")}</p>
             </div>
           </div>
           
           <div className="flex flex-wrap gap-2"> 
-            
-            {/* Botón Validar solo si está pendiente */}
             {historia.estado === "pendiente" && (
               <Button onClick={handleValidarHistoria}>
-                <Check className="mr-2 h-4 w-4" />
-                Validar Historia
+                <Check className="mr-2 h-4 w-4" />Validar Historia
               </Button>
             )}
-
             <Button variant="outline" asChild>
-              <a href={`/historias/editar?id=${historia.id}`}>
-                <Edit className="mr-2 h-4 w-4" />
-                Editar
-              </a>
+              <a href={`/historias/editar?id=${historia.id}`}><Edit className="mr-2 h-4 w-4" />Editar</a>
             </Button>
             
-            <Button variant="outline">
-              <FileDown className="mr-2 h-4 w-4" />
-              Exportar
-            </Button>
-
-            {/* Diálogo de Eliminación Seguro */}
             <AlertDialog>
               <AlertDialogTrigger asChild>
-                <Button variant="destructive" size="sm">
-                  <Trash className="mr-2 h-4 w-4" />
-                  Eliminar
-                </Button>
+                <Button variant="destructive" size="sm"><Trash className="mr-2 h-4 w-4" />Eliminar</Button>
               </AlertDialogTrigger>
               <AlertDialogContent>
                 <AlertDialogHeader>
-                  <AlertDialogTitle>¿Está seguro de eliminar esta historia?</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    Esta acción no se puede deshacer. Esto eliminará permanentemente la
-                    historia clínica de la fecha <span className="font-bold">{new Date(historia.fecha).toLocaleDateString("es-AR")}</span> 
-                    {" "}para el paciente <span className="font-bold">{paciente.apellido}, {paciente.nombre}</span>.
-                  </AlertDialogDescription>
+                  <AlertDialogTitle>¿Eliminar historia?</AlertDialogTitle>
+                  <AlertDialogDescription>Esta acción es irreversible.</AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                   <AlertDialogCancel>Cancelar</AlertDialogCancel>
-                  <AlertDialogAction onClick={handleEliminarHistoria}>
-                    Confirmar Eliminación
-                  </AlertDialogAction>
+                  <AlertDialogAction onClick={handleEliminarHistoria}>Confirmar</AlertDialogAction>
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
-
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           
-          {/* --- Columna Principal (Izquierda) --- */}
+          {/* --- Columna Principal --- */}
           <div className="lg:col-span-2 space-y-6">
             
-            {/* Card Paciente */}
+            {/* Card Paciente MEJORADO */}
             <Card>
               <CardHeader>
-                <CardTitle>Paciente</CardTitle>
+                <CardTitle>Datos del Paciente</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <div className="font-semibold">
+                <div className="font-semibold text-lg">
                   {paciente.apellido} {paciente.nombre ? ", " + paciente.nombre : ""}
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  DNI: <span className="font-mono">{mostrarDato(paciente.dni)}</span>
-                  <span className="mx-2">•</span>
-                  Edad: {obtenerEdadPaciente(paciente.fechaNacimiento)} años
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <span className="font-bold text-foreground">DNI:</span> <span className="font-mono ml-1">{mostrarDato(paciente.dni)}</span>
+                    </div>
+                    <div>
+                        <span className="font-bold text-foreground">Edad:</span> <span className="ml-1">{obtenerEdadPaciente(paciente.fechaNacimiento)} años</span>
+                    </div>
+                    <div>
+                        <span className="font-bold text-foreground">Obra Social:</span> <span className="ml-1">{mostrarDato(paciente.obraSocial)}</span>
+                    </div>
+                    <div>
+                        <span className="font-bold text-foreground">Nro. Afiliado:</span> <span className="ml-1">{mostrarDato(paciente.numeroAfiliado)}</span>
+                    </div>
                 </div>
-                 <div className="text-sm text-muted-foreground">
-                  {mostrarDato(paciente.obraSocial)} • Afiliado: {mostrarDato(paciente.numeroAfiliado)}
-                </div>
+                <Separator className="my-2"/>
                 <Button variant="outline" className="w-full sm:w-auto" asChild>
                   <a href={`/pacientes/detalle?id=${paciente.id}`}>
-                    <User className="mr-2 h-4 w-4" />
-                    Ver Perfil Completo
+                    <User className="mr-2 h-4 w-4" />Ver Perfil Completo
                   </a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Card: Síntomas y Evolución (Anamnesis completa) */}
+            {/* Card: Síntomas y Clínica (Estructura corregida) */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <ClipboardList className="h-5 w-5" />
-                  Texto de la Historia
+                  Cuadro Clínico y Antecedentes
                 </CardTitle>
-                <CardDescription>Texto extraído del documento original</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="max-h-[400px] overflow-y-auto bg-muted/30 p-4 rounded-md border">
-                   <p className="text-sm text-muted-foreground whitespace-pre-wrap leading-relaxed">
-                     {historia.anamnesis || "Sin texto disponible."}
-                   </p>
-                </div>
+                 
+                 {/* Síntomas Principales */}
+                 <div>
+                    <h4 className="text-sm font-bold text-foreground mb-1">Síntomas Principales / Enfermedad Actual</h4>
+                    <p className="text-sm text-muted-foreground whitespace-pre-wrap leading-relaxed">
+                      {mostrarDato(historia.sintomasPrincipales)}
+                    </p>
+                 </div>
+                 
+                 <Separator />
+
+                 {/* Antecedentes */}
+                 {historia.antecedentes && (
+                   <>
+                    <div>
+                        <h4 className="text-sm font-bold text-foreground mb-1 flex items-center gap-2">
+                            <History className="w-3 h-3" /> Antecedentes
+                        </h4>
+                        <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                        {historia.antecedentes}
+                        </p>
+                    </div>
+                    <Separator />
+                   </>
+                 )}
+
+                 {/* Agrupación Sindrómica */}
+                 {historia.agrupacionSindromica && (
+                   <>
+                    <div>
+                        <h4 className="text-sm font-bold text-foreground mb-1 flex items-center gap-2">
+                            <Activity className="w-3 h-3" /> Agrupación Sindrómica
+                        </h4>
+                        <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                        {historia.agrupacionSindromica}
+                        </p>
+                    </div>
+                    <Separator />
+                   </>
+                 )}
+
+                 <div>
+                    <h4 className="text-sm font-bold text-foreground mb-1">Examen Físico</h4>
+                    <p className="text-sm text-muted-foreground whitespace-pre-wrap">
+                      {mostrarDato(historia.examenFisico)}
+                    </p>
+                 </div>
               </CardContent>
             </Card>
 
@@ -475,7 +481,7 @@ function PaginaDetalleHistoria() {
                     <p className="text-base font-semibold">{mostrarDato(historia.diagnostico)}</p>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Código (CIE-10 / OMS)</p>
+                    <p className="text-sm font-medium text-muted-foreground">Código (CIE-10)</p>
                     <p className="text-base font-mono">{mostrarDato(historia.codigoDiagnostico)}</p>
                   </div>
                    <div>
@@ -489,50 +495,66 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Tratamiento (Con tabla estilizada) */}
+            {/* Card: Tratamiento y Evolución */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Pill className="h-5 w-5" />
-                  Tratamiento y Medicación
+                  Plan Terapéutico y Solicitud
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                {(!historia.medicamentos || historia.medicamentos.length === 0) ? (
-                  <p className="text-sm text-muted-foreground">No se registraron medicamentos en el borrador.</p>
-                ) : (
-                  <div className="overflow-x-auto border rounded-md">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead>Molécula</TableHead>
-                          <TableHead>Dosis</TableHead>
-                          <TableHead>Estado</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {historia.medicamentos.map((med: any, index: number) => (
-                          <TableRow key={index}>
-                            <TableCell className="font-medium">{med.molecula || med.droga}</TableCell>
-                            <TableCell>{med.dosis || "—"}</TableCell>
-                            <TableCell>
-                                {med.estado === "Activo" 
-                                    ? <Badge variant="secondary" className="bg-green-100 text-green-800 hover:bg-green-100">Activo</Badge> 
-                                    : <Badge variant="outline">{med.estado || "—"}</Badge>
-                                }
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </div>
-                )}
+              <CardContent className="space-y-6">
+                
+                {/* Tabla de Medicamentos */}
+                <div>
+                    <h4 className="text-sm font-bold text-foreground mb-2">Medicación Solicitada</h4>
+                    {(!historia.medicamentos || historia.medicamentos.length === 0) ? (
+                    <p className="text-sm text-muted-foreground">No se registraron medicamentos.</p>
+                    ) : (
+                    <div className="overflow-x-auto border rounded-md">
+                        <Table>
+                        <TableHeader>
+                            <TableRow>
+                            <TableHead>Droga/Molécula</TableHead>
+                            <TableHead>Dosis/Frecuencia</TableHead>
+                            <TableHead>Estado</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {historia.medicamentos.map((med: any, index: number) => (
+                            <TableRow key={index}>
+                                <TableCell className="font-medium">{med.molecula || med.droga}</TableCell>
+                                <TableCell>{med.dosis ? `${med.dosis}` : ""}{med.frecuencia ? ` - ${med.frecuencia}` : ""}</TableCell>
+                                <TableCell>
+                                    {med.estado === "Activo" 
+                                        ? <Badge variant="secondary" className="bg-green-100 text-green-800">Activo</Badge> 
+                                        : <Badge variant="outline">{med.estado || "—"}</Badge>
+                                    }
+                                </TableCell>
+                            </TableRow>
+                            ))}
+                        </TableBody>
+                        </Table>
+                    </div>
+                    )}
+                </div>
+
+                <Separator />
+                
+                {/* Comentarios de Tratamiento / Justificación */}
+                <div>
+                    <h4 className="text-sm font-bold text-foreground mb-1">Comentario / Justificación Médica</h4>
+                    <p className="text-sm text-muted-foreground whitespace-pre-wrap border-l-2 border-primary/20 pl-3 italic">
+                        {mostrarDato(historia.tratamiento)}
+                    </p>
+                </div>
+
               </CardContent>
             </Card>
 
           </div>
 
-          {/* --- Barra Lateral (Derecha) --- */}
+          {/* --- Barra Lateral --- */}
           <div className="space-y-6">
             
             {/* Card: Datos de Consulta */}
@@ -582,7 +604,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Estudios (Con RMN renderizada) */}
+            {/* Card: Estudios */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -601,7 +623,6 @@ function PaginaDetalleHistoria() {
                     <ScanEye className="h-4 w-4"/> Resonancia Magnética
                   </p>
                   <div className="max-h-80 overflow-y-auto">
-                    {/* Renderizador especial para RMN que teníamos antes */}
                     {renderizarRMN(historia.estudiosComplementarios?.texto)}
                   </div>
                 </div>
@@ -621,10 +642,6 @@ function PaginaDetalleHistoria() {
                  <div>
                   <p className="text-sm font-medium text-muted-foreground">Médico</p>
                   <p className="text-sm">{mostrarDato(historia.medico)}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">Importado el</p>
-                  <p className="text-xs text-muted-foreground">{new Date(historia.fechaImportacion).toLocaleString("es-AR")}</p>
                 </div>
               </CardContent>
             </Card>

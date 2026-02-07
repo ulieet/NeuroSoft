@@ -17,18 +17,17 @@ import {
   Brain, 
   Pill, 
   FlaskConical, 
-  Stethoscope, 
   ClipboardList, 
   TrendingUp, 
   User,
-  Trash, // <-- Importado
-  Plus   // <-- Importado
+  Trash, 
+  Plus   
 } from "lucide-react"
 
 import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
-  modificarHistoriaClinica, // <-- Función clave para editar
+  modificarHistoriaClinica, 
   type HistoriaClinica,
   type Paciente,
   type Medicamento,
@@ -48,7 +47,10 @@ const opcionesEDSS = generarOpcionesEDSS()
 function PaginaEditarHistoria() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const historiaId = Number(searchParams.get("id"))
+  
+  // --- CORRECCIÓN CLAVE ---
+  // Capturamos el ID como string, ya no usamos Number()
+  const historiaId = searchParams.get("id") 
 
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
@@ -56,17 +58,15 @@ function PaginaEditarHistoria() {
 
   // Estado del formulario
   const [formData, setFormData] = useState<Partial<HistoriaClinica>>({})
-  // --- Estado de JSON eliminado ---
-  // const [medicamentosJson, setMedicamentosJson] = useState("[]")
 
   useEffect(() => {
     if (historiaId) {
-      const hist = obtenerHistoriaClinicaPorId(historiaId)
+      // historiaId ya es string aquí
+      const hist = obtenerHistoriaClinicaPorId(historiaId) 
       if (hist) {
-        // Aseguramos que los campos anidados existan
         setFormData({
           ...hist,
-          medicamentos: hist.medicamentos || [], // Asegurar que sea un array
+          medicamentos: hist.medicamentos || [],
           estudiosComplementarios: hist.estudiosComplementarios || { puncionLumbar: false, examenLCR: false, texto: "" }
         });
 
@@ -79,7 +79,7 @@ function PaginaEditarHistoria() {
     }
   }, [historiaId])
 
-  // --- Handlers del Formulario ---
+  // --- Handlers ---
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
@@ -108,21 +108,11 @@ function PaginaEditarHistoria() {
     }))
   }
 
-  // --- NUEVOS HANDLERS PARA MEDICAMENTOS ---
-  const handleMedicamentoChange = (index: number, field: 'droga' | 'dosis', value: string) => {
+  const handleMedicamentoChange = (index: number, field: keyof Medicamento, value: string) => {
     setFormData(prev => {
       if (!prev || !prev.medicamentos) return prev;
-      
       const nuevosMedicamentos = [...prev.medicamentos];
-      const med = { ...nuevosMedicamentos[index] };
-      
-      if (field === 'droga') {
-        med.droga = value;
-      } else if (field === 'dosis') {
-        med.dosis = value;
-      }
-      nuevosMedicamentos[index] = med;
-      
+      nuevosMedicamentos[index] = { ...nuevosMedicamentos[index], [field]: value };
       return { ...prev, medicamentos: nuevosMedicamentos };
     });
   };
@@ -130,11 +120,7 @@ function PaginaEditarHistoria() {
   const addMedicamento = () => {
     setFormData(prev => ({
       ...prev,
-      medicamentos: [
-        ...(prev?.medicamentos || []),
-        // Añadimos un objeto vacío (el tipo base soporta campos opcionales)
-        { droga: "", dosis: "" } 
-      ]
+      medicamentos: [...(prev?.medicamentos || []), { droga: "", dosis: "", estado: "Activo" }]
     }));
   };
 
@@ -144,25 +130,17 @@ function PaginaEditarHistoria() {
       medicamentos: prev?.medicamentos?.filter((_, i) => i !== index) || []
     }));
   };
-  // --- FIN DE NUEVOS HANDLERS ---
-
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    if (!historiaId) return;
     setEstaGuardando(true)
 
-    // --- SUBMIT SIMPLIFICADO ---
-    // Ya no se parsea JSON
-    const datosActualizados = {
-      ...formData,
-      // 'medicamentos' ya está actualizado en formData
-    }
-
     try {
-      // Usamos la función de MODIFICAR
-      modificarHistoriaClinica(historiaId, datosActualizados as HistoriaClinica)
+      // Enviamos el historiaId como string
+      modificarHistoriaClinica(historiaId, formData as HistoriaClinica)
       alert("Historia Clínica modificada con éxito")
-      router.push(`/historias/detalle?id=${historiaId}`) // Volvemos al detalle
+      router.push(`/historias/detalle?id=${historiaId}`)
     } catch (error) {
       console.error(error)
       alert("Error al modificar la historia")
@@ -170,7 +148,6 @@ function PaginaEditarHistoria() {
     }
   }
 
-  // --- Renderizado de Carga y Error ---
   if (estaCargando) {
     return (
       <MedicalLayout currentPage="historias">
@@ -182,20 +159,15 @@ function PaginaEditarHistoria() {
     )
   }
 
-  if (!formData || !paciente) {
+  if (!formData || !paciente || !historiaId) {
     return (
       <MedicalLayout currentPage="historias">
         <div className="flex items-center justify-center min-h-[400px]">
           <Card>
-            <CardHeader>
-              <CardTitle>Historia no encontrada</CardTitle>
-            </CardHeader>
+            <CardHeader><CardTitle>Historia no encontrada</CardTitle></CardHeader>
             <CardContent>
               <Button asChild>
-                <a href="/historias">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Volver
-                </a>
+                <a href="/historias"><ArrowLeft className="mr-2 h-4 w-4" />Volver</a>
               </Button>
             </CardContent>
           </Card>
@@ -204,77 +176,65 @@ function PaginaEditarHistoria() {
     )
   }
 
-  // --- Renderizado Principal ---
   return (
     <MedicalLayout currentPage="historias">
       <form onSubmit={handleSubmit}>
         <div className="space-y-6">
-          {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
-              <a href={`/historias/detalle?id=${historiaId}`}>
-                <ArrowLeft className="h-4 w-4" />
-              </a>
+              <a href={`/historias/detalle?id=${historiaId}`}><ArrowLeft className="h-4 w-4" /></a>
             </Button>
             <div>
-              <h1 className="text-2xl font-bold text-balance">Editar Historia Clínica</h1>
-              <p className="text-muted-foreground">Modificando la consulta del {new Date(formData.fecha || "").toLocaleDateString("es-AR")}</p>
+              <h1 className="text-2xl font-bold">Editar Resumen de Historia</h1>
+              <p className="text-muted-foreground">Paciente: {paciente.apellido}, {paciente.nombre}</p>
             </div>
           </div>
 
-          {/* Formulario */}
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {/* Columna Izquierda (Campos) */}
             <div className="lg:col-span-2 space-y-6">
               
-              {/* Card: Paciente y Consulta */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Paciente y Consulta</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="space-y-2 sm:col-span-2">
-                    <Label htmlFor="pacienteNombre">Paciente</Label>
-                    <Input 
-                      id="pacienteNombre" 
-                      value={`${paciente.apellido}, ${paciente.nombre} (DNI: ${paciente.dni})`} 
-                      disabled 
-                      className="font-medium"
-                    />
-                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="fecha">Fecha de Consulta *</Label>
+                    <Label htmlFor="fecha">Fecha de Emisión *</Label>
                     <Input id="fecha" type="date" value={formData.fecha} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="medico">Médico Tratante</Label>
+                    <Label htmlFor="medico">Médico Firmante</Label>
                     <Input id="medico" value={formData.medico} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Card: Anamnesis */}
+              {/* Sincronización con campos de Nueva Historia */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Anamnesis y Examen Físico</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="motivoConsulta">Motivo de Consulta</Label>
-                    <Textarea id="motivoConsulta" placeholder="Motivo principal..." value={formData.motivoConsulta} onChange={handleChange} />
+                    <Label htmlFor="sintomasPrincipales">Síntomas Principales / Enfermedad Actual</Label>
+                    <Textarea id="sintomasPrincipales" rows={5} value={formData.sintomasPrincipales} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="anamnesis">Anamnesis / Síntomas</Label>
-                    <Textarea id="anamnesis" placeholder="Detalle de síntomas, etc." rows={5} value={formData.anamnesis} onChange={handleChange} />
+                    <Label htmlFor="antecedentes">Antecedentes</Label>
+                    <Textarea id="antecedentes" rows={2} value={formData.antecedentes} onChange={handleChange} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="agrupacionSindromica">Agrupación Sindrómica</Label>
+                    <Textarea id="agrupacionSindromica" rows={2} value={formData.agrupacionSindromica} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="examenFisico">Examen Físico</Label>
-                    <Textarea id="examenFisico" placeholder="Resultados del examen físico" rows={3} value={formData.examenFisico} onChange={handleChange} />
+                    <Textarea id="examenFisico" rows={3} value={formData.examenFisico} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Card: Diagnóstico */}
+              {/* Diagnóstico y Evolución */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><Brain className="h-5 w-5" />Diagnóstico</CardTitle>
@@ -282,195 +242,92 @@ function PaginaEditarHistoria() {
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="diagnostico">Diagnóstico Principal *</Label>
-                    <Input id="diagnostico" placeholder="Ej: Migraña con aura" value={formData.diagnostico} onChange={handleChange} required />
+                    <Input id="diagnostico" value={formData.diagnostico} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="patologia">Patología (Categoría)</Label>
-                    <Input id="patologia" placeholder="Ej: Migraña" value={formData.patologia} onChange={handleChange} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="codigoDiagnostico">Código (CIE-10)</Label>
-                    <Input id="codigoDiagnostico" placeholder="Ej: G43.1" value={formData.codigoDiagnostico} onChange={handleChange} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="formaEvolutiva">Forma Evolutiva</Label>
-                    <Input id="formaEvolutiva" placeholder="Ej: Recaída" value={formData.formaEvolutiva} onChange={handleChange} />
+                    <Label htmlFor="patologia">Categoría</Label>
+                    <Input id="patologia" value={formData.patologia} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
               
-              {/* Card: Evolución y EDSS */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Evolución y Escalas</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Evolución</CardTitle>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="fechaInicioEnfermedad">Fecha Inicio Síntomas</Label>
-                    <Input id="fechaInicioEnfermedad" type="date" value={formData.fechaInicioEnfermedad || ''} onChange={handleChange} />
+                    <Input id="fechaInicioEnfermedad" type="date" value={formData.fechaInicioEnfermedad} onChange={handleChange} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="escalaEDSS">Grado Discapacidad (EDSS)</Label>
                     <Select value={formData.escalaEDSS !== undefined ? String(formData.escalaEDSS) : "na"} onValueChange={(v) => handleSelectChange("escalaEDSS", v)}>
-                      <SelectTrigger id="escalaEDSS"><SelectValue placeholder="N/A" /></SelectTrigger>
+                      <SelectTrigger><SelectValue placeholder="N/A" /></SelectTrigger>
                       <SelectContent>
                         <SelectItem value="na">N/A</SelectItem>
                         {opcionesEDSS.map(op => (
-                          <SelectItem key={op.valor} value={String(op.valor)}>
-                            {op.etiqueta}
-                          </SelectItem>
+                          <SelectItem key={op.valor} value={String(op.valor)}>{op.etiqueta}</SelectItem>
                         ))}
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2 sm:col-span-2">
-                    <Label htmlFor="evolucion">Evolución</Label>
-                    <Textarea id="evolucion" placeholder="Comentarios sobre la evolución..." rows={3} value={formData.evolucion} onChange={handleChange} />
+                    <Label htmlFor="evolucion">Resumen de Evolución</Label>
+                    <Textarea id="evolucion" rows={3} value={formData.evolucion} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Card: Estudios */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><FlaskConical className="h-5 w-5" />Estudios Complementarios</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Checkbox
-                      id="puncionLumbar"
-                      checked={formData.estudiosComplementarios?.puncionLumbar}
-                      onCheckedChange={(checked) => handleEstudioChange("puncionLumbar", !!checked)}
-                    />
-                    <Label htmlFor="puncionLumbar" className="font-normal">Punción Lumbar</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox
-                      id="examenLCR"
-                      checked={formData.estudiosComplementarios?.examenLCR}
-                      onCheckedChange={(checked) => handleEstudioChange("examenLCR", !!checked)}
-                    />
-                    <Label htmlFor="examenLCR" className="font-normal">Examen LCR</Label>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="estudiosTexto">Notas (RMN, Laboratorios, etc.)</Label>
-                    <Textarea
-                      id="estudiosTexto"
-                      placeholder="Detalles de otros estudios..."
-                      rows={3}
-                      value={formData.estudiosComplementarios?.texto || ''}
-                      onChange={(e) => handleEstudioChange("texto", e.target.value)}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Card: Tratamiento --- MODIFICADO --- */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Tratamiento y Medicación</CardTitle>
+                  <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Plan Terapéutico</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="tratamiento">Otras Terapias / Comentario General</Label>
-                    <Textarea id="tratamiento" placeholder="Indicaciones generales, fisioterapia, etc." rows={3} value={formData.tratamiento} onChange={handleChange} />
+                    <Label htmlFor="tratamiento">Justificación Médica</Label>
+                    <Textarea id="tratamiento" rows={4} value={formData.tratamiento} onChange={handleChange} />
                   </div>
                   
-                  {/* --- INICIO DE SECCIÓN DE MEDICAMENTOS DINÁMICA --- */}
                   <div className="space-y-4">
-                    <Label>Medicamentos</Label>
-                    
-                    {/* Lista de medicamentos */}
+                    <Label>Medicación Solicitada</Label>
                     <div className="space-y-3">
                       {formData.medicamentos?.map((med, index) => (
                         <div key={index} className="flex items-center gap-2">
-                          <Input
-                            id={`med-droga-${index}`}
-                            placeholder="Nombre de la droga"
-                            value={med.droga}
-                            onChange={(e) => handleMedicamentoChange(index, 'droga', e.target.value)}
-                            className="flex-1"
-                            required // Droga es requerida si la fila existe
-                          />
-                          <Input
-                            id={`med-dosis-${index}`}
-                            placeholder="Dosis"
-                            value={med.dosis || ""}
-                            onChange={(e) => handleMedicamentoChange(index, 'dosis', e.target.value)}
-                            className="w-1/3"
-                          />
-                          <Button
-                            type="button" // Prevenir que envíe el formulario
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => removeMedicamento(index)}
-                            aria-label="Eliminar medicamento"
-                          >
+                          <Input placeholder="Droga" value={med.droga} onChange={(e) => handleMedicamentoChange(index, 'droga', e.target.value)} className="flex-1" required />
+                          <Input placeholder="Dosis" value={med.dosis || ""} onChange={(e) => handleMedicamentoChange(index, 'dosis', e.target.value)} className="w-1/3" />
+                          <Button type="button" variant="ghost" size="icon" onClick={() => removeMedicamento(index)}>
                             <Trash className="h-4 w-4 text-destructive" />
                           </Button>
                         </div>
                       ))}
                     </div>
-                    
-                    {/* Botón para añadir */}
-                    <Button
-                      type="button" // Prevenir que envíe el formulario
-                      variant="outline"
-                      size="sm"
-                      onClick={addMedicamento}
-                      className="mt-2"
-                    >
-                      <Plus className="mr-2 h-4 w-4" />
-                      Añadir Medicamento
+                    <Button type="button" variant="outline" size="sm" onClick={addMedicamento} className="mt-2">
+                      <Plus className="mr-2 h-4 w-4" /> Añadir Medicamento
                     </Button>
-                  </div>
-                  {/* --- FIN DE SECCIÓN DE MEDICAMENTOS DINÁMICA --- */}
-
-                  <div className="space-y-2">
-                    <Label htmlFor="observacionesMedicacion">Observaciones (Medicación)</Label>
-                    <Textarea id="observacionesMedicacion" placeholder="Efectos, adherencia..." rows={2} value={formData.observacionesMedicacion} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
-
             </div>
 
-            {/* Columna Derecha (Acciones) */}
-            <div>
+            {/* Acciones */}
+            <div className="space-y-6">
               <Card className="sticky top-24">
-                <CardHeader>
-                  <CardTitle>Acciones</CardTitle>
-                </CardHeader>
+                <CardHeader><CardTitle>Acciones</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="estado">Estado</Label>
                     <Select value={formData.estado} onValueChange={(v) => handleSelectChange("estado", v)}>
-                      <SelectTrigger id="estado"><SelectValue /></SelectTrigger>
+                      <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="pendiente">Pendiente</SelectItem>
-                        <SelectItem value="validada">Validada</SelectItem>
-                        <SelectItem value="error">Error</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="nivelCriticidad">Nivel de Criticidad</Label>
-                    <Select value={formData.nivelCriticidad} onValueChange={(v) => handleSelectChange("nivelCriticidad", v)}>
-                      <SelectTrigger id="nivelCriticidad"><SelectValue /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="bajo">Bajo</SelectItem>
-                        <SelectItem value="medio">Medio</SelectItem>
-                        <SelectItem value="alto">Alto</SelectItem>
-                        <SelectItem value="critico">Crítico</SelectItem>
+                        <SelectItem value="pendiente">Borrador</SelectItem>
+                        <SelectItem value="validada">Finalizado</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <Button type="submit" className="w-full" disabled={estaGuardando}>
                     <Save className="mr-2 h-4 w-4" />
                     {estaGuardando ? "Guardando..." : "Guardar Cambios"}
-                  </Button>
-                  <Button variant="outline" className="w-full bg-transparent" asChild>
-                    <a href={`/historias/detalle?id=${historiaId}`}>Cancelar</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -482,18 +339,9 @@ function PaginaEditarHistoria() {
   )
 }
 
-// Envolvemos el componente principal en Suspense
 export default function PaginaEditarHistoriaSuspenseWrapper() {
   return (
-    <Suspense
-      fallback={
-        <MedicalLayout currentPage="historias">
-          <div className="flex items-center justify-center min-h-[400px]">
-            <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-          </div>
-        </MedicalLayout>
-      }
-    >
+    <Suspense fallback={<MedicalLayout currentPage="historias"><div className="flex items-center justify-center min-h-[400px]"><RefreshCw className="h-8 w-8 animate-spin" /></div></MedicalLayout>}>
       <PaginaEditarHistoria />
     </Suspense>
   )
