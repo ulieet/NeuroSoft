@@ -75,17 +75,14 @@ function PaginaNuevaHistoria() {
       return
     }
     
-    const idNum = Number(pacienteIdParam)
-    if (isNaN(idNum)) {
-      alert("ID de paciente inválido")
-      router.replace("/pacientes?redirect_to=nueva_historia")
-      return
-    }
-
-    const pac = obtenerPacientePorId(idNum)
+    // --- CORRECCIÓN: Ya no convertimos a Number ---
+    // El ID se maneja como string directamente
+    const pac = obtenerPacientePorId(pacienteIdParam)
+    
     if (pac) {
       setPacienteSeleccionado(pac)
-      setFormData((prev) => ({ ...prev, pacienteId: idNum }))
+      // Asignamos el ID string directamente
+      setFormData((prev) => ({ ...prev, pacienteId: pacienteIdParam }))
     } else {
       alert("Paciente no encontrado")
       router.replace("/pacientes?redirect_to=nueva_historia")
@@ -161,7 +158,7 @@ function PaginaNuevaHistoria() {
     }
   }
 
-  if (estaCargando || !pacienteSeleccionado) {
+  if (estaCargando) {
     return (
       <MedicalLayout currentPage="historias">
         <div className="flex items-center justify-center min-h-[400px]">
@@ -170,6 +167,11 @@ function PaginaNuevaHistoria() {
         </div>
       </MedicalLayout>
     )
+  }
+
+  if (!pacienteSeleccionado) {
+     // Fallback visual por si el redirect falla o tarda
+     return null;
   }
 
   return (
