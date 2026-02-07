@@ -1,14 +1,14 @@
 "use client"
 
 import { useEffect, useState, Suspense } from "react"
-import { useSearchParams, useRouter } from "next/navigation" // <-- 1. Importar useRouter
+import { useSearchParams, useRouter } from "next/navigation"
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Edit, FileText, Plus, RefreshCw, TrendingUp, Trash } from "lucide-react" // <-- 2. Importar Trash
+import { ArrowLeft, Edit, FileText, Plus, RefreshCw, Trash, User, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-// 3. Importar AlertDialog
 import {
   AlertDialog,
   AlertDialogAction,
@@ -21,24 +21,38 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
-// Importaciones en español
-import {
-  obtenerPacientePorId,
-  obtenerLineaTiempoPaciente,
-  eliminarPaciente, // <-- 4. Importar la nueva función
-  type Paciente,
-  type LineaTiempoPaciente,
-} from "@/lib/almacen-datos"
+import { 
+  getPaciente, 
+  getHistoriasDePaciente, 
+  eliminarPacienteRemoto, 
+  type PacienteBackend, 
+  type HistoriaBackend 
+} from "@/lib/api-pacientes"
 
-// Componentes con nuevos nombres
-import { InfoPersonal } from "../components/info-personal"
-import { InfoMedica } from "../components/info-medica"
-import { TablaHistorias } from "../components/tabla-historias"
+import { eliminarHistoriaRemota } from "@/lib/api-historias"
 
-// Envolvemos el componente principal en <Suspense>
+// --- HELPER DE FORMATO DE FECHA ---
+const formatearFechaVista = (fechaStr?: string | null) => {
+  if (!fechaStr) return "-";
+  // Si la fecha viene como YYYY-MM-DD
+  if (fechaStr.includes("-")) {
+    const partes = fechaStr.split("-");
+    if (partes.length === 3 && partes[0].length === 4) {
+      return `${partes[2]}/${partes[1]}/${partes[0]}`;
+    }
+  }
+  return fechaStr;
+};
+
 export default function PaginaDetallePacienteSuspense() {
   return (
-    <Suspense fallback={<div>Cargando...</div>}>
+    <Suspense fallback={
+      <MedicalLayout currentPage="pacientes">
+        <div className="flex items-center justify-center min-h-[400px]">
+          <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
+        </div>
+      </MedicalLayout>
+    }>
       <PaginaDetallePaciente />
     </Suspense>
   )
@@ -46,46 +60,66 @@ export default function PaginaDetallePacienteSuspense() {
 
 function PaginaDetallePaciente() {
   const searchParams = useSearchParams()
-  const router = useRouter() // <-- 5. Inicializar router
-  const patientId = Number(searchParams.get("id"))
+  const router = useRouter()
+  const patientId = searchParams.get("id")
 
-  // Estado en español
-  const [paciente, setPaciente] = useState<Paciente | null>(null)
-  const [lineaTiempo, setLineaTiempo] = useState<LineaTiempoPaciente | null>(null)
-  const [estaCargando, setEstaCargando] = useState(false)
+  const [paciente, setPaciente] = useState<PacienteBackend | null>(null)
+  const [historias, setHistorias] = useState<HistoriaBackend[]>([])
+  const [loading, setLoading] = useState(true)
+  const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
     if (patientId) {
-      cargarDatosPaciente()
+      cargarDatos()
     }
   }, [patientId])
 
-  const cargarDatosPaciente = () => {
-    setEstaCargando(true)
-    const datosPaciente = obtenerPacientePorId(patientId)
-    setPaciente(datosPaciente || null)
+  const cargarDatos = async () => {
+    setLoading(true)
+    if (!patientId) return
 
-    if (datosPaciente) {
-      const datosLineaTiempo = obtenerLineaTiempoPaciente(patientId)
-      setLineaTiempo(datosLineaTiempo)
+    try {
+      const dataPaciente = await getPaciente(patientId)
+      setPaciente(dataPaciente)
+
+      if (dataPaciente) {
+        const dataHistorias = await getHistoriasDePaciente(patientId)
+        const historiasOrdenadas = dataHistorias.sort((a, b) => {
+            const dateA = new Date(a.fecha_consulta || 0).getTime()
+            const dateB = new Date(b.fecha_consulta || 0).getTime()
+            return dateB - dateA
+        })
+        setHistorias(historiasOrdenadas)
+      }
+    } catch (error) {
+      console.error("Error cargando datos:", error)
+    } finally {
+      setLoading(false)
     }
-    setEstaCargando(false)
   }
 
-  // --- 6. Handler para eliminar ---
-  const handleEliminarPaciente = () => {
+  const handleEliminarPaciente = async () => {
     if (!paciente) return
+    setIsDeleting(true)
     try {
-      eliminarPaciente(paciente.id)
-      alert("Paciente y todas sus historias han sido eliminados.")
-      router.push("/pacientes") // Redirigir a la lista
+      if (historias.length > 0) {
+        await Promise.all(historias.map(h => eliminarHistoriaRemota(h.id)));
+      }
+      const exito = await eliminarPacienteRemoto(paciente.id)
+      if (exito) {
+        router.push("/pacientes") 
+      } else {
+        alert("No se pudo eliminar el paciente del servidor.")
+      }
     } catch (error) {
       console.error(error)
-      alert("Error al eliminar el paciente.")
+      alert("Ocurrió un error inesperado.")
+    } finally {
+      setIsDeleting(false)
     }
   }
 
-  if (estaCargando && !paciente) {
+  if (loading) {
      return (
        <MedicalLayout currentPage="pacientes">
          <div className="flex items-center justify-center min-h-[400px]">
@@ -98,18 +132,15 @@ function PaginaDetallePaciente() {
   if (!paciente) {
     return (
       <MedicalLayout currentPage="pacientes">
-        <div className="flex items-center justify-center min-h-[400px]">
+        <div className="flex flex-col items-center justify-center min-h-[400px] gap-4">
           <Card>
             <CardHeader>
               <CardTitle>Paciente no encontrado</CardTitle>
-              <CardDescription>El paciente solicitado (ID: {patientId}) no existe.</CardDescription>
+              <CardDescription>ID: {patientId}</CardDescription>
             </CardHeader>
             <CardContent>
-              <Button asChild>
-                <a href="/pacientes">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Volver a Pacientes
-                </a>
+              <Button onClick={() => router.push("/pacientes")}>
+                <ArrowLeft className="mr-2 h-4 w-4" /> Volver
               </Button>
             </CardContent>
           </Card>
@@ -122,178 +153,144 @@ function PaginaDetallePaciente() {
     <MedicalLayout currentPage="pacientes">
       <div className="space-y-6">
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" asChild>
-            <a href="/pacientes">
-              <ArrowLeft className="h-4 w-4" />
-            </a>
+          <Button variant="ghost" size="sm" onClick={() => router.back()}>
+            <ArrowLeft className="h-4 w-4" />
           </Button>
           <div className="flex-1">
-            <h1 className="text-2xl font-bold text-balance">
-              {paciente.apellido}, {paciente.nombre}
-            </h1>
-            <p className="text-muted-foreground">
-              DNI: {paciente.dni} • Registrado el {new Date(paciente.fechaRegistro).toLocaleDateString("es-AR")}
-            </p>
+            <h1 className="text-2xl font-bold">{paciente.nombre}</h1>
+            <p className="text-muted-foreground">DNI: {paciente.dni}</p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-6">
-
-            
-            <InfoPersonal paciente={paciente} />
-
-
-              <Card>
+            <Card>
               <CardHeader>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <CardTitle className="flex items-center gap-2">
-                      <FileText className="h-5 w-5" />
-                      Historias Clínicas (Más recientes primero)
-                    </CardTitle>
-                    <CardDescription>{lineaTiempo?.historias.length || 0} historias registradas</CardDescription>
-                  </div>
-                  <Button variant="outline" size="sm" onClick={cargarDatosPaciente} disabled={estaCargando}>
-                    <RefreshCw className={`h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
-                  </Button>
-                </div>
+                <CardTitle className="flex items-center gap-2">
+                  <User className="h-5 w-5" /> Información Personal
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                {!lineaTiempo || lineaTiempo.historias.length === 0 ? (
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Nombre</p>
+                    <p>{paciente.nombre}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">DNI</p>
+                    <p className="font-mono">{paciente.dni}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Nacimiento</p>
+                    {/* APLICACIÓN DEL FORMATO DD/MM/YYYY */}
+                    <p>{formatearFechaVista(paciente.fecha_nacimiento)}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-muted-foreground">Actualizado</p>
+                    <p>{paciente.ultima_actualizacion ? new Date(paciente.ultima_actualizacion).toLocaleDateString("es-AR") : "-"}</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="flex items-center gap-2">
+                    <FileText className="h-5 w-5" /> Historias Clínicas
+                  </CardTitle>
+                  <Button variant="ghost" size="sm" onClick={cargarDatos}>
+                    <RefreshCw className="h-4 w-4" />
+                  </Button>
+                </div>
+                <CardDescription>{historias.length} documentos</CardDescription>
+              </CardHeader>
+              <CardContent>
+                {historias.length === 0 ? (
                   <div className="text-center py-8 text-muted-foreground">
-                    <FileText className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                    <p>No hay historias clínicas registradas para este paciente</p>
-                    <div className="flex justify-center gap-4 mt-4">
-                      <Button asChild>
-                        <a href="/historias/importar">
-                          <Plus className="mr-2 h-4 w-4" />
-                          Importar Historia
-                        </a>
-                      </Button>
-                      <Button variant="outline" asChild>
-                        <a href={`/historias/nuevo?pacienteId=${paciente.id}`}>
-                          <Plus className="mr-2 h-4 w-4" />
-                          Crear de Cero
-                        </a>
-                      </Button>
-                    </div>
+                    <p>No hay historias.</p>
                   </div>
                 ) : (
-                  <TablaHistorias historias={lineaTiempo.historias} />
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead>Fecha</TableHead>
+                        <TableHead>Diagnóstico</TableHead>
+                        <TableHead>Estado</TableHead>
+                        <TableHead className="text-right">Ver</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {historias.map((h) => (
+                        <TableRow key={h.id}>
+                          <TableCell>
+                            <div className="flex items-center gap-2">
+                              <Calendar className="h-4 w-4 text-muted-foreground" />
+                              {/* TAMBIÉN PODEMOS FORMATEAR AQUÍ SI ES NECESARIO */}
+                              {formatearFechaVista(h.fecha_consulta)}
+                            </div>
+                          </TableCell>
+                          <TableCell className="truncate max-w-[200px]">{h.diagnostico || "Sin Dx"}</TableCell>
+                          <TableCell>
+                            <Badge variant={h.estado === "validada" ? "default" : "outline"}>
+                              {h.estado === "pendiente_validacion" ? "Pendiente" : h.estado}
+                            </Badge>
+                          </TableCell>
+                          <TableCell className="text-right">
+                            <Button variant="ghost" size="sm" onClick={() => router.push(`/historias/detalle?id=${h.id}`)}>
+                              Ver Detalle
+                            </Button>
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
                 )}
               </CardContent>
             </Card>
+          </div>
 
+          <div className="space-y-6">
             <Card>
-              <CardHeader>
-                <CardTitle>Observaciones Médicas</CardTitle>
-              </CardHeader>
+              <CardHeader><CardTitle>Cobertura</CardTitle></CardHeader>
               <CardContent>
-                <p className="text-sm leading-relaxed">{paciente.observaciones || "Sin observaciones."}</p>
+                <p className="text-sm font-medium text-muted-foreground">Obra Social</p>
+                <Badge variant="outline" className="mt-1">{paciente.obra_social || "N/A"}</Badge>
+                <p className="text-sm font-medium text-muted-foreground mt-4">Nro Afiliado</p>
+                <p className="font-mono">{paciente.nro_afiliado || "-"}</p>
               </CardContent>
             </Card>
 
-            {lineaTiempo && lineaTiempo.historias.length > 0 && (
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <TrendingUp className="h-5 w-5" />
-                    Evolución Temporal
-                  </CardTitle>
-                  <CardDescription>Análisis cronológico de {lineaTiempo.totalConsultas} consultas</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <p className="text-sm text-muted-foreground">Primera Consulta</p>
-                      <p className="font-medium">{new Date(lineaTiempo.primeraConsulta).toLocaleDateString("es-AR")}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Última Consulta</p>
-                      <p className="font-medium">{new Date(lineaTiempo.ultimaConsulta).toLocaleDateString("es-AR")}</p>
-                    </div>
-                  </div>
-
-                  {lineaTiempo.medicamentosUsados.length > 0 && (
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-2">Medicamentos Utilizados (Histórico)</p>
-                      <div className="flex flex-wrap gap-2">
-                        {lineaTiempo.medicamentosUsados.map((med, idx) => (
-                          <Badge key={idx} variant="secondary">
-                            {med}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {lineaTiempo.diagnosticos.length > 0 && (
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-2">Diagnósticos (Histórico)</p>
-                      <div className="flex flex-wrap gap-2">
-                        {lineaTiempo.diagnosticos.map((diag, idx) => (
-                          <Badge key={idx} variant="outline">
-                            {diag}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            )}
-
-          
-          </div>
-
-         <div className="space-y-6">
-            <InfoMedica paciente={paciente} />
-
             <Card>
-              <CardHeader>
-                <CardTitle>Acciones Rápidas</CardTitle>
-              </CardHeader>
+              <CardHeader><CardTitle>Acciones</CardTitle></CardHeader>
               <CardContent className="space-y-3">
-                <Button className="w-full" asChild>
-                  <a href={`/historias/nuevo?pacienteId=${paciente.id}`}>
-                    <Plus className="mr-2 h-4 w-4" />
-                    Crear Historia de Cero
-                  </a>
+                <Button className="w-full" onClick={() => router.push("/historias/importar")}>
+                  <Plus className="mr-2 h-4 w-4" /> Nueva Historia
                 </Button>
-                <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <a href={`/pacientes/editar?id=${paciente.id}`}>
-                    <Edit className="mr-2 h-4 w-4" />
-                    Editar Datos Paciente
-                  </a>
+                
+                <Button variant="outline" className="w-full" onClick={() => router.push(`/pacientes/editar?id=${paciente.id}`)}>
+                  <Edit className="mr-2 h-4 w-4" /> Editar Datos
                 </Button>
                 
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <Button variant="destructive" className="w-full">
-                      <Trash className="mr-2 h-4 w-4" />
-                      Eliminar Paciente
+                      <Trash className="mr-2 h-4 w-4" /> Eliminar Paciente
                     </Button>
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>¿Está absolutamente seguro?</AlertDialogTitle>
-                      <AlertDialogDescription>
-                        Esta acción no se puede deshacer. Esto eliminará permanentemente al paciente
-                        <span className="font-bold"> {paciente.apellido}, {paciente.nombre}</span> y 
-                        todas sus <span className="font-bold">{lineaTiempo?.historias.length || 0}</span> historias clínicas asociadas.
-                      </AlertDialogDescription>
+                      <AlertDialogTitle>¿Está seguro?</AlertDialogTitle>
+                      <AlertDialogDescription>Esta acción eliminará todas las historias asociadas. Irreversible.</AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
                       <AlertDialogCancel>Cancelar</AlertDialogCancel>
-                      <AlertDialogAction onClick={handleEliminarPaciente}>
-                        Confirmar Eliminación
+                      <AlertDialogAction onClick={handleEliminarPaciente} disabled={isDeleting}>
+                        {isDeleting ? "Eliminando..." : "Confirmar"}
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
                 </AlertDialog>
-                {/* --- FIN DEL BOTÓN --- */}
-
               </CardContent>
             </Card>
           </div>

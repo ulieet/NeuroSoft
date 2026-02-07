@@ -1,97 +1,101 @@
+# backend/app/utils/extract_text.py
+
 import os
-from pathlib import Path
-from typing import Tuple
-import fitz  # PyMuPDF
+import subprocess
+import logging
 from docx import Document
+import pdfplumber
 
-# Intentamos cargar la librería para leer .doc viejos (solo funciona en Windows con Word instalado)
-try:
-    import win32com.client as win32
-    import pythoncom
-    HAS_WIN32 = True
-except ImportError:
-    HAS_WIN32 = False
-    print("⚠️ AVISO: pywin32 no está instalado. No se podrán leer archivos .doc antiguos.")
+# Configurar logger
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-def extract_text_docx(path: str) -> Tuple[str, int]:
-    """Lee archivos .docx (Word moderno)"""
-    try:
-        doc = Document(path)
-        paras = [p.text for p in doc.paragraphs if p.text.strip()]
-        text = "\n".join(paras)
-        return text, 1
-    except Exception as e:
-        print(f"Error leyendo DOCX {path}: {e}")
-        return "", 0
-
-def extract_text_pdf(path: str) -> Tuple[str, int]:
-    """Lee archivos .pdf"""
-    try:
-        doc = fitz.open(path)
-        pages = []
-        for page in doc:
-            pages.append(page.get_text("text"))
-        text = "\n".join(pages)
-        return text, len(pages)
-    except Exception as e:
-        print(f"Error leyendo PDF {path}: {e}")
-        return "", 0
-
-def extract_text_doc(path: str) -> Tuple[str, int]:
+def extract_text(file_path: str):
     """
-    Lee archivos .doc (Word 97-2003) usando la aplicación Microsoft Word instalada.
+    Extractor universal que decide qué herramienta usar según la extensión.
+    Retorna: (texto_extraido, numero_de_paginas, tipo_de_archivo)
     """
-    if not HAS_WIN32:
-        return "", 0
-
-    word = None
-    try:
-        # Inicializar COM para hilos de FastAPI
-        pythoncom.CoInitialize()
-        
-        # Abrir una instancia de Word invisible
-        word = win32.Dispatch("Word.Application")
-        word.Visible = False
-        
-        # Word requiere rutas absolutas (C:\Users\...)
-        abs_path = os.path.abspath(path)
-        
-        # Abrir, leer y cerrar sin guardar
-        doc = word.Documents.Open(abs_path)
-        text = doc.Range().Text
-        doc.Close(SaveChanges=False)
-        
-        return text, 1
-    except Exception as e:
-        print(f"Error leyendo DOC nativo {path}: {e}")
-        return "", 0
-    finally:
-        # Aseguramos cerrar Word para no dejar procesos colgados
-        if word:
-            try:
-                word.Quit()
-            except:
-                pass
-
-def extract_text(path: str) -> Tuple[str, int, str]:
-    """Función MAESTRA: decide qué extractor usar según la extensión"""
-    ext = Path(path).suffix.lower()
+    ext = os.path.splitext(file_path)[1].lower()
     
-    if ext == ".docx":
-        t, n = extract_text_docx(path)
-        return t, n, "DOCX"
-        
-    elif ext == ".pdf":
-        t, n = extract_text_pdf(path)
-        return t, n, "PDF"
-        
+    if ext == ".pdf":
+        return _extract_from_pdf(file_path)
+    elif ext == ".docx":
+        return _extract_from_docx(file_path)
     elif ext == ".doc":
-        # Aquí entra la lógica nueva
-        t, n = extract_text_doc(path)
-        # Validación extra: si devuelve vacío, avisamos
-        if not t:
-            print("⚠️ ALERTA: El archivo .doc se leyó vacío. Verifica instalación de Word.")
-        return t, n, "DOC"
-        
+        return _extract_from_doc_antiword(file_path)
+    elif ext == ".txt":
+        return _extract_from_txt(file_path)
     else:
-        return "", 0, "DESCONOCIDO"
+        return "", 0, "Desconocido"
+
+def _extract_from_pdf(file_path: str):
+    text = ""
+    pages = 0
+    try:
+        with pdfplumber.open(file_path) as pdf:
+            pages = len(pdf.pages)
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
+        return text, pages, "PDF"
+    except Exception as e:
+        logger.error(f"Error leyendo PDF {file_path}: {e}")
+        return "", 0, "Error PDF"
+
+def _extract_from_docx(file_path: str):
+    text = ""
+    try:
+        doc = Document(file_path)
+        # Extraer párrafos
+        full_text = [para.text for para in doc.paragraphs]
+        text = "\n".join(full_text)
+        # Estimación aproximada de páginas (Word no guarda paginación fija en el XML)
+        pages = max(1, len(text) // 3000) 
+        return text, pages, "DOCX"
+    except Exception as e:
+        logger.error(f"Error leyendo DOCX {file_path}: {e}")
+        return "", 0, "Error DOCX"
+
+def _extract_from_doc_antiword(file_path: str):
+    """
+    Usa 'antiword' vía subprocess. Requiere tener 'antiword' instalado.
+    Corrección: Maneja la decodificación manualmente para evitar crash en Windows (cp1252).
+    """
+    try:
+        # IMPORTANTE: Quitamos text=True para recibir bytes crudos y evitar el UnicodeDecodeError automático
+        result = subprocess.run(
+            ['antiword', '-w', '0', file_path], 
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.PIPE
+        )
+        
+        if result.returncode != 0:
+            err_msg = result.stderr.decode('utf-8', errors='ignore')
+            logger.error(f"Antiword falló: {err_msg}")
+            return "", 0, "Error DOC (Antiword)"
+            
+        # Decodificamos manualmente ignorando caracteres ilegales
+        text = result.stdout.decode('utf-8', errors='ignore')
+        
+        # Si utf-8 falla (devuelve vacío), intentamos latin-1
+        if not text.strip():
+             text = result.stdout.decode('latin-1', errors='ignore')
+
+        pages = max(1, len(text) // 3000)
+        return text, pages, "DOC (Legacy)"
+        
+    except FileNotFoundError:
+        logger.error("Error: 'antiword' no está instalado o no está en el PATH.")
+        return "Error: Falta instalar antiword en el sistema.", 0, "Error Config"
+    except Exception as e:
+        logger.error(f"Error genérico leyendo DOC {file_path}: {e}")
+        return "", 0, "Error DOC"
+
+def _extract_from_txt(file_path: str):
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            text = f.read()
+        return text, 1, "TXT"
+    except Exception as e:
+        return "", 0, "Error TXT"

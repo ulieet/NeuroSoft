@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import importaciones, historias
+# IMPORTANTE: Importamos todos los módulos de API
+from app.api import importaciones, historias, reportes, pacientes 
 
 app = FastAPI(title="NeuroSoft Backend - Grupo 21")
 
@@ -16,8 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Registramos las rutas
 app.include_router(importaciones.router)
 app.include_router(historias.router)
+app.include_router(reportes.router)  # <-- Nuevo
+app.include_router(pacientes.router) # <-- Nuevo (Soluciona el 404)
 
 @app.get("/")
 def home():

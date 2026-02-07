@@ -2,81 +2,74 @@
 
 from typing import Dict, Any, List, Optional
 import re
+import os
 from app.utils.extract_text import extract_text
-from app.utils.segmenter import segment_basic
 from app.utils.normalize import (
-    to_float, normalize_fecha, normalize_mes_texto, norm_forma, norm_molecula
+    to_float, normalize_fecha, normalize_mes_texto, norm_forma
 )
 from app.utils import patterns as P
 
 def _clean_text(text: str) -> str:
-    """Limpia caracteres de control y normaliza espacios"""
     t = text.replace('\x0c', '\n').replace('\r\n', '\n').replace('\r', '\n')
-    t = re.sub(r' +', ' ', t)
+    t = re.sub(r'\.-\s*', '.\n', t)
+    t = re.sub(r'[|]', ' ', t) 
+    t = re.sub(r'\s+', ' ', t) 
     return t
 
-# --- MOTOR DE EXTRACCIÓN POR BLOQUES (LA CLAVE) ---
+def _get_logical_lines(text: str) -> List[str]:
+    return re.split(r'\n|\.\s+(?=[A-Z"\(])', text)
+
 def _extraer_seccion_inteligente(text: str, headers_inicio: List[str], headers_fin: List[str]) -> str:
-    """
-    Busca un bloque de texto que empiece con alguna palabra de 'headers_inicio'
-    y termine cuando encuentre alguna de 'headers_fin' o el final del documento.
-    """
-    lines = text.splitlines()
+    lines = _get_logical_lines(text)
     bloque = []
     capturando = False
     
-    # Regex compilada para velocidad
-    patron_inicio = "(" + "|".join(headers_inicio) + ")"
+    patron_inicio = r"(?:^|\s)(" + "|".join(headers_inicio) + r")\b[:\.\-]*"
     
-    for i, linea in enumerate(lines):
+    titulos_fuertes = [
+        r"diagn[oó]?sticos?", r"tratamiento", r"plan", r"s[ií]?ntomas", r"motivo", 
+        r"antecedentes", r"examen f[ií]?sico", r"estudios", r"rmn", r"laboratorio", 
+        r"conclusi[oó]?n", r"bibliograf[ií]?a", r"firma", r"dr\.", 
+        r"comentarios?", r"rasgos semiol[oó]?gicos", r"evoluci[oó]?n", r"solicito"
+    ]
+
+    for linea in lines:
         low = linea.lower().strip()
         if not low: continue
         
-        # 1. Detectar inicio
         if not capturando:
             if re.search(patron_inicio, low):
                 capturando = True
-                # Limpiamos el título de la línea para dejar solo el contenido
-                contenido = re.sub(patron_inicio, "", linea, flags=re.IGNORECASE).strip()
-                # Quitamos dos puntos o guiones iniciales sobrantes
-                contenido = re.sub(r"^[:\-\.]+\s*", "", contenido)
-                if contenido:
-                    bloque.append(contenido)
+                content = re.sub(patron_inicio, "", linea, count=1, flags=re.IGNORECASE).strip()
+                content = re.sub(r"^[:\-\.]+\s*", "", content)
+                if content: bloque.append(content)
                 continue
         
-        # 2. Capturar contenido
         if capturando:
-            # Verificar si llegamos al fin (aparece otro título conocido)
-            if any(re.search(fin, low) for fin in headers_fin):
+            if any(re.search(r"\b" + fin + r"\b", low) for fin in headers_fin):
                 break
             
-            # Protección extra: si aparece cualquier título médico fuerte, cortamos
-            titulos_generales = [r"diagn[oó]stico", r"tratamiento", r"s[ií]ntomas", r"antecedentes", r"estudios", r"laboratorio", r"atte\.", r"firma", r"agrupaci[oó]n sindr[oó]mica"]
+            es_titulo_nuevo = any(re.search(r"(?:^|\s)" + t + r"\b[:\.\-]?", low) for t in titulos_fuertes)
+            es_mismo_tipo = any(re.search(ini, low) for ini in headers_inicio)
             
-            # Solo cortamos si NO es el título de nuestra propia sección
-            if any(re.search(t, low) for t in titulos_generales) and not any(re.search(i, low) for i in headers_inicio):
-                 if len(linea) < 40 or ":" in linea:
-                     break
+            if es_titulo_nuevo and not es_mismo_tipo:
+                if len(linea) < 50 or ":" in linea:
+                    break
 
             bloque.append(linea.strip())
             
     return "\n".join(bloque).strip()
 
 def _find_fecha(text: str):
-    # Prioridad 1: Texto ("12 de Diciembre")
     m = P.RE_FECHA_TXT.search(text)
     if m:
         d, mes_txt, y = m.groups()
         mes = normalize_mes_texto(mes_txt)
         return normalize_fecha(d, mes, y) if mes else None
-    
-    # Prioridad 2: Numérico (12/12/2011)
     m = P.RE_FECHA_NUM.search(text)
     if m:
         d, mo, y = m.groups()
         return normalize_fecha(d, mo, y)
-        
-    # Prioridad 3: Mes-Año
     m = P.RE_MES_ANO.search(text)
     if m:
         mes_txt, y = m.groups()
@@ -84,718 +77,324 @@ def _find_fecha(text: str):
         return normalize_fecha(1, mes, y) if mes else None
     return None
 
-def _extract_tratamientos_bloque(text: str) -> List[Dict[str, Any]]:
-    inicios = [r"solicito\s*:", r"tratamiento\s*:", r"plan\s*:", r"rp\s*/", r"indicaciones\s*:", r"indico\s*:", r"recibe\s*:"]
-    fines = [r"atte\.", r"dr\.", r"firma", r"bibliograf[ií]a", r"fecha", r"diagn[oó]stico", r"comentario"]
-    
-    texto_bloque = _extraer_seccion_inteligente(text, inicios, fines)
-    texto_a_buscar = texto_bloque if texto_bloque else text
-    
-    items = []
-    
-    farmacos_patterns = [
-        (r"Interfer[oó]n", "Interferón"), 
-        (r"Glatiramer", "Acetato de Glatiramer"), 
-        (r"Fingolimod", "Fingolimod"), 
-        (r"Natalizumab", "Natalizumab"), 
-        (r"Ocrelizumab", "Ocrelizumab"), 
-        (r"Rituximab", "Rituximab"), 
-        (r"Teriflunomida", "Teriflunomida"), 
-        (r"Dimetil", "Dimetil Fumarato"), 
-        (r"Dimeful", "Dimetil Fumarato"), 
-        (r"Rebif", "Interferón Beta-1a"), 
-        (r"Blastofer[oó]n", "Interferón Beta-1a"),
-        (r"Copaxone", "Acetato de Glatiramer"), 
-        (r"Lemtrada", "Alemtuzumab"), 
-        (r"Mavenclad", "Cladribina"), 
-        (r"Tysabri", "Natalizumab"),
-        (r"Pregabalina", "Pregabalina") # Agregado por Campisi
-    ]
-    
-    lines = texto_a_buscar.splitlines()
-    es_bloque_especifico = bool(texto_bloque)
-    found_drugs = set()
-
-    for patron, nombre_normalizado in farmacos_patterns:
-        if re.search(patron, texto_a_buscar, re.IGNORECASE):
-            for linea in lines:
-                if re.search(patron, linea, re.IGNORECASE):
-                    if nombre_normalizado in found_drugs: continue
-                    
-                    estado = "Activo"
-                    if any(neg in linea.lower() for neg in ["suspende", "previo", "rotar", "discontinuar"]):
-                        estado = "Suspendido"
-                    elif not es_bloque_especifico:
-                        if not any(k in linea.lower() for k in ["inicia", "mantiene", "solicito", "indico", "recibe", "continuidad"]):
-                            continue
-                            
-                    found_drugs.add(nombre_normalizado)
-                    
-                    dosis = None
-                    m_dosis = re.search(r"(\d+[.,]?\d*)\s*(mg|mcg|µg|g|mui)", linea, re.IGNORECASE)
-                    if m_dosis: dosis = m_dosis.group(0)
-                    
-                    inicio = _find_fecha(linea)
-                    
-                    items.append({
-                        "molecula": nombre_normalizado, 
-                        "inicio": inicio,
-                        "estado": estado,
-                        "dosis": dosis,
-                        "frecuencia": None
-                    })
-    return items
-
-
-def _extract_diagnostico_bloque(text: str) -> Dict[str, Any]:
-    inicios = [r"diagn[oó]stico\s*:", r"impresi[oó]n diagn[oó]stica\s*:"]
-    fines = [r"tratamiento", r"solicito", r"nota", r"comentario"]
-    
-    bloque = _extraer_seccion_inteligente(text, inicios, fines)
-    origen = bloque if bloque else text
-    
-    res = {"diagnostico": None, "codigo": None}
-    
-    m_dx = P.RE_DX.search(origen)
-    if m_dx: 
-        res["diagnostico"] = m_dx.group(2).strip()
-    elif bloque:
-        lineas = bloque.splitlines()
-        if lineas: res["diagnostico"] = lineas[0].strip()
-        
-    if res["diagnostico"] and "esclerosis" in res["diagnostico"].lower():
-        res["diagnostico"] = "Esclerosis múltiple"
-        
-    m_oms = re.search(r"(?:OMS|CIE-10)[:\s]*([\w\d\.]+)", origen, re.IGNORECASE)
-    if m_oms:
-        res["codigo"] = f"OMS-{m_oms.group(1)}"
-        
-    return res
-
-def _extract_antecedentes_bloque(text: str) -> str:
-    # Agregamos "antecedente destacable" para Cantarelli
-    inicios = [r"antecedentes?", r"historia personal", r"historia cl[ií]nica", r"antecedente destacable"]
-    fines = [r"s[ií]ntomas", r"enfermedad actual", r"examen", r"rasgos semiol[oó]gicos", r"antecedente y enfermedad actual"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
-
-def _extract_sintomas_bloque(text: str) -> str:
-    # Agregamos "antecedente y enfermedad actual" para Caporale
-    inicios = [r"s[ií]ntomas", r"motivo de consulta", r"enfermedad actual", r"anamnesis", r"antecedente y enfermedad actual"]
-    fines = [r"estudios", r"examen", r"rasgos semiol[oó]gicos", r"datos positivos"]
-    
-    # "Antecedentes" solo es fin si NO estamos en el bloque combinado de Caporale
-    # Pero _extraer_seccion_inteligente maneja la prioridad del inicio. 
-    # Dejamos "antecedentes" fuera de fines para este caso específico o lo ponemos condicional.
-    # Para simplificar, si encontramos "Antecedentes" puro, cortamos.
-    
-    texto = _extraer_seccion_inteligente(text, inicios, fines)
-    return texto
-
-def _extract_agrupacion_sindromica(text: str) -> str:
-    inicios = [r"agrupaci[oó]n sindr[oó]mica", r"s[ií]ndromes?"]
-    fines = [r"estudios", r"examen", r"pares craneanos"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
-
-def _extract_examen_fisico_bloque(text: str) -> str:
-    # Agregamos "talla" y "peso" para Caprari por si están sueltos, y variantes de semiología
-    inicios = [r"examen f[ií]sico", r"rasgos semiol[oó]gicos", r"semiolog[ií]a", r"datos positivos", r"examen neurol[oó]gico", r"talla", r"peso"]
-    fines = [r"estudios", r"laboratorio", r"rmn", r"diagn[oó]stico", r"tratamiento", r"solicito", r"comentario", r"conclusi[oó]n", r"plan"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
-
-def _extract_comentario_bloque(text: str) -> str:
-    # Extraer justificación médica
-    inicios = [r"comentario", r"justificaci[oó]n"]
-    fines = [r"solicito", r"bibliograf[ií]a", r"atte", r"firma"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
-
-
-# --- (Funciones de soporte RMN, Puncion, Fechas...) ---
-
-def _extract_puncion(section_text: str):
-    t = (section_text or "").lower()
-    keywords = ["puncion", "punción", "lcr", "bandas", "oligoclonal", "cefalorraqui", "liquido cefalo"]
-    if any(w in t for w in keywords):
-        realizada = True
-        bandas = "Sí" if ("oligoclonal" in t or "positiv" in t) else "No" if "negativ" in t else "No informado"
-        return {"realizada": realizada, "bandas": bandas}, "Alta"
-    return {"realizada": False, "bandas": "No informado"}, "Baja"
-
-def _analizar_linea_rmn(linea: str, rmn_dict: Dict):
-    low = linea.lower()
-    if re.search(r"\binactiva\b", low): rmn_dict["actividad"] = "Inactiva"
-    elif re.search(r"\bactiv[ao]s?\b", low) or "actividad actual" in low: rmn_dict["actividad"] = "Activa"
-    if (re.search(r"gd[\.\s]*(?:iv)?\s*\(?\+\)?", low) or "realce con gd" in low or "captando gd" in low or "volcado de gd" in low):
-        rmn_dict["gd"] = "Positiva"
-    elif "gd(-)" in low or "gd -" in low: rmn_dict["gd"] = "Negativa"
-    for rg in P.REGIONES_RMN:
-        if rg in low and rg not in rmn_dict["regiones"]: rmn_dict["regiones"].append(rg)
-    if "supra" in low and "supratentorial" not in rmn_dict["regiones"]: rmn_dict["regiones"].append("supratentorial")
-
-def _extract_rmn(text: str) -> List[Dict[str, Any]]:
-    bloques = []
-    current_rmn = None
-    for linea in text.splitlines():
-        low = linea.strip().lower()
-        if not low: continue
-        if "rmn" in low or "resonancia" in low:
-            if current_rmn: bloques.append(current_rmn)
-            current_rmn = {"fecha": _find_fecha(linea), "actividad": None, "gd": None, "regiones": []}
-            _analizar_linea_rmn(linea, current_rmn)
-        elif current_rmn:
-            if any(k in low for k in ["diagnostico", "tratamiento", "sintomas", "laboratorio", "potenciales", "solicito"]):
-                bloques.append(current_rmn)
-                current_rmn = None
-                continue
-            _analizar_linea_rmn(linea, current_rmn)
-            if not current_rmn["fecha"]: current_rmn["fecha"] = _find_fecha(linea)
-    if current_rmn: bloques.append(current_rmn)
-    return [b for b in bloques if b.get("fecha") or b.get("actividad") or b.get("gd") or b.get("regiones")]
-
-def _merge_rmn_por_fecha(rmn_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    if not rmn_list: return []
-    agrupado = {}
-    for item in rmn_list:
-        f = item.get("fecha")
-        if not f: continue
-        if f not in agrupado: agrupado[f] = {"fecha": f, "actividad": None, "gd": None, "regiones": []}
-        dest = agrupado[f]
-        if item.get("actividad"): dest["actividad"] = item["actividad"]
-        if item.get("gd"): dest["gd"] = item["gd"]
-        for r in item.get("regiones", []):
-             if r not in dest["regiones"]: dest["regiones"].append(r)
-    return list(agrupado.values())
+# --- DATOS PACIENTE ---
 
 def _extract_paciente_nombre(text: str) -> Optional[str]:
-    lineas = text.splitlines()
-    patterns = [r"^\s*apellido[s]?\s+y\s+nombre[s]?\s*:?\s*(.+)$", r"paciente\s+(.+)$"]
-    for i, linea in enumerate(lineas):
+    lineas = _get_logical_lines(text)
+    patterns = [
+        r"(?:paciente|nombre y apellido|apellido y nombre|nombre)\s*[:\.]?\s*(.+)$",
+        r"(?:sr\.|sra\.)\s*(.+)$"
+    ]
+    for linea in lineas[:30]: 
         l = linea.strip()
         for pat in patterns:
             m = re.search(pat, l, flags=re.IGNORECASE)
             if m:
-                c = re.split(r"\s+(-?Edad|DNI|Fecha)\b", m.group(1).strip(), flags=re.IGNORECASE)[0].strip()
-                if len(c) > 3: return c
-    return None
+                raw_name = m.group(1).strip()
+                cortar_en = re.split(r"\s+(?:-?\s*Edad|DNI|Fecha|HC|H\.C\.|OS|Obra Social)\b", raw_name, flags=re.IGNORECASE)
+                name = cortar_en[0].strip()
+                if len(name) > 3 and not re.search(r"\d", name):
+                    return name
 
+    for i, linea in enumerate(lineas[:10]):
+        l = linea.strip()
+        if not l: continue
+        if any(x in l.lower() for x in ["fecha", "informe", "historia", "neurología", "consultorio", "la plata", "buenos aires", "atención"]):
+            continue
+        if 5 < len(l) < 40 and not re.search(r"\d", l):
+            if l.lower() in ["motivo de consulta", "enfermedad actual", "antecedentes"]:
+                continue
+            return l
+    return "Paciente Desconocido"
+
+# ESTA ES LA FUNCIÓN QUE CORREGIMOS PARA QUE ENCUENTRE EL DNI
 def _extract_dni(text: str) -> Optional[str]:
-    for linea in text.splitlines():
-        m = re.search(r"DNI[:\.\s]*([\d\.\,]{6,12})", linea, flags=re.IGNORECASE)
-        if m: return re.sub(r"\D", "", m.group(1))
+    lineas = _get_logical_lines(text)
+    
+    # Patrones más agresivos para encontrar el DNI en cualquier parte
+    patterns = [
+        r"DNI\s*[:\.\-]?\s*(\d{1,2}[\.,]?\d{3}[\.,]?\d{3})", # DNI explícito (ej: 29.371.624)
+        r"(?:Documento|Doc)\s*[:\.\-]?\s*([\d\.]+(?:\s*\d)?)",
+        r"(?:HC|H\.C\.|Historia Cl[ií]nica)\s*[:\.\-]?\s*([\d\.]+)",
+        r"\bDNI\b.*?(\d{7,8})" # DNI mencionado en medio de texto
+    ]
+    
+    for linea in lineas[:60]: # Buscamos en las primeras 60 líneas
+        for pat in patterns:
+            m = re.search(pat, linea, flags=re.IGNORECASE)
+            if m:
+                dni_limpio = re.sub(r"[^\d]", "", m.group(1))
+                if 6 <= len(dni_limpio) <= 8:
+                    return dni_limpio
     return None
 
 def _extract_datos_extra_paciente(text: str) -> Dict[str, Optional[str]]:
     data = {"fecha_nacimiento": None, "obra_social": None, "nro_afiliado": None}
-    m_fn = re.search(r"(?:fecha de nacimiento|nacimiento)[:\s]*([\d]{1,2}[/-][\d]{1,2}[/-][\d]{2,4})", text, re.IGNORECASE)
+    
+    m_fn = re.search(r"(?:nacimiento|f\. nac|nac)\s*[:\.\-]?\s*([\d]{1,2}[/\-][\d]{1,2}[/\-][\d]{2,4})", text, re.IGNORECASE)
     if m_fn:
         try:
-            d, m, y = m_fn.group(1).replace('-', '/').split('/')
-            data["fecha_nacimiento"] = normalize_fecha(d, m, y)
+            partes = re.split(r"[/\-]", m_fn.group(1))
+            if len(partes) == 3:
+                d, m, y = partes
+                # Aquí llamamos a la función con la lógica del paso 1
+                data["fecha_nacimiento"] = normalize_fecha(d, m, y)
         except: pass
-    m_os = re.search(r"obra social[:\s]*([^:\n]+)", text, re.IGNORECASE)
+        
+    m_os = re.search(r"(?:obra social|o\.s\.|cobertura)\s*[:\.]\s*([^:\n\r]+)", text, re.IGNORECASE)
     if m_os:
         raw = m_os.group(1).strip()
-        if "afiliado" in raw.lower(): raw = re.split(r"n.?\s*de\s*afiliado", raw, flags=re.IGNORECASE)[0].strip()
-        data["obra_social"] = raw
-    m_af = re.search(r"(?:n.?\s*de\s*)?afiliado[:\s]*([\w\d\/-]+)", text, re.IGNORECASE)
-    if m_af: data["nro_afiliado"] = m_af.group(1).strip()
+        clean = re.split(r"(?i)\s+(?:n[ro°º\.]+(?:\s*de)?|afiliado|socio|credencial|beneficiario|plan)", raw)[0].strip()
+        clean = re.sub(r"(?i)[\s.,\-_Nº°]+$", "", clean).strip()
+        if len(clean) > 1:
+            data["obra_social"] = clean
+
+    m_af = re.search(r"(?:n[ro°º\.]?\s*de\s*)?afiliado\s*[:\.]?\s*([\w\d\/\-]+)", text, re.IGNORECASE)
+    if m_af:
+        data["nro_afiliado"] = m_af.group(1).strip()
+        
     return data
 
-def _find_fecha_consulta(text: str, fecha_nacimiento: str = None) -> Optional[str]:
-    lines = text.splitlines()
-    for line in lines[:20]:
-        l_low = line.lower()
-        if "nacimiento" in l_low or "nac." in l_low: continue
-        if any(k in l_low for k in ["la plata", "buenos aires", "fecha", "resumen"]):
-            f = _find_fecha(line)
-            if f and f != fecha_nacimiento: return f
-    for line in lines:
-        if "nacimiento" in line.lower(): continue
-        f = _find_fecha(line)
-        if f and f != fecha_nacimiento: return f
-    return None
+# --- TRATAMIENTOS ---
 
-def _find_fecha_inicio_por_contexto(text: str):
-    cand = []
-    for line in (text or "").splitlines():
-        # Agregamos "inicio de la afección" para Campisi/Caprari
-        if "asistida desde" in line.lower() or "inicio" in line.lower() or "afecci" in line.lower():
-            f = _find_fecha(line)
-            if f: cand.append(f)
-    return sorted(cand)[0] if cand else None
+def _extract_tratamientos_bloque(text: str) -> List[Dict[str, Any]]:
+    best_matches = {} 
+    lines = _get_logical_lines(text)
+    seccion_actual = ""
 
-# --- FUNCIÓN PRINCIPAL ---
-def process(file_path: str) -> Dict[str, Any]:
-    raw_text, n_pages, tipo = extract_text(file_path)
-    text = _clean_text(raw_text)
-    
-    # 1. Extracción de Datos Básicos
-    paciente_nombre = _extract_paciente_nombre(text)
-    dni = _extract_dni(text)
-    datos_extra = _extract_datos_extra_paciente(text)
-    
-    # 2. Extracción Inteligente por Bloques
-    tratamientos = _extract_tratamientos_bloque(text)
-    info_dx = _extract_diagnostico_bloque(text)
-    
-    # Extracciones de texto libre
-    txt_sintomas = _extract_sintomas_bloque(text)
-    txt_antecedentes = _extract_antecedentes_bloque(text)
-    txt_examen = _extract_examen_fisico_bloque(text)
-    txt_agrupacion = _extract_agrupacion_sindromica(text)
-    txt_comentario = _extract_comentario_bloque(text)
-
-    # EDSS y Forma
-    edss = None
-    m_edss = P.RE_EDSS.search(text)
-    if m_edss: edss = to_float(m_edss.group(1))
-
-    forma = None
-    for line in text.splitlines():
-        f = norm_forma(line)
-        if f: 
-            if f in ("SP", "PP") and "secundaria" not in text.lower(): continue
-            forma = f
-            break
-
-    # Fechas
-    fecha_nacimiento = datos_extra["fecha_nacimiento"]
-    fecha_consulta = _find_fecha_consulta(text, fecha_nacimiento)
-    fecha_inicio = _find_fecha_inicio_por_contexto(text)
-
-    # Complementarios (RMN y Puncion)
-    rmn = _merge_rmn_por_fecha(_extract_rmn(text))
-    puncion, _ = _extract_puncion(text)
-
-    # 3. Armado del JSON
-    borrador = {
-        "estado": "Procesado",
-        "fuente": {"tipo": tipo, "nombre_archivo": file_path.split("/")[-1]},
-        "paciente": {
-            "nombre": paciente_nombre, "dni": dni,
-            "fecha_nacimiento": fecha_nacimiento,
-            "obra_social": datos_extra["obra_social"],
-            "nro_afiliado": datos_extra["nro_afiliado"]
-        },
-        "consulta": {"fecha": fecha_consulta, "medico": None},
-        "enfermedad": {
-            "diagnostico": info_dx["diagnostico"], 
-            "codigo": info_dx["codigo"],
-            "forma": forma, "fecha_inicio": fecha_inicio, "edss": edss
-        },
-        "complementarios": {"rmn": rmn, "puncion_lumbar": puncion},
-        "tratamientos": tratamientos,
-        "episodios": [],
-        
-        # --- ESTRUCTURA COMPLETA ---
-        "secciones_texto": {
-            "sintomas_principales": txt_sintomas,
-            "antecedentes": txt_antecedentes,
-            "examen_fisico": txt_examen,
-            "agrupacion_sindromica": txt_agrupacion,
-            "comentario": txt_comentario
-        },
-        
-        "texto_original": text[:10000],
-        "confidencia": {"forma": "Alta"}
-    }
-    return borrador# backend/app/services/nlp_service.py
-
-from typing import Dict, Any, List, Optional
-import re
-from app.utils.extract_text import extract_text
-from app.utils.segmenter import segment_basic
-from app.utils.normalize import (
-    to_float, normalize_fecha, normalize_mes_texto, norm_forma, norm_molecula
-)
-from app.utils import patterns as P
-
-def _clean_text(text: str) -> str:
-    """Limpia caracteres de control y normaliza espacios"""
-    t = text.replace('\x0c', '\n').replace('\r\n', '\n').replace('\r', '\n')
-    t = re.sub(r' +', ' ', t)
-    return t
-
-# --- MOTOR DE EXTRACCIÓN POR BLOQUES (LA CLAVE) ---
-def _extraer_seccion_inteligente(text: str, headers_inicio: List[str], headers_fin: List[str]) -> str:
-    """
-    Busca un bloque de texto que empiece con alguna palabra de 'headers_inicio'
-    y termine cuando encuentre alguna de 'headers_fin' o el final del documento.
-    """
-    lines = text.splitlines()
-    bloque = []
-    capturando = False
-    
-    # Regex compilada para velocidad
-    patron_inicio = "(" + "|".join(headers_inicio) + ")"
+    farmacos_patterns = [
+        (r"Interfer[oó]?n\s*beta\s*1a", "Interferón Beta-1a"),
+        (r"Rebif", "Interferón Beta-1a"),
+        (r"Blastofer[oó]?n", "Interferón Beta-1a"),
+        (r"Interfer[oó]?n", "Interferón"), 
+        (r"Glatiramer", "Acetato de Glatiramer"), 
+        (r"Copol[ií]?mero", "Acetato de Glatiramer"),
+        (r"Copaxone", "Acetato de Glatiramer"),
+        (r"Fingolimod", "Fingolimod"), 
+        (r"Gilenya", "Fingolimod"),
+        (r"Fibroneurina", "Fingolimod"), 
+        (r"Natalizumab", "Natalizumab"), 
+        (r"Tysabri", "Natalizumab"),
+        (r"Ocrelizumab", "Ocrelizumab"), 
+        (r"Ocrevus", "Ocrelizumab"),
+        (r"Rituximab", "Rituximab"), 
+        (r"Teriflunomida", "Teriflunomida"), 
+        (r"Aubagio", "Teriflunomida"),
+        (r"Dimetil", "Dimetil Fumarato"), 
+        (r"Tecfidera", "Dimetil Fumarato"),
+        (r"Dimeful", "Dimetil Fumarato"),
+        (r"Lemtrada", "Alemtuzumab"), 
+        (r"Alemtuzumab", "Alemtuzumab"),
+        (r"Mavenclad", "Cladribina"), 
+        (r"Cladribina", "Cladribina"),
+        (r"Siponimod", "Siponimod"),
+        (r"Ozanimod", "Ozanimod"),
+        (r"Pregabalina", "Pregabalina"),
+        (r"Gabapentin", "Gabapentina"),
+        (r"Baclofeno", "Baclofeno"),
+        (r"Fampiridina", "Fampiridina"),
+        (r"Datizic", "Fampiridina"),
+        (r"Fampyra", "Fampiridina"),
+        (r"4-?Aminopiridina", "Fampiridina"),
+        (r"\b4-?AP\b", "Fampiridina"),
+        (r"Kinesiolog[ií]?a", "Kinesiología"),
+        (r"Terapia\s*Ocupacional", "Terapia Ocupacional"),
+        (r"Acompañante\s*Terap[eé]utico", "Acompañante Terapéutico"),
+        (r"Cuidador", "Acompañante Terapéutico")
+    ]
     
     for i, linea in enumerate(lines):
-        low = linea.lower().strip()
-        if not low: continue
-        
-        # 1. Detectar inicio
-        if not capturando:
-            if re.search(patron_inicio, low):
-                capturando = True
-                # Limpiamos el título de la línea para dejar solo el contenido
-                contenido = re.sub(patron_inicio, "", linea, flags=re.IGNORECASE).strip()
-                # Quitamos dos puntos o guiones iniciales sobrantes
-                contenido = re.sub(r"^[:\-\.]+\s*", "", contenido)
-                if contenido:
-                    bloque.append(contenido)
-                continue
-        
-        # 2. Capturar contenido
-        if capturando:
-            # Verificar si llegamos al fin (aparece otro título conocido)
-            if any(re.search(fin, low) for fin in headers_fin):
-                break
-            
-            # Protección extra: si aparece cualquier título médico fuerte, cortamos
-            titulos_generales = [r"diagn[oó]stico", r"tratamiento", r"s[ií]ntomas", r"antecedentes", r"estudios", r"laboratorio", r"atte\.", r"firma", r"agrupaci[oó]n sindr[oó]mica"]
-            
-            # Solo cortamos si NO es el título de nuestra propia sección
-            if any(re.search(t, low) for t in titulos_generales) and not any(re.search(i, low) for i in headers_inicio):
-                 if len(linea) < 40 or ":" in linea:
-                     break
+        low = linea.lower()
+        if "solicito" in low: seccion_actual = "solicito"
+        if "bibliografa" in low or "referencias" in low: seccion_actual = "bibliografia"
 
-            bloque.append(linea.strip())
-            
-    return "\n".join(bloque).strip()
+        if seccion_actual == "bibliografia" or any(x in low for x in ["et al", "vol.", "pp.", "journal", "study", "trial", "comparado con", "versus", "vs.", "lancet", "neurology"]):
+            continue
 
-def _find_fecha(text: str):
-    # Prioridad 1: Texto ("12 de Diciembre")
-    m = P.RE_FECHA_TXT.search(text)
-    if m:
-        d, mes_txt, y = m.groups()
-        mes = normalize_mes_texto(mes_txt)
-        return normalize_fecha(d, mes, y) if mes else None
-    
-    # Prioridad 2: Numérico (12/12/2011)
-    m = P.RE_FECHA_NUM.search(text)
-    if m:
-        d, mo, y = m.groups()
-        return normalize_fecha(d, mo, y)
-        
-    # Prioridad 3: Mes-Año
-    m = P.RE_MES_ANO.search(text)
-    if m:
-        mes_txt, y = m.groups()
-        mes = normalize_mes_texto(mes_txt)
-        return normalize_fecha(1, mes, y) if mes else None
-    return None
+        for patron, nombre_mol in farmacos_patterns:
+            if re.search(patron, linea, re.IGNORECASE):
+                dosis = None
+                m_dosis = re.search(r"(\d+[\.,]?\d*)\s*(mg|mcg|µg|gr?|ml|ui)", linea, re.IGNORECASE)
+                if m_dosis: dosis = f"{m_dosis.group(1)} {m_dosis.group(2)}"
+                
+                frecuencia = None
+                if "dia" in low or "diario" in low: frecuencia = "Diario"
+                elif "mes" in low or "mensual" in low: frecuencia = "Mensual"
+                elif "semana" in low: frecuencia = "Semanal"
 
-def _extract_tratamientos_bloque(text: str) -> List[Dict[str, Any]]:
-    inicios = [r"solicito\s*:", r"tratamiento\s*:", r"plan\s*:", r"rp\s*/", r"indicaciones\s*:", r"indico\s*:", r"recibe\s*:"]
-    fines = [r"atte\.", r"dr\.", r"firma", r"bibliograf[ií]a", r"fecha", r"diagn[oó]stico", r"comentario"]
-    
-    texto_bloque = _extraer_seccion_inteligente(text, inicios, fines)
-    texto_a_buscar = texto_bloque if texto_bloque else text
-    
-    items = []
-    
-    farmacos_patterns = [
-        (r"Interfer[oó]n", "Interferón"), 
-        (r"Glatiramer", "Acetato de Glatiramer"), 
-        (r"Fingolimod", "Fingolimod"), 
-        (r"Natalizumab", "Natalizumab"), 
-        (r"Ocrelizumab", "Ocrelizumab"), 
-        (r"Rituximab", "Rituximab"), 
-        (r"Teriflunomida", "Teriflunomida"), 
-        (r"Dimetil", "Dimetil Fumarato"), 
-        (r"Dimeful", "Dimetil Fumarato"), 
-        (r"Rebif", "Interferón Beta-1a"), 
-        (r"Blastofer[oó]n", "Interferón Beta-1a"),
-        (r"Copaxone", "Acetato de Glatiramer"), 
-        (r"Lemtrada", "Alemtuzumab"), 
-        (r"Mavenclad", "Cladribina"), 
-        (r"Tysabri", "Natalizumab"),
-        (r"Pregabalina", "Pregabalina") # Agregado por Campisi
-    ]
-    
-    lines = texto_a_buscar.splitlines()
-    es_bloque_especifico = bool(texto_bloque)
-    found_drugs = set()
+                estado = "Activo"
+                if any(neg in low for neg in ["suspende", "previo", "rotar", "discontinuar", "anterior", "inicialmente"]):
+                    estado = "Suspendido"
+                
+                if nombre_mol not in best_matches:
+                    best_matches[nombre_mol] = {
+                        "molecula": nombre_mol, "droga": nombre_mol,
+                        "dosis": dosis, "frecuencia": frecuencia,
+                        "estado": estado, "inicio": _find_fecha(linea)
+                    }
+                else:
+                    current = best_matches[nombre_mol]
+                    if (dosis and not current["dosis"]) or (seccion_actual == "solicito"):
+                        best_matches[nombre_mol].update({
+                            "dosis": dosis or current["dosis"],
+                            "frecuencia": frecuencia or current["frecuencia"],
+                            "estado": estado,
+                            "inicio": _find_fecha(linea) or current["inicio"]
+                        })
 
-    for patron, nombre_normalizado in farmacos_patterns:
-        if re.search(patron, texto_a_buscar, re.IGNORECASE):
-            for linea in lines:
-                if re.search(patron, linea, re.IGNORECASE):
-                    if nombre_normalizado in found_drugs: continue
-                    
-                    estado = "Activo"
-                    if any(neg in linea.lower() for neg in ["suspende", "previo", "rotar", "discontinuar"]):
-                        estado = "Suspendido"
-                    elif not es_bloque_especifico:
-                        if not any(k in linea.lower() for k in ["inicia", "mantiene", "solicito", "indico", "recibe", "continuidad"]):
-                            continue
-                            
-                    found_drugs.add(nombre_normalizado)
-                    
-                    dosis = None
-                    m_dosis = re.search(r"(\d+[.,]?\d*)\s*(mg|mcg|µg|g|mui)", linea, re.IGNORECASE)
-                    if m_dosis: dosis = m_dosis.group(0)
-                    
-                    inicio = _find_fecha(linea)
-                    
-                    items.append({
-                        "molecula": nombre_normalizado, 
-                        "inicio": inicio,
-                        "estado": estado,
-                        "dosis": dosis,
-                        "frecuencia": None
-                    })
-    return items
-
+    return list(best_matches.values())
 
 def _extract_diagnostico_bloque(text: str) -> Dict[str, Any]:
-    inicios = [r"diagn[oó]stico\s*:", r"impresi[oó]n diagn[oó]stica\s*:"]
-    fines = [r"tratamiento", r"solicito", r"nota", r"comentario"]
-    
+    inicios = [r"diagn[oó]?sticos?", r"impresi[oó]?n diagn[oó]?stica", r"problema", r"presuntivos?"]
+    fines = [r"tratamiento", r"solicito", r"plan", r"s[ií]?ntomas", r"comentarios?", r"evoluci[oó]?n"]
     bloque = _extraer_seccion_inteligente(text, inicios, fines)
-    origen = bloque if bloque else text
-    
     res = {"diagnostico": None, "codigo": None}
+    m_dx = re.search(r"(?:diagn[oó]?sticos?|imp\.? diag\.?)\s*(?:presuntivos?|diferenciales?)?[:\.]\s*(.+)", text, re.IGNORECASE)
+    if m_dx: res["diagnostico"] = m_dx.group(1).strip()
+    elif bloque: res["diagnostico"] = bloque.split('\n')[0]
     
-    m_dx = P.RE_DX.search(origen)
-    if m_dx: 
-        res["diagnostico"] = m_dx.group(2).strip()
-    elif bloque:
-        lineas = bloque.splitlines()
-        if lineas: res["diagnostico"] = lineas[0].strip()
-        
-    if res["diagnostico"] and "esclerosis" in res["diagnostico"].lower():
-        res["diagnostico"] = "Esclerosis múltiple"
-        
-    m_oms = re.search(r"(?:OMS|CIE-10)[:\s]*([\w\d\.]+)", origen, re.IGNORECASE)
-    if m_oms:
-        res["codigo"] = f"OMS-{m_oms.group(1)}"
-        
+    if res["diagnostico"] and re.search(r"esclerosis m[uú]?ltiple", res["diagnostico"], re.IGNORECASE):
+        res["diagnostico"] = "Esclerosis Múltiple"
+    if "G35" in text or "340" in text: res["codigo"] = "G35"
     return res
 
-def _extract_antecedentes_bloque(text: str) -> str:
-    # Agregamos "antecedente destacable" para Cantarelli
-    inicios = [r"antecedentes?", r"historia personal", r"historia cl[ií]nica", r"antecedente destacable"]
-    fines = [r"s[ií]ntomas", r"enfermedad actual", r"examen", r"rasgos semiol[oó]gicos", r"antecedente y enfermedad actual"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
-
 def _extract_sintomas_bloque(text: str) -> str:
-    # Agregamos "antecedente y enfermedad actual" para Caporale
-    inicios = [r"s[ií]ntomas", r"motivo de consulta", r"enfermedad actual", r"anamnesis", r"antecedente y enfermedad actual"]
-    fines = [r"estudios", r"examen", r"rasgos semiol[oó]gicos", r"datos positivos"]
-    
-    # "Antecedentes" solo es fin si NO estamos en el bloque combinado de Caporale
-    # Pero _extraer_seccion_inteligente maneja la prioridad del inicio. 
-    # Dejamos "antecedentes" fuera de fines para este caso específico o lo ponemos condicional.
-    # Para simplificar, si encontramos "Antecedentes" puro, cortamos.
-    
-    texto = _extraer_seccion_inteligente(text, inicios, fines)
-    return texto
+    return _extraer_seccion_inteligente(text, [r"s[ií]?ntomas", r"motivo de consulta", r"enfermedad actual", r"anamnesis"], [r"antecedentes", r"examen", r"estudios", r"laboratorio", r"rasgos", r"evoluci[oó]?n", r"diagn[oó]?stico"])
 
-def _extract_agrupacion_sindromica(text: str) -> str:
-    inicios = [r"agrupaci[oó]n sindr[oó]mica", r"s[ií]ndromes?"]
-    fines = [r"estudios", r"examen", r"pares craneanos"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
+def _extract_antecedentes_bloque(text: str) -> str:
+    return _extraer_seccion_inteligente(text, [r"antecedentes", r"historia personal", r"app"], [r"s[ií]?ntomas", r"examen", r"evoluci[oó]?n"])
 
 def _extract_examen_fisico_bloque(text: str) -> str:
-    # Agregamos "talla" y "peso" para Caprari por si están sueltos, y variantes de semiología
-    inicios = [r"examen f[ií]sico", r"rasgos semiol[oó]gicos", r"semiolog[ií]a", r"datos positivos", r"examen neurol[oó]gico", r"talla", r"peso"]
-    fines = [r"estudios", r"laboratorio", r"rmn", r"diagn[oó]stico", r"tratamiento", r"solicito", r"comentario", r"conclusi[oó]n", r"plan"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
+    return _extraer_seccion_inteligente(text, [r"examen f[ií]?sico", r"examen neurol[oó]?gico", r"rasgos semiol[oó]?gicos"], [r"estudios", r"rmn", r"diagn[oó]?stico", r"plan", r"evoluci[oó]?n"])
+
+def _extract_agrupacion_sindromica(text: str) -> str:
+    return _extraer_seccion_inteligente(text, [r"agrupaci[oó]?n sindr[oó]?mica", r"s[ií]?ndromes?"], [r"estudios", r"examen", r"diagn[oó]?stico"])
+
+def _extract_estudios_bloque(text: str) -> str:
+    return _extraer_seccion_inteligente(text, [r"estudios", r"laboratorio", r"rmn", r"potenciales"], [r"diagn[oó]?stico", r"comentarios?", r"tratamiento", r"solicito", r"evoluci[oó]?n"])
 
 def _extract_comentario_bloque(text: str) -> str:
-    # Extraer justificación médica
-    inicios = [r"comentario", r"justificaci[oó]n"]
-    fines = [r"solicito", r"bibliograf[ií]a", r"atte", r"firma"]
-    return _extraer_seccion_inteligente(text, inicios, fines)
+    return _extraer_seccion_inteligente(text, [r"comentarios?", r"justificaci[oó]?n", r"observaciones", r"nota"], [r"solicito", r"bibliograf[ií]?a", r"atte", r"firma", r"evoluci[oó]?n"])
 
+def _extract_evolucion_bloque(text: str) -> str:
+    return _extraer_seccion_inteligente(text, [r"evoluci[oó]?n"], [r"atte", r"dr\.", r"firma", r"bibliograf[ií]?a", r"solicito"])
 
-# --- (Funciones de soporte RMN, Puncion, Fechas...) ---
-
-def _extract_puncion(section_text: str):
-    t = (section_text or "").lower()
-    keywords = ["puncion", "punción", "lcr", "bandas", "oligoclonal", "cefalorraqui", "liquido cefalo"]
-    if any(w in t for w in keywords):
-        realizada = True
-        bandas = "Sí" if ("oligoclonal" in t or "positiv" in t) else "No" if "negativ" in t else "No informado"
-        return {"realizada": realizada, "bandas": bandas}, "Alta"
-    return {"realizada": False, "bandas": "No informado"}, "Baja"
-
-def _analizar_linea_rmn(linea: str, rmn_dict: Dict):
-    low = linea.lower()
-    if re.search(r"\binactiva\b", low): rmn_dict["actividad"] = "Inactiva"
-    elif re.search(r"\bactiv[ao]s?\b", low) or "actividad actual" in low: rmn_dict["actividad"] = "Activa"
-    if (re.search(r"gd[\.\s]*(?:iv)?\s*\(?\+\)?", low) or "realce con gd" in low or "captando gd" in low or "volcado de gd" in low):
-        rmn_dict["gd"] = "Positiva"
-    elif "gd(-)" in low or "gd -" in low: rmn_dict["gd"] = "Negativa"
-    for rg in P.REGIONES_RMN:
-        if rg in low and rg not in rmn_dict["regiones"]: rmn_dict["regiones"].append(rg)
-    if "supra" in low and "supratentorial" not in rmn_dict["regiones"]: rmn_dict["regiones"].append("supratentorial")
+def _extract_puncion(text: str):
+    t = text.lower()
+    if "bandas oligoclonales" in t or "lcr" in t or "liquido cefalo" in t:
+        bandas = "Positivas" if any(x in t for x in ["positiv", "tipo 2", "presencia"]) else "Negativas" if "negativ" in t else "No informado"
+        return {"realizada": True, "bandas": bandas}
+    return {"realizada": False, "bandas": None}
 
 def _extract_rmn(text: str) -> List[Dict[str, Any]]:
-    bloques = []
-    current_rmn = None
-    for linea in text.splitlines():
-        low = linea.strip().lower()
-        if not low: continue
-        if "rmn" in low or "resonancia" in low:
-            if current_rmn: bloques.append(current_rmn)
-            current_rmn = {"fecha": _find_fecha(linea), "actividad": None, "gd": None, "regiones": []}
-            _analizar_linea_rmn(linea, current_rmn)
-        elif current_rmn:
-            if any(k in low for k in ["diagnostico", "tratamiento", "sintomas", "laboratorio", "potenciales", "solicito"]):
-                bloques.append(current_rmn)
-                current_rmn = None
-                continue
-            _analizar_linea_rmn(linea, current_rmn)
-            if not current_rmn["fecha"]: current_rmn["fecha"] = _find_fecha(linea)
-    if current_rmn: bloques.append(current_rmn)
-    return [b for b in bloques if b.get("fecha") or b.get("actividad") or b.get("gd") or b.get("regiones")]
-
-def _merge_rmn_por_fecha(rmn_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    if not rmn_list: return []
-    agrupado = {}
-    for item in rmn_list:
-        f = item.get("fecha")
-        if not f: continue
-        if f not in agrupado: agrupado[f] = {"fecha": f, "actividad": None, "gd": None, "regiones": []}
-        dest = agrupado[f]
-        if item.get("actividad"): dest["actividad"] = item["actividad"]
-        if item.get("gd"): dest["gd"] = item["gd"]
-        for r in item.get("regiones", []):
-             if r not in dest["regiones"]: dest["regiones"].append(r)
-    return list(agrupado.values())
-
-def _extract_paciente_nombre(text: str) -> Optional[str]:
-    lineas = text.splitlines()
-    patterns = [r"^\s*apellido[s]?\s+y\s+nombre[s]?\s*:?\s*(.+)$", r"paciente\s+(.+)$"]
+    rmn_list = []
+    lineas = _get_logical_lines(text)
     for i, linea in enumerate(lineas):
-        l = linea.strip()
-        for pat in patterns:
-            m = re.search(pat, l, flags=re.IGNORECASE)
-            if m:
-                c = re.split(r"\s+(-?Edad|DNI|Fecha)\b", m.group(1).strip(), flags=re.IGNORECASE)[0].strip()
-                if len(c) > 3: return c
-    return None
-
-def _extract_dni(text: str) -> Optional[str]:
-    for linea in text.splitlines():
-        m = re.search(r"DNI[:\.\s]*([\d\.\,]{6,12})", linea, flags=re.IGNORECASE)
-        if m: return re.sub(r"\D", "", m.group(1))
-    return None
-
-def _extract_datos_extra_paciente(text: str) -> Dict[str, Optional[str]]:
-    data = {"fecha_nacimiento": None, "obra_social": None, "nro_afiliado": None}
-    m_fn = re.search(r"(?:fecha de nacimiento|nacimiento)[:\s]*([\d]{1,2}[/-][\d]{1,2}[/-][\d]{2,4})", text, re.IGNORECASE)
-    if m_fn:
-        try:
-            d, m, y = m_fn.group(1).replace('-', '/').split('/')
-            data["fecha_nacimiento"] = normalize_fecha(d, m, y)
-        except: pass
-    m_os = re.search(r"obra social[:\s]*([^:\n]+)", text, re.IGNORECASE)
-    if m_os:
-        raw = m_os.group(1).strip()
-        if "afiliado" in raw.lower(): raw = re.split(r"n.?\s*de\s*afiliado", raw, flags=re.IGNORECASE)[0].strip()
-        data["obra_social"] = raw
-    m_af = re.search(r"(?:n.?\s*de\s*)?afiliado[:\s]*([\w\d\/-]+)", text, re.IGNORECASE)
-    if m_af: data["nro_afiliado"] = m_af.group(1).strip()
-    return data
+        if "rmn" in linea.lower() or "resonancia" in linea.lower():
+            fecha = _find_fecha(linea)
+            if not fecha and i > 0: fecha = _find_fecha(lineas[i-1]) 
+            actividad = "Activa" if "activa" in linea.lower() else "Inactiva" if "inactiva" in linea.lower() else None
+            gd = "Positiva" if "gd +" in linea.lower() or "realce" in linea.lower() else None
+            regiones = [r for r in ["periventricular", "infratentorial", "medular", "cortical"] if r in linea.lower()]
+            if fecha or actividad or gd or regiones:
+                rmn_list.append({"fecha": fecha, "actividad": actividad, "gd": gd, "regiones": regiones})
+    return rmn_list
 
 def _find_fecha_consulta(text: str, fecha_nacimiento: str = None) -> Optional[str]:
-    lines = text.splitlines()
+    lines = _get_logical_lines(text)
     for line in lines[:20]:
-        l_low = line.lower()
-        if "nacimiento" in l_low or "nac." in l_low: continue
-        if any(k in l_low for k in ["la plata", "buenos aires", "fecha", "resumen"]):
-            f = _find_fecha(line)
-            if f and f != fecha_nacimiento: return f
-    for line in lines:
-        if "nacimiento" in line.lower(): continue
+        low = line.lower()
+        if any(x in low for x in ["nacimiento", "nac", "inicio", "comienzo", "diagn", "sintoma", "afeccion"]):
+            continue
+        f = _find_fecha(line)
+        if f and f != fecha_nacimiento: return f
+    for line in lines[-10:]:
         f = _find_fecha(line)
         if f and f != fecha_nacimiento: return f
     return None
 
-def _find_fecha_inicio_por_contexto(text: str):
-    cand = []
-    for line in (text or "").splitlines():
-        # Agregamos "inicio de la afección" para Campisi/Caprari
-        if "asistida desde" in line.lower() or "inicio" in line.lower() or "afecci" in line.lower():
-            f = _find_fecha(line)
-            if f: cand.append(f)
-    return sorted(cand)[0] if cand else None
+def _find_fecha_inicio_sintomas(text: str):
+    m = re.search(r"(?:inicio|comienzo)(?:\s+de)?(?:\s+(?:la|el|los|las|su|sus))?\s+(?:s[ií]?ntomas|enfermedad|cuadro|afecci[oó]?n)[:\.\s]*", text, re.IGNORECASE)
+    if m:
+        subtext = text[m.end():m.end()+100] 
+        return _find_fecha(subtext)
+    return None
 
-# --- FUNCIÓN PRINCIPAL ---
 def process(file_path: str) -> Dict[str, Any]:
     raw_text, n_pages, tipo = extract_text(file_path)
     text = _clean_text(raw_text)
     
-    # 1. Extracción de Datos Básicos
     paciente_nombre = _extract_paciente_nombre(text)
     dni = _extract_dni(text)
     datos_extra = _extract_datos_extra_paciente(text)
     
-    # 2. Extracción Inteligente por Bloques
-    tratamientos = _extract_tratamientos_bloque(text)
-    info_dx = _extract_diagnostico_bloque(text)
+    fecha_nac = datos_extra["fecha_nacimiento"]
+    fecha_cons = _find_fecha_consulta(text, fecha_nac)
+    fecha_ini = _find_fecha_inicio_sintomas(text)
     
-    # Extracciones de texto libre
     txt_sintomas = _extract_sintomas_bloque(text)
     txt_antecedentes = _extract_antecedentes_bloque(text)
     txt_examen = _extract_examen_fisico_bloque(text)
     txt_agrupacion = _extract_agrupacion_sindromica(text)
     txt_comentario = _extract_comentario_bloque(text)
-
-    # EDSS y Forma
+    txt_estudios = _extract_estudios_bloque(text)
+    txt_evolucion = _extract_evolucion_bloque(text)
+    
+    info_dx = _extract_diagnostico_bloque(text)
+    tratamientos = _extract_tratamientos_bloque(text)
+    
     edss = None
-    m_edss = P.RE_EDSS.search(text)
-    if m_edss: edss = to_float(m_edss.group(1))
-
+    m_edss = re.search(r"edss\s*[:\.]?\s*(\d+[\.,]?\d*)", text, re.IGNORECASE)
+    if m_edss: 
+        try: edss = to_float(m_edss.group(1))
+        except: pass
+        
     forma = None
-    for line in text.splitlines():
-        f = norm_forma(line)
-        if f: 
-            if f in ("SP", "PP") and "secundaria" not in text.lower(): continue
-            forma = f
+    for f_key, f_names in P.FORMAS.items():
+        if any(name in text.lower() for name in f_names):
+            forma = f_key
             break
 
-    # Fechas
-    fecha_nacimiento = datos_extra["fecha_nacimiento"]
-    fecha_consulta = _find_fecha_consulta(text, fecha_nacimiento)
-    fecha_inicio = _find_fecha_inicio_por_contexto(text)
+    puncion = _extract_puncion(text)
+    rmn = _extract_rmn(text)
 
-    # Complementarios (RMN y Puncion)
-    rmn = _merge_rmn_por_fecha(_extract_rmn(text))
-    puncion, _ = _extract_puncion(text)
-
-    # 3. Armado del JSON
     borrador = {
         "estado": "Procesado",
-        "fuente": {"tipo": tipo, "nombre_archivo": file_path.split("/")[-1]},
+        "fuente": {"tipo": tipo, "nombre_archivo": os.path.basename(file_path)},
         "paciente": {
-            "nombre": paciente_nombre, "dni": dni,
-            "fecha_nacimiento": fecha_nacimiento,
+            "nombre": paciente_nombre, 
+            "dni": dni,
+            "fecha_nacimiento": fecha_nac,
             "obra_social": datos_extra["obra_social"],
             "nro_afiliado": datos_extra["nro_afiliado"]
         },
-        "consulta": {"fecha": fecha_consulta, "medico": None},
+        "consulta": {
+            "fecha": fecha_cons, 
+            "medico": None 
+        },
         "enfermedad": {
             "diagnostico": info_dx["diagnostico"], 
             "codigo": info_dx["codigo"],
-            "forma": forma, "fecha_inicio": fecha_inicio, "edss": edss
+            "forma": forma, 
+            "fecha_inicio": fecha_ini, 
+            "edss": edss
         },
-        "complementarios": {"rmn": rmn, "puncion_lumbar": puncion},
+        "complementarios": {
+            "rmn": rmn, 
+            "puncion_lumbar": puncion
+        },
         "tratamientos": tratamientos,
-        "episodios": [],
-        
-        # --- ESTRUCTURA COMPLETA ---
         "secciones_texto": {
             "sintomas_principales": txt_sintomas,
             "antecedentes": txt_antecedentes,
             "examen_fisico": txt_examen,
             "agrupacion_sindromica": txt_agrupacion,
-            "comentario": txt_comentario
+            "comentario": txt_comentario,
+            "estudios": txt_estudios,
+            "evolucion": txt_evolucion
         },
-        
-        "texto_original": text[:10000],
-        "confidencia": {"forma": "Alta"}
+        "texto_original": text[:5000],
+        "confidencia": {"forma": "Media"}
     }
+    
     return borrador

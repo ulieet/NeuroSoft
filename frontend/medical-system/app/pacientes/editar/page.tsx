@@ -9,32 +9,45 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowLeft, Save, RefreshCw } from "lucide-react"
+import { ArrowLeft, Save, RefreshCw, AlertCircle } from "lucide-react"
 
+// IMPORTANTE: Usamos la API real
 import { 
-  obtenerPacientePorId, 
-  modificarPaciente, 
-  type Paciente 
-} from "@/lib/almacen-datos"
+  getPaciente, 
+  updatePaciente, 
+  type PacienteBackend 
+} from "@/lib/api-pacientes"
 
 function PaginaEditarPaciente() {
   const router = useRouter()
   const searchParams = useSearchParams()
-  const pacienteId = Number(searchParams.get("id"))
+  
+  // El ID ahora es un String (DNI)
+  const patientId = searchParams.get("id")
 
-  // El formulario se carga con un Paciente completo
-  const [formData, setFormData] = useState<Paciente | null>(null)
+  const [formData, setFormData] = useState<Partial<PacienteBackend> | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
+  const [estaGuardando, setEstaGuardando] = useState(false)
 
   useEffect(() => {
-    if (pacienteId) {
-      const paciente = obtenerPacientePorId(pacienteId)
-      if (paciente) {
-        setFormData(paciente)
+    if (patientId) {
+      cargarDatos()
+    }
+  }, [patientId])
+
+  const cargarDatos = async () => {
+    setEstaCargando(true)
+    try {
+      const data = await getPaciente(patientId!)
+      if (data) {
+        setFormData(data)
       }
+    } catch (error) {
+      console.error("Error al cargar paciente:", error)
+    } finally {
       setEstaCargando(false)
     }
-  }, [pacienteId])
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
@@ -45,32 +58,35 @@ function PaginaEditarPaciente() {
     setFormData((prev) => (prev ? { ...prev, [id]: value } : null))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!formData) return
+    if (!formData || !patientId) return
     
-    // Validación
-    if (!formData.nombre || !formData.apellido || !formData.dni || !formData.fechaNacimiento || !formData.sexo || !formData.telefono || !formData.obraSocial) {
-      alert("Por favor, complete todos los campos marcados con *")
-      return
-    }
-
+    setEstaGuardando(true)
     try {
-      modificarPaciente(pacienteId, formData)
-      alert("Paciente modificado con éxito")
-      router.push(`/pacientes/detalle?id=${pacienteId}`) // Volvemos al detalle
+      // Llamada a la API para actualizar el JSON en el backend
+      const exito = await updatePaciente(patientId, formData)
+      
+      if (exito) {
+        alert("Paciente modificado con éxito")
+        router.push(`/pacientes/detalle?id=${patientId}`)
+      } else {
+        alert("No se pudieron guardar los cambios en el servidor")
+      }
     } catch (error) {
       console.error(error)
-      alert("Error al modificar el paciente")
+      alert("Error crítico al modificar el paciente")
+    } finally {
+      setEstaGuardando(false)
     }
   }
 
   if (estaCargando) {
     return (
       <MedicalLayout currentPage="pacientes">
-        <div className="flex items-center justify-center min-h-[400px]">
-          <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-          <p className="ml-2">Cargando paciente...</p>
+        <div className="flex flex-col items-center justify-center min-h-[400px] gap-2">
+          <RefreshCw className="h-8 w-8 animate-spin text-primary" />
+          <p className="text-muted-foreground">Cargando datos del servidor...</p>
         </div>
       </MedicalLayout>
     )
@@ -79,13 +95,17 @@ function PaginaEditarPaciente() {
   if (!formData) {
     return (
       <MedicalLayout currentPage="pacientes">
-        <div className="flex items-center justify-center min-h-[400px]">
-          <Card>
-            <CardHeader><CardTitle>Paciente no encontrado</CardTitle></CardHeader>
-            <CardContent>
-              <Button asChild><a href="/pacientes"><ArrowLeft className="mr-2 h-4 w-4" />Volver</a></Button>
-            </CardContent>
-          </Card>
+        <div className="flex flex-col items-center justify-center min-h-[400px] gap-4">
+          <AlertCircle className="h-12 w-12 text-destructive" />
+          <CardHeader>
+            <CardTitle>Paciente no encontrado</CardTitle>
+            <CardDescription>No existe un registro con el DNI: {patientId}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button onClick={() => router.push("/pacientes")}>
+              <ArrowLeft className="mr-2 h-4 w-4" /> Volver al listado
+            </Button>
+          </CardContent>
         </div>
       </MedicalLayout>
     )
@@ -94,123 +114,78 @@ function PaginaEditarPaciente() {
   return (
     <MedicalLayout currentPage="pacientes">
       <form onSubmit={handleSubmit}>
-        <div className="space-y-6">
+        <div className="space-y-6 max-w-5xl mx-auto">
           {/* Cabecera */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" asChild>
-              <a href={`/pacientes/detalle?id=${pacienteId}`}>
-                <ArrowLeft className="h-4 w-4" />
-              </a>
+            <Button variant="ghost" size="sm" onClick={() => router.back()} type="button">
+              <ArrowLeft className="h-4 w-4" />
             </Button>
             <div>
-              <h1 className="text-2xl font-bold text-balance">Editar Paciente</h1>
-              <p className="text-muted-foreground">Modificando a: {formData.apellido}, {formData.nombre}</p>
+              <h1 className="text-2xl font-bold">Editar Ficha de Paciente</h1>
+              <p className="text-muted-foreground font-mono text-sm">DNI: {formData.dni}</p>
             </div>
           </div>
 
-          {/* Formulario */}
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2 space-y-6">
-              {/* Información Personal */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Información Personal</CardTitle>
+                  <CardTitle>Información General</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="nombre">Nombre *</Label>
-                      <Input id="nombre" value={formData.nombre} onChange={handleChange} required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="apellido">Apellido *</Label>
-                      <Input id="apellido" value={formData.apellido} onChange={handleChange} required />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="dni">DNI * (No editable)</Label>
-                      <Input id="dni" value={formData.dni} readOnly disabled />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="fechaNacimiento">Fecha de Nacimiento *</Label>
-                      <Input id="fechaNacimiento" type="date" value={formData.fechaNacimiento} onChange={handleChange} required />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="sexo">Sexo *</Label>
-                      <Select value={formData.sexo} onValueChange={(v) => handleSelectChange("sexo", v)} required>
-                        <SelectTrigger><SelectValue /></SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="Femenino">Femenino</SelectItem>
-                          <SelectItem value="Masculino">Masculino</SelectItem>
-                          <SelectItem value="Otro">Otro</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                     <div className="space-y-2">
-                      <Label htmlFor="telefono">Teléfono *</Label>
-                      <Input id="telefono" placeholder="11-2345-6789" value={formData.telefono} onChange={handleChange} required />
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Información Médica */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Información Médica</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="obraSocial">Obra Social *</Label>
-                      <Select value={formData.obraSocial} onValueChange={(v) => handleSelectChange("obraSocial", v)} required>
-                        <SelectTrigger><SelectValue /></SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="OSDE">OSDE</SelectItem>
-                          <SelectItem value="OSPE">OSPE</SelectItem>
-                          <SelectItem value="OSPSA">OSPSA</SelectItem>
-                          <SelectItem value="OSPOCE">OSPOCE</SelectItem>
-                          <SelectItem value="Swiss Medical">Swiss Medical</SelectItem>
-                          <SelectItem value="Galeno">Galeno</SelectItem>
-                          <SelectItem value="Medicus">Medicus</SelectItem>
-                          <SelectItem value="IOMA">IOMA</SelectItem>
-                          <SelectItem value="OSECAC">OSECAC</SelectItem>
-                          <SelectItem value="UOCRA">UOCRA</SelectItem>
-                          <SelectItem value="PAMI">PAMI</SelectItem>
-                          <SelectItem value="Particular">Particular</SelectItem>
-                          <SelectItem value="Otra">Otra</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="numeroAfiliado">Número de Afiliado</Label>
-                      <Input id="numeroAfiliado" value={formData.numeroAfiliado} onChange={handleChange} />
-                    </div>
-                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="observaciones">Observaciones</Label>
-                    <Textarea id="observaciones" rows={4} value={formData.observaciones} onChange={handleChange} />
+                    <Label htmlFor="nombre">Nombre Completo *</Label>
+                    <Input id="nombre" value={formData.nombre || ""} onChange={handleChange} required />
+                  </div>
+                  
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div className="space-y-2">
+                      <Label htmlFor="fecha_nacimiento">Fecha de Nacimiento</Label>
+                      <Input id="fecha_nacimiento" value={formData.fecha_nacimiento || ""} onChange={handleChange} placeholder="DD/MM/AAAA" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="obra_social">Obra Social</Label>
+                      <Input id="obra_social" value={formData.obra_social || ""} onChange={handleChange} />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="nro_afiliado">Número de Afiliado</Label>
+                    <Input id="nro_afiliado" value={formData.nro_afiliado || ""} onChange={handleChange} />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="observaciones">Observaciones Internas</Label>
+                    <Textarea 
+                      id="observaciones" 
+                      rows={5} 
+                      value={formData.observaciones || ""} 
+                      onChange={handleChange} 
+                      placeholder="Notas sobre el paciente, antecedentes relevantes, etc."
+                    />
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Acciones */}
-            <div>
+            {/* Panel de Acciones Lateral */}
+            <div className="space-y-6">
               <Card className="sticky top-24">
                 <CardHeader>
-                  <CardTitle>Acciones</CardTitle>
+                  <CardTitle>Guardar Cambios</CardTitle>
+                  <CardDescription>La actualización afectará a todas las historias clínicas relacionadas.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Button type="submit" className="w-full">
-                    <Save className="mr-2 h-4 w-4" />
-                    Guardar Cambios
+                  <Button type="submit" className="w-full" disabled={estaGuardando}>
+                    {estaGuardando ? (
+                      <RefreshCw className="mr-2 h-4 w-4 animate-spin" />
+                    ) : (
+                      <Save className="mr-2 h-4 w-4" />
+                    )}
+                    Actualizar Servidor
                   </Button>
-                  <Button variant="outline" className="w-full bg-transparent" asChild>
-                    <a href={`/pacientes/detalle?id=${pacienteId}`}>Cancelar</a>
+                  <Button variant="outline" className="w-full" onClick={() => router.back()} type="button">
+                    Cancelar
                   </Button>
                 </CardContent>
               </Card>
@@ -222,16 +197,9 @@ function PaginaEditarPaciente() {
   )
 }
 
-// Envolvemos en Suspense para que useSearchParams funcione
 export default function PaginaEditarPacienteSuspense() {
   return (
-    <Suspense fallback={
-      <MedicalLayout currentPage="pacientes">
-         <div className="flex items-center justify-center min-h-[400px]">
-           <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-         </div>
-      </MedicalLayout>
-    }>
+    <Suspense fallback={<div className="p-20 text-center">Cargando...</div>}>
       <PaginaEditarPaciente />
     </Suspense>
   )
