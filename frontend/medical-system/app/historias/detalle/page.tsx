@@ -3,11 +3,12 @@
 import { useEffect, useState, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { MedicalLayout } from "@/components/medical-layout"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Separator } from "@/components/ui/separator"
+import { useToast } from "@/components/ui/use-toast" // <--- IMPORTANTE: Agregar Toast
 import { 
   ArrowLeft, 
   Edit, 
@@ -19,13 +20,13 @@ import {
   Pill,            
   FlaskConical,    
   TrendingUp,      
-  FileDown,        
   Check,
   Trash,
   Calendar,
   ScanEye,
   History,
-  Activity
+  Activity,
+  Clock
 } from "lucide-react"
 
 import {
@@ -44,12 +45,12 @@ import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
   obtenerEdadPaciente,
-  eliminarHistoriaClinica,
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
 
-import { BASE_URL } from "@/lib/api-historias"
+// Importamos la nueva función para borrar en el servidor
+import { BASE_URL, eliminarHistoriaRemota } from "@/lib/api-historias" 
 
 // --- HELPERS VISUALES Y LÓGICOS ---
 
@@ -73,10 +74,13 @@ function calcularAnios(fechaInicioStr?: string, fechaFinStr?: string): number | 
 
 const getEstadoBadge = (estado: string) => {
   switch (estado) {
-    case "validada": return <Badge className="bg-green-100 text-green-800 border-green-200"><Check className="w-3 h-3 mr-1" />Validada</Badge>
+    case "validada": 
+      return <Badge className="bg-green-100 text-green-800 border-green-200 hover:bg-green-100"><Check className="w-3 h-3 mr-1" />Validada</Badge>
     case "pendiente": 
-    case "pendiente_validacion": return <Badge variant="secondary">Pendiente</Badge>
-    default: return <Badge variant="destructive">Error</Badge>
+    case "pendiente_validacion": 
+      return <Badge className="bg-blue-100 text-blue-800 border-blue-200 hover:bg-blue-100"><Clock className="w-3 h-3 mr-1" />Pendiente</Badge>
+    default: 
+      return <Badge variant="destructive">Error</Badge>
   }
 }
 
@@ -84,9 +88,9 @@ const getCriticidadBadge = (nivel?: string) => {
   if (!nivel) return <Badge variant="outline">N/A</Badge>
   switch (nivel) {
     case "critico": return <Badge variant="destructive">Crítico</Badge>
-    case "alto": return <Badge className="bg-orange-100 text-orange-800 border-orange-200">Alto</Badge>
-    case "medio": return <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200">Medio</Badge>
-    case "bajo": return <Badge variant="outline">Bajo</Badge>
+    case "alto": return <Badge className="bg-orange-100 text-orange-800 border-orange-200 hover:bg-orange-100">Alto</Badge>
+    case "medio": return <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200 hover:bg-yellow-100">Medio</Badge>
+    case "bajo": return <Badge variant="outline" className="bg-slate-100 text-slate-800 border-slate-200">Bajo</Badge>
     default: return <Badge variant="outline">{nivel}</Badge>
   }
 }
@@ -161,10 +165,12 @@ function PaginaDetalleHistoria() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const historiaId = searchParams.get("id")
+  const { toast } = useToast() // Hook de notificaciones
 
   const [historia, setHistoria] = useState<HistoriaClinica | null>(null)
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
+  const [estaEliminando, setEstaEliminando] = useState(false) // Nuevo estado para UI
 
   // --- LÓGICA DE CARGA DE DATOS ---
   useEffect(() => {
@@ -181,10 +187,10 @@ function PaginaDetalleHistoria() {
         
         if (res.ok) {
           const data = await res.json();
-          const borrador = data.borrador || {};
-          const pInfo = borrador.paciente || {};
-          const enf = borrador.enfermedad || {};
-          const cons = borrador.consulta || {};
+          const fuenteDatos = data.validada || data.borrador || {};
+          const pInfo = fuenteDatos.paciente || {};
+          const enf = fuenteDatos.enfermedad || {};
+          const cons = fuenteDatos.consulta || {};
           
           let nombre = pInfo.nombre || "";
           let apellido = "";
@@ -200,10 +206,7 @@ function PaginaDetalleHistoria() {
             apellido: apellido,
             dni: pInfo.dni || "",
             fechaNacimiento: pInfo.fecha_nacimiento || "", 
-            sexo: "",
-            telefono: "",
-            email: "",
-            direccion: "",
+            sexo: "", telefono: "", email: "", direccion: "",
             obraSocial: pInfo.obra_social || "",           
             numeroAfiliado: pInfo.nro_afiliado || "",      
             fechaRegistro: new Date().toISOString(),
@@ -220,35 +223,31 @@ function PaginaDetalleHistoria() {
             formaEvolutiva: enf.forma,
             fechaInicioEnfermedad: enf.fecha_inicio,
             escalaEDSS: enf.edss,
-            estado: data.estado === "pendiente_validacion" ? "pendiente" : data.estado,
+            estado: data.estado, 
+            nivelCriticidad: data.nivel_criticidad || fuenteDatos.nivel_criticidad || "medio",
             medico: cons.medico || "",
-            
-            // --- NUEVOS CAMPOS ADAPTADOS A LOS DOCS ---
-            sintomasPrincipales: borrador.secciones_texto?.sintomas_principales || borrador.texto_original || "",
-            antecedentes: borrador.secciones_texto?.antecedentes || "",
-            agrupacionSindromica: borrador.secciones_texto?.agrupacion_sindromica || "",
-            
-            examenFisico: borrador.secciones_texto?.examen_fisico || "", 
-            evolucion: borrador.secciones_texto?.evolucion || "", // Si existe en backend
-            
+            sintomasPrincipales: fuenteDatos.secciones_texto?.sintomas_principales || fuenteDatos.texto_original || "",
+            antecedentes: fuenteDatos.secciones_texto?.antecedentes || "",
+            agrupacionSindromica: fuenteDatos.secciones_texto?.agrupacion_sindromica || "",
+            examenFisico: fuenteDatos.secciones_texto?.examen_fisico || "", 
+            evolucion: fuenteDatos.secciones_texto?.evolucion || "", 
             fechaImportacion: new Date().toISOString(),
-            medicamentos: (borrador.tratamientos || []).map((t: any) => ({
+            medicamentos: (fuenteDatos.tratamientos || []).map((t: any) => ({
                 droga: t.molecula || t.droga || "Sin nombre",
                 molecula: t.molecula,
                 dosis: t.dosis,
                 frecuencia: t.frecuencia,
-                estado: t.estado, 
+                estado: t.estado || "Activo",
                 tolerancia: true 
             })),
-            tratamiento: borrador.secciones_texto?.comentario || "", // Mapeado a "Comentario" del doc
+            tratamiento: fuenteDatos.secciones_texto?.comentario || "", 
             estudiosComplementarios: {
-              puncionLumbar: borrador.complementarios?.puncion_lumbar?.realizada || false,
+              puncionLumbar: fuenteDatos.complementarios?.puncion_lumbar?.realizada || false,
               examenLCR: false,
-              texto: borrador.complementarios?.rmn 
-                ? JSON.stringify(borrador.complementarios.rmn) 
+              texto: fuenteDatos.complementarios?.rmn 
+                ? JSON.stringify(fuenteDatos.complementarios.rmn) 
                 : ""
             },
-            nivelCriticidad: "medio", 
             patologia: "Neurología" 
           };
           setHistoria(hist);
@@ -259,32 +258,45 @@ function PaginaDetalleHistoria() {
         console.warn("Backend falló, intentando local...", error);
       }
 
+      // Fallback Local Storage
       const histLocal = obtenerHistoriaClinicaPorId(historiaId);
       if (histLocal) {
         setHistoria(histLocal);
         const pacLocal = obtenerPacientePorId(histLocal.pacienteId);
         setPaciente(pacLocal || null);
       }
-      
       setEstaCargando(false)
     }
 
     cargarDatos()
   }, [historiaId])
 
-  const handleValidarHistoria = () => {
-    router.push(`/historias/validar?id=${historiaId}`);
-  }
+  // --- LÓGICA DE ELIMINACIÓN ---
+  const handleEliminarHistoria = async () => {
+    if (!historiaId) return;
+    setEstaEliminando(true);
 
-  const handleEliminarHistoria = () => {
-    if (!historia || !paciente) return
     try {
-      eliminarHistoriaClinica(historia.id)
-      alert("Historia clínica eliminada.")
-      router.push(`/historias`) 
+      // 1. Intentar borrar del Backend
+      await eliminarHistoriaRemota(historiaId);
+      
+      toast({
+        title: "Historia eliminada",
+        description: "El registro ha sido eliminado correctamente del servidor.",
+      });
+
+      // 2. Redirigir al listado
+      router.push(`/historias`);
+
     } catch (error) {
-      console.error(error)
-      alert("Error al eliminar la historia.")
+      console.error(error);
+      toast({
+        title: "Error",
+        description: "No se pudo eliminar la historia del servidor.",
+        variant: "destructive"
+      });
+    } finally {
+      setEstaEliminando(false);
     }
   }
 
@@ -297,14 +309,14 @@ function PaginaDetalleHistoria() {
     : null
 
   if (estaCargando) {
-     return (
-       <MedicalLayout currentPage="historias">
-         <div className="flex items-center justify-center min-h-[400px]">
-           <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
-           <p className="ml-2">Cargando datos...</p>
-         </div>
-       </MedicalLayout>
-     )
+      return (
+        <MedicalLayout currentPage="historias">
+          <div className="flex items-center justify-center min-h-[400px]">
+            <RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" />
+            <p className="ml-2">Cargando datos...</p>
+          </div>
+        </MedicalLayout>
+      )
   }
 
   if (!historia || !paciente) {
@@ -344,27 +356,27 @@ function PaginaDetalleHistoria() {
           </div>
           
           <div className="flex flex-wrap gap-2"> 
-            {historia.estado === "pendiente" && (
-              <Button onClick={handleValidarHistoria}>
-                <Check className="mr-2 h-4 w-4" />Validar Historia
-              </Button>
-            )}
             <Button variant="outline" asChild>
               <a href={`/historias/editar?id=${historia.id}`}><Edit className="mr-2 h-4 w-4" />Editar</a>
             </Button>
             
             <AlertDialog>
               <AlertDialogTrigger asChild>
-                <Button variant="destructive" size="sm"><Trash className="mr-2 h-4 w-4" />Eliminar</Button>
+                <Button variant="destructive" size="sm" disabled={estaEliminando}>
+                  {estaEliminando ? <RefreshCw className="mr-2 h-4 w-4 animate-spin"/> : <Trash className="mr-2 h-4 w-4" />}
+                  Eliminar
+                </Button>
               </AlertDialogTrigger>
               <AlertDialogContent>
                 <AlertDialogHeader>
                   <AlertDialogTitle>¿Eliminar historia?</AlertDialogTitle>
-                  <AlertDialogDescription>Esta acción es irreversible.</AlertDialogDescription>
+                  <AlertDialogDescription>Esta acción es irreversible y borrará el archivo del servidor.</AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                   <AlertDialogCancel>Cancelar</AlertDialogCancel>
-                  <AlertDialogAction onClick={handleEliminarHistoria}>Confirmar</AlertDialogAction>
+                  <AlertDialogAction onClick={handleEliminarHistoria} className="bg-destructive text-destructive-foreground hover:bg-destructive/90">
+                    Confirmar Eliminación
+                  </AlertDialogAction>
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
@@ -408,7 +420,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
-            {/* Card: Síntomas y Clínica (Estructura corregida) */}
+            {/* Card: Síntomas y Clínica */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">

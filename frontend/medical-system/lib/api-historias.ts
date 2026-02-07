@@ -87,6 +87,31 @@ export async function listarHistorias(): Promise<HistoriaResumen[]> {
   }
 }
 
+export async function validarHistoriasMasivas() {
+  const res = await fetch(`${BASE_URL}/historias/validacion-masiva`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!res.ok) {
+    throw new Error("Error al realizar la validación masiva");
+  }
+
+  return res.json();
+}
+
+export async function eliminarHistoriaRemota(id: string): Promise<void> {
+  const res = await fetch(`${BASE_URL}/historias/${id}`, {
+    method: "DELETE",
+  });
+
+  if (!res.ok) {
+    throw new Error("Error al eliminar la historia del servidor");
+  }
+}
+
 // --- IMPORTAR ---
 export async function importarHistoriaArchivo(file: File) {
   try {

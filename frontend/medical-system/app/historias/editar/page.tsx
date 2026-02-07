@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { useToast } from "@/components/ui/use-toast"
 import { 
   ArrowLeft, 
   Save, 
@@ -28,17 +29,16 @@ import {
 import {
   obtenerHistoriaClinicaPorId,
   obtenerPacientePorId,
-  obtenerHistoriasClinicas, // Importado para el fix de guardado
-  guardarHistoriasClinicas, // Importado para el fix de guardado
+  obtenerHistoriasClinicas, 
+  guardarHistoriasClinicas, 
   type HistoriaClinica,
   type Paciente,
   type Medicamento,
-  type EstudioComplementario,
 } from "@/lib/almacen-datos"
 
 import { BASE_URL } from "@/lib/api-historias"
 
-// Helper para generar el desplegable de EDSS
+// --- HELPERS ---
 const generarOpcionesEDSS = () => {
   const opciones = []
   for (let i = 0; i <= 10; i += 0.5) {
@@ -48,17 +48,19 @@ const generarOpcionesEDSS = () => {
 }
 const opcionesEDSS = generarOpcionesEDSS()
 
+// --- COMPONENTE PRINCIPAL ---
 function PaginaEditarHistoria() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const historiaId = searchParams.get("id") 
+  const { toast } = useToast()
 
   const [paciente, setPaciente] = useState<Paciente | null>(null)
   const [estaCargando, setEstaCargando] = useState(true)
   const [estaGuardando, setEstaGuardando] = useState(false);
   const [formData, setFormData] = useState<Partial<HistoriaClinica>>({})
 
-  // --- EFECTO DE CARGA DE DATOS ---
+  // --- 1. CARGA DE DATOS (Backend con Fallback a Local) ---
   useEffect(() => {
     if (!historiaId) {
       setEstaCargando(false)
@@ -68,24 +70,28 @@ function PaginaEditarHistoria() {
     const cargarDatos = async () => {
       setEstaCargando(true)
 
-      // 1. INTENTO: Cargar desde Backend
+      // A. Intentar cargar desde Backend (Python)
       try {
         const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`)
         
         if (res.ok) {
           const data = await res.json()
-          const borrador = data.borrador || {}
-          const pInfo = borrador.paciente || {}
-          const enf = borrador.enfermedad || {}
-          const cons = borrador.consulta || {}
+          
+          const fuenteDatos = data.validada || data.borrador || {}
+          
+          const pInfo = fuenteDatos.paciente || {}
+          const enf = fuenteDatos.enfermedad || {}
+          const cons = fuenteDatos.consulta || {}
 
-          // Construir objeto Paciente visual
+          // Normalización de Nombre/Apellido
           let nombre = pInfo.nombre || ""
           let apellido = ""
-          if (nombre.includes(",")) {
+          if (nombre && nombre.includes(",")) {
             const partes = nombre.split(",")
             apellido = partes[0].trim()
             nombre = partes[1].trim()
+          } else if (nombre) {
+            apellido = nombre 
           }
 
           setPaciente({
@@ -100,13 +106,13 @@ function PaginaEditarHistoria() {
             fechaRegistro: "", observaciones: ""
           })
 
-          // Mapear datos
+          // Mapeo Backend -> Estado del Formulario
           setFormData({
             id: data.id,
             pacienteId: historiaId,
             fecha: (cons.fecha || "").split('T')[0], 
             
-            // Diagnóstico Completo
+            // Diagnóstico
             diagnostico: enf.diagnostico || "",
             codigoDiagnostico: enf.codigo || "",
             formaEvolutiva: enf.forma || "",
@@ -116,21 +122,23 @@ function PaginaEditarHistoria() {
             fechaInicioEnfermedad: (enf.fecha_inicio || "").split('T')[0],
             escalaEDSS: enf.edss,
             
-            // Estado y Criticidad
-            estado: data.estado === "pendiente_validacion" ? "pendiente" : data.estado,
-            nivelCriticidad: "medio",
+            // --- CORRECCIÓN 1: Leer Estado y Criticidad correctamente ---
+            // Normalizamos 'pendiente' a 'pendiente_validacion' para que el Select lo detecte
+            estado: data.estado === "pendiente" ? "pendiente_validacion" : data.estado,
+            // Priorizamos la criticidad de la raíz (guardada anteriormente) o del borrador
+            nivelCriticidad: data.nivel_criticidad || fuenteDatos.nivel_criticidad || "medio",
 
-            // Cuadro Clínico
-            sintomasPrincipales: borrador.secciones_texto?.sintomas_principales || borrador.texto_original || "",
-            antecedentes: borrador.secciones_texto?.antecedentes || "",
-            agrupacionSindromica: borrador.secciones_texto?.agrupacion_sindromica || "",
-            examenFisico: borrador.secciones_texto?.examen_fisico || "",
+            // Cuadro Clínico (Textos)
+            sintomasPrincipales: fuenteDatos.secciones_texto?.sintomas_principales || fuenteDatos.texto_original || "",
+            antecedentes: fuenteDatos.secciones_texto?.antecedentes || "",
+            agrupacionSindromica: fuenteDatos.secciones_texto?.agrupacion_sindromica || "",
+            examenFisico: fuenteDatos.secciones_texto?.examen_fisico || "",
             
-            // Tratamiento
-            tratamiento: borrador.secciones_texto?.comentario || "", // Justificación
+            // Plan
+            tratamiento: fuenteDatos.secciones_texto?.comentario || "", 
 
-            // Medicamentos
-            medicamentos: (borrador.tratamientos || []).map((t: any) => ({
+            // Medicamentos (Array)
+            medicamentos: (fuenteDatos.tratamientos || []).map((t: any) => ({
               droga: t.molecula || t.droga || "",
               dosis: t.dosis || "",
               frecuencia: t.frecuencia || "",
@@ -139,9 +147,9 @@ function PaginaEditarHistoria() {
 
             // Estudios
             estudiosComplementarios: {
-              puncionLumbar: borrador.complementarios?.puncion_lumbar?.realizada || false,
+              puncionLumbar: fuenteDatos.complementarios?.puncion_lumbar?.realizada || false,
               examenLCR: false,
-              texto: borrador.complementarios?.rmn ? JSON.stringify(borrador.complementarios.rmn) : ""
+              texto: fuenteDatos.complementarios?.rmn ? JSON.stringify(fuenteDatos.complementarios.rmn) : ""
             }
           })
 
@@ -152,7 +160,7 @@ function PaginaEditarHistoria() {
         console.warn("Backend error, local fallback...", error)
       }
 
-      // 2. INTENTO: Local Storage
+      // B. Fallback Local Storage (Si falla el backend)
       const hist = obtenerHistoriaClinicaPorId(historiaId)
       if (hist) {
         setFormData({
@@ -174,7 +182,7 @@ function PaginaEditarHistoria() {
     cargarDatos()
   }, [historiaId])
 
-  // --- Handlers ---
+  // --- HANDLERS DE CAMBIO ---
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
@@ -193,6 +201,7 @@ function PaginaEditarHistoria() {
     }
   }
 
+  // --- GESTIÓN DE MEDICAMENTOS (CRUD Array) ---
   const handleMedicamentoChange = (index: number, field: keyof Medicamento, value: string) => {
     setFormData(prev => {
       if (!prev || !prev.medicamentos) return prev;
@@ -216,43 +225,107 @@ function PaginaEditarHistoria() {
     }));
   };
 
-  // --- FIX DE GUARDADO ---
-  const handleSubmit = (e: React.FormEvent) => {
+  // --- GUARDADO (Backend + Local Sync) ---
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!historiaId) return;
     setEstaGuardando(true)
 
-    try {
-      // 1. Obtenemos todas las historias locales
-      const historiasLocales = obtenerHistoriasClinicas();
+    // 1. Preparar Payload para api/historias.py
+    const payloadBackend = {
+      // --- CORRECCIÓN 2: Enviar explícitamente Estado y Criticidad ---
+      estado: formData.estado, 
+      nivel_criticidad: formData.nivelCriticidad, 
       
-      // 2. Buscamos si ya existe esta historia (por si viene del backend y es la primera vez que se edita)
-      const index = historiasLocales.findIndex(h => h.id === historiaId);
+      paciente: {
+        nombre: paciente ? `${paciente.apellido}, ${paciente.nombre}` : "",
+        dni: paciente?.dni,
+        obra_social: paciente?.obraSocial,
+        nro_afiliado: paciente?.numeroAfiliado,
+        fecha_nacimiento: paciente?.fechaNacimiento
+      },
+      enfermedad: {
+        diagnostico: formData.diagnostico,
+        codigo: formData.codigoDiagnostico,
+        forma: formData.formaEvolutiva,
+        fecha_inicio: formData.fechaInicioEnfermedad,
+        edss: formData.escalaEDSS
+      },
+      consulta: {
+        fecha: formData.fecha
+      },
+      secciones_texto: {
+        sintomas_principales: formData.sintomasPrincipales,
+        antecedentes: formData.antecedentes,
+        agrupacion_sindromica: formData.agrupacionSindromica,
+        examen_fisico: formData.examenFisico,
+        comentario: formData.tratamiento 
+      },
+      tratamientos: formData.medicamentos?.map(m => ({
+        droga: m.droga,
+        dosis: m.dosis,
+        frecuencia: m.frecuencia
+      })),
+      complementarios: {
+        puncion_lumbar: { realizada: formData.estudiosComplementarios?.puncionLumbar }
+      }
+    };
 
-      // 3. Preparamos el objeto completo
-      const historiaA_Guardar = { ...formData } as HistoriaClinica;
-      // Aseguramos que el ID no se pierda
-      historiaA_Guardar.id = historiaId; 
+    try {
+      // 2. Enviar a Backend
+      const res = await fetch(`${BASE_URL}/historias/${historiaId}/validacion`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payloadBackend),
+      });
 
-      if (index >= 0) {
-        // Si existe, actualizamos
-        historiasLocales[index] = historiaA_Guardar;
-      } else {
-        // Si NO existe (era solo backend), la agregamos manualmente preservando el ID
-        historiasLocales.push(historiaA_Guardar);
+      if (!res.ok) {
+        throw new Error("Error al guardar en el servidor");
       }
 
-      // 4. Guardamos todo el array en LocalStorage
+      // 3. Actualizar Local Storage (Éxito)
+      const historiasLocales = obtenerHistoriasClinicas();
+      const index = historiasLocales.findIndex(h => h.id === historiaId);
+      const historiaA_Guardar = { ...formData, id: historiaId } as HistoriaClinica;
+
+      if (index >= 0) {
+        historiasLocales[index] = historiaA_Guardar;
+      } else {
+        historiasLocales.push(historiaA_Guardar);
+      }
       guardarHistoriasClinicas(historiasLocales);
 
-      alert("Historia Clínica guardada con éxito")
-      router.push(`/historias/detalle?id=${historiaId}`)
+      toast({
+        title: "Guardado Exitoso",
+        description: "La historia clínica ha sido validada en el servidor.",
+      })
+      
+      // Redirigir al detalle
+      setTimeout(() => {
+        router.push(`/historias/detalle?id=${historiaId}`)
+      }, 500)
+
     } catch (error) {
       console.error(error)
-      alert("Error al guardar la historia")
+      toast({
+        title: "Error de Conexión",
+        description: "Se guardó una copia localmente, pero falló el servidor.",
+        variant: "destructive"
+      })
+      
+      // 4. Fallback: Guardar localmente aunque falle el back
+      const historiasLocales = obtenerHistoriasClinicas();
+      const index = historiasLocales.findIndex(h => h.id === historiaId);
+      const historiaA_Guardar = { ...formData, id: historiaId } as HistoriaClinica;
+      if (index >= 0) historiasLocales[index] = historiaA_Guardar;
+      else historiasLocales.push(historiaA_Guardar);
+      guardarHistoriasClinicas(historiasLocales);
+      
       setEstaGuardando(false)
     }
   }
+
+  // --- RENDER ---
 
   if (estaCargando) {
     return (
@@ -286,6 +359,8 @@ function PaginaEditarHistoria() {
     <MedicalLayout currentPage="historias">
       <form onSubmit={handleSubmit}>
         <div className="space-y-6">
+          
+          {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
               <a href={`/historias/detalle?id=${historiaId}`}><ArrowLeft className="h-4 w-4" /></a>
@@ -297,8 +372,11 @@ function PaginaEditarHistoria() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            
+            {/* COLUMNA IZQUIERDA (Datos Clínicos) */}
             <div className="lg:col-span-2 space-y-6">
               
+              {/* 1. Datos Generales */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
@@ -308,11 +386,10 @@ function PaginaEditarHistoria() {
                     <Label htmlFor="fecha">Fecha de Emisión *</Label>
                     <Input id="fecha" type="date" value={formData.fecha} onChange={handleChange} required />
                   </div>
-                  {/* Se elimina el campo Medico según solicitud */}
                 </CardContent>
               </Card>
 
-              {/* Cuadro Clínico */}
+              {/* 2. Cuadro Clínico (Textareas) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle>
@@ -337,7 +414,7 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
 
-              {/* Diagnóstico Completo */}
+              {/* 3. Diagnóstico */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><Brain className="h-5 w-5" />Diagnóstico</CardTitle>
@@ -362,7 +439,7 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
               
-              {/* Índices Clave */}
+              {/* 4. Índices Clave (EDSS) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Índices Clave</CardTitle>
@@ -387,12 +464,12 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
 
+              {/* 5. Plan Terapéutico (Medicamentos Dinámicos) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Plan Terapéutico</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {/* Etiqueta corregida */}
                   <div className="space-y-2">
                     <Label htmlFor="tratamiento">Comentario / Justificación Médica</Label>
                     <Textarea id="tratamiento" rows={4} value={formData.tratamiento || ""} onChange={handleChange} />
@@ -419,11 +496,10 @@ function PaginaEditarHistoria() {
               </Card>
             </div>
 
-            {/* Columna Derecha: Datos de la Consulta (Ex Acciones) */}
+            {/* COLUMNA DERECHA (Datos de Estado / Sticky) */}
             <div className="space-y-6">
               <Card className="sticky top-24">
                 <CardHeader>
-                    {/* Título corregido */}
                     <CardTitle className="flex items-center gap-2"><Stethoscope className="h-5 w-5" />Datos de la Consulta</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -432,7 +508,8 @@ function PaginaEditarHistoria() {
                     <Select value={formData.estado} onValueChange={(v) => handleSelectChange("estado", v)}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="pendiente">Pendiente</SelectItem>
+                        {/* CORRECCIÓN 3: Usar valor extendido para que coincida con el backend */}
+                        <SelectItem value="pendiente_validacion">Pendiente</SelectItem>
                         <SelectItem value="validada">Validada</SelectItem>
                       </SelectContent>
                     </Select>
@@ -456,6 +533,7 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
             </div>
+
           </div>
         </div>
       </form>

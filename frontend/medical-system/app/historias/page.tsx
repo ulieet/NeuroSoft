@@ -48,35 +48,28 @@ import {
 import {
   listarHistorias,
   importarHistoriaArchivo,
-  autoValidarHistoria,
+  validarHistoriasMasivas,
   type HistoriaResumen,
 } from "@/lib/api-historias";
 
+// --- Helpers de Fecha y Badges ---
 const coincideFecha = (storedDate: string | null | undefined, search: string) => {
   if (!storedDate) return false;
   if (!search) return true;
-
   const cleanSearch = search.trim();
-  
   if (storedDate.includes(cleanSearch)) return true;
-
   const partesFecha = storedDate.split("T")[0].split("-"); 
   if (partesFecha.length < 3) return false;
-
   const sYear = parseInt(partesFecha[0], 10);
   const sMonth = parseInt(partesFecha[1], 10);
   const sDay = parseInt(partesFecha[2], 10);
-
   const parts = cleanSearch.split(/[\/\-\.\s]+/).map(p => parseInt(p, 10)).filter(n => !isNaN(n));
-
   if (parts.length === 0) return false;
-
   if (parts.length === 3) {
     let [d, m, y] = parts;
     if (y < 100) y += 2000; 
     return d === sDay && m === sMonth && y === sYear;
   }
-
   if (parts.length === 2) {
     const [p1, p2] = parts;
     if (p2 > 31) { 
@@ -86,13 +79,11 @@ const coincideFecha = (storedDate: string | null | undefined, search: string) =>
     }
     return p1 === sDay && p2 === sMonth;
   }
-
   if (parts.length === 1) {
     const p = parts[0];
     if (p > 31) return p === sYear; 
     return p === sDay || p === sMonth; 
   }
-
   return false;
 };
 
@@ -100,13 +91,14 @@ const getEstadoBadge = (estado: string) => {
   switch (estado) {
     case "validada":
       return (
-        <Badge className="bg-green-100 text-green-800 border-green-200">
+        <Badge className="bg-green-100 text-green-800 border-green-200 hover:bg-green-100">
           <CheckCircle className="w-3 h-3 mr-1" /> Validada
         </Badge>
       );
     case "pendiente_validacion":
+    case "pendiente":
       return (
-        <Badge variant="secondary">
+        <Badge className="bg-blue-100 text-blue-800 border-blue-200 hover:bg-blue-100">
           <Clock className="w-3 h-3 mr-1" /> Pendiente
         </Badge>
       );
@@ -144,8 +136,20 @@ export default function PaginaHistorias() {
     try {
       setEstaCargando(true);
       setError(null);
-      const data = await listarHistorias();
-      setHistorias(data);
+      
+      // --- CORRECCIÓN DE TIPO ---
+      // Usamos 'any' temporalmente porque el backend devuelve { total, items }
+      // pero la interfaz TypeScript espera HistoriaResumen[] directamente.
+      const respuesta: any = await listarHistorias();
+      
+      const listaItems = respuesta.items || respuesta; // Soporta ambos formatos
+      
+      if (Array.isArray(listaItems)) {
+        setHistorias(listaItems);
+      } else {
+        setHistorias([]);
+      }
+
     } catch (err: any) {
       setError(err.message ?? "Error inesperado al cargar historias");
     } finally {
@@ -205,7 +209,7 @@ export default function PaginaHistorias() {
   }, [historias, terminoBusqueda, filtroEstado, filtroFecha, sortOrder]);
 
   const totalPendientes = useMemo(
-    () => historias.filter((h) => h.estado === "pendiente_validacion").length,
+    () => historias.filter((h) => h.estado === "pendiente_validacion" || h.estado === "pendiente").length,
     [historias]
   );
 
@@ -223,32 +227,23 @@ export default function PaginaHistorias() {
   };
 
   const manejarValidarTodas = async () => {
-    const pendientesParaValidar = historiasFiltradas.filter(h => h.estado === "pendiente_validacion");
-
-    if (pendientesParaValidar.length === 0) {
-      alert("No hay historias pendientes en la lista actual para validar.");
+    if (totalPendientes === 0) {
+      alert("No hay historias pendientes para validar.");
       return;
     }
 
-    if (!confirm(`¿Confirmas la validación automática de ${pendientesParaValidar.length} historias?`)) {
+    if (!confirm(`¿Confirmas la validación automática de todas las historias pendientes?`)) {
       return;
     }
 
     try {
       setProcesandoValidacion(true);
-      
-      await Promise.all(
-        pendientesParaValidar.map((h) => 
-          autoValidarHistoria(h.id)
-            .catch(e => console.error(`Error validando ${h.id}`, e))
-        )
-      );
-      
-      alert("Validación masiva finalizada. Recargando datos...");
+      const respuesta = await validarHistoriasMasivas();
+      alert(`Validación completada. ${respuesta.mensaje}`);
       await cargarHistorias();
     } catch (error) {
       console.error(error);
-      alert("Hubo un problema procesando algunas historias.");
+      alert("Hubo un problema al conectar con el servidor para la validación masiva.");
     } finally {
       setProcesandoValidacion(false);
     }
@@ -355,7 +350,7 @@ export default function PaginaHistorias() {
                 <Clock className="inline h-4 w-4 mr-2" />
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-2xl font-bold text-orange-600">
+            <CardContent className="text-2xl font-bold text-blue-600">
               {totalPendientes}
             </CardContent>
           </Card>
@@ -456,7 +451,7 @@ export default function PaginaHistorias() {
               disabled={estaCargando || procesandoValidacion || totalPendientes === 0}
             >
               <CheckCheck className={`mr-2 h-4 w-4 ${procesandoValidacion ? "animate-spin" : ""}`} />
-              Validar Pendientes ({historiasFiltradas.filter(h => h.estado === 'pendiente_validacion').length})
+              Validar Pendientes ({totalPendientes})
             </Button>
           </CardHeader>
 
