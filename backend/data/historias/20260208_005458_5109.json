@@ -1,0 +1,146 @@
+{
+  "id": "20260208_005458_5109",
+  "estado": "validada",
+  "dedup_key": "DNI:11579587|F:2017-11-22|H:54c571fb61",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_5109.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2017-11-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": 5.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2001-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias\nEDSS: 5.5",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo",
+      "agrupacion_sindromica": "",
+      "comentario": "el paciente debe continuar sin interrupción con la terapia desfatigante y de alto impacto sobre la marcha de: Datizic (Fampiridina) comprimidos de 10 mg. c/u. de liberación prolongada(análogo a 4-aminopiridina) de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por agencias regulatorias de medicamentos Internacionales y local: FDA y ANMAT respectivamente con este fin\nSe realizó con gran éxito la prueba de eficacia sobre 14 días continuos con Datizic y resultó ampliamente satisfactoria, por lo cual se amplió la indicación temporalmente\nPre-tratamiento: 24 y 18 segundos y después de 2 semanas de Datizic: 16 y 12 segundos",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4\nY Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Resumen de Historia La Plata,22 de Noviembre de 2017 Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . EDSS: 5.5. Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4. Y Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones(OMS:340). Comentario: el paciente debe continuar sin interrupción con la terapia desfatigante y de alto impacto sobre la marcha de: Datizic (Fampiridina) comprimidos de 10 mg. c/u. de liberación prolongada(análogo a 4-aminopiridina) de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por agencias regulatorias de medicamentos Internacionales y local: FDA y ANMAT respectivamente con este fin. Se realizó con gran éxito la prueba de eficacia sobre 14 días continuos con Datizic y resultó ampliamente satisfactoria, por lo cual se amplió la indicación temporalmente. Pre-tratamiento: 24 y 18 segundos y después de 2 semanas de Datizic: 16 y 12 segundos. Bibliografía respaldatoria (es innumerable, solo sirva de ejemplo): - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. -Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. - Goodman AD, Brown TR, Krupp LB. et al. Lancet 2009; 373: 732-738. -Van Winsen ML et al. Mult Scler 2010, 14 (5) 604-610.. - Goodman AD, et al Ann Neurol 2010; 68: 494-502. -Green DM, Jones AC, Brain KR Journal of Clinical Pharmacy and Therapeutics April 2011; pp 1-6. -Bennett SE, Berthoux F, Brown TR, et al. International Journal of MS Care. 15 September 2012; pp 1-11. Solicito: continuidad de: -DATIZIC (Fampiridina/4-Aminopiridina): 10 mg. c/u. comprimidos de liberación prolongada: dos tomas, una cada 12 hs.= 20 mg. /día oral para control de fatiga y mejoría sobre marcha: -Datizic de 10 mg./cada una x 56 comprimidos = 1(un) envase grande para 28 días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_5109.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2017-11-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": 5.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2001-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias\nEDSS: 5.5",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo",
+      "agrupacion_sindromica": "",
+      "comentario": "el paciente debe continuar sin interrupción con la terapia desfatigante y de alto impacto sobre la marcha de: Datizic (Fampiridina) comprimidos de 10 mg. c/u. de liberación prolongada(análogo a 4-aminopiridina) de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por agencias regulatorias de medicamentos Internacionales y local: FDA y ANMAT respectivamente con este fin\nSe realizó con gran éxito la prueba de eficacia sobre 14 días continuos con Datizic y resultó ampliamente satisfactoria, por lo cual se amplió la indicación temporalmente\nPre-tratamiento: 24 y 18 segundos y después de 2 semanas de Datizic: 16 y 12 segundos",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4\nY Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Resumen de Historia La Plata,22 de Noviembre de 2017 Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . EDSS: 5.5. Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4. Y Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones(OMS:340). Comentario: el paciente debe continuar sin interrupción con la terapia desfatigante y de alto impacto sobre la marcha de: Datizic (Fampiridina) comprimidos de 10 mg. c/u. de liberación prolongada(análogo a 4-aminopiridina) de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por agencias regulatorias de medicamentos Internacionales y local: FDA y ANMAT respectivamente con este fin. Se realizó con gran éxito la prueba de eficacia sobre 14 días continuos con Datizic y resultó ampliamente satisfactoria, por lo cual se amplió la indicación temporalmente. Pre-tratamiento: 24 y 18 segundos y después de 2 semanas de Datizic: 16 y 12 segundos. Bibliografía respaldatoria (es innumerable, solo sirva de ejemplo): - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. -Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. - Goodman AD, Brown TR, Krupp LB. et al. Lancet 2009; 373: 732-738. -Van Winsen ML et al. Mult Scler 2010, 14 (5) 604-610.. - Goodman AD, et al Ann Neurol 2010; 68: 494-502. -Green DM, Jones AC, Brain KR Journal of Clinical Pharmacy and Therapeutics April 2011; pp 1-6. -Bennett SE, Berthoux F, Brown TR, et al. International Journal of MS Care. 15 September 2012; pp 1-11. Solicito: continuidad de: -DATIZIC (Fampiridina/4-Aminopiridina): 10 mg. c/u. comprimidos de liberación prolongada: dos tomas, una cada 12 hs.= 20 mg. /día oral para control de fatiga y mejoría sobre marcha: -Datizic de 10 mg./cada una x 56 comprimidos = 1(un) envase grande para 28 días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -87,14 +87,11 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
                 <span className="text-sm font-medium text-secondary-foreground">DR</span>
               </div>
               <div>
-                <p className="text-sm font-medium text-card-foreground">Dr. Rodriguez</p>
+                <p className="text-sm font-medium text-card-foreground">Dr. Facundo Lopez</p>
                 <p className="text-xs text-muted-foreground">Neurólogo</p>
               </div>
             </div>
-            <Button variant="ghost" size="sm" className="w-full justify-start">
-              <LogOut className="mr-2 h-4 w-4" />
-              Cerrar Sesión
-            </Button>
+            
           </div>
         </div>
       </div>

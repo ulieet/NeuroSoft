@@ -1,0 +1,98 @@
+{
+  "id": "20260208_005451_de6d",
+  "estado": "validada",
+  "dedup_key": "F:|DX:|H:19781a6230",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_de6d.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PAMI (INSSJ y P)",
+      "nro_afiliado": "150761599207"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Cumplo en responder, de acuerdo a de esa OS. surgió desde Uds. la propuesta de suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. en relación a su Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340) bajo el argumento de: -ausencia de recaídas desde año 2006” con Enf. inactiva desde hace 14 años”.. , así parece desprenderse de esto que un comportamiento equivalente seria entonces: -dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., o suspender el antibiótico a quién con una infección en curso lleva dos o tres días sin fiebre sin esperar la resolución definitiva? o no vacunar si no está cursando la infección ? -a un hipertenso crónico tratado sacarle la medicación al registrarse normotensión?\nCreo más acertado plantear el cambio de estrategia terapéutica a quién no responde o para quién empeora su salud a pesar del tratamiento, si al que anda bien se le quita la terapia así como a quién falla, estaríamos asumiendo entonces que la recomendación es no tratar a nadie..??\nAsí solo considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien que la ausencia de recaídas es por lo menos en parte a la acción benéfica de la terapia en cuestión\nEn mi humilde opinión es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles)\nEste caso tampoco resulta hasta ahora progresivo ya que como se explica en cada nuevo resumen de historia su EDSS está estabilizado en 4.0 desde hace años\nSin dejar de mencionar que el espíritu de estas terapias es PREVENTIVO y que muy poco se puede hacer ya después del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables\nEs mi entender y saber y por ende recomendación no suspender la terapia en tanto no haya argumentación científica avalada por la literatura firmemente que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente\nLa literatura disponible hasta aquí solo parece sugerir que la suspención podría plantearse en muy selectos casos: -pacientes mayores de 60-65 años de edad, o que hayan pasado a un formato Progresivo Secundario (incrementos del EDSS sin recaída ) y siempre e indispensablemente con consentimiento formal del paciente\nNo parece entonces al menos por ahora ser este el momento ni el paciente\nDe esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico\nSirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente\nAgradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PAMI (INSSJ y P). N° de afiliado: 150761599207 GP 00 Estimado Sres. INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Cumplo en responder, de acuerdo a nota de esa OS. surgió desde Uds. la propuesta de suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. en relación a su Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340) bajo el argumento de: -ausencia de recaídas desde año 2006” con Enf. inactiva desde hace 14 años”.. , así parece desprenderse de esto que un comportamiento equivalente seria entonces: -dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., o suspender el antibiótico a quién con una infección en curso lleva dos o tres días sin fiebre sin esperar la resolución definitiva? o no vacunar si no está cursando la infección ? -a un hipertenso crónico tratado sacarle la medicación al registrarse normotensión?. Creo más acertado plantear el cambio de estrategia terapéutica a quién no responde o para quién empeora su salud a pesar del tratamiento, si al que anda bien se le quita la terapia así como a quién falla, estaríamos asumiendo entonces que la recomendación es no tratar a nadie..??. Así solo considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien que la ausencia de recaídas es por lo menos en parte a la acción benéfica de la terapia en cuestión. En mi humilde opinión es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles). Este caso tampoco resulta hasta ahora progresivo ya que como se explica en cada nuevo resumen de historia su EDSS está estabilizado en 4.0 desde hace años. Sin dejar de mencionar que el espíritu de estas terapias es PREVENTIVO y que muy poco se puede hacer ya después del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables. Es mi entender y saber y por ende recomendación no suspender la terapia en tanto no haya argumentación científica avalada por la literatura firmemente que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente. La literatura disponible hasta aquí solo parece sugerir que la suspención podría plantearse en muy selectos casos: -pacientes mayores de 60-65 años de edad, o que hayan pasado a un formato Progresivo Secundario (incrementos del EDSS sin recaída ) y siempre e indispensablemente con consentimiento formal del paciente. No parece entonces al menos por ahora ser este el momento ni el paciente. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente. Agradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_de6d.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PAMI (INSSJ y P)",
+      "nro_afiliado": "150761599207"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Cumplo en responder, de acuerdo a de esa OS. surgió desde Uds. la propuesta de suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. en relación a su Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340) bajo el argumento de: -ausencia de recaídas desde año 2006” con Enf. inactiva desde hace 14 años”.. , así parece desprenderse de esto que un comportamiento equivalente seria entonces: -dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., o suspender el antibiótico a quién con una infección en curso lleva dos o tres días sin fiebre sin esperar la resolución definitiva? o no vacunar si no está cursando la infección ? -a un hipertenso crónico tratado sacarle la medicación al registrarse normotensión?\nCreo más acertado plantear el cambio de estrategia terapéutica a quién no responde o para quién empeora su salud a pesar del tratamiento, si al que anda bien se le quita la terapia así como a quién falla, estaríamos asumiendo entonces que la recomendación es no tratar a nadie..??\nAsí solo considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien que la ausencia de recaídas es por lo menos en parte a la acción benéfica de la terapia en cuestión\nEn mi humilde opinión es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles)\nEste caso tampoco resulta hasta ahora progresivo ya que como se explica en cada nuevo resumen de historia su EDSS está estabilizado en 4.0 desde hace años\nSin dejar de mencionar que el espíritu de estas terapias es PREVENTIVO y que muy poco se puede hacer ya después del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables\nEs mi entender y saber y por ende recomendación no suspender la terapia en tanto no haya argumentación científica avalada por la literatura firmemente que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente\nLa literatura disponible hasta aquí solo parece sugerir que la suspención podría plantearse en muy selectos casos: -pacientes mayores de 60-65 años de edad, o que hayan pasado a un formato Progresivo Secundario (incrementos del EDSS sin recaída ) y siempre e indispensablemente con consentimiento formal del paciente\nNo parece entonces al menos por ahora ser este el momento ni el paciente\nDe esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico\nSirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente\nAgradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PAMI (INSSJ y P). N° de afiliado: 150761599207 GP 00 Estimado Sres. INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Cumplo en responder, de acuerdo a nota de esa OS. surgió desde Uds. la propuesta de suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. en relación a su Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340) bajo el argumento de: -ausencia de recaídas desde año 2006” con Enf. inactiva desde hace 14 años”.. , así parece desprenderse de esto que un comportamiento equivalente seria entonces: -dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., o suspender el antibiótico a quién con una infección en curso lleva dos o tres días sin fiebre sin esperar la resolución definitiva? o no vacunar si no está cursando la infección ? -a un hipertenso crónico tratado sacarle la medicación al registrarse normotensión?. Creo más acertado plantear el cambio de estrategia terapéutica a quién no responde o para quién empeora su salud a pesar del tratamiento, si al que anda bien se le quita la terapia así como a quién falla, estaríamos asumiendo entonces que la recomendación es no tratar a nadie..??. Así solo considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien que la ausencia de recaídas es por lo menos en parte a la acción benéfica de la terapia en cuestión. En mi humilde opinión es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles). Este caso tampoco resulta hasta ahora progresivo ya que como se explica en cada nuevo resumen de historia su EDSS está estabilizado en 4.0 desde hace años. Sin dejar de mencionar que el espíritu de estas terapias es PREVENTIVO y que muy poco se puede hacer ya después del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables. Es mi entender y saber y por ende recomendación no suspender la terapia en tanto no haya argumentación científica avalada por la literatura firmemente que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente. La literatura disponible hasta aquí solo parece sugerir que la suspención podría plantearse en muy selectos casos: -pacientes mayores de 60-65 años de edad, o que hayan pasado a un formato Progresivo Secundario (incrementos del EDSS sin recaída ) y siempre e indispensablemente con consentimiento formal del paciente. No parece entonces al menos por ahora ser este el momento ni el paciente. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente. Agradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

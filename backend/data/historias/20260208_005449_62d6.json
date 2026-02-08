@@ -1,0 +1,130 @@
+{
+  "id": "20260208_005449_62d6",
+  "estado": "validada",
+  "dedup_key": "F:2005-04-07|DX:esclerosis múltiple|H:040727a1d6",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_62d6.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Débora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2005-04-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debe realizar kinesiología para intentar recuperar la función remanente de miembros inferiores: Con terapias de bipedestación con apoyo bilateral (paralelas), manejo de las contracturas y particularmente de la espasticidad de mmii, etc",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, etc\nEn los meses de junio, agosto y septiembre de 2007 recibió una terapia coadyuvante de Metilprednisolona 1000 mg\nIV en pulso/mes sumado a las otras estrategias terapéuticas, en un régimen domiciliario Se encuentra ahora con paraparesia severa en rehabilitación y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica\nEstudios realizados: entre muchos otros, -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro: s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, Apellido y nombre: Brantiuk, Débora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, etc. En los meses de junio, agosto y septiembre de 2007 recibió una terapia coadyuvante de Metilprednisolona 1000 mg. IV en pulso/mes sumado a las otras estrategias terapéuticas, en un régimen domiciliario Se encuentra ahora con paraparesia severa en rehabilitación y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica. Estudios realizados: entre muchos otros, -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro: s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, de los brotes, Inmunomodulador, Kinésico de rehabilitación. Comentario: debe realizar kinesiología para intentar recuperar la función remanente de miembros inferiores: Con terapias de bipedestación con apoyo bilateral (paralelas), manejo de las contracturas y particularmente de la espasticidad de mmii, etc. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_62d6.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Débora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2005-04-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debe realizar kinesiología para intentar recuperar la función remanente de miembros inferiores: Con terapias de bipedestación con apoyo bilateral (paralelas), manejo de las contracturas y particularmente de la espasticidad de mmii, etc",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, etc\nEn los meses de junio, agosto y septiembre de 2007 recibió una terapia coadyuvante de Metilprednisolona 1000 mg\nIV en pulso/mes sumado a las otras estrategias terapéuticas, en un régimen domiciliario Se encuentra ahora con paraparesia severa en rehabilitación y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica\nEstudios realizados: entre muchos otros, -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro: s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, Apellido y nombre: Brantiuk, Débora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, etc. En los meses de junio, agosto y septiembre de 2007 recibió una terapia coadyuvante de Metilprednisolona 1000 mg. IV en pulso/mes sumado a las otras estrategias terapéuticas, en un régimen domiciliario Se encuentra ahora con paraparesia severa en rehabilitación y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica. Estudios realizados: entre muchos otros, -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro: s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, de los brotes, Inmunomodulador, Kinésico de rehabilitación. Comentario: debe realizar kinesiología para intentar recuperar la función remanente de miembros inferiores: Con terapias de bipedestación con apoyo bilateral (paralelas), manejo de las contracturas y particularmente de la espasticidad de mmii, etc. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

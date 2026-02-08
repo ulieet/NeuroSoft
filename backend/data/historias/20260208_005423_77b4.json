@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005423_77b4",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2012-04-17|H:40da140f26",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_77b4.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2012-04-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad\nEDSS:4.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "comentario": "Su proceso lesional bulbo-medular cervical le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores, cabeza, cara y cuello\nPor lo tanto este fenómeno debe considerarse inclusive en la realización de las sesiones de kinesiología, es decir sin provocarles grandes extensiones ni flexiones cervico-dorsales; con principal interés en rehabilitar la hemiparesia derecha a predominio crural que le origina un deterioro de la marcha que se torna inestable e insegura",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx. de tórax\nEEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas\nEntre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 17/02/12 y de médula cervical 14/10/97, 26/12/97 y 12/01/11: múltiples imágenes focales en la sustancia blanca periventricular bilaterales, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES -URGENTE- RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de abril de 2012. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad. EDSS:4.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 17/02/12 y de médula cervical 14/10/97, 26/12/97 y 12/01/11: múltiples imágenes focales en la sustancia blanca periventricular bilaterales, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con Copolimero-I, a una dosis de 20 mg. por día, por vía subcutánea, todos los días. Comentario: Su proceso lesional bulbo-medular cervical le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores, cabeza, cara y cuello. Por lo tanto este fenómeno debe considerarse inclusive en la realización de las sesiones de kinesiología, es decir sin provocarles grandes extensiones ni flexiones cervico-dorsales; con principal interés en rehabilitar la hemiparesia derecha a predominio crural que le origina un deterioro de la marcha que se torna inestable e insegura. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_77b4.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2012-04-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad\nEDSS:4.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "comentario": "Su proceso lesional bulbo-medular cervical le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores, cabeza, cara y cuello\nPor lo tanto este fenómeno debe considerarse inclusive en la realización de las sesiones de kinesiología, es decir sin provocarles grandes extensiones ni flexiones cervico-dorsales; con principal interés en rehabilitar la hemiparesia derecha a predominio crural que le origina un deterioro de la marcha que se torna inestable e insegura",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx. de tórax\nEEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas\nEntre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 17/02/12 y de médula cervical 14/10/97, 26/12/97 y 12/01/11: múltiples imágenes focales en la sustancia blanca periventricular bilaterales, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES -URGENTE- RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de abril de 2012. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad. EDSS:4.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 17/02/12 y de médula cervical 14/10/97, 26/12/97 y 12/01/11: múltiples imágenes focales en la sustancia blanca periventricular bilaterales, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con Copolimero-I, a una dosis de 20 mg. por día, por vía subcutánea, todos los días. Comentario: Su proceso lesional bulbo-medular cervical le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores, cabeza, cara y cuello. Por lo tanto este fenómeno debe considerarse inclusive en la realización de las sesiones de kinesiología, es decir sin provocarles grandes extensiones ni flexiones cervico-dorsales; con principal interés en rehabilitar la hemiparesia derecha a predominio crural que le origina un deterioro de la marcha que se torna inestable e insegura. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

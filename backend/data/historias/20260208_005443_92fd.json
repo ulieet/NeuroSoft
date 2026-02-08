@@ -1,0 +1,178 @@
+{
+  "id": "20260208_005443_92fd",
+  "estado": "validada",
+  "dedup_key": "DNI:12410720|F:2013-05-30|H:d246376efa",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_92fd.doc"
+    },
+    "paciente": {
+      "nombre": "Barrera, Jorge Luis",
+      "dni": "12410720",
+      "fecha_nacimiento": "1958-10-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A124107208/00"
+    },
+    "consulta": {
+      "fecha": "2013-05-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2008-10-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2013-05-20",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 422-1570 Obra Social: IOMA Nº de afiliado: A124107208/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, caracterizados por: debilidad de miembro inferior derecho que le proporcionaba episódicas caídas, luego parestesias con disestesias e hipoestesias de miembros, recientemente hemiparesia a izquierda con un último evento caracterizado por vértigo, inestabilidad para la marcha y lateropulsión a derecha; fatiga creciente y termosensibilidad",
+      "antecedentes": "personales: depresión emocional con empleo de antidepresivos orales por psiquiatria; hipertrigliceridemia",
+      "examen_fisico": "elementos destacables: -nistagmus extremas miradas, aumento del reflejo miotático cubitopronador a derecha, hipoestesia superficial braquiocrural izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora pero debido a que ha desarrollado un incremento en el número de las lesiones de la sustancia blanca de ambos hemisferios (RMN de Cerebro: 20/05/13, con tres nuevas en 18 meses), es evidente entonces que por las imágenes ha desarrollado un incremento en el numero y inestabilidad de las lesiones y a que a pesar de terapia ya no puede esperarse más respuesta a Copolimero-I(Copaxone) y debe cambiar el tipo de inmunmodulador a: - Interferón de alta dosis y aplicación (como Blastoferón, de 12MUI, 3 veces por semana por vía SC), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita: -Blastoferon: -Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea. es decir 12 jeringas para 28 días\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - Rutinas de laboratorio entre otras: 26/0908: TSH, VDRL, Recuento de plaquetas, ERS: 6 mm., Lipidograma, Ionograma, hepatograma, hemograma, 14/04/08: Ecocardiograma: s/p. 23/10/08:AR, Ac. antinucleares, ANCA-C y ANCA-P, Complemento C3 y C4, SSA y SSB: todo negativo. 23/10/08:Trombofilia con Ac.anticoagulante Lúpico, Ac. anticardiolipinas, B2-Glicoproteína-I, Inhibidores naturales y Homocisteína: todo dentro de la normalidad. 23/10/08: Examen de LCR\nFísico- químico, citológico: s/p. -Inmunoproteico: Bandas oligoclonales de IgG (con suero normal)+ incremento de la concentración de IgG: 5.60 mg/dl del LCR (VN< de 4.50). -RMN de encéfalo, entre otras 06/10/08, 04/11/11: múltiples imágenes focales de la sustancia blanca profunda periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, alguna presenta refuerzo marginal en el sector superior derecho cerebral, que corresponden a enfermedad desmielinizantes (E\nMúltiple)",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 30 de Mayo de 2013. Apellido y nombre: Barrera, Jorge Luis DNI: 12.410.720 Fecha de Nacimiento: 02/10/58 Dirección: 62 nº 524. La Plata. Teléfono: 422-1570 Obra Social: IOMA Nº de afiliado: A124107208/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, caracterizados por: debilidad de miembro inferior derecho que le proporcionaba episódicas caídas, luego parestesias con disestesias e hipoestesias de miembros, recientemente hemiparesia a izquierda con un último evento caracterizado por vértigo, inestabilidad para la marcha y lateropulsión a derecha; fatiga creciente y termosensibilidad. Antecedentes personales: depresión emocional con empleo de antidepresivos orales por psiquiatria; hipertrigliceridemia. Rasgos semiológicos: elementos destacables: -nistagmus extremas miradas, aumento del reflejo miotático cubitopronador a derecha, hipoestesia superficial braquiocrural izquierda. Estudios realizados: - Rutinas de laboratorio entre otras: 26/0908: TSH, VDRL, Recuento de plaquetas, ERS: 6 mm., Lipidograma, Ionograma, hepatograma, hemograma, 14/04/08: Ecocardiograma: s/p. 23/10/08:AR, Ac. antinucleares, ANCA-C y ANCA-P, Complemento C3 y C4, SSA y SSB: todo negativo. 23/10/08:Trombofilia con Ac.anticoagulante Lúpico, Ac. anticardiolipinas, B2-Glicoproteína-I, Inhibidores naturales y Homocisteína: todo dentro de la normalidad. 23/10/08: Examen de LCR. Físico- químico, citológico: s/p. -Inmunoproteico: Bandas oligoclonales de IgG (con suero normal)+ incremento de la concentración de IgG: 5.60 mg/dl del LCR (VN< de 4.50). -RMN de encéfalo, entre otras 06/10/08, 04/11/11: múltiples imágenes focales de la sustancia blanca profunda periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, alguna presenta refuerzo marginal en el sector superior derecho cerebral, que corresponden a enfermedad desmielinizantes (E. Múltiple). La más reciente (20/05/13) bajo tratamiento del Copolimero-I (Copaxone): muestra una gran inestabilidad lesional con al menos tres nuevas topografías, con respecto a la realizada solo hace 18 meses atrás - -Potenciales Evocados: 10/11/08: -Visuales, Auditivos y SomatoSensitivos: 10/11/08: Visuales con ligera prolongación de P100 bilateral predominante a derecha- Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora pero debido a que ha desarrollado un incremento en el número de las lesiones de la sustancia blanca de ambos hemisferios (RMN de Cerebro: 20/05/13, con tres nuevas en 18 meses), es evidente entonces que por las imágenes ha desarrollado un incremento en el numero y inestabilidad de las lesiones y a que a pesar de terapia ya no puede esperarse más respuesta a Copolimero-I(Copaxone) y debe cambiar el tipo de inmunmodulador a: - Interferón de alta dosis y aplicación (como Blastoferón, de 12MUI, 3 veces por semana por vía SC), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita: -Blastoferon: -Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea. es decir 12 jeringas para 28 días. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 Solicito: Urgente. -Blastoferon: INTERFERON beta 1ª-r: 12MUI.= 44Mcgrs., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamient",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_92fd.doc"
+    },
+    "paciente": {
+      "nombre": "Barrera, Jorge Luis",
+      "dni": "12410720",
+      "fecha_nacimiento": "1958-10-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A124107208/00"
+    },
+    "consulta": {
+      "fecha": "2013-05-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2008-10-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2013-05-20",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2013-05-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 422-1570 Obra Social: IOMA Nº de afiliado: A124107208/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, caracterizados por: debilidad de miembro inferior derecho que le proporcionaba episódicas caídas, luego parestesias con disestesias e hipoestesias de miembros, recientemente hemiparesia a izquierda con un último evento caracterizado por vértigo, inestabilidad para la marcha y lateropulsión a derecha; fatiga creciente y termosensibilidad",
+      "antecedentes": "personales: depresión emocional con empleo de antidepresivos orales por psiquiatria; hipertrigliceridemia",
+      "examen_fisico": "elementos destacables: -nistagmus extremas miradas, aumento del reflejo miotático cubitopronador a derecha, hipoestesia superficial braquiocrural izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora pero debido a que ha desarrollado un incremento en el número de las lesiones de la sustancia blanca de ambos hemisferios (RMN de Cerebro: 20/05/13, con tres nuevas en 18 meses), es evidente entonces que por las imágenes ha desarrollado un incremento en el numero y inestabilidad de las lesiones y a que a pesar de terapia ya no puede esperarse más respuesta a Copolimero-I(Copaxone) y debe cambiar el tipo de inmunmodulador a: - Interferón de alta dosis y aplicación (como Blastoferón, de 12MUI, 3 veces por semana por vía SC), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita: -Blastoferon: -Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea. es decir 12 jeringas para 28 días\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - Rutinas de laboratorio entre otras: 26/0908: TSH, VDRL, Recuento de plaquetas, ERS: 6 mm., Lipidograma, Ionograma, hepatograma, hemograma, 14/04/08: Ecocardiograma: s/p. 23/10/08:AR, Ac. antinucleares, ANCA-C y ANCA-P, Complemento C3 y C4, SSA y SSB: todo negativo. 23/10/08:Trombofilia con Ac.anticoagulante Lúpico, Ac. anticardiolipinas, B2-Glicoproteína-I, Inhibidores naturales y Homocisteína: todo dentro de la normalidad. 23/10/08: Examen de LCR\nFísico- químico, citológico: s/p. -Inmunoproteico: Bandas oligoclonales de IgG (con suero normal)+ incremento de la concentración de IgG: 5.60 mg/dl del LCR (VN< de 4.50). -RMN de encéfalo, entre otras 06/10/08, 04/11/11: múltiples imágenes focales de la sustancia blanca profunda periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, alguna presenta refuerzo marginal en el sector superior derecho cerebral, que corresponden a enfermedad desmielinizantes (E\nMúltiple)",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 30 de Mayo de 2013. Apellido y nombre: Barrera, Jorge Luis DNI: 12.410.720 Fecha de Nacimiento: 02/10/58 Dirección: 62 nº 524. La Plata. Teléfono: 422-1570 Obra Social: IOMA Nº de afiliado: A124107208/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, caracterizados por: debilidad de miembro inferior derecho que le proporcionaba episódicas caídas, luego parestesias con disestesias e hipoestesias de miembros, recientemente hemiparesia a izquierda con un último evento caracterizado por vértigo, inestabilidad para la marcha y lateropulsión a derecha; fatiga creciente y termosensibilidad. Antecedentes personales: depresión emocional con empleo de antidepresivos orales por psiquiatria; hipertrigliceridemia. Rasgos semiológicos: elementos destacables: -nistagmus extremas miradas, aumento del reflejo miotático cubitopronador a derecha, hipoestesia superficial braquiocrural izquierda. Estudios realizados: - Rutinas de laboratorio entre otras: 26/0908: TSH, VDRL, Recuento de plaquetas, ERS: 6 mm., Lipidograma, Ionograma, hepatograma, hemograma, 14/04/08: Ecocardiograma: s/p. 23/10/08:AR, Ac. antinucleares, ANCA-C y ANCA-P, Complemento C3 y C4, SSA y SSB: todo negativo. 23/10/08:Trombofilia con Ac.anticoagulante Lúpico, Ac. anticardiolipinas, B2-Glicoproteína-I, Inhibidores naturales y Homocisteína: todo dentro de la normalidad. 23/10/08: Examen de LCR. Físico- químico, citológico: s/p. -Inmunoproteico: Bandas oligoclonales de IgG (con suero normal)+ incremento de la concentración de IgG: 5.60 mg/dl del LCR (VN< de 4.50). -RMN de encéfalo, entre otras 06/10/08, 04/11/11: múltiples imágenes focales de la sustancia blanca profunda periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, alguna presenta refuerzo marginal en el sector superior derecho cerebral, que corresponden a enfermedad desmielinizantes (E. Múltiple). La más reciente (20/05/13) bajo tratamiento del Copolimero-I (Copaxone): muestra una gran inestabilidad lesional con al menos tres nuevas topografías, con respecto a la realizada solo hace 18 meses atrás - -Potenciales Evocados: 10/11/08: -Visuales, Auditivos y SomatoSensitivos: 10/11/08: Visuales con ligera prolongación de P100 bilateral predominante a derecha- Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora pero debido a que ha desarrollado un incremento en el número de las lesiones de la sustancia blanca de ambos hemisferios (RMN de Cerebro: 20/05/13, con tres nuevas en 18 meses), es evidente entonces que por las imágenes ha desarrollado un incremento en el numero y inestabilidad de las lesiones y a que a pesar de terapia ya no puede esperarse más respuesta a Copolimero-I(Copaxone) y debe cambiar el tipo de inmunmodulador a: - Interferón de alta dosis y aplicación (como Blastoferón, de 12MUI, 3 veces por semana por vía SC), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita: -Blastoferon: -Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea. es decir 12 jeringas para 28 días. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 Solicito: Urgente. -Blastoferon: INTERFERON beta 1ª-r: 12MUI.= 44Mcgrs., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamient",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

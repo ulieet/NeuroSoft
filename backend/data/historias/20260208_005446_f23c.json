@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005446_f23c",
+  "estado": "validada",
+  "dedup_key": "F:|DX:esclerosis múltiple|H:270549cdc1",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f23c.doc"
+    },
+    "paciente": {
+      "nombre": "Luis G",
+      "dni": null,
+      "fecha_nacimiento": "1956-10-26",
+      "obra_social": "IOMA",
+      "nro_afiliado": "Asistido"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad y fatiga creciente (que lo recluye en épocas de altas temperatura)",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo",
+      "comentario": "todos y cada uno de los mencionados fármacos constan de una basta experiencia nacional e internacional con esas indicaciones, en esas dosis, sería interminable justificar con bibliografía c/u, creo que en los días que corren dicha información esta más que disponible en especial para ese Comité Científico",
+      "estudios": "relacionados: -RMN de cerebro, en múltiples ocasiones: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 2005. Nombre y apellido: Luis G. Berri . Fecha de nacimiento: 26/10/56 Dirección: 16 nº1526 1/2. La Plata. Pcia. de Bs.As. Teléfono: (0221) 457-6324. Obra Social: IOMA nº de afiliado: Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad y fatiga creciente (que lo recluye en épocas de altas temperatura). Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo. Estudios relacionados: -RMN de cerebro, en múltiples ocasiones: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones (OMS:340). Tratamiento: -sintomático, para tratamiento de: - espasticidad:-baclofen (Lioresal): comprimidos de 10 mg, dosis diaria actual 50 mgr.=5 comprimidos/día oral + -tizanidina (Sirdalud): comprimidos de 2 mg, dosis diaria actual 4-6 mgrs.=2-3 comprimidos/día oral. -fatiga: 4-aminopiridina (formulación de tipo magistral): cápsulas de 10 mgr. c/u =30-40 mgr./día oral y amantadina (Virosol) 100 mgr. c/u, en invierno 200-300 mgr./día =2 a 3 comprimidos/día. -ánimo y de las parestesias: amitriptilina (Tryptanol) comprimidos de 25 mgr. c/u 2 (25-50mgr) por día por vía oral. –urgencia/incontinencia urinaria, por vejiga neurógena eferente: oxibutinina (Ditropan, Delak, etc.) 10-15 mgr./día por vía oral. Comentarios: todos y cada uno de los mencionados fármacos constan de una basta experiencia nacional e internacional con esas indicaciones, en esas dosis, sería interminable justificar con bibliografía c/u, creo que en los días que corren dicha información esta más que disponible en especial para ese Comité Científico. Solo a la manera de ejemplo baste citar la de amantadina: -Bibliografía respaldatoria: (virosol) - Krupp LB, Coyle PK, Doscher C, et al. Fatigue therapy in multiple sclerosis: Results of a double-blind, randomized, parallel trial of amantadine, pemoline, and placebo. Neurology 1995; 45: 1956-1961. - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. - Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. Solicito: cobertura par los fármacos antes mencionados: -baclofen: 50 mgr./día + tizanidina 4-6mgr./día oral. -amantadina: 200-300 mgr. /día (invierno) . -amitriptilina 25-50 mgr./día. -oxibutinina: 10-15 mgr./día por vía oral. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f23c.doc"
+    },
+    "paciente": {
+      "nombre": "Luis G",
+      "dni": null,
+      "fecha_nacimiento": "1956-10-26",
+      "obra_social": "IOMA",
+      "nro_afiliado": "Asistido"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad y fatiga creciente (que lo recluye en épocas de altas temperatura)",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo",
+      "comentario": "todos y cada uno de los mencionados fármacos constan de una basta experiencia nacional e internacional con esas indicaciones, en esas dosis, sería interminable justificar con bibliografía c/u, creo que en los días que corren dicha información esta más que disponible en especial para ese Comité Científico",
+      "estudios": "relacionados: -RMN de cerebro, en múltiples ocasiones: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 2005. Nombre y apellido: Luis G. Berri . Fecha de nacimiento: 26/10/56 Dirección: 16 nº1526 1/2. La Plata. Pcia. de Bs.As. Teléfono: (0221) 457-6324. Obra Social: IOMA nº de afiliado: Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad y fatiga creciente (que lo recluye en épocas de altas temperatura). Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical, de tipo eferente. - pares craneanos: II a izquierdo. Estudios relacionados: -RMN de cerebro, en múltiples ocasiones: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones (OMS:340). Tratamiento: -sintomático, para tratamiento de: - espasticidad:-baclofen (Lioresal): comprimidos de 10 mg, dosis diaria actual 50 mgr.=5 comprimidos/día oral + -tizanidina (Sirdalud): comprimidos de 2 mg, dosis diaria actual 4-6 mgrs.=2-3 comprimidos/día oral. -fatiga: 4-aminopiridina (formulación de tipo magistral): cápsulas de 10 mgr. c/u =30-40 mgr./día oral y amantadina (Virosol) 100 mgr. c/u, en invierno 200-300 mgr./día =2 a 3 comprimidos/día. -ánimo y de las parestesias: amitriptilina (Tryptanol) comprimidos de 25 mgr. c/u 2 (25-50mgr) por día por vía oral. –urgencia/incontinencia urinaria, por vejiga neurógena eferente: oxibutinina (Ditropan, Delak, etc.) 10-15 mgr./día por vía oral. Comentarios: todos y cada uno de los mencionados fármacos constan de una basta experiencia nacional e internacional con esas indicaciones, en esas dosis, sería interminable justificar con bibliografía c/u, creo que en los días que corren dicha información esta más que disponible en especial para ese Comité Científico. Solo a la manera de ejemplo baste citar la de amantadina: -Bibliografía respaldatoria: (virosol) - Krupp LB, Coyle PK, Doscher C, et al. Fatigue therapy in multiple sclerosis: Results of a double-blind, randomized, parallel trial of amantadine, pemoline, and placebo. Neurology 1995; 45: 1956-1961. - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. - Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. Solicito: cobertura par los fármacos antes mencionados: -baclofen: 50 mgr./día + tizanidina 4-6mgr./día oral. -amantadina: 200-300 mgr. /día (invierno) . -amitriptilina 25-50 mgr./día. -oxibutinina: 10-15 mgr./día por vía oral. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

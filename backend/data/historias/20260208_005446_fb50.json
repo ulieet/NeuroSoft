@@ -1,0 +1,214 @@
+{
+  "id": "20260208_005446_fb50",
+  "estado": "validada",
+  "dedup_key": "F:2003-02-13|DX:bibliografía: ante los reiterados y permanentes intentos de cuestionamientos a este centro especializado y referente del ministerio de salud provincial en esta temática, que solo demoran y malgastan recursos de esa os. pues a la fecha ni un solo diagnóstico fue modificado ni un ápice desde esas objeciones claramente infundadas y dilatorias, solicito que asuma la responsabilidad que le compete y firmen con aclaración del médico auditor cuestionador para poder cumplimentar las acciones pertinentes que se desprendan; pues es de suponer que semejante falta de respeto y consideración a los pacientes y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial|H:a91fe67531",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_fb50.doc"
+    },
+    "paciente": {
+      "nombre": "s y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2003-02-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "BIBLIOGRAFÍA: Ante los reiterados y permanentes intentos de cuestionamientos a este Centro Especializado y referente del Ministerio de Salud Provincial en esta temática, que solo demoran y malgastan recursos de esa OS. pues a la fecha ni un solo diagnóstico fue modificado ni un ápice desde esas objeciones claramente infundadas y dilatorias, solicito que asuma la responsabilidad que le compete y firmen con aclaración del médico auditor cuestionador para poder cumplimentar las acciones pertinentes que se desprendan; pues es de suponer que semejante falta de respeto y consideración a los pacientes y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Suspendido",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Cabe mencionar que debido a la fatiga y termosensibilidad del paciente y a su componente emocional depresivo, no debiera considerarse a los interferones como primera indicación, pues bien conocidos son sus efectos colaterales como Gripal e incremento de la depresión; es por ello que se ha indicado un no-interferón ...pero debido ha que ha desarrollado un brote reciente que incremento su déficit motor por paresia crural izquierda, que fue evaluado por RMN de cerebro ( / /04), la que muestra en múltiples topografías lesionales imágenes periventriculares con neta actividad actual, además de un incremento en el número de las lesiones ya conocidas en pedúnculo cerebeloso medio izquierdo y en la sustancia blanca frontales de ambos hemisferios, es evidente entonces que por clínica e imágenes ha desarrollado un incremento en el numero, tamaño y actividad de las lesiones",
+      "comentario": "Demos. -Recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida mundialmente, en los EEUU.), para el manejo de la fatiga en Esclerosis Múltiple. http://www.nationalmssociety.org/Meds-Amantadine.asp FATIGA El paciente debe continuar con la terapia de 4-Aminopiridina de probada eficacia en el manejo de la fatiga en Esclerosis Múltiple, pues este devastador síntoma impregna cada uno de los otros estructurales y es una gran causa de afectación de la “Calidad de Vida” de estos pacientes de por si agredidos\nLa 4-Aminopiridina tiene una eficacia única en muchos enfermos, que no puede equipararse con otros desfatigantes específicos\nNo hay dudas de la importancia del manejo de este síntoma clave, tanto es así que la mayoría de los expertos mundiales no dudan en catalogarlo como el más discapacitante de todos, inclusive por sobre los de paresia",
+      "estudios": "La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales)\nAdemás el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora",
+      "evolucion": ""
+    },
+    "texto_original": " BIBLIOGRAFÍA: Ante los reiterados y permanentes intentos de cuestionamientos diagnósticos a este Centro Especializado y referente del Ministerio de Salud Provincial en esta temática, que solo demoran y malgastan recursos de esa OS. pues a la fecha ni un solo diagnóstico fue modificado ni un ápice desde esas objeciones claramente infundadas y dilatorias, solicito que asuma la responsabilidad que le compete y firmen con aclaración del médico auditor cuestionador para poder cumplimentar las acciones pertinentes que se desprendan; pues es de suponer que semejante falta de respeto y consideración a los pacientes y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial. Por las recientes sugerencias, a mi entender infundadas, emanadas desde esa auditoria de dar prioridad a los Interferones les recuerdo que no existe ninguna bibliografía que avale dicha conducta(¿?), si no probablemente lo contrario como incluso así se demuestra en estudio REGARD presentado recientemente en el Congreso Europeo de Neurología y en el Mundial de EM de Septiembre en Canadá. (In Press ), si Ud./s. cuentan con bibliografía contraria les agradezco me faciliten las referencias . Debe continuar con la terapia inmunomoduladora, con muy buena tolerancia y eficacia hasta la fecha; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 millones de UI. c/u) por mes. Por ninguna razón debe discontinuarse su administración pues se correrian riesgos de recaídas con las consecuencias que estas originan. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS (THE LANCET,Vol. 352 nº 9139 Pag.1498-1504; Nov.1998). Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. no se trata de genéricos” intercambiables les reitero que Avonex, Rebif y Betaferón No son monodrogas iguales y las diferencias no se limitan a sus respectivos nombres de fantasía si no que c/u de ellos posee dosis, vías de administración, eficacia, impacto en la Resonancia,etc. distintos y aprovecho para recordarles textualmente el “Consenso sobre el uso de drogas inmunooduladoras en el tratamiento de la Esclerosis Múltiple en Argentina”: “Art. 16: el cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante”. Rev. Neurológica Argentina 2000; 25: 142-145. J. Correale y col. Grupo de Trabajo de Enfermedades Desmielinizantes de la Sociedad Neurológica Argentina y Comité Médico Asesor de Esclerosis Múltiple Argentina. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002 y más recientemente de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del citado Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Rev. Neurológica Argentina 2000; 25: 142-145. - Medicina (B",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_fb50.doc"
+    },
+    "paciente": {
+      "nombre": "s y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2003-02-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "BIBLIOGRAFÍA: Ante los reiterados y permanentes intentos de cuestionamientos a este Centro Especializado y referente del Ministerio de Salud Provincial en esta temática, que solo demoran y malgastan recursos de esa OS. pues a la fecha ni un solo diagnóstico fue modificado ni un ápice desde esas objeciones claramente infundadas y dilatorias, solicito que asuma la responsabilidad que le compete y firmen con aclaración del médico auditor cuestionador para poder cumplimentar las acciones pertinentes que se desprendan; pues es de suponer que semejante falta de respeto y consideración a los pacientes y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Suspendido",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Cabe mencionar que debido a la fatiga y termosensibilidad del paciente y a su componente emocional depresivo, no debiera considerarse a los interferones como primera indicación, pues bien conocidos son sus efectos colaterales como Gripal e incremento de la depresión; es por ello que se ha indicado un no-interferón ...pero debido ha que ha desarrollado un brote reciente que incremento su déficit motor por paresia crural izquierda, que fue evaluado por RMN de cerebro ( / /04), la que muestra en múltiples topografías lesionales imágenes periventriculares con neta actividad actual, además de un incremento en el número de las lesiones ya conocidas en pedúnculo cerebeloso medio izquierdo y en la sustancia blanca frontales de ambos hemisferios, es evidente entonces que por clínica e imágenes ha desarrollado un incremento en el numero, tamaño y actividad de las lesiones",
+      "comentario": "Demos. -Recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida mundialmente, en los EEUU.), para el manejo de la fatiga en Esclerosis Múltiple. http://www.nationalmssociety.org/Meds-Amantadine.asp FATIGA El paciente debe continuar con la terapia de 4-Aminopiridina de probada eficacia en el manejo de la fatiga en Esclerosis Múltiple, pues este devastador síntoma impregna cada uno de los otros estructurales y es una gran causa de afectación de la “Calidad de Vida” de estos pacientes de por si agredidos\nLa 4-Aminopiridina tiene una eficacia única en muchos enfermos, que no puede equipararse con otros desfatigantes específicos\nNo hay dudas de la importancia del manejo de este síntoma clave, tanto es así que la mayoría de los expertos mundiales no dudan en catalogarlo como el más discapacitante de todos, inclusive por sobre los de paresia",
+      "estudios": "La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales)\nAdemás el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora",
+      "evolucion": ""
+    },
+    "texto_original": " BIBLIOGRAFÍA: Ante los reiterados y permanentes intentos de cuestionamientos diagnósticos a este Centro Especializado y referente del Ministerio de Salud Provincial en esta temática, que solo demoran y malgastan recursos de esa OS. pues a la fecha ni un solo diagnóstico fue modificado ni un ápice desde esas objeciones claramente infundadas y dilatorias, solicito que asuma la responsabilidad que le compete y firmen con aclaración del médico auditor cuestionador para poder cumplimentar las acciones pertinentes que se desprendan; pues es de suponer que semejante falta de respeto y consideración a los pacientes y colegas no puede ser una política sistemática de tan prestigioso cuerpo de auditores ante los ridiculez de las notas que tenemos en nuestro poder cuestionando y proponiendo diagnósticos claramente incongruentes, jamás nos han contactado ni firmado una sola de esas objeciones en una clara actitud de ocultarse sin aportar claridad en el supuesto diagnóstico diferencial. Por las recientes sugerencias, a mi entender infundadas, emanadas desde esa auditoria de dar prioridad a los Interferones les recuerdo que no existe ninguna bibliografía que avale dicha conducta(¿?), si no probablemente lo contrario como incluso así se demuestra en estudio REGARD presentado recientemente en el Congreso Europeo de Neurología y en el Mundial de EM de Septiembre en Canadá. (In Press ), si Ud./s. cuentan con bibliografía contraria les agradezco me faciliten las referencias . Debe continuar con la terapia inmunomoduladora, con muy buena tolerancia y eficacia hasta la fecha; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 millones de UI. c/u) por mes. Por ninguna razón debe discontinuarse su administración pues se correrian riesgos de recaídas con las consecuencias que estas originan. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS (THE LANCET,Vol. 352 nº 9139 Pag.1498-1504; Nov.1998). Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. no se trata de genéricos” intercambiables les reitero que Avonex, Rebif y Betaferón No son monodrogas iguales y las diferencias no se limitan a sus respectivos nombres de fantasía si no que c/u de ellos posee dosis, vías de administración, eficacia, impacto en la Resonancia,etc. distintos y aprovecho para recordarles textualmente el “Consenso sobre el uso de drogas inmunooduladoras en el tratamiento de la Esclerosis Múltiple en Argentina”: “Art. 16: el cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante”. Rev. Neurológica Argentina 2000; 25: 142-145. J. Correale y col. Grupo de Trabajo de Enfermedades Desmielinizantes de la Sociedad Neurológica Argentina y Comité Médico Asesor de Esclerosis Múltiple Argentina. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002 y más recientemente de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del citado Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Rev. Neurológica Argentina 2000; 25: 142-145. - Medicina (B",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

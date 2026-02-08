@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005444_ece9",
+  "estado": "validada",
+  "dedup_key": "DNI:12682675|F:2012-09-11|H:00af2edaff",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_ece9.doc"
+    },
+    "paciente": {
+      "nombre": "Bello, Gladys Alicia",
+      "dni": "12682675",
+      "fecha_nacimiento": "1957-03-05",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2126826753/00"
+    },
+    "consulta": {
+      "fecha": "2012-09-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Arteritis Temporal (Arteritis de Células Gigantes) Bilateral. Tratamiento actual: -Arteritis de cel. Gigantes: -Metotrexato: 20mg./semana IM+ Ac. fólico: 5mg/ 3veces/semana+ prednisona oral: 20mg./día. Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2011-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-03-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado\nEl día 7 de agosto de 2012, según refiere desarrolló un compromiso visual de similares características al descripto, pero ahora del ojo Izquierdo por la que fue internada en el HIGA Gral\nSan Martín de La Plata y recibió: pulsos IV de metilprednisolona (3.500mg.total) y que además objetivo oftalmología del HIGA San Juan de Dios, quién informa (23/08/12 Dra\nM.C.Silva): visión “cuenta dedos” de ambos ojos: OD a 1 m. y de OI: a 30cm\nCon FdO.: de OD: palidez de papila y de OI: edema de papila leve\nPaciente en seguimiento por Especialidades de: Oftalmología, Reumatología, Neurología, Clínica Médica, entre otros",
+      "antecedentes": "generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: entre otros: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva\nColesterol: 230mg./dl -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Consulta con Neuro-oftalmología de FLENI: Dra",
+      "evolucion": "Antecedentes generales: - Diabetes tipo II, de más de 25 años de, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010"
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA: La Plata, 11 de Septiembre de 2012. Apellido y nombre: Bello, Gladys Alicia Fecha de Nacimiento: 05/03/57. DNI: 12.682.675 Dirección: 68 nº 1680 1/2. La Plata. Teléfono: (0221) 453-5821. Obra Social: IOMA nº de afiliado: 2126826753/00 Inicio de la afección: 27 Agosto de 2010, según refiere. Asistida desde: 07/06/11. Antecedentes generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día. Glaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010. Síntomas principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado. El día 7 de agosto de 2012, según refiere desarrolló un compromiso visual de similares características al descripto, pero ahora del ojo Izquierdo por la que fue internada en el HIGA Gral. San Martín de La Plata y recibió: pulsos IV de metilprednisolona (3.500mg.total) y que además objetivo oftalmología del HIGA San Juan de Dios, quién informa (23/08/12 Dra. M.C.Silva): visión “cuenta dedos” de ambos ojos: OD a 1 m. y de OI: a 30cm. Con FdO.: de OD: palidez de papila y de OI: edema de papila leve. Paciente en seguimiento por Especialidades de: Oftalmología, Reumatología, Neurología, Clínica Médica, entre otros. Estudios realizados: entre otros: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva. Colesterol: 230mg./dl -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Consulta con Neuro-oftalmología de FLENI: Dra. Lidia Lopez, julio de 2011: quién sostiene mismo diagnóstico etiológico sugiriendo además biopsia temporal e inicio terapia con Metotrexato oral. -Eco-Doppler Color de Arterias Temporales 07/02/12-: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg. Conclusión: arteiopatía Temporal Derecha con compromiso del flujo. –FLENI- 12/08/11:”Signo del halo” en ramas posteriores de ambas arterias temporales superficiales, indicando proceso inflamatorio bilateral. -PET-TC- (encefálico-cuello-tórax–abdomen y pelvis) Hospital Alemán:19/12/11. Conclusión: no se evidenció compromiso inflamatorio vascular. -Biopsia de arteria temporal (FLENI): 14/09/11: leve engrosamiento de la capa media. No se detecta infiltrado inflamatorio. Diagnóstico: Arteritis Temporal (Arteritis de Células Gigantes) Bilateral. Tratamiento actual: -Arteritis de cel. Gigantes: -Metotrexato: 20mg./semana IM+ Ac. fólico: 5mg/ 3veces/semana+ prednisona oral: 20mg./día. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_ece9.doc"
+    },
+    "paciente": {
+      "nombre": "Bello, Gladys Alicia",
+      "dni": "12682675",
+      "fecha_nacimiento": "1957-03-05",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2126826753/00"
+    },
+    "consulta": {
+      "fecha": "2012-09-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Arteritis Temporal (Arteritis de Células Gigantes) Bilateral. Tratamiento actual: -Arteritis de cel. Gigantes: -Metotrexato: 20mg./semana IM+ Ac. fólico: 5mg/ 3veces/semana+ prednisona oral: 20mg./día. Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2011-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-03-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado\nEl día 7 de agosto de 2012, según refiere desarrolló un compromiso visual de similares características al descripto, pero ahora del ojo Izquierdo por la que fue internada en el HIGA Gral\nSan Martín de La Plata y recibió: pulsos IV de metilprednisolona (3.500mg.total) y que además objetivo oftalmología del HIGA San Juan de Dios, quién informa (23/08/12 Dra\nM.C.Silva): visión “cuenta dedos” de ambos ojos: OD a 1 m. y de OI: a 30cm\nCon FdO.: de OD: palidez de papila y de OI: edema de papila leve\nPaciente en seguimiento por Especialidades de: Oftalmología, Reumatología, Neurología, Clínica Médica, entre otros",
+      "antecedentes": "generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: entre otros: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva\nColesterol: 230mg./dl -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Consulta con Neuro-oftalmología de FLENI: Dra",
+      "evolucion": "Antecedentes generales: - Diabetes tipo II, de más de 25 años de, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010"
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA: La Plata, 11 de Septiembre de 2012. Apellido y nombre: Bello, Gladys Alicia Fecha de Nacimiento: 05/03/57. DNI: 12.682.675 Dirección: 68 nº 1680 1/2. La Plata. Teléfono: (0221) 453-5821. Obra Social: IOMA nº de afiliado: 2126826753/00 Inicio de la afección: 27 Agosto de 2010, según refiere. Asistida desde: 07/06/11. Antecedentes generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol: 75mg/día. Glaucoma: tratado previamente con Timolol, actualmente con dorsolamida. –Osteopenia/profilaxis por terapia esteroidea: Fijador de Ca++: 1 vez/mes:- Antecedente particular: vacunación antigripal , Junio de 2010. Síntomas principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado. El día 7 de agosto de 2012, según refiere desarrolló un compromiso visual de similares características al descripto, pero ahora del ojo Izquierdo por la que fue internada en el HIGA Gral. San Martín de La Plata y recibió: pulsos IV de metilprednisolona (3.500mg.total) y que además objetivo oftalmología del HIGA San Juan de Dios, quién informa (23/08/12 Dra. M.C.Silva): visión “cuenta dedos” de ambos ojos: OD a 1 m. y de OI: a 30cm. Con FdO.: de OD: palidez de papila y de OI: edema de papila leve. Paciente en seguimiento por Especialidades de: Oftalmología, Reumatología, Neurología, Clínica Médica, entre otros. Estudios realizados: entre otros: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva. Colesterol: 230mg./dl -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Consulta con Neuro-oftalmología de FLENI: Dra. Lidia Lopez, julio de 2011: quién sostiene mismo diagnóstico etiológico sugiriendo además biopsia temporal e inicio terapia con Metotrexato oral. -Eco-Doppler Color de Arterias Temporales 07/02/12-: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg. Conclusión: arteiopatía Temporal Derecha con compromiso del flujo. –FLENI- 12/08/11:”Signo del halo” en ramas posteriores de ambas arterias temporales superficiales, indicando proceso inflamatorio bilateral. -PET-TC- (encefálico-cuello-tórax–abdomen y pelvis) Hospital Alemán:19/12/11. Conclusión: no se evidenció compromiso inflamatorio vascular. -Biopsia de arteria temporal (FLENI): 14/09/11: leve engrosamiento de la capa media. No se detecta infiltrado inflamatorio. Diagnóstico: Arteritis Temporal (Arteritis de Células Gigantes) Bilateral. Tratamiento actual: -Arteritis de cel. Gigantes: -Metotrexato: 20mg./semana IM+ Ac. fólico: 5mg/ 3veces/semana+ prednisona oral: 20mg./día. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

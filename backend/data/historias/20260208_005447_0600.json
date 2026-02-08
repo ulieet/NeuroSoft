@@ -1,0 +1,190 @@
+{
+  "id": "20260208_005447_0600",
+  "estado": "validada",
+  "dedup_key": "DNI:26565077|F:2021-05-03|H:9dca04de85",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_0600.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2021-05-03",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 2.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-01-28",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2015-10-08",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2017-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2019-01-28",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2017-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio\nFatiga creciente",
+      "antecedentes": "Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar con la terapia inmunomoduladora:- INMUNOMAS-NF 12 MUI , InterferónB1ar. libre de albúmina: 12 MUI para aplicación 3 veces por semana por vía SC. en jeringas prellenadas, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación desde hace años",
+      "estudios": "Infecciones urinarias a repetición+ constipación pertinaz- Evolución: -Libre de recaídas, de requerimientos de corticoides en últimos meses y con cerebro y medular 28/01/19: Inactiva\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales\nEDSS: 2.0\nEstudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada\nRMN médula 01/08/17: impresiona sin imágenes focales espinales evidentes\nRMN espinal 28/01/19: se reconoce la imagen doral T5-T6 secuelar sin realce.Persisten procesos herniarios a varios niveles, principalmente C3-C7. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros\nRMN cerebro 01/08/17 y 28/01/19: persisten las imágenes focales antes mencionadas, impresionando de menor intensidad y volumen al estudio de 2016, sin restricción en difusión ni captación de Gd\nIv (-) inactivas, en la última también se reconoce alguna imagen focal troncal secuelar. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg",
+      "evolucion": "Infecciones urinarias a repetición+ constipación pertinaz- -Libre de recaídas, de requerimientos de corticoides en últimos meses y con RMN cerebro y medular 28/01/19: Inactiva\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales\nEDSS: 2.0"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 03 de Mayo de 2021 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/ 2y 3 s/n° 427. La Plata. Teléfono: (0221) 491-0420/ 15- 6180643 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: -Portadora de Hemofilia A (dosaje de F VIII: 30%). Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ Antecedentes familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio. Fatiga creciente. Infecciones urinarias a repetición+ constipación pertinaz- Evolución: -Libre de recaídas, de requerimientos de corticoides en últimos meses y con RMN cerebro y medular 28/01/19: Inactiva. Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral+ elementos esfinterianos vesico-rectales. EDSS: 2.0. Estudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. RMN médula 01/08/17: impresiona sin imágenes focales espinales evidentes. RMN espinal 28/01/19: se reconoce la imagen doral T5-T6 secuelar sin realce.Persisten procesos herniarios a varios niveles, principalmente C3-C7. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. RMN cerebro 01/08/17 y 28/01/19: persisten las imágenes focales antes mencionadas, impresionando de menor intensidad y volumen al estudio de 2016, sin restricción en difusión ni captación de Gd. Iv (-) inactivas, en la última también se reconoce alguna imagen focal troncal secuelar. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg. Diagnóstico: Esclerosis Múltiple a Recaídas (OMS: 340). Comentario: Debe continuar con la terapia inmunomoduladora:- INMUNOMAS-NF 12 MUI , InterferónB1ar. libre de albúmina: 12 MUI para aplicación 3 veces por semana por vía SC. en jeringas prellenadas, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación desde hace años. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686.",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_0600.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2021-05-03",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 2.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-01-28",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2015-10-08",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2017-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2019-01-28",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2017-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio\nFatiga creciente",
+      "antecedentes": "Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar con la terapia inmunomoduladora:- INMUNOMAS-NF 12 MUI , InterferónB1ar. libre de albúmina: 12 MUI para aplicación 3 veces por semana por vía SC. en jeringas prellenadas, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación desde hace años",
+      "estudios": "Infecciones urinarias a repetición+ constipación pertinaz- Evolución: -Libre de recaídas, de requerimientos de corticoides en últimos meses y con cerebro y medular 28/01/19: Inactiva\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales\nEDSS: 2.0\nEstudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada\nRMN médula 01/08/17: impresiona sin imágenes focales espinales evidentes\nRMN espinal 28/01/19: se reconoce la imagen doral T5-T6 secuelar sin realce.Persisten procesos herniarios a varios niveles, principalmente C3-C7. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros\nRMN cerebro 01/08/17 y 28/01/19: persisten las imágenes focales antes mencionadas, impresionando de menor intensidad y volumen al estudio de 2016, sin restricción en difusión ni captación de Gd\nIv (-) inactivas, en la última también se reconoce alguna imagen focal troncal secuelar. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg",
+      "evolucion": "Infecciones urinarias a repetición+ constipación pertinaz- -Libre de recaídas, de requerimientos de corticoides en últimos meses y con RMN cerebro y medular 28/01/19: Inactiva\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales\nEDSS: 2.0"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 03 de Mayo de 2021 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/ 2y 3 s/n° 427. La Plata. Teléfono: (0221) 491-0420/ 15- 6180643 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: -Portadora de Hemofilia A (dosaje de F VIII: 30%). Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ Antecedentes familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio. Fatiga creciente. Infecciones urinarias a repetición+ constipación pertinaz- Evolución: -Libre de recaídas, de requerimientos de corticoides en últimos meses y con RMN cerebro y medular 28/01/19: Inactiva. Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral+ elementos esfinterianos vesico-rectales. EDSS: 2.0. Estudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. RMN médula 01/08/17: impresiona sin imágenes focales espinales evidentes. RMN espinal 28/01/19: se reconoce la imagen doral T5-T6 secuelar sin realce.Persisten procesos herniarios a varios niveles, principalmente C3-C7. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. RMN cerebro 01/08/17 y 28/01/19: persisten las imágenes focales antes mencionadas, impresionando de menor intensidad y volumen al estudio de 2016, sin restricción en difusión ni captación de Gd. Iv (-) inactivas, en la última también se reconoce alguna imagen focal troncal secuelar. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg. Diagnóstico: Esclerosis Múltiple a Recaídas (OMS: 340). Comentario: Debe continuar con la terapia inmunomoduladora:- INMUNOMAS-NF 12 MUI , InterferónB1ar. libre de albúmina: 12 MUI para aplicación 3 veces por semana por vía SC. en jeringas prellenadas, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación desde hace años. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686.",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

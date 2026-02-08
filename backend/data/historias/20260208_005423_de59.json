@@ -1,0 +1,118 @@
+{
+  "id": "20260208_005423_de59",
+  "estado": "validada",
+  "dedup_key": "DNI:38523246|F:2019-03-11|H:c1e56af55b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_de59.doc"
+    },
+    "paciente": {
+      "nombre": "Caporale, Agustin",
+      "dni": "38523246",
+      "fecha_nacimiento": "1995-01-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A385232462/00"
+    },
+    "consulta": {
+      "fecha": "2019-03-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica y repercusión sobre SNC y/o Trombofilia alterada- SAF? . Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-02-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente y -(1) Durante año 2018 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “ cosquilleo intenso” que duró por más de cuatro meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) desde noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados",
+      "estudios": "Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta estos días de marzo de 2019, con incesante fatiga y termosensibilidad- realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos\nAlgunos varios agujeros negros\nOtras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores\nAl menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual\nTodo este cuadro imagenológico se interpreta en primer instancia como de origen Desmielinizante",
+      "evolucion": ""
+    },
+    "texto_original": " La Plata , 11 de Marzo de 2019 Apellido y nombre: Caporale, Agustin. DNI: 38.523.246 Fecha de Nacimiento: 07/01/95 Obra Social: IOMA Nº de afiliado: A385232462/00 Domicilio: Avenida 53 nº 370. La Plata Teléfono: 2352- 15-465780 Asistido: desde 11/03/19. Antecedente y Enfermedad Actual: -(1) Durante año 2018 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “ cosquilleo intenso” que duró por más de cuatro meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .. (2) desde noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable. Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta estos días de marzo de 2019, con incesante fatiga y termosensibilidad- Estudios realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos. Algunos varios agujeros negros. Otras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores. Al menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual. Todo este cuadro imagenológico se interpreta en primer instancia como de origen Desmielinizante. Diagnóstico: proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica y repercusión sobre SNC y/o Trombofilia alterada- SAF? . Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_de59.doc"
+    },
+    "paciente": {
+      "nombre": "Caporale, Agustin",
+      "dni": "38523246",
+      "fecha_nacimiento": "1995-01-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A385232462/00"
+    },
+    "consulta": {
+      "fecha": "2019-03-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica y repercusión sobre SNC y/o Trombofilia alterada- SAF? . Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-02-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente y -(1) Durante año 2018 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “ cosquilleo intenso” que duró por más de cuatro meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) desde noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados",
+      "estudios": "Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta estos días de marzo de 2019, con incesante fatiga y termosensibilidad- realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos\nAlgunos varios agujeros negros\nOtras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores\nAl menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual\nTodo este cuadro imagenológico se interpreta en primer instancia como de origen Desmielinizante",
+      "evolucion": ""
+    },
+    "texto_original": " La Plata , 11 de Marzo de 2019 Apellido y nombre: Caporale, Agustin. DNI: 38.523.246 Fecha de Nacimiento: 07/01/95 Obra Social: IOMA Nº de afiliado: A385232462/00 Domicilio: Avenida 53 nº 370. La Plata Teléfono: 2352- 15-465780 Asistido: desde 11/03/19. Antecedente y Enfermedad Actual: -(1) Durante año 2018 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “ cosquilleo intenso” que duró por más de cuatro meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .. (2) desde noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable. Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta estos días de marzo de 2019, con incesante fatiga y termosensibilidad- Estudios realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos. Algunos varios agujeros negros. Otras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores. Al menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual. Todo este cuadro imagenológico se interpreta en primer instancia como de origen Desmielinizante. Diagnóstico: proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica y repercusión sobre SNC y/o Trombofilia alterada- SAF? . Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

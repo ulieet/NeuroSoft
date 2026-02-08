@@ -1,59 +1,57 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
+import { useState, useEffect, useMemo, useCallback } from "react"
 import { getPacientes, getHistoriasDePaciente, PacienteBackend } from "@/lib/api-pacientes"
-import { obtenerEdadPaciente } from "@/lib/almacen-datos"
+
+export interface FiltrosPaciente {
+  obra_social: string
+}
 
 export function usePacientesListado() {
   const [pacientes, setPacientes] = useState<PacienteBackend[]>([])
-  const [estaCargando, setEstaCargando] = useState(false)
+  const [estaCargando, setEstaCargando] = useState(true)
   const [conteosHistorias, setConteosHistorias] = useState<Record<string, number>>({})
-
   const [terminoBusqueda, setTerminoBusqueda] = useState("")
-  const [filtros, setFiltros] = useState<any>({ obraSocial: "todas", sexo: "todos" })
+  const [filtros, setFiltros] = useState<FiltrosPaciente>({ obra_social: "todas" })
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
 
-  useEffect(() => {
-    cargarPacientes()
+  const cargarPacientes = useCallback(async () => {
+    setEstaCargando(true)
+    try {
+      const data = await getPacientes()
+      setPacientes(data)
+      // Solución al delay: Liberamos la UI apenas tenemos los pacientes
+      setEstaCargando(false)
+
+      // Los conteos se calculan después, sin bloquear la pantalla
+      const counts: Record<string, number> = {}
+      for (const p of data) {
+        const historias = await getHistoriasDePaciente(p.dni)
+        counts[p.id] = historias.length
+        // Vamos actualizando de a poco para que se vea dinámico
+        setConteosHistorias(prev => ({ ...prev, [p.id]: historias.length }))
+      }
+    } catch (error) {
+      console.error("Error:", error)
+      setEstaCargando(false)
+    }
   }, [])
 
-  const cargarPacientes = async () => {
-    setEstaCargando(true)
-    const data = await getPacientes()
-    setPacientes(data)
-
-    // Cargar conteos de historias para cada paciente en segundo plano
-    const counts: Record<string, number> = {}
-    await Promise.all(data.map(async (p) => {
-      const historias = await getHistoriasDePaciente(p.dni)
-      counts[p.id] = historias.length
-    }))
-    setConteosHistorias(counts)
-    setEstaCargando(false)
-  }
+  useEffect(() => { cargarPacientes() }, [cargarPacientes])
 
   const pacientesFiltrados = useMemo(() => {
-    let resultado = pacientes.filter((p) => {
-      const coincideBusqueda = 
-        p.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()) || 
-        p.dni.includes(terminoBusqueda)
-      
-      const coincideOS = filtros.obraSocial === "todas" || p.obra_social === filtros.obraSocial
-      
+    return pacientes.filter((p) => {
+      const nombreLimpio = p.nombre.toLowerCase().replace(/,/g, '')
+      const terminoLimpio = terminoBusqueda.toLowerCase()
+      const coincideBusqueda = nombreLimpio.includes(terminoLimpio) || p.dni.includes(terminoBusqueda)
+      const coincideOS = filtros.obra_social === "todas" || p.obra_social === filtros.obra_social
       return coincideBusqueda && coincideOS
+    }).sort((a, b) => {
+      return sortOrder === "asc" 
+        ? a.nombre.localeCompare(b.nombre) 
+        : b.nombre.localeCompare(a.nombre)
     })
-
-    resultado.sort((a, b) => {
-      if (sortOrder === "asc") return a.nombre.localeCompare(b.nombre)
-      return b.nombre.localeCompare(a.nombre)
-    })
-
-    return resultado
   }, [pacientes, terminoBusqueda, filtros, sortOrder])
-
-  const manejarCambioFiltro = (id: string, value: string) => {
-    setFiltros((prev: any) => ({ ...prev, [id]: value }))
-  }
 
   return {
     pacientesFiltrados,
@@ -62,12 +60,12 @@ export function usePacientesListado() {
     terminoBusqueda,
     setTerminoBusqueda,
     filtros,
-    manejarCambioFiltro,
+    manejarCambioFiltro: (id: keyof FiltrosPaciente, value: string) => setFiltros(prev => ({ ...prev, [id]: value })),
     sortOrder,
     setSortOrder,
-    limpiarFiltros: () => { setTerminoBusqueda(""); setFiltros({ obraSocial: "todas" }) },
+    limpiarFiltros: () => { setTerminoBusqueda(""); setFiltros({ obra_social: "todas" }) },
     cargarPacientes,
     obtenerConteoHistorias: (id: string) => conteosHistorias[id] || 0,
-    hayFiltrosActivos: terminoBusqueda !== "" || filtros.obraSocial !== "todas"
+    hayFiltrosActivos: terminoBusqueda !== "" || filtros.obra_social !== "todas"
   }
 }

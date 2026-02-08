@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005450_2b11",
+  "estado": "validada",
+  "dedup_key": "F:2006-03-28|DX:esclerosis múltiple|H:0b0dab0720",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_2b11.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2211783325/00"
+    },
+    "consulta": {
+      "fecha": "2006-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2211783325/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis transversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debido a su vejiga neurógena atónica o arrefléxica que la obliga al cateterismo reglado intermitente es que debe ensayarse una respuesta al Betanecol que permita evacuación controlada y limite o elimine el empleo de dicha maniobra forzada",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE-REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 28 de marzo de 2006. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 2211783325/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis transversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, del brote. Comentario: debido a su vejiga neurógena atónica o arrefléxica que la obliga al cateterismo reglado intermitente es que debe ensayarse una respuesta al Betanecol que permita evacuación controlada y limite o elimine el empleo de dicha maniobra forzada. Solicito: -Betanecol (Miotonachol), comprimidos de 50 mg.c/u para empleo de 50 mg. /día ( 1comp. /día )= es decir, solicito cobertura para -Betanecol (Miotonachol) comp. de 50mg./día x 30días= 1(un) envase de 50mg. x 30comp /mes. Sres. del IOMA si consideraron que no corresponde este fármaco para esta patología, de acuerdo a las “NORMAS” que Uds. parecen esgrimir y que evidentemente superan los conocimientos al alcance de los médicos asistenciales, les ruego expliquen detalladamente cual es ese fundamento y puedan sugerir que conducta terapéutica y/o droga colinérgica muscarínica de acción sobre el detrusor para vejiga hipotónica/ atónica consideran en su remplazo, para poder ofrecerle a su afiliado alguna solución racional a su ya compleja situación de salud. Solicito además que el responsable de tal decisión por favor rubrique la misma con su firma, cargo y aclaración, pues como se le exige a los médicos asistenciales y de hecho no se aceptaría una receta sin firma ni aclaración o sin sello es un acto de irresponsabilidad y provocativo como ha sucedido reiteradamente ver notas de ese Departamento Técnico Científico en cuyo firma dice ser “Auditoria del IOMA”, sin firma, sin aclaración ni sello de la persona/profesional responsable. Para una rápida acción en consecuencia a esta, les solicito la más expeditiva respuesta. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_2b11.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2211783325/00"
+    },
+    "consulta": {
+      "fecha": "2006-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2211783325/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis transversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "debido a su vejiga neurógena atónica o arrefléxica que la obliga al cateterismo reglado intermitente es que debe ensayarse una respuesta al Betanecol que permita evacuación controlada y limite o elimine el empleo de dicha maniobra forzada",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE-REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 28 de marzo de 2006. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 2211783325/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis transversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, del brote. Comentario: debido a su vejiga neurógena atónica o arrefléxica que la obliga al cateterismo reglado intermitente es que debe ensayarse una respuesta al Betanecol que permita evacuación controlada y limite o elimine el empleo de dicha maniobra forzada. Solicito: -Betanecol (Miotonachol), comprimidos de 50 mg.c/u para empleo de 50 mg. /día ( 1comp. /día )= es decir, solicito cobertura para -Betanecol (Miotonachol) comp. de 50mg./día x 30días= 1(un) envase de 50mg. x 30comp /mes. Sres. del IOMA si consideraron que no corresponde este fármaco para esta patología, de acuerdo a las “NORMAS” que Uds. parecen esgrimir y que evidentemente superan los conocimientos al alcance de los médicos asistenciales, les ruego expliquen detalladamente cual es ese fundamento y puedan sugerir que conducta terapéutica y/o droga colinérgica muscarínica de acción sobre el detrusor para vejiga hipotónica/ atónica consideran en su remplazo, para poder ofrecerle a su afiliado alguna solución racional a su ya compleja situación de salud. Solicito además que el responsable de tal decisión por favor rubrique la misma con su firma, cargo y aclaración, pues como se le exige a los médicos asistenciales y de hecho no se aceptaría una receta sin firma ni aclaración o sin sello es un acto de irresponsabilidad y provocativo como ha sucedido reiteradamente ver notas de ese Departamento Técnico Científico en cuyo firma dice ser “Auditoria del IOMA”, sin firma, sin aclaración ni sello de la persona/profesional responsable. Para una rápida acción en consecuencia a esta, les solicito la más expeditiva respuesta. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

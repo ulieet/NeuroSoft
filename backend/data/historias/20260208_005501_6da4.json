@@ -1,0 +1,184 @@
+{
+  "id": "20260208_005501_6da4",
+  "estado": "validada",
+  "dedup_key": "DNI:34983776|F:2019-06-24|H:0a7d992faa",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005501_6da4.doc"
+    },
+    "paciente": {
+      "nombre": "Meneses, Yesica Eliana Jaquelín",
+      "dni": "34983776",
+      "fecha_nacimiento": "1989-01-24",
+      "obra_social": "INCLUIR SALUD (PROFE)",
+      "nro_afiliado": "405956599600"
+    },
+    "consulta": {
+      "fecha": "2019-06-24",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2018-08-07",
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2017-12-29",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Asistida en este hospital desde: 07/08/18 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.\nEn el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra\nN\nDeri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos\nOtras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc\nEDSS: 6.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "comentario": "debe continuar Urgente la Rehabilitación Integral con hidroterapia: -Kinésica de la marcha y equilibrio dinámico, pues la paraparesia moderada asimétrica a predominio izquierdo, el síndrome cerebeloso + oscilopsia + vértigo+ diplopía (x OIN), entre otros fenómenos, le originan trastornos de coordinación, equilibrio y marcha sostenida, lo que asociado a su fatiga y termosensibilidad característica, le hacen más que dificultosa una mínimamente elegante ambulación con apoyo bilateral+ terapia ocupacional que mejore habilidades pérdidas y mantenga las remanentes + psicología para ayudar abordaje de su proceso depresivo reactivo; etc",
+      "estudios": "realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos\nEn los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd\nIv (-)\nResto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 24 de Junio de 2019 Apellido y nombre: Meneses, Yesica Eliana Jaquelín. DNI: 34.983.776 Fecha de Nacimiento: 24/01/89 Dirección: Tunes nº 341. Florencio Varela. Teléfono: (011) 4275-1300 Obra Social: INCLUIR SALUD (PROFE) Nº de afiliado: 405956599600 Inicio de la afección: año 2002 aproximadamente. Asistida en este hospital desde: 07/08/18 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.. En el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra. N. Deri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos. Otras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc. EDSS: 6.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga. Estudios realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos . En los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd. Iv (-). Resto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento actual: Terapia Inmune: -Dimeful/dimetilfumarato: cápsulas orales de 240 mg 2 veces/ dia= 480 mg. /día. + antiespástico: -Lioresal/ baclofeno 10mg.: 2 día/ 20 mg. /día. Comentarios: debe continuar Urgente la Rehabilitación Integral con hidroterapia: -Kinésica de la marcha y equilibrio dinámico, pues la paraparesia moderada asimétrica a predominio izquierdo, el síndrome cerebeloso + oscilopsia + vértigo+ diplopía (x OIN), entre otros fenómenos, le originan trastornos de coordinación, equilibrio y marcha sostenida, lo que asociado a su fatiga y termosensibilidad característica, le hacen más que dificultosa una mínimamente elegante ambulación con apoyo bilateral+ terapia ocupacional que mejore habilidades pérdidas y mantenga las remanentes + psicología para ayudar abordaje de su proceso depresivo reactivo; etc. La Hidroterapia ayudará en el control de la fatiga, espasticidad y ampliará mucho el tiempo útil y productivo de cada sesión. -Solicito entonces: rehabilitación Integral kinésica de equilibrio y marcha con hidroterapia: a razón de 3 sesiones x semana + terapia ocupacional: 2 veces/semana + psicología: 1 vez semana, etc. por término de tres a seis meses donde será reevaluada. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005501_6da4.doc"
+    },
+    "paciente": {
+      "nombre": "Meneses, Yesica Eliana Jaquelín",
+      "dni": "34983776",
+      "fecha_nacimiento": "1989-01-24",
+      "obra_social": "INCLUIR SALUD (PROFE)",
+      "nro_afiliado": "405956599600"
+    },
+    "consulta": {
+      "fecha": "2019-06-24",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2018-08-07",
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2017-12-29",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Asistida en este hospital desde: 07/08/18 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.\nEn el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra\nN\nDeri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos\nOtras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc\nEDSS: 6.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "comentario": "debe continuar Urgente la Rehabilitación Integral con hidroterapia: -Kinésica de la marcha y equilibrio dinámico, pues la paraparesia moderada asimétrica a predominio izquierdo, el síndrome cerebeloso + oscilopsia + vértigo+ diplopía (x OIN), entre otros fenómenos, le originan trastornos de coordinación, equilibrio y marcha sostenida, lo que asociado a su fatiga y termosensibilidad característica, le hacen más que dificultosa una mínimamente elegante ambulación con apoyo bilateral+ terapia ocupacional que mejore habilidades pérdidas y mantenga las remanentes + psicología para ayudar abordaje de su proceso depresivo reactivo; etc",
+      "estudios": "realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos\nEn los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd\nIv (-)\nResto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 24 de Junio de 2019 Apellido y nombre: Meneses, Yesica Eliana Jaquelín. DNI: 34.983.776 Fecha de Nacimiento: 24/01/89 Dirección: Tunes nº 341. Florencio Varela. Teléfono: (011) 4275-1300 Obra Social: INCLUIR SALUD (PROFE) Nº de afiliado: 405956599600 Inicio de la afección: año 2002 aproximadamente. Asistida en este hospital desde: 07/08/18 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.. En el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra. N. Deri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos. Otras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc. EDSS: 6.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico a predominio izquierdo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga. Estudios realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos . En los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd. Iv (-). Resto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento actual: Terapia Inmune: -Dimeful/dimetilfumarato: cápsulas orales de 240 mg 2 veces/ dia= 480 mg. /día. + antiespástico: -Lioresal/ baclofeno 10mg.: 2 día/ 20 mg. /día. Comentarios: debe continuar Urgente la Rehabilitación Integral con hidroterapia: -Kinésica de la marcha y equilibrio dinámico, pues la paraparesia moderada asimétrica a predominio izquierdo, el síndrome cerebeloso + oscilopsia + vértigo+ diplopía (x OIN), entre otros fenómenos, le originan trastornos de coordinación, equilibrio y marcha sostenida, lo que asociado a su fatiga y termosensibilidad característica, le hacen más que dificultosa una mínimamente elegante ambulación con apoyo bilateral+ terapia ocupacional que mejore habilidades pérdidas y mantenga las remanentes + psicología para ayudar abordaje de su proceso depresivo reactivo; etc. La Hidroterapia ayudará en el control de la fatiga, espasticidad y ampliará mucho el tiempo útil y productivo de cada sesión. -Solicito entonces: rehabilitación Integral kinésica de equilibrio y marcha con hidroterapia: a razón de 3 sesiones x semana + terapia ocupacional: 2 veces/semana + psicología: 1 vez semana, etc. por término de tres a seis meses donde será reevaluada. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

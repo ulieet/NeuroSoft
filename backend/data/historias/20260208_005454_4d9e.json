@@ -1,0 +1,146 @@
+{
+  "id": "20260208_005454_4d9e",
+  "estado": "validada",
+  "dedup_key": "DNI:28990924|F:2012-08-13|H:c81250b33a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_4d9e.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre, Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": "1981-08-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2289909241/00"
+    },
+    "consulta": {
+      "fecha": "2012-08-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-05-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2012-02-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha\nFatiga y termosensibilidad\nEn varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340 —(NOTA: NO se requieren en este caso particularmente, ningún otro estudio diagnóstico para confirmar OMS: 340, teniendo presente además el antecedente materno) Debe iniciar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: -disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm)\nCon clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1\nCompatibles indiscutiblemente con proceso desmielinizante crónico",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de Agosto de 2012. Apellido y nombre: Cambre, Gabriela E. DNI: 28.990.924 Fecha de Nacimiento: 12/08/81 Dirección: 522 bis n°1341 (Hernández). La Plata. Teléfono: (0221) 484-0747 Obra Social: IOMA nº de afiliado: 2289909241/00 Asistida desde: 20/05/09 Antecedente destacable: Madre (fallecida recientemente), más de 20 años soportó Esclerosis Múltiple. Síntomas principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha. Fatiga y termosensibilidad. En varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual. Rasgos semiológicos: Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad. Estudios realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm). Con clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1. Compatibles indiscutiblemente con proceso desmielinizante crónico. Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340 —(NOTA: NO se requieren en este caso particularmente, ningún otro estudio diagnóstico para confirmar OMS: 340, teniendo presente además el antecedente materno) Comentarios: Debe iniciar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: -disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente: Inmunomas (INTERFERON beta 1ª-r): 12MUI., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamiento prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_4d9e.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre, Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": "1981-08-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2289909241/00"
+    },
+    "consulta": {
+      "fecha": "2012-08-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-05-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2012-02-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha\nFatiga y termosensibilidad\nEn varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340 —(NOTA: NO se requieren en este caso particularmente, ningún otro estudio diagnóstico para confirmar OMS: 340, teniendo presente además el antecedente materno) Debe iniciar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: -disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm)\nCon clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1\nCompatibles indiscutiblemente con proceso desmielinizante crónico",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de Agosto de 2012. Apellido y nombre: Cambre, Gabriela E. DNI: 28.990.924 Fecha de Nacimiento: 12/08/81 Dirección: 522 bis n°1341 (Hernández). La Plata. Teléfono: (0221) 484-0747 Obra Social: IOMA nº de afiliado: 2289909241/00 Asistida desde: 20/05/09 Antecedente destacable: Madre (fallecida recientemente), más de 20 años soportó Esclerosis Múltiple. Síntomas principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha. Fatiga y termosensibilidad. En varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual. Rasgos semiológicos: Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad. Estudios realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm). Con clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1. Compatibles indiscutiblemente con proceso desmielinizante crónico. Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340 —(NOTA: NO se requieren en este caso particularmente, ningún otro estudio diagnóstico para confirmar OMS: 340, teniendo presente además el antecedente materno) Comentarios: Debe iniciar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: -disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente: Inmunomas (INTERFERON beta 1ª-r): 12MUI., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamiento prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

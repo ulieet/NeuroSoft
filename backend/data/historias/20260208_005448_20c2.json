@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005448_20c2",
+  "estado": "validada",
+  "dedup_key": "DNI:14117348|F:2004-08-13|H:bfb62dd38b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_20c2.doc"
+    },
+    "paciente": {
+      "nombre": "Bonifati, Raúl Osvaldo",
+      "dni": "14117348",
+      "fecha_nacimiento": "1960-06-20",
+      "obra_social": "I.N.S.S.J. y P. (PAMI)",
+      "nro_afiliado": "99941411734800"
+    },
+    "consulta": {
+      "fecha": "2004-08-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-07-21",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DNI: 14.117.348 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior derecho, Lhermitte espontáneo, leve disminución de la fuerza de miembros inferiores a predominio izquierdo con torpeza motora, fallos en la coordinación y equilibrio con episódicas caídas, disminución de la visión del ojo izquierdo, episodios de visión doble, hipoacusia a predominio izquierdo, crisis vertiginosas centrales, urgencia urinaria, fallos en la articulación de la palabra, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad",
+      "comentario": "Debe iniciar urgente con la terapia inmunomoduladora, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita: Interferón B1ar: Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 MUI. c/u) por mes",
+      "estudios": "realizados: - Rutina de laboratorio\nECG\nRx de tórax. - Potenciales evocados visuales: con prolongación de las latencia a izquierda . - RMN de cerebro: (21/07/00) múltiples imágenes de la sustancia blanca periventriculares en ambos hemisferios cerebrales, tronco cerebral, pedúnculos cerebelosos medios. - RMN de médula cervical: múltiples imágenes en proyección C2 a C3",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL Gral. de AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de agosto de 2004. Apellido y Nombre: Bonifati, Raúl Osvaldo Fecha de Nacimiento: 20/06/60 Dirección: Lopez de Gomara Nº 6277. Mar del Plata. Tel: (0223) 479-4337 Obra Social: I.N.S.S.J. y P. (PAMI) nº de afiliado: 99941411734800 Asistido en este servicio desde: julio 2002. DNI: 14.117.348 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior derecho, Lhermitte espontáneo, leve disminución de la fuerza de miembros inferiores a predominio izquierdo con torpeza motora, fallos en la coordinación y equilibrio con episódicas caídas, disminución de la visión del ojo izquierdo, episodios de visión doble, hipoacusia a predominio izquierdo, crisis vertiginosas centrales, urgencia urinaria, fallos en la articulación de la palabra, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad. Estudios realizados: - Rutina de laboratorio. ECG. Rx de tórax. - Potenciales evocados visuales: con prolongación de las latencia a izquierda . - RMN de cerebro: (21/07/00) múltiples imágenes de la sustancia blanca periventriculares en ambos hemisferios cerebrales, tronco cerebral, pedúnculos cerebelosos medios. - RMN de médula cervical: múltiples imágenes en proyección C2 a C3. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión)- de rehabilitación (kinesiológico). Comentarios: Debe iniciar urgente con la terapia inmunomoduladora, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita: Interferón B1ar: Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 MUI. c/u) por mes. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002 y más recientemente de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del citado Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Debido a los reiterados intentos de cambios de medicación por parte de esa OS., como en este caso “No se trata de genéricos” intercambiables les reitero que Avonex, Rebif y Betaferón No son monodrogas iguales y las diferencias no se limitan a sus respectivos nombres de fantasía si no que c/u de ellos posee dosis, vías de administración, eficacia, impacto en la Resonancia ,etc. distintos y aprovecho para recordarles textualmente el “Consenso sobre el uso de drogas inmunooduladoras en el tratamiento de la Esclerosis Múltiple en Argentina”: “Art. 16: el cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante”. Rev. Neurológica Argentina 2000; 25: 142-145. J. Correale y col. Grupo de Trabajo de Enfermedades Desmielinizantes de la Sociedad Neurológica Argentina y Comité Médico Asesor de Esclerosis Múltiple Argentina. Solicito: INTERFERON beta 1ª-r (REBIF) AMPOLLAS PRELLENADAS DE 6 MILLONES DE UI. C/U (22 mcgrs.), 1 ENVASE DE 12 AMP /MES = 3 AMP/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 AMP/MES, = 1 ENVASE/MES = 6 ENVASES/SEMESTRE, así sucesivamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_20c2.doc"
+    },
+    "paciente": {
+      "nombre": "Bonifati, Raúl Osvaldo",
+      "dni": "14117348",
+      "fecha_nacimiento": "1960-06-20",
+      "obra_social": "I.N.S.S.J. y P. (PAMI)",
+      "nro_afiliado": "99941411734800"
+    },
+    "consulta": {
+      "fecha": "2004-08-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-07-21",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DNI: 14.117.348 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior derecho, Lhermitte espontáneo, leve disminución de la fuerza de miembros inferiores a predominio izquierdo con torpeza motora, fallos en la coordinación y equilibrio con episódicas caídas, disminución de la visión del ojo izquierdo, episodios de visión doble, hipoacusia a predominio izquierdo, crisis vertiginosas centrales, urgencia urinaria, fallos en la articulación de la palabra, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad",
+      "comentario": "Debe iniciar urgente con la terapia inmunomoduladora, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita: Interferón B1ar: Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 MUI. c/u) por mes",
+      "estudios": "realizados: - Rutina de laboratorio\nECG\nRx de tórax. - Potenciales evocados visuales: con prolongación de las latencia a izquierda . - RMN de cerebro: (21/07/00) múltiples imágenes de la sustancia blanca periventriculares en ambos hemisferios cerebrales, tronco cerebral, pedúnculos cerebelosos medios. - RMN de médula cervical: múltiples imágenes en proyección C2 a C3",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL Gral. de AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de agosto de 2004. Apellido y Nombre: Bonifati, Raúl Osvaldo Fecha de Nacimiento: 20/06/60 Dirección: Lopez de Gomara Nº 6277. Mar del Plata. Tel: (0223) 479-4337 Obra Social: I.N.S.S.J. y P. (PAMI) nº de afiliado: 99941411734800 Asistido en este servicio desde: julio 2002. DNI: 14.117.348 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior derecho, Lhermitte espontáneo, leve disminución de la fuerza de miembros inferiores a predominio izquierdo con torpeza motora, fallos en la coordinación y equilibrio con episódicas caídas, disminución de la visión del ojo izquierdo, episodios de visión doble, hipoacusia a predominio izquierdo, crisis vertiginosas centrales, urgencia urinaria, fallos en la articulación de la palabra, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - elementos de bipiramidal a predominio crural e izquierdo. - sensitivo-propioceptivo de cuatro miembros. - pares craneanos: II a izq., oculomotores, V R1 a derecha, VIII, vestibular y coclear, IX y X. - cerebeloso axial y apendicular. - fatiga y termosensibilidad. Estudios realizados: - Rutina de laboratorio. ECG. Rx de tórax. - Potenciales evocados visuales: con prolongación de las latencia a izquierda . - RMN de cerebro: (21/07/00) múltiples imágenes de la sustancia blanca periventriculares en ambos hemisferios cerebrales, tronco cerebral, pedúnculos cerebelosos medios. - RMN de médula cervical: múltiples imágenes en proyección C2 a C3. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión)- de rehabilitación (kinesiológico). Comentarios: Debe iniciar urgente con la terapia inmunomoduladora, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita: Interferón B1ar: Rebif: 3 ampollas semanales, es decir 12 ampollas prellenadas (6 MUI. c/u) por mes. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002 y más recientemente de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del citado Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Debido a los reiterados intentos de cambios de medicación por parte de esa OS., como en este caso “No se trata de genéricos” intercambiables les reitero que Avonex, Rebif y Betaferón No son monodrogas iguales y las diferencias no se limitan a sus respectivos nombres de fantasía si no que c/u de ellos posee dosis, vías de administración, eficacia, impacto en la Resonancia ,etc. distintos y aprovecho para recordarles textualmente el “Consenso sobre el uso de drogas inmunooduladoras en el tratamiento de la Esclerosis Múltiple en Argentina”: “Art. 16: el cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante”. Rev. Neurológica Argentina 2000; 25: 142-145. J. Correale y col. Grupo de Trabajo de Enfermedades Desmielinizantes de la Sociedad Neurológica Argentina y Comité Médico Asesor de Esclerosis Múltiple Argentina. Solicito: INTERFERON beta 1ª-r (REBIF) AMPOLLAS PRELLENADAS DE 6 MILLONES DE UI. C/U (22 mcgrs.), 1 ENVASE DE 12 AMP /MES = 3 AMP/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 AMP/MES, = 1 ENVASE/MES = 6 ENVASES/SEMESTRE, así sucesivamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

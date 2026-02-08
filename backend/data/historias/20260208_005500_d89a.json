@@ -1,0 +1,190 @@
+{
+  "id": "20260208_005500_d89a",
+  "estado": "validada",
+  "dedup_key": "DNI:30958955|F:2017-02-10|H:fdcabfa6d6",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005500_d89a.doc"
+    },
+    "paciente": {
+      "nombre": "Maffei, Matias Nicolas",
+      "dni": "30958955",
+      "fecha_nacimiento": "1984-07-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9730958955/00"
+    },
+    "consulta": {
+      "fecha": "2017-02-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2007-04-13",
+      "edss": 7.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-03-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2015-03-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-02-12",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente\nEn el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya), hoy parte de la jornada en silla de ruedas: EDSS: 7,5\nAntecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga",
+      "comentario": "Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su evolución en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- para ser presentado ante quién corresponda",
+      "estudios": "realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético\nActividad de Enzima Convertidora de Angiostensina en plasma\nSerología para VIH1 y 2\nIgG e IgA anti-Endomisio\nIgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral\nEn algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd\nIV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd\nIV (inactivas)- -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente",
+      "evolucion": "Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- Comentarios: para ser presentado ante quién corresponda"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 10 de Febrero de 2017 Apellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84 Dirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya), hoy parte de la jornada en silla de ruedas: EDSS: 7,5 . Antecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga. Estudios realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético. Actividad de Enzima Convertidora de Angiostensina en plasma. Serología para VIH1 y 2. IgG e IgA anti-Endomisio. IgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral. En algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd. IV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd. IV (inactivas)- -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su evolución en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005500_d89a.doc"
+    },
+    "paciente": {
+      "nombre": "Maffei, Matias Nicolas",
+      "dni": "30958955",
+      "fecha_nacimiento": "1984-07-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9730958955/00"
+    },
+    "consulta": {
+      "fecha": "2017-02-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2007-04-13",
+      "edss": 7.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-03-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2015-03-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-02-12",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente\nEn el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya), hoy parte de la jornada en silla de ruedas: EDSS: 7,5\nAntecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga",
+      "comentario": "Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su evolución en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- para ser presentado ante quién corresponda",
+      "estudios": "realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético\nActividad de Enzima Convertidora de Angiostensina en plasma\nSerología para VIH1 y 2\nIgG e IgA anti-Endomisio\nIgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral\nEn algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd\nIV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd\nIV (inactivas)- -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente",
+      "evolucion": "Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- Comentarios: para ser presentado ante quién corresponda"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 10 de Febrero de 2017 Apellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84 Dirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya), hoy parte de la jornada en silla de ruedas: EDSS: 7,5 . Antecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico severo. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - de fatiga. Estudios realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético. Actividad de Enzima Convertidora de Angiostensina en plasma. Serología para VIH1 y 2. IgG e IgA anti-Endomisio. IgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral. En algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd. IV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd. IV (inactivas)- -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: prolongado: -modificadora del Curso, terapia Inmune con -Fingolimod: Gilenya cápsulas de 0,5 mg diariamente oral. -de cada recaída con inmunosupresión esteroidea; tratamiento sintomático: -según su propia decisión abandonó recientemente tratamiento con baclofen y 4-aminopiridina.Además de las permanente necesidad de: tratamiento kinésico para rehabilitación motora y del equilibrio, etc. : Pronóstico: debido a que se trata de un proceso crónico, tratable pero aun incurable con alta potencial discapacitante como se puede ver en su evolución en un par de años y a su forma evolutiva a recaídas y remisiones es que el pronóstico es al menos en parte incierto- Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

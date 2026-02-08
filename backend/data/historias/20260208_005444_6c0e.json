@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005444_6c0e",
+  "estado": "validada",
+  "dedup_key": "F:2005-04-05|DX:esclerosis múltipe. variante evolutiva a recaídas y remisiones(oms: 340) . comentarios: para ser presentado ante quién corresponda. atte. dr. santiago a. vétere|H:669f2ddff8",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_6c0e.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2005-04-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-04-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5\nFecha de última recaída: mayo de 2004",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro12/05/99: mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de abril de 2005. Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5. Fecha de última recaída: mayo de 2004. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro12/05/99: mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_6c0e.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2005-04-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-04-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5\nFecha de última recaída: mayo de 2004",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro12/05/99: mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de abril de 2005. Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5. Fecha de última recaída: mayo de 2004. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro12/05/99: mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

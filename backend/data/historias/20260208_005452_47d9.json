@@ -1,0 +1,124 @@
+{
+  "id": "20260208_005452_47d9",
+  "estado": "validada",
+  "dedup_key": "DNI:22441067|F:2011-08-08|H:d9cf11fff9",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_47d9.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2011-08-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-07-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2011-07-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "N° de afiliado: 13285/00 principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en c/ nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años",
+      "antecedentes": "",
+      "examen_fisico": "Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340?-Recaída en curso? el paciente realizó recientemente (11/07/11) una RMN de cerebro (ID:3395) con gadolinio, en la que el informe escrito la refiere como “dentro de parámetros de normalidad”, sin embargo tanto en la fotocopia de las imágenes como en el CD adjunto impresionan imágenes multifocales en subcortex bilateral frontal, parietal y temporal; así mismo no se realizó secuencia en FLAIR indispensable para imágenes cercanas a espacios licuorales, esto a conducido a un replanto diagnóstico y por ende de la conducta terapéutica y nos obliga a repetir y ampliar conducta diagnóstica Urgente, para no postergar aun más el potencial tratamiento",
+      "estudios": "En varias ocasiones laboratorio gral.: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 08 de Agosto de 2011. Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Síntomas principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en c/ nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años. Rasgos semiológicos: - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad. Estudios: -En varias ocasiones laboratorio gral.: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340?-Recaída en curso? Comentario: el paciente realizó recientemente (11/07/11) una RMN de cerebro (ID:3395) con gadolinio, en la que el informe escrito la refiere como “dentro de parámetros de normalidad”, sin embargo tanto en la fotocopia de las imágenes como en el CD adjunto impresionan imágenes multifocales en subcortex bilateral frontal, parietal y temporal; así mismo no se realizó secuencia en FLAIR indispensable para imágenes cercanas a espacios licuorales, esto a conducido a un replanto diagnóstico y por ende de la conducta terapéutica y nos obliga a repetir y ampliar conducta diagnóstica Urgente, para no postergar aun más el potencial tratamiento. Solicito: entonces URGENTE -Resonancia de Cerebro, MédulaCervical y Dorsal alto Campo con Gadolinio IV, en otro Centro de Mayor Complejidad, que asegure incluir secuencias en FLAIR y Magneto de 1,5 Tesla (CIMED). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_47d9.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2011-08-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-07-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2011-07-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "N° de afiliado: 13285/00 principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en c/ nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años",
+      "antecedentes": "",
+      "examen_fisico": "Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340?-Recaída en curso? el paciente realizó recientemente (11/07/11) una RMN de cerebro (ID:3395) con gadolinio, en la que el informe escrito la refiere como “dentro de parámetros de normalidad”, sin embargo tanto en la fotocopia de las imágenes como en el CD adjunto impresionan imágenes multifocales en subcortex bilateral frontal, parietal y temporal; así mismo no se realizó secuencia en FLAIR indispensable para imágenes cercanas a espacios licuorales, esto a conducido a un replanto diagnóstico y por ende de la conducta terapéutica y nos obliga a repetir y ampliar conducta diagnóstica Urgente, para no postergar aun más el potencial tratamiento",
+      "estudios": "En varias ocasiones laboratorio gral.: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 08 de Agosto de 2011. Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Síntomas principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en c/ nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años. Rasgos semiológicos: - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad. Estudios: -En varias ocasiones laboratorio gral.: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340?-Recaída en curso? Comentario: el paciente realizó recientemente (11/07/11) una RMN de cerebro (ID:3395) con gadolinio, en la que el informe escrito la refiere como “dentro de parámetros de normalidad”, sin embargo tanto en la fotocopia de las imágenes como en el CD adjunto impresionan imágenes multifocales en subcortex bilateral frontal, parietal y temporal; así mismo no se realizó secuencia en FLAIR indispensable para imágenes cercanas a espacios licuorales, esto a conducido a un replanto diagnóstico y por ende de la conducta terapéutica y nos obliga a repetir y ampliar conducta diagnóstica Urgente, para no postergar aun más el potencial tratamiento. Solicito: entonces URGENTE -Resonancia de Cerebro, MédulaCervical y Dorsal alto Campo con Gadolinio IV, en otro Centro de Mayor Complejidad, que asegure incluir secuencias en FLAIR y Magneto de 1,5 Tesla (CIMED). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

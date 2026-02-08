@@ -1,0 +1,118 @@
+{
+  "id": "20260208_005456_ea23",
+  "estado": "validada",
+  "dedup_key": "DNI:23959063|F:2004-10-12|H:d5154258a5",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_ea23.doc"
+    },
+    "paciente": {
+      "nombre": "Camy Marisa Yanina",
+      "dni": "23959063",
+      "fecha_nacimiento": "1974-05-12",
+      "obra_social": "AMI (ASOME)",
+      "nro_afiliado": "14165/00"
+    },
+    "consulta": {
+      "fecha": "2004-10-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-09-27",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-8306 Obra Social: AMI (ASOME) Plan 100 Nº de afiliado: 14165/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: al menos tres eventos de pérdida visual compatibles con episódicas neuritis ópticas: el 1º en septiembre de 1998 de ojo derecho, el 2º en marzo de 1999 en el ojo opuesto y a fines de septiembre del corriente año repite en ojo derecho, todos los episodios seguidos de restitución casi ad integrum\nAdemás presentó cuadros de paralisis facial central a derecha, Lhermitte espontaneo y provocado con flexión cefálica, hipoestesias con parestesias y disestesias de miembros, oscilopsia, una recaída la tornó con trastornos en el equilibrio y torpeza para la deambulación, alta frecuencia urinaria y termosensibilidad\nAntecedente destacable: infecciones herpéticas a repetición",
+      "antecedentes": "",
+      "examen_fisico": "elementos destacables: -nistagmus extremas miradas, leve temblor de miembros superiores en actividad, borramiento discreto del surco nasogeniano a derecha, aumento del reflejo miotático cubitopronador a izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: - Rutina Completa de laboratorio, Hepatograma, Ionograma, Orina completa; -Evaluación por clínica médica",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 12 de Octubre de 2004. Apellido y nombre: Camy Marisa Yanina. DNI: 23.959.063 Fecha de Nacimiento: 12/05/74 Dirección: 51 nº 1018. 10º “A”. La Plata. Teléfono: 482-8306 Obra Social: AMI (ASOME) Plan 100 Nº de afiliado: 14165/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: al menos tres eventos de pérdida visual compatibles con episódicas neuritis ópticas: el 1º en septiembre de 1998 de ojo derecho, el 2º en marzo de 1999 en el ojo opuesto y a fines de septiembre del corriente año repite en ojo derecho, todos los episodios seguidos de restitución casi ad integrum. Además presentó cuadros de paralisis facial central a derecha, Lhermitte espontaneo y provocado con flexión cefálica, hipoestesias con parestesias y disestesias de miembros, oscilopsia, una recaída la tornó con trastornos en el equilibrio y torpeza para la deambulación, alta frecuencia urinaria y termosensibilidad. Antecedente destacable: infecciones herpéticas a repetición. Rasgos semiológicos: elementos destacables: -nistagmus extremas miradas, leve temblor de miembros superiores en actividad, borramiento discreto del surco nasogeniano a derecha, aumento del reflejo miotático cubitopronador a izquierda. Estudios realizados: - Rutina Completa de laboratorio, Hepatograma, Ionograma, Orina completa; -Evaluación por clínica médica. Perfil tiroideo; -RMN de encéfalo: 27/09/04: múltiples imágenes de la sustancia blanca: periventriculares en ambos hemisferios cerebrales, centros semiovales, coronas radiatas y lesiones a nivel infratentoriales; tras la azzdministración de gadolinio IV se observa realce de al menos 3 de ellas, lo que sugiere actividad del proceso. -Potenciales evocados SS de mm. superiores y auditivos:28/09/04:s/p Diagnóstico: - Proceso vascular asociado a colagenopatia (AR, LEG, etc.)? -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340)?. -Leucoencefalopatia desmielinizante directa, asociada retrovirus (VIH)? Tratamiento: hasta la fecha - de los brotes: corticoterapia oral, con buena respuesta en el evento. Solicito: para concluir con estudios que permita diagnostico etiológico solicito: - Inmuno-reumatológico mínimo: Factor Reumatoideo (RR o Prueba de Latex), FAN, Anti-ADN, Células o fenómeno LE, Complemento C3 y C4. - Potenciales Evocados Visuales. - Serología para HIV. - Evaluación de : VDRL, KPTT, recuento plaquetas. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_ea23.doc"
+    },
+    "paciente": {
+      "nombre": "Camy Marisa Yanina",
+      "dni": "23959063",
+      "fecha_nacimiento": "1974-05-12",
+      "obra_social": "AMI (ASOME)",
+      "nro_afiliado": "14165/00"
+    },
+    "consulta": {
+      "fecha": "2004-10-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-09-27",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-8306 Obra Social: AMI (ASOME) Plan 100 Nº de afiliado: 14165/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: al menos tres eventos de pérdida visual compatibles con episódicas neuritis ópticas: el 1º en septiembre de 1998 de ojo derecho, el 2º en marzo de 1999 en el ojo opuesto y a fines de septiembre del corriente año repite en ojo derecho, todos los episodios seguidos de restitución casi ad integrum\nAdemás presentó cuadros de paralisis facial central a derecha, Lhermitte espontaneo y provocado con flexión cefálica, hipoestesias con parestesias y disestesias de miembros, oscilopsia, una recaída la tornó con trastornos en el equilibrio y torpeza para la deambulación, alta frecuencia urinaria y termosensibilidad\nAntecedente destacable: infecciones herpéticas a repetición",
+      "antecedentes": "",
+      "examen_fisico": "elementos destacables: -nistagmus extremas miradas, leve temblor de miembros superiores en actividad, borramiento discreto del surco nasogeniano a derecha, aumento del reflejo miotático cubitopronador a izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: - Rutina Completa de laboratorio, Hepatograma, Ionograma, Orina completa; -Evaluación por clínica médica",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 12 de Octubre de 2004. Apellido y nombre: Camy Marisa Yanina. DNI: 23.959.063 Fecha de Nacimiento: 12/05/74 Dirección: 51 nº 1018. 10º “A”. La Plata. Teléfono: 482-8306 Obra Social: AMI (ASOME) Plan 100 Nº de afiliado: 14165/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: al menos tres eventos de pérdida visual compatibles con episódicas neuritis ópticas: el 1º en septiembre de 1998 de ojo derecho, el 2º en marzo de 1999 en el ojo opuesto y a fines de septiembre del corriente año repite en ojo derecho, todos los episodios seguidos de restitución casi ad integrum. Además presentó cuadros de paralisis facial central a derecha, Lhermitte espontaneo y provocado con flexión cefálica, hipoestesias con parestesias y disestesias de miembros, oscilopsia, una recaída la tornó con trastornos en el equilibrio y torpeza para la deambulación, alta frecuencia urinaria y termosensibilidad. Antecedente destacable: infecciones herpéticas a repetición. Rasgos semiológicos: elementos destacables: -nistagmus extremas miradas, leve temblor de miembros superiores en actividad, borramiento discreto del surco nasogeniano a derecha, aumento del reflejo miotático cubitopronador a izquierda. Estudios realizados: - Rutina Completa de laboratorio, Hepatograma, Ionograma, Orina completa; -Evaluación por clínica médica. Perfil tiroideo; -RMN de encéfalo: 27/09/04: múltiples imágenes de la sustancia blanca: periventriculares en ambos hemisferios cerebrales, centros semiovales, coronas radiatas y lesiones a nivel infratentoriales; tras la azzdministración de gadolinio IV se observa realce de al menos 3 de ellas, lo que sugiere actividad del proceso. -Potenciales evocados SS de mm. superiores y auditivos:28/09/04:s/p Diagnóstico: - Proceso vascular asociado a colagenopatia (AR, LEG, etc.)? -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340)?. -Leucoencefalopatia desmielinizante directa, asociada retrovirus (VIH)? Tratamiento: hasta la fecha - de los brotes: corticoterapia oral, con buena respuesta en el evento. Solicito: para concluir con estudios que permita diagnostico etiológico solicito: - Inmuno-reumatológico mínimo: Factor Reumatoideo (RR o Prueba de Latex), FAN, Anti-ADN, Células o fenómeno LE, Complemento C3 y C4. - Potenciales Evocados Visuales. - Serología para HIV. - Evaluación de : VDRL, KPTT, recuento plaquetas. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

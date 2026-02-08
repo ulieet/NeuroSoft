@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005444_ee52",
+  "estado": "validada",
+  "dedup_key": "DNI:12682675|F:2011-06-07|H:e1d68f5dd5",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_ee52.doc"
+    },
+    "paciente": {
+      "nombre": "Bello, Gladys Alicia",
+      "dni": "12682675",
+      "fecha_nacimiento": "1957-03-05",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2126826753/00"
+    },
+    "consulta": {
+      "fecha": "2011-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Arteritis Temporal (Arteritis de Células Gigantes). Comentarios: la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable. Por lo anterior solicito que tanto el estudio por imágenes como la biopsia se realice en instituto FLENI de C.A.B.A, por equipo que incluya la supervisión de Neuro-oftalmología (Dra. Lidia Lopez) y Neuropatologia (Dra. Analia Taratuto), pues en definitiva redundará en beneficio de tiempos, procedimientos y certeza diagnóstica, dicha complejidad y experiencia se halla sin dudas en el Instituto antes mencionado (tengase presente que entre los riesgos a considera está la pérdida de visión contralateral). Solicito: que debido a que la paciente como se expresa previamente se halla en plena etapa diagnóstica, se considere postergar su licencia laboral hasta tanto se arribe al diagnóstico y se encamine su terapéutica. Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2011-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-03-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado",
+      "antecedentes": "generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida\nAntecedente particular: vacunación antigripal , Junio de 2010",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable",
+      "estudios": "realizados: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva\nColesterol: 230mg./dl Otros estudios: -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Eco-Doppler Color de Arterias Temporales 07/02/12: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg",
+      "evolucion": "Antecedentes generales: - Diabetes tipo II, de más de 25 años de, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida\nAntecedente particular: vacunación antigripal , Junio de 2010"
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA: URGENTE La Plata, 1° de Agosto de 2011. Apellido y nombre: Bello, Gladys Alicia Fecha de Nacimiento: 05/03/57. DNI: 12.682.675 Dirección: 68 nº 1680 1/2. La Plata. Teléfono: (0221) 453-5821. Obra Social: IOMA nº de afiliado: 2126826753/00 Inicio de la afección: 27 Agosto de 2010, según refiere. Asistida desde: 07/06/11. Antecedentes generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol. Glaucoma: tratado previamente con Timolol, actualmente con dorsolamida. Antecedente particular: vacunación antigripal , Junio de 2010. Síntomas principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado. Estudios realizados: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva. Colesterol: 230mg./dl Otros estudios: -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Eco-Doppler Color de Arterias Temporales 07/02/12: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg. Conclusión: arteiopatía Temporal Derecha con compromiso del flujo. Diagnóstico presuntivo: Arteritis Temporal (Arteritis de Células Gigantes). Comentarios: la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable. Por lo anterior solicito que tanto el estudio por imágenes como la biopsia se realice en instituto FLENI de C.A.B.A, por equipo que incluya la supervisión de Neuro-oftalmología (Dra. Lidia Lopez) y Neuropatologia (Dra. Analia Taratuto), pues en definitiva redundará en beneficio de tiempos, procedimientos y certeza diagnóstica, dicha complejidad y experiencia se halla sin dudas en el Instituto antes mencionado (tengase presente que entre los riesgos a considera está la pérdida de visión contralateral). Solicito: que debido a que la paciente como se expresa previamente se halla en plena etapa diagnóstica, se considere postergar su licencia laboral hasta tanto se arribe al diagnóstico y se encamine su terapéutica. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_ee52.doc"
+    },
+    "paciente": {
+      "nombre": "Bello, Gladys Alicia",
+      "dni": "12682675",
+      "fecha_nacimiento": "1957-03-05",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2126826753/00"
+    },
+    "consulta": {
+      "fecha": "2011-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Arteritis Temporal (Arteritis de Células Gigantes). Comentarios: la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable. Por lo anterior solicito que tanto el estudio por imágenes como la biopsia se realice en instituto FLENI de C.A.B.A, por equipo que incluya la supervisión de Neuro-oftalmología (Dra. Lidia Lopez) y Neuropatologia (Dra. Analia Taratuto), pues en definitiva redundará en beneficio de tiempos, procedimientos y certeza diagnóstica, dicha complejidad y experiencia se halla sin dudas en el Instituto antes mencionado (tengase presente que entre los riesgos a considera está la pérdida de visión contralateral). Solicito: que debido a que la paciente como se expresa previamente se halla en plena etapa diagnóstica, se considere postergar su licencia laboral hasta tanto se arribe al diagnóstico y se encamine su terapéutica. Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2011-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-03-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado",
+      "antecedentes": "generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida\nAntecedente particular: vacunación antigripal , Junio de 2010",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable",
+      "estudios": "realizados: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva\nColesterol: 230mg./dl Otros estudios: -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Eco-Doppler Color de Arterias Temporales 07/02/12: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg",
+      "evolucion": "Antecedentes generales: - Diabetes tipo II, de más de 25 años de, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol\nGlaucoma: tratado previamente con Timolol, actualmente con dorsolamida\nAntecedente particular: vacunación antigripal , Junio de 2010"
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA: URGENTE La Plata, 1° de Agosto de 2011. Apellido y nombre: Bello, Gladys Alicia Fecha de Nacimiento: 05/03/57. DNI: 12.682.675 Dirección: 68 nº 1680 1/2. La Plata. Teléfono: (0221) 453-5821. Obra Social: IOMA nº de afiliado: 2126826753/00 Inicio de la afección: 27 Agosto de 2010, según refiere. Asistida desde: 07/06/11. Antecedentes generales: - Diabetes tipo II, de más de 25 años de evolución, tratada con hipoglucemiantes orales, refiere bien controlada. -Hipotiroidismo (autoinmune: Hashimoto), tratado con reposición de T4 de 100/112 Mcgrs. días alternos. -HTA. tratada con Telmisartán. - Arritmia: tratada con flecainida + atenolol. Glaucoma: tratado previamente con Timolol, actualmente con dorsolamida. Antecedente particular: vacunación antigripal , Junio de 2010. Síntomas principales: paciente desarrolló descenso visual de ojo derecho casi ad- integrum en termino de 96hs. y cuyo déficit sensorial persiste hasta la actualidad con visión cuenta dedos, asociada claramente a cefalea inhabitual y gran cansancio generalizado. Estudios realizados: -Laboratorios: datos más destacados -Eritrosedimentación: desde 33-100 mm en 1°h; -PCR: positiva. Colesterol: 230mg./dl Otros estudios: -RMN de cerebro (01/03/11): imagen cerebral única en subcortex frontal izquierdo, compatible con foco de gliosis isquémica. -Trombofilia completa, -Inmunocolageno incluido Anca-P y C. -Ecodoppler de vasos de cuello(21/03/11): lesiones ateromatosas bilaterales que no obstruyen en forma significativa la luz arterial ni alteran las patentes de flujo carotideos ni vertebrales. -Eco-Doppler Color de Arterias Temporales 07/02/12: la arteria temporal derecha se encuentra engrosada con mínima luz, sin señal de Doppler (marcado hipoflujo), La Izquierda con paredes engrosadas de 2mm y flujo con velocidad media de 12cm/seg. Conclusión: arteiopatía Temporal Derecha con compromiso del flujo. Diagnóstico presuntivo: Arteritis Temporal (Arteritis de Células Gigantes). Comentarios: la paciente debe realizarse inmediatamente estudio de -Ecodoppler de arterias temporales, oftálmicas y sus ramas, en Centro Especializado que permita topografiar con exactitud el segmento para la biopsia arterial que certifique el diagnóstico presuntivo con tal certeza y calidad que asegure o no la toma de riesgo terapéutico en paciente con antecedentes de DBT-II, HTA, dislipemia, glaucoma con esteroides o inmunosupresores (metotrexato) sea inevitable. Por lo anterior solicito que tanto el estudio por imágenes como la biopsia se realice en instituto FLENI de C.A.B.A, por equipo que incluya la supervisión de Neuro-oftalmología (Dra. Lidia Lopez) y Neuropatologia (Dra. Analia Taratuto), pues en definitiva redundará en beneficio de tiempos, procedimientos y certeza diagnóstica, dicha complejidad y experiencia se halla sin dudas en el Instituto antes mencionado (tengase presente que entre los riesgos a considera está la pérdida de visión contralateral). Solicito: que debido a que la paciente como se expresa previamente se halla en plena etapa diagnóstica, se considere postergar su licencia laboral hasta tanto se arribe al diagnóstico y se encamine su terapéutica. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

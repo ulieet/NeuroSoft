@@ -1,0 +1,162 @@
+{
+  "id": "20260208_005459_3aa7",
+  "estado": "validada",
+  "dedup_key": "DNI:11579587|F:2020-09-10|H:b5a87b09d2",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005459_3aa7.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2020-09-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": 5.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2001-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias\nEDSS: 5.5",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora de Rebif-NF (Interferón B1ar. libre de albúmina), de 12MUI\n(44Mcgr.), 3 veces/semana SC., que recibe con gran suceso (en tolerancia y eficacia) hasta la fecha, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita continuidad para: Rebif-NF, jeringas prellenadas de 12MUI\n(44Mcgr.), 3 veces/semana SC\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración)\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente; es un fármaco aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4\nY Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Resumen de Historia La Plata,10 de Septiembre de 2020. Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . EDSS: 5.5. Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4. Y Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones (OMS:340). Comentario: la paciente debe continuar con la terapia inmunomoduladora de Rebif-NF (Interferón B1ar. libre de albúmina), de 12MUI. (44Mcgr.), 3 veces/semana SC., que recibe con gran suceso (en tolerancia y eficacia) hasta la fecha, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita continuidad para: Rebif-NF, jeringas prellenadas de 12MUI. (44Mcgr.), 3 veces/semana SC. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente; es un fármaco aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina 2001; 61:470-480. Solicito: continuidad para -Rebif -NF (Interferón Beta 1ar, libre de albúmina): de 12 MUI. (44Mcgrs.) en jeringas prellenadas, 12 jeringas/28 días (un envase), para auto-aplicación 3 veces /semana por vía subcutánea. “Historia Clínica y Receta de Emergencia” Covid 19. Decreto N° 297/ 2020 Enviada con receta adjunta de manera remota. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005459_3aa7.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2020-09-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": 5.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2001-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias\nEDSS: 5.5",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora de Rebif-NF (Interferón B1ar. libre de albúmina), de 12MUI\n(44Mcgr.), 3 veces/semana SC., que recibe con gran suceso (en tolerancia y eficacia) hasta la fecha, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita continuidad para: Rebif-NF, jeringas prellenadas de 12MUI\n(44Mcgr.), 3 veces/semana SC\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración)\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente; es un fármaco aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4\nY Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Resumen de Historia La Plata,10 de Septiembre de 2020. Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, descenso de la fuerza muscular en dicho territorio braquio-crural predominante con torpeza motora manual y sobre la marcha, Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . EDSS: 5.5. Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado, bipiramidalismo espástico predominio izquierdo. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical y dorsal: 21/09/01 y 04/08/16: múltiples imágenes focales espinales en proyección de C2, C3 y C4. Y Dorsales en D7, D8, D11 y D12, compatibles con focos de desmielinización en vínculo a su proceso de base EM - RMN de cerebro: entre otras 07/11/01, 25/03/06, 14/07/10, 13/06/11 y 04/08/16: múltiples imágenes focales cerebrales bilaterales en T2 y FLAIR periventriculares y calloso-marginales. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones (OMS:340). Comentario: la paciente debe continuar con la terapia inmunomoduladora de Rebif-NF (Interferón B1ar. libre de albúmina), de 12MUI. (44Mcgr.), 3 veces/semana SC., que recibe con gran suceso (en tolerancia y eficacia) hasta la fecha, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita continuidad para: Rebif-NF, jeringas prellenadas de 12MUI. (44Mcgr.), 3 veces/semana SC. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente; es un fármaco aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina 2001; 61:470-480. Solicito: continuidad para -Rebif -NF (Interferón Beta 1ar, libre de albúmina): de 12 MUI. (44Mcgrs.) en jeringas prellenadas, 12 jeringas/28 días (un envase), para auto-aplicación 3 veces /semana por vía subcutánea. “Historia Clínica y Receta de Emergencia” Covid 19. Decreto N° 297/ 2020 Enviada con receta adjunta de manera remota. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

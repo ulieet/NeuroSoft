@@ -1,0 +1,166 @@
+{
+  "id": "20260208_005444_5118",
+  "estado": "validada",
+  "dedup_key": "DNI:21945525|F:2003-03-10|H:5a1e82823b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_5118.doc"
+    },
+    "paciente": {
+      "nombre": "Marcela, Becerra",
+      "dni": "21945525",
+      "fecha_nacimiento": "1971-01-01",
+      "obra_social": "OSDE BINARIO",
+      "nro_afiliado": "25-213946-4-01"
+    },
+    "consulta": {
+      "fecha": "2003-03-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE (OMS: 340), variante evolutiva a recaídas y remisiones. Tratamiento: sintomático; rehabilitación. Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica. Por todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-03-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 450-5701 Obra Social: OSDE BINARIO Nº de afiliado: 25-213946-4-01 (Plan 210) principales: en un curso de sucesivos brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza hemicorporal a predominio braquial e izquierdo, trastornos en el equilibrio y coordinación, compromiso de pares craneanos, como diplopía lejana horizontal, oscilopsia, disminución de la agudeza visual, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo leve a predominio izquierdo y braquial. - sensitivo-propioceptivo congruente. - pares craneanos: II bilateral, VI a izquierda. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica\nPor todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma y trombofilia completa, inmunocolagenograma, hepatograma completo, análisis de orina completa\nSerología para VIH\nLa RMN. de cerebro (10/03/03) muestra múltiples imágenes en la sustancia blanca del SNC: periventriculares, mesencefálica derecha, periacueductal, subfrontales. -RMN de cerebro 08/06/04: lesión de la sustancia blanca lateroposterior frontal derecha de 2 x 7 mm. -RMN de cerebro de fecha 24/10/06: muestra múltiples imágenes de la sustancia blanca cerebral , en topografías de: cerebelo, mesencéfalo, lóbulo frontal y la última RMN de cerebro 15/11/07: y 27/09/14: múltiples imágenes focales de la sustancia blanca a predominio periventriculares bilaterales en centros semiovales y en hemisferio cerebeloso izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 2° de Octubre de 2014. Nombre y apellido: Marcela, Becerra Fecha de Nacimiento: 01/01/71 DNI: 21.945.525 Dirección: 70 Nº 1985. La Plata Teléfono: (0221) 450-5701 Obra Social: OSDE BINARIO Nº de afiliado: 25-213946-4-01 (Plan 210) Síntomas principales: en un curso de sucesivos brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza hemicorporal a predominio braquial e izquierdo, trastornos en el equilibrio y coordinación, compromiso de pares craneanos, como diplopía lejana horizontal, oscilopsia, disminución de la agudeza visual, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo leve a predominio izquierdo y braquial. - sensitivo-propioceptivo congruente. - pares craneanos: II bilateral, VI a izquierda. - fatiga y termosensibilidad. Estudios realizados: rutina completa de laboratorio, coagulograma y trombofilia completa, inmunocolagenograma, hepatograma completo, análisis de orina completa. Serología para VIH . La RMN. de cerebro (10/03/03) muestra múltiples imágenes en la sustancia blanca del SNC: periventriculares, mesencefálica derecha, periacueductal, subfrontales. -RMN de cerebro 08/06/04: lesión de la sustancia blanca lateroposterior frontal derecha de 2 x 7 mm. -RMN de cerebro de fecha 24/10/06: muestra múltiples imágenes de la sustancia blanca cerebral , en topografías de: cerebelo, mesencéfalo, lóbulo frontal y la última RMN de cerebro 15/11/07: y 27/09/14: múltiples imágenes focales de la sustancia blanca a predominio periventriculares bilaterales en centros semiovales y en hemisferio cerebeloso izquierdo. Diagnóstico: ESCLEROSIS MÚLTIPE (OMS: 340), variante evolutiva a recaídas y remisiones. Tratamiento: sintomático; rehabilitación. Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica. Por todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_5118.doc"
+    },
+    "paciente": {
+      "nombre": "Marcela, Becerra",
+      "dni": "21945525",
+      "fecha_nacimiento": "1971-01-01",
+      "obra_social": "OSDE BINARIO",
+      "nro_afiliado": "25-213946-4-01"
+    },
+    "consulta": {
+      "fecha": "2003-03-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE (OMS: 340), variante evolutiva a recaídas y remisiones. Tratamiento: sintomático; rehabilitación. Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica. Por todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-03-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 450-5701 Obra Social: OSDE BINARIO Nº de afiliado: 25-213946-4-01 (Plan 210) principales: en un curso de sucesivos brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza hemicorporal a predominio braquial e izquierdo, trastornos en el equilibrio y coordinación, compromiso de pares craneanos, como diplopía lejana horizontal, oscilopsia, disminución de la agudeza visual, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo leve a predominio izquierdo y braquial. - sensitivo-propioceptivo congruente. - pares craneanos: II bilateral, VI a izquierda. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica\nPor todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma y trombofilia completa, inmunocolagenograma, hepatograma completo, análisis de orina completa\nSerología para VIH\nLa RMN. de cerebro (10/03/03) muestra múltiples imágenes en la sustancia blanca del SNC: periventriculares, mesencefálica derecha, periacueductal, subfrontales. -RMN de cerebro 08/06/04: lesión de la sustancia blanca lateroposterior frontal derecha de 2 x 7 mm. -RMN de cerebro de fecha 24/10/06: muestra múltiples imágenes de la sustancia blanca cerebral , en topografías de: cerebelo, mesencéfalo, lóbulo frontal y la última RMN de cerebro 15/11/07: y 27/09/14: múltiples imágenes focales de la sustancia blanca a predominio periventriculares bilaterales en centros semiovales y en hemisferio cerebeloso izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 2° de Octubre de 2014. Nombre y apellido: Marcela, Becerra Fecha de Nacimiento: 01/01/71 DNI: 21.945.525 Dirección: 70 Nº 1985. La Plata Teléfono: (0221) 450-5701 Obra Social: OSDE BINARIO Nº de afiliado: 25-213946-4-01 (Plan 210) Síntomas principales: en un curso de sucesivos brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza hemicorporal a predominio braquial e izquierdo, trastornos en el equilibrio y coordinación, compromiso de pares craneanos, como diplopía lejana horizontal, oscilopsia, disminución de la agudeza visual, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo leve a predominio izquierdo y braquial. - sensitivo-propioceptivo congruente. - pares craneanos: II bilateral, VI a izquierda. - fatiga y termosensibilidad. Estudios realizados: rutina completa de laboratorio, coagulograma y trombofilia completa, inmunocolagenograma, hepatograma completo, análisis de orina completa. Serología para VIH . La RMN. de cerebro (10/03/03) muestra múltiples imágenes en la sustancia blanca del SNC: periventriculares, mesencefálica derecha, periacueductal, subfrontales. -RMN de cerebro 08/06/04: lesión de la sustancia blanca lateroposterior frontal derecha de 2 x 7 mm. -RMN de cerebro de fecha 24/10/06: muestra múltiples imágenes de la sustancia blanca cerebral , en topografías de: cerebelo, mesencéfalo, lóbulo frontal y la última RMN de cerebro 15/11/07: y 27/09/14: múltiples imágenes focales de la sustancia blanca a predominio periventriculares bilaterales en centros semiovales y en hemisferio cerebeloso izquierdo. Diagnóstico: ESCLEROSIS MÚLTIPE (OMS: 340), variante evolutiva a recaídas y remisiones. Tratamiento: sintomático; rehabilitación. Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporciona las aplicaciones Subcutáneas trisemanales de Interferón B1ar, que recibe desde hace más de 7 años (año 2007), al frecuente efecto adverso típico de “flu like o Seudo-Gripal”, caracterizado por hipertermia con cefalea, mialgias, incremento de fatiga es que inclusive lo abandonó hace ya algo más de tres meses, poniendo en serio riesgo creciente la estabilidad clínico neurológica. Por todo lo expresado debe pasar entonces sin demora a terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela y maculopatía potencial, no es aceptada por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

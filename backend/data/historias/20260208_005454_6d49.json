@@ -1,0 +1,146 @@
+{
+  "id": "20260208_005454_6d49",
+  "estado": "validada",
+  "dedup_key": "DNI:28990924|F:2013-05-06|H:da2416088b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_6d49.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre, Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": "1981-08-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2289909241/00"
+    },
+    "consulta": {
+      "fecha": "2013-05-06",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-05-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2012-02-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha\nFatiga y termosensibilidad\nEn varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "comentario": "",
+      "estudios": "realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm)\nCon clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1\nCompatibles indiscutiblemente con proceso desmielinizante crónico",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 6 de Mayo de 2013. Apellido y nombre: Cambre, Gabriela E. DNI: 28.990.924 Fecha de Nacimiento: 12/08/81 Dirección: 522 bis n°1341 (Hernández). La Plata. Teléfono: (0221) 484-0747 Obra Social: IOMA nº de afiliado: 2289909241/00 Asistida desde: 20/05/09 Antecedente destacable: Madre (fallecida recientemente), más de 20 años soportó Esclerosis Múltiple. Síntomas principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha. Fatiga y termosensibilidad. En varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual. Rasgos semiológicos: Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad. Estudios realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm). Con clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1. Compatibles indiscutiblemente con proceso desmielinizante crónico. Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340. Tratamiento: -Interferon Beta-1ar. (Inmunomas): jeringas prellenadas de 12 MUI=44Mcgrs. 3 veces/semana x vía SC. Para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_6d49.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre, Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": "1981-08-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2289909241/00"
+    },
+    "consulta": {
+      "fecha": "2013-05-06",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-05-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2012-02-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha\nFatiga y termosensibilidad\nEn varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad",
+      "comentario": "",
+      "estudios": "realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm)\nCon clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1\nCompatibles indiscutiblemente con proceso desmielinizante crónico",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 6 de Mayo de 2013. Apellido y nombre: Cambre, Gabriela E. DNI: 28.990.924 Fecha de Nacimiento: 12/08/81 Dirección: 522 bis n°1341 (Hernández). La Plata. Teléfono: (0221) 484-0747 Obra Social: IOMA nº de afiliado: 2289909241/00 Asistida desde: 20/05/09 Antecedente destacable: Madre (fallecida recientemente), más de 20 años soportó Esclerosis Múltiple. Síntomas principales: en un curso de brotes y remisiones la mayoría ad integrum, desarrolló al menos cuatro o cinco recaídas, que duraron cada una varias semanas (desde 2009), compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: neuralgia del trigémino a derecha R1-R2; parestesias e hipoestesias braquial a izquierda; descenso visión; parestesias e hipoestesias en hemicinturón desde T7-T8 a distal con compromiso sensitivo y motor crural derecho; disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora incluida cierta manipulación de objetos con caída de los mismos; hoy en curso último brote con diplopía horizontal a predominio lejano a derecha por claro compromiso de VI par a derecha. Fatiga y termosensibilidad. En varias oportunidades debió recibir terapia supresora esteroidea oral como en el caso actual. Rasgos semiológicos: Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente, sobreimpuesto nivel medular T7-T8. - elementos cerebelosos axial y apendicular. - pares craneanos: V ramas R1-R2 a derecha; en curso VI a derecha. - fatiga y termosensibilidad. Estudios realizados: entre otros, -Laboratorios Rutina (Mayo 2009, Octubre 2009, 2012): hemograma, hepatograma, recuento de plaquetas, Kptt, ERS, glucemia, urea, creatinina, colesterol total, ionograma venoso, proteinograma electroforético, coagulogramas, orina completa. -RMN de cerebro (22/05/09; 18/01/10, 11/02/12): múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos, coronas radiatas, bulbo raquídeo y mesencéfalo derecho, además de imágenes focales en los primeros segmentos de la médula espinal cervical (de 15mm). Con clarísimo incremento lesional a través del tiempo que agrega al menos cuatro nuevas imágenes focales durante este año que se evidencian en la última RMN de cerebro mencionada (11/02/12), además de agujeros negros en secuencia de T1. Compatibles indiscutiblemente con proceso desmielinizante crónico. Diagnóstico: enfermedad multifocal de la sustancia blanca del Sistema Nervioso Central: Esclerosis Múltiple a Recaídas y Remisiones: OMS: 340. Tratamiento: -Interferon Beta-1ar. (Inmunomas): jeringas prellenadas de 12 MUI=44Mcgrs. 3 veces/semana x vía SC. Para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

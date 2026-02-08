@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005450_8c1e",
+  "estado": "validada",
+  "dedup_key": "DNI:13786141|F:2003-11-06|H:c91930d65a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_8c1e.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2003-11-06",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-11-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2003-02-13"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: -Rutina completa de laboratorio",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora con interferon beta 1ª-r: 3 jeringas prellenadas semanales de 12 MUI c/u (44 mcgrs.) libre de albúmina, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena eficacia (cumpliéndose metas antes mencionados), tolerancia y adherencia hasta la fecha\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad realizados: -Rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: todo s/p. -RMN. de cerebro (entre otras: 06/11/03, 10/02/06) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 2 de Enero de 2012 Apellido y nombre: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: -Rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: todo s/p. -RMN. de cerebro (entre otras: 06/11/03, 10/02/06) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora con interferon beta 1ª-r: 3 jeringas prellenadas semanales de 12 MUI c/u (44 mcgrs.) libre de albúmina, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena eficacia (cumpliéndose metas antes mencionados), tolerancia y adherencia hasta la fecha. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: -continuidad para: Interferon beta 1ª-r, libre de albúmina jeringas prellenadas de 12 MUI. c/u (44 mcgrs.), 1 envase de 12 jeringas/28 días = 3 jeringas/semana, = 12 jeringas / 28 días, = 1 envase/28 días. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_8c1e.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2003-11-06",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-11-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2003-02-13"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: -Rutina completa de laboratorio",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora con interferon beta 1ª-r: 3 jeringas prellenadas semanales de 12 MUI c/u (44 mcgrs.) libre de albúmina, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena eficacia (cumpliéndose metas antes mencionados), tolerancia y adherencia hasta la fecha\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad realizados: -Rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: todo s/p. -RMN. de cerebro (entre otras: 06/11/03, 10/02/06) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 2 de Enero de 2012 Apellido y nombre: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: -Rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: todo s/p. -RMN. de cerebro (entre otras: 06/11/03, 10/02/06) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora con interferon beta 1ª-r: 3 jeringas prellenadas semanales de 12 MUI c/u (44 mcgrs.) libre de albúmina, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena eficacia (cumpliéndose metas antes mencionados), tolerancia y adherencia hasta la fecha. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: -continuidad para: Interferon beta 1ª-r, libre de albúmina jeringas prellenadas de 12 MUI. c/u (44 mcgrs.), 1 envase de 12 jeringas/28 días = 3 jeringas/semana, = 12 jeringas / 28 días, = 1 envase/28 días. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

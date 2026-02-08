@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005447_1dc4",
+  "estado": "validada",
+  "dedup_key": "F:2006-01-02|DX:esclerosis múltiple|H:4e5b0ac4ba",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_1dc4.doc"
+    },
+    "paciente": {
+      "nombre": "Bollon, Daniela Paola",
+      "dni": null,
+      "fecha_nacimiento": "1974-11-22",
+      "obra_social": "I.O.M.A",
+      "nro_afiliado": "9524167255/00"
+    },
+    "consulta": {
+      "fecha": "2006-01-02",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "agrupacion_sindromica": "Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un distímico\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "comentario": "Debido a la fatiga característica de la enfermedad, que la paciente soporta y que se incrementa durante las épocas estivales, es que debe suspender la rehabilitación integral durante los meses de enero y febrero, retomando seguramente la misma a partir del mes de marzo próximo",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nSerología para HIV (negativo)\nInmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales muestran actividad actual",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 02 de enero de 2006. Nombre y apellido: Bollon, Daniela Paola. Fecha de Nacimiento: 22/11/74 Peso: 51 kg. Dirección: 55 Nº 611, La Plata. Teléfono: 423-4528 Talla: 161 cm. Obra Social: I.O.M.A. nº de afiliado: 9524167255/00 Inicio de la afección: diciembre de 1999. Asistido en este servicio desde: noviembre de 2000. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. Serología para HIV (negativo). Inmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales muestran actividad actual. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión) e inmunomodulador. Comentarios: Debido a la fatiga característica de la enfermedad, que la paciente soporta y que se incrementa durante las épocas estivales, es que debe suspender la rehabilitación integral durante los meses de enero y febrero, retomando seguramente la misma a partir del mes de marzo próximo. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_1dc4.doc"
+    },
+    "paciente": {
+      "nombre": "Bollon, Daniela Paola",
+      "dni": null,
+      "fecha_nacimiento": "1974-11-22",
+      "obra_social": "I.O.M.A",
+      "nro_afiliado": "9524167255/00"
+    },
+    "consulta": {
+      "fecha": "2006-01-02",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "agrupacion_sindromica": "Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un distímico\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "comentario": "Debido a la fatiga característica de la enfermedad, que la paciente soporta y que se incrementa durante las épocas estivales, es que debe suspender la rehabilitación integral durante los meses de enero y febrero, retomando seguramente la misma a partir del mes de marzo próximo",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nSerología para HIV (negativo)\nInmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales muestran actividad actual",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 02 de enero de 2006. Nombre y apellido: Bollon, Daniela Paola. Fecha de Nacimiento: 22/11/74 Peso: 51 kg. Dirección: 55 Nº 611, La Plata. Teléfono: 423-4528 Talla: 161 cm. Obra Social: I.O.M.A. nº de afiliado: 9524167255/00 Inicio de la afección: diciembre de 1999. Asistido en este servicio desde: noviembre de 2000. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación con temblor axial y apendicular, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. Serología para HIV (negativo). Inmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales muestran actividad actual. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión) e inmunomodulador. Comentarios: Debido a la fatiga característica de la enfermedad, que la paciente soporta y que se incrementa durante las épocas estivales, es que debe suspender la rehabilitación integral durante los meses de enero y febrero, retomando seguramente la misma a partir del mes de marzo próximo. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

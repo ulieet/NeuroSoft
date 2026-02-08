@@ -1,0 +1,118 @@
+{
+  "id": "20260208_005448_6a28",
+  "estado": "validada",
+  "dedup_key": "DNI:21885834|F:2019-03-15|H:bf045f3d1a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_6a28.doc"
+    },
+    "paciente": {
+      "nombre": "Bonavita, Jorge Alberto",
+      "dni": "21885834",
+      "fecha_nacimiento": "1970-11-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1218858344/00"
+    },
+    "consulta": {
+      "fecha": "2019-03-15",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica. Variante NMO/ espectro asociado a Aquoporina IV.?? Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente y -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de evolución, según recuerda y refiere\n(2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento)",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Variante NMO/ espectro asociado a Aquoporina IV.?? debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados",
+      "estudios": "realizados: -Laboratorio de rutina entre otros 22/08/15, 14/05/16: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea: 56mg%, creatinina: 1,30grs%, proteínas totales y albúmina, perfil lipídico, TSH y T4, orina completa. -Laboratorio especial 08/09/18: anti ADN (-), IgG e IgM anticardiolipinas (-), KPTT y recto\nPlaquetas: s/p. hiperhomocisteinemia leve: 15,40 (VR: 5-15). -PEV:24/08/15 y 12/05/16: incremento marcado de P100 sobre OD: 148 y 135 milisegundos respectivamente en cada estudio con P100 para OI normales en ambos. – -TOC 09/09/15: Afinamiento de la capa de Fibras Retinales Peripapilares (RNFL) del OD, normal espesor para RNFL del OI\nDr\nI Toledo. - RMN de Cerebro 01/07/15, 19/05/16 y 27/07/18: múltiples imágenes focales cerebrales en la sustancia blanca supratentorial profunda periventricular algunas subcorticales bilateral, que van incrementando en cantidad desde nº: 5-6 notorias en primer estudio del año 2015 a más de nº:14-15 durante el de 2018 (se realizó sin contraste). -Evaluación Cardiovascular 28/08/15: con ECG: s/p\nEx físico: soplo sistólico 2/6 eyectivo aórtico\nTA: 120-80 mm de Hg -24/08/15 Ecodoppler de Vasos de cuello : con engrosamiento de la miointimal bilateral sin placas en el territorio carotídeo estudiado:. –08/10/15 Ecocardiograma y Perfusión miocárdica: Normales. -10/09/18 Ecodoppler de Vasos de cuello con placas ateromatosas lipídicas laminares de ambos bulbos carotídeos sin cambios hemodínamicos",
+      "evolucion": "Antecedente y Enfermedad Actual: -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de, según recuerda y refiere\n(2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento)"
+    },
+    "texto_original": " La Plata , 15 de Marzo de 2019 Apellido y nombre: Bonavita, Jorge Alberto. DNI: 21.885.834 Fecha de Nacimiento: 12/11/70 Obra Social: IOMA Nº de afiliado: 1218858344/00 Domicilio: calle 71 nº 1441. La Plata Teléfono: 221-15-5440118 Asistido: desde 11/03/19. Antecedente y Enfermedad Actual: -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de evolución, según recuerda y refiere. (2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento). Estudios realizados: -Laboratorio de rutina entre otros 22/08/15, 14/05/16: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea: 56mg%, creatinina: 1,30grs%, proteínas totales y albúmina, perfil lipídico, TSH y T4, orina completa. -Laboratorio especial 08/09/18: anti ADN (-), IgG e IgM anticardiolipinas (-), KPTT y recto. Plaquetas: s/p. hiperhomocisteinemia leve: 15,40 (VR: 5-15). -PEV:24/08/15 y 12/05/16: incremento marcado de P100 sobre OD: 148 y 135 milisegundos respectivamente en cada estudio con P100 para OI normales en ambos. – -TOC 09/09/15: Afinamiento de la capa de Fibras Retinales Peripapilares (RNFL) del OD, normal espesor para RNFL del OI. Dr. I Toledo. - RMN de Cerebro 01/07/15, 19/05/16 y 27/07/18: múltiples imágenes focales cerebrales en la sustancia blanca supratentorial profunda periventricular algunas subcorticales bilateral, que van incrementando en cantidad desde nº: 5-6 notorias en primer estudio del año 2015 a más de nº:14-15 durante el de 2018 (se realizó sin contraste). -Evaluación Cardiovascular 28/08/15: con ECG: s/p. Ex físico: soplo sistólico 2/6 eyectivo aórtico. TA: 120-80 mm de Hg -24/08/15 Ecodoppler de Vasos de cuello : con engrosamiento de la miointimal bilateral sin placas en el territorio carotídeo estudiado:. –08/10/15 Ecocardiograma y Perfusión miocárdica: Normales. -10/09/18 Ecodoppler de Vasos de cuello con placas ateromatosas lipídicas laminares de ambos bulbos carotídeos sin cambios hemodínamicos. Diagnóstico: proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica. Variante NMO/ espectro asociado a Aquoporina IV.?? Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_6a28.doc"
+    },
+    "paciente": {
+      "nombre": "Bonavita, Jorge Alberto",
+      "dni": "21885834",
+      "fecha_nacimiento": "1970-11-12",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1218858344/00"
+    },
+    "consulta": {
+      "fecha": "2019-03-15",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica. Variante NMO/ espectro asociado a Aquoporina IV.?? Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente y -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de evolución, según recuerda y refiere\n(2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento)",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Variante NMO/ espectro asociado a Aquoporina IV.?? debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados",
+      "estudios": "realizados: -Laboratorio de rutina entre otros 22/08/15, 14/05/16: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea: 56mg%, creatinina: 1,30grs%, proteínas totales y albúmina, perfil lipídico, TSH y T4, orina completa. -Laboratorio especial 08/09/18: anti ADN (-), IgG e IgM anticardiolipinas (-), KPTT y recto\nPlaquetas: s/p. hiperhomocisteinemia leve: 15,40 (VR: 5-15). -PEV:24/08/15 y 12/05/16: incremento marcado de P100 sobre OD: 148 y 135 milisegundos respectivamente en cada estudio con P100 para OI normales en ambos. – -TOC 09/09/15: Afinamiento de la capa de Fibras Retinales Peripapilares (RNFL) del OD, normal espesor para RNFL del OI\nDr\nI Toledo. - RMN de Cerebro 01/07/15, 19/05/16 y 27/07/18: múltiples imágenes focales cerebrales en la sustancia blanca supratentorial profunda periventricular algunas subcorticales bilateral, que van incrementando en cantidad desde nº: 5-6 notorias en primer estudio del año 2015 a más de nº:14-15 durante el de 2018 (se realizó sin contraste). -Evaluación Cardiovascular 28/08/15: con ECG: s/p\nEx físico: soplo sistólico 2/6 eyectivo aórtico\nTA: 120-80 mm de Hg -24/08/15 Ecodoppler de Vasos de cuello : con engrosamiento de la miointimal bilateral sin placas en el territorio carotídeo estudiado:. –08/10/15 Ecocardiograma y Perfusión miocárdica: Normales. -10/09/18 Ecodoppler de Vasos de cuello con placas ateromatosas lipídicas laminares de ambos bulbos carotídeos sin cambios hemodínamicos",
+      "evolucion": "Antecedente y Enfermedad Actual: -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de, según recuerda y refiere\n(2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento)"
+    },
+    "texto_original": " La Plata , 15 de Marzo de 2019 Apellido y nombre: Bonavita, Jorge Alberto. DNI: 21.885.834 Fecha de Nacimiento: 12/11/70 Obra Social: IOMA Nº de afiliado: 1218858344/00 Domicilio: calle 71 nº 1441. La Plata Teléfono: 221-15-5440118 Asistido: desde 11/03/19. Antecedente y Enfermedad Actual: -(1) Durante año 2015 desarrolló un cuadro compatible con neuritis óptica derecha de varios días de evolución, según recuerda y refiere. (2) dificultad en fuerza muscular labio-bucal que le impedía tocar instrumento de viento, que no fue aun dilucidado su origen con certeza (paciente profesional en Instrumento musical de viento). Estudios realizados: -Laboratorio de rutina entre otros 22/08/15, 14/05/16: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea: 56mg%, creatinina: 1,30grs%, proteínas totales y albúmina, perfil lipídico, TSH y T4, orina completa. -Laboratorio especial 08/09/18: anti ADN (-), IgG e IgM anticardiolipinas (-), KPTT y recto. Plaquetas: s/p. hiperhomocisteinemia leve: 15,40 (VR: 5-15). -PEV:24/08/15 y 12/05/16: incremento marcado de P100 sobre OD: 148 y 135 milisegundos respectivamente en cada estudio con P100 para OI normales en ambos. – -TOC 09/09/15: Afinamiento de la capa de Fibras Retinales Peripapilares (RNFL) del OD, normal espesor para RNFL del OI. Dr. I Toledo. - RMN de Cerebro 01/07/15, 19/05/16 y 27/07/18: múltiples imágenes focales cerebrales en la sustancia blanca supratentorial profunda periventricular algunas subcorticales bilateral, que van incrementando en cantidad desde nº: 5-6 notorias en primer estudio del año 2015 a más de nº:14-15 durante el de 2018 (se realizó sin contraste). -Evaluación Cardiovascular 28/08/15: con ECG: s/p. Ex físico: soplo sistólico 2/6 eyectivo aórtico. TA: 120-80 mm de Hg -24/08/15 Ecodoppler de Vasos de cuello : con engrosamiento de la miointimal bilateral sin placas en el territorio carotídeo estudiado:. –08/10/15 Ecocardiograma y Perfusión miocárdica: Normales. -10/09/18 Ecodoppler de Vasos de cuello con placas ateromatosas lipídicas laminares de ambos bulbos carotídeos sin cambios hemodínamicos. Diagnóstico: proceso en estudio: -Enfermedad desmielinizante primaria(OMS:340) o secundaria del SNC?: -enfermedad vascular- vasculiticas o en vinculo con -Colagenopatía sistémica. Variante NMO/ espectro asociado a Aquoporina IV.?? Comentario: debe realizarse determinaciones de laboratorios tendientes a descartar o confirmar los potenciales diagnósticos etiológicos planteados. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

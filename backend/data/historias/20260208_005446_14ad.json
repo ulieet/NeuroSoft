@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005446_14ad",
+  "estado": "validada",
+  "dedup_key": "F:|DX:enfermedad desmielinizante del sistema nervioso central (oms:340). tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. comentarios: el paciente debe recibir tratamiento sintomático con : -lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes. es realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por fda. el lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (oms:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a uds. más bien ya imploro ordenen sus requerimientos para que realmente esa obra social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social. espero algún día ver esto hecho realidad como afiliado y como médico. solicito: cobertura para lioresal ( baclofen), comprimidos de 10 mgrs. c/u, antiespástico de probada eficacia nacional e internacional aprobado por fda para este fin: 1.5 envases/mes. atte. dr. vétere santiago a.|H:282e618826",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_14ad.doc"
+    },
+    "paciente": {
+      "nombre": "Berrueta, Nestor Amilcar",
+      "dni": null,
+      "fecha_nacimiento": "1939-10-16",
+      "obra_social": "IOMA- Co-seguro",
+      "nro_afiliado": "IOMA"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes. Es realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA. El Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social. Espero algún día ver esto hecho realidad como afiliado y como médico. Solicito: cobertura para Lioresal ( baclofen), comprimidos de 10 mgrs. c/u, antiespástico de probada eficacia nacional e internacional aprobado por FDA para este fin: 1.5 envases/mes. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "comentario": "El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes\nEs realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA\nEl Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social\nEspero algún día ver esto hecho realidad como afiliado y como médico",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata. Apellido y Nombre: Berrueta, Nestor Amilcar Fecha de Nacimiento: 16/10/39 Dirección: Diagonal 74 Nº 3372 (entre 28 y 29), La Plata. Obra Social: IOMA- Co-seguro: SALUD PÚBLICA. nº de afiliado IOMA: 9505179955/00 Inicio de la afección: en el año 1982. Asistido en este servicio desde: enero de 2001. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral. Diagnóstico: Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes. Es realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA. El Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social. Espero algún día ver esto hecho realidad como afiliado y como médico. Solicito: cobertura para Lioresal ( baclofen), comprimidos de 10 mgrs. c/u, antiespástico de probada eficacia nacional e internacional aprobado por FDA para este fin: 1.5 envases/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_14ad.doc"
+    },
+    "paciente": {
+      "nombre": "Berrueta, Nestor Amilcar",
+      "dni": null,
+      "fecha_nacimiento": "1939-10-16",
+      "obra_social": "IOMA- Co-seguro",
+      "nro_afiliado": "IOMA"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes. Es realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA. El Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social. Espero algún día ver esto hecho realidad como afiliado y como médico. Solicito: cobertura para Lioresal ( baclofen), comprimidos de 10 mgrs. c/u, antiespástico de probada eficacia nacional e internacional aprobado por FDA para este fin: 1.5 envases/mes. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "comentario": "El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes\nEs realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA\nEl Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social\nEspero algún día ver esto hecho realidad como afiliado y como médico",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata. Apellido y Nombre: Berrueta, Nestor Amilcar Fecha de Nacimiento: 16/10/39 Dirección: Diagonal 74 Nº 3372 (entre 28 y 29), La Plata. Obra Social: IOMA- Co-seguro: SALUD PÚBLICA. nº de afiliado IOMA: 9505179955/00 Inicio de la afección: en el año 1982. Asistido en este servicio desde: enero de 2001. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral. Diagnóstico: Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: El paciente debe recibir tratamiento sintomático con : -Lioresal (baclofén): para la espasticidad de miembros inferiores: 30 mgrs./día=3 comp. /día = 1.5 envases/mes. Es realmente inentendible y en mí opinión injustificable la demora que tiene sus afiliados para la provisión de fármacos, durante años de años asistí a negativas de coberturas de fármacos indispensables para pacientes con afecciones neurológicas por no estar aprobadas por FDA. El Lioresal (baclofen) si lo está con este fin y sin embargo innumerables idas y vueltas, para este y otros fármacos, aprobados se siguen suscitando diariamente en pacientes con afecciones que como en este caso (OMS:340) presentan trastornos para la marcha, fallos en el equilibrio, urgencia miccional, etc. que son casi “burlonamente” sometidos a terribles colas, varias veces y van y vuelven al Hospital público donde la sobresaturación de consultas para el escasisimo personal hace que el tiempo no pueda ser dedicado a la asistencia como se debe, sino que se pierda en burocracia y papelerio infame, ruego a Uds. más bien ya imploro ordenen sus requerimientos para que realmente esa Obra Social funcione como tal, que sin dilapidar los recursos como debe ser, tampoco se vuelva un calvario para los afiliados que como en mi propio caso aportamos durante años y cuando sufrimos un padecimiento en salud necesitamos de una verdadera tarea social. Espero algún día ver esto hecho realidad como afiliado y como médico. Solicito: cobertura para Lioresal ( baclofen), comprimidos de 10 mgrs. c/u, antiespástico de probada eficacia nacional e internacional aprobado por FDA para este fin: 1.5 envases/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005423_7578",
+  "estado": "validada",
+  "dedup_key": "F:1999-09-28|DX:esclerosis múltiple|H:c521d5e2d0",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_7578.doc"
+    },
+    "paciente": {
+      "nombre": "Gabriel Alberto Bustamante",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "No posee. FAX",
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "1999-09-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: dificultades para la marcha, trastornos en el equilibrio y coordinación, leve temblor intencional de miembro superior izquierdo, oscilopsia, vértigo y vómitos, hipoacusia con acúfenos de oido derecho, visión doble horizontal, cierta dificultad en la articulación de la palabra",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha",
+      "comentario": "Debe iniciar terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retra- sando la discapacidad acumulada y previniendo la atrofia cerebral\nPor lo cual se solicita Rebif: 3 ampo- llas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18millones de UI/ semana)\nEn su defecto Avonex, ampollas de 30 microgramos (6 millones de UI c/u), 4 ampollas mensuales\nMuy agradecido",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -Potenciales evocados auditivos: con prolongación de las latencias en tiempo de conducción central a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, pedúnculo cerebe- loso medio izquierdo y cuerpo calloso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “SAN MARTIN” SERVICIO DE NEUROLOGÍA. RESUMEN DE HISTORIA CLÍNICA . LA PLATA, 28 de setiembre de 1999. Nombre y apellido: Gabriel Alberto Bustamante. Edad: 26 años. Dirección: Viamonte nº2873. Bahia Blanca. Pcia.Bs.As. TEL. (0291)-4501335. Obra Social: No posee. FAX: (0291)-4555596. Inicio de la afección: en el año 1998. Asistido en este servicio desde: el mes de marzo de1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: dificultades para la marcha, trastornos en el equilibrio y coordinación, leve temblor intencional de miembro superior izquierdo, oscilopsia, vértigo y vómitos, hipoacusia con acúfenos de oido derecho, visión doble horizontal, cierta dificultad en la articulación de la palabra. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -Potenciales evocados auditivos: con prolongación de las latencias en tiempo de conducción central a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, pedúnculo cerebe- loso medio izquierdo y cuerpo calloso. Diagnóstico: Esclerosis Múltiple definida ( Poser y col. ), variante evolutiva a recaidas y remisiones. Tratamiento: sintomático y de los brotes ( inmunosupresión ) . Comentarios: Debe iniciar terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retra- sando la discapacidad acumulada y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampo- llas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18millones de UI/ semana). En su defecto Avonex, ampollas de 30 microgramos (6 millones de UI c/u), 4 ampollas mensuales. Muy agradecido. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_7578.doc"
+    },
+    "paciente": {
+      "nombre": "Gabriel Alberto Bustamante",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "No posee. FAX",
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "1999-09-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: dificultades para la marcha, trastornos en el equilibrio y coordinación, leve temblor intencional de miembro superior izquierdo, oscilopsia, vértigo y vómitos, hipoacusia con acúfenos de oido derecho, visión doble horizontal, cierta dificultad en la articulación de la palabra",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha",
+      "comentario": "Debe iniciar terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retra- sando la discapacidad acumulada y previniendo la atrofia cerebral\nPor lo cual se solicita Rebif: 3 ampo- llas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18millones de UI/ semana)\nEn su defecto Avonex, ampollas de 30 microgramos (6 millones de UI c/u), 4 ampollas mensuales\nMuy agradecido",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -Potenciales evocados auditivos: con prolongación de las latencias en tiempo de conducción central a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, pedúnculo cerebe- loso medio izquierdo y cuerpo calloso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “SAN MARTIN” SERVICIO DE NEUROLOGÍA. RESUMEN DE HISTORIA CLÍNICA . LA PLATA, 28 de setiembre de 1999. Nombre y apellido: Gabriel Alberto Bustamante. Edad: 26 años. Dirección: Viamonte nº2873. Bahia Blanca. Pcia.Bs.As. TEL. (0291)-4501335. Obra Social: No posee. FAX: (0291)-4555596. Inicio de la afección: en el año 1998. Asistido en este servicio desde: el mes de marzo de1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: dificultades para la marcha, trastornos en el equilibrio y coordinación, leve temblor intencional de miembro superior izquierdo, oscilopsia, vértigo y vómitos, hipoacusia con acúfenos de oido derecho, visión doble horizontal, cierta dificultad en la articulación de la palabra. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio derecho. - sensitivo superficial y propioceptivo congruente. - atáxico cerebeloso axial y apendicular, a predominio izquierdo. - pares craneanos:-VIII coclear y vestibular a derecha, -IX y X a derecha. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -Potenciales evocados auditivos: con prolongación de las latencias en tiempo de conducción central a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, pedúnculo cerebe- loso medio izquierdo y cuerpo calloso. Diagnóstico: Esclerosis Múltiple definida ( Poser y col. ), variante evolutiva a recaidas y remisiones. Tratamiento: sintomático y de los brotes ( inmunosupresión ) . Comentarios: Debe iniciar terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retra- sando la discapacidad acumulada y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampo- llas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18millones de UI/ semana). En su defecto Avonex, ampollas de 30 microgramos (6 millones de UI c/u), 4 ampollas mensuales. Muy agradecido. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

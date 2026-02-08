@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005453_b928",
+  "estado": "validada",
+  "dedup_key": "F:|DX:esclerosis múltiple|H:5b3f7fd3a0",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005453_b928.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2016-11-23"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "Y Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por e Historia Clínica\nCreo además harto suficiente esta “justificación de la prescripción por marca”, en tanto que la responsabilidad médica profesional es indelegable así lo es entonces el derecho a la indicación por “marca justificada”\nAgradezco a Uds. este canal de comunicación en beneficio del paciente\nSin otro particular lo saludo atte\nDr\nSantiago A\nVétere\n(MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Internación Sección Enfermedades Desmielinizantes\nHIGA “Gral\nSan Martín” La Plata",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de laboratorio BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna\nIntento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento\nHasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.\nAsí suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”)\nAsí es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes",
+      "estudios": "La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna justificación\nIntento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento\nHasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.\nAsí suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”)\nAsí es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes",
+      "evolucion": ""
+    },
+    "texto_original": " Sres. IOMA .Sr Director de Farmacia, Urgente Auditoria Médica. y Depto Técnico Científico. S / D: La Plata, 23 de Noviembre de 2016 Con mi mayor consideración y respeto me dirijo a Uds. con el objeto tengan a bien reconsiderar a la menor brevedad posible, el suministro para la paciente Cambre Gabriela E DNI: 28.990.924 con diagnóstico de Esclerosis Múltiple a Recaídas (OMS: 340), para la continuidad terapéutica de: Inmunomas Nf: Interferón B1ar. libre de albúmina12 MUI. 3 veces semana x vía SC. La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de laboratorio BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna justificación. Intento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento. Hasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.. Así suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”). Así es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes. Quiero dejar bien en claro en este punto, que el argumento principal por el que solicito se respete la marca: INMUNOMAS, es que la paciente ya lo recibe, con gran adherencia, sin efectos adversos ni recaídas desde hace más de 50 meses. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico, y de ninguna manera de otro por indicación de terceros, así como tampoco del eventual riesgo de recaídas e incremento de la discapacidad o efectos adversos o tóxicos a los que se vería expuesto por no administrarse a la brevedad y con la continuidad garantizada de la terapia inmune solicitada. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión con carácter URGENTE del mencionado fármaco y/o su reemplazo, así como lo que resulte de ello en la salud del paciente. cualquier intento de sustitución de INMUNOMAS NF de Bago (Interferon B1ar. libre de albúmina) 12 MUI. 3 veces/semana x vía SC- me amparo entonces en: la “JUSTIFICACIÓN DE PRESCRIPCIÖN POR MARCA”. Ley de Genéricos 25.649 y su ARTICULO 11: “El Poder Ejecutivo propenderá, en materia de medicamentos, a una política de progresiva sustitución de importaciones”. - Reglamento por decreto 987/03. Y Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por antecedentes e Historia Clínica. Creo además harto suficiente esta “justificación de la prescripción por marca”, en tanto que la responsabilidad médica profesional es indelegable así lo es entonces el derecho a la indicación por “marca justificada”. Agradezco a Uds. este canal de comunicación en beneficio del paciente. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Internación Sección Enfermedades Desmielinizantes. HIGA “Gral. San Martín” La Plata. Se entrega copia de igual tenor: Fecha: Recibe, Nombre y Apellido: Cargo: Firma: ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005453_b928.doc"
+    },
+    "paciente": {
+      "nombre": "Cambre Gabriela E",
+      "dni": "28990924",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "2016-11-23"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "Y Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por e Historia Clínica\nCreo además harto suficiente esta “justificación de la prescripción por marca”, en tanto que la responsabilidad médica profesional es indelegable así lo es entonces el derecho a la indicación por “marca justificada”\nAgradezco a Uds. este canal de comunicación en beneficio del paciente\nSin otro particular lo saludo atte\nDr\nSantiago A\nVétere\n(MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Internación Sección Enfermedades Desmielinizantes\nHIGA “Gral\nSan Martín” La Plata",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de laboratorio BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna\nIntento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento\nHasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.\nAsí suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”)\nAsí es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes",
+      "estudios": "La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna justificación\nIntento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento\nHasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.\nAsí suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”)\nAsí es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes",
+      "evolucion": ""
+    },
+    "texto_original": " Sres. IOMA .Sr Director de Farmacia, Urgente Auditoria Médica. y Depto Técnico Científico. S / D: La Plata, 23 de Noviembre de 2016 Con mi mayor consideración y respeto me dirijo a Uds. con el objeto tengan a bien reconsiderar a la menor brevedad posible, el suministro para la paciente Cambre Gabriela E DNI: 28.990.924 con diagnóstico de Esclerosis Múltiple a Recaídas (OMS: 340), para la continuidad terapéutica de: Inmunomas Nf: Interferón B1ar. libre de albúmina12 MUI. 3 veces semana x vía SC. La citada paciente recibe desde Septiembre del año 2012 por provisión de Uds. mismos, el mencionado fármaco, INMUNOMAS (droga de laboratorio BAGO, de Argentina) que fue denegada en la actualidad en un “intentó de cambio de marca” sin que exista ninguna justificación. Intento que involucraba proveer al paciente con otra marca IMPORTADA, en teoría del mismo principio activo, “supuesto genérico”, sin que existan criterios de intercambiabilidad debidamente probados para moléculas complejas Biotecnológicas, pues no tengo conocimiento que se hayan realizado con éxito al menos ensayos de Intercambiabilidad de estas moléculas con identidad biológica propia y se los haya publicado a la comunidad científica; si eso así fuere le ruego me envíe las publicaciones donde figuran dichos estudios y con gusto reveré mi posicionamiento. Hasta tanto tales publicaciones no estén disponibles: estas “Moléculas Complejas Biotecnológicas NO Son Intercambiables bajo ningún aspecto”.. Así suponer entonces, sin ningún aval ni prueba, que sean idénticos principios activos e intercambiables es someter al paciente a un eventual riesgo por lo menos innecesario e injustificado?, cuando además viene por más de 4 años respondiendo en eficacia y tolerancia a este medicamento particular (es la propia “ley de genéricos” donde se propone sustitución progresiva por marcas Nacionales de otras moléculas importadas); repito que desde ese mismo IOMA durante años se reconoció y recibió Inmunomas sin inconvenientes ni objeción alguna (“Derecho Adquirido”). Así es el riesgo que esto supone, cuando se trata por otra parte de un medicamento con años de comercialización en la Argentina, aprobado por ANMAT de Argentina e incluida en plan Meppes. Quiero dejar bien en claro en este punto, que el argumento principal por el que solicito se respete la marca: INMUNOMAS, es que la paciente ya lo recibe, con gran adherencia, sin efectos adversos ni recaídas desde hace más de 50 meses. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico, y de ninguna manera de otro por indicación de terceros, así como tampoco del eventual riesgo de recaídas e incremento de la discapacidad o efectos adversos o tóxicos a los que se vería expuesto por no administrarse a la brevedad y con la continuidad garantizada de la terapia inmune solicitada. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión con carácter URGENTE del mencionado fármaco y/o su reemplazo, así como lo que resulte de ello en la salud del paciente. cualquier intento de sustitución de INMUNOMAS NF de Bago (Interferon B1ar. libre de albúmina) 12 MUI. 3 veces/semana x vía SC- me amparo entonces en: la “JUSTIFICACIÓN DE PRESCRIPCIÖN POR MARCA”. Ley de Genéricos 25.649 y su ARTICULO 11: “El Poder Ejecutivo propenderá, en materia de medicamentos, a una política de progresiva sustitución de importaciones”. - Reglamento por decreto 987/03. Y Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por antecedentes e Historia Clínica. Creo además harto suficiente esta “justificación de la prescripción por marca”, en tanto que la responsabilidad médica profesional es indelegable así lo es entonces el derecho a la indicación por “marca justificada”. Agradezco a Uds. este canal de comunicación en beneficio del paciente. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Internación Sección Enfermedades Desmielinizantes. HIGA “Gral. San Martín” La Plata. Se entrega copia de igual tenor: Fecha: Recibe, Nombre y Apellido: Cargo: Firma: ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

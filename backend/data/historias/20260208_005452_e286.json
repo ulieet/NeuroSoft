@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005452_e286",
+  "estado": "validada",
+  "dedup_key": "DNI:30464325|F:2017-06-21|H:570226818c",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_e286.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty- Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2017-06-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-12-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nCon posterior restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Rebif-NF de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de disminuir el número y la gravedad de las recaídas, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita continuidad para: Rebif- NF: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 aplicaciones para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas\nIgG e IgM anticardiolipinas. -23/12/13-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E\nMúltiple: OMS:340 )",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de Junio de 2017. Apellido y nombre: Calvetty- Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Con posterior restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. -23/12/13-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E. Múltiple: OMS:340 ). Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: hasta la fecha - de los brotes: corticoterapia IV y oral, con buena respuesta en el evento. Comentario: Debe continuar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Rebif-NF de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de disminuir el número y la gravedad de las recaídas, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita continuidad para: Rebif- NF: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 aplicaciones para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente continuidad para:-Rebif-NF (INTERFERON beta 1ª-r): 12MUI., Cartucho Multidosis de 12 MUI. c/u. (44 mcgrs.), 1 envase de 4 cartuchos /28 DÍAS = 3 aplicaciones/Semana (LUNES MIERCOLES Y VIERNES), = 12 aplicaciones/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_e286.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty- Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2017-06-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-12-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nCon posterior restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Rebif-NF de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de disminuir el número y la gravedad de las recaídas, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita continuidad para: Rebif- NF: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 aplicaciones para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas\nIgG e IgM anticardiolipinas. -23/12/13-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E\nMúltiple: OMS:340 )",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de Junio de 2017. Apellido y nombre: Calvetty- Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Con posterior restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. -23/12/13-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E. Múltiple: OMS:340 ). Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: hasta la fecha - de los brotes: corticoterapia IV y oral, con buena respuesta en el evento. Comentario: Debe continuar Urgente con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Rebif-NF de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de disminuir el número y la gravedad de las recaídas, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita continuidad para: Rebif- NF: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 aplicaciones para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente continuidad para:-Rebif-NF (INTERFERON beta 1ª-r): 12MUI., Cartucho Multidosis de 12 MUI. c/u. (44 mcgrs.), 1 envase de 4 cartuchos /28 DÍAS = 3 aplicaciones/Semana (LUNES MIERCOLES Y VIERNES), = 12 aplicaciones/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

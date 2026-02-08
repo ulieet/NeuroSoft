@@ -1,0 +1,146 @@
+{
+  "id": "20260208_005449_55bb",
+  "estado": "validada",
+  "dedup_key": "F:2019-02-19|DX:complejo neuromielitis optica idiopática/autoinmune: nmo: -oms: 341- tratamiento: sintomático (baclofeno+ pregabalina+ibuprofeno) , de los brotes (esteroides en pulso iv), rehabilitación. de fondo inmune: azatioprina comentarios: en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u. con buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma. solicito: -modafinilo (visper), a una dosis de 400 mg./día por vía oral, es decir 2 (dos) tomas de 200 mg. c/u. /día por vía oral. bibliografia respaldatoria mínima: pueden consultarse: http://www.nationalmssociety.org/meds pues es una medicación recomendada por la “national multiple sclerosis society” (más grande asociación de enfermos del mundo, reconocida internacionalmente, de los eeuu.), para el manejo de la fatiga en procesos desmielinizantes. tratamiento prolongado. atte. dr. vétere santiago a.|H:d192ba99f6",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_55bb.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2019-02-19",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Complejo Neuromielitis Optica Idiopática/autoinmune: NMO: -OMS: 341- Tratamiento: sintomático (baclofeno+ pregabalina+ibuprofeno) , de los brotes (esteroides en pulso IV), rehabilitación. De fondo inmune: azatioprina Comentarios: en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u. Con buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma. Solicito: -Modafinilo (Visper), a una dosis de 400 mg./día por vía oral, es decir 2 (dos) tomas de 200 mg. c/u. /día por vía oral. Bibliografia respaldatoria mínima: pueden consultarse: http://www.nationalmssociety.org/Meds pues es una medicación recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida internacionalmente, de los EEUU.), para el manejo de la fatiga en procesos desmielinizantes. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "De fondo inmune: azatioprina en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u\nCon buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – Evolución al 19/02/19:sin recaídas en último semestre\nEstudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – al 19/02/19:sin recaídas en último semestre"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 19 de Febrero de 2019. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – Evolución al 19/02/19:sin recaídas en último semestre. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Complejo Neuromielitis Optica Idiopática/autoinmune: NMO: -OMS: 341- Tratamiento: sintomático (baclofeno+ pregabalina+ibuprofeno) , de los brotes (esteroides en pulso IV), rehabilitación. De fondo inmune: azatioprina Comentarios: en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u. Con buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma. Solicito: -Modafinilo (Visper), a una dosis de 400 mg./día por vía oral, es decir 2 (dos) tomas de 200 mg. c/u. /día por vía oral. Bibliografia respaldatoria mínima: pueden consultarse: http://www.nationalmssociety.org/Meds pues es una medicación recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida internacionalmente, de los EEUU.), para el manejo de la fatiga en procesos desmielinizantes. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_55bb.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2019-02-19",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Complejo Neuromielitis Optica Idiopática/autoinmune: NMO: -OMS: 341- Tratamiento: sintomático (baclofeno+ pregabalina+ibuprofeno) , de los brotes (esteroides en pulso IV), rehabilitación. De fondo inmune: azatioprina Comentarios: en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u. Con buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma. Solicito: -Modafinilo (Visper), a una dosis de 400 mg./día por vía oral, es decir 2 (dos) tomas de 200 mg. c/u. /día por vía oral. Bibliografia respaldatoria mínima: pueden consultarse: http://www.nationalmssociety.org/Meds pues es una medicación recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida internacionalmente, de los EEUU.), para el manejo de la fatiga en procesos desmielinizantes. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "De fondo inmune: azatioprina en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u\nCon buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – Evolución al 19/02/19:sin recaídas en último semestre\nEstudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – al 19/02/19:sin recaídas en último semestre"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 19 de Febrero de 2019. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal – Evolución al 19/02/19:sin recaídas en último semestre. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Complejo Neuromielitis Optica Idiopática/autoinmune: NMO: -OMS: 341- Tratamiento: sintomático (baclofeno+ pregabalina+ibuprofeno) , de los brotes (esteroides en pulso IV), rehabilitación. De fondo inmune: azatioprina Comentarios: en un intento de controlar la fatiga, le proporcionamos muestras gratuitas de modafinilo (Visper) a una dosis de 400 mg./día en dos tomas de 200 mg.c/u. Con buen resultado hasta la fecha; el citado modafinilo es un producto de probada eficacia para combatir este devastador síntoma. Solicito: -Modafinilo (Visper), a una dosis de 400 mg./día por vía oral, es decir 2 (dos) tomas de 200 mg. c/u. /día por vía oral. Bibliografia respaldatoria mínima: pueden consultarse: http://www.nationalmssociety.org/Meds pues es una medicación recomendada por la “National Multiple Sclerosis Society” (Más grande asociación de enfermos del mundo, reconocida internacionalmente, de los EEUU.), para el manejo de la fatiga en procesos desmielinizantes. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

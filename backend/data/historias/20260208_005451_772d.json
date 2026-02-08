@@ -1,0 +1,98 @@
+{
+  "id": "20260208_005451_772d",
+  "estado": "validada",
+  "dedup_key": "DNI:22441067|F:2020-02-26|H:6b6ec659d4",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260208_005451_772d.docx"
+    },
+    "paciente": {
+      "nombre": "en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles)",
+      "dni": "22441067",
+      "fecha_nacimiento": null,
+      "obra_social": "Atte. Santiago A. Vétere",
+      "nro_afiliado": "n"
+    },
+    "consulta": {
+      "fecha": "2020-02-26",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Por la presente, cumplo en responder, en referencia a que esa OS. le entregara al Sr",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE- Estimado Sres. INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Por la presente, cumplo en responder, en referencia a nota que esa OS. le entregara al Sr. Caceres Horacio Daniel DNI: 22.441.067, afiliado n°150761599207 GP 00, con diagnóstico de Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340), en la que proponen suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. bajo el argumento de “EM. Ultimo brote en 2006. EDSS 4. Visto que LA ENF ESTA INACTIVA DESDE HACE 14 AÑOS NO SURGE COMO EVIDENTE JUSTIFICACION DE CONT TERAPEUTICA…” En mi humilde saber y entender considero que es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y que suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles). Este caso tampoco se trata de una forma evolutiva progresiva, ya que como se explica en cada resumen de historia su EDSS está estabilizado en 4.0 desde hace años. Cabe destacar que el objetivo de estos tratamientos es PREVENTIVO y que muy poco puede hacerse luego del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables. Así considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien al menos o en parte por la acción benéfica de la terapia en cuestión, es muy arriesgado. Resulta así que suspender la terapia a un paciente con Esclerosis Múltiple bajo el argumento de no tener recaídas sería análogo a dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., suspender el antibiótico cursando una infección por dos o tres días sin fiebre sin esperar la resolución definitiva, no vacunar si no está cursando la infección o a un hipertenso crónico tratado sacarle la medicación al registrarse cifras de normotensión?.. Creo más acertado plantear el cambio de estrategia terapéutica cuando alguien no responde, falla o empeora su salud a pesar del tratamiento. Por lo anterior, sugiero no suspender la terapia en tanto no haya argumentación científica firmemente avalada por la literatura que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente. La evidencia parece hasta aquí solo sugerir que la suspensión podría plantearse en muy selectos casos como podrían ser: -pacientes mayores de 60-65 años de edad, o que hayan evolucionado a un formato Progresivo Secundario (incrementos del EDSS sin recaída) y siempre e indispensablemente con consentimiento formal del paciente. No parece entonces al menos por ahora ser este el momento ni el paciente. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente. Agradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social. Atte. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260208_005451_772d.docx"
+    },
+    "paciente": {
+      "nombre": "en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles)",
+      "dni": "22441067",
+      "fecha_nacimiento": null,
+      "obra_social": "Atte. Santiago A. Vétere",
+      "nro_afiliado": "n"
+    },
+    "consulta": {
+      "fecha": "2020-02-26",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Por la presente, cumplo en responder, en referencia a que esa OS. le entregara al Sr",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE- Estimado Sres. INSSJ y P (PAMI) La Plata, 26 de febrero de 2020 S / D: Por la presente, cumplo en responder, en referencia a nota que esa OS. le entregara al Sr. Caceres Horacio Daniel DNI: 22.441.067, afiliado n°150761599207 GP 00, con diagnóstico de Esclerosis Múltiple a Recaídas y Remisiones (OMS: 340), en la que proponen suspender la provisión de Escadra-40 mg. para aplicación trisemanal SC,. bajo el argumento de “EM. Ultimo brote en 2006. EDSS 4. Visto que LA ENF ESTA INACTIVA DESDE HACE 14 AÑOS NO SURGE COMO EVIDENTE JUSTIFICACION DE CONT TERAPEUTICA…” En mi humilde saber y entender considero que es mucho más probable que la enfermedad se haya detenido debido a la intervención terapéutica y que suspenderla solo pondrá al paciente en RIESGO de nuevo avance o recaídas (con consecuencias potencialmente irreversibles). Este caso tampoco se trata de una forma evolutiva progresiva, ya que como se explica en cada resumen de historia su EDSS está estabilizado en 4.0 desde hace años. Cabe destacar que el objetivo de estos tratamientos es PREVENTIVO y que muy poco puede hacerse luego del brote o recaída, más que luchar con las secuelas en ocasiones irrecuperables. Así considerar que la ausencia de recaídas se deba a que el proceso se haya curado o detenido espontanea e indefinidamente y no más bien al menos o en parte por la acción benéfica de la terapia en cuestión, es muy arriesgado. Resulta así que suspender la terapia a un paciente con Esclerosis Múltiple bajo el argumento de no tener recaídas sería análogo a dejar de anti-agregar a alguien con riesgo vascular por no sufrir infarto cerebral o cardiaco .., suspender el antibiótico cursando una infección por dos o tres días sin fiebre sin esperar la resolución definitiva, no vacunar si no está cursando la infección o a un hipertenso crónico tratado sacarle la medicación al registrarse cifras de normotensión?.. Creo más acertado plantear el cambio de estrategia terapéutica cuando alguien no responde, falla o empeora su salud a pesar del tratamiento. Por lo anterior, sugiero no suspender la terapia en tanto no haya argumentación científica firmemente avalada por la literatura que justifique claramente dicha conducta y dado que hasta la fecha eso en mi saber no está disponible, me es imposible recomendar la discontinuidad terapéutica, sin poner en riesgo la salud del paciente. La evidencia parece hasta aquí solo sugerir que la suspensión podría plantearse en muy selectos casos como podrían ser: -pacientes mayores de 60-65 años de edad, o que hayan evolucionado a un formato Progresivo Secundario (incrementos del EDSS sin recaída) y siempre e indispensablemente con consentimiento formal del paciente. No parece entonces al menos por ahora ser este el momento ni el paciente. De esta manera, cumplo en lo que a mí respecta como médico asistente y tratante, con la responsabilidad que me compete, incluyendo el derecho profesional que me asiste a la asesoría, buen consejo y recomendación así entonces la prescripción, indicación y al seguimiento del citado paciente y de su tratamiento, incluido el farmacológico. Sirva la misma de atenta nota y antecedente y dejo en vuestra exclusiva responsabilidad la provisión del citado fármaco y continuidad asegurada, así como lo que resulte de ello en la salud del paciente. Agradezco la oportunidad del contacto e intercambio de ideas en favor del paciente y el respeto por su obra social. Atte. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,162 @@
+{
+  "id": "20260208_005457_5ebb",
+  "estado": "validada",
+  "dedup_key": "DNI:24704543|F:2017-01-11|H:6610684ca3",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005457_5ebb.doc"
+    },
+    "paciente": {
+      "nombre": "Cantarelli, Roxana Mariela",
+      "dni": "24704543",
+      "fecha_nacimiento": "1975-08-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2247045435/00"
+    },
+    "consulta": {
+      "fecha": "2017-01-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2017-10-09"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud\nDurante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural\nAdemás presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor\nAntecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs\nT4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "agrupacion_sindromica": "Examen físico- Rasgos Semiológicos: Neurología: - bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "comentario": "",
+      "estudios": "realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto\nCuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal\nHernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd\nIv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,\nKPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit\nB12: ↓146",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 09 Octubre de 2017 Apellido y nombre: Cantarelli, Roxana Mariela. DNI: 24.704.543 Fecha de Nacimiento: 19/08/75 Dirección: calle 34 nº 1313. La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 Síntomas principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud. Durante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural. Además presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor. Antecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs. T4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos. Examen físico- Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-). - Diagnóstico confirmado -Esclerosis Múltiple a Recaídas (OMS: 340): ACTIVA. Tratamiento: reposición de vit B12.durante el primer evento- Terapia esteroidea oral a dosis supresora para en 2° evento ( brote o recaída), seguida de descenso escalonado, -Evolución al 09/10/17: en franca adaptación a la terapia Inmune con Interferón B1ar. 12 MUI. de tres aplicaciones semanales, pero que debió ajustarse por NEUTROPENIA secundaria y aun sin poder recibir dosis plena. Solicito : - considerar su status laboral actual, en un proceso crónico tratable pero aun incurable, con alto componente de fatiga que le impedirá desempeñarse en horarios de máxima exposición al calor , deberá procurarse ambiente refrigerado y descansos programados, entre otras medidas (horarios, lugares, ambientes, movilidad al mismo, hidratación, etc.) - que favorezcan su comodidad adaptada a la situación de salud y a su tratamiento y sus efectos adversos, antes mencionados. Debo aclarar que la fatiga no se trata de un estado emocional si no de un cansancio extremo físico, ampliamente estudiado, asociado a procesos desmielinizantes como en este caso, que impacta muy negativamente en su condición gral. y neurológica particular y especialmente agravando todos los síntomas neurológicos de paresia (falta de fuerza) motores, sensitivos, equilibrio, visual (Uthoff) , etc. la mayoría de las",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005457_5ebb.doc"
+    },
+    "paciente": {
+      "nombre": "Cantarelli, Roxana Mariela",
+      "dni": "24704543",
+      "fecha_nacimiento": "1975-08-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2247045435/00"
+    },
+    "consulta": {
+      "fecha": "2017-01-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2017-10-09"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud\nDurante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural\nAdemás presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor\nAntecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs\nT4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "agrupacion_sindromica": "Examen físico- Rasgos Semiológicos: Neurología: - bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "comentario": "",
+      "estudios": "realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto\nCuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal\nHernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd\nIv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,\nKPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit\nB12: ↓146",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 09 Octubre de 2017 Apellido y nombre: Cantarelli, Roxana Mariela. DNI: 24.704.543 Fecha de Nacimiento: 19/08/75 Dirección: calle 34 nº 1313. La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 Síntomas principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud. Durante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural. Además presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor. Antecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs. T4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos. Examen físico- Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-). - Diagnóstico confirmado -Esclerosis Múltiple a Recaídas (OMS: 340): ACTIVA. Tratamiento: reposición de vit B12.durante el primer evento- Terapia esteroidea oral a dosis supresora para en 2° evento ( brote o recaída), seguida de descenso escalonado, -Evolución al 09/10/17: en franca adaptación a la terapia Inmune con Interferón B1ar. 12 MUI. de tres aplicaciones semanales, pero que debió ajustarse por NEUTROPENIA secundaria y aun sin poder recibir dosis plena. Solicito : - considerar su status laboral actual, en un proceso crónico tratable pero aun incurable, con alto componente de fatiga que le impedirá desempeñarse en horarios de máxima exposición al calor , deberá procurarse ambiente refrigerado y descansos programados, entre otras medidas (horarios, lugares, ambientes, movilidad al mismo, hidratación, etc.) - que favorezcan su comodidad adaptada a la situación de salud y a su tratamiento y sus efectos adversos, antes mencionados. Debo aclarar que la fatiga no se trata de un estado emocional si no de un cansancio extremo físico, ampliamente estudiado, asociado a procesos desmielinizantes como en este caso, que impacta muy negativamente en su condición gral. y neurológica particular y especialmente agravando todos los síntomas neurológicos de paresia (falta de fuerza) motores, sensitivos, equilibrio, visual (Uthoff) , etc. la mayoría de las",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005424_7b3b",
+  "estado": "validada",
+  "dedup_key": "F:2012-10-11|DX:esclerosis múltiple|H:4e8576b541",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005424_7b3b.doc"
+    },
+    "paciente": {
+      "nombre": "Cardoso, Soledad Andrea",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSARP y H",
+      "nro_afiliado": "16807/A"
+    },
+    "consulta": {
+      "fecha": "2012-10-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-05-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad\nAgrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "comentario": "la paciente debe continuar sin interrupción con la terapia inmunomoduladora de Rebif 12 MUI., (Interferón Beta 1a-recombinante) Nueva Fórmula (libre de albúmina): 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena tolerancia hasta la fecha\nPor lo cual se solicita: Rebif: 3 aplicaciones semanales por cartucho para aplicación electrónica RebiSmart, es decir 12 aplicaciones x multidosis: 3 dosis/semana= (de 12 MUI. c/u) cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: -16/02/06- Rutina de laboratorio\nSerología VIH\nVDRL. atg\nHepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 11 de Octubre de 2012. Apellido y nombre: Cardoso, Soledad Andrea. DNI.: 26.489.489 Dirección: El Zorzal n° 580 y La Gaviota. Mar del Plata. Teléfono: (0223) – 464-2394 Obra Social: OSARP y H . Nº de afiliado: 16807/A Asistido en este servicio desde: Julio 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad. Agrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad. Estudios realizados: -16/02/06- Rutina de laboratorio. Serología VIH. VDRL. atg. Hepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Comentario: la paciente debe continuar sin interrupción con la terapia inmunomoduladora de Rebif 12 MUI., (Interferón Beta 1a-recombinante) Nueva Fórmula (libre de albúmina): 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena tolerancia hasta la fecha. Por lo cual se solicita: Rebif: 3 aplicaciones semanales por cartucho para aplicación electrónica RebiSmart, es decir 12 aplicaciones x multidosis: 3 dosis/semana= (de 12 MUI. c/u) cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: continuidad para: -REBIF-NF (Interferón beta 1ª-r, libre de albúmina) cartuchos trisemanales de 12 MUI (44Mcgrs.) c/u, (4 cartuchos multidosis para 3 veces/semana) = 1 envase por 4 cartuchos tridosis: 12 aplicaciones cada 28 días. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005424_7b3b.doc"
+    },
+    "paciente": {
+      "nombre": "Cardoso, Soledad Andrea",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSARP y H",
+      "nro_afiliado": "16807/A"
+    },
+    "consulta": {
+      "fecha": "2012-10-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-05-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad\nAgrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "comentario": "la paciente debe continuar sin interrupción con la terapia inmunomoduladora de Rebif 12 MUI., (Interferón Beta 1a-recombinante) Nueva Fórmula (libre de albúmina): 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena tolerancia hasta la fecha\nPor lo cual se solicita: Rebif: 3 aplicaciones semanales por cartucho para aplicación electrónica RebiSmart, es decir 12 aplicaciones x multidosis: 3 dosis/semana= (de 12 MUI. c/u) cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: -16/02/06- Rutina de laboratorio\nSerología VIH\nVDRL. atg\nHepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 11 de Octubre de 2012. Apellido y nombre: Cardoso, Soledad Andrea. DNI.: 26.489.489 Dirección: El Zorzal n° 580 y La Gaviota. Mar del Plata. Teléfono: (0223) – 464-2394 Obra Social: OSARP y H . Nº de afiliado: 16807/A Asistido en este servicio desde: Julio 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad. Agrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad. Estudios realizados: -16/02/06- Rutina de laboratorio. Serología VIH. VDRL. atg. Hepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Comentario: la paciente debe continuar sin interrupción con la terapia inmunomoduladora de Rebif 12 MUI., (Interferón Beta 1a-recombinante) Nueva Fórmula (libre de albúmina): 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, con muy buena tolerancia hasta la fecha. Por lo cual se solicita: Rebif: 3 aplicaciones semanales por cartucho para aplicación electrónica RebiSmart, es decir 12 aplicaciones x multidosis: 3 dosis/semana= (de 12 MUI. c/u) cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: continuidad para: -REBIF-NF (Interferón beta 1ª-r, libre de albúmina) cartuchos trisemanales de 12 MUI (44Mcgrs.) c/u, (4 cartuchos multidosis para 3 veces/semana) = 1 envase por 4 cartuchos tridosis: 12 aplicaciones cada 28 días. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

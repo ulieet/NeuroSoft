@@ -1,0 +1,130 @@
+{
+  "id": "20260208_005449_9b00",
+  "estado": "validada",
+  "dedup_key": "F:2010-07-16|DX:esclerosis múltiple|H:4ed705f2b1",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_9b00.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2010-07-16",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": "300 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturnos\nPor lo tanto debe continuar la terapia antiespástica: Baclofen a una dosis que se fue ajustando hasta que en la actualidad recibe 30 mg./día por vía oral\nDicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo\nAdemás su proceso lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 16 de Julio de 2010. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, del brote. Comentario Su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturnos. Por lo tanto debe continuar la terapia antiespástica: Baclofen a una dosis que se fue ajustando hasta que en la actualidad recibe 30 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo. Además su proceso lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos. Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: Pregabalina una dosis de 300 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) y que lo viene recibiendo (desde muestras gratis hospitalarias), con muy buena tolerancia y eficacia, desde el último mes. Solicito: - Pregabalina a una dosis de 300 mg./día por vía oral: dos tomas de 150 mg. c/u./día. es decir 60comp. de 150 mg. c/u./mes. x 2 (dos) envases/ mes. y -Continuidad para -Baclofen (Lioresal) comprimido de 10 mg. c/u .x 60 comprimidos c/ envase= -3 comprimidos/día, es decir que para 30 días =90 comprimidos= 2 (dos) envases/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_9b00.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2010-07-16",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": "300 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturnos\nPor lo tanto debe continuar la terapia antiespástica: Baclofen a una dosis que se fue ajustando hasta que en la actualidad recibe 30 mg./día por vía oral\nDicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo\nAdemás su proceso lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 16 de Julio de 2010. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, del brote. Comentario Su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturnos. Por lo tanto debe continuar la terapia antiespástica: Baclofen a una dosis que se fue ajustando hasta que en la actualidad recibe 30 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo. Además su proceso lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos. Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: Pregabalina una dosis de 300 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) y que lo viene recibiendo (desde muestras gratis hospitalarias), con muy buena tolerancia y eficacia, desde el último mes. Solicito: - Pregabalina a una dosis de 300 mg./día por vía oral: dos tomas de 150 mg. c/u./día. es decir 60comp. de 150 mg. c/u./mes. x 2 (dos) envases/ mes. y -Continuidad para -Baclofen (Lioresal) comprimido de 10 mg. c/u .x 60 comprimidos c/ envase= -3 comprimidos/día, es decir que para 30 días =90 comprimidos= 2 (dos) envases/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005450_97df",
+  "estado": "validada",
+  "dedup_key": "DNI:28859187|F:2005-10-05|H:82e938423d",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_97df.doc"
+    },
+    "paciente": {
+      "nombre": "Burgos Romina Anabel",
+      "dni": "28859187",
+      "fecha_nacimiento": "1981-07-20",
+      "obra_social": "IOMA",
+      "nro_afiliado": "3311806608/03"
+    },
+    "consulta": {
+      "fecha": "2005-10-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "-Neuritis óptica en el contexto de: enf. desmielinizante, enf. del tejido conectivo, trastorno de la coagulación. Proceso en estudio ??. Comentarios: La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R. Reagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Además de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II. Solicito: Serología para: -Factor Reumatoideo, FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. -IgG anticardiolipinas y anticoagulante Lúpico. - HIV I y II. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2001-10-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: -Fines del año 2001 desarrolla neuritis óptica derecha, con visión cuenta dedos a 30 cm, que persistió por término de algo más de 30 días; asociado a cefalea, fue evaluada por oftalmólogo y tratada con complejo vitamínico\nRepite episodios similares en los años 2002 y junio de 2005, de similares características y sobre el mismo ojo",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R\nReagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4\nAdemás de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II",
+      "estudios": "realizados: -Rutina de laboratorio (23/09/05). -Tomografía de cerebro (13/10/01). -EEG (15/10/01). -ECG (01/07/05)\nTodo lo antes mencionado resultó ser normal. -Potenciales Evocados Visuales-(15/10/01): con prolongadas latencias de P100 a derecha (121 miliseg.) y significativa diferencia interocular (9,7 miliseg.). -RMN de cerebro (01/07/05) :en secuencia de STIR: incremento de la intensidad de la señal de nervio óptico a derecha. -Evaluación por Oftalmología y Campimetrias 12/10/01: para OD. agudeza visual 4/20 y escotoma central",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Octubre de 2005. Nombre y apellido: Burgos Romina Anabel. DNI: 28.859.187 Fecha de Nacimiento: 20/07/81 Dirección: 51 nº 464 Torre II “1ºC”. Localidad: La Plata Teléfono: 483-4130 Obra Social: IOMA nº de afiliado: 3311806608/03 Asistido en esta Sección desde: 21/09/05 Antecedente:- Máculas en zona malar. - Anemia a repetición. -Parestesias de miembros inferiores. Síntomas principales: -Fines del año 2001 desarrolla neuritis óptica derecha, con visión cuenta dedos a 30 cm, que persistió por término de algo más de 30 días; asociado a cefalea, fue evaluada por oftalmólogo y tratada con complejo vitamínico. Repite episodios similares en los años 2002 y junio de 2005, de similares características y sobre el mismo ojo. Estudios realizados: -Rutina de laboratorio (23/09/05). -Tomografía de cerebro (13/10/01). -EEG (15/10/01). -ECG (01/07/05). Todo lo antes mencionado resultó ser normal. -Potenciales Evocados Visuales-(15/10/01): con prolongadas latencias de P100 a derecha (121 miliseg.) y significativa diferencia interocular (9,7 miliseg.). -RMN de cerebro (01/07/05) :en secuencia de STIR: incremento de la intensidad de la señal de nervio óptico a derecha. -Evaluación por Oftalmología y Campimetrias 12/10/01: para OD. agudeza visual 4/20 y escotoma central. Diagnóstico: -Neuritis óptica en el contexto de: enf. desmielinizante, enf. del tejido conectivo, trastorno de la coagulación. Proceso en estudio ??. Comentarios: La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R. Reagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Además de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II. Solicito: Serología para: -Factor Reumatoideo, FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. -IgG anticardiolipinas y anticoagulante Lúpico. - HIV I y II. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_97df.doc"
+    },
+    "paciente": {
+      "nombre": "Burgos Romina Anabel",
+      "dni": "28859187",
+      "fecha_nacimiento": "1981-07-20",
+      "obra_social": "IOMA",
+      "nro_afiliado": "3311806608/03"
+    },
+    "consulta": {
+      "fecha": "2005-10-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "-Neuritis óptica en el contexto de: enf. desmielinizante, enf. del tejido conectivo, trastorno de la coagulación. Proceso en estudio ??. Comentarios: La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R. Reagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Además de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II. Solicito: Serología para: -Factor Reumatoideo, FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. -IgG anticardiolipinas y anticoagulante Lúpico. - HIV I y II. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2001-10-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: -Fines del año 2001 desarrolla neuritis óptica derecha, con visión cuenta dedos a 30 cm, que persistió por término de algo más de 30 días; asociado a cefalea, fue evaluada por oftalmólogo y tratada con complejo vitamínico\nRepite episodios similares en los años 2002 y junio de 2005, de similares características y sobre el mismo ojo",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R\nReagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4\nAdemás de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II",
+      "estudios": "realizados: -Rutina de laboratorio (23/09/05). -Tomografía de cerebro (13/10/01). -EEG (15/10/01). -ECG (01/07/05)\nTodo lo antes mencionado resultó ser normal. -Potenciales Evocados Visuales-(15/10/01): con prolongadas latencias de P100 a derecha (121 miliseg.) y significativa diferencia interocular (9,7 miliseg.). -RMN de cerebro (01/07/05) :en secuencia de STIR: incremento de la intensidad de la señal de nervio óptico a derecha. -Evaluación por Oftalmología y Campimetrias 12/10/01: para OD. agudeza visual 4/20 y escotoma central",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Octubre de 2005. Nombre y apellido: Burgos Romina Anabel. DNI: 28.859.187 Fecha de Nacimiento: 20/07/81 Dirección: 51 nº 464 Torre II “1ºC”. Localidad: La Plata Teléfono: 483-4130 Obra Social: IOMA nº de afiliado: 3311806608/03 Asistido en esta Sección desde: 21/09/05 Antecedente:- Máculas en zona malar. - Anemia a repetición. -Parestesias de miembros inferiores. Síntomas principales: -Fines del año 2001 desarrolla neuritis óptica derecha, con visión cuenta dedos a 30 cm, que persistió por término de algo más de 30 días; asociado a cefalea, fue evaluada por oftalmólogo y tratada con complejo vitamínico. Repite episodios similares en los años 2002 y junio de 2005, de similares características y sobre el mismo ojo. Estudios realizados: -Rutina de laboratorio (23/09/05). -Tomografía de cerebro (13/10/01). -EEG (15/10/01). -ECG (01/07/05). Todo lo antes mencionado resultó ser normal. -Potenciales Evocados Visuales-(15/10/01): con prolongadas latencias de P100 a derecha (121 miliseg.) y significativa diferencia interocular (9,7 miliseg.). -RMN de cerebro (01/07/05) :en secuencia de STIR: incremento de la intensidad de la señal de nervio óptico a derecha. -Evaluación por Oftalmología y Campimetrias 12/10/01: para OD. agudeza visual 4/20 y escotoma central. Diagnóstico: -Neuritis óptica en el contexto de: enf. desmielinizante, enf. del tejido conectivo, trastorno de la coagulación. Proceso en estudio ??. Comentarios: La paciente debe realizarse al menos un estudio inmunocolageno mínimo, es decir: Factor reumatoideo (R. Reagan o P. de latex), FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Además de IgG anticardiolipinas y anticoagulante Lúpico y serologia para virus HIV I y II. Solicito: Serología para: -Factor Reumatoideo, FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. -IgG anticardiolipinas y anticoagulante Lúpico. - HIV I y II. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

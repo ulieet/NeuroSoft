@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005443_41ce",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2005-11-07|H:cfb447625b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_41ce.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2005-11-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "22 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "22 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9505215821/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "se solicita con carácter de URGENTE debe continuar con la terapia inmunomoduladora, con muy buena tolerancia es decir no ha desarrollado efectos adversos y eficacia pues no ha vuelto a padecer de brotes severos, ni requirió terapia supresora ni internaciones conservando su status neurológico funcional hasta la fecha; el objetivo de su administración sigue siendo disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral (los que se vienen cumpliendo desde su implementación hasta la fecha)\nPor lo cual se solicita Rebif: 3 jeringas prellenadas semanales, es decir 12 JERINGAS prellenadas (6 MUI.=22Mcgrs. c/u) /28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nSe trata de un fármaco aprobado por el ANMAT en Argentina y por la FDA de los EEUU., con esta precisa indicación",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 07 de noviembre de 2005. Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: se solicita con carácter de URGENTE debe continuar con la terapia inmunomoduladora, con muy buena tolerancia es decir no ha desarrollado efectos adversos y eficacia pues no ha vuelto a padecer de brotes severos, ni requirió terapia supresora ni internaciones conservando su status neurológico funcional hasta la fecha; el objetivo de su administración sigue siendo disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral (los que se vienen cumpliendo desde su implementación hasta la fecha). Por lo cual se solicita Rebif: 3 jeringas prellenadas semanales, es decir 12 JERINGAS prellenadas (6 MUI.=22Mcgrs. c/u) /28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Se trata de un fármaco aprobado por el ANMAT en Argentina y por la FDA de los EEUU., con esta precisa indicación. Bibliografía respaldatoria: (entre mucha otras) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Rev. Neurológica Argentina 2000; 25: 142-145. - Medicina 2001; 61:470-480. - EVIDENCE. Neurology 2002; 59: 1496-1506. Solicito: Rebif: Interferón B1ar: de 6 MUI.(22Mcgrs.) en jeringas prellenadas, 12 jeringas/28 días (un envase/28 días), para auto-aplicación 3 veces/semana (por ejemplo: lunes, miércoles y viernes) por vía subcutanea, única dosificación posible, en lo que a frecuencia se refiere. De no mediar intercurrencias por tiempo indeterminnado. (No existen genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_41ce.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2005-11-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "22 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "22 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9505215821/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "se solicita con carácter de URGENTE debe continuar con la terapia inmunomoduladora, con muy buena tolerancia es decir no ha desarrollado efectos adversos y eficacia pues no ha vuelto a padecer de brotes severos, ni requirió terapia supresora ni internaciones conservando su status neurológico funcional hasta la fecha; el objetivo de su administración sigue siendo disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral (los que se vienen cumpliendo desde su implementación hasta la fecha)\nPor lo cual se solicita Rebif: 3 jeringas prellenadas semanales, es decir 12 JERINGAS prellenadas (6 MUI.=22Mcgrs. c/u) /28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nSe trata de un fármaco aprobado por el ANMAT en Argentina y por la FDA de los EEUU., con esta precisa indicación",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 07 de noviembre de 2005. Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: se solicita con carácter de URGENTE debe continuar con la terapia inmunomoduladora, con muy buena tolerancia es decir no ha desarrollado efectos adversos y eficacia pues no ha vuelto a padecer de brotes severos, ni requirió terapia supresora ni internaciones conservando su status neurológico funcional hasta la fecha; el objetivo de su administración sigue siendo disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral (los que se vienen cumpliendo desde su implementación hasta la fecha). Por lo cual se solicita Rebif: 3 jeringas prellenadas semanales, es decir 12 JERINGAS prellenadas (6 MUI.=22Mcgrs. c/u) /28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Se trata de un fármaco aprobado por el ANMAT en Argentina y por la FDA de los EEUU., con esta precisa indicación. Bibliografía respaldatoria: (entre mucha otras) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Rev. Neurológica Argentina 2000; 25: 142-145. - Medicina 2001; 61:470-480. - EVIDENCE. Neurology 2002; 59: 1496-1506. Solicito: Rebif: Interferón B1ar: de 6 MUI.(22Mcgrs.) en jeringas prellenadas, 12 jeringas/28 días (un envase/28 días), para auto-aplicación 3 veces/semana (por ejemplo: lunes, miércoles y viernes) por vía subcutanea, única dosificación posible, en lo que a frecuencia se refiere. De no mediar intercurrencias por tiempo indeterminnado. (No existen genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

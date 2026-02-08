@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005446_f268",
+  "estado": "validada",
+  "dedup_key": "F:|DX:enfermedad desmielinizante del sistema nervioso central (oms:340). tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. comentarios: para presentar ante quién corresponda. atte. dr. vétere santiago a.|H:23104e69f9",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f268.doc"
+    },
+    "paciente": {
+      "nombre": "Berrueta, Nestor Amilcar",
+      "dni": null,
+      "fecha_nacimiento": "1939-10-16",
+      "obra_social": "IOMA- Co-seguro",
+      "nro_afiliado": "IOMA"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "comentario": "para presentar ante quién corresponda",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata. Apellido y Nombre: Berrueta, Nestor Amilcar Fecha de Nacimiento: 16/10/39 Dirección: Diagonal 74 Nº 3372 (entre 28 y 29), La Plata. Obra Social: IOMA- Co-seguro: SALUD PÚBLICA. nº de afiliado IOMA: 9505179955/00 Inicio de la afección: en el año 1982. Asistido en este servicio desde: enero de 2001. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral. Diagnóstico: Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f268.doc"
+    },
+    "paciente": {
+      "nombre": "Berrueta, Nestor Amilcar",
+      "dni": null,
+      "fecha_nacimiento": "1939-10-16",
+      "obra_social": "IOMA- Co-seguro",
+      "nro_afiliado": "IOMA"
+    },
+    "consulta": {
+      "fecha": null,
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad",
+      "comentario": "para presentar ante quién corresponda",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata. Apellido y Nombre: Berrueta, Nestor Amilcar Fecha de Nacimiento: 16/10/39 Dirección: Diagonal 74 Nº 3372 (entre 28 y 29), La Plata. Obra Social: IOMA- Co-seguro: SALUD PÚBLICA. nº de afiliado IOMA: 9505179955/00 Inicio de la afección: en el año 1982. Asistido en este servicio desde: enero de 2001. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, temblor de miembros, descenso de la agudeza visual, urgencia miccional, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo paraparético espástico a predominio derecho . -sensitivo superficial y propioceptivo homolateral. -atáxico cerebeloso axial y apendicular leve. -esfinteriano, de tipo vesical eferente leve. -fatiga y termosensibilidad. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -RMN de cerebro: múltiples imágenes de la sustancia blanca periventricular, cuerpo calloso, cerebelo y tronco cerebral. Diagnóstico: Enfermedad Desmielinizante del Sistema Nervioso Central (OMS:340). Tratamiento: sintomático, de los brotes ( inmunosupresión ) y kinesiológico. Comentarios: para presentar ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

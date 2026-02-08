@@ -1,0 +1,118 @@
+{
+  "id": "20260208_005447_3fad",
+  "estado": "validada",
+  "dedup_key": "DNI:26565077|F:2016-03-28|H:676fbc5f88",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_3fad.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2016-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en etapa final de evaluación diagnóstica, proceso más probable EM: OMS: 340; otros mucho menos probables: -colagenopatía con una forma de debut en SNC.?, SAF?. Solicito: -Laboratorios de: VDRL, Kptt, recuento plaquetas, HIV, enzimas musculares. -Laboratorio especial: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT)+ - Potenciales Evocados Visuales. Atte. Dr. Santiago A. Vétere.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-10-08",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 2 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias e hipoestesias de miembro inferior derecho hasta zona infra-mamaria, sin que se asociara a fallo motor según su relato, duró 2-3 meses y restituyó casi ad integrum; -(2°) diciembre 2015: repite episodio, sobre territorio similar a derecha desde zona inframamaria extendido x todo ese hemicuerpo, con sensación ardorosa- quemante y disestésica ante mínimo roce, que aún persiste aunque algo de menor magnitud\nA lo que asocia: fatiga, constipación pertinaz, infecciones urinarias a repetición\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral",
+      "antecedentes": "familiares: -madre y abuela materna: LLC; -hijo varón: Hemofilia A severa; -padre: Hemofilia A leve",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: entre otros, -Laboratorio rutina 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y pocos agujeros negros",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 28 de Marzo de 2016 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/2 y 3. s/ n°. La Plata. Teléfono: (0221) 15-6180643 / 491-0420 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: según refiere: -Hemofilia A; ansiedad; rosácea-acné/ forunculosis; túnel carpiano; cefaleas-cervicalgias; tabaquista –EPOC; alergia a picadura de abejas y avispas. Antecedentes familiares: -madre y abuela materna: LLC; -hijo varón: Hemofilia A severa; -padre: Hemofilia A leve. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 2 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias e hipoestesias de miembro inferior derecho hasta zona infra-mamaria, sin que se asociara a fallo motor según su relato, duró 2-3 meses y restituyó casi ad integrum; -(2°) diciembre 2015: repite episodio, sobre territorio similar a derecha desde zona inframamaria extendido x todo ese hemicuerpo, con sensación ardorosa- quemante y disestésica ante mínimo roce, que aún persiste aunque algo de menor magnitud. A lo que asocia: fatiga, constipación pertinaz, infecciones urinarias a repetición. Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral. Estudios realizados: entre otros, -Laboratorio rutina 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y pocos agujeros negros. Diagnóstico: paciente en etapa final de evaluación diagnóstica, proceso más probable EM: OMS: 340; otros mucho menos probables: -colagenopatía con una forma de debut en SNC.?, SAF?. Solicito: -Laboratorios de: VDRL, Kptt, recuento plaquetas, HIV, enzimas musculares. -Laboratorio especial: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT)+ - Potenciales Evocados Visuales. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_3fad.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2016-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en etapa final de evaluación diagnóstica, proceso más probable EM: OMS: 340; otros mucho menos probables: -colagenopatía con una forma de debut en SNC.?, SAF?. Solicito: -Laboratorios de: VDRL, Kptt, recuento plaquetas, HIV, enzimas musculares. -Laboratorio especial: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT)+ - Potenciales Evocados Visuales. Atte. Dr. Santiago A. Vétere.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-10-08",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 2 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias e hipoestesias de miembro inferior derecho hasta zona infra-mamaria, sin que se asociara a fallo motor según su relato, duró 2-3 meses y restituyó casi ad integrum; -(2°) diciembre 2015: repite episodio, sobre territorio similar a derecha desde zona inframamaria extendido x todo ese hemicuerpo, con sensación ardorosa- quemante y disestésica ante mínimo roce, que aún persiste aunque algo de menor magnitud\nA lo que asocia: fatiga, constipación pertinaz, infecciones urinarias a repetición\nDatos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral",
+      "antecedentes": "familiares: -madre y abuela materna: LLC; -hijo varón: Hemofilia A severa; -padre: Hemofilia A leve",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "realizados: entre otros, -Laboratorio rutina 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y pocos agujeros negros",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 28 de Marzo de 2016 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/2 y 3. s/ n°. La Plata. Teléfono: (0221) 15-6180643 / 491-0420 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: según refiere: -Hemofilia A; ansiedad; rosácea-acné/ forunculosis; túnel carpiano; cefaleas-cervicalgias; tabaquista –EPOC; alergia a picadura de abejas y avispas. Antecedentes familiares: -madre y abuela materna: LLC; -hijo varón: Hemofilia A severa; -padre: Hemofilia A leve. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 2 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias e hipoestesias de miembro inferior derecho hasta zona infra-mamaria, sin que se asociara a fallo motor según su relato, duró 2-3 meses y restituyó casi ad integrum; -(2°) diciembre 2015: repite episodio, sobre territorio similar a derecha desde zona inframamaria extendido x todo ese hemicuerpo, con sensación ardorosa- quemante y disestésica ante mínimo roce, que aún persiste aunque algo de menor magnitud. A lo que asocia: fatiga, constipación pertinaz, infecciones urinarias a repetición. Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral. Estudios realizados: entre otros, -Laboratorio rutina 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y pocos agujeros negros. Diagnóstico: paciente en etapa final de evaluación diagnóstica, proceso más probable EM: OMS: 340; otros mucho menos probables: -colagenopatía con una forma de debut en SNC.?, SAF?. Solicito: -Laboratorios de: VDRL, Kptt, recuento plaquetas, HIV, enzimas musculares. -Laboratorio especial: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT)+ - Potenciales Evocados Visuales. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

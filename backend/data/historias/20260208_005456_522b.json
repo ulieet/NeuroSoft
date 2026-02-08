@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005456_522b",
+  "estado": "validada",
+  "dedup_key": "DNI:28096836|F:2015-05-22|H:e1c5b1f532",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_522b.doc"
+    },
+    "paciente": {
+      "nombre": "Campo, Natalia Agustina",
+      "dni": "28096836",
+      "fecha_nacimiento": "1980-08-13",
+      "obra_social": "no posee",
+      "nro_afiliado": "-------------"
+    },
+    "consulta": {
+      "fecha": "2015-05-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-12-01",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2015-04-13",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Nº de afiliado: ------------- Asistido en este Centro desde: 31/03/15 Inicio de según refiere: podría ser durante año 2013 Síntomas principales: paciente que desarrolló múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, que se presentaron en sucesivos episodios con restitución incompleta, como: 1° durante el año 2013: deterioro motor de miembro inferior derecho, de instalación brusca y que determinó episodios de caída 2° desde 2014: agrava el fallo motor crural derecho y desarrolla fallos del equilibrio, asociados a nauseas y vómitos 3° Más recientemente, durante el año 2015, fallos en esfera urinaria (disuria, incontinencia, tenesmo vesical) y constipación pertinaz; a estos síntomas se asocian: fatiga y termo-sensibilidad al calor, parestesias e hipoestesias de miembros, diplopía, vértigo episódico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)\nLos hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm\nMédula dorsal: s/p",
+      "comentario": "la paciente debe iniciar URGENTE pues su proceso así lo exige, con la terapia Inmunomoduladora de: -Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg\nSC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones y la actividad y carga lesional en la RMN\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)\nLos hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm\nMédula dorsal: s/p",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 22 de Mayo de 2015. Apellido y nombre: Campo, Natalia Agustina DNI: 28.096.836 Fecha de nacimiento: 13/08/80 Dirección: calle Marconi nº 1072 –Trenque Lauquen- (CP. 6400) Teléfono: ( 02392) -15-581867/ 579618 Obra Social: no posee. Nº de afiliado: ------------- Asistido en este Centro desde: 31/03/15 Inicio de síntomas: según refiere: podría ser durante año 2013 Síntomas principales: paciente que desarrolló múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, que se presentaron en sucesivos episodios con restitución incompleta, como: 1° durante el año 2013: deterioro motor de miembro inferior derecho, de instalación brusca y que determinó episodios de caída 2° desde 2014: agrava el fallo motor crural derecho y desarrolla fallos del equilibrio, asociados a nauseas y vómitos 3° Más recientemente, durante el año 2015, fallos en esfera urinaria (disuria, incontinencia, tenesmo vesical) y constipación pertinaz; a estos síntomas se asocian: fatiga y termo-sensibilidad al calor, parestesias e hipoestesias de miembros, diplopía, vértigo episódico. Rasgos semiológicos: Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd. IV(-). Los hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm. Médula dorsal: s/p. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentario: la paciente debe iniciar URGENTE pues su proceso así lo exige, con la terapia Inmunomoduladora de: -Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg. SC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones y la actividad y carga lesional en la RMN. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: . - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Se trata de un medicamento de provisión gratuita de acuerdo lo establece expresamente la ley provincial n° 13.356 en su Capítulo I articulo1º, publicado en el Boletín Oficial página 6.214, para la provincia de Bs. As., de fecha 26 de Julio de 2005 (Decreto 1.664). Solicitud Urgente: inicio de: -ESCADRA: -Copolimero-I: acetato de Glatiramer: jeringas prellenadas de 20 mg. c/u, para aplicación diaria subcutánea: -1 jeringa prellenada de 20 mg./día = 28 jeringas/28 días=1 envase. Tratamiento prolongado. Ruego se respete la precisa indicación del médico tratante. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_522b.doc"
+    },
+    "paciente": {
+      "nombre": "Campo, Natalia Agustina",
+      "dni": "28096836",
+      "fecha_nacimiento": "1980-08-13",
+      "obra_social": "no posee",
+      "nro_afiliado": "-------------"
+    },
+    "consulta": {
+      "fecha": "2015-05-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-12-01",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2015-04-13",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Nº de afiliado: ------------- Asistido en este Centro desde: 31/03/15 Inicio de según refiere: podría ser durante año 2013 Síntomas principales: paciente que desarrolló múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, que se presentaron en sucesivos episodios con restitución incompleta, como: 1° durante el año 2013: deterioro motor de miembro inferior derecho, de instalación brusca y que determinó episodios de caída 2° desde 2014: agrava el fallo motor crural derecho y desarrolla fallos del equilibrio, asociados a nauseas y vómitos 3° Más recientemente, durante el año 2015, fallos en esfera urinaria (disuria, incontinencia, tenesmo vesical) y constipación pertinaz; a estos síntomas se asocian: fatiga y termo-sensibilidad al calor, parestesias e hipoestesias de miembros, diplopía, vértigo episódico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)\nLos hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm\nMédula dorsal: s/p",
+      "comentario": "la paciente debe iniciar URGENTE pues su proceso así lo exige, con la terapia Inmunomoduladora de: -Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg\nSC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones y la actividad y carga lesional en la RMN\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd\nIV(-)\nLos hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm\nMédula dorsal: s/p",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 22 de Mayo de 2015. Apellido y nombre: Campo, Natalia Agustina DNI: 28.096.836 Fecha de nacimiento: 13/08/80 Dirección: calle Marconi nº 1072 –Trenque Lauquen- (CP. 6400) Teléfono: ( 02392) -15-581867/ 579618 Obra Social: no posee. Nº de afiliado: ------------- Asistido en este Centro desde: 31/03/15 Inicio de síntomas: según refiere: podría ser durante año 2013 Síntomas principales: paciente que desarrolló múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, que se presentaron en sucesivos episodios con restitución incompleta, como: 1° durante el año 2013: deterioro motor de miembro inferior derecho, de instalación brusca y que determinó episodios de caída 2° desde 2014: agrava el fallo motor crural derecho y desarrolla fallos del equilibrio, asociados a nauseas y vómitos 3° Más recientemente, durante el año 2015, fallos en esfera urinaria (disuria, incontinencia, tenesmo vesical) y constipación pertinaz; a estos síntomas se asocian: fatiga y termo-sensibilidad al calor, parestesias e hipoestesias de miembros, diplopía, vértigo episódico. Rasgos semiológicos: Agrupación sindrómica: - elementos bipiramidalismo, predominio neto derecho-crural. - sensitivo superficial y profunda congruente. - esfinteriano mixto vésico (aferente)- rectal. - otros: vértigo, oculomotores, Estudios realizados: Rutinas de laboratorio gral., recuento de plaquetas, VDRL, Serología para VIH 1 y 2: (1/12/14, 21/01/15, 06/04/15): s/p. o negativo -Laboratorio especial (21/01/15, 07/04/15): Prueba del Látex AR, FAN, anti-ADN Complemento C3 y C4:, SSa (Ro), SSb (La), ANCA-P y C, Todo lo anterior es: sin particularidades o Negativo. - Examen de Liquido cefalorraquídeo 06/04/15: Dosaje de IgG en LCR: 6,30 mg./dl (VN≤ 4, 5) + Bandas Oligoclonales de IgG tipo II (presencia en LCR y ausentes en suero) por Isoelectroenfoque.+ Índice de IgG en LCR: 1,32 (VN≤ 0,7). -RMN de cerebro 17/12/14 y 13/04/15: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en sectores subcorticales, todas las mencionadas sin realce con el Gd. IV(-). Los hallazgos concuerdan con proceso desmielinizante: EM . -RMN de médula cervical y dorsal 13/04/15: imagen focal en topografía intramedular cervical de C6-C7, de unos 15 mm. Médula dorsal: s/p. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentario: la paciente debe iniciar URGENTE pues su proceso así lo exige, con la terapia Inmunomoduladora de: -Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg. SC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones y la actividad y carga lesional en la RMN. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: . - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Se trata de un medicamento de provisión gratuita de acuerdo lo establece expresamente la ley provincial n° 13.356 en su Capítulo I articulo1º, publicado en el Boletín Oficial página 6.214, para la provincia de Bs. As., de fecha 26 de Julio de 2005 (Decreto 1.664). Solicitud Urgente: inicio de: -ESCADRA: -Copolimero-I: acetato de Glatiramer: jeringas prellenadas de 20 mg. c/u, para aplicación diaria subcutánea: -1 jeringa prellenada de 20 mg./día = 28 jeringas/28 días=1 envase. Tratamiento prolongado. Ruego se respete la precisa indicación del médico tratante. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

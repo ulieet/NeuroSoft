@@ -1,0 +1,166 @@
+{
+  "id": "20260208_005443_7ce7",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2004-05-17|H:5c5a1bbe92",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_7ce7.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": null,
+      "nro_afiliado": "--------------------------"
+    },
+    "consulta": {
+      "fecha": "2004-05-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "el paciente debe iniciar ala brevedad con la terapia inmunomoduladora cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, la misma debe aplicarse sin interrupción pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nSe trata de fármacos aprobados por la FDA de los EEUU y el ANMAT de la Argentina con esta precisa indicación y al cual los pacientes con Obras Sociales acceden por estar incluidos en el PMO con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": "Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde cada uno figura expresamente; por lo que considero una gran injusticia social dejar librado a la natural de esta enfermedad discapacitante a este paciente"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de Mayo de 2004. Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. TEL. (02241) -424-998. Obra Social: --------------------------------- Nº de afiliado:-------------------------- Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: el paciente debe iniciar ala brevedad con la terapia inmunomoduladora cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, la misma debe aplicarse sin interrupción pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Se trata de fármacos aprobados por la FDA de los EEUU y el ANMAT de la Argentina con esta precisa indicación y al cual los pacientes con Obras Sociales acceden por estar incluidos en el PMO con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde cada uno figura expresamente; por lo que considero una gran injusticia social dejar librado a la evolución natural de esta enfermedad discapacitante a este paciente. Adjunto bibliografía mínima en español y al alcance inicialmente, si es necesario profundizar en la misma desde ya cuente con ella de acuerdo al fármaco otorgado de los tres posibles. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Por lo expuesto: Solicito: -Inteferón Beta 1b (Betaferon): ampollas de 8 MUI/ x 15 ampollas./mes= 1 envase /mes. ó - Interferón beta 1ª-r (REBIF) ampollas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 amp./semana) = 1 envase por 12 ampollas cada 28 días. ó -Copolimero I (Acetato de Glatiramer) Copaxone ampollas de 20 mg. c/u, 1 envase por 28 ampollas para 28 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_7ce7.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": null,
+      "nro_afiliado": "--------------------------"
+    },
+    "consulta": {
+      "fecha": "2004-05-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "el paciente debe iniciar ala brevedad con la terapia inmunomoduladora cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, la misma debe aplicarse sin interrupción pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nSe trata de fármacos aprobados por la FDA de los EEUU y el ANMAT de la Argentina con esta precisa indicación y al cual los pacientes con Obras Sociales acceden por estar incluidos en el PMO con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": "Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde cada uno figura expresamente; por lo que considero una gran injusticia social dejar librado a la natural de esta enfermedad discapacitante a este paciente"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de Mayo de 2004. Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. TEL. (02241) -424-998. Obra Social: --------------------------------- Nº de afiliado:-------------------------- Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: el paciente debe iniciar ala brevedad con la terapia inmunomoduladora cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, la misma debe aplicarse sin interrupción pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Se trata de fármacos aprobados por la FDA de los EEUU y el ANMAT de la Argentina con esta precisa indicación y al cual los pacientes con Obras Sociales acceden por estar incluidos en el PMO con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde cada uno figura expresamente; por lo que considero una gran injusticia social dejar librado a la evolución natural de esta enfermedad discapacitante a este paciente. Adjunto bibliografía mínima en español y al alcance inicialmente, si es necesario profundizar en la misma desde ya cuente con ella de acuerdo al fármaco otorgado de los tres posibles. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Por lo expuesto: Solicito: -Inteferón Beta 1b (Betaferon): ampollas de 8 MUI/ x 15 ampollas./mes= 1 envase /mes. ó - Interferón beta 1ª-r (REBIF) ampollas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 amp./semana) = 1 envase por 12 ampollas cada 28 días. ó -Copolimero I (Acetato de Glatiramer) Copaxone ampollas de 20 mg. c/u, 1 envase por 28 ampollas para 28 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

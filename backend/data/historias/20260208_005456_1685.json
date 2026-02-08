@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005456_1685",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2007-12-27|H:ddee837784",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_1685.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "Bancario",
+      "nro_afiliado": "266522/02"
+    },
+    "consulta": {
+      "fecha": "2007-12-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2008-06-30"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "desde la implentación del Copaxone en diciembre de 1997, ha disminuido el número y la gravedad de las recaídas, así como las internaciones y la necesidad de inmunosupresores más agresivos, no ha incrementado la carga ni la actividad lesional en la Resonancia de cerebro y médula cervical\nPor lo antes expuesto debe proseguir con Copaxone: 1 jeringa de 20 mg. por día, por vía S.C\nDebido a que los envases contienen 28 jeringas cada uno, y que debe aplicarse diariamente, algunas recetas serán confeccionadas dentro del mismo mes (cada 28 días) lo que garantiza una provisión tal que permita su aplicación sin interrupción alguna (única dosificación posible probada para este producto)\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nCabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de muchos años",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx. de tórax\nEEG\nAnálisis del LCR\nPotenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. -07/11/00-16/05/05-12/01/11 entre otras muchas oportunidades: -RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 27 de diciembre de 2007. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: Bancario Nº de afiliado: 266522/02 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. Análisis del LCR. Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. -07/11/00-16/05/05-12/01/11 entre otras muchas oportunidades: -RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con COPAXONE: Copolimero-I, a una dosis de 20 mg. por día, por vía subcutánea, todos los días. Comentarios: desde la implentación del Copaxone en diciembre de 1997, ha disminuido el número y la gravedad de las recaídas, así como las internaciones y la necesidad de inmunosupresores más agresivos, no ha incrementado la carga ni la actividad lesional en la Resonancia de cerebro y médula cervical. Por lo antes expuesto debe proseguir con Copaxone: 1 jeringa de 20 mg. por día, por vía S.C. Debido a que los envases contienen 28 jeringas cada uno, y que debe aplicarse diariamente, algunas recetas serán confeccionadas dentro del mismo mes (cada 28 días) lo que garantiza una provisión tal que permita su aplicación sin interrupción alguna (única dosificación posible probada para este producto). Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Cabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de muchos años. Le adjunto a continuación la bibliografía respaldatoria (mínima): - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Solicito: Copaxone jeringas prellenadas de 20 mg. cada una, para aplicación diaria subcutánea, 1 envase por 28 jeringas: 1 envase cada 28 días (30/31 jeringas /mes: aproximadamente 7 envases/semestre) (período: del 1º de enero de 2008 al 30 de junio de 2008). Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_1685.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "Bancario",
+      "nro_afiliado": "266522/02"
+    },
+    "consulta": {
+      "fecha": "2007-12-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2008-06-30"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "desde la implentación del Copaxone en diciembre de 1997, ha disminuido el número y la gravedad de las recaídas, así como las internaciones y la necesidad de inmunosupresores más agresivos, no ha incrementado la carga ni la actividad lesional en la Resonancia de cerebro y médula cervical\nPor lo antes expuesto debe proseguir con Copaxone: 1 jeringa de 20 mg. por día, por vía S.C\nDebido a que los envases contienen 28 jeringas cada uno, y que debe aplicarse diariamente, algunas recetas serán confeccionadas dentro del mismo mes (cada 28 días) lo que garantiza una provisión tal que permita su aplicación sin interrupción alguna (única dosificación posible probada para este producto)\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nCabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de muchos años",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx. de tórax\nEEG\nAnálisis del LCR\nPotenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. -07/11/00-16/05/05-12/01/11 entre otras muchas oportunidades: -RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 27 de diciembre de 2007. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: Bancario Nº de afiliado: 266522/02 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. Análisis del LCR. Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. -07/11/00-16/05/05-12/01/11 entre otras muchas oportunidades: -RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con COPAXONE: Copolimero-I, a una dosis de 20 mg. por día, por vía subcutánea, todos los días. Comentarios: desde la implentación del Copaxone en diciembre de 1997, ha disminuido el número y la gravedad de las recaídas, así como las internaciones y la necesidad de inmunosupresores más agresivos, no ha incrementado la carga ni la actividad lesional en la Resonancia de cerebro y médula cervical. Por lo antes expuesto debe proseguir con Copaxone: 1 jeringa de 20 mg. por día, por vía S.C. Debido a que los envases contienen 28 jeringas cada uno, y que debe aplicarse diariamente, algunas recetas serán confeccionadas dentro del mismo mes (cada 28 días) lo que garantiza una provisión tal que permita su aplicación sin interrupción alguna (única dosificación posible probada para este producto). Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Cabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de muchos años. Le adjunto a continuación la bibliografía respaldatoria (mínima): - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Solicito: Copaxone jeringas prellenadas de 20 mg. cada una, para aplicación diaria subcutánea, 1 envase por 28 jeringas: 1 envase cada 28 días (30/31 jeringas /mes: aproximadamente 7 envases/semestre) (período: del 1º de enero de 2008 al 30 de junio de 2008). Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

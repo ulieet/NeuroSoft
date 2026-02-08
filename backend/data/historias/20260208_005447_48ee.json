@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005447_48ee",
+  "estado": "validada",
+  "dedup_key": "DNI:26565077|F:2016-03-28|H:d98d1d4e7d",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_48ee.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2016-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-10-08",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio\nFatiga creciente\nInfecciones urinarias a repetición+ constipación pertinaz- Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales",
+      "antecedentes": "Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "NO REQUIERE DE NINGÚN OTRO ESTUDIO PARA CONFIRMAR DIAGNÓSTICO, CUMPLE CRITERIOS SOBRADAMENTE CLINICOS, RADIOLÓGICOS Y DE LABORATIORIO DE DESCARTE\nComentario: la paciente debe iniciar a la menor brevedad, teniendo presente además el grado de ACTIVIDAD LESIONAL actual, URGENTE con la terapia inmunomoduladora: Interferón Beta 1a-recombinante de 12 MUI 3 veces/semana en jeringas prellenadas: -Blastoferón, por Vía SC.\nEl objetivo de Blastoferón de 12 MUI es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales)\nEs un medicamento aprobado por el ANMAT de la Argentina, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 28 de Marzo de 2016 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/ 2y 3 s/n° 427. La Plata. Teléfono: (0221) 491-0420/ 15- 6180643 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: -Portadora de Hemofilia A (dosaje de F VIII: 30%). Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ Antecedentes familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio. Fatiga creciente. Infecciones urinarias a repetición+ constipación pertinaz- Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral+ elementos esfinterianos vesico-rectales. Estudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg. Diagnóstico: Esclerosis Múltiple a Recaídas en actividad actual (OMS: 340). Nota: NO REQUIERE DE NINGÚN OTRO ESTUDIO PARA CONFIRMAR DIAGNÓSTICO, CUMPLE CRITERIOS SOBRADAMENTE CLINICOS, RADIOLÓGICOS Y DE LABORATIORIO DE DESCARTE. Comentario: la paciente debe iniciar a la menor brevedad, teniendo presente además el grado de ACTIVIDAD LESIONAL actual, URGENTE con la terapia inmunomoduladora: Interferón Beta 1a-recombinante de 12 MUI 3 veces/semana en jeringas prellenadas: -Blastoferón, por Vía SC.. El objetivo de Blastoferón de 12 MUI es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Es un medicamento aprobado por el ANMAT de la Argentina, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: URGENTE: -Blastoferón: -Interferón beta 1ª-r: Jeringas Prellenadas de 12 MUI (44Mcgrs.) c/u., es decir para 3 aplicaciones/semana = 12 jeringas prellenadas para 12 aplicaciones = 1 envase/28dias. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. V",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_48ee.doc"
+    },
+    "paciente": {
+      "nombre": "Boccaleri, Paola Andrea",
+      "dni": "26565077",
+      "fecha_nacimiento": "1978-06-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K265650774/00"
+    },
+    "consulta": {
+      "fecha": "2016-03-28",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-10-08",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio\nFatiga creciente\nInfecciones urinarias a repetición+ constipación pertinaz- Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R\nHoffman bilateral+ elementos esfinterianos vesico-rectales",
+      "antecedentes": "Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "NO REQUIERE DE NINGÚN OTRO ESTUDIO PARA CONFIRMAR DIAGNÓSTICO, CUMPLE CRITERIOS SOBRADAMENTE CLINICOS, RADIOLÓGICOS Y DE LABORATIORIO DE DESCARTE\nComentario: la paciente debe iniciar a la menor brevedad, teniendo presente además el grado de ACTIVIDAD LESIONAL actual, URGENTE con la terapia inmunomoduladora: Interferón Beta 1a-recombinante de 12 MUI 3 veces/semana en jeringas prellenadas: -Blastoferón, por Vía SC.\nEl objetivo de Blastoferón de 12 MUI es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales)\nEs un medicamento aprobado por el ANMAT de la Argentina, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA. La Plata, 28 de Marzo de 2016 Apellido y nombre: Boccaleri, Paola Andrea. DNI: 26.565.077 Fecha de Nacimiento: 23/06/78 Dirección: calle 650 e/ 2y 3 s/n° 427. La Plata. Teléfono: (0221) 491-0420/ 15- 6180643 Obra Social: IOMA nº de afiliado: K265650774/00 Asistida desde: 29/01/16 Antecedente personales: -Portadora de Hemofilia A (dosaje de F VIII: 30%). Tabaquismo+ Epoc+ Tunel carpiano bilateral con cirugía derecha+ Rosácea, forunculosis+ Alergia abejas+ Cefalea, cervicalgia+ ansiedad+ Antecedentes familiares: padre e hijo varón hemofilia A. -Madre y abuela materna: LLC. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas en un término de algo más de 3 años, compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2013: parestesias con hipoestesias, desde zona inframamaria derecha hasta miembro inferior derecho que se asoció con ciertas zonas de hiperestesias quemantes, duró meses y restituyó casi ad integrum, por lo que fue minimizado y mal interpretado; -(2°) diciembre 2015: repite esta vez episodio similares características al que agrega mínimo componente parético y de equilibrio. Fatiga creciente. Infecciones urinarias a repetición+ constipación pertinaz- Datos semiológicos: Romberg + hemihipoestesia desde T5-6 a derecha + R. Hoffman bilateral+ elementos esfinterianos vesico-rectales. Estudios realizados: entre otros: -Laboratorio rutina - 08/10/15: hemograma, hepatograma y lipidograma completos, recuento plaquetas, glucemia, creatinina, urea, Tsh y T4 L, orina completa (hemoglobinuria+). -Dosaje de F VIII x hematología 05/03/15: 28%. -Laboratorio especial - 10/02/16: FR, FAN, C3 y C4, Anca-P y C, SSa/Ro y SSb/La; dosaje de homocisteina, IgG e IgM anticardiolipinas y anti-B2-Glicoproteína, anti-Coagulante Lúpico (DRVVT), VDRL, Sifilis TP, Kptt, recuento plaquetas, HIV 1 y 2, enzimas musculares (CPK, LDh). -Rx de columna cervical F y P y dorso-lumbar 30/04/13: pinzamientos C5-C6 y L5-S1. rectificación c. cervical. -RMN de médula cervical y dorsal 18/12/15,: imágenes focales en la médula espinal dorsal T3-T4 y T5-T6 con discreto realce con Gd.IV (+) que se observan en cortes axiales medular más distales, en la última topografía mencionada. -RMN de cerebro 06/01/16: se observan múltiples imágenes focales cerebrales en la sustancia blanca, a predominio periventriculares bilaterales pericallosas ( n°≥ 25, difícil conteo por coalescencia); con varias ( n°≥ 7) imágenes activas captando Gd IV(+), incluyendo en nódulo y con la típica figura de anillo: placas en ACTIVIDAD actual, algunas en subcortex y unos pocos agujeros negros. - Potenciales Evocados Visuales -02/03/16: P100: OD:113 miliseg; OI: 108 miliseg. Diagnóstico: Esclerosis Múltiple a Recaídas en actividad actual (OMS: 340). Nota: NO REQUIERE DE NINGÚN OTRO ESTUDIO PARA CONFIRMAR DIAGNÓSTICO, CUMPLE CRITERIOS SOBRADAMENTE CLINICOS, RADIOLÓGICOS Y DE LABORATIORIO DE DESCARTE. Comentario: la paciente debe iniciar a la menor brevedad, teniendo presente además el grado de ACTIVIDAD LESIONAL actual, URGENTE con la terapia inmunomoduladora: Interferón Beta 1a-recombinante de 12 MUI 3 veces/semana en jeringas prellenadas: -Blastoferón, por Vía SC.. El objetivo de Blastoferón de 12 MUI es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Es un medicamento aprobado por el ANMAT de la Argentina, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: URGENTE: -Blastoferón: -Interferón beta 1ª-r: Jeringas Prellenadas de 12 MUI (44Mcgrs.) c/u., es decir para 3 aplicaciones/semana = 12 jeringas prellenadas para 12 aplicaciones = 1 envase/28dias. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. V",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

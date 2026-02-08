@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005446_c7c0",
+  "estado": "validada",
+  "dedup_key": "F:2004-01-05|DX:esclerosis múltiple|H:edc702ccc4",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_c7c0.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSDIPP",
+      "nro_afiliado": "17137/00"
+    },
+    "consulta": {
+      "fecha": "2004-01-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga\nEn el mes de Agosto del año pasado desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), lo obliga al empleo de apoyo unilateral(bastón), no le permite desplazarse más de unos pocos metros sin descanso; además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor)",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "comentario": "Debe realizar kinesiología, para rehabilitar equilibrio, marcha y funcionalidad de miembros, que debido a la dificultad en la deambulación, lo obliga al empleo de apoyo unilateral (bastón), no le permite desplazarse más de unos pocos metros sin descanso",
+      "estudios": "relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 05 de enero de 2004. Nombre y apellido: Luis Berri. Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Obra Social: OSDIPP. Nº de afiliado: 17137/00 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga. En el mes de Agosto del año pasado desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), lo obliga al empleo de apoyo unilateral(bastón), no le permite desplazarse más de unos pocos metros sin descanso; además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor). Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq. Estudios relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones. Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: Debe realizar kinesiología, para rehabilitar equilibrio, marcha y funcionalidad de miembros, que debido a la dificultad en la deambulación, lo obliga al empleo de apoyo unilateral (bastón), no le permite desplazarse más de unos pocos metros sin descanso. Solicito: Diez sesiones de kinesiología (en domicilio, debido a la creciente dificultad para acceder a lugares públicos). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_c7c0.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSDIPP",
+      "nro_afiliado": "17137/00"
+    },
+    "consulta": {
+      "fecha": "2004-01-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga\nEn el mes de Agosto del año pasado desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), lo obliga al empleo de apoyo unilateral(bastón), no le permite desplazarse más de unos pocos metros sin descanso; además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor)",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "comentario": "Debe realizar kinesiología, para rehabilitar equilibrio, marcha y funcionalidad de miembros, que debido a la dificultad en la deambulación, lo obliga al empleo de apoyo unilateral (bastón), no le permite desplazarse más de unos pocos metros sin descanso",
+      "estudios": "relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 05 de enero de 2004. Nombre y apellido: Luis Berri. Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Obra Social: OSDIPP. Nº de afiliado: 17137/00 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga. En el mes de Agosto del año pasado desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), lo obliga al empleo de apoyo unilateral(bastón), no le permite desplazarse más de unos pocos metros sin descanso; además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor). Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq. Estudios relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones. Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: Debe realizar kinesiología, para rehabilitar equilibrio, marcha y funcionalidad de miembros, que debido a la dificultad en la deambulación, lo obliga al empleo de apoyo unilateral (bastón), no le permite desplazarse más de unos pocos metros sin descanso. Solicito: Diez sesiones de kinesiología (en domicilio, debido a la creciente dificultad para acceder a lugares públicos). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

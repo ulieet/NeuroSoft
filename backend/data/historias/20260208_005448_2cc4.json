@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005448_2cc4",
+  "estado": "validada",
+  "dedup_key": "F:2006-03-09|DX:esclerosis múltiple|H:a044855d8f",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_2cc4.doc"
+    },
+    "paciente": {
+      "nombre": "Bollon, Daniela Paola",
+      "dni": null,
+      "fecha_nacimiento": "1974-11-22",
+      "obra_social": "I.O.M.A",
+      "nro_afiliado": "9524167255/00"
+    },
+    "consulta": {
+      "fecha": "2006-03-09",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "agrupacion_sindromica": "Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un distímico\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "comentario": "la paciente debe continuar sin interrupción alguna, con la terapia inmunomoduladora con Copaxone (Copolímero I: Acetato de Glatiramer) con el objetivo de disminuír el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más onerosos y riesgosos, así como las internaciones y la carga lesional en la RMN; hechos que se vienen cumpliendo desde su implementación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nCabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de varios años",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nSerología para HIV (negativo)\nInmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00 y 02/05/02): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales mostrarón actividad, tronco cerebral (en el 1º de los estudios mencionados), pedúnculo cerebeloso superior derecho, los medios, el bulbo, los hemisferios cerebelosos y el pedúnculo cerebral izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 09 de marzo de 2006. Nombre y apellido: Bollon, Daniela Paola. Fecha de nacimiento: 22/11/74 Peso: 55 kg. Dirección: 55 Nº 611, La Plata. Teléfono: 423-4528 Talla: 161 cm Obra Social: I.O.M.A. nº de afiliado: 9524167255/00 Inicio de la afección: diciembre de 1999. Asistido en este servicio desde: noviembre de 2000. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. Serología para HIV (negativo). Inmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00 y 02/05/02): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales mostrarón actividad, tronco cerebral (en el 1º de los estudios mencionados), pedúnculo cerebeloso superior derecho, los medios, el bulbo, los hemisferios cerebelosos y el pedúnculo cerebral izquierdo. Diagnóstico: Esclerosis Múltiple definida, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: sintomático- de los brotes ( inmunosupresión )-de rehabilitación e inmunomodulador con Copaxone. Comentarios: la paciente debe continuar sin interrupción alguna, con la terapia inmunomoduladora con Copaxone (Copolímero I: Acetato de Glatiramer) con el objetivo de disminuír el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más onerosos y riesgosos, así como las internaciones y la carga lesional en la RMN; hechos que se vienen cumpliendo desde su implementación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Cabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de varios años. Le adjunto a continuación la bibliografía respaldatoria (mínima): - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copaxone figura expresamente. Solicito: Copolimero-I: Copaxone jeringas prellenadas de 20 mg. c/u, para aplicación subcutánea: 1 jeringa./día= 28 jeringas/28 días=1 envase. No existen otros genéricos, por lo que no puede ser cambiado ni reemplazado por otro medicamento que el Copaxone, solicito se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_2cc4.doc"
+    },
+    "paciente": {
+      "nombre": "Bollon, Daniela Paola",
+      "dni": null,
+      "fecha_nacimiento": "1974-11-22",
+      "obra_social": "I.O.M.A",
+      "nro_afiliado": "9524167255/00"
+    },
+    "consulta": {
+      "fecha": "2006-03-09",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-11-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "agrupacion_sindromica": "Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un distímico\nRasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico",
+      "comentario": "la paciente debe continuar sin interrupción alguna, con la terapia inmunomoduladora con Copaxone (Copolímero I: Acetato de Glatiramer) con el objetivo de disminuír el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más onerosos y riesgosos, así como las internaciones y la carga lesional en la RMN; hechos que se vienen cumpliendo desde su implementación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nCabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de varios años",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nSerología para HIV (negativo)\nInmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00 y 02/05/02): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales mostrarón actividad, tronco cerebral (en el 1º de los estudios mencionados), pedúnculo cerebeloso superior derecho, los medios, el bulbo, los hemisferios cerebelosos y el pedúnculo cerebral izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 09 de marzo de 2006. Nombre y apellido: Bollon, Daniela Paola. Fecha de nacimiento: 22/11/74 Peso: 55 kg. Dirección: 55 Nº 611, La Plata. Teléfono: 423-4528 Talla: 161 cm Obra Social: I.O.M.A. nº de afiliado: 9524167255/00 Inicio de la afección: diciembre de 1999. Asistido en este servicio desde: noviembre de 2000. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, fallas leves en los esfínteres con episódica urgencia urinaria y constipación creciente, fatiga creciente y termosensibilidad; todo lo antes mencionado asociado a un síndrome distímico. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural e izquierdo. - sensitivo superficial-propioceptivo congruente. - esfinteriano vesical eferente leve. - distímico. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. Serología para HIV (negativo). Inmunocolagenograma completo (negativo). -Potenciales evocados trimodales (22/11/00): con prolongación de las latencias en visuales, auditivos y somatosensitivos. -RMN de cerebro (04/11/00 y 02/05/02): múltiples imágenes de la sustancia blanca periventriculares, algunas de las cuales mostrarón actividad, tronco cerebral (en el 1º de los estudios mencionados), pedúnculo cerebeloso superior derecho, los medios, el bulbo, los hemisferios cerebelosos y el pedúnculo cerebral izquierdo. Diagnóstico: Esclerosis Múltiple definida, variante evolutiva a recaídas y remisiones(OMS:340). Tratamiento: sintomático- de los brotes ( inmunosupresión )-de rehabilitación e inmunomodulador con Copaxone. Comentarios: la paciente debe continuar sin interrupción alguna, con la terapia inmunomoduladora con Copaxone (Copolímero I: Acetato de Glatiramer) con el objetivo de disminuír el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más onerosos y riesgosos, así como las internaciones y la carga lesional en la RMN; hechos que se vienen cumpliendo desde su implementación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Cabe aclarar que se trata de un medicamento aprobado por la FDA de los EEUU. y el ANMAT de la Argentina con esta precisa y clara indicación, y de una vasta experiencia nacional e internacional de varios años. Le adjunto a continuación la bibliografía respaldatoria (mínima): - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copaxone figura expresamente. Solicito: Copolimero-I: Copaxone jeringas prellenadas de 20 mg. c/u, para aplicación subcutánea: 1 jeringa./día= 28 jeringas/28 días=1 envase. No existen otros genéricos, por lo que no puede ser cambiado ni reemplazado por otro medicamento que el Copaxone, solicito se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

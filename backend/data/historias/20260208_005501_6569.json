@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005501_6569",
+  "estado": "validada",
+  "dedup_key": "DNI:34983776|F:2019-05-21|H:a9ad286920",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005501_6569.doc"
+    },
+    "paciente": {
+      "nombre": "Meneses, Yesica Eliana Jaquelín",
+      "dni": "34983776",
+      "fecha_nacimiento": "1989-01-24",
+      "obra_social": "INCLUIR SALUD (PROFE)",
+      "nro_afiliado": "405956599600"
+    },
+    "consulta": {
+      "fecha": "2019-05-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2018-08-07",
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2017-12-29",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-09-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Asistida en este hospital desde: 07/08/18 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.\nEn el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra\nN\nDeri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos\nOtras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc\nEDSS: 6.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "comentario": "Debe continuar Urgente la terapia inmunomoduladora, con Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, - es una terapia específica para Esclerosis Múltiple a Recaídas y Remisiones, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia, ya viene recibiendo desde último trimestre de 2018 – Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años\nTodo lo anterior hace más que justificable el uso inmediato continuado de Dimetil Fumarato: Dimeful",
+      "estudios": "realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos\nEn los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd\nIv (-)\nResto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de mayo de 2019 Apellido y nombre: Meneses, Yesica Eliana Jaquelín. DNI: 34.983.776 Fecha de Nacimiento: 24/01/89 Dirección: Tunes nº 341. Florencio Varela. Teléfono: (011) 4275-1300 Obra Social: INCLUIR SALUD (PROFE) Nº de afiliado: 405956599600 Inicio de la afección: año 2002 aproximadamente. Asistida en este hospital desde: 07/08/18 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.. En el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra. N. Deri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos. Otras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc. EDSS: 6.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga. Estudios realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos . En los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd. Iv (-). Resto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: Debe continuar Urgente la terapia inmunomoduladora, con Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, - es una terapia específica para Esclerosis Múltiple a Recaídas y Remisiones, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia, ya viene recibiendo desde último trimestre de 2018 – Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años. Todo lo anterior hace más que justificable el uso inmediato continuado de Dimetil Fumarato: Dimeful. Bibliografía respaldatoria míinima: estudios como DEFINE, CONFIRM,, etc. Solicito: Urgente continuidad: -Dimeful (Dimetilfumarato) cápsulas de 240 mg dos veces/día oral: 1(un) envase x 60 cápsulas diarias para 30 días. Tratamiento prolongado. “Justifico la prescripción por marca”, por continuidad en tolerancia y eficacia de medicamento con Bioequivalencia- Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005501_6569.doc"
+    },
+    "paciente": {
+      "nombre": "Meneses, Yesica Eliana Jaquelín",
+      "dni": "34983776",
+      "fecha_nacimiento": "1989-01-24",
+      "obra_social": "INCLUIR SALUD (PROFE)",
+      "nro_afiliado": "405956599600"
+    },
+    "consulta": {
+      "fecha": "2019-05-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2018-08-07",
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2015-07-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2017-12-29",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-09-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Asistida en este hospital desde: 07/08/18 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.\nEn el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra\nN\nDeri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos\nOtras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc\nEDSS: 6.0",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga",
+      "comentario": "Debe continuar Urgente la terapia inmunomoduladora, con Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, - es una terapia específica para Esclerosis Múltiple a Recaídas y Remisiones, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia, ya viene recibiendo desde último trimestre de 2018 – Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años\nTodo lo anterior hace más que justificable el uso inmediato continuado de Dimetil Fumarato: Dimeful",
+      "estudios": "realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos\nEn los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd\nIv (-)\nResto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de mayo de 2019 Apellido y nombre: Meneses, Yesica Eliana Jaquelín. DNI: 34.983.776 Fecha de Nacimiento: 24/01/89 Dirección: Tunes nº 341. Florencio Varela. Teléfono: (011) 4275-1300 Obra Social: INCLUIR SALUD (PROFE) Nº de afiliado: 405956599600 Inicio de la afección: año 2002 aproximadamente. Asistida en este hospital desde: 07/08/18 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -año 2002: trastornos del equilibrio y estabilidad, lateropulsión, inestabilidad para la marcha con episodios de caída fácil, con mejoría y recaídas sucesivas que la llevaron al uso de apoyo unilateral inicialmente y bilateral en la actualidad, no puede detallar ni precisar años ni fechas de todas las recaídas con exactitud.. En el año 2016 sufre un nuevo brote con compromiso de la movilidad del miembro inferior izquierdo, por el que debe ser internada (Hospital Fernández, Dra. N. Deri), recibiendo en esa oportunidad pulso intravenoso de Metilprednisolona 1000 mgrs.x 5dias consecutivos. Otras recidivas se caracterizaron por: descenso brusco de la visión alternante de ambos ojos a predominio derecho; parestesias e hipoestesias de miembros; urgencia urinaria; fallos de equilibrio y coordinación; etc. EDSS: 6.0. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico. - sensitivo superficial y propioceptivo congruente, con Romberg. - cerebeloso axial y apendicular. - parece craneanos: II bilateral asimétrico predominio derecho. - esfinteriano vesical - de fatiga. Estudios realizados: -Rutina de laboratorios en varias ocasiones, entre otras: 05/07/15 hasta 24/08/18. -Examen de Líquido Cefalorraquídeo: -27/08/14: por Isoelectroenfoque: patrón Tipo II: presencia de bandas oligoclonales de IgG en LCR ausentes en plasma. - RMN de encéfalo, -10/05/14, -29/12/17, -14/08/18: múltiples imágenes focales cerebrales bilaterales periventriculares y subcorticales/ yuxtacorticales; perpendiculares al cuerpo calloso., a nivel de tronco del encéfalo, pedúnculos cerebelosos medios y hemisferios cerebelosos . En los últimos dos mencionados sin captar Gd. iv(-). - RMN de columna cervical, dorsal y lumbar 29/12/17: se observan a nivel cervical imágenes focales itramedulares en proyección de C1, C2-C3 y C5-C6 especialmente en sector posterolateral, con relación al proceso de base, sin actividad y a nivel dorsal similares en topografía de D5 y D7, también Gd. Iv (-). Resto: s/p. - Potenciales evocados Visuales 22/07/14: respuesta cortical presenta con prolongación bilateral: P100 a derecha: 190 y a izquierda: 165 milisegundos. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: Debe continuar Urgente la terapia inmunomoduladora, con Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, - es una terapia específica para Esclerosis Múltiple a Recaídas y Remisiones, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia, ya viene recibiendo desde último trimestre de 2018 – Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años. Todo lo anterior hace más que justificable el uso inmediato continuado de Dimetil Fumarato: Dimeful. Bibliografía respaldatoria míinima: estudios como DEFINE, CONFIRM,, etc. Solicito: Urgente continuidad: -Dimeful (Dimetilfumarato) cápsulas de 240 mg dos veces/día oral: 1(un) envase x 60 cápsulas diarias para 30 días. Tratamiento prolongado. “Justifico la prescripción por marca”, por continuidad en tolerancia y eficacia de medicamento con Bioequivalencia- Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005446_75d6",
+  "estado": "validada",
+  "dedup_key": "DNI:5179554|F:2005-08-23|H:72d2688b61",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_75d6.doc"
+    },
+    "paciente": {
+      "nombre": "Berazategui, Roberto J",
+      "dni": "5179554",
+      "fecha_nacimiento": "1939-09-30",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9605007269/00"
+    },
+    "consulta": {
+      "fecha": "2005-08-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad de motoneurona piramidal y periférica. Esclerosis Lateral Amiotrófica (Cod. 335.20) Comentarios: La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria. Bibliografia respaldatoria (Riluzol –Rilutek-): -N Engl J Med 1994, 330:585-591. -Lancet 1996,347:1425-1431. -Arch Neurol 1998, 55:526-528. -Neurology 1997, 49: 657-659. -J Neurol Sci 1999, 169: 98-107. -Curr Treat Opt Neurol 2000, 2: 13-22. -Neurology 1999, 52: 1311-1323. Solicito: Riluzol (Rilutek) comprimidos de 50 mgrs. c/u (dosis 100 mgrs./día=2 comp./día); 1(un) envase de 60 comp.c/u /mes (única dosificación y presentación disponible). Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2004-10-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-11-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Asistido desde: 13/10/04 principales: al inicio del proceso deterioro en la articulación de la palabra, asociado a episodios de atragantamiento con disfagia del 1º tiempo y descenso en el tono de su voz, luego progresiva y cada vez más acentuada pérdida ponderal\nEn la actualidad severo compromiso en todos los tiempos de la deglución, disfonía severa y disartria",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "agrupacion_sindromica": "Rasgos semiológicos: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "comentario": "Esclerosis Lateral Amiotrófica (Cod. 335.20) La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA RESUMEN DE HISTORIA CLÍNICA La Plata, 23 de agosto de 2005. Nombre y apellido: Berazategui, Roberto J. Fecha de nacimiento: 30/09/39 DNI: 5.179.554 Dirección: calle 21 nº 4947 Berazategui Teléfono: 011-4256-8266 Obra Social: IOMA nº de afiliado: 9605007269/00 Inicio de la afección: principios del 2003, aproximadamente. Asistido desde: 13/10/04 Síntomas principales: al inicio del proceso deterioro en la articulación de la palabra, asociado a episodios de atragantamiento con disfagia del 1º tiempo y descenso en el tono de su voz, luego progresiva y cada vez más acentuada pérdida ponderal. En la actualidad severo compromiso en todos los tiempos de la deglución, disfonía severa y disartria. Rasgos semiológicos: Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p. Diagnóstico: Enfermedad de motoneurona piramidal y periférica. Esclerosis Lateral Amiotrófica (Cod. 335.20) Comentarios: La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria. Bibliografia respaldatoria (Riluzol –Rilutek-): -N Engl J Med 1994, 330:585-591. -Lancet 1996,347:1425-1431. -Arch Neurol 1998, 55:526-528. -Neurology 1997, 49: 657-659. -J Neurol Sci 1999, 169: 98-107. -Curr Treat Opt Neurol 2000, 2: 13-22. -Neurology 1999, 52: 1311-1323. Solicito: Riluzol (Rilutek) comprimidos de 50 mgrs. c/u (dosis 100 mgrs./día=2 comp./día); 1(un) envase de 60 comp.c/u /mes (única dosificación y presentación disponible). Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_75d6.doc"
+    },
+    "paciente": {
+      "nombre": "Berazategui, Roberto J",
+      "dni": "5179554",
+      "fecha_nacimiento": "1939-09-30",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9605007269/00"
+    },
+    "consulta": {
+      "fecha": "2005-08-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Enfermedad de motoneurona piramidal y periférica. Esclerosis Lateral Amiotrófica (Cod. 335.20) Comentarios: La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria. Bibliografia respaldatoria (Riluzol –Rilutek-): -N Engl J Med 1994, 330:585-591. -Lancet 1996,347:1425-1431. -Arch Neurol 1998, 55:526-528. -Neurology 1997, 49: 657-659. -J Neurol Sci 1999, 169: 98-107. -Curr Treat Opt Neurol 2000, 2: 13-22. -Neurology 1999, 52: 1311-1323. Solicito: Riluzol (Rilutek) comprimidos de 50 mgrs. c/u (dosis 100 mgrs./día=2 comp./día); 1(un) envase de 60 comp.c/u /mes (única dosificación y presentación disponible). Atte. Dr. Santiago A. Vétere",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2004-10-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-11-05",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Asistido desde: 13/10/04 principales: al inicio del proceso deterioro en la articulación de la palabra, asociado a episodios de atragantamiento con disfagia del 1º tiempo y descenso en el tono de su voz, luego progresiva y cada vez más acentuada pérdida ponderal\nEn la actualidad severo compromiso en todos los tiempos de la deglución, disfonía severa y disartria",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "agrupacion_sindromica": "Rasgos semiológicos: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "comentario": "Esclerosis Lateral Amiotrófica (Cod. 335.20) La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA RESUMEN DE HISTORIA CLÍNICA La Plata, 23 de agosto de 2005. Nombre y apellido: Berazategui, Roberto J. Fecha de nacimiento: 30/09/39 DNI: 5.179.554 Dirección: calle 21 nº 4947 Berazategui Teléfono: 011-4256-8266 Obra Social: IOMA nº de afiliado: 9605007269/00 Inicio de la afección: principios del 2003, aproximadamente. Asistido desde: 13/10/04 Síntomas principales: al inicio del proceso deterioro en la articulación de la palabra, asociado a episodios de atragantamiento con disfagia del 1º tiempo y descenso en el tono de su voz, luego progresiva y cada vez más acentuada pérdida ponderal. En la actualidad severo compromiso en todos los tiempos de la deglución, disfonía severa y disartria. Rasgos semiológicos: Agrupación sindrómica: - Síndrome piramidal de miembros a predominio de los inferiores. - Sindrome de motoneurona inferior bulbar y medular-cervical con atrofia y fasciculaciones (linguales, pectorales, interescapulovertebrales, braquiales) Estudios realizados: -EMG de músculatura braquial, crural y lingual (05/11/04): compromiso de motoneurona periférica o inferior. -08/09/04:Rutina de laboratorio: hemograma, eritrosedimentación, etc.: s/p. -30/09/04:Ecografia de abdomen: s/p. -30/09/04:Ecografia prostática. -29/01/03 RMN de cerebro: s/p. -11/03/04 RMN de cerebro: pequeñas imágenes lacunares en centros semiovales. -19/02/04:EcoDoppler carotídeo: s/p. -19/05/04:Angiografía de vasos cerebrales: s/p. Diagnóstico: Enfermedad de motoneurona piramidal y periférica. Esclerosis Lateral Amiotrófica (Cod. 335.20) Comentarios: La paciente debe iniciar terapia con Riluzol (Rilutek), fármaco de indicación especifica para su enfermedad neurológia: Esclerois Lateral Amiotrófica, único fármaco aprobado por la FDA para este fin desde hace varios años, de probada eficacia Internacional, que consta de amplia bibliografía respaldatoria. Bibliografia respaldatoria (Riluzol –Rilutek-): -N Engl J Med 1994, 330:585-591. -Lancet 1996,347:1425-1431. -Arch Neurol 1998, 55:526-528. -Neurology 1997, 49: 657-659. -J Neurol Sci 1999, 169: 98-107. -Curr Treat Opt Neurol 2000, 2: 13-22. -Neurology 1999, 52: 1311-1323. Solicito: Riluzol (Rilutek) comprimidos de 50 mgrs. c/u (dosis 100 mgrs./día=2 comp./día); 1(un) envase de 60 comp.c/u /mes (única dosificación y presentación disponible). Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

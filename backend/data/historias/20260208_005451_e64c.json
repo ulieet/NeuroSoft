@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005451_e64c",
+  "estado": "validada",
+  "dedup_key": "DNI:22441067|F:2015-04-30|H:9115360bb7",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_e64c.doc"
+    },
+    "paciente": {
+      "nombre": "por vía SC/diaria",
+      "dni": "22441067",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "el"
+    },
+    "consulta": {
+      "fecha": "2015-04-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2015-03-02"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Mezzano S / D: De mi mayor consideración, me dirijo a Ud. en respuesta de lo solicitado por del día 13 de Abril del corriente año, en relación a su afiliado el Sr\nHoracio Daniel Cáceres, DNI: 22.441.067 y n° de afiliado: 13285/00\nPara confirmarle que he prescripto en fechas recientes y cada 28-30 días aproximadamente, valga de ejemplo las recetas confeccionadas más actuales del: 02/03/15 y 01/04 /15, así y del mismo modo fueron realizadas otras durante los últimos años, de la medicación: - Copolimero –I : acetato de Glatiramer (ESCADRA)\nDicho fármaco se presenta en jeringas prellenadas de 20 mg. c/u. para auto-aplicación por parte del paciente por vía SC/diaria\nLa misma es de precisa indicación en su proceso Neurológico de base: Esclerosis Múltiple (OMS: 340) y por supuesto se halla aprobada para este fin con esta dosificación, por ANMAT\nEspero con esto haber dado respuesta a su requisitoria\nAgradezco a Ud. este canal de comunicación en beneficio del paciente, su afiliado",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " Urgente Sres. Primed S.A. / Primedic Salud La Plata, 30 de abril de 2015. Sr. Presidente Luis A. Mezzano S / D: De mi mayor consideración, me dirijo a Ud. en respuesta de lo solicitado por nota del día 13 de Abril del corriente año, en relación a su afiliado el Sr. Horacio Daniel Cáceres, DNI: 22.441.067 y n° de afiliado: 13285/00. Para confirmarle que he prescripto en fechas recientes y cada 28-30 días aproximadamente, valga de ejemplo las recetas confeccionadas más actuales del: 02/03/15 y 01/04 /15, así y del mismo modo fueron realizadas otras durante los últimos años, de la medicación: - Copolimero –I : acetato de Glatiramer (ESCADRA). Dicho fármaco se presenta en jeringas prellenadas de 20 mg. c/u. para auto-aplicación por parte del paciente por vía SC/diaria. La misma es de precisa indicación en su proceso Neurológico de base: Esclerosis Múltiple (OMS: 340) y por supuesto se halla aprobada para este fin con esta dosificación, por ANMAT. Espero con esto haber dado respuesta a su requisitoria. Agradezco a Ud. este canal de comunicación en beneficio del paciente, su afiliado. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Neurología.. Sección Enfermedades Desmielinizantes. HIGA “Gral. San Martín” La Plata ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_e64c.doc"
+    },
+    "paciente": {
+      "nombre": "por vía SC/diaria",
+      "dni": "22441067",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "el"
+    },
+    "consulta": {
+      "fecha": "2015-04-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2015-03-02"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Mezzano S / D: De mi mayor consideración, me dirijo a Ud. en respuesta de lo solicitado por del día 13 de Abril del corriente año, en relación a su afiliado el Sr\nHoracio Daniel Cáceres, DNI: 22.441.067 y n° de afiliado: 13285/00\nPara confirmarle que he prescripto en fechas recientes y cada 28-30 días aproximadamente, valga de ejemplo las recetas confeccionadas más actuales del: 02/03/15 y 01/04 /15, así y del mismo modo fueron realizadas otras durante los últimos años, de la medicación: - Copolimero –I : acetato de Glatiramer (ESCADRA)\nDicho fármaco se presenta en jeringas prellenadas de 20 mg. c/u. para auto-aplicación por parte del paciente por vía SC/diaria\nLa misma es de precisa indicación en su proceso Neurológico de base: Esclerosis Múltiple (OMS: 340) y por supuesto se halla aprobada para este fin con esta dosificación, por ANMAT\nEspero con esto haber dado respuesta a su requisitoria\nAgradezco a Ud. este canal de comunicación en beneficio del paciente, su afiliado",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " Urgente Sres. Primed S.A. / Primedic Salud La Plata, 30 de abril de 2015. Sr. Presidente Luis A. Mezzano S / D: De mi mayor consideración, me dirijo a Ud. en respuesta de lo solicitado por nota del día 13 de Abril del corriente año, en relación a su afiliado el Sr. Horacio Daniel Cáceres, DNI: 22.441.067 y n° de afiliado: 13285/00. Para confirmarle que he prescripto en fechas recientes y cada 28-30 días aproximadamente, valga de ejemplo las recetas confeccionadas más actuales del: 02/03/15 y 01/04 /15, así y del mismo modo fueron realizadas otras durante los últimos años, de la medicación: - Copolimero –I : acetato de Glatiramer (ESCADRA). Dicho fármaco se presenta en jeringas prellenadas de 20 mg. c/u. para auto-aplicación por parte del paciente por vía SC/diaria. La misma es de precisa indicación en su proceso Neurológico de base: Esclerosis Múltiple (OMS: 340) y por supuesto se halla aprobada para este fin con esta dosificación, por ANMAT. Espero con esto haber dado respuesta a su requisitoria. Agradezco a Ud. este canal de comunicación en beneficio del paciente, su afiliado. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (MP. 111.318) Especialista Jerarquizado en Neurología Jefe de Sala de Neurología.. Sección Enfermedades Desmielinizantes. HIGA “Gral. San Martín” La Plata ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

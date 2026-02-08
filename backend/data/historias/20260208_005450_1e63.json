@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005450_1e63",
+  "estado": "validada",
+  "dedup_key": "F:2002-02-18|DX:esclerosis múltiple|H:86605bbbb6",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_1e63.doc"
+    },
+    "paciente": {
+      "nombre": "Bárbara Brianese",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSDE BINARIO",
+      "nro_afiliado": "60-544875107"
+    },
+    "consulta": {
+      "fecha": "2002-02-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "22 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora de miembro superior derecho , trastornos en el equilibrio y coordinación, neuralgia en territorio trigeminal izquierdo R1,visión bulto de ojo izquierdo y leve fatiga\nToda la sintomatologia antes descripta con recuperación ad-integrum\nDesde hace algo más de 72 hs\nRepite visión centellante de ojo izquierdo y diplopia con oscilopsia",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda",
+      "agrupacion_sindromica": "Rasgos semiológicos: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda",
+      "comentario": "Debe proseguir con terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulada y previniendo la atrofia cerebral\nPor lo cual se solicita Rebif: 3 ampollas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18 millones de UI/ semana)\nPor ningún motivo debe suspenderse la administración del mismo pues se expondría al riesgo de recaídas y las discapacidades que estas acarrean",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -Potenciales evocados trimodales: con prolongación de las latencias en las tres modalidades, a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, mesencéfalo y protuberancia",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de febrero de 2002. Nombre y apellido: Bárbara Brianese. Dirección: 524 nº1451, e/ 9 y 10 La Plata. TEL. 424-1880. Obra Social: OSDE BINARIO nºde afiliado: 60-544875107. Inicio de la afección: en el año 1996.(1ºepisodio de parestesias de miembros ?). Asistido en este servicio desde: el mes de noviembre de1998. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora de miembro superior derecho , trastornos en el equilibrio y coordinación, neuralgia en territorio trigeminal izquierdo R1,visión bulto de ojo izquierdo y leve fatiga. Toda la sintomatologia antes descripta con recuperación ad-integrum. Desde hace algo más de 72 hs. Repite visión centellante de ojo izquierdo y diplopia con oscilopsia. Rasgos semiológicos: Agrupación sindrómica: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -Potenciales evocados trimodales: con prolongación de las latencias en las tres modalidades, a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, mesencéfalo y protuberancia. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaidas y remisiones. Tratamiento: sintomático, de los brotes ( inmunosupresión ) e inmunomodulador con INF-B1ar(REBIF). Comentarios: Debe proseguir con terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulada y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampollas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18 millones de UI/ semana). Por ningún motivo debe suspenderse la administración del mismo pues se expondría al riesgo de recaídas y las discapacidades que estas acarrean. Solicito: Rebif ampollas prellenadas de 22 Mcgrs. c/u, es decir de 6MUI. c/u, por 12 ampollas/mes= 1 envase/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_1e63.doc"
+    },
+    "paciente": {
+      "nombre": "Bárbara Brianese",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSDE BINARIO",
+      "nro_afiliado": "60-544875107"
+    },
+    "consulta": {
+      "fecha": "2002-02-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "22 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora de miembro superior derecho , trastornos en el equilibrio y coordinación, neuralgia en territorio trigeminal izquierdo R1,visión bulto de ojo izquierdo y leve fatiga\nToda la sintomatologia antes descripta con recuperación ad-integrum\nDesde hace algo más de 72 hs\nRepite visión centellante de ojo izquierdo y diplopia con oscilopsia",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda",
+      "agrupacion_sindromica": "Rasgos semiológicos: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda",
+      "comentario": "Debe proseguir con terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulada y previniendo la atrofia cerebral\nPor lo cual se solicita Rebif: 3 ampollas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18 millones de UI/ semana)\nPor ningún motivo debe suspenderse la administración del mismo pues se expondría al riesgo de recaídas y las discapacidades que estas acarrean",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax. -Potenciales evocados trimodales: con prolongación de las latencias en las tres modalidades, a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, mesencéfalo y protuberancia",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de febrero de 2002. Nombre y apellido: Bárbara Brianese. Dirección: 524 nº1451, e/ 9 y 10 La Plata. TEL. 424-1880. Obra Social: OSDE BINARIO nºde afiliado: 60-544875107. Inicio de la afección: en el año 1996.(1ºepisodio de parestesias de miembros ?). Asistido en este servicio desde: el mes de noviembre de1998. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora de miembro superior derecho , trastornos en el equilibrio y coordinación, neuralgia en territorio trigeminal izquierdo R1,visión bulto de ojo izquierdo y leve fatiga. Toda la sintomatologia antes descripta con recuperación ad-integrum. Desde hace algo más de 72 hs. Repite visión centellante de ojo izquierdo y diplopia con oscilopsia. Rasgos semiológicos: Agrupación sindrómica: -elementos de bipiramidalismo leve. -sensitivo superficial y propioceptivo predominio izquierdo. -elementos atáxico apendicular, a predominio izquierdo. -elementos esfinterianos vesical eferentes. -neuritis óptica izquierda. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. -Potenciales evocados trimodales: con prolongación de las latencias en las tres modalidades, a izquierda. -RMN de cerebro: múltiples lesiones de la sustancia blanca periventricular, mesencéfalo y protuberancia. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaidas y remisiones. Tratamiento: sintomático, de los brotes ( inmunosupresión ) e inmunomodulador con INF-B1ar(REBIF). Comentarios: Debe proseguir con terapia inmunomoduladora que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulada y previniendo la atrofia cerebral. Por lo cual se solicita Rebif: 3 ampollas/ semana, prellenadas de 22 microgramos ( 6 millones de UI c/u ), es decir 12 ampollas mensuales (18 millones de UI/ semana). Por ningún motivo debe suspenderse la administración del mismo pues se expondría al riesgo de recaídas y las discapacidades que estas acarrean. Solicito: Rebif ampollas prellenadas de 22 Mcgrs. c/u, es decir de 6MUI. c/u, por 12 ampollas/mes= 1 envase/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

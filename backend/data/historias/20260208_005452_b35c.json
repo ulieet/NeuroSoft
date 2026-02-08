@@ -1,0 +1,128 @@
+{
+  "id": "20260208_005452_b35c",
+  "estado": "validada",
+  "dedup_key": "DNI:30982265|F:2004-12-13|H:0aef7fa2b0",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_b35c.doc"
+    },
+    "paciente": {
+      "nombre": "Maximiliano Alejandro Cagliani",
+      "dni": "30982265",
+      "fecha_nacimiento": "1984-06-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2181973870/00"
+    },
+    "consulta": {
+      "fecha": "2004-12-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "enf. desmielinizante, enf del tej. conectivo, en estudio ??. Comentarios: El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Solicito: serología para: -FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-05-04",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2004-08-03",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "(CP.6640) Teléfono:02342-431866 Obra Social: IOMA. nº de afiliado: 2181973870/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: -marzo de 2004: disminución de la fuerza con torpeza motora de miembros inferiores con dificultad para la marcha, episodios de caída inexplicable, lateropulsión a izquierda, crisis de vértigo con vómitos, diplopia con oscilopsia; todo este evento duró algo más de 21 días y retrogrado lentamente. -2º brote: Octubre de 2004: nueva recaída con dificultad para la marcha, compromiso motor de miembros inferiores, trastornos sensitivos y de coordinación\nPor este último evento debe ser internado en esta sala 5º de neurología cama15 desde 04/10/04 al 06/10/04\nFue medicado con terapia supresora de esteroides, en cada evento",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda",
+      "agrupacion_sindromica": "Rasgos semiológicos: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda",
+      "comentario": "El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4",
+      "estudios": "realizados: -Rutina de laboratorio 05/10/04: hemograma completo, ERS, glucemia, urea, creatinina, colesterol, hepatograma, ionograma venoso: normal. -HIV I y II 06/10/04: no reactivo\nVDRL, T y % de protrombina, tiempo de trombina, KPTT 05/10/04: s/p\nOrina : ligeramente turbia con leucocituria y bacteriuria. -RMN de cerebro (04/05/04): imagen de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo, en la proximidad del 4º ventrículo, la cual realza con gadolinio\nSe visualiza otra imagen supratentorial periventricular en topografía occipital que no realza con gadolinio\n(Se sugería descartar EM). -RMN de cerebro y espectroscopia (03/08/04): imágenes de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo y otra imagen paraventricular posterior derecha, que muestran un descenso del Naa. en espectroscopia. -RMN de columna cervical: muestra una imagen que capta gadolinio en topografía de C4 a C6, en el sector medular lateral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de diciembre de 2004. Nombre y apellido: Maximiliano Alejandro Cagliani. DNI: 30.982.265 Fecha de Nacimiento: 09/06/84. Dirección: FONAVI 2º, Torre “B”, Dto. 123. 2º Piso. Localidad: Bragado. (CP.6640) Teléfono:02342-431866 Obra Social: IOMA. nº de afiliado: 2181973870/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: -marzo de 2004: disminución de la fuerza con torpeza motora de miembros inferiores con dificultad para la marcha, episodios de caída inexplicable, lateropulsión a izquierda, crisis de vértigo con vómitos, diplopia con oscilopsia; todo este evento duró algo más de 21 días y retrogrado lentamente. -2º brote: Octubre de 2004: nueva recaída con dificultad para la marcha, compromiso motor de miembros inferiores, trastornos sensitivos y de coordinación. Por este último evento debe ser internado en esta sala 5º de neurología cama15 desde 04/10/04 al 06/10/04. Fue medicado con terapia supresora de esteroides, en cada evento. Rasgos semiológicos: Agrupación sindrómica: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda. Estudios realizados: -Rutina de laboratorio 05/10/04: hemograma completo, ERS, glucemia, urea, creatinina, colesterol, hepatograma, ionograma venoso: normal. -HIV I y II 06/10/04: no reactivo. VDRL, T y % de protrombina, tiempo de trombina, KPTT 05/10/04: s/p. Orina : ligeramente turbia con leucocituria y bacteriuria. -RMN de cerebro (04/05/04): imagen de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo, en la proximidad del 4º ventrículo, la cual realza con gadolinio. Se visualiza otra imagen supratentorial periventricular en topografía occipital que no realza con gadolinio. (Se sugería descartar EM). -RMN de cerebro y espectroscopia (03/08/04): imágenes de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo y otra imagen paraventricular posterior derecha, que muestran un descenso del Naa. en espectroscopia. -RMN de columna cervical: muestra una imagen que capta gadolinio en topografía de C4 a C6, en el sector medular lateral. Diagnóstico: enf. desmielinizante, enf del tej. conectivo, en estudio ??. Comentarios: El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Solicito: serología para: -FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_b35c.doc"
+    },
+    "paciente": {
+      "nombre": "Maximiliano Alejandro Cagliani",
+      "dni": "30982265",
+      "fecha_nacimiento": "1984-06-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2181973870/00"
+    },
+    "consulta": {
+      "fecha": "2004-12-13",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "enf. desmielinizante, enf del tej. conectivo, en estudio ??. Comentarios: El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Solicito: serología para: -FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-05-04",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2004-08-03",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "(CP.6640) Teléfono:02342-431866 Obra Social: IOMA. nº de afiliado: 2181973870/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: -marzo de 2004: disminución de la fuerza con torpeza motora de miembros inferiores con dificultad para la marcha, episodios de caída inexplicable, lateropulsión a izquierda, crisis de vértigo con vómitos, diplopia con oscilopsia; todo este evento duró algo más de 21 días y retrogrado lentamente. -2º brote: Octubre de 2004: nueva recaída con dificultad para la marcha, compromiso motor de miembros inferiores, trastornos sensitivos y de coordinación\nPor este último evento debe ser internado en esta sala 5º de neurología cama15 desde 04/10/04 al 06/10/04\nFue medicado con terapia supresora de esteroides, en cada evento",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda",
+      "agrupacion_sindromica": "Rasgos semiológicos: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda",
+      "comentario": "El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4",
+      "estudios": "realizados: -Rutina de laboratorio 05/10/04: hemograma completo, ERS, glucemia, urea, creatinina, colesterol, hepatograma, ionograma venoso: normal. -HIV I y II 06/10/04: no reactivo\nVDRL, T y % de protrombina, tiempo de trombina, KPTT 05/10/04: s/p\nOrina : ligeramente turbia con leucocituria y bacteriuria. -RMN de cerebro (04/05/04): imagen de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo, en la proximidad del 4º ventrículo, la cual realza con gadolinio\nSe visualiza otra imagen supratentorial periventricular en topografía occipital que no realza con gadolinio\n(Se sugería descartar EM). -RMN de cerebro y espectroscopia (03/08/04): imágenes de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo y otra imagen paraventricular posterior derecha, que muestran un descenso del Naa. en espectroscopia. -RMN de columna cervical: muestra una imagen que capta gadolinio en topografía de C4 a C6, en el sector medular lateral",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 13 de diciembre de 2004. Nombre y apellido: Maximiliano Alejandro Cagliani. DNI: 30.982.265 Fecha de Nacimiento: 09/06/84. Dirección: FONAVI 2º, Torre “B”, Dto. 123. 2º Piso. Localidad: Bragado. (CP.6640) Teléfono:02342-431866 Obra Social: IOMA. nº de afiliado: 2181973870/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: -marzo de 2004: disminución de la fuerza con torpeza motora de miembros inferiores con dificultad para la marcha, episodios de caída inexplicable, lateropulsión a izquierda, crisis de vértigo con vómitos, diplopia con oscilopsia; todo este evento duró algo más de 21 días y retrogrado lentamente. -2º brote: Octubre de 2004: nueva recaída con dificultad para la marcha, compromiso motor de miembros inferiores, trastornos sensitivos y de coordinación. Por este último evento debe ser internado en esta sala 5º de neurología cama15 desde 04/10/04 al 06/10/04. Fue medicado con terapia supresora de esteroides, en cada evento. Rasgos semiológicos: Agrupación sindrómica: - piramidalismo izquierdo. - pares craneanos: oculomotores, VIII vestibular. - cerebeloso axial y apendicular a izquierda. Estudios realizados: -Rutina de laboratorio 05/10/04: hemograma completo, ERS, glucemia, urea, creatinina, colesterol, hepatograma, ionograma venoso: normal. -HIV I y II 06/10/04: no reactivo. VDRL, T y % de protrombina, tiempo de trombina, KPTT 05/10/04: s/p. Orina : ligeramente turbia con leucocituria y bacteriuria. -RMN de cerebro (04/05/04): imagen de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo, en la proximidad del 4º ventrículo, la cual realza con gadolinio. Se visualiza otra imagen supratentorial periventricular en topografía occipital que no realza con gadolinio. (Se sugería descartar EM). -RMN de cerebro y espectroscopia (03/08/04): imágenes de la sustancia blanca, en topografía del pedúnculo cerebeloso medio izquierdo y otra imagen paraventricular posterior derecha, que muestran un descenso del Naa. en espectroscopia. -RMN de columna cervical: muestra una imagen que capta gadolinio en topografía de C4 a C6, en el sector medular lateral. Diagnóstico: enf. desmielinizante, enf del tej. conectivo, en estudio ??. Comentarios: El paciente realizarse al menos un estudio inmunocolageno mínimo, es decir: FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Solicito: serología para: -FAN, Anti-ADN, Células o Fenómeno LE, Complemento con C3 y C4. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

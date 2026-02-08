@@ -1,0 +1,142 @@
+{
+  "id": "20260208_005448_6057",
+  "estado": "validada",
+  "dedup_key": "F:2009-11-23|DX:esclerosis múltiple|H:e301a0c88a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_6057.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2009-11-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-05-18",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora (Interferón-Beta-1b recombinante): de BETAFERON, una ampolla en días alternos, de 8 MU.I. cada una; es decir con 15 ampollas/ mes, con el objetivo de disminuir la progresión de la enfermedad, así como el número y gravedad de las recaídas por lo que se evitarán internaciones y terapias inmunosupresoras más agresiva, postergándose la discapacidad acumulativa, hechos que se vienen dando desde su implementación, estabilizando su EDSS\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) aprobado por el ANMAT de la Argentina y por la FDA de los EEUU con esta precisa indicación",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 23 de noviembre de 2009. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos. Diagnóstico: Esclerosis Múltiple a recaídas. Tratamiento: sintomático, del brote. Comentarios: la paciente debe continuar con la terapia inmunomoduladora (Interferón-Beta-1b recombinante): de BETAFERON, una ampolla en días alternos, de 8 MU.I. cada una; es decir con 15 ampollas/ mes, con el objetivo de disminuir la progresión de la enfermedad, así como el número y gravedad de las recaídas por lo que se evitarán internaciones y terapias inmunosupresoras más agresiva, postergándose la discapacidad acumulativa, hechos que se vienen dando desde su implementación, estabilizando su EDSS. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) aprobado por el ANMAT de la Argentina y por la FDA de los EEUU con esta precisa indicación. Bibliografía recomendada: - LANCET 1998 Vol.352 nº 9139 Pags:1491-1497. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: comtinuidad para BETAFERON: Interferón B1b, a una dosis de15 ampollas de 8 MUI. c/u, 1 envase/30 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_6057.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2009-11-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-05-18",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora (Interferón-Beta-1b recombinante): de BETAFERON, una ampolla en días alternos, de 8 MU.I. cada una; es decir con 15 ampollas/ mes, con el objetivo de disminuir la progresión de la enfermedad, así como el número y gravedad de las recaídas por lo que se evitarán internaciones y terapias inmunosupresoras más agresiva, postergándose la discapacidad acumulativa, hechos que se vienen dando desde su implementación, estabilizando su EDSS\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) aprobado por el ANMAT de la Argentina y por la FDA de los EEUU con esta precisa indicación",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 23 de noviembre de 2009. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, ora en vías de recuperación, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos. Diagnóstico: Esclerosis Múltiple a recaídas. Tratamiento: sintomático, del brote. Comentarios: la paciente debe continuar con la terapia inmunomoduladora (Interferón-Beta-1b recombinante): de BETAFERON, una ampolla en días alternos, de 8 MU.I. cada una; es decir con 15 ampollas/ mes, con el objetivo de disminuir la progresión de la enfermedad, así como el número y gravedad de las recaídas por lo que se evitarán internaciones y terapias inmunosupresoras más agresiva, postergándose la discapacidad acumulativa, hechos que se vienen dando desde su implementación, estabilizando su EDSS. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) aprobado por el ANMAT de la Argentina y por la FDA de los EEUU con esta precisa indicación. Bibliografía recomendada: - LANCET 1998 Vol.352 nº 9139 Pags:1491-1497. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: comtinuidad para BETAFERON: Interferón B1b, a una dosis de15 ampollas de 8 MUI. c/u, 1 envase/30 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

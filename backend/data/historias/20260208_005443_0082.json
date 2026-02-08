@@ -1,0 +1,148 @@
+{
+  "id": "20260208_005443_0082",
+  "estado": "validada",
+  "dedup_key": "DNI:13551922|F:2005-07-18|H:7a1bfb858a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_0082.doc"
+    },
+    "paciente": {
+      "nombre": "de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas",
+      "dni": "13551922",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "BARRIOS"
+    },
+    "consulta": {
+      "fecha": "2005-07-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "135519228 G",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2003-02-13"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "135519228 G",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, fue denegada nuevamente, - según relata la carta entregada al paciente con fecha 18 de julio de 2005-, aduciendo en primer término que Rebif no se halla incluido en “convenios de la Industria y ese PAMI”:..\nNingún convenio comercial entre partes supongo es superior a los criterios médicos-científicos\nLes recuerdo que el Rebif no sólo se diferencia del Avonex ni del Betaferon sugerido por Uds. por el nombre de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas\nContrariando a lo que Uds. expresan en su informe, la literatura científica disponible a la fecha es muy clara en cuanto a la superioridad del Rebif, tanto que a partir del estudio EVIDENCE Head to Head en los EEUU, se rompió la “Orphan Exclusivity”, y la FDA aprobó al Rebif como un medicamento distinto al Avonex (que para Uds. es igual)",
+      "evolucion": ""
+    },
+    "texto_original": " URGENTE -REITERACIÓN Sres. del Instituto Nacional de Servicios Sociales Mar del Plata, 26 de septiembre de 2005. para Jubilados y Pensionados (PAMI) Dra. A. I. Taboada . Dra. B. A. Seijo. S / D: Me dirijo a Uds. con el objeto tengan a bien resolver de inmediato, pues ya lleva una demora de varios meses, con varias reiteraciones, con idas y vueltas del paciente, la cobertura de vuestro afiliado: BARRIOS CARLOS (DNI 13.551.922), con Número de afiliado: 620 135519228 GP00 y diagnóstico de Esclerosis Múltiple a Recaídas (OMS 340), la provisión del Interferón beta 1ª-r (Rebif) 44 mcgrs (12 MUI) 3 veces por semana. Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Estudios Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, fue denegada nuevamente, - según relata la carta entregada al paciente con fecha 18 de julio de 2005-, aduciendo en primer término que Rebif no se halla incluido en “convenios de la Industria y ese PAMI”:... Ningún convenio comercial entre partes supongo es superior a los criterios médicos-científicos. Les recuerdo que el Rebif no sólo se diferencia del Avonex ni del Betaferon sugerido por Uds. por el nombre de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas. Contrariando a lo que Uds. expresan en su informe, la literatura científica disponible a la fecha es muy clara en cuanto a la superioridad del Rebif, tanto que a partir del estudio EVIDENCE Head to Head en los EEUU, se rompió la “Orphan Exclusivity”, y la FDA aprobó al Rebif como un medicamento distinto al Avonex (que para Uds. es igual). Uds. refieren además, que se trata de estudios “mal diseñados”, es decir que las autoridades científicas del PAMI poseen criterios más estrictos que la FDA de los Estados Unidos para criticar ensayos clínicos (?) No logro salir de mi asombro, si así fuere brindo por ello, pero les solicito los fundamentos científicos y no farmaco-económicos (pues no entiendo bien la letra del artículo de la MCB que Uds. citan en la carta manuscrita); pues si es el que supongo, no es más que una critica a los costos de las drogas inmunomoduladoras de la que no puedo opinar debido a que No soy contador ni economista sino médico asistencial, por lo que tengo serias dificultades en interpretar artículos que sólo comparan drogas por su costo económico y no por la eficacia (como sí lo hace el estudio minimizado por Uds. EVIDENCE que muestra claramente que Rebif es más eficaz que Avonex ). Si se tratase del Betaferón, como Uds. también sugieren en su escrito, la diferencia es aún más notoria pues se trata de un INF B1b y no 1ª, debe aplicarse más veces, es muy claro el incremento de los efectos adversos locales (hasta la necrosis de la piel) y generales (sindrome gripal, incremento de la fatiga, de la espasticidad), así como también el mayor título de anticuerpos neutralizantes. (1) En resumen, no logro interpretar “convenios” por encima del conocimiento científico, que además contrarían lo avalado por las Entidades de Regulación del Uso de Drogas nacionales e internacionales. Al respecto el Consenso Argentino sobre el uso de drogas inmunomoduladoras en el tratamiento de la Esclerosis Múltiple en Argentina es muy claro: “6. El paciente deberá tener acceso a todos los agentes de los cuales existen claras evidencias que pueden modificar el curso de la enfermedad (Avonex, Betaferon, Copaxone y Rebif)” . “16. El cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante y por causas exclusivamente de índole médico” (Revista Neurológica Argentina. Vol 25, Número 4, Año 2000). Además, el fármaco denegado por Uds. Rebif, es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), en el que Rebif figura expresamente. Es un medicamento aprobado reitero, por la FDA de los EEUU. y el ANMAT en Argentina. De esta manera cumplo, una vez más, en lo que a mí respecta como médico tratante con la responsabilidad asistencial que me compete, incluyendo la indicación y el seguimiento del citado fármaco, y de ninguna manera de otro por indicación de terceros, así como tampoco del riesgo de recaídas e incremento de la discapacidad por no haberse administrado ya, ni administrarse a la brevedad la terapia inmunomoduladora indicada. Creo que es suficiente, categórica y redundante el número de veces que debí justificar dicha indicación, por lo que queda bajo su exclusiva responsabilidad la provisión del mencionado fármaco, del cual no existe genérico que pueda reemplazarlo. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (2) ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_0082.doc"
+    },
+    "paciente": {
+      "nombre": "de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas",
+      "dni": "13551922",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "BARRIOS"
+    },
+    "consulta": {
+      "fecha": "2005-07-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "135519228 G",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2003-02-13"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "135519228 G",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, fue denegada nuevamente, - según relata la carta entregada al paciente con fecha 18 de julio de 2005-, aduciendo en primer término que Rebif no se halla incluido en “convenios de la Industria y ese PAMI”:..\nNingún convenio comercial entre partes supongo es superior a los criterios médicos-científicos\nLes recuerdo que el Rebif no sólo se diferencia del Avonex ni del Betaferon sugerido por Uds. por el nombre de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas\nContrariando a lo que Uds. expresan en su informe, la literatura científica disponible a la fecha es muy clara en cuanto a la superioridad del Rebif, tanto que a partir del estudio EVIDENCE Head to Head en los EEUU, se rompió la “Orphan Exclusivity”, y la FDA aprobó al Rebif como un medicamento distinto al Avonex (que para Uds. es igual)",
+      "evolucion": ""
+    },
+    "texto_original": " URGENTE -REITERACIÓN Sres. del Instituto Nacional de Servicios Sociales Mar del Plata, 26 de septiembre de 2005. para Jubilados y Pensionados (PAMI) Dra. A. I. Taboada . Dra. B. A. Seijo. S / D: Me dirijo a Uds. con el objeto tengan a bien resolver de inmediato, pues ya lleva una demora de varios meses, con varias reiteraciones, con idas y vueltas del paciente, la cobertura de vuestro afiliado: BARRIOS CARLOS (DNI 13.551.922), con Número de afiliado: 620 135519228 GP00 y diagnóstico de Esclerosis Múltiple a Recaídas (OMS 340), la provisión del Interferón beta 1ª-r (Rebif) 44 mcgrs (12 MUI) 3 veces por semana. Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Estudios Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, fue denegada nuevamente, - según relata la carta entregada al paciente con fecha 18 de julio de 2005-, aduciendo en primer término que Rebif no se halla incluido en “convenios de la Industria y ese PAMI”:... Ningún convenio comercial entre partes supongo es superior a los criterios médicos-científicos. Les recuerdo que el Rebif no sólo se diferencia del Avonex ni del Betaferon sugerido por Uds. por el nombre de fantasía, pues no se trata de monodrogas o genéricos, sino de medicamentos con producción, dosificaciones, eficacias, vía de administración, efectos colaterales, etc. distintas. Contrariando a lo que Uds. expresan en su informe, la literatura científica disponible a la fecha es muy clara en cuanto a la superioridad del Rebif, tanto que a partir del estudio EVIDENCE Head to Head en los EEUU, se rompió la “Orphan Exclusivity”, y la FDA aprobó al Rebif como un medicamento distinto al Avonex (que para Uds. es igual). Uds. refieren además, que se trata de estudios “mal diseñados”, es decir que las autoridades científicas del PAMI poseen criterios más estrictos que la FDA de los Estados Unidos para criticar ensayos clínicos (?) No logro salir de mi asombro, si así fuere brindo por ello, pero les solicito los fundamentos científicos y no farmaco-económicos (pues no entiendo bien la letra del artículo de la MCB que Uds. citan en la carta manuscrita); pues si es el que supongo, no es más que una critica a los costos de las drogas inmunomoduladoras de la que no puedo opinar debido a que No soy contador ni economista sino médico asistencial, por lo que tengo serias dificultades en interpretar artículos que sólo comparan drogas por su costo económico y no por la eficacia (como sí lo hace el estudio minimizado por Uds. EVIDENCE que muestra claramente que Rebif es más eficaz que Avonex ). Si se tratase del Betaferón, como Uds. también sugieren en su escrito, la diferencia es aún más notoria pues se trata de un INF B1b y no 1ª, debe aplicarse más veces, es muy claro el incremento de los efectos adversos locales (hasta la necrosis de la piel) y generales (sindrome gripal, incremento de la fatiga, de la espasticidad), así como también el mayor título de anticuerpos neutralizantes. (1) En resumen, no logro interpretar “convenios” por encima del conocimiento científico, que además contrarían lo avalado por las Entidades de Regulación del Uso de Drogas nacionales e internacionales. Al respecto el Consenso Argentino sobre el uso de drogas inmunomoduladoras en el tratamiento de la Esclerosis Múltiple en Argentina es muy claro: “6. El paciente deberá tener acceso a todos los agentes de los cuales existen claras evidencias que pueden modificar el curso de la enfermedad (Avonex, Betaferon, Copaxone y Rebif)” . “16. El cambio de un agente inmunomodulador por otro, solamente podrá realizarse por estricta indicación del médico tratante y por causas exclusivamente de índole médico” (Revista Neurológica Argentina. Vol 25, Número 4, Año 2000). Además, el fármaco denegado por Uds. Rebif, es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), en el que Rebif figura expresamente. Es un medicamento aprobado reitero, por la FDA de los EEUU. y el ANMAT en Argentina. De esta manera cumplo, una vez más, en lo que a mí respecta como médico tratante con la responsabilidad asistencial que me compete, incluyendo la indicación y el seguimiento del citado fármaco, y de ninguna manera de otro por indicación de terceros, así como tampoco del riesgo de recaídas e incremento de la discapacidad por no haberse administrado ya, ni administrarse a la brevedad la terapia inmunomoduladora indicada. Creo que es suficiente, categórica y redundante el número de veces que debí justificar dicha indicación, por lo que queda bajo su exclusiva responsabilidad la provisión del mencionado fármaco, del cual no existe genérico que pueda reemplazarlo. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. (2) ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

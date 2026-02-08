@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005459_f30a",
+  "estado": "validada",
+  "dedup_key": "F:2012-07-18|DX:esclerosis múltiple|H:0493539d54",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005459_f30a.doc"
+    },
+    "paciente": {
+      "nombre": "Cardoso, Soledad Andrea",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSARP y H",
+      "nro_afiliado": "16807/A"
+    },
+    "consulta": {
+      "fecha": "2012-07-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-05-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad\nAgrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "comentario": "",
+      "estudios": "realizados: -16/02/06- Rutina de laboratorio\nSerología VIH\nVDRL. atg\nHepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de Julio de 2012. Apellido y nombre: Cardoso, Soledad Andrea. DNI.: 26.489.489 Dirección: El Zorzal n° 580 y La Gaviota. Mar del Plata. Teléfono: (0223) – 464-2394 Obra Social: OSARP y H . Nº de afiliado: 16807/A Asistido en este servicio desde: Julio 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad. Agrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad. Estudios realizados: -16/02/06- Rutina de laboratorio. Serología VIH. VDRL. atg. Hepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: -Interferon Beta 1ar: 12MUI: 3 veces/semana x vía SC. Para ser presentado ante Servicio de Rehabilitación, para tramitar Certificación de Discapacidad. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005459_f30a.doc"
+    },
+    "paciente": {
+      "nombre": "Cardoso, Soledad Andrea",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": "OSARP y H",
+      "nro_afiliado": "16807/A"
+    },
+    "consulta": {
+      "fecha": "2012-07-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-05-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad\nAgrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad",
+      "comentario": "",
+      "estudios": "realizados: -16/02/06- Rutina de laboratorio\nSerología VIH\nVDRL. atg\nHepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de Julio de 2012. Apellido y nombre: Cardoso, Soledad Andrea. DNI.: 26.489.489 Dirección: El Zorzal n° 580 y La Gaviota. Mar del Plata. Teléfono: (0223) – 464-2394 Obra Social: OSARP y H . Nº de afiliado: 16807/A Asistido en este servicio desde: Julio 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: pérdida visión de ojo derecho (neuritis óptica) y alteración del izquierdo más recientememente, parestesias e hipoestesias de miembros a predominio de los inferiores y a izquierda, Lhermitte espontaneo y provocado, otra recaída con diplopía horizontal lejana y el último de los brotes (Diciembre de 2007) con neuritis óptica a derecha, además de fatiga creciente y termosensibilidad. Agrupación sindromica: - Piramidalismo leve a izquierda. - Sensitivo, predominio profundo congruente. - Pares craneanos: II a derecha y a izquierda; oculomotores (VI a izq. predominante). - De fatiga y termosensibilidad. Estudios realizados: -16/02/06- Rutina de laboratorio. Serología VIH. VDRL. atg. Hepatitis-B. -10/05/05- Inmunocolagenograma (FR., Células LE, FAN, Anti-ADN, Complemento C3- C4). -10/05/05- Trombofilia: Ac. anticardiolipinas, anticoagulante Lúpico, Beta-2 Glicoproteinas. -RMN de encéfalo (24/03/03, 01/07/03, 20/10/03, 02/03/05, 25/04/06 19/11/07, 13/01/09, 10/06/10 y la última del 10/04/12): donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso-marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso izquierdo, pie pedúnculo cerebral izquierdo, hemisferio cerebeloso izquierdo y médula espinal; imágenes compatibles con focos de desmielinización, sin actividad en actualidad. -Potenciales Evocados Visuales (04/03/03): con prolongadas latencias de P100 a derecha e interlatencias. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: -Interferon Beta 1ar: 12MUI: 3 veces/semana x vía SC. Para ser presentado ante Servicio de Rehabilitación, para tramitar Certificación de Discapacidad. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005446_2b1f",
+  "estado": "validada",
+  "dedup_key": "F:2003-09-29|DX:esclerosis múltiple|H:c6bb70496b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_2b1f.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": "1956-10-26",
+      "obra_social": "OSDIPP",
+      "nro_afiliado": "17137/00"
+    },
+    "consulta": {
+      "fecha": "2003-09-29",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "comentario": "El paciente debe continuar (5º ciclo) con la terapia con: Mitoxantron: 20 mg\n(12 mg/mts.2) cada tres meses; hasta dosis máxima estimada en 140 mg./mts2 (240 mg) dosis total\nEl paciente cumplirá ahora con su 5º ciclo con muy buena tolerancia hasta la fecha y habiendo estabilizado su progresión\nEs necesaria dicha administración, debido a que la progresión de la enfermedad en el año anterior ha hecho que el paciente de marcha independiente de más de 5000 metros, en la actualidad no pueda deambular con apoyo unilateral más de 100 metros (lo que define una variante progresiva de Esclerosis Múltiple a recaídas)",
+      "estudios": "relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 29 de septiembre de 2003. Nombre y apellido: Luis Berri . Fecha de nacimiento: 26/10/56 Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Obra Social: OSDIPP. Nº de afiliado: 17137/00 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq. Estudios relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones. Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: El paciente debe continuar (5º ciclo) con la terapia con: Mitoxantron: 20 mg. (12 mg/mts.2) cada tres meses; hasta dosis máxima estimada en 140 mg./mts2 (240 mg) dosis total. El paciente cumplirá ahora con su 5º ciclo con muy buena tolerancia hasta la fecha y habiendo estabilizado su progresión. Es necesaria dicha administración, debido a que la progresión de la enfermedad en el año anterior ha hecho que el paciente de marcha independiente de más de 5000 metros, en la actualidad no pueda deambular con apoyo unilateral más de 100 metros (lo que define una variante progresiva de Esclerosis Múltiple a recaídas). Dicho medicamento ha sido aprobado por la FDA con este fin, y se halla en fase farmacológica IV, con una muy extensa bibliografía internacional que apoya su indicación. Para su aplicación es necesario el uso de Ondansetrón 24 mg. por vía IV (3 frascos ampollas de 8 mg. c/u), y Metilprednisolona 1.000 mg. (inmunosupresión conjunta), 2 frascos ampollas de 500 mg. c/u. Toda esta terapia está siendo aplicada cada tres meses. Solicito: Mitoxantrón 1 frasco ampolla de 20 mg. Ondasentrón 3 frascos ampollas de 8 mg. c/u. Metilprednisolona 2 frascos ampollas de 500 mg. c/u. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_2b1f.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": "1956-10-26",
+      "obra_social": "OSDIPP",
+      "nro_afiliado": "17137/00"
+    },
+    "consulta": {
+      "fecha": "2003-09-29",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq",
+      "comentario": "El paciente debe continuar (5º ciclo) con la terapia con: Mitoxantron: 20 mg\n(12 mg/mts.2) cada tres meses; hasta dosis máxima estimada en 140 mg./mts2 (240 mg) dosis total\nEl paciente cumplirá ahora con su 5º ciclo con muy buena tolerancia hasta la fecha y habiendo estabilizado su progresión\nEs necesaria dicha administración, debido a que la progresión de la enfermedad en el año anterior ha hecho que el paciente de marcha independiente de más de 5000 metros, en la actualidad no pueda deambular con apoyo unilateral más de 100 metros (lo que define una variante progresiva de Esclerosis Múltiple a recaídas)",
+      "estudios": "relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 29 de septiembre de 2003. Nombre y apellido: Luis Berri . Fecha de nacimiento: 26/10/56 Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Obra Social: OSDIPP. Nº de afiliado: 17137/00 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para bipedestación y marcha, trastornos en el equilibrio y coordinación, episodios de pérdida de la visión hasta la amaurosis completa de ojo izquierdo con posterior recuperación, cierta dificultad en micción (urgencia), termosensibilidad, fatiga. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural, leve. - sensitivo-propioceptivo. - esfinteriano vesical leve, de tipo eferente. - pares craneanos: II a izq. Estudios relacionados: -RMN de cerebro: lesiones de la sustancia blanca periventricularles. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones. Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: El paciente debe continuar (5º ciclo) con la terapia con: Mitoxantron: 20 mg. (12 mg/mts.2) cada tres meses; hasta dosis máxima estimada en 140 mg./mts2 (240 mg) dosis total. El paciente cumplirá ahora con su 5º ciclo con muy buena tolerancia hasta la fecha y habiendo estabilizado su progresión. Es necesaria dicha administración, debido a que la progresión de la enfermedad en el año anterior ha hecho que el paciente de marcha independiente de más de 5000 metros, en la actualidad no pueda deambular con apoyo unilateral más de 100 metros (lo que define una variante progresiva de Esclerosis Múltiple a recaídas). Dicho medicamento ha sido aprobado por la FDA con este fin, y se halla en fase farmacológica IV, con una muy extensa bibliografía internacional que apoya su indicación. Para su aplicación es necesario el uso de Ondansetrón 24 mg. por vía IV (3 frascos ampollas de 8 mg. c/u), y Metilprednisolona 1.000 mg. (inmunosupresión conjunta), 2 frascos ampollas de 500 mg. c/u. Toda esta terapia está siendo aplicada cada tres meses. Solicito: Mitoxantrón 1 frasco ampolla de 20 mg. Ondasentrón 3 frascos ampollas de 8 mg. c/u. Metilprednisolona 2 frascos ampollas de 500 mg. c/u. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

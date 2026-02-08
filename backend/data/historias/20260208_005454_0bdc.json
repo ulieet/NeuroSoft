@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005454_0bdc",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2017-07-20|H:80e2182339",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_0bdc.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2017-07-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "Debe continuar con la terapia desfatigante y de alto impacto sobre la marcha de Fampiridina comprimidos de 10 mg. c/u. de liberación prolongada (análogo a 4- aminopiridina, de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por FDA con este fin\nLa prueba de eficacia sobre 14 días continuos resultó satisfactorio con impacto sobre tiempo de marcha y fatiga en gral., se ampliará la indicación temporalmente",
+      "estudios": "En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Julio de 2017 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16 y 05/05/17: múltiples imágenes focales en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran estabilidad lesional e inactividad Gd. Iv (-). Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Comentario: Debe continuar con la terapia desfatigante y de alto impacto sobre la marcha de Fampiridina comprimidos de 10 mg. c/u. de liberación prolongada (análogo a 4- aminopiridina, de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por FDA con este fin. La prueba de eficacia sobre 14 días continuos resultó satisfactorio con impacto sobre tiempo de marcha y fatiga en gral., se ampliará la indicación temporalmente. Bibliografía respaldatoria (es innumerable, solo sirva de ejemplo): - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. -Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. - Goodman AD, Brown TR, Krupp LB. et al. Lancet 2009; 373: 732-738. -Van Winsen ML et al. Mult Scler 2010, 14 (5) 604-610.. - Goodman AD, et al Ann Neurol 2010; 68: 494-502. -Green DM, Jones AC, Brain KR Journal of Clinical Pharmacy and Therapeutics April 2011; pp 1-6. -Bennett SE, Berthoux F, Brown TR, et al. International Journal of MS Care. 15 September 2012; pp 1-11. Solicito: la continuidad para: DATIZIC -Fampiridina: 10 mg. c/u. comprimidos de liberación prolongada: dos tomas, una cada 12 hs.= 20 mg. /día oral para control de fatiga y mejoría sobre marcha: -Datizic de 10 mg./cada una x 56 comprimidos = 1(un) envase grande de mantenimiento para 28 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_0bdc.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2017-07-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": "10 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "Debe continuar con la terapia desfatigante y de alto impacto sobre la marcha de Fampiridina comprimidos de 10 mg. c/u. de liberación prolongada (análogo a 4- aminopiridina, de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por FDA con este fin\nLa prueba de eficacia sobre 14 días continuos resultó satisfactorio con impacto sobre tiempo de marcha y fatiga en gral., se ampliará la indicación temporalmente",
+      "estudios": "En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Julio de 2017 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16 y 05/05/17: múltiples imágenes focales en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran estabilidad lesional e inactividad Gd. Iv (-). Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Comentario: Debe continuar con la terapia desfatigante y de alto impacto sobre la marcha de Fampiridina comprimidos de 10 mg. c/u. de liberación prolongada (análogo a 4- aminopiridina, de probada eficacia en este devastador síntoma de la Esclerosis Múltiple y aprobado por FDA con este fin. La prueba de eficacia sobre 14 días continuos resultó satisfactorio con impacto sobre tiempo de marcha y fatiga en gral., se ampliará la indicación temporalmente. Bibliografía respaldatoria (es innumerable, solo sirva de ejemplo): - Krupp LB, Alvarez LA, La Rocca NG, Scheinberg LC. Fatigue in Multiple Sclerosis. Arch Neurol. 1988; 45: 435-437. -Paty DW, Hashimoto SA, Ebers GC. Management of Multiple Sclerosis and Interpretation of Clinical Trials. chap. 12 in Multiple Sclerosis. Paty DW, Ebers GC. FA Davis Company. Philadelphia 1998. - Goodman AD, Brown TR, Krupp LB. et al. Lancet 2009; 373: 732-738. -Van Winsen ML et al. Mult Scler 2010, 14 (5) 604-610.. - Goodman AD, et al Ann Neurol 2010; 68: 494-502. -Green DM, Jones AC, Brain KR Journal of Clinical Pharmacy and Therapeutics April 2011; pp 1-6. -Bennett SE, Berthoux F, Brown TR, et al. International Journal of MS Care. 15 September 2012; pp 1-11. Solicito: la continuidad para: DATIZIC -Fampiridina: 10 mg. c/u. comprimidos de liberación prolongada: dos tomas, una cada 12 hs.= 20 mg. /día oral para control de fatiga y mejoría sobre marcha: -Datizic de 10 mg./cada una x 56 comprimidos = 1(un) envase grande de mantenimiento para 28 días. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

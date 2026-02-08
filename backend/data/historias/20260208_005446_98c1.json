@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005446_98c1",
+  "estado": "validada",
+  "dedup_key": "DNI:20045488|F:2007-12-10|H:55ab198bce",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_98c1.doc"
+    },
+    "paciente": {
+      "nombre": "Gustavo Raúl, Benitez",
+      "dni": "20045488",
+      "fecha_nacimiento": "1968-05-29",
+      "obra_social": "Plan Salud Hospital Británico",
+      "nro_afiliado": "150"
+    },
+    "consulta": {
+      "fecha": "2007-12-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Polineuropatía, en estudio etiológico ?. Comentarios: debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1). Solicito: -Serología: Ac . anti- Hu., Anti-SSa y SSb. Atte. Dr. Santiago Vétere Debe realizarse dosaje de: cada Inmunoglobulina plasmática: IgA , IgG, IgM, IgE e IgD., para descartar polineuropatia asociada a paraproteinemia.(gammopatias monoclonales del tipo: amiloidosis? crioglobulinas??- MGUS. gammopatia monoclonal de significancia indeterminada.?? determinación de Inmunoglobulinas plasmática, con dosaje de c./fracción. -Realización de Inmunofijación. (La IEF del año 1999 ya había arrojado un incremento de las gammaglobulinas).",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2007-12-03",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2006-02-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Piso 4º Capital Federal Teléfono: (011) -4382-5846 Obra Social: Plan Salud Hospital Británico nº de afiliado: 150 C-510464 02 Inicio de la afección: 2004 aproximadamente Asistido desde: 03/12/07 principales: En un curso progresivo que incluye además episodios de recaídas con parestesias, hipoestesias y bandas de hiperestesias de miembros inferiores pero principalmente dolor de plantas y dedos de pies a predominio de estos últimos que en la actualidad la tornan con una marcha insegura e inestable, permanente\nQue pareciera haberse desarrollado de manera polineurítica, es decir simétrico y sincrónico de cuatro miembros con muy leve compromiso motor",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo",
+      "agrupacion_sindromica": "Rasgos semiológicos: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo",
+      "comentario": "debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1)",
+      "estudios": "realizados: -Laboratorios: -del año 2006: rutinas completas en sangre y orina; -FAN; Ac. anti-ADN; FR; Proteína C reactiva; ANCA P y C; Complemento con C3- C4; ASLO; Serología hepatitis A, B y C; Serología virus de Epstein Barr, CMV, HIV; Crioglobulinas; -Clearence de Creatinina; -Hormonas tiroideas: T3, T4, TSH, -Proteinograma electroforético e Inmunoelectroforesis de suero y orina\nDosaje de vit\nB12; todo lo anterior: s/p. -24/05/06: EMG: compatible con polineuropatia axonal predominante de mm\nInferiores, sin que pueda descartarse coexistencia de compromiso desmielinizante. -04/12/06: EMG: alteración de fibras A delta y C (finas) y A Beta gruesas\nHallazgos compatibles con presencia de Neuropatía periférica distal de tipo axonal en los cuatro miembros con signos denervatorios actual. -07/02/06: RMN de columna lumbosacra: desgarro del anillo fibroso con disco en protrusión posteromedial, resto s/p. -24/05/07: Biopsia de nervio y músculo: signos denervatorios",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE La Plata, 10 de diciembre de 2007. Nombre y apellido: Gustavo Raúl, Benitez Fecha de nacimiento: 29/05/68 DNI: 20.045.488 Dirección: San José nº334. Piso 4º Capital Federal Teléfono: (011) -4382-5846 Obra Social: Plan Salud Hospital Británico nº de afiliado: 150 C-510464 02 Inicio de la afección: 2004 aproximadamente Asistido desde: 03/12/07 Síntomas principales: En un curso progresivo que incluye además episodios de recaídas con parestesias, hipoestesias y bandas de hiperestesias de miembros inferiores pero principalmente dolor de plantas y dedos de pies a predominio de estos últimos que en la actualidad la tornan con una marcha insegura e inestable, permanente. Que pareciera haberse desarrollado de manera polineurítica, es decir simétrico y sincrónico de cuatro miembros con muy leve compromiso motor. Rasgos semiológicos: Agrupación sindrómica: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo. Estudios realizados: -Laboratorios: -del año 2006: rutinas completas en sangre y orina; -FAN; Ac. anti-ADN; FR; Proteína C reactiva; ANCA P y C; Complemento con C3- C4; ASLO; Serología hepatitis A, B y C; Serología virus de Epstein Barr, CMV, HIV; Crioglobulinas; -Clearence de Creatinina; -Hormonas tiroideas: T3, T4, TSH, -Proteinograma electroforético e Inmunoelectroforesis de suero y orina. Dosaje de vit. B12; todo lo anterior: s/p. -24/05/06: EMG: compatible con polineuropatia axonal predominante de mm. Inferiores, sin que pueda descartarse coexistencia de compromiso desmielinizante. -04/12/06: EMG: alteración de fibras A delta y C (finas) y A Beta gruesas. Hallazgos compatibles con presencia de Neuropatía periférica distal de tipo axonal en los cuatro miembros con signos denervatorios actual. -07/02/06: RMN de columna lumbosacra: desgarro del anillo fibroso con disco en protrusión posteromedial, resto s/p. -24/05/07: Biopsia de nervio y músculo: signos denervatorios. Diagnóstico: Polineuropatía, en estudio etiológico ?. Comentarios: debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1). Solicito: -Serología: Ac . anti- Hu., Anti-SSa y SSb. Atte. Dr. Santiago Vétere Debe realizarse dosaje de: cada Inmunoglobulina plasmática: IgA , IgG, IgM, IgE e IgD., para descartar polineuropatia asociada a paraproteinemia.(gammopatias monoclonales del tipo: amiloidosis? crioglobulinas??- MGUS. gammopatia monoclonal de significancia indeterminada.?? determinación de Inmunoglobulinas plasmática, con dosaje de c./fracción. -Realización de Inmunofijación. (La IEF del año 1999 ya había arrojado un incremento de las gammaglobulinas). ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_98c1.doc"
+    },
+    "paciente": {
+      "nombre": "Gustavo Raúl, Benitez",
+      "dni": "20045488",
+      "fecha_nacimiento": "1968-05-29",
+      "obra_social": "Plan Salud Hospital Británico",
+      "nro_afiliado": "150"
+    },
+    "consulta": {
+      "fecha": "2007-12-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Polineuropatía, en estudio etiológico ?. Comentarios: debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1). Solicito: -Serología: Ac . anti- Hu., Anti-SSa y SSb. Atte. Dr. Santiago Vétere Debe realizarse dosaje de: cada Inmunoglobulina plasmática: IgA , IgG, IgM, IgE e IgD., para descartar polineuropatia asociada a paraproteinemia.(gammopatias monoclonales del tipo: amiloidosis? crioglobulinas??- MGUS. gammopatia monoclonal de significancia indeterminada.?? determinación de Inmunoglobulinas plasmática, con dosaje de c./fracción. -Realización de Inmunofijación. (La IEF del año 1999 ya había arrojado un incremento de las gammaglobulinas).",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2007-12-03",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2006-02-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Piso 4º Capital Federal Teléfono: (011) -4382-5846 Obra Social: Plan Salud Hospital Británico nº de afiliado: 150 C-510464 02 Inicio de la afección: 2004 aproximadamente Asistido desde: 03/12/07 principales: En un curso progresivo que incluye además episodios de recaídas con parestesias, hipoestesias y bandas de hiperestesias de miembros inferiores pero principalmente dolor de plantas y dedos de pies a predominio de estos últimos que en la actualidad la tornan con una marcha insegura e inestable, permanente\nQue pareciera haberse desarrollado de manera polineurítica, es decir simétrico y sincrónico de cuatro miembros con muy leve compromiso motor",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo",
+      "agrupacion_sindromica": "Rasgos semiológicos: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo",
+      "comentario": "debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1)",
+      "estudios": "realizados: -Laboratorios: -del año 2006: rutinas completas en sangre y orina; -FAN; Ac. anti-ADN; FR; Proteína C reactiva; ANCA P y C; Complemento con C3- C4; ASLO; Serología hepatitis A, B y C; Serología virus de Epstein Barr, CMV, HIV; Crioglobulinas; -Clearence de Creatinina; -Hormonas tiroideas: T3, T4, TSH, -Proteinograma electroforético e Inmunoelectroforesis de suero y orina\nDosaje de vit\nB12; todo lo anterior: s/p. -24/05/06: EMG: compatible con polineuropatia axonal predominante de mm\nInferiores, sin que pueda descartarse coexistencia de compromiso desmielinizante. -04/12/06: EMG: alteración de fibras A delta y C (finas) y A Beta gruesas\nHallazgos compatibles con presencia de Neuropatía periférica distal de tipo axonal en los cuatro miembros con signos denervatorios actual. -07/02/06: RMN de columna lumbosacra: desgarro del anillo fibroso con disco en protrusión posteromedial, resto s/p. -24/05/07: Biopsia de nervio y músculo: signos denervatorios",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE La Plata, 10 de diciembre de 2007. Nombre y apellido: Gustavo Raúl, Benitez Fecha de nacimiento: 29/05/68 DNI: 20.045.488 Dirección: San José nº334. Piso 4º Capital Federal Teléfono: (011) -4382-5846 Obra Social: Plan Salud Hospital Británico nº de afiliado: 150 C-510464 02 Inicio de la afección: 2004 aproximadamente Asistido desde: 03/12/07 Síntomas principales: En un curso progresivo que incluye además episodios de recaídas con parestesias, hipoestesias y bandas de hiperestesias de miembros inferiores pero principalmente dolor de plantas y dedos de pies a predominio de estos últimos que en la actualidad la tornan con una marcha insegura e inestable, permanente. Que pareciera haberse desarrollado de manera polineurítica, es decir simétrico y sincrónico de cuatro miembros con muy leve compromiso motor. Rasgos semiológicos: Agrupación sindrómica: - Sindrome polineurítico de cuatro miembros a predominio fuerte de los inferiores y sensitivo. Estudios realizados: -Laboratorios: -del año 2006: rutinas completas en sangre y orina; -FAN; Ac. anti-ADN; FR; Proteína C reactiva; ANCA P y C; Complemento con C3- C4; ASLO; Serología hepatitis A, B y C; Serología virus de Epstein Barr, CMV, HIV; Crioglobulinas; -Clearence de Creatinina; -Hormonas tiroideas: T3, T4, TSH, -Proteinograma electroforético e Inmunoelectroforesis de suero y orina. Dosaje de vit. B12; todo lo anterior: s/p. -24/05/06: EMG: compatible con polineuropatia axonal predominante de mm. Inferiores, sin que pueda descartarse coexistencia de compromiso desmielinizante. -04/12/06: EMG: alteración de fibras A delta y C (finas) y A Beta gruesas. Hallazgos compatibles con presencia de Neuropatía periférica distal de tipo axonal en los cuatro miembros con signos denervatorios actual. -07/02/06: RMN de columna lumbosacra: desgarro del anillo fibroso con disco en protrusión posteromedial, resto s/p. -24/05/07: Biopsia de nervio y músculo: signos denervatorios. Diagnóstico: Polineuropatía, en estudio etiológico ?. Comentarios: debe descartarse:-neuropatía asociada a Ac.: -SSa (Ro) y SSb(La). -neuronopatía Ac. anti-Hu (Anti-neuronal tipo IIa o ANNA-1). Solicito: -Serología: Ac . anti- Hu., Anti-SSa y SSb. Atte. Dr. Santiago Vétere Debe realizarse dosaje de: cada Inmunoglobulina plasmática: IgA , IgG, IgM, IgE e IgD., para descartar polineuropatia asociada a paraproteinemia.(gammopatias monoclonales del tipo: amiloidosis? crioglobulinas??- MGUS. gammopatia monoclonal de significancia indeterminada.?? determinación de Inmunoglobulinas plasmática, con dosaje de c./fracción. -Realización de Inmunofijación. (La IEF del año 1999 ya había arrojado un incremento de las gammaglobulinas). ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,168 @@
+{
+  "id": "20260208_005456_3ad4",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2017-07-20|H:5d4fd95956",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_3ad4.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2017-07-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora de -Interferón libre de albúmina y suero bovino de alta dosis y aplicación -Rebif- NF- cartuchos multidosis de 12MUI, 3 veces por semana por vía SC. con inyector Electrónico: -RebiSmart, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa, previniendo la acumulación de carga lesional y la atrofia cerebral\nPor lo cual se solicita continuidad: -Rebif-NF\nCartuchos Multi-dosis: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea.de aplicación electrónica con RebiSmart es decir:- 4(cuatro) cartuchos tri-dosis para 28 días\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Julio de 2017 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16 y 05/05/17: múltiples imágenes focales en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran estabilidad lesional e inactividad Gd. Iv (-). Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora de -Interferón libre de albúmina y suero bovino de alta dosis y aplicación -Rebif- NF- cartuchos multidosis de 12MUI, 3 veces por semana por vía SC. con inyector Electrónico: -RebiSmart, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa, previniendo la acumulación de carga lesional y la atrofia cerebral. Por lo cual se solicita continuidad: -Rebif-NF. Cartuchos Multi-dosis: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea.de aplicación electrónica con RebiSmart es decir:- 4(cuatro) cartuchos tri-dosis para 28 días. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 Solicito: -Urgente continuidad –Rebif-NF. Cartuchos Multi-dosis INTERFERON beta 1ª-r: 12MUI., DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 4 (cuatro) CARTUCHOS/28 DÍAS = 3 APLICACIONES/ SEMANA (LUNES MIERCOLES Y VIERNES) por c/ cartucho: 3 aplicaciones/semana = 12 APLICACIONES/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así suc",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_3ad4.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2017-07-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "Debe continuar sin interrupción con la terapia inmunomoduladora de -Interferón libre de albúmina y suero bovino de alta dosis y aplicación -Rebif- NF- cartuchos multidosis de 12MUI, 3 veces por semana por vía SC. con inyector Electrónico: -RebiSmart, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa, previniendo la acumulación de carga lesional y la atrofia cerebral\nPor lo cual se solicita continuidad: -Rebif-NF\nCartuchos Multi-dosis: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea.de aplicación electrónica con RebiSmart es decir:- 4(cuatro) cartuchos tri-dosis para 28 días\nCabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Julio de 2017 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, caracterizado por parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a instaurar terapia supresora esteroidea y que al ser evaluado por RMN de médula cérvico- dorsal (26/02/14) , muestra en múltiples topografías lesionales imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, además de en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la más reciente recaída. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16 y 05/05/17: múltiples imágenes focales en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran estabilidad lesional e inactividad Gd. Iv (-). Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Comentario: Debe continuar sin interrupción con la terapia inmunomoduladora de -Interferón libre de albúmina y suero bovino de alta dosis y aplicación -Rebif- NF- cartuchos multidosis de 12MUI, 3 veces por semana por vía SC. con inyector Electrónico: -RebiSmart, con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa, previniendo la acumulación de carga lesional y la atrofia cerebral. Por lo cual se solicita continuidad: -Rebif-NF. Cartuchos Multi-dosis: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutanea.de aplicación electrónica con RebiSmart es decir:- 4(cuatro) cartuchos tri-dosis para 28 días. Cabe mencionar que se trata de la dosificación ajustada según el estudio PRISMS, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 Solicito: -Urgente continuidad –Rebif-NF. Cartuchos Multi-dosis INTERFERON beta 1ª-r: 12MUI., DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 4 (cuatro) CARTUCHOS/28 DÍAS = 3 APLICACIONES/ SEMANA (LUNES MIERCOLES Y VIERNES) por c/ cartucho: 3 aplicaciones/semana = 12 APLICACIONES/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así suc",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

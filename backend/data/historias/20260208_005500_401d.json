@@ -1,0 +1,202 @@
+{
+  "id": "20260208_005500_401d",
+  "estado": "validada",
+  "dedup_key": "DNI:30958955|F:2021-05-03|H:e41bab5b3e",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005500_401d.doc"
+    },
+    "paciente": {
+      "nombre": "Maffei, Matias Nicolas",
+      "dni": "30958955",
+      "fecha_nacimiento": "1984-07-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9730958955/00"
+    },
+    "consulta": {
+      "fecha": "2021-05-03",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2007-04-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-03-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2015-03-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2007-07-28",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-02-12",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-09-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente\nEn el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya) hasta el “fallo terapéutico” del año de 2017 que obligó al pase a Dimeful ( Dimetilfumarato). 03/05/21: estable, sin recaídas, sin requerimientos de esteroides ni hospitalización\nAntecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió",
+      "antecedentes": "Y la Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por e Historia Clínica. - Bibliografía respaldatoria míinima: estudios como DEFINE, CONFIRM,, etc\nIndicación: - Urgente: continuidad -Dimeful (Dimetilfumarato) cápsulas de 240 mg dos veces/día oral: 1(un) envase x 60 cápsulas diarias para 30 días\nSeis cajas para seis meses y así sucesivamente\nTratamiento prolongado. “Historia Clínica y Receta de Emergencia” Covid 19\nDecreto N° 297/ 2020 Resol Nac. 696/2020\nPcia\nBs As. 505/2020 Enviada con receta adjunta de manera remota\nAtte\nDr\nSantiago A\nVétere.",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg",
+      "comentario": "Debe continuar la terapia inmunomoduladora, Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, que recibe desde hace más de tres años, específica para Esclerosis Múltiple RR, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia – Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años",
+      "estudios": "realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético\nActividad de Enzima Convertidora de Angiostensina en plasma\nSerología para VIH1 y 2\nIgG e IgA anti-Endomisio\nIgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral\nEn algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd\nIV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd\nIV (inactivas)- RMN cerebrales 28/07/07 muestran actividad lesional: al menos dos imágenes restringen en Difusión y otra realza en anillo incompleto con Gd\nIV (+): ACTIVAS + nuevas imágenes espinales cervicales. -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 03 de Mayo de 2021 Apellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84 Dirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya) hasta el “fallo terapéutico” del año de 2017 que obligó al pase a Dimeful ( Dimetilfumarato). 03/05/21: estable, sin recaídas, sin requerimientos de esteroides ni hospitalización. Antecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg. Estudios realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético. Actividad de Enzima Convertidora de Angiostensina en plasma. Serología para VIH1 y 2. IgG e IgA anti-Endomisio. IgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral. En algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd. IV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd. IV (inactivas)- RMN cerebrales 28/07/07 muestran actividad lesional: al menos dos imágenes restringen en Difusión y otra realza en anillo incompleto con Gd. IV (+): ACTIVAS + nuevas imágenes espinales cervicales. -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: Debe continuar la terapia inmunomoduladora, Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, que recibe desde hace más de tres años, específica para Esclerosis Múltiple RR, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia – Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años. Dado que Dimeful que recibe es un product",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005500_401d.doc"
+    },
+    "paciente": {
+      "nombre": "Maffei, Matias Nicolas",
+      "dni": "30958955",
+      "fecha_nacimiento": "1984-07-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9730958955/00"
+    },
+    "consulta": {
+      "fecha": "2021-05-03",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2007-04-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-03-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2015-03-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2007-07-28",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-02-12",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2012-01-06"
+      },
+      {
+        "molecula": "Dimetil Fumarato",
+        "droga": "Dimetil Fumarato",
+        "dosis": "240 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2012-09-20"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente\nEn el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya) hasta el “fallo terapéutico” del año de 2017 que obligó al pase a Dimeful ( Dimetilfumarato). 03/05/21: estable, sin recaídas, sin requerimientos de esteroides ni hospitalización\nAntecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió",
+      "antecedentes": "Y la Ley 17.132 art. 17, Responsabilidad del Profesional asistente y prescriptor por e Historia Clínica. - Bibliografía respaldatoria míinima: estudios como DEFINE, CONFIRM,, etc\nIndicación: - Urgente: continuidad -Dimeful (Dimetilfumarato) cápsulas de 240 mg dos veces/día oral: 1(un) envase x 60 cápsulas diarias para 30 días\nSeis cajas para seis meses y así sucesivamente\nTratamiento prolongado. “Historia Clínica y Receta de Emergencia” Covid 19\nDecreto N° 297/ 2020 Resol Nac. 696/2020\nPcia\nBs As. 505/2020 Enviada con receta adjunta de manera remota\nAtte\nDr\nSantiago A\nVétere.",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg",
+      "comentario": "Debe continuar la terapia inmunomoduladora, Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, que recibe desde hace más de tres años, específica para Esclerosis Múltiple RR, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia – Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años",
+      "estudios": "realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético\nActividad de Enzima Convertidora de Angiostensina en plasma\nSerología para VIH1 y 2\nIgG e IgA anti-Endomisio\nIgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral\nEn algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd\nIV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd\nIV (inactivas)- RMN cerebrales 28/07/07 muestran actividad lesional: al menos dos imágenes restringen en Difusión y otra realza en anillo incompleto con Gd\nIV (+): ACTIVAS + nuevas imágenes espinales cervicales. -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 03 de Mayo de 2021 Apellido y nombre: Maffei, Matias Nicolas. DNI: 30.958.955 Fecha de Nacimiento: 07/07/84 Dirección: 531 e/6 y 7 nº1145. La Plata. Teléfono: 482-9468 Obra Social: IOMA Nº de afiliado: 9730958955/00 Inicio de la afección: año 2006 Asistido desde: 13/04/07 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: dolor de inicio sobre mm. inferiores y distal, con disestesias, parestesias e hipoestesias de los mismos, ascendente hasta zona supra-patelar bilateral a predominio izquierdo; debilidad de miembros inferiores asociado a torpeza motora y fallos en el equilibrio (paraparesia moderada); fatiga creciente. En el último semestre del año 2011, desarrolló al menos una nueva recaída moderada-severa que deterioró aun más su marcha y equilibrio, que lo obliga al menos en parte del tiempo al uso de apoyo unilateral y al cambio de terapia modificadora del curso, pase a InF B1ar.: Blastoferón: 12 MUI.: 3 veces/s que recibió desde 06/01/12 hasta Junio de 2014, poco después inició Fingolimod (Gilenya) hasta el “fallo terapéutico” del año de 2017 que obligó al pase a Dimeful ( Dimetilfumarato). 03/05/21: estable, sin recaídas, sin requerimientos de esteroides ni hospitalización. Antecedente destacable: - a los 15 años de edad crisis comicial afebril, de tipo generalizada (¿); único evento, que nunca más repitió. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo paraparético espástico. + -de fatiga. - cerebeloso axial y apendicular + - sensitivo superficial y propioceptivo congruente, con Romberg. Estudios realizados: -06/02/07: Rutina Completa de laboratorio. -12/03/07:Examen de Líquido Cefalorraquideo: fisicoquímico, citológico, bacteriológico, cultivo y tipificación. -21/02/07: Enzimas musculares: Aldolasa, CPK y LDH; TSH; dosaje de Ac. fólico y vitamina B12;. -27/03/07: Electromiografía de mm. ii.: No se detectaron signos de lesión neurógena periférica. -17/04/07: KPTT, Recuento de plaquetas, VDRL - Serología para: Factor Reumatoideo, FAN, Complemento C3 y C4, ANCA-P, ANCA-C, SSA (Ro), SSB (La). -Lipidograma electroforético o dosaje de betalipoproteinas (para descartar abetalipoproteinemia); proteinograma electroforético. Actividad de Enzima Convertidora de Angiostensina en plasma. Serología para VIH1 y 2. IgG e IgA anti-Endomisio. IgG anti-Gliadina: Todo lo anterior: Negativo o s/p. -19/03/99 (en oportunidad de la crisis comicial): TAC. de cerebro: s/p. -12/02/07 -03/01/08. -21/01/09, 24/11/10 RMN de encéfalo: varias lesiones focales del SNC., a nivel de tronco del encéfalo (protuberancia y bulbo raquídeo), pedúnculo cerebeloso izquierdo, hemisferio cerebeloso izquierdo, ambos lóbulos temporales y sustancia blanca periventricular bilateral. En algunas de las más reciente del 09/11/11; 13/12/12 y 22/04/14 se destaca un claro incremento en el número, el tamaño y en oportunidades no siempre, de la actividad lesional (volcado de Gd. IV), además de aparición de agujeros negros en T, (motivó el pase a Fingolimod). -22/03/15: RMN de cerebro: estabilidad lesional cerebral y sin volcado de Gd. IV (inactivas)- RMN cerebrales 28/07/07 muestran actividad lesional: al menos dos imágenes restringen en Difusión y otra realza en anillo incompleto con Gd. IV (+): ACTIVAS + nuevas imágenes espinales cervicales. -12/02/09 RMN de columna cervical, dorsal y lumbo-sacra: solo en médula cervical se observa persistencia de las imágenes focales en proyección de C3 y C4, con relación al proceso de base, sin actividad. -22/03/15: RMN de médula cervical y dorsal: no se observan imágenes focales en médula cervical ni dorsal evidentes en secuencias remitidas, si persiste un adelgazamiento en topografía dorsal T10, estable con respecto a imágenes previas. -17/04/07: Potenciales evocados: -Visuales bilaterales prolongados y -Tronco encefálicos con Tiempo de Conducción Central prolongados también bilateralmente. Diagnóstico: - Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: Debe continuar la terapia inmunomoduladora, Dimeful oral: Dimetil Fumarato, cápsulas diariamente de 240 mg dos veces/día, que recibe desde hace más de tres años, específica para Esclerosis Múltiple RR, de menor carga de efectos adversos y eficacia probada a través de estudios como el publicado en NEJM Vol 367 N°12. del 20/09/12. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral, por supuesto conservando la adherencia – Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación desde hace años. Dado que Dimeful que recibe es un product",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

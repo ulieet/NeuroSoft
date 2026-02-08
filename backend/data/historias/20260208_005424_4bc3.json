@@ -1,0 +1,162 @@
+{
+  "id": "20260208_005424_4bc3",
+  "estado": "validada",
+  "dedup_key": "DNI:11579587|F:2010-06-07|H:2f459b1da2",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005424_4bc3.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2010-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2006-03-25",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2006-03-25"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2006-03-25"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, discreto descenso de la fuerza muscular en dicho territorio braquial con cierta torpeza motora sobre ese territorio\nLhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado",
+      "agrupacion_sindromica": "",
+      "comentario": "El paciente debe continuar con la terapia inmunomoduladora de Interferón beta 1ar (Rebif) de 12 MUI(44mcgrs.) de acuerdo a lo demostrado por los estudios: PRISMS a dos y cuatro años, OWINS, EVIDENCE, etc., que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, hechos que se vienen cumpliendo desde la implementación de la terapia solicitada, que se objetiva claramente en la última y más reciente RMN de cerebro (25/03/06)\nPor lo cual se solicita Rebif: 3 jeringas semanales, es decir 12 jeringas mensuales prellenadas de 12 MUI\n(44mcgrs.) c/u\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical: 21/09/01: imagen postero lateral C2-C4. - RMN de cerebro: 07/11/01 y más recientemente 25/03/06: múltiples imágenes en T2 y FLAIR periventriculares y calloso-marginales, esta última muestra una gran estabilidad lesional. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE Resumen de Historia La Plata, 07 de Junio de 2010 Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, discreto descenso de la fuerza muscular en dicho territorio braquial con cierta torpeza motora sobre ese territorio. Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical: 21/09/01: imagen postero lateral C2-C4. - RMN de cerebro: 07/11/01 y más recientemente 25/03/06: múltiples imágenes en T2 y FLAIR periventriculares y calloso-marginales, esta última muestra una gran estabilidad lesional. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones(OMS:340). Comentarios: El paciente debe continuar con la terapia inmunomoduladora de Interferón beta 1ar (Rebif) de 12 MUI(44mcgrs.) de acuerdo a lo demostrado por los estudios: PRISMS a dos y cuatro años, OWINS, EVIDENCE, etc., que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, hechos que se vienen cumpliendo desde la implementación de la terapia solicitada, que se objetiva claramente en la última y más reciente RMN de cerebro (25/03/06). Por lo cual se solicita Rebif: 3 jeringas semanales, es decir 12 jeringas mensuales prellenadas de 12 MUI. (44mcgrs.) c/u. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: -REBIF: Interferón beta 1ar jeringas prellenadas de 12 MUI.(44 Mcgrs.) c/u: 12 jeringas=1 envase /mes, 3 jeringas /semana, para aplicación subcutánea. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005424_4bc3.doc"
+    },
+    "paciente": {
+      "nombre": "Mar de Ajó",
+      "dni": "11579587",
+      "fecha_nacimiento": "1955-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "G"
+    },
+    "consulta": {
+      "fecha": "2010-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "2001-12-01",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-01-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2006-03-25",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2006-03-25"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "2006-03-25"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, discreto descenso de la fuerza muscular en dicho territorio braquial con cierta torpeza motora sobre ese territorio\nLhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias",
+      "antecedentes": "Asistido desde: 01/12/01 Hta: si, desde 2000",
+      "examen_fisico": "borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado",
+      "agrupacion_sindromica": "",
+      "comentario": "El paciente debe continuar con la terapia inmunomoduladora de Interferón beta 1ar (Rebif) de 12 MUI(44mcgrs.) de acuerdo a lo demostrado por los estudios: PRISMS a dos y cuatro años, OWINS, EVIDENCE, etc., que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, hechos que se vienen cumpliendo desde la implementación de la terapia solicitada, que se objetiva claramente en la última y más reciente RMN de cerebro (25/03/06)\nPor lo cual se solicita Rebif: 3 jeringas semanales, es decir 12 jeringas mensuales prellenadas de 12 MUI\n(44mcgrs.) c/u\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente",
+      "estudios": "realizados: - Rutina completa de laboratorio\nEstudio de trombofilia completo\nEcoddopler cardíaco: normal\nElectromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical: 21/09/01: imagen postero lateral C2-C4. - RMN de cerebro: 07/11/01 y más recientemente 25/03/06: múltiples imágenes en T2 y FLAIR periventriculares y calloso-marginales, esta última muestra una gran estabilidad lesional. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE Resumen de Historia La Plata, 07 de Junio de 2010 Apellido y nombre: Caprari, Jorge Alberto Talla: 178 cm. Peso: 80 kgrs. Fecha de nacimiento: 19/06/55 Fecha de nacimiento: 19/06/55 DNI: 11.579.587 Dirección: Francisco de las Carreras Nº 1134. Mar de Ajó. Teléfono: (02257)-420350 Obra Social: IOMA Nº de afiliado: G 115795870/00 Inicio de la afección: 1998 aproximadamente. Asistido desde: 01/12/01 Antecedentes: Hta: si, desde 2000. DBT: no Dislipemias: no Asma: no Atopías: no Tiroides: no Cardiopatias: no Nefropatias: no Síntomas principales: disestesias infraclavicular izquierda que progresa a todo el miembro superior ipsilateral asociada a hipoestesia dolorosa del mismo; cada vez más discapacitante, discreto descenso de la fuerza muscular en dicho territorio braquial con cierta torpeza motora sobre ese territorio. Lhermitte espontáneo, parestesias de ambos miembros inferiores con disestesias e hipoestesias . Rasgos semiológicos: borramiento leve del surco nasogeniano a derecha, reflejo de Hoffmann a izquierda, plantares indiferentes, banda de hiperestesia desde T2-T4 hacia cefálico izquierda, Lhermitte provocado. Estudios realizados: - Rutina completa de laboratorio. Estudio de trombofilia completo. Ecoddopler cardíaco: normal. Electromiografías: 15/01/99: incaracteristica y 07/11/01: normal - RMN de médula cervical: 21/09/01: imagen postero lateral C2-C4. - RMN de cerebro: 07/11/01 y más recientemente 25/03/06: múltiples imágenes en T2 y FLAIR periventriculares y calloso-marginales, esta última muestra una gran estabilidad lesional. - Potenciales evocados visuales: 14/11/01 prolongación de las latencias de P100 a izquierda. Diagnóstico: Esclerosis Múltiple, forma evolutiva a recaídas y remisiones(OMS:340). Comentarios: El paciente debe continuar con la terapia inmunomoduladora de Interferón beta 1ar (Rebif) de 12 MUI(44mcgrs.) de acuerdo a lo demostrado por los estudios: PRISMS a dos y cuatro años, OWINS, EVIDENCE, etc., que permita disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, hechos que se vienen cumpliendo desde la implementación de la terapia solicitada, que se objetiva claramente en la última y más reciente RMN de cerebro (25/03/06). Por lo cual se solicita Rebif: 3 jeringas semanales, es decir 12 jeringas mensuales prellenadas de 12 MUI. (44mcgrs.) c/u. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: -REBIF: Interferón beta 1ar jeringas prellenadas de 12 MUI.(44 Mcgrs.) c/u: 12 jeringas=1 envase /mes, 3 jeringas /semana, para aplicación subcutánea. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

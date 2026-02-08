@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005449_b779",
+  "estado": "validada",
+  "dedup_key": "F:2010-02-01|DX:esclerosis múltiple|H:32d6f2b590",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_b779.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2010-02-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La paciente se ha beneficiado en algunas funciones motoras y del equilibrio, entre otros detalles semiológicos, al recibir en esa Internación durante el año 2006 y la más reciente del mes de enero de este año, en este mismo Hospital y Servicio, pulsos de Metilprednisolona IV\nEs necesario entonces que reciba en un régimen que podría ser “domiciliario” (como ya se han realizado con antelación, que le evita exposición a un medio más contaminado), supervisado por profesional (Clínico y enfermería), se solicita entonces : -Pulsos IntraVenosos de Metilprednisolona (Solumedrol): 1000 mg. /día en Dextrosa al 5% a pasar en no menos de 4Hs.(lento) en una aplicación/mensual; durante tres meses consecutivos: febrero, marzo y abril de 2010\nSiempre esto acompañado de –Ranitidina 300 mg\n(Taural) 600 mg./día en dos tomas, durante 72hs. desde un día antes hasta 24hs. después del día de la aplicación del tratamiento en cuestión",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica\nEstudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 01 de febrero de 2010. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, de los brotes, Inmunomodulador, Kinésico de rehabilitación. Comentario: La paciente se ha beneficiado en algunas funciones motoras y del equilibrio, entre otros detalles semiológicos, al recibir en esa Internación durante el año 2006 y la más reciente del mes de enero de este año, en este mismo Hospital y Servicio, pulsos de Metilprednisolona IV. Es necesario entonces que reciba en un régimen que podría ser “domiciliario” (como ya se han realizado con antelación, que le evita exposición a un medio más contaminado), supervisado por profesional (Clínico y enfermería), se solicita entonces : -Pulsos IntraVenosos de Metilprednisolona (Solumedrol): 1000 mg. /día en Dextrosa al 5% a pasar en no menos de 4Hs.(lento) en una aplicación/mensual; durante tres meses consecutivos: febrero, marzo y abril de 2010. Siempre esto acompañado de –Ranitidina 300 mg. (Taural) 600 mg./día en dos tomas, durante 72hs. desde un día antes hasta 24hs. después del día de la aplicación del tratamiento en cuestión. Solicito: -Metilprednisona (Solumedrol): 1000 mg./día/ 1 vez al mes, Intravenoso x3 (tres) meses consecutivos: febrero, marzo y abril de 2010, es decir en ampollas x 1000 mg. c/u = 3ampollas/trimestre. - Solución de Dextrosa al 5%/mes, al menos 3 (tres) envases por 500 ml. c/u. para el trimestre programado, (más guías de suero, etc.) - Ranitidina (Taural de 300 mg.): comp./cápsulas por 20 unidades, única vez. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005449_b779.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2010-02-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "La paciente se ha beneficiado en algunas funciones motoras y del equilibrio, entre otros detalles semiológicos, al recibir en esa Internación durante el año 2006 y la más reciente del mes de enero de este año, en este mismo Hospital y Servicio, pulsos de Metilprednisolona IV\nEs necesario entonces que reciba en un régimen que podría ser “domiciliario” (como ya se han realizado con antelación, que le evita exposición a un medio más contaminado), supervisado por profesional (Clínico y enfermería), se solicita entonces : -Pulsos IntraVenosos de Metilprednisolona (Solumedrol): 1000 mg. /día en Dextrosa al 5% a pasar en no menos de 4Hs.(lento) en una aplicación/mensual; durante tres meses consecutivos: febrero, marzo y abril de 2010\nSiempre esto acompañado de –Ranitidina 300 mg\n(Taural) 600 mg./día en dos tomas, durante 72hs. desde un día antes hasta 24hs. después del día de la aplicación del tratamiento en cuestión",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica\nEstudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 01 de febrero de 2010. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y ya en el mes de enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Esclerosis Múltiple a recaídas (OMS 340). Tratamiento: sintomático, de los brotes, Inmunomodulador, Kinésico de rehabilitación. Comentario: La paciente se ha beneficiado en algunas funciones motoras y del equilibrio, entre otros detalles semiológicos, al recibir en esa Internación durante el año 2006 y la más reciente del mes de enero de este año, en este mismo Hospital y Servicio, pulsos de Metilprednisolona IV. Es necesario entonces que reciba en un régimen que podría ser “domiciliario” (como ya se han realizado con antelación, que le evita exposición a un medio más contaminado), supervisado por profesional (Clínico y enfermería), se solicita entonces : -Pulsos IntraVenosos de Metilprednisolona (Solumedrol): 1000 mg. /día en Dextrosa al 5% a pasar en no menos de 4Hs.(lento) en una aplicación/mensual; durante tres meses consecutivos: febrero, marzo y abril de 2010. Siempre esto acompañado de –Ranitidina 300 mg. (Taural) 600 mg./día en dos tomas, durante 72hs. desde un día antes hasta 24hs. después del día de la aplicación del tratamiento en cuestión. Solicito: -Metilprednisona (Solumedrol): 1000 mg./día/ 1 vez al mes, Intravenoso x3 (tres) meses consecutivos: febrero, marzo y abril de 2010, es decir en ampollas x 1000 mg. c/u = 3ampollas/trimestre. - Solución de Dextrosa al 5%/mes, al menos 3 (tres) envases por 500 ml. c/u. para el trimestre programado, (más guías de suero, etc.) - Ranitidina (Taural de 300 mg.): comp./cápsulas por 20 unidades, única vez. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005452_6cb1",
+  "estado": "validada",
+  "dedup_key": "DNI:30464325|F:2014-03-10|H:b4c30cf708",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_6cb1.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty- Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2014-03-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociad claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nHoy refiere restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Diagnóstico: - Más probable: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). - Menos probablemente: -Proceso vascular asociado a colagenopatía o anti-fosfolipídico (AR, LEG, SAF. etc.)?",
+      "comentario": "",
+      "estudios": "realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -RMN de encéfalo 23/12/13: múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad actual (E\nMúltiple: OMS:340 )",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 10 de Marzo de 2014. Apellido y nombre: Calvetty- Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociad claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Hoy refiere restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -RMN de encéfalo 23/12/13: múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad actual (E. Múltiple: OMS:340 ). Diagnóstico: - Más probable: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). - Menos probablemente: -Proceso vascular asociado a colagenopatía o síndrome anti-fosfolipídico (AR, LEG, SAF. etc.)?. Tratamiento: hasta la fecha - de los brotes: corticoterapia IV y oral, con buena respuesta en el evento. Solicito: para concluir con estudios que permita diagnostico etiológico solicito: - Inmuno-reumatológico mínimo: Factor Reumatoideo (RR o Prueba de Latex), FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_6cb1.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty- Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2014-03-10",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociad claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nHoy refiere restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Diagnóstico: - Más probable: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). - Menos probablemente: -Proceso vascular asociado a colagenopatía o anti-fosfolipídico (AR, LEG, SAF. etc.)?",
+      "comentario": "",
+      "estudios": "realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -RMN de encéfalo 23/12/13: múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad actual (E\nMúltiple: OMS:340 )",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 10 de Marzo de 2014. Apellido y nombre: Calvetty- Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociad claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Hoy refiere restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -RMN de encéfalo 23/12/13: múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad actual (E. Múltiple: OMS:340 ). Diagnóstico: - Más probable: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340). - Menos probablemente: -Proceso vascular asociado a colagenopatía o síndrome anti-fosfolipídico (AR, LEG, SAF. etc.)?. Tratamiento: hasta la fecha - de los brotes: corticoterapia IV y oral, con buena respuesta en el evento. Solicito: para concluir con estudios que permita diagnostico etiológico solicito: - Inmuno-reumatológico mínimo: Factor Reumatoideo (RR o Prueba de Latex), FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

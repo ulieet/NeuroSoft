@@ -1,0 +1,112 @@
+{
+  "id": "20260208_005423_ef71",
+  "estado": "validada",
+  "dedup_key": "DNI:28200477|F:2011-06-07|H:8058555c9b",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_ef71.doc"
+    },
+    "paciente": {
+      "nombre": "Bustos, Natalia Alejandra",
+      "dni": "28200477",
+      "fecha_nacimiento": "1980-08-04",
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2011-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Crisis parciales simples sin generalización. Tratamiento: que recibió: Higiénico-dietético. Carbamacepina (CBZ) 600 mg./día. Comentario: dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones. Para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2000-12-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2001-05-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente que desarrolló al menos tres crisis parciales simples de tipo vertiginosas (¿), con un déficit neurológico postictal de paresia facio braquiocrural a lo Todd e incluso de hipoestesia con parestesias que remataron en gran cansancio y aturdimiento",
+      "antecedentes": "Fecha de última consulta: 23/11/10 probable relacionados: “crisis febriles” en hermano varón",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones\nPara ser presentado ante quién corresponda",
+      "estudios": "realizados: -Rutina de laboratorio, entre otros 10/08/01, 28/07/06, etc\nHormonas tiroideas, Lipidogramas, KPTT, VDRL, recuento de plaquetas, Serología VIH- etc. - Electroencefalogramas: -31/05/01, 12/12/01, 2402/03, 13/06/05, etc., es decir que en promedio 1 a 2 estudios por año, con: moderada desorganización\nLevemente anormales, en general -RMN de cerebro entre otras: 23/05/01, 13/12/01, 23/07/03, 05/06/06 , 27/11/06 es decir que en promedio un estudio cada 1 a 2 por año: donde solo se ha encontrado a la manera de un hallazgo una formación quística aracnoidea en región frontal anterior izquierda y en los últimos mencionados: dos imágenes focales una subcortex parietal y otra frontal izquierdas",
+      "evolucion": "Por sus crisis recibió carbamacepina, a una dosis de 600 mg./ día repartidos en tres tomas, por vía oral; con buena tolerancia y eficacia hasta fines del año 2010, cuando por su excelente logró suspender tratamiento anti comocial."
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA La Plata, 07 de Junio de 2011 Apellido y Nombre: Bustos, Natalia Alejandra. Fecha de Nacimiento: 04/08/80 Dirección: calle 6 nº 78. 1º piso, Dpto. 7º La Plata DNI: 28.200.477 Teléfono: (0221) 427-1875 Inicio de la afección: 13 de diciembre de 2000. Asistida desde: 30 de abril de 2001. Fecha de última consulta: 23/11/10 Antecedentes probable relacionados: “crisis febriles” en hermano varón. Síntomas principales: paciente que desarrolló al menos tres crisis parciales simples de tipo vertiginosas (¿), con un déficit neurológico postictal de paresia facio braquiocrural a lo Todd e incluso de hipoestesia con parestesias que remataron en gran cansancio y aturdimiento. Por sus crisis recibió carbamacepina, a una dosis de 600 mg./ día repartidos en tres tomas, por vía oral; con buena tolerancia y eficacia hasta fines del año 2010, cuando por su excelente evolución logró suspender tratamiento anti comocial. . Estudios realizados: -Rutina de laboratorio, entre otros 10/08/01, 28/07/06, etc. Hormonas tiroideas, Lipidogramas, KPTT, VDRL, recuento de plaquetas, Serología VIH- etc. - Electroencefalogramas: -31/05/01, 12/12/01, 2402/03, 13/06/05, etc., es decir que en promedio 1 a 2 estudios por año, con: moderada desorganización. Levemente anormales, en general -RMN de cerebro entre otras: 23/05/01, 13/12/01, 23/07/03, 05/06/06 , 27/11/06 es decir que en promedio un estudio cada 1 a 2 por año: donde solo se ha encontrado a la manera de un hallazgo una formación quística aracnoidea en región frontal anterior izquierda y en los últimos mencionados: dos imágenes focales una subcortex parietal y otra frontal izquierdas. Diagnóstico: Crisis parciales simples sin generalización. Tratamiento: que recibió: Higiénico-dietético. Carbamacepina (CBZ) 600 mg./día. Comentario: dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones. Para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005423_ef71.doc"
+    },
+    "paciente": {
+      "nombre": "Bustos, Natalia Alejandra",
+      "dni": "28200477",
+      "fecha_nacimiento": "1980-08-04",
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2011-06-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Crisis parciales simples sin generalización. Tratamiento: que recibió: Higiénico-dietético. Carbamacepina (CBZ) 600 mg./día. Comentario: dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones. Para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "2000-12-13",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2001-05-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: paciente que desarrolló al menos tres crisis parciales simples de tipo vertiginosas (¿), con un déficit neurológico postictal de paresia facio braquiocrural a lo Todd e incluso de hipoestesia con parestesias que remataron en gran cansancio y aturdimiento",
+      "antecedentes": "Fecha de última consulta: 23/11/10 probable relacionados: “crisis febriles” en hermano varón",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones\nPara ser presentado ante quién corresponda",
+      "estudios": "realizados: -Rutina de laboratorio, entre otros 10/08/01, 28/07/06, etc\nHormonas tiroideas, Lipidogramas, KPTT, VDRL, recuento de plaquetas, Serología VIH- etc. - Electroencefalogramas: -31/05/01, 12/12/01, 2402/03, 13/06/05, etc., es decir que en promedio 1 a 2 estudios por año, con: moderada desorganización\nLevemente anormales, en general -RMN de cerebro entre otras: 23/05/01, 13/12/01, 23/07/03, 05/06/06 , 27/11/06 es decir que en promedio un estudio cada 1 a 2 por año: donde solo se ha encontrado a la manera de un hallazgo una formación quística aracnoidea en región frontal anterior izquierda y en los últimos mencionados: dos imágenes focales una subcortex parietal y otra frontal izquierdas",
+      "evolucion": "Por sus crisis recibió carbamacepina, a una dosis de 600 mg./ día repartidos en tres tomas, por vía oral; con buena tolerancia y eficacia hasta fines del año 2010, cuando por su excelente logró suspender tratamiento anti comocial."
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA La Plata, 07 de Junio de 2011 Apellido y Nombre: Bustos, Natalia Alejandra. Fecha de Nacimiento: 04/08/80 Dirección: calle 6 nº 78. 1º piso, Dpto. 7º La Plata DNI: 28.200.477 Teléfono: (0221) 427-1875 Inicio de la afección: 13 de diciembre de 2000. Asistida desde: 30 de abril de 2001. Fecha de última consulta: 23/11/10 Antecedentes probable relacionados: “crisis febriles” en hermano varón. Síntomas principales: paciente que desarrolló al menos tres crisis parciales simples de tipo vertiginosas (¿), con un déficit neurológico postictal de paresia facio braquiocrural a lo Todd e incluso de hipoestesia con parestesias que remataron en gran cansancio y aturdimiento. Por sus crisis recibió carbamacepina, a una dosis de 600 mg./ día repartidos en tres tomas, por vía oral; con buena tolerancia y eficacia hasta fines del año 2010, cuando por su excelente evolución logró suspender tratamiento anti comocial. . Estudios realizados: -Rutina de laboratorio, entre otros 10/08/01, 28/07/06, etc. Hormonas tiroideas, Lipidogramas, KPTT, VDRL, recuento de plaquetas, Serología VIH- etc. - Electroencefalogramas: -31/05/01, 12/12/01, 2402/03, 13/06/05, etc., es decir que en promedio 1 a 2 estudios por año, con: moderada desorganización. Levemente anormales, en general -RMN de cerebro entre otras: 23/05/01, 13/12/01, 23/07/03, 05/06/06 , 27/11/06 es decir que en promedio un estudio cada 1 a 2 por año: donde solo se ha encontrado a la manera de un hallazgo una formación quística aracnoidea en región frontal anterior izquierda y en los últimos mencionados: dos imágenes focales una subcortex parietal y otra frontal izquierdas. Diagnóstico: Crisis parciales simples sin generalización. Tratamiento: que recibió: Higiénico-dietético. Carbamacepina (CBZ) 600 mg./día. Comentario: dada la excelente evolución, es decir la ausencia de nuevos eventos en los últimos años, es que se procedió a un descenso gradual de la dosificación del mencionado anti-epiléptico (CBZ) y se halla desde fines del año 2010 sin terapia con excelente evolución y libre de crisis actualmente, sin complicaciones. Para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

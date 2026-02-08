@@ -1,0 +1,136 @@
+{
+  "id": "20260208_005458_c448",
+  "estado": "validada",
+  "dedup_key": "DNI:38523246|F:2021-03-22|H:39cf96a0eb",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_c448.doc"
+    },
+    "paciente": {
+      "nombre": "Caporale, Agustin",
+      "dni": "38523246",
+      "fecha_nacimiento": "1995-01-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A385232462/00"
+    },
+    "consulta": {
+      "fecha": "2021-03-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-03-30",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "40 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014\nEnfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos\nToda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo",
+      "antecedentes": "Generales: -Uveítis intermedia bilateral con vitrectomía+ sudores nocturnos profusos\nCirugía por hiperostosis maxilar superior izquierda\nAntecedente Enfermedad Actual: desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014\nEnfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos\nToda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo",
+      "examen_fisico": "al momento de la evaluación: Sind. bipiramidal, predominante neto con déficit motor Bq izquierdo leve-moderado+ sensitivo superficial y profundo con nivel cervical x Lhermitte a flexión cefálica ventral + Sind cerebeloso axial y apendicular a izquierda+Sind. de pares craneanos: II bilateral con Uthoff+ sind. esfinteriano vesical+ sind fatiga y termosensibilidad. -EDSS: P2.C2.T2.S2.E2.V1.M1\nAmbulación: 2\nEDSS: 4.0-4.5",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar Urgente, con la terapia inmunomoduladora de Polimunol 40 (Acetato de Glatiramer: Cop-I de 40 mg.), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita continuidad para: Acetato de Glatiramer: Polimunol-40 jeringas prellenadas de 40 mg. c/u para aplicación trisemanal subcutánea\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración)\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copolimero-I (Cop-I) figura expresamente, se trata de un medicamento aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. --13/03/19: KPTT, Sifilis TP(-), Serología HIV 1 y 2(-). -Laboratorio especial mínimo 13/03/19: ANA (+) 1/80, FR (-), SSa/Ro (-); SSb /La(-), C3 y C4\nIgG e IgM anticardiolipina (-), ANCA-P (-) y ANCA C(-). 30/03/19: Ac anti-ADN(-) y Sm-(-). 18/04/19: -ECA: Negativo. - Reacción de serología para brucelosis (Huddleson): Negativo. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos\nAlgunos varios agujeros negros\nOtras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores\nAl menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual\nTodo este cuadro imagenológico se interpreta como de origen Desmielinizante",
+      "evolucion": "al 22/03/21: estable, libre de recaídas en último semestre, no requirió esteroides ni hospitalización"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE SERVICIO DE NEUROLOGÍA La Plata, 22 de Marzo de 2021 Apellido y nombre: Caporale, Agustin. DNI: 38.523.246 Fecha de Nacimiento: 07/01/95 Obra Social: IOMA Nº de afiliado: A385232462/00 Domicilio: Avenida 53 nº 370. La Plata Teléfono: 2352- 15-465780 Asistido: desde 11/03/19. Antecedentes Generales: -Uveítis intermedia bilateral con vitrectomía+ sudores nocturnos profusos. Cirugía por hiperostosis maxilar superior izquierda. Antecedente Enfermedad Actual: desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014. Enfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .. (2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos. Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo. Evolución al 22/03/21: estable, libre de recaídas en último semestre, no requirió esteroides ni hospitalización. Examen físico: al momento de la evaluación: Sind. bipiramidal, predominante neto con déficit motor Bq izquierdo leve-moderado+ sensitivo superficial y profundo con nivel cervical x Lhermitte a flexión cefálica ventral + Sind cerebeloso axial y apendicular a izquierda+Sind. de pares craneanos: II bilateral con Uthoff+ sind. esfinteriano vesical+ sind fatiga y termosensibilidad. -EDSS: P2.C2.T2.S2.E2.V1.M1. Ambulación: 2. EDSS: 4.0-4.5. Estudios realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. --13/03/19: KPTT, Sifilis TP(-), Serología HIV 1 y 2(-). -Laboratorio especial mínimo 13/03/19: ANA (+) 1/80, FR (-), SSa/Ro (-); SSb /La(-), C3 y C4. IgG e IgM anticardiolipina (-), ANCA-P (-) y ANCA C(-). 30/03/19: Ac anti-ADN(-) y Sm-(-). 18/04/19: -ECA: Negativo. - Reacción de serología para brucelosis (Huddleson): Negativo. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos. Algunos varios agujeros negros. Otras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores. Al menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual. Todo este cuadro imagenológico se interpreta como de origen Desmielinizante. Diagnóstico: -Enfermedad desmielinizante primaria OMS:340: Esclerosis Múltiple Recaídas Activa. Comentarios: Debe continuar Urgente, con la terapia inmunomoduladora de Polimunol 40 (Acetato de Glatiramer: Cop-I de 40 mg.), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita continuidad para: Acetato de Glatiramer: Polimunol-40 jeringas prellenadas de 40 mg. c/u para aplicación trisemanal subcutánea. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copolimero-I (Cop-I) figura expresamente, se trata de un medicamento aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respald",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_c448.doc"
+    },
+    "paciente": {
+      "nombre": "Caporale, Agustin",
+      "dni": "38523246",
+      "fecha_nacimiento": "1995-01-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "A385232462/00"
+    },
+    "consulta": {
+      "fecha": "2021-03-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-03-30",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "40 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Antecedente desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014\nEnfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos\nToda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo",
+      "antecedentes": "Generales: -Uveítis intermedia bilateral con vitrectomía+ sudores nocturnos profusos\nCirugía por hiperostosis maxilar superior izquierda\nAntecedente Enfermedad Actual: desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014\nEnfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .\n(2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos\nToda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo",
+      "examen_fisico": "al momento de la evaluación: Sind. bipiramidal, predominante neto con déficit motor Bq izquierdo leve-moderado+ sensitivo superficial y profundo con nivel cervical x Lhermitte a flexión cefálica ventral + Sind cerebeloso axial y apendicular a izquierda+Sind. de pares craneanos: II bilateral con Uthoff+ sind. esfinteriano vesical+ sind fatiga y termosensibilidad. -EDSS: P2.C2.T2.S2.E2.V1.M1\nAmbulación: 2\nEDSS: 4.0-4.5",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar Urgente, con la terapia inmunomoduladora de Polimunol 40 (Acetato de Glatiramer: Cop-I de 40 mg.), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor lo cual se solicita continuidad para: Acetato de Glatiramer: Polimunol-40 jeringas prellenadas de 40 mg. c/u para aplicación trisemanal subcutánea\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración)\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copolimero-I (Cop-I) figura expresamente, se trata de un medicamento aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. --13/03/19: KPTT, Sifilis TP(-), Serología HIV 1 y 2(-). -Laboratorio especial mínimo 13/03/19: ANA (+) 1/80, FR (-), SSa/Ro (-); SSb /La(-), C3 y C4\nIgG e IgM anticardiolipina (-), ANCA-P (-) y ANCA C(-). 30/03/19: Ac anti-ADN(-) y Sm-(-). 18/04/19: -ECA: Negativo. - Reacción de serología para brucelosis (Huddleson): Negativo. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos\nAlgunos varios agujeros negros\nOtras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores\nAl menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual\nTodo este cuadro imagenológico se interpreta como de origen Desmielinizante",
+      "evolucion": "al 22/03/21: estable, libre de recaídas en último semestre, no requirió esteroides ni hospitalización"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “GRAL. SAN MARTIN” SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE SERVICIO DE NEUROLOGÍA La Plata, 22 de Marzo de 2021 Apellido y nombre: Caporale, Agustin. DNI: 38.523.246 Fecha de Nacimiento: 07/01/95 Obra Social: IOMA Nº de afiliado: A385232462/00 Domicilio: Avenida 53 nº 370. La Plata Teléfono: 2352- 15-465780 Asistido: desde 11/03/19. Antecedentes Generales: -Uveítis intermedia bilateral con vitrectomía+ sudores nocturnos profusos. Cirugía por hiperostosis maxilar superior izquierda. Antecedente Enfermedad Actual: desde año 2011 Urgencia /incontinencia de gotas urinaria; que se convierte en disuria con dificultad para iniciar chorro desde 2014. Enfermedad Actual: -(1) Durante diciembre de 2017 desarrolló un cuadro de parestesias e hipoestesia de miembros inferiores “cosquilleo intenso” con torpeza motora sin caída que duró por más de 3-4 meses continuados, se interpretaron clínicamente como estrés y remitió espontáneamente, sin terapia especifica .. (2) en noviembre-diciembre de 2018 se instala nuevo evento de parestesias e hipoestesia también muy marcado, pero de diferente distribución, ahora sobre hemicuerpo izquierdo braquio-crural al que rápidamente suma paresia con torpeza manual: “ no puedo usar el tenedor” con gran repercusión para la marcha que se limita a un par de cientos de mts., con fallos groseros del equilibrio, sensación de mareos y desviación de línea de marcha, episodios de caída fácil-inexplicable- (3) brote, desde mediados del mes de marzo de 2019 dificultad para articular palabra, con episodios de atragantamiento frecuente especialmente a líquidos. Toda esta sintomatología muy agravada durante altas temperaturas estival que lo postraron gran parte de la jornada y cuya repercusión aunque menor llega hasta marzo de 2019, con incesante fatiga y termosensibilidad, vértigo. Evolución al 22/03/21: estable, libre de recaídas en último semestre, no requirió esteroides ni hospitalización. Examen físico: al momento de la evaluación: Sind. bipiramidal, predominante neto con déficit motor Bq izquierdo leve-moderado+ sensitivo superficial y profundo con nivel cervical x Lhermitte a flexión cefálica ventral + Sind cerebeloso axial y apendicular a izquierda+Sind. de pares craneanos: II bilateral con Uthoff+ sind. esfinteriano vesical+ sind fatiga y termosensibilidad. -EDSS: P2.C2.T2.S2.E2.V1.M1. Ambulación: 2. EDSS: 4.0-4.5. Estudios realizados: -Laboratorio de rutina 19/02/19: hemograma completo con recuento de plaquetas, hepatograma completo, glucemia, urea, creatinina, proteínas totales y albúmina, ERS.:2 mm en 1º h., perfil lipídico, TSH y T4, orina completa. --13/03/19: KPTT, Sifilis TP(-), Serología HIV 1 y 2(-). -Laboratorio especial mínimo 13/03/19: ANA (+) 1/80, FR (-), SSa/Ro (-); SSb /La(-), C3 y C4. IgG e IgM anticardiolipina (-), ANCA-P (-) y ANCA C(-). 30/03/19: Ac anti-ADN(-) y Sm-(-). 18/04/19: -ECA: Negativo. - Reacción de serología para brucelosis (Huddleson): Negativo. - RMN de Cerebro y médula Cervical y Dorsal 23/02/19: múltiples imágenes focales cerebrales (n° ≥ 20) en la sustancia blanca supratentorial profunda periventricular y subcorticales bilateral, así tanto como en infratentorio con imágenes focales en protuberancia, bulbo, pedúnculos cerebelosos medios a predominio de los sectores izquierdos. Algunos varios agujeros negros. Otras más a nivel espinal, topografía de: C2-C3, C6-C7 y dorsales bajas, en particular sobre cordones posteriores. Al menos una de las imágenes para-ventricular supero posterior izquierda alcanza los 11,6 mm y capta Gd Iv (+): activa actual. Todo este cuadro imagenológico se interpreta como de origen Desmielinizante. Diagnóstico: -Enfermedad desmielinizante primaria OMS:340: Esclerosis Múltiple Recaídas Activa. Comentarios: Debe continuar Urgente, con la terapia inmunomoduladora de Polimunol 40 (Acetato de Glatiramer: Cop-I de 40 mg.), con el objetivo de disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por lo cual se solicita continuidad para: Acetato de Glatiramer: Polimunol-40 jeringas prellenadas de 40 mg. c/u para aplicación trisemanal subcutánea. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles ( no existe hasta la fecha otro criterio temporal de administración). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copolimero-I (Cop-I) figura expresamente, se trata de un medicamento aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respald",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

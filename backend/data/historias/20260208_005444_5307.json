@@ -1,0 +1,152 @@
+{
+  "id": "20260208_005444_5307",
+  "estado": "validada",
+  "dedup_key": "F:1999-05-12|DX:esclerosis múltipe. variante evolutiva a recaídas y remisiones(oms: 340) . tratamientos: hasta la fecha -interferón b1ar, ampollas im 6mui /semanalmente(avonex), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: interferón b1ar, ampollas prellenadas de 12 mui 3 veces /semana por vía sc rebif, con el cual continua con muy buena tolerancia y eficacia a la fecha. comentarios: la paciente debe continuar con la terapia de rebif con la dosificación de 12mui (44mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con rebif no ha vuelto ha desarrollar severas recaídas estabilizando el edss. por lo cual se solicita continuidad para rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12mui c/u) 28días. por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. bibliografía respaldatoria: exclusiva de rebif. - prisms 2 años. lancet 1998; 352: 1498-1504. - prisms 4 años. neurology 2001; 56: 1628-1636. - incomin neurology 2001; vol.248: supl.3 / vol.56: supl.2 - owims neurology 1999; 53: 679-686. - evidence. neurology 2002; 59: 1496-1506. - revista neurológica argentina 2000; 25: 142-145. - medicina (buenos aires) 2001; 61:470-480. es un medicamento con cobertura 100% a cargo de la obra social, de acuerdo al boletín oficial n° 30.089, 1ra. sección, página 8 del jueves 13 de febrero de 2003 del plan médico obligatorio (o administración de programas especiales) donde rebif figura expresamente. se trata además de un medicamento aprobado por la fda de los eeuu y también por la anmat en la argentina con esta precisa indicación. solicito: interferón beta 1ª-r: rebif jeringas prellenadas de 12 mui (44mcgrs.) c/u, (3 jeringas/semana) = 1 envase por 12 jeringas cada 28 días= aproximadamente seis- siete envases/semestre. ruego se respete la precisa indicación del médico tratante. atte. dr. santiago a. vétere|H:304f59a37f",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_5307.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1262506611/01"
+    },
+    "consulta": {
+      "fecha": "1999-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continua con muy buena tolerancia y eficacia a la fecha. Comentarios: la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS. Por lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Se trata además de un medicamento aprobado por la FDA de los EEUU y también por la ANMAT en la Argentina con esta precisa indicación. Solicito: Interferón beta 1ª-r: REBIF jeringas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 jeringas/semana) = 1 envase por 12 jeringas cada 28 días= aproximadamente seis- siete envases/semestre. Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-05-12",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS\nPor lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro(12/05/99 y 24/09/02) : mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término(1999). -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de noviembre de 2007 Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro(12/05/99 y 24/09/02) : mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término(1999). -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continua con muy buena tolerancia y eficacia a la fecha. Comentarios: la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS. Por lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Se trata además de un medicamento aprobado por la FDA de los EEUU y también por la ANMAT en la Argentina con esta precisa indicación. Solicito: Interferón beta 1ª-r: REBIF jeringas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 jeringas/semana) = 1 envase por 12 jeringas cada 28 días= aproximadamente seis- siete envases/semestre. Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_5307.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1262506611/01"
+    },
+    "consulta": {
+      "fecha": "1999-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continua con muy buena tolerancia y eficacia a la fecha. Comentarios: la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS. Por lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Se trata además de un medicamento aprobado por la FDA de los EEUU y también por la ANMAT en la Argentina con esta precisa indicación. Solicito: Interferón beta 1ª-r: REBIF jeringas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 jeringas/semana) = 1 envase por 12 jeringas cada 28 días= aproximadamente seis- siete envases/semestre. Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "1999-05-12",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS\nPor lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro(12/05/99 y 24/09/02) : mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término(1999). -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de noviembre de 2007 Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de tres brotes anuales; con un EDSS de Kurtzke actual de 2.5. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebro(12/05/99 y 24/09/02) : mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término(1999). -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continua con muy buena tolerancia y eficacia a la fecha. Comentarios: la paciente debe continuar con la terapia de Rebif con la dosificación de 12MUI (44Mcgrs.); cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral, objetivos que se vienen cumpliendo desde su implementación pues desde el inicio con Rebif no ha vuelto ha desarrollar severas recaídas estabilizando el EDSS. Por lo cual se solicita continuidad para Rebif: 3 ampollas semanales, es decir 12 jeringas prellenadas (12MUI c/u) 28días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: exclusiva de Rebif. - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Se trata además de un medicamento aprobado por la FDA de los EEUU y también por la ANMAT en la Argentina con esta precisa indicación. Solicito: Interferón beta 1ª-r: REBIF jeringas prellenadas de 12 MUI (44Mcgrs.) c/u, (3 jeringas/semana) = 1 envase por 12 jeringas cada 28 días= aproximadamente seis- siete envases/semestre. Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

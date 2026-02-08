@@ -1,0 +1,166 @@
+{
+  "id": "20260208_005446_bb2e",
+  "estado": "validada",
+  "dedup_key": "F:2009-02-12|DX:esclerosis múltiple|H:dbb673c92a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_bb2e.doc"
+    },
+    "paciente": {
+      "nombre": "Benitez, María Dolores",
+      "dni": null,
+      "fecha_nacimiento": "1965-10-31",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2174146849/00"
+    },
+    "consulta": {
+      "fecha": "2009-02-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2006-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Nº de afiliado: 2174146849/00 Asistido en este servicio desde: 08/11/07 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de cuatro miembros a predominio de los superiores y a izquierda; torpeza motor manual con dificultad en manipulación fina de objetos y de miembros inferiores con episodios de caída fácil; fallos del equilibrio y lateropulsión; urgencia urinaria y episódica incontinencia; fatiga creciente y termosensibilidad\nEn los últimos meses, cuando se agregó proceso oncológico de mama, se deterioró su estado general y en particular la marcha por paresia crural izquierda que la obliga a bipedestar y deambular con apoyo unilateral\nAgrupación sindromica: - Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: - Entre otros estudios realizados en oportunidad de su diagnóstico en otro Centro de Capital Federal, rutinas de laboratorio, H\nTiroideas, etc. -RMN de encéfalo entre otras13/10/05, 01/08/06 y 15/05/07: donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso medio y hemisferio cerebeloso a izquierda en el último de los mencionados se observa un claro halo de refuerzo con el gadolinio IV; tronco encefálico sobre el pedúnculo cerebral a izquierda, todo lo antes descrito son imágenes compatibles con focos de desmielinización. -RMN de Columna Cervical (08/06/05): imagen a nivel de la unión bulbo cervical. -Potenciales Evocados (02/12/05):-SomatoSensitivos: alterado por prolongación de su latencia sobre el superior izquierdo. -Auditivos: con latencias prolongadas a izquierda. -Ecografía Vesical (16/05/07): volumen Premiccional: 600 ml. y Postmiccional: 118 ml",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 12 de febrero de 2009. Apellido y nombre: Benitez, María Dolores. DNI.: 17.414.684 Dirección: Blaquier nº12 Lobos. Teléfono: (02227) 424326 Fecha de Nacimiento: 31/10/65 Obra Social: IOMA. Nº de afiliado: 2174146849/00 Asistido en este servicio desde: 08/11/07 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de cuatro miembros a predominio de los superiores y a izquierda; torpeza motor manual con dificultad en manipulación fina de objetos y de miembros inferiores con episodios de caída fácil; fallos del equilibrio y lateropulsión; urgencia urinaria y episódica incontinencia; fatiga creciente y termosensibilidad. En los últimos meses, cuando se agregó proceso oncológico de mama, se deterioró su estado general y en particular la marcha por paresia crural izquierda que la obliga a bipedestar y deambular con apoyo unilateral. Agrupación sindromica: - Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad. Estudios realizados: - Entre otros estudios realizados en oportunidad de su diagnóstico en otro Centro de Capital Federal, rutinas de laboratorio, H. Tiroideas, etc. -RMN de encéfalo entre otras13/10/05, 01/08/06 y 15/05/07: donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso medio y hemisferio cerebeloso a izquierda en el último de los mencionados se observa un claro halo de refuerzo con el gadolinio IV; tronco encefálico sobre el pedúnculo cerebral a izquierda, todo lo antes descrito son imágenes compatibles con focos de desmielinización. -RMN de Columna Cervical (08/06/05): imagen a nivel de la unión bulbo cervical. -Potenciales Evocados (02/12/05):-SomatoSensitivos: alterado por prolongación de su latencia sobre el superior izquierdo. -Auditivos: con latencias prolongadas a izquierda. -Ecografía Vesical (16/05/07): volumen Premiccional: 600 ml. y Postmiccional: 118 ml. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: -Neurología: - Interferón B1ar, 12MUI 3 veces/semana SC; -Baclofén:15 mgr. /día oral ; Kinesiología; Terapia Ocupacional. Comentario: -para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_bb2e.doc"
+    },
+    "paciente": {
+      "nombre": "Benitez, María Dolores",
+      "dni": null,
+      "fecha_nacimiento": "1965-10-31",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2174146849/00"
+    },
+    "consulta": {
+      "fecha": "2009-02-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2006-08-01",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": "15 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Nº de afiliado: 2174146849/00 Asistido en este servicio desde: 08/11/07 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de cuatro miembros a predominio de los superiores y a izquierda; torpeza motor manual con dificultad en manipulación fina de objetos y de miembros inferiores con episodios de caída fácil; fallos del equilibrio y lateropulsión; urgencia urinaria y episódica incontinencia; fatiga creciente y termosensibilidad\nEn los últimos meses, cuando se agregó proceso oncológico de mama, se deterioró su estado general y en particular la marcha por paresia crural izquierda que la obliga a bipedestar y deambular con apoyo unilateral\nAgrupación sindromica: - Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: - Entre otros estudios realizados en oportunidad de su diagnóstico en otro Centro de Capital Federal, rutinas de laboratorio, H\nTiroideas, etc. -RMN de encéfalo entre otras13/10/05, 01/08/06 y 15/05/07: donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso medio y hemisferio cerebeloso a izquierda en el último de los mencionados se observa un claro halo de refuerzo con el gadolinio IV; tronco encefálico sobre el pedúnculo cerebral a izquierda, todo lo antes descrito son imágenes compatibles con focos de desmielinización. -RMN de Columna Cervical (08/06/05): imagen a nivel de la unión bulbo cervical. -Potenciales Evocados (02/12/05):-SomatoSensitivos: alterado por prolongación de su latencia sobre el superior izquierdo. -Auditivos: con latencias prolongadas a izquierda. -Ecografía Vesical (16/05/07): volumen Premiccional: 600 ml. y Postmiccional: 118 ml",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 12 de febrero de 2009. Apellido y nombre: Benitez, María Dolores. DNI.: 17.414.684 Dirección: Blaquier nº12 Lobos. Teléfono: (02227) 424326 Fecha de Nacimiento: 31/10/65 Obra Social: IOMA. Nº de afiliado: 2174146849/00 Asistido en este servicio desde: 08/11/07 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de cuatro miembros a predominio de los superiores y a izquierda; torpeza motor manual con dificultad en manipulación fina de objetos y de miembros inferiores con episodios de caída fácil; fallos del equilibrio y lateropulsión; urgencia urinaria y episódica incontinencia; fatiga creciente y termosensibilidad. En los últimos meses, cuando se agregó proceso oncológico de mama, se deterioró su estado general y en particular la marcha por paresia crural izquierda que la obliga a bipedestar y deambular con apoyo unilateral. Agrupación sindromica: - Bipiramidalismo a predominio crural e izquierdo espástico. - Sensitivo, predominio profundo congruente. - Pares craneanos: estatoacústico VIII. - Cerebeloso axial y apendicular. - Esfinteriano vesical. - De fatiga y termosensibilidad. Estudios realizados: - Entre otros estudios realizados en oportunidad de su diagnóstico en otro Centro de Capital Federal, rutinas de laboratorio, H. Tiroideas, etc. -RMN de encéfalo entre otras13/10/05, 01/08/06 y 15/05/07: donde se observan: múltiples imágenes de la sustancia blanca periventricular, calloso marginales y centros semiovales de ambos hemisferios cerebrales, pedúnculo cerebeloso medio y hemisferio cerebeloso a izquierda en el último de los mencionados se observa un claro halo de refuerzo con el gadolinio IV; tronco encefálico sobre el pedúnculo cerebral a izquierda, todo lo antes descrito son imágenes compatibles con focos de desmielinización. -RMN de Columna Cervical (08/06/05): imagen a nivel de la unión bulbo cervical. -Potenciales Evocados (02/12/05):-SomatoSensitivos: alterado por prolongación de su latencia sobre el superior izquierdo. -Auditivos: con latencias prolongadas a izquierda. -Ecografía Vesical (16/05/07): volumen Premiccional: 600 ml. y Postmiccional: 118 ml. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: -Neurología: - Interferón B1ar, 12MUI 3 veces/semana SC; -Baclofén:15 mgr. /día oral ; Kinesiología; Terapia Ocupacional. Comentario: -para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

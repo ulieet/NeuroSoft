@@ -1,0 +1,136 @@
+{
+  "id": "20260208_005451_ed18",
+  "estado": "validada",
+  "dedup_key": "DNI:22441067|F:2014-05-05|H:e37d7e217c",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_ed18.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2014-05-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-08-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "N° de afiliado: 13285/00 principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en cada nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años",
+      "antecedentes": "",
+      "examen_fisico": "Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340- el paciente debe continuar la terapia Inmunomoduladora de Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg\nSC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones, la actividad y carga lesional en la RMN\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "En varias ocasiones laboratorio gral., último 23/08/11: incluido coagulograma con Kptt, recuento de plaquetas y VDRL, entre otros estudios: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . -24/08/11: RMN de cerebro: múltiples imágenes focales de la sustancia blanca periventricular, pericallosas, coronas radiatas y centros semiovales. -24/08/11: RMN de médula cervical: múltiples imágenes focales de la sustancia blanca medular. -24/08/11: RMN de médula dorsal: múltiples imágenes focales de la sustancia blanca particularmente en topografía de T6 y T9 medular espinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Mayo de 2014. Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Síntomas principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en cada nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años. Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - Rasgos semiológicos: - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad. Estudios: -En varias ocasiones laboratorio gral., último 23/08/11: incluido coagulograma con Kptt, recuento de plaquetas y VDRL, entre otros estudios: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . -24/08/11: RMN de cerebro: múltiples imágenes focales de la sustancia blanca periventricular, pericallosas, coronas radiatas y centros semiovales. -24/08/11: RMN de médula cervical: múltiples imágenes focales de la sustancia blanca medular. -24/08/11: RMN de médula dorsal: múltiples imágenes focales de la sustancia blanca particularmente en topografía de T6 y T9 medular espinal. Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340- Comentarios: el paciente debe continuar la terapia Inmunomoduladora de Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg. SC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones, la actividad y carga lesional en la RMN. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Solicito: ESCADRA: -Acetato de Glatiramer: Copolimero-I -jeringas prellenadas de 20 mg.c/u para aplicación diaria subcutánea, 1 envase por 28 jeringas para 28 días. Es decir debe aplicarse diariamente sin interrupción alguna. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005451_ed18.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2014-05-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-08-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Negativas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "N° de afiliado: 13285/00 principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en cada nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años",
+      "antecedentes": "",
+      "examen_fisico": "Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad",
+      "comentario": "Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340- el paciente debe continuar la terapia Inmunomoduladora de Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg\nSC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones, la actividad y carga lesional en la RMN\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "En varias ocasiones laboratorio gral., último 23/08/11: incluido coagulograma con Kptt, recuento de plaquetas y VDRL, entre otros estudios: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . -24/08/11: RMN de cerebro: múltiples imágenes focales de la sustancia blanca periventricular, pericallosas, coronas radiatas y centros semiovales. -24/08/11: RMN de médula cervical: múltiples imágenes focales de la sustancia blanca medular. -24/08/11: RMN de médula dorsal: múltiples imágenes focales de la sustancia blanca particularmente en topografía de T6 y T9 medular espinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Mayo de 2014. Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Síntomas principales: en un curso de recaídas y remisión: destacadas hipoestesias y parestesias alternantes en cada nueva recaída de cuatro miembros a predominio hemicoporal derecho; torpeza motora de miembros a predominio inferior y a derecha; disuria, tenesmo vesical, urgencia urinaria, maniobra de credé para sostener acto miccional que incluso debió ser en sedestación obligada, episodios de infección urinaria a repetición, constipación creciente; fatiga y termosensibilidad; toda la sintomatología antes descripta se sucedió en al menos tres-cuatro brotes distintos distribuidos en los últimos años. Dejando como secuela repercusión sobre la marcha que se tornó hemiparética, urgencia miccional, fatiga y termosensibilidad - Rasgos semiológicos: - Síndrome bipiramidalismo a predominio crural y derecho. - Síndrome sensitivo-propioceptivo congruente. - Síndrome esfinteriano vésico-rectal. - Síndrome de fatiga y termosensibilidad. Estudios: -En varias ocasiones laboratorio gral., último 23/08/11: incluido coagulograma con Kptt, recuento de plaquetas y VDRL, entre otros estudios: s/p. -Rx. de tórax frente: s/p. -29/03/05: -Serología HIV 1 y 2: negativo. -Serología HTLV 1 y 2: negativo. -15/11/05 Examen de Líquido Cefalorraquideo: Inmunoproteico: fraccionamiento oligoclonal de IgG en LCR con suero normal (Por Isoelectroenfoque, laboratorio Dr.Chamoles) . -26/01/05: Potenciales Evocados Visuales (Pattern): Prolongada P100 a derecha . -07/12/04: Potenciales Evocados Auditivos: TCC a izquierda limítrofe . -24/08/11: RMN de cerebro: múltiples imágenes focales de la sustancia blanca periventricular, pericallosas, coronas radiatas y centros semiovales. -24/08/11: RMN de médula cervical: múltiples imágenes focales de la sustancia blanca medular. -24/08/11: RMN de médula dorsal: múltiples imágenes focales de la sustancia blanca particularmente en topografía de T6 y T9 medular espinal. Diagnóstico: -Esclerosis Múltiple a Recaídas: OMS: 340- Comentarios: el paciente debe continuar la terapia Inmunomoduladora de Escadra: COPOLIMERO-I: Acetato de Glatiramer: en jeringas prellenadas de 20 mg. SC/diariamente, con el objetivo de disminuir el número y la intensidad de los brotes, retrasar la discapacidad acumulada, evitar el empleo de inmunosupresores más riesgosos, así como las internaciones, la actividad y carga lesional en la RMN. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Solicito: ESCADRA: -Acetato de Glatiramer: Copolimero-I -jeringas prellenadas de 20 mg.c/u para aplicación diaria subcutánea, 1 envase por 28 jeringas para 28 días. Es decir debe aplicarse diariamente sin interrupción alguna. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

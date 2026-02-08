@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005454_18c6",
+  "estado": "validada",
+  "dedup_key": "F:2003-08-14|DX:esclerosis múltiple|H:4530459984",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_18c6.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": null,
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "Bancario",
+      "nro_afiliado": "266522/02"
+    },
+    "consulta": {
+      "fecha": "2003-08-14",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "En referencia a lo solicitado por Uds.: Protocolo Terapéutico, lamento no poder interpretar con exactitud a qué se refieren, pues esa designación corresponde a terapia oncológica, que desde luego no es el caso (se menciona arriba: diagnóstico etiológico: Esclerosis Múltiple), o bién a una droga en ensayo",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nEEG\nAnálisis del LCR\nPotenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas\nRMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 14 de agosto de 2003. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nac: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. Obra Social: Bancario Nº de afiliado: 266522/02 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. EEG. Análisis del LCR. Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas. Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con COPAXONE:. Comentarios: En referencia a lo solicitado por Uds.: Protocolo Terapéutico, lamento no poder interpretar con exactitud a qué se refieren, pues esa designación corresponde a terapia oncológica, que desde luego no es el caso (se menciona arriba: diagnóstico etiológico: Esclerosis Múltiple), o bién a una droga en ensayo. Les recuerdo que Copolímero I desde hace varios años se encuentra en fase farmacológica IV, de comercialización directa con indicación exclusiva y específica de Esclerosis Múltiple, es un fármaco aprobado por la FDA en EEUU, por la ANMAT en Argentina, con innumerable bibliografía respaldatoria (adjunto sólo un resumen de la misma) y que de ninguna manera puede interrumpirse ni postergarse su aplicación, hasta tanto aparezcan efectos adversos insostenibles o una terapia superior. La única forma de administración posible es la de 1 ampolla de 20 mg. c/u por vía SC diariamente (ver prospecto o vademecum). Por todo lo anterior reitero la solicitud de continuidad del citado fármaco. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002. - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Solicito: Copaxone ampollas de 20 mg. cada una, para aplicación diaria subcutánea, 1 envase por 28 ampollas: 1 envase cada 28 días (30/31 ampollas /mes: aproximadamente 7 envases/semestre) (enero/junio de 2003) Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_18c6.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": null,
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "Bancario",
+      "nro_afiliado": "266522/02"
+    },
+    "consulta": {
+      "fecha": "2003-08-14",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "cortical"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad",
+      "comentario": "En referencia a lo solicitado por Uds.: Protocolo Terapéutico, lamento no poder interpretar con exactitud a qué se refieren, pues esa designación corresponde a terapia oncológica, que desde luego no es el caso (se menciona arriba: diagnóstico etiológico: Esclerosis Múltiple), o bién a una droga en ensayo",
+      "estudios": "realizados: Rutina de laboratorio\nECG\nRx de tórax\nEEG\nAnálisis del LCR\nPotenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas\nRMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 14 de agosto de 2003. Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nac: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. Obra Social: Bancario Nº de afiliado: 266522/02 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), fatiga creciente y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo congruente. - pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. - fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx de tórax. EEG. Análisis del LCR. Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. RMN de cerebro y de médula cervical: múltiples imágenes focales en la sustancia blanca subcortical frontal, del tronco cerebral y médula cervical. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas. Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmunomodulador: con COPAXONE:. Comentarios: En referencia a lo solicitado por Uds.: Protocolo Terapéutico, lamento no poder interpretar con exactitud a qué se refieren, pues esa designación corresponde a terapia oncológica, que desde luego no es el caso (se menciona arriba: diagnóstico etiológico: Esclerosis Múltiple), o bién a una droga en ensayo. Les recuerdo que Copolímero I desde hace varios años se encuentra en fase farmacológica IV, de comercialización directa con indicación exclusiva y específica de Esclerosis Múltiple, es un fármaco aprobado por la FDA en EEUU, por la ANMAT en Argentina, con innumerable bibliografía respaldatoria (adjunto sólo un resumen de la misma) y que de ninguna manera puede interrumpirse ni postergarse su aplicación, hasta tanto aparezcan efectos adversos insostenibles o una terapia superior. La única forma de administración posible es la de 1 ampolla de 20 mg. c/u por vía SC diariamente (ver prospecto o vademecum). Por todo lo anterior reitero la solicitud de continuidad del citado fármaco. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 29.563, 1ra. Sección, página 22 del Miércoles 10 de Enero de 2001 del Plan Médico Obligatorio (o Administración de Programas Especiales). Reafirmada por NOTIFICACIÓN escrita del Superintendente de Servicios de Salud Dr. Rubén H. Torres con fecha 10 de mayo de 2002. - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol. 1992; 37: 75-84. Racke MK, et al. - Benefits of glatiramer acetate on disability in relapsing-remitting multiple sclerosis. Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Sustained clinical benefits of glatiramer acetate in relapsing multiple sclerosis patient observed for 6 years. Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Solicito: Copaxone ampollas de 20 mg. cada una, para aplicación diaria subcutánea, 1 envase por 28 ampollas: 1 envase cada 28 días (30/31 ampollas /mes: aproximadamente 7 envases/semestre) (enero/junio de 2003) Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

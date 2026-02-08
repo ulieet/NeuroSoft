@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005443_a00e",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2006-11-30|H:8a501667d6",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_a00e.doc"
+    },
+    "paciente": {
+      "nombre": "Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2006-11-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9505215821/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "Debe continuar con la terapia inmunomoduladora, pero debido ha que ha desarrollado intolerancia extrema al interferón con episodios pseudogripales e hipertermia sostenida, fatiga e incremento de la espasticidad de miembros inferiores que prácticamente lo tornan con pérdida de la función y lo mantienen postrado casi todas las jornadas posteriores a su aplicación y pese a que se han intentado innumerables estrategias (ajustes de la dosificación, DAINES, corticoides orales a bajas dosis, etc.) para mitigar al menos parcialmente los efectos adversos mencionados durante los últimos meses no se ha logrado",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 30 de noviembre de 2006. Nombre y apellido: Oscar A. Basaldua. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: Debe continuar con la terapia inmunomoduladora, pero debido ha que ha desarrollado intolerancia extrema al interferón con episodios pseudogripales e hipertermia sostenida, fatiga e incremento de la espasticidad de miembros inferiores que prácticamente lo tornan con pérdida de la función y lo mantienen postrado casi todas las jornadas posteriores a su aplicación y pese a que se han intentado innumerables estrategias (ajustes de la dosificación, DAINES, corticoides orales a bajas dosis, etc.) para mitigar al menos parcialmente los efectos adversos mencionados durante los últimos meses no se ha logrado. Considerando que desde hace años recibió un Interferón sin poder disminuirse ni manejarse los efectos adversos antes mencionados, es que debe cambiar el tipo de inmunmodulador a un NO-Interferón pues con cualquiera de este grupo puede desarrollar o incluso agravar la intolerancia, por lo expresado debe iniciar de inmediato tratamiento con : Copolimero-I, Acetato de Glatiramer: Copaxone, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Copaxone. - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copaxone figura expresamente. Solicito: Urgente:-Copolimero-I: Copaxone jeringas prellenadas de 20 mg. c/u, para aplicación diaria subcutánea: 1 jeringa prellenada de 20 mg./día = 28 jeringas/28 días=1 envase. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_a00e.doc"
+    },
+    "paciente": {
+      "nombre": "Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2006-11-30",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9505215821/00 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "Debe continuar con la terapia inmunomoduladora, pero debido ha que ha desarrollado intolerancia extrema al interferón con episodios pseudogripales e hipertermia sostenida, fatiga e incremento de la espasticidad de miembros inferiores que prácticamente lo tornan con pérdida de la función y lo mantienen postrado casi todas las jornadas posteriores a su aplicación y pese a que se han intentado innumerables estrategias (ajustes de la dosificación, DAINES, corticoides orales a bajas dosis, etc.) para mitigar al menos parcialmente los efectos adversos mencionados durante los últimos meses no se ha logrado",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 30 de noviembre de 2006. Nombre y apellido: Oscar A. Basaldua. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelectrofoco. -RMN de encéfalo: donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: Debe continuar con la terapia inmunomoduladora, pero debido ha que ha desarrollado intolerancia extrema al interferón con episodios pseudogripales e hipertermia sostenida, fatiga e incremento de la espasticidad de miembros inferiores que prácticamente lo tornan con pérdida de la función y lo mantienen postrado casi todas las jornadas posteriores a su aplicación y pese a que se han intentado innumerables estrategias (ajustes de la dosificación, DAINES, corticoides orales a bajas dosis, etc.) para mitigar al menos parcialmente los efectos adversos mencionados durante los últimos meses no se ha logrado. Considerando que desde hace años recibió un Interferón sin poder disminuirse ni manejarse los efectos adversos antes mencionados, es que debe cambiar el tipo de inmunmodulador a un NO-Interferón pues con cualquiera de este grupo puede desarrollar o incluso agravar la intolerancia, por lo expresado debe iniciar de inmediato tratamiento con : Copolimero-I, Acetato de Glatiramer: Copaxone, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Copaxone. - Neurology 1998; 50: 701-708. Johnson KP, et al. - Proc. Natl. Acad. Sci. USA 1992; 89: 137-141. Teiteilbaum D, et al. - Neurology 1995; 45: 1268-1276. Johnson KP, et al. - J. Neuroimmunol 1992; 37: 75-84. Racke MK, et al. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. - Journal of the Neurological Sciences 2000; 181: 33-37. C. Liu, L.D. Blumhardt, et al. Multiple Sclerosis Study Group. - Multiple Sclerosis 2000; 6: 255-266. KP Johnson, et al. Multiple Sclerosis Study Group. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Copaxone figura expresamente. Solicito: Urgente:-Copolimero-I: Copaxone jeringas prellenadas de 20 mg. c/u, para aplicación diaria subcutánea: 1 jeringa prellenada de 20 mg./día = 28 jeringas/28 días=1 envase. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

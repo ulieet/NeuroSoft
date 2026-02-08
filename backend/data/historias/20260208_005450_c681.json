@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005450_c681",
+  "estado": "validada",
+  "dedup_key": "DNI:13786141|F:2013-05-27|H:ca7efcadcb",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_c681.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2013-05-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-11-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar con la terapia kinesiológica que le permite recuperar y mantener marcha sostenida, aunque sea con apoyo unilateral (bastón), equilibrio dinámico y la mayor funcionalidad de miembros inferiores, adaptada y respetando su fatiga y termosensibilidad\nEspecial interés en recuperar la seguridad de la ambulación, evitando miedos y vicios posturales, hechos que se han venido mejorando al realizar kinesiología",
+      "estudios": "Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad realizados: rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. -RMN. de cerebro (06/11/03) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 27 de Mayo de 2013. Nombre y apellido: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. -RMN. de cerebro (06/11/03) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). Comentarios: Debe continuar con la terapia kinesiológica que le permite recuperar y mantener marcha sostenida, aunque sea con apoyo unilateral (bastón), equilibrio dinámico y la mayor funcionalidad de miembros inferiores, adaptada y respetando su fatiga y termosensibilidad. Especial interés en recuperar la seguridad de la ambulación, evitando miedos y vicios posturales, hechos que se han venido mejorando al realizar kinesiología. Solicito: -10 (diez) sesiones de kinesiología. Tratamiento prolongado. No interrumpir. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_c681.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2013-05-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-11-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe continuar con la terapia kinesiológica que le permite recuperar y mantener marcha sostenida, aunque sea con apoyo unilateral (bastón), equilibrio dinámico y la mayor funcionalidad de miembros inferiores, adaptada y respetando su fatiga y termosensibilidad\nEspecial interés en recuperar la seguridad de la ambulación, evitando miedos y vicios posturales, hechos que se han venido mejorando al realizar kinesiología",
+      "estudios": "Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad realizados: rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. -RMN. de cerebro (06/11/03) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 27 de Mayo de 2013. Nombre y apellido: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. -RMN. de cerebro (06/11/03) mostró múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas,periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad actual. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). Comentarios: Debe continuar con la terapia kinesiológica que le permite recuperar y mantener marcha sostenida, aunque sea con apoyo unilateral (bastón), equilibrio dinámico y la mayor funcionalidad de miembros inferiores, adaptada y respetando su fatiga y termosensibilidad. Especial interés en recuperar la seguridad de la ambulación, evitando miedos y vicios posturales, hechos que se han venido mejorando al realizar kinesiología. Solicito: -10 (diez) sesiones de kinesiología. Tratamiento prolongado. No interrumpir. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

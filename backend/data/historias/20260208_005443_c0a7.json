@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005443_c0a7",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2004-05-12|H:582903683c",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_c0a7.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2004-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "del tratamiento sintomático del paciente surge que: sus múltiples focos lesionales cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos, así debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -gabapentín a una dosis de 600 mg./día por vía oral.\nSumado a esto su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta la marcha y le provoca espasmos dolorosos nocturnos, por lo tanto debe continuar sin interrupción con la terapia antiespástica: -baclofen a una dosis de 80 mg./día por vía oral\nAdemás para su déficit esfinteriano con urgencia urinaria y episódica incontinencia/ enuresis, es que recibe: -oxibutinina a una dosis de 15 mgrs./día.\nDichos fármacos constan de una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para estos claros objetivos",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: del tratamiento sintomático del paciente surge que: sus múltiples focos lesionales cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos, así debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -gabapentín a una dosis de 600 mg./día por vía oral.. Sumado a esto su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta la marcha y le provoca espasmos dolorosos nocturnos, por lo tanto debe continuar sin interrupción con la terapia antiespástica: -baclofen a una dosis de 80 mg./día por vía oral. Además para su déficit esfinteriano con urgencia urinaria y episódica incontinencia/ enuresis, es que recibe: -oxibutinina a una dosis de 15 mgrs./día. . Dichos fármacos constan de una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para estos claros objetivos. Solicito: -Gabapentín (Neurontin): a una dosis de 600 mg./día por vía oral: dos tomas de 300 mg. c/u./día. -Baclofen (Lioresal) comprimidos de 10 mg. c/u.=80 mg. día., es decir 240comp./mes= 5 (cinco) envases/mes. -Oxibutinina (Ditropan UD), comprimidos de 15 mg. c/u= 15 mg. día, es decir 30comp./mes= 1(un) envase/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_c0a7.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2004-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "del tratamiento sintomático del paciente surge que: sus múltiples focos lesionales cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos, así debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -gabapentín a una dosis de 600 mg./día por vía oral.\nSumado a esto su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta la marcha y le provoca espasmos dolorosos nocturnos, por lo tanto debe continuar sin interrupción con la terapia antiespástica: -baclofen a una dosis de 80 mg./día por vía oral\nAdemás para su déficit esfinteriano con urgencia urinaria y episódica incontinencia/ enuresis, es que recibe: -oxibutinina a una dosis de 15 mgrs./día.\nDichos fármacos constan de una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para estos claros objetivos",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: del tratamiento sintomático del paciente surge que: sus múltiples focos lesionales cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos, así debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -gabapentín a una dosis de 600 mg./día por vía oral.. Sumado a esto su proceso piramidal a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta la marcha y le provoca espasmos dolorosos nocturnos, por lo tanto debe continuar sin interrupción con la terapia antiespástica: -baclofen a una dosis de 80 mg./día por vía oral. Además para su déficit esfinteriano con urgencia urinaria y episódica incontinencia/ enuresis, es que recibe: -oxibutinina a una dosis de 15 mgrs./día. . Dichos fármacos constan de una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para estos claros objetivos. Solicito: -Gabapentín (Neurontin): a una dosis de 600 mg./día por vía oral: dos tomas de 300 mg. c/u./día. -Baclofen (Lioresal) comprimidos de 10 mg. c/u.=80 mg. día., es decir 240comp./mes= 5 (cinco) envases/mes. -Oxibutinina (Ditropan UD), comprimidos de 15 mg. c/u= 15 mg. día, es decir 30comp./mes= 1(un) envase/mes. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

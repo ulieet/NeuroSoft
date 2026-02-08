@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005446_f7db",
+  "estado": "validada",
+  "dedup_key": "DNI:22416316|F:2009-06-18|H:ef0e01c3d5",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f7db.doc"
+    },
+    "paciente": {
+      "nombre": "Bianchi, Gabriel Alejandro",
+      "dni": "22416316",
+      "fecha_nacimiento": "1971-12-16",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1224163168/00"
+    },
+    "consulta": {
+      "fecha": "2009-06-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en proceso de estudio (Diagnóstico Presuntivo: OMS: 340?). Tratamiento: sintomático. Solicito: Debe realizarse: -Inmuno-proteico del Líquido Cefalorraquídeo: por Isoelectroenfoque, único método con sensibilidad cercana al 95%: -Es decir: -Bandas oligoclonales de IgG e índice de IgG del LCR. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-04-08",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 486-1968 Obra Social: IOMA Nº de afiliado: 1224163168/00 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disestesias, parestesias e hipoestesias desde zona infra-mamaria izquierda irradiada ipsilateral hacia miembros con parestesias sobre territorio abdominal en hemi-cinturón; torpeza motora de miembros a predominio inferior y a izquierda; cierta dificultad urinaria con polaquiuria, disuria y episódica incontinencia; crisis de vértigo en varios episodios, fatiga creciente con importante termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal",
+      "comentario": "",
+      "estudios": "realizados: -Rutina de laboratorio 08/04/09: además de recuento de plaquetas, Complemento C3, anticoagulante Lúpico, antifosfolipídico: todo s/p. -RMN de encéfalo 21/04/09 (bajo campo): Normal. -RMN de c/ cervical 16/02/09 y 10/03/09: se observa una imagen intramedular principal en topografía C3-C4 que realza con Gadolinio IV\nEstos hallazgos podrían corresponder a lesiones desmielinizantes agudas. -Potenciales Evocados Trimodales 19/05/09: -Visuales: latencias bilaterales en límite superior de normalidad. -Auditivos: s/p. y -Somatosensitivos de MMII.: alteración en latencias y morfología",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de junio de 2009. Apellido y nombre: Bianchi, Gabriel Alejandro DNI: 22.416.316 Fecha de Nacimiento: 16/12/71 Dirección: 13 bis nº 3.798. La Plata. Teléfono: 486-1968 Obra Social: IOMA Nº de afiliado: 1224163168/00 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disestesias, parestesias e hipoestesias desde zona infra-mamaria izquierda irradiada ipsilateral hacia miembros con parestesias sobre territorio abdominal en hemi-cinturón; torpeza motora de miembros a predominio inferior y a izquierda; cierta dificultad urinaria con polaquiuria, disuria y episódica incontinencia; crisis de vértigo en varios episodios, fatiga creciente con importante termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal. Estudios realizados: -Rutina de laboratorio 08/04/09: además de recuento de plaquetas, Complemento C3, anticoagulante Lúpico, antifosfolipídico: todo s/p. -RMN de encéfalo 21/04/09 (bajo campo): Normal. -RMN de c/ cervical 16/02/09 y 10/03/09: se observa una imagen intramedular principal en topografía C3-C4 que realza con Gadolinio IV. Estos hallazgos podrían corresponder a lesiones desmielinizantes agudas. -Potenciales Evocados Trimodales 19/05/09: -Visuales: latencias bilaterales en límite superior de normalidad. -Auditivos: s/p. y -Somatosensitivos de MMII.: alteración en latencias y morfología. Diagnóstico: paciente en proceso de estudio (Diagnóstico Presuntivo: OMS: 340?). Tratamiento: sintomático. Solicito: Debe realizarse: -Inmuno-proteico del Líquido Cefalorraquídeo: por Isoelectroenfoque, único método con sensibilidad cercana al 95%: -Es decir: -Bandas oligoclonales de IgG e índice de IgG del LCR. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_f7db.doc"
+    },
+    "paciente": {
+      "nombre": "Bianchi, Gabriel Alejandro",
+      "dni": "22416316",
+      "fecha_nacimiento": "1971-12-16",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1224163168/00"
+    },
+    "consulta": {
+      "fecha": "2009-06-18",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en proceso de estudio (Diagnóstico Presuntivo: OMS: 340?). Tratamiento: sintomático. Solicito: Debe realizarse: -Inmuno-proteico del Líquido Cefalorraquídeo: por Isoelectroenfoque, único método con sensibilidad cercana al 95%: -Es decir: -Bandas oligoclonales de IgG e índice de IgG del LCR. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2009-04-08",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 486-1968 Obra Social: IOMA Nº de afiliado: 1224163168/00 principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disestesias, parestesias e hipoestesias desde zona infra-mamaria izquierda irradiada ipsilateral hacia miembros con parestesias sobre territorio abdominal en hemi-cinturón; torpeza motora de miembros a predominio inferior y a izquierda; cierta dificultad urinaria con polaquiuria, disuria y episódica incontinencia; crisis de vértigo en varios episodios, fatiga creciente con importante termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal",
+      "comentario": "",
+      "estudios": "realizados: -Rutina de laboratorio 08/04/09: además de recuento de plaquetas, Complemento C3, anticoagulante Lúpico, antifosfolipídico: todo s/p. -RMN de encéfalo 21/04/09 (bajo campo): Normal. -RMN de c/ cervical 16/02/09 y 10/03/09: se observa una imagen intramedular principal en topografía C3-C4 que realza con Gadolinio IV\nEstos hallazgos podrían corresponder a lesiones desmielinizantes agudas. -Potenciales Evocados Trimodales 19/05/09: -Visuales: latencias bilaterales en límite superior de normalidad. -Auditivos: s/p. y -Somatosensitivos de MMII.: alteración en latencias y morfología",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 18 de junio de 2009. Apellido y nombre: Bianchi, Gabriel Alejandro DNI: 22.416.316 Fecha de Nacimiento: 16/12/71 Dirección: 13 bis nº 3.798. La Plata. Teléfono: 486-1968 Obra Social: IOMA Nº de afiliado: 1224163168/00 Síntomas principales: múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: disestesias, parestesias e hipoestesias desde zona infra-mamaria izquierda irradiada ipsilateral hacia miembros con parestesias sobre territorio abdominal en hemi-cinturón; torpeza motora de miembros a predominio inferior y a izquierda; cierta dificultad urinaria con polaquiuria, disuria y episódica incontinencia; crisis de vértigo en varios episodios, fatiga creciente con importante termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - elementos mínimos de bipiramidalismo. - sensitivo superficial y propioceptivo nivel dorsal 5º-6º a izquierda. - esfinteriano vésico- rectal. Estudios realizados: -Rutina de laboratorio 08/04/09: además de recuento de plaquetas, Complemento C3, anticoagulante Lúpico, antifosfolipídico: todo s/p. -RMN de encéfalo 21/04/09 (bajo campo): Normal. -RMN de c/ cervical 16/02/09 y 10/03/09: se observa una imagen intramedular principal en topografía C3-C4 que realza con Gadolinio IV. Estos hallazgos podrían corresponder a lesiones desmielinizantes agudas. -Potenciales Evocados Trimodales 19/05/09: -Visuales: latencias bilaterales en límite superior de normalidad. -Auditivos: s/p. y -Somatosensitivos de MMII.: alteración en latencias y morfología. Diagnóstico: paciente en proceso de estudio (Diagnóstico Presuntivo: OMS: 340?). Tratamiento: sintomático. Solicito: Debe realizarse: -Inmuno-proteico del Líquido Cefalorraquídeo: por Isoelectroenfoque, único método con sensibilidad cercana al 95%: -Es decir: -Bandas oligoclonales de IgG e índice de IgG del LCR. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

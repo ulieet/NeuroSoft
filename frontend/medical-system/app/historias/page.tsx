@@ -120,7 +120,6 @@ export default function PaginaHistorias() {
   const [estaCargando, setEstaCargando] = useState(true);
   const [procesandoValidacion, setProcesandoValidacion] = useState(false);
   
-  // Filtros
   const [terminoBusqueda, setTerminoBusqueda] = useState("");
   const [filtroEstado, setFiltroEstado] = useState("todos");
   const [filtroFecha, setFiltroFecha] = useState("");
@@ -136,20 +135,13 @@ export default function PaginaHistorias() {
     try {
       setEstaCargando(true);
       setError(null);
-      
-      // --- CORRECCIÓN DE TIPO ---
-      // Usamos 'any' temporalmente porque el backend devuelve { total, items }
-      // pero la interfaz TypeScript espera HistoriaResumen[] directamente.
       const respuesta: any = await listarHistorias();
-      
-      const listaItems = respuesta.items || respuesta; // Soporta ambos formatos
-      
+      const listaItems = respuesta.items || respuesta;
       if (Array.isArray(listaItems)) {
         setHistorias(listaItems);
       } else {
         setHistorias([]);
       }
-
     } catch (err: any) {
       setError(err.message ?? "Error inesperado al cargar historias");
     } finally {
@@ -165,7 +157,6 @@ export default function PaginaHistorias() {
   const historiasFiltradas = useMemo(() => {
     let resultados = [...historias];
 
-    // 1. Filtro Texto
     if (terminoBusqueda) {
       const busq = terminoBusqueda.toLowerCase();
       resultados = resultados.filter((h) => {
@@ -182,24 +173,19 @@ export default function PaginaHistorias() {
       });
     }
 
-    // 2. Filtro Estado
     if (filtroEstado !== "todos") {
       resultados = resultados.filter((h) => h.estado === filtroEstado);
     }
 
-    // 3. Filtro Fecha Inteligente
     if (filtroFecha) {
       resultados = resultados.filter((h) => coincideFecha(h.fecha_consulta, filtroFecha));
     }
 
-    // Ordenamiento
     resultados.sort((a, b) => {
       const diagA = (a.diagnostico ?? "").toLowerCase();
       const diagB = (b.diagnostico ?? "").toLowerCase();
-
       if (diagA < diagB) return sortOrder === "asc" ? -1 : 1;
       if (diagA > diagB) return sortOrder === "asc" ? 1 : -1;
-
       const fechaA = a.fecha_consulta ? new Date(a.fecha_consulta).getTime() : 0;
       const fechaB = b.fecha_consulta ? new Date(b.fecha_consulta).getTime() : 0;
       return fechaB - fechaA;
@@ -231,10 +217,7 @@ export default function PaginaHistorias() {
       alert("No hay historias pendientes para validar.");
       return;
     }
-
-    if (!confirm(`¿Confirmas la validación automática de todas las historias pendientes?`)) {
-      return;
-    }
+    if (!confirm(`¿Confirmas la validación automática de todas las historias pendientes?`)) return;
 
     try {
       setProcesandoValidacion(true);
@@ -249,12 +232,9 @@ export default function PaginaHistorias() {
     }
   };
 
-  const manejarImportacion = async (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
+  const manejarImportacion = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
-
     try {
       setEstaCargando(true);
       setError(null);
@@ -269,262 +249,125 @@ export default function PaginaHistorias() {
     }
   };
 
-  const manejarRefrescar = () => {
-    void cargarHistorias();
-  };
+  const manejarRefrescar = () => { void cargarHistorias(); };
 
-  if (!mounted)
-    return <div className="p-6 text-muted-foreground">Cargando...</div>;
+  if (!mounted) return <div className="p-6 text-muted-foreground">Cargando...</div>;
 
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
+        {/* Cabecera y Botones */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h1 className="text-2xl font-bold">Historias Clínicas</h1>
-            <p className="text-muted-foreground">
-              Gestiona las historias clínicas importadas y validadas
-            </p>
+            <p className="text-muted-foreground">Gestiona las historias clínicas importadas y validadas</p>
           </div>
           <div className="flex flex-wrap gap-2">
-            
-            <Button
-              variant="outline"
-              onClick={manejarRefrescar}
-              disabled={estaCargando}
-            >
-              <RefreshCw
-                className={`mr-2 h-4 w-4 ${
-                  estaCargando ? "animate-spin" : ""
-                }`}
-              />
+            <Button variant="outline" onClick={manejarRefrescar} disabled={estaCargando}>
+              <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
             </Button>
-            
-            <Button 
-              asChild 
-              variant="default" 
-            >
-              <a href="/historias/importar">
-                <FileInput className="mr-2 h-4 w-4" />
-                Importar Historias
-              </a>
+            <Button asChild variant="default">
+              <a href="/historias/importar"><FileInput className="mr-2 h-4 w-4" /> Importar Historias</a>
             </Button>
 
-            <label htmlFor="import-file">
-              <Button asChild disabled={estaCargando} variant="outline">
-                <span>
-                  <Upload className="mr-2 h-4 w-4" />
-                  Subir PDF
-                </span>
-              </Button>
-              <input
-                id="import-file"
-                type="file"
-                accept=".pdf,.doc,.docx"
-                className="hidden"
-                onChange={manejarImportacion}
-                disabled={estaCargando}
-              />
-            </label>
           </div>
         </div>
 
+        {/* Resumen Cards */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <CardTitle>Total Historias</CardTitle>
-              <CardDescription>
-                <FileText className="inline h-4 w-4 mr-2" />
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-2xl font-bold">
-              {historias.length}
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Pendientes</CardTitle>
-              <CardDescription>
-                <Clock className="inline h-4 w-4 mr-2" />
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-2xl font-bold text-blue-600">
-              {totalPendientes}
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Validadas</CardTitle>
-              <CardDescription>
-                <CheckCircle className="inline h-4 w-4 mr-2" />
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-2xl font-bold text-green-600">
-              {totalValidadas}
-            </CardContent>
-          </Card>
+          <Card><CardHeader><CardTitle>Total Historias</CardTitle><CardDescription><FileText className="inline h-4 w-4 mr-2" /></CardDescription></CardHeader><CardContent className="text-2xl font-bold">{historias.length}</CardContent></Card>
+          <Card><CardHeader><CardTitle>Pendientes</CardTitle><CardDescription><Clock className="inline h-4 w-4 mr-2" /></CardDescription></CardHeader><CardContent className="text-2xl font-bold text-blue-600">{totalPendientes}</CardContent></Card>
+          <Card><CardHeader><CardTitle>Validadas</CardTitle><CardDescription><CheckCircle className="inline h-4 w-4 mr-2" /></CardDescription></CardHeader><CardContent className="text-2xl font-bold text-green-600">{totalValidadas}</CardContent></Card>
         </div>
 
+        {/* Filtros */}
         <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Filter className="h-5 w-5" />
-              Filtros y Búsqueda
-            </CardTitle>
-          </CardHeader>
+          <CardHeader><CardTitle className="flex items-center gap-2"><Filter className="h-5 w-5" /> Filtros y Búsqueda</CardTitle></CardHeader>
           <CardContent className="space-y-4">
             <div className="flex flex-col gap-4 md:flex-row">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <Input
-                  placeholder="Buscar por paciente, diagnóstico..."
-                  className="pl-10"
-                  value={terminoBusqueda}
-                  onChange={(e) => setTerminoBusqueda(e.target.value)}
-                />
+                <Input placeholder="Buscar por paciente, diagnóstico..." className="pl-10" value={terminoBusqueda} onChange={(e) => setTerminoBusqueda(e.target.value)} />
               </div>
-
               <div className="w-full md:w-48">
                 <Select value={filtroEstado} onValueChange={setFiltroEstado}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Estado" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="todos">Todos los estados</SelectItem>
-                    <SelectItem value="validada">Validada</SelectItem>
-                    <SelectItem value="pendiente_validacion">Pendiente</SelectItem>
-                    <SelectItem value="error">Error</SelectItem>
-                  </SelectContent>
+                  <SelectTrigger><SelectValue placeholder="Estado" /></SelectTrigger>
+                  <SelectContent><SelectItem value="todos">Todos los estados</SelectItem><SelectItem value="validada">Validada</SelectItem><SelectItem value="pendiente_validacion">Pendiente</SelectItem><SelectItem value="error">Error</SelectItem></SelectContent>
                 </Select>
               </div>
-
-              <div className="w-full md:w-auto">
-                <Input 
-                  type="text" 
-                  placeholder="Fecha (ej: 3/2/2024)"
-                  value={filtroFecha}
-                  onChange={(e) => setFiltroFecha(e.target.value)}
-                  className="w-full md:w-48"
-                />
-              </div>
-
-              <Button
-                variant="outline"
-                onClick={() =>
-                  setSortOrder(sortOrder === "asc" ? "desc" : "asc")
-                }
-                className="w-full md:w-auto"
-              >
-                {sortOrder === "asc" ? (
-                  <ArrowUp className="mr-2 h-4 w-4" />
-                ) : (
-                  <ArrowDown className="mr-2 h-4 w-4" />
-                )}
-                A-Z
+              <div className="w-full md:w-auto"><Input type="text" placeholder="Fecha (ej: 3/2/2024)" value={filtroFecha} onChange={(e) => setFiltroFecha(e.target.value)} className="w-full md:w-48" /></div>
+              <Button variant="outline" onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")} className="w-full md:w-auto">
+                {sortOrder === "asc" ? <ArrowUp className="mr-2 h-4 w-4" /> : <ArrowDown className="mr-2 h-4 w-4" />} A-Z
               </Button>
-
-              {hayFiltrosActivos && (
-                <Button variant="ghost" onClick={limpiarFiltros} className="px-2">
-                  <X className="h-4 w-4" />
-                </Button>
-              )}
+              {hayFiltrosActivos && <Button variant="ghost" onClick={limpiarFiltros} className="px-2"><X className="h-4 w-4" /></Button>}
             </div>
           </CardContent>
         </Card>
 
+        {/* Tabla con Bloqueo de Límites */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
             <div className="space-y-1">
               <CardTitle>Lista de Historias Clínicas</CardTitle>
-              <CardDescription>
-                {historiasFiltradas.length} historias encontradas
-              </CardDescription>
+              <CardDescription>{historiasFiltradas.length} historias encontradas</CardDescription>
             </div>
-
-            <Button 
-              variant="default" 
-              size="sm"
-              onClick={manejarValidarTodas}
-              disabled={estaCargando || procesandoValidacion || totalPendientes === 0}
-            >
+            <Button variant="default" size="sm" onClick={manejarValidarTodas} disabled={estaCargando || procesandoValidacion || totalPendientes === 0}>
               <CheckCheck className={`mr-2 h-4 w-4 ${procesandoValidacion ? "animate-spin" : ""}`} />
               Validar Pendientes ({totalPendientes})
             </Button>
           </CardHeader>
-
           <CardContent>
-            {error && (
-              <div className="mb-4 text-sm text-red-600">{error}</div>
-            )}
-
+            {error && <div className="mb-4 text-sm text-red-600">{error}</div>}
             {estaCargando ? (
-              <div className="text-center py-8 text-muted-foreground">
-                Cargando datos...
-              </div>
+              <div className="text-center py-8 text-muted-foreground">Cargando datos...</div>
             ) : historiasFiltradas.length === 0 ? (
               <div className="text-center py-8 text-muted-foreground">
-                {hayFiltrosActivos
-                  ? "No se encontraron historias con los criterios seleccionados"
-                  : "No hay historias clínicas registradas"}
+                {hayFiltrosActivos ? "No se encontraron historias con los criterios seleccionados" : "No hay historias clínicas registradas"}
               </div>
             ) : (
               <div className="overflow-x-auto">
-                <Table>
+                <Table className="table-fixed w-full"> {/* Bloqueamos el layout de la tabla */}
                   <TableHeader>
                     <TableRow>
-                      <TableHead>ID</TableHead>
-                      <TableHead>Paciente</TableHead>
-                      <TableHead>Fecha</TableHead>
-                      <TableHead>Diagnóstico</TableHead>
-                      <TableHead>Forma clínica</TableHead>
-                      <TableHead>Estado</TableHead>
+                      <TableHead className="w-[90px]">ID</TableHead>
+                      <TableHead className="w-[200px]">Paciente</TableHead>
+                      <TableHead className="w-[100px]">Fecha</TableHead>
+                      <TableHead className="w-[250px]">Diagnóstico</TableHead>
+                      <TableHead className="w-[150px]">Forma clínica</TableHead>
+                      <TableHead className="w-[120px]">Estado</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {historiasFiltradas.map((h) => (
-                      <TableRow 
-                        key={h.id}
-                        className="cursor-pointer hover:bg-muted/50 transition-colors"
-                        onClick={() => router.push(`/historias/detalle?id=${h.id}`)}
-                      >
-                        <TableCell className="font-mono text-xs">
-                          {h.id}
+                      <TableRow key={h.id} className="cursor-pointer hover:bg-muted/50 transition-colors" onClick={() => router.push(`/historias/detalle?id=${h.id}`)}>
+                        <TableCell className="font-mono text-[10px] text-muted-foreground truncate" title={h.id}>
+                          #{h.id.substring(0, 8)}
                         </TableCell>
-                        <TableCell>
-                          <div className="font-medium">
-                            {h.paciente?.nombre ? h.paciente.nombre : <span className="text-muted-foreground italic">Desconocido</span>}
+                        
+                        <TableCell className="max-w-[200px]">
+                          <div className="font-medium truncate" title={h.paciente?.nombre || ""}>
+                            {h.paciente?.nombre || "Desconocido"}
                           </div>
-                          {h.paciente?.dni && (
-                            <div className="text-xs text-muted-foreground">DNI: {h.paciente.dni}</div>
-                          )}
+                          {h.paciente?.dni && <div className="text-xs text-muted-foreground">DNI: {h.paciente.dni}</div>}
                         </TableCell>
-                        <TableCell>
-                          <div className="flex items-center gap-1">
-                            {h.fecha_consulta
-                              ? new Date(
-                                  h.fecha_consulta
-                                ).toLocaleDateString("es-AR", {timeZone: 'UTC'}) 
-                              : "—"}
+                        
+                        <TableCell className="truncate">
+                          {h.fecha_consulta ? new Date(h.fecha_consulta).toLocaleDateString("es-AR", {timeZone: 'UTC'}) : "—"}
+                        </TableCell>
+                        
+                        <TableCell className="max-w-[250px]">
+                          <div className="truncate font-medium" title={h.diagnostico ?? ""}>
+                            {h.diagnostico ?? "Sin diagnóstico"}
                           </div>
                         </TableCell>
-                        <TableCell>
-                          <div className="max-w-xs">
-                            <div
-                              className="truncate font-medium"
-                              title={h.diagnostico ?? ""}
-                            >
-                              {h.diagnostico ?? "Sin diagnóstico"}
-                            </div>
+                        
+                        <TableCell className="max-w-[150px]">
+                          <div className="truncate" title={h.forma || ""}>
+                            {h.forma || <span className="text-muted-foreground">—</span>}
                           </div>
                         </TableCell>
-                        <TableCell>
-                          {h.forma ? h.forma : (
-                            <span className="text-muted-foreground">—</span>
-                          )}
-                        </TableCell>
+                        
                         <TableCell>{getEstadoBadge(h.estado)}</TableCell>
                       </TableRow>
                     ))}

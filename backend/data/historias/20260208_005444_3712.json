@@ -1,0 +1,164 @@
+{
+  "id": "20260208_005444_3712",
+  "estado": "validada",
+  "dedup_key": "DNI:29371624|F:2014-10-22|H:75261dc6d3",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_3712.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": "29371624",
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2293716248/00"
+    },
+    "consulta": {
+      "fecha": "2014-10-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha a recibido: -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continuó con buena eficacia y sin brotes pero que abandonó al tornarse INYECTOFOBICA, desde hace un par de años. . Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas. Debe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Nota: sin interpretar la requisitoria que surge y posterga la provisión y de acuerdo a lo que refiere el fliar. Desde esa auditoría médica le solicitaron (?) cumplo en informar que la paciente recibió por años: (inició con Avonex desde junio de 1999), bajo cobertura de obra social: OSECAC según nos consta y figura en su historia clínica. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2293716248/00 Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de 1 a 3 brotes anuales;por ejemplo: en el año 2007: neuralgia trigeminal R1 a derecha; en 2013: vértigo que la postró por varios meses y marzo de 2014 hemi-hipoestesia FBQ a izquierda con incremento de torpeza motora e incontinencia urinaria y obligó Internación y pulso de esteroides IV\nEDSS de Kurtzke actual de 4.0",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo a izquierda predominante - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas\nDebe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas\nDebe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebr\nEntre otras (12/05/99, 24/09/02): múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término\nMás reciente: 21/03/14, de similar resultado con múltiples focos cerebrales sin realce con Gd\nIV. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE- REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 22 de OCTUBRE de 2014. Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 DNI: 29.371.624 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 2293716248/00 Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de 1 a 3 brotes anuales;por ejemplo: en el año 2007: neuralgia trigeminal R1 a derecha; en 2013: vértigo que la postró por varios meses y marzo de 2014 hemi-hipoestesia FBQ a izquierda con incremento de torpeza motora e incontinencia urinaria y obligó Internación y pulso de esteroides IV. EDSS de Kurtzke actual de 4.0. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo a izquierda predominante - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebr. Entre otras (12/05/99, 24/09/02): múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término. Más reciente: 21/03/14, de similar resultado con múltiples focos cerebrales sin realce con Gd. IV. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha a recibido: -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continuó con buena eficacia y sin brotes pero que abandonó al tornarse INYECTOFOBICA, desde hace un par de años. . Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas. Debe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_3712.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina Battista",
+      "dni": "29371624",
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2293716248/00"
+    },
+    "consulta": {
+      "fecha": "2014-10-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha a recibido: -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continuó con buena eficacia y sin brotes pero que abandonó al tornarse INYECTOFOBICA, desde hace un par de años. . Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas. Debe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente: -Aubagio: Teriflunomide: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Nota: sin interpretar la requisitoria que surge y posterga la provisión y de acuerdo a lo que refiere el fliar. Desde esa auditoría médica le solicitaron (?) cumplo en informar que la paciente recibió por años: (inició con Avonex desde junio de 1999), bajo cobertura de obra social: OSECAC según nos consta y figura en su historia clínica. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": "1999-06-09"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2293716248/00 Inicio de los 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999\nAsistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de 1 a 3 brotes anuales;por ejemplo: en el año 2007: neuralgia trigeminal R1 a derecha; en 2013: vértigo que la postró por varios meses y marzo de 2014 hemi-hipoestesia FBQ a izquierda con incremento de torpeza motora e incontinencia urinaria y obligó Internación y pulso de esteroides IV\nEDSS de Kurtzke actual de 4.0",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo a izquierda predominante - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas\nDebe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas\nDebe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebr\nEntre otras (12/05/99, 24/09/02): múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término\nMás reciente: 21/03/14, de similar resultado con múltiples focos cerebrales sin realce con Gd\nIV. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma\nCuadrantopsia temporal inferior\nOI: pequeño descenso escotomatoso",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE- REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 22 de OCTUBRE de 2014. Nombre y apellido: Ana Carolina Battista Fecha de Nacimiento: 02/04/82 DNI: 29.371.624 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 2293716248/00 Inicio de los síntomas: 2 de abril de 1998 Fecha de diagnóstico de la enfermedad: mayo de 1999. Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha), con un promedio de 1 a 3 brotes anuales;por ejemplo: en el año 2007: neuralgia trigeminal R1 a derecha; en 2013: vértigo que la postró por varios meses y marzo de 2014 hemi-hipoestesia FBQ a izquierda con incremento de torpeza motora e incontinencia urinaria y obligó Internación y pulso de esteroides IV. EDSS de Kurtzke actual de 4.0. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo superficial-propioceptivo a izquierda predominante - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. -La RMN. de cerebr. Entre otras (12/05/99, 24/09/02): múltiples imágenes en la sustancia blanca del SNC: periventriculares, supra e infratentoriales en la del año 2002 (protuberancia y ambos hemisferios cerebelosos), de extensa topografía, algunas con actividad, en la citada en primer término. Más reciente: 21/03/14, de similar resultado con múltiples focos cerebrales sin realce con Gd. IV. -Los potenciales evocados 09/04/99 SS. de miembros izquierdos mostraron demora en sus latencias. -Campimetría computarizada 06/09/99:OD: disminución generalizada de la sensibilidad y escotoma. Cuadrantopsia temporal inferior. OI: pequeño descenso escotomatoso. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones(OMS: 340) . Tratamientos: hasta la fecha a recibido: -Interferón B1ar, ampollas IM 6MUI /semanalmente(AVONEX), desde:09/06/99 hasta agosto de 2004, que por falta respuesta satisfactoria debió pasar a alta dosificación: Interferón B1ar, ampollas prellenadas de 12 MUI 3 veces /semana por vía SC REBIF, con el cual continuó con buena eficacia y sin brotes pero que abandonó al tornarse INYECTOFOBICA, desde hace un par de años. . Comentario: la paciente debe continuar con la terapia inmunomoduladora, pero debido al agotamiento que le proporcionaron las aplicaciones Subcutáneas del Interferón B1ar (Rebif) que recibió por años y por la lamentable persistencia del síndrome gripal o flu like provocado por las mismas, así como el hartazgo en los sitios de aplicación, desarrolló una marcada inyectofobia y consiguiente falta de adherencia sostenida con posterior abandono de la terapia desde hace años, poniendo en serio riesgo la estabilidad clínico neurológica, que queda expuesta en la recaídas recientes antes mencionadas y el incremento en EDSS como secuela de las mismas. Debe entonces sin demora iniciar terapia oral de: -Aubagio: Teriflunomide: 14mg/día tabletas orales (ya que obviamente la otra terapia oral para EM como Fingolimod: de mayor riesgo por sus efectos adversos tales como: arritmia cardiaca, predisposición a desarrollar complicaciones infecciosas como herpes-varicela (téngase presente sitio laboral de la paciente en Unidad Penitenciaria) y maculopatía potencial, no es aceptado por la paciente. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

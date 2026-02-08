@@ -6,34 +6,8 @@ import { listarHistorias, type HistoriaResumen } from "@/lib/api-historias"
 
 export const dynamic = 'force-dynamic'
 
-function obtenerTiempoTranscurrido(idTimestamp: string) {
-  if (!idTimestamp || idTimestamp.length < 15) return "Fecha desconocida";
-  
-  try {
-    const year = parseInt(idTimestamp.substring(0, 4));
-    const month = parseInt(idTimestamp.substring(4, 6)) - 1;
-    const day = parseInt(idTimestamp.substring(6, 8));
-    const hour = parseInt(idTimestamp.substring(9, 11));
-    const minute = parseInt(idTimestamp.substring(11, 13));
-    
-    const fechaHistoria = new Date(year, month, day, hour, minute);
-    const ahora = new Date();
-    const diffMs = ahora.getTime() - fechaHistoria.getTime();
-    const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
-    
-    if (diffHrs < 1) return "hace menos de 1 hora";
-    if (diffHrs === 1) return "hace 1 hora";
-    if (diffHrs < 24) return `hace ${diffHrs} horas`;
-    return `hace ${Math.floor(diffHrs / 24)} días`;
-  } catch (e) {
-    return "Fecha inválida";
-  }
-}
-
 export default async function Dashboard() {
-  // 2. Tipamos explícitamente la variable
   let historias: HistoriaResumen[] = [];
-  
   try {
     historias = await listarHistorias();
   } catch (error) {
@@ -41,140 +15,128 @@ export default async function Dashboard() {
   }
 
   const totalHistorias = historias.length;
-  
   const pendientes = historias.filter(h => h.estado === 'pendiente_validacion');
   const totalPendientes = pendientes.length;
-
-  const hoyStr = new Date().toISOString().slice(0, 10).replace(/-/g, ""); // YYYYMMDD
+  
+  const hoyStr = new Date().toISOString().slice(0, 10).replace(/-/g, "");
   const totalHoy = historias.filter(h => h.id.startsWith(hoyStr)).length;
 
-  const pacientesUnicos = new Set(
-    historias.map(h => h.paciente?.dni || h.paciente?.nombre).filter(Boolean)
-  ).size;
+  const conteoReal = () => {
+    const dnis = new Set();
+    historias.forEach(h => {
+      const dniLimpio = h.paciente?.dni?.toString().replace(/\D/g, "").trim();
+      if (dniLimpio && dniLimpio.length >= 6 && dniLimpio.length <= 9) {
+        dnis.add(dniLimpio);
+      }
+    });
+    return dnis.size;
+  };
 
-  const ultimasPendientes = [...pendientes]
-    .sort((a, b) => b.id.localeCompare(a.id))
-    .slice(0, 5);
+  const pacientesUnicos = conteoReal();
 
   return (
     <MedicalLayout currentPage="dashboard">
-      <div className="space-y-8">
-        <Card className="border-2 border-secondary">
+      <div className="space-y-8 animate-in fade-in duration-500">
+        
+        {/* SECCIÓN PRINCIPAL: IMPORTACIÓN */}
+      
+        <Card className="relative overflow-hidden border-2 border-[#003e66]/20 bg-linear-to-r from-white to-slate-50 shadow-sm">
+          <div className="pointer-events-none absolute top-0 right-0 p-4 opacity-5">
+            <Upload size={120} />
+          </div>
           <CardHeader>
-            <CardTitle className="text-xl text-balance">Importar Historias Clínicas</CardTitle>
-            <CardDescription>Función principal del sistema - Cargar y procesar archivos médicos</CardDescription>
+            <CardTitle className="text-2xl font-bold text-[#003e66]">Gestión NeuroSoft</CardTitle>
+            <CardDescription className="text-base text-slate-600">
+              Procesamiento de historias clínicas y extracción de datos con IA.
+            </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button size="lg" className="w-full h-16 text-lg [&_svg]:stroke-current [&_svg]:fill-current [&_div]:text-inherit" asChild>
+            <Button size="lg" className="h-20 w-full gap-4 text-xl shadow-md transition-all hover:shadow-lg" asChild>
               <a href="/historias/importar">
-                <Upload className="mr-4 h-8 w-8" />
+                <Upload className="h-10 w-10" />
                 <div className="text-left">
-                  <div className="font-semibold">Importar Archivos .doc/.docx</div>
-                  <div className="text-sm text-muted-foreground">Extracción automática de datos médicos</div>
+                  <div className="font-bold">Importar Documentos .doc / .docx</div>
+                  <div className="text-xs font-normal opacity-90">Extracción automática de diagnósticos y tratamientos</div>
                 </div>
               </a>
             </Button>
           </CardContent>
         </Card>
 
+        {/* METRICAS DE COHORTE */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Card>
+          <Card className="border-l-4 border-l-[#003e66] shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Pacientes</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-xs font-bold uppercase text-muted-foreground">Pacientes Reales</CardTitle>
+              <Users className="h-5 w-5 text-[#003e66]" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{pacientesUnicos > 0 ? pacientesUnicos : "-"}</div>
+              <div className="text-3xl font-bold">{pacientesUnicos}</div>
+              <p className="mt-1 text-[10px] text-muted-foreground">Con identidad verificada</p>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card className="shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Historias Clínicas</CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-xs font-bold uppercase text-muted-foreground">Historias Totales</CardTitle>
+              <FileText className="h-5 w-5 text-slate-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{totalHistorias}</div>
+              <div className="text-3xl font-bold">{totalHistorias}</div>
+              <p className="mt-1 text-[10px] text-muted-foreground">Registros procesados</p>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card className="shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Pendientes</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-xs font-bold uppercase text-muted-foreground">Historias Hoy</CardTitle>
+              <Calendar className="h-5 w-5 text-slate-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{totalPendientes}</div>
+              <div className="text-3xl font-bold">{totalHoy}</div>
+              <p className="mt-1 text-[10px] text-muted-foreground">Cargas del día actual</p>
             </CardContent>
           </Card>
-          <Card>
+
+          <Card className="border-2 border-dashed shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Hoy</CardTitle>
-              <Calendar className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-xs font-bold uppercase text-amber-600">Pendientes</CardTitle>
+              <Clock className="h-5 w-5 text-amber-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{totalHoy}</div>
+              <div className="text-3xl font-bold text-amber-600">{totalPendientes}</div>
+              <p className="mt-1 text-[10px] font-medium text-amber-600/70">Requieren validación</p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <Card>
+        {/* ACCIONES SECUNDARIAS */}
+        <div className="grid grid-cols-1 gap-6">
+          <Card className="shadow-sm">
             <CardHeader>
-              <CardTitle>Acciones Rápidas</CardTitle>
+              <CardTitle className="text-lg">Acciones de Navegación</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <Button variant="outline" size="lg" className="w-full justify-start bg-transparent" asChild>
+            <CardContent className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <Button variant="outline" size="lg" className="flex h-24 flex-col gap-2 border-slate-200 transition-colors hover:bg-slate-50" asChild>
                 <a href="/pacientes/nuevo">
-                  <UserPlus className="mr-3 h-5 w-5" />
-                  Nuevo Paciente
+                  <UserPlus className="h-8 w-8 text-[#003e66]" />
+                  <span className="font-semibold text-slate-700">Nuevo Paciente</span>
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="w-full justify-start bg-transparent" asChild>
-                <a href="/reportes">
-                  <BarChart3 className="mr-3 h-5 w-5" />
-                  Ver Reportes
-                </a>
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Pendientes de Validación</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                {ultimasPendientes.length === 0 ? (
-                  <div className="text-center py-6 text-muted-foreground">
-                    <p>No hay historias pendientes.</p>
-                  </div>
-                ) : (
-                  ultimasPendientes.map((historia) => (
-                    <div key={historia.id} className="flex items-center justify-between p-3 border rounded-lg">
-                      <div className="min-w-0">
-                        <p className="font-medium truncate">
-                          {historia.paciente?.nombre 
-                            ? historia.paciente.nombre 
-                            : <span className="text-amber-600 italic">Nombre no detectado</span>}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {obtenerTiempoTranscurrido(historia.id)}
-                        </p>
-                      </div>
-                      <Button size="sm" asChild className="ml-2">
-                        <a href={`/historias/validar?id=${historia.id}`}>Validar</a>
-                      </Button>
-                    </div>
-                  ))
-                )}
-              </div>
               
-              {totalPendientes > 5 && (
-                <div className="mt-4 text-center">
-                  <Button variant="outline" asChild>
-                    <a href="/historias?filter=pendientes">Ver Todas ({totalPendientes})</a>
-                  </Button>
-                </div>
-              )}
+              <Button variant="outline" size="lg" className="flex h-24 flex-col gap-2 border-slate-200 transition-colors hover:bg-slate-50" asChild>
+                <a href="/reportes">
+                  <BarChart3 className="h-8 w-8 text-[#003e66]" />
+                  <span className="font-semibold text-slate-700">Ver Analítica</span>
+                </a>
+              </Button>
+
+              <Button variant="outline" size="lg" className="flex h-24 flex-col gap-2 border-slate-200 transition-colors hover:bg-slate-50" asChild>
+                <a href="/historias">
+                  <FileText className="h-8 w-8 text-[#003e66]" />
+                  <span className="font-semibold text-slate-700">Explorar Archivos</span>
+                </a>
+              </Button>
             </CardContent>
           </Card>
         </div>

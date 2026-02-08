@@ -1,0 +1,162 @@
+{
+  "id": "20260208_005445_30a0",
+  "estado": "validada",
+  "dedup_key": "DNI:35415368|F:2017-01-17|H:2333b991c1",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_30a0.doc"
+    },
+    "paciente": {
+      "nombre": "Bengoechea, Iratxe Maia",
+      "dni": "35415368",
+      "fecha_nacimiento": "1990-11-13",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2111400555/40"
+    },
+    "consulta": {
+      "fecha": "2017-01-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "- Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: La paciente debe continuar la terapia con el inmunomodulador: -Rebif- NF: Interferón B1ar. 12 MUI. = 44 Mcgrs. que se administra en cartucho multidosis subcutáneas 3/tres veces semana por vía SC.; por tiempo indeterminado, por lo cual debe portar las mismas conservándolas a una temperatura de entre 2º - 8º centígrados. – Junto con material descartable para su aplicación. Solicito se facilite a la misma su portación y conservación, adecuadamente. NO frizar. No congelar. No calentar. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-01-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-17",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-)\nOrina Completa\nEntre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd\nIV\n(activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd\nIV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd\nIV (inactivas), incluso en MT. + imagen quística pineal sin cambios. - RMN de médula cervical y dorsal -17/09/16-: rectificación del la lordosis fisiológica a nivel cervical; médula espinal cervical y dorsal sin imágenes: s/p. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI\nHallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de enero de 2017. Apellido y nombre: Bengoechea, Iratxe Maia. DNI: 35.415.368 Fecha de Nacimiento: 13/11/90 Domicilio: 4 n° 1565 e/64 y 65. La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 Síntomas principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda. Estudios realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-). Orina Completa. Entre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd. IV. (activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd. IV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd. IV (inactivas), incluso en MT. + imagen quística pineal sin cambios. - RMN de médula cervical y dorsal -17/09/16-: rectificación del la lordosis fisiológica a nivel cervical; médula espinal cervical y dorsal sin imágenes: s/p. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI. Hallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal. Diagnóstico: - Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: La paciente debe continuar la terapia con el inmunomodulador: -Rebif- NF: Interferón B1ar. 12 MUI. = 44 Mcgrs. que se administra en cartucho multidosis subcutáneas 3/tres veces semana por vía SC.; por tiempo indeterminado",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_30a0.doc"
+    },
+    "paciente": {
+      "nombre": "Bengoechea, Iratxe Maia",
+      "dni": "35415368",
+      "fecha_nacimiento": "1990-11-13",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2111400555/40"
+    },
+    "consulta": {
+      "fecha": "2017-01-17",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "- Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: La paciente debe continuar la terapia con el inmunomodulador: -Rebif- NF: Interferón B1ar. 12 MUI. = 44 Mcgrs. que se administra en cartucho multidosis subcutáneas 3/tres veces semana por vía SC.; por tiempo indeterminado, por lo cual debe portar las mismas conservándolas a una temperatura de entre 2º - 8º centígrados. – Junto con material descartable para su aplicación. Solicito se facilite a la misma su portación y conservación, adecuadamente. NO frizar. No congelar. No calentar. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-01-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-17",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-)\nOrina Completa\nEntre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd\nIV\n(activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd\nIV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd\nIV (inactivas), incluso en MT. + imagen quística pineal sin cambios. - RMN de médula cervical y dorsal -17/09/16-: rectificación del la lordosis fisiológica a nivel cervical; médula espinal cervical y dorsal sin imágenes: s/p. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI\nHallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 17 de enero de 2017. Apellido y nombre: Bengoechea, Iratxe Maia. DNI: 35.415.368 Fecha de Nacimiento: 13/11/90 Domicilio: 4 n° 1565 e/64 y 65. La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 Síntomas principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda. Estudios realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-). Orina Completa. Entre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd. IV. (activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd. IV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd. IV (inactivas), incluso en MT. + imagen quística pineal sin cambios. - RMN de médula cervical y dorsal -17/09/16-: rectificación del la lordosis fisiológica a nivel cervical; médula espinal cervical y dorsal sin imágenes: s/p. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI. Hallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal. Diagnóstico: - Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente debe continuar sin interrupción, con la terapia inmunomoduladora de reciente inicio: -Interferón Beta 1a-recombinante, libre de albúmina: pero en suministro de Cartuchos Trisemanales para uso con Rebi-Smart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días; cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: La paciente debe continuar la terapia con el inmunomodulador: -Rebif- NF: Interferón B1ar. 12 MUI. = 44 Mcgrs. que se administra en cartucho multidosis subcutáneas 3/tres veces semana por vía SC.; por tiempo indeterminado",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

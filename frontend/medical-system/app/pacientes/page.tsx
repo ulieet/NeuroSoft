@@ -1,31 +1,17 @@
 "use client"
 
-import { useEffect, useState, useMemo, Suspense } from "react"
+import { Suspense } from "react"
 import { useRouter } from "next/navigation"
 import { MedicalLayout } from "@/components/medical-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { UserPlus, Calendar, RefreshCw } from "lucide-react"
+import { UserPlus, FileText, RefreshCw } from "lucide-react"
 import { BarraBusquedaFiltros } from "@/app/pacientes/components/filtros"
-import { getPacientes } from "@/lib/api-pacientes"
 
-// IMPORTANTE: Importamos el tipo exacto que espera el componente de filtros
-import { type FiltrosPaciente } from "@/lib/almacen-datos"
-
-interface PacienteFrontend {
-  id: string
-  nombre: string
-  apellido: string
-  dni: string
-  fechaNacimiento: string
-  obraSocial: string
-  telefono: string
-  historialCount: number
-}
-
-type SortOrder = "asc" | "desc";
+// IMPORTANTE: Usamos tu Hook que ya tiene la lógica de conteo de historias
+import { usePacientesListado } from "@/hooks/use-pacientes-listado"
 
 export default function PaginaPacientesSuspense() {
   return (
@@ -44,72 +30,23 @@ export default function PaginaPacientesSuspense() {
 
 function PaginaPacientes() {
   const router = useRouter()
-  const [pacientes, setPacientes] = useState<PacienteFrontend[]>([])
-  const [estaCargando, setEstaCargando] = useState(true)
-  const [terminoBusqueda, setTerminoBusqueda] = useState("")
-  const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
-
-  // 1. Inicializamos con undefined en lugar de "" para cumplir con el tipo number | undefined
-  const [filtros, setFiltros] = useState<FiltrosPaciente>({ 
-    obraSocial: "todas", 
-    sexo: "todos", 
-    edadMin: undefined, 
-    edadMax: undefined 
-  })
-
-  useEffect(() => { cargarPacientes() }, [])
-
-  const cargarPacientes = async () => {
-    setEstaCargando(true)
-    try {
-      const dataBackend = await getPacientes()
-      const pacientesMapeados: PacienteFrontend[] = dataBackend.map(p => {
-        const partesNombre = p.nombre.includes(',') ? p.nombre.split(',') : [p.nombre, '']
-        return {
-          id: p.id,
-          apellido: partesNombre[0].trim() || p.nombre,
-          nombre: partesNombre.length > 1 ? partesNombre[1].trim() : '',
-          dni: p.dni,
-          fechaNacimiento: p.fecha_nacimiento || "",
-          obraSocial: p.obra_social || "S/D",
-          telefono: "-",
-          historialCount: 0
-        }
-      })
-      setPacientes(pacientesMapeados)
-    } catch (error) {
-      console.error("Error cargando pacientes:", error)
-    } finally {
-      setEstaCargando(false)
-    }
-  }
-
-  // 2. Corregimos la firma de la función para que coincida con lo que espera BarraBusquedaFiltros
-  const manejarCambioFiltro = (id: keyof FiltrosPaciente, value: string | number) => {
-    setFiltros((prev) => ({
-      ...prev,
-      [id]: value === "" ? undefined : value
-    }))
-  }
-
-  const pacientesFiltrados = useMemo(() => {
-    return pacientes.filter((p) => {
-      const t = terminoBusqueda.toLowerCase()
-      const coincide = `${p.nombre} ${p.apellido}`.toLowerCase().includes(t) || p.dni.includes(t)
-      if (!coincide) return false
-      
-      if (filtros.obraSocial !== "todas" && p.obraSocial !== filtros.obraSocial) return false
-      
-      // Aquí podrías agregar lógica de filtrado por edad si calculas la edad del paciente
-      
-      return true
-    }).sort((a, b) => {
-      if (sortOrder === "asc") return a.apellido.localeCompare(b.apellido)
-      return b.apellido.localeCompare(a.apellido)
-    })
-  }, [pacientes, terminoBusqueda, filtros, sortOrder])
-
-  const hayFiltrosActivos = terminoBusqueda !== "" || filtros.obraSocial !== "todas" || filtros.edadMin !== undefined || filtros.edadMax !== undefined
+  
+  // Extraemos todo lo necesario de tu Hook
+  const {
+    pacientesFiltrados,
+    estaCargando,
+    obrasSocialesDisponibles,
+    terminoBusqueda,
+    setTerminoBusqueda,
+    filtros,
+    manejarCambioFiltro,
+    sortOrder,
+    setSortOrder,
+    limpiarFiltros,
+    cargarPacientes,
+    obtenerConteoHistorias, // <--- Esta es la clave para el número de historias
+    hayFiltrosActivos
+  } = usePacientesListado()
 
   return (
     <MedicalLayout currentPage="pacientes">
@@ -117,14 +54,16 @@ function PaginaPacientes() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h1 className="text-2xl font-bold">Gestión de Pacientes</h1>
-            <p className="text-muted-foreground">Base de datos centralizada ({pacientes.length} registros)</p>
+            <p className="text-muted-foreground text-sm">
+              Base de datos centralizada ({pacientesFiltrados.length} registros)
+            </p>
           </div>
           <div className="flex gap-2">
             <Button variant="outline" onClick={cargarPacientes} disabled={estaCargando}>
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
             </Button>
-            <Button onClick={() => router.push("/pacientes/nuevo")}>
+            <Button className="bg-[#003e66] hover:bg-[#002a45]" onClick={() => router.push("/pacientes/nuevo")}>
               <UserPlus className="mr-2 h-4 w-4" /> Nuevo Paciente
             </Button>
           </div>
@@ -133,21 +72,19 @@ function PaginaPacientes() {
         <BarraBusquedaFiltros
           terminoBusqueda={terminoBusqueda}
           onTerminoBusquedaChange={setTerminoBusqueda}
-          filtros={filtros} // Ahora el tipo coincide
-          onFiltrosChange={manejarCambioFiltro} // Ahora la firma coincide
-          obrasSocialesDisponibles={Array.from(new Set(pacientes.map(p => p.obraSocial).filter(os => os !== "S/D")))}
-          onLimpiarFiltros={() => {
-            setTerminoBusqueda(""); 
-            setFiltros({obraSocial: "todas", sexo: "todos", edadMin: undefined, edadMax: undefined})
-          }}
+          filtros={filtros} 
+          // Ajustamos para que coincida con la firma del Hook (obra_social)
+          onFiltrosChange={(id: any, val: any) => manejarCambioFiltro(id, val)}
+          obrasSocialesDisponibles={obrasSocialesDisponibles}
+          onLimpiarFiltros={limpiarFiltros}
           sortOrder={sortOrder}
-          onSortOrderChange={(val) => setSortOrder(val as SortOrder)}
+          onSortOrderChange={(val) => setSortOrder(val as "asc" | "desc")}
         />
 
         <Card>
           <CardHeader>
             <CardTitle>Lista de Pacientes</CardTitle>
-            <CardDescription>{pacientesFiltrados.length} encontrados</CardDescription>
+            <CardDescription>Haz clic en una fila para ver el detalle completo</CardDescription>
           </CardHeader>
           <CardContent>
               <Table>
@@ -156,17 +93,17 @@ function PaginaPacientes() {
                     <TableHead>Apellido y Nombre</TableHead>
                     <TableHead>DNI</TableHead>
                     <TableHead>Obra Social</TableHead>
-                    <TableHead>Nacimiento</TableHead> 
-                    <TableHead>Acciones</TableHead>
+                    <TableHead className="text-center">Historias</TableHead> 
+                    <TableHead className="text-right">Acciones</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {estaCargando ? (
-                    <TableRow><TableCell colSpan={5} className="text-center py-8">Cargando...</TableCell></TableRow>
+                  {estaCargando && pacientesFiltrados.length === 0 ? (
+                    <TableRow><TableCell colSpan={5} className="text-center py-8 text-muted-foreground italic">Cargando pacientes...</TableCell></TableRow>
                   ) : pacientesFiltrados.length === 0 ? (
                     <TableRow>
                       <TableCell colSpan={5} className="text-center text-muted-foreground py-8">
-                        {hayFiltrosActivos ? "No se encontraron resultados" : "No hay pacientes registrados."}
+                        {hayFiltrosActivos ? "No se encontraron coincidencias" : "No hay pacientes registrados."}
                       </TableCell>
                     </TableRow>
                   ) : (
@@ -176,16 +113,32 @@ function PaginaPacientes() {
                         className="cursor-pointer hover:bg-muted/50 transition-colors" 
                         onClick={() => router.push(`/pacientes/detalle?id=${p.id}`)}
                       >
-                        <TableCell className="font-medium">{p.apellido}, {p.nombre}</TableCell>
-                        <TableCell className="font-mono">{p.dni}</TableCell>
-                        <TableCell><Badge variant="outline">{p.obraSocial}</Badge></TableCell>
+                        {/* Nombre: quitamos comas y ponemos en negrita sutil */}
+                        <TableCell className="font-medium">
+                           {p.nombre.replace(/,/g, '')}
+                        </TableCell>
+                        
+                        <TableCell className="font-mono text-xs text-muted-foreground">
+                          {p.dni}
+                        </TableCell>
+                        
                         <TableCell>
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3 text-muted-foreground" />
-                            {p.fechaNacimiento || "-"}
+                          <Badge variant="outline" className="font-normal border-slate-200">
+                            {p.obra_social || "Particular"}
+                          </Badge>
+                        </TableCell>
+
+                        {/* CONTEO REAL: Usamos la función del Hook */}
+                        <TableCell className="text-center">
+                          <div className="inline-flex items-center justify-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">
+                            <FileText className="h-3 w-3 opacity-50" />
+                            {obtenerConteoHistorias(p.id)}
                           </div>
                         </TableCell>
-                        <TableCell><Badge variant="secondary">Ver Ficha</Badge></TableCell>
+
+                        <TableCell className="text-right">
+                          <Badge variant="secondary" className="bg-slate-100 text-slate-600 hover:bg-slate-200">Ficha</Badge>
+                        </TableCell>
                       </TableRow>
                     ))
                   )}

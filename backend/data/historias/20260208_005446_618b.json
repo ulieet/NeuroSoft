@@ -1,0 +1,156 @@
+{
+  "id": "20260208_005446_618b",
+  "estado": "validada",
+  "dedup_key": "F:2019-10-08|DX:esclerosis múltiple|H:64cdb87b9c",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260208_005446_618b.docx"
+    },
+    "paciente": {
+      "nombre": "vigil, lúcido, orientado, habla fluente, sin disartria",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2019-10-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-01-16",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2019-10-16",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro",
+      "antecedentes": "Niega de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones",
+      "examen_fisico": "Paciente vigil, lúcido, orientado, habla fluente, sin disartria\nComprende y obedece órdenes complejas\nPupilas isocóricas y reactivas\nMotilidad ocular conservada\nRefiere visión borrosa a la mirada extrema horizontal\nNistagmus horizonto-rotatorio a la mirada extrema lateral y vertical, que no agota\nHipoestesia de hemicara derecha, hipoestesia hemilengua derecha, disminución del reflejo nauseoso a la estimulación de pilares y faringe del lado derecho\nHipoacusia derecha\nFuerza muscular: Barre y Mingazinni de MMSS y MMII negativos, sin caída\nTono muscular conservado\nROT: hiperreflexia miembro inferior izquierdo\nSensibilidad: hipopalestesia distal de miembro inferior izquierdo\nResto conservado\nTaxia: leve dismetría de miembro superior izquierdo\nRomberg negativo\nMarcha: leve aumento de la base de sustentación, oscilante, no requiere asistencia\nSin caídas\nAgrupación sindrómica: Vértigo con características de compromiso central",
+      "agrupacion_sindromica": "Motivo de consulta: vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro\nNiega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones",
+      "comentario": "",
+      "estudios": "Antecedentes de Enfermedad Actual: Cursó internación en Sala D de este Hospital desde el 16/01/17 hasta el 26/01/17 donde se le realizó de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI\nAlgunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros\nAl interrogatorio dirigido refiere haber abandonado el deporte hace unos 10 años debido a paresia de miembro inferior izquierdo con posterior mejoría parcial del cuadro\nActualmente refiere la presencia de debilidad de miembro inferior izquierdo luego de 5 minutos de marcha",
+      "evolucion": "Motivo de consulta: Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro\nNiega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones"
+    },
+    "texto_original": " Motivo de consulta: Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución. En consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro. Niega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones. Se internó para adecuado estudio y tratamiento. Antecedentes de Enfermedad Actual: Cursó internación en Sala D de este Hospital desde el 16/01/17 hasta el 26/01/17 donde se le realizó RMN de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI. Algunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros. Al interrogatorio dirigido refiere haber abandonado el deporte hace unos 10 años debido a paresia de miembro inferior izquierdo con posterior mejoría parcial del cuadro. Actualmente refiere la presencia de debilidad de miembro inferior izquierdo luego de 5 minutos de marcha. Antecedentes personales: Sin antecedentes personales de relevancia. Antecedentes heredofamiliares: Sin antecedentes heredofamiliares de relevancia. Toxicos: Ex tabaquista Fármacos: Refiere no tener indicada ninguna medicación al momento de esta internación. Examen físico: Paciente vigil, lúcido, orientado, habla fluente, sin disartria. Comprende y obedece órdenes complejas. Pupilas isocóricas y reactivas. Motilidad ocular conservada. Refiere visión borrosa a la mirada extrema horizontal. Nistagmus horizonto-rotatorio a la mirada extrema lateral y vertical, que no agota. Hipoestesia de hemicara derecha, hipoestesia hemilengua derecha, disminución del reflejo nauseoso a la estimulación de pilares y faringe del lado derecho. Hipoacusia derecha. Fuerza muscular: Barre y Mingazinni de MMSS y MMII negativos, sin caída. Tono muscular conservado. ROT: hiperreflexia miembro inferior izquierdo. Sensibilidad: hipopalestesia distal de miembro inferior izquierdo. Resto conservado. Taxia: leve dismetría de miembro superior izquierdo. Romberg negativo. Marcha: leve aumento de la base de sustentación, oscilante, no requiere asistencia. Sin caídas. Agrupación sindrómica: Vértigo con características de compromiso central. Leve dismetría miembro superior izquierdo Lhermitte + Paresia de miembro inferior izquierdo Hiperreflexia miembro inferior izquierdo Hipoestesia hemifacial, hemilingual Disminución del reflejo nauseoso lado derecho Compatible con lesiones en SNC con difusión en espacio y tiempo Impresión diagnóstica: Probable enfermedad desmielinizante  Esclerosis múltiple ¿? Estudios complementarios: Laboratorio central: Imágenes: RMN de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI. Algunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros. Estudio inmunológico: FAN, ancaC y ancaP NEGATIVOS Bandas oligoclonales de tipo III; Indice IgG 0,71 Albúmina en LCR: 0,13 IgG LCR: 2,24 Albúmina en suero: 41 IgG en suero: 997 Tratamiento recibido: Omeprazol 20 mg/día Heparina Na 5000 U c/8hs Dieta general Metilprednisolona 1g/día x 3 días Evolución: Sin intercurrencias; mejoría parcial del cuadro vertiginoso y de la marcha. Diagnostico presuntivo al alta: Probable esclerosis múltiple fenotipo recaída-remisión. Tratamiento al alta: Ninguno Pendiente: Completar estudio inmunológico con SSA y SSB Estudio de trombofilias Control y seguimiento por consultorio externo de Neurología Motivo de consulta: Diplopia. Motivo de internación: Sospecha de brote de Esclerosis Múltiple fenotipo recaida-remisión. Enfermedad actual: Paciente sin antecedentes patológicos conocidos que acude a consulta refiriendo iniciar hace aproximadamente 5 días con episodios de vértigo, de segundos de duración, sin patrón diario definido, acompañado de diplopía, por lo que se decide su internación para diagnóstico y tratamiento. Porta RNM de encéfalo con contraste EV control (04/08/17) con múltiples áreas con tendencia a la confluencia, supra e infratentoriales, hipertintensas en T2 y FLAIR, a nivel de sustancia blanca periventricular, cuerpo calloso, tronco de encéfalo y cerebelo, sin realce tras administración de contraste; e imagen quística suprayacente al 3º ventrículo. Además porta RNM de col",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260208_005446_618b.docx"
+    },
+    "paciente": {
+      "nombre": "vigil, lúcido, orientado, habla fluente, sin disartria",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2019-10-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-01-16",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular",
+            "infratentorial",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2019-10-16",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro",
+      "antecedentes": "Niega de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones",
+      "examen_fisico": "Paciente vigil, lúcido, orientado, habla fluente, sin disartria\nComprende y obedece órdenes complejas\nPupilas isocóricas y reactivas\nMotilidad ocular conservada\nRefiere visión borrosa a la mirada extrema horizontal\nNistagmus horizonto-rotatorio a la mirada extrema lateral y vertical, que no agota\nHipoestesia de hemicara derecha, hipoestesia hemilengua derecha, disminución del reflejo nauseoso a la estimulación de pilares y faringe del lado derecho\nHipoacusia derecha\nFuerza muscular: Barre y Mingazinni de MMSS y MMII negativos, sin caída\nTono muscular conservado\nROT: hiperreflexia miembro inferior izquierdo\nSensibilidad: hipopalestesia distal de miembro inferior izquierdo\nResto conservado\nTaxia: leve dismetría de miembro superior izquierdo\nRomberg negativo\nMarcha: leve aumento de la base de sustentación, oscilante, no requiere asistencia\nSin caídas\nAgrupación sindrómica: Vértigo con características de compromiso central",
+      "agrupacion_sindromica": "Motivo de consulta: vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro\nNiega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones",
+      "comentario": "",
+      "estudios": "Antecedentes de Enfermedad Actual: Cursó internación en Sala D de este Hospital desde el 16/01/17 hasta el 26/01/17 donde se le realizó de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI\nAlgunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros\nAl interrogatorio dirigido refiere haber abandonado el deporte hace unos 10 años debido a paresia de miembro inferior izquierdo con posterior mejoría parcial del cuadro\nActualmente refiere la presencia de debilidad de miembro inferior izquierdo luego de 5 minutos de marcha",
+      "evolucion": "Motivo de consulta: Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de\nEn consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro\nNiega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones"
+    },
+    "texto_original": " Motivo de consulta: Sindrome vertiginoso Motivo de internación: Adecuado estudio y tratamiento de síndrome vertiginoso de origen central Enfermedad actual: Paciente de 32 años con antecedente de tabaquismo, inicia en forma aguda con cuadro vertiginoso continuo (últimas semanas de diciembre), no desencadenado por cambios de posición, con desequilibrio para la marcha, caídas; concomitantemente refiere hipoacusia derecha, hipoestesia facial derecha, hipoestesia hemilengua derecha, visión borrosa, signo de Lhermitte ante flexión cervical de aproximadamente mismo tiempo de evolución. En consultas anteriores en otros nosocomios fue medicado con B-histina y flunarizina sin mejoría del cuadro. Niega antecedentes de infecciones, fiebre o equivalentes febriles, cefalea, drogas de abuso, TEC, vacunaciones. Se internó para adecuado estudio y tratamiento. Antecedentes de Enfermedad Actual: Cursó internación en Sala D de este Hospital desde el 16/01/17 hasta el 26/01/17 donde se le realizó RMN de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI. Algunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros. Al interrogatorio dirigido refiere haber abandonado el deporte hace unos 10 años debido a paresia de miembro inferior izquierdo con posterior mejoría parcial del cuadro. Actualmente refiere la presencia de debilidad de miembro inferior izquierdo luego de 5 minutos de marcha. Antecedentes personales: Sin antecedentes personales de relevancia. Antecedentes heredofamiliares: Sin antecedentes heredofamiliares de relevancia. Toxicos: Ex tabaquista Fármacos: Refiere no tener indicada ninguna medicación al momento de esta internación. Examen físico: Paciente vigil, lúcido, orientado, habla fluente, sin disartria. Comprende y obedece órdenes complejas. Pupilas isocóricas y reactivas. Motilidad ocular conservada. Refiere visión borrosa a la mirada extrema horizontal. Nistagmus horizonto-rotatorio a la mirada extrema lateral y vertical, que no agota. Hipoestesia de hemicara derecha, hipoestesia hemilengua derecha, disminución del reflejo nauseoso a la estimulación de pilares y faringe del lado derecho. Hipoacusia derecha. Fuerza muscular: Barre y Mingazinni de MMSS y MMII negativos, sin caída. Tono muscular conservado. ROT: hiperreflexia miembro inferior izquierdo. Sensibilidad: hipopalestesia distal de miembro inferior izquierdo. Resto conservado. Taxia: leve dismetría de miembro superior izquierdo. Romberg negativo. Marcha: leve aumento de la base de sustentación, oscilante, no requiere asistencia. Sin caídas. Agrupación sindrómica: Vértigo con características de compromiso central. Leve dismetría miembro superior izquierdo Lhermitte + Paresia de miembro inferior izquierdo Hiperreflexia miembro inferior izquierdo Hipoestesia hemifacial, hemilingual Disminución del reflejo nauseoso lado derecho Compatible con lesiones en SNC con difusión en espacio y tiempo Impresión diagnóstica: Probable enfermedad desmielinizante  Esclerosis múltiple ¿? Estudios complementarios: Laboratorio central: Imágenes: RMN de encéfalo y médula cervico-dorsal, donde se observaron múltiples imágenes hiperintensas en T2 y FLAIR yuxtacorticales, subcorticales, periventriculares, infratentoriales, sin realce con contraste ni restricción en secuencia DWI. Algunas de estas lesiones se muestran hipointensas en T1 compatibles con agujeros negros. Estudio inmunológico: FAN, ancaC y ancaP NEGATIVOS Bandas oligoclonales de tipo III; Indice IgG 0,71 Albúmina en LCR: 0,13 IgG LCR: 2,24 Albúmina en suero: 41 IgG en suero: 997 Tratamiento recibido: Omeprazol 20 mg/día Heparina Na 5000 U c/8hs Dieta general Metilprednisolona 1g/día x 3 días Evolución: Sin intercurrencias; mejoría parcial del cuadro vertiginoso y de la marcha. Diagnostico presuntivo al alta: Probable esclerosis múltiple fenotipo recaída-remisión. Tratamiento al alta: Ninguno Pendiente: Completar estudio inmunológico con SSA y SSB Estudio de trombofilias Control y seguimiento por consultorio externo de Neurología Motivo de consulta: Diplopia. Motivo de internación: Sospecha de brote de Esclerosis Múltiple fenotipo recaida-remisión. Enfermedad actual: Paciente sin antecedentes patológicos conocidos que acude a consulta refiriendo iniciar hace aproximadamente 5 días con episodios de vértigo, de segundos de duración, sin patrón diario definido, acompañado de diplopía, por lo que se decide su internación para diagnóstico y tratamiento. Porta RNM de encéfalo con contraste EV control (04/08/17) con múltiples áreas con tendencia a la confluencia, supra e infratentoriales, hipertintensas en T2 y FLAIR, a nivel de sustancia blanca periventricular, cuerpo calloso, tronco de encéfalo y cerebelo, sin realce tras administración de contraste; e imagen quística suprayacente al 3º ventrículo. Además porta RNM de col",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

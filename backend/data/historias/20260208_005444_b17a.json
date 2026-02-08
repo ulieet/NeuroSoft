@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005444_b17a",
+  "estado": "validada",
+  "dedup_key": "F:2007-08-27|DX:esclerosis múltipe. variante evolutiva a recaídas y remisiones (oms: 340). fecha de diagnóstico: abril/mayo de 1999. comentarios: para ser presentado ante quién corresponda. atte. dr. santiago a. vétere|H:945eb2a49d",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_b17a.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina, Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1262506611/01"
+    },
+    "consulta": {
+      "fecha": "2007-08-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones (OMS: 340). Fecha de diagnóstico: Abril/mayo de 1999. Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de la afección: 2 de abril de 1998 Asistido en este servicio desde: 16 de marzo de 1999 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha).Últimas recaídas: -Septiembre 2004: hemiparesia derecha +diplopia; -Enero de 2005: compromiso crural izquierdo leve",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales\nLas RMN. de cerebro muestran múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad, en el pasado(ver fotocopias de informes que se adjuntan)\nLos potenciales evocados SS. de miembros izquierdos mostraron demora en sus latencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata 27 de agosto de 2007. Nombre y apellido: Ana Carolina, Battista. Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de la afección: 2 de abril de 1998 Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha).Últimas recaídas: -Septiembre 2004: hemiparesia derecha +diplopia; -Enero de 2005: compromiso crural izquierdo leve. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. Las RMN. de cerebro muestran múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad, en el pasado(ver fotocopias de informes que se adjuntan). Los potenciales evocados SS. de miembros izquierdos mostraron demora en sus latencias. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones (OMS: 340). Fecha de diagnóstico: Abril/mayo de 1999. Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_b17a.doc"
+    },
+    "paciente": {
+      "nombre": "Ana Carolina, Battista",
+      "dni": null,
+      "fecha_nacimiento": "1982-04-02",
+      "obra_social": "IOMA",
+      "nro_afiliado": "1262506611/01"
+    },
+    "consulta": {
+      "fecha": "2007-08-27",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones (OMS: 340). Fecha de diagnóstico: Abril/mayo de 1999. Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1998-04-02",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de la afección: 2 de abril de 1998 Asistido en este servicio desde: 16 de marzo de 1999 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha).Últimas recaídas: -Septiembre 2004: hemiparesia derecha +diplopia; -Enero de 2005: compromiso crural izquierdo leve",
+      "antecedentes": "",
+      "examen_fisico": "Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha",
+      "agrupacion_sindromica": "",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa\nResultando todos los antes mencionados dentro de parámetros normales\nLas RMN. de cerebro muestran múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad, en el pasado(ver fotocopias de informes que se adjuntan)\nLos potenciales evocados SS. de miembros izquierdos mostraron demora en sus latencias",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata 27 de agosto de 2007. Nombre y apellido: Ana Carolina, Battista. Fecha de Nacimiento: 02/04/82 Dirección: 74 nº 675 Dto. 3. La Plata. Teléfono: 453-5360. Obra Social: IOMA Nº de afiliado: 1262506611/01 Inicio de la afección: 2 de abril de 1998 Asistido en este servicio desde: 16 de marzo de 1999 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha, trastornos en el equilibrio y coordinación, fallas en los esfínteres con episódica urgencia urinaria y constipación creciente, compromiso de pares craneanos (segundo, quinto, y sexto par a derecha).Últimas recaídas: -Septiembre 2004: hemiparesia derecha +diplopia; -Enero de 2005: compromiso crural izquierdo leve. Rasgos semiológicos: Elementos de: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - esfinteriano vesical eferente. - pares craneanos: II, V, VI a derecha. Estudios realizados: rutina completa de laboratorio, coagulograma, inmunocolagenograma (factor reumatoide, por RR., y p. de látex; células LE., Ac. anti-nuclares, Ac. anti-ADN y complementemia), determinación de TSH, T3, T4 y Ac. anti-tiroideos, hepatograma completo, serología para VIH, análisis de orina completa. Resultando todos los antes mencionados dentro de parámetros normales. Las RMN. de cerebro muestran múltiples imágenes en la sustancia blanca del SNC: periventriculares, de extensa topografía, algunas con gran actividad, en el pasado(ver fotocopias de informes que se adjuntan). Los potenciales evocados SS. de miembros izquierdos mostraron demora en sus latencias. Diagnóstico: ESCLEROSIS MÚLTIPE. Variante evolutiva a recaídas y remisiones (OMS: 340). Fecha de diagnóstico: Abril/mayo de 1999. Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Santiago A. Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

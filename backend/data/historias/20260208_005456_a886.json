@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005456_a886",
+  "estado": "validada",
+  "dedup_key": "F:2007-01-08|DX:temblor esencial. temblor asociado a distiroidismo??. elementos extrapiramidales menores. comentarios: después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha. debe entonces recibir terapia oral con: gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u. solicito: -gabapentin: 600 mg. /día, -en 3 tomas de 200 mg. c/u= 180 comprimidos de 100 mg. c/u/mes ó -en 2 tomas de 300 mg. c/u = 60 comprimidos de 300mg. c/u/mes. atte. dr. santiago vétere|H:76215682bc",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_a886.doc"
+    },
+    "paciente": {
+      "nombre": "Campos Riveros de Serizola, Angélica",
+      "dni": null,
+      "fecha_nacimiento": "2022-04-26",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9601998054/01"
+    },
+    "consulta": {
+      "fecha": "2007-01-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Temblor Esencial. Temblor asociado a distiroidismo??. Elementos extrapiramidales menores. Comentarios: después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha. Debe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u. Solicito: -Gabapentin: 600 mg. /día, -en 3 tomas de 200 mg. c/u= 180 comprimidos de 100 mg. c/u/mes ó -en 2 tomas de 300 mg. c/u = 60 comprimidos de 300mg. c/u/mes. Atte. Dr. Santiago Vétere",
+      "codigo": null,
+      "forma": "SP",
+      "fecha_inicio": "2006-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Gabapentina",
+        "droga": "Gabapentina",
+        "dosis": "600 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: En un curso lento y progresivo se instaló: un temblor de miembros a neto predominio en la acción y sobre miembros superiores, leve en la postura e inobservable en el reposo; asimétrico, si bien no se objetiva gran amplitud del mismo el familiar acompañante así lo refiere en episodios\nSe asocia temblor claro cefálico y disartria leve por palabra temblorosa",
+      "antecedentes": "Asistida desde: 07/06/06 potencialmente relacionados: hipertiroidismo, según refiere controlado",
+      "examen_fisico": "Agrupación sindrómica: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos",
+      "agrupacion_sindromica": "Rasgos semiológicos: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos",
+      "comentario": "después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha\nDebe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE La Plata, 08 de enero de 2007. Apellido y nombre: Campos Riveros de Serizola, Angélica. Fecha de nacimiento: 26/04/22 Dirección: 70 nº485 La Plata. LC: 3.841.976 Teléfono: 482-1313 Obra Social: IOMA nº de afiliado: 9601998054/01 Inicio de la afección: año 1987 según refiere, aproximadamente. Asistida desde: 07/06/06 Antecedentes potencialmente relacionados: hipertiroidismo, según refiere controlado. Síntomas principales: En un curso lento y progresivo se instaló: un temblor de miembros a neto predominio en la acción y sobre miembros superiores, leve en la postura e inobservable en el reposo; asimétrico, si bien no se objetiva gran amplitud del mismo el familiar acompañante así lo refiere en episodios. Se asocia temblor claro cefálico y disartria leve por palabra temblorosa. Rasgos semiológicos: Agrupación sindrómica: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos. Diagnóstico: Temblor Esencial. Temblor asociado a distiroidismo??. Elementos extrapiramidales menores. Comentarios: después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha. Debe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u. Solicito: -Gabapentin: 600 mg. /día, -en 3 tomas de 200 mg. c/u= 180 comprimidos de 100 mg. c/u/mes ó -en 2 tomas de 300 mg. c/u = 60 comprimidos de 300mg. c/u/mes. Atte. Dr. Santiago Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005456_a886.doc"
+    },
+    "paciente": {
+      "nombre": "Campos Riveros de Serizola, Angélica",
+      "dni": null,
+      "fecha_nacimiento": "2022-04-26",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9601998054/01"
+    },
+    "consulta": {
+      "fecha": "2007-01-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Temblor Esencial. Temblor asociado a distiroidismo??. Elementos extrapiramidales menores. Comentarios: después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha. Debe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u. Solicito: -Gabapentin: 600 mg. /día, -en 3 tomas de 200 mg. c/u= 180 comprimidos de 100 mg. c/u/mes ó -en 2 tomas de 300 mg. c/u = 60 comprimidos de 300mg. c/u/mes. Atte. Dr. Santiago Vétere",
+      "codigo": null,
+      "forma": "SP",
+      "fecha_inicio": "2006-06-07",
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Gabapentina",
+        "droga": "Gabapentina",
+        "dosis": "600 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: En un curso lento y progresivo se instaló: un temblor de miembros a neto predominio en la acción y sobre miembros superiores, leve en la postura e inobservable en el reposo; asimétrico, si bien no se objetiva gran amplitud del mismo el familiar acompañante así lo refiere en episodios\nSe asocia temblor claro cefálico y disartria leve por palabra temblorosa",
+      "antecedentes": "Asistida desde: 07/06/06 potencialmente relacionados: hipertiroidismo, según refiere controlado",
+      "examen_fisico": "Agrupación sindrómica: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos",
+      "agrupacion_sindromica": "Rasgos semiológicos: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos",
+      "comentario": "después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha\nDebe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA URGENTE La Plata, 08 de enero de 2007. Apellido y nombre: Campos Riveros de Serizola, Angélica. Fecha de nacimiento: 26/04/22 Dirección: 70 nº485 La Plata. LC: 3.841.976 Teléfono: 482-1313 Obra Social: IOMA nº de afiliado: 9601998054/01 Inicio de la afección: año 1987 según refiere, aproximadamente. Asistida desde: 07/06/06 Antecedentes potencialmente relacionados: hipertiroidismo, según refiere controlado. Síntomas principales: En un curso lento y progresivo se instaló: un temblor de miembros a neto predominio en la acción y sobre miembros superiores, leve en la postura e inobservable en el reposo; asimétrico, si bien no se objetiva gran amplitud del mismo el familiar acompañante así lo refiere en episodios. Se asocia temblor claro cefálico y disartria leve por palabra temblorosa. Rasgos semiológicos: Agrupación sindrómica: Claro predominio de “Temblor Esencial” con muy leves elementos extrapiramidales en miembros, semiológicos no sintomáticos. Diagnóstico: Temblor Esencial. Temblor asociado a distiroidismo??. Elementos extrapiramidales menores. Comentarios: después de haberse probado varias terapias sin rédito sostenido, recibió como ensayo gabapentin (muestras médicas gratuitas desde el Hospital), a una dosis de 600 mg. /día con muy buen resultado hasta la fecha. Debe entonces recibir terapia oral con: Gabapentin: a una dosis de 600 mg./día, en dos tomas de 300 mg. c/u ó en tres de 200 mg. c/u. Solicito: -Gabapentin: 600 mg. /día, -en 3 tomas de 200 mg. c/u= 180 comprimidos de 100 mg. c/u/mes ó -en 2 tomas de 300 mg. c/u = 60 comprimidos de 300mg. c/u/mes. Atte. Dr. Santiago Vétere ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,162 @@
+{
+  "id": "20260208_005457_b3f5",
+  "estado": "validada",
+  "dedup_key": "DNI:24704543|F:2017-01-11|H:89db62d2ef",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005457_b3f5.doc"
+    },
+    "paciente": {
+      "nombre": "Cantarelli, Roxana Mariela",
+      "dni": "24704543",
+      "fecha_nacimiento": "1975-08-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2247045435/00"
+    },
+    "consulta": {
+      "fecha": "2017-01-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud\nDurante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural\nAdemás presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor\nAntecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs\nT4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "agrupacion_sindromica": "Examen físico- Rasgos Semiológicos: Neurología: - bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "comentario": "la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: -Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto\nCuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal\nHernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd\nIv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,\nKPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit\nB12: ↓146\nOrina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 20 Marzo de 2017 Apellido y nombre: Cantarelli, Roxana Mariela. DNI: 24.704.543 Fecha de Nacimiento: 19/08/75 Dirección: calle 34 nº 1313. La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 Síntomas principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud. Durante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural. Además presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor. Antecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs. T4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos. Examen físico- Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo. Diagnóstico: -Esclerosis Múltiple a Recaídas (OMS: 340). Comentarios: la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: -Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 16",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005457_b3f5.doc"
+    },
+    "paciente": {
+      "nombre": "Cantarelli, Roxana Mariela",
+      "dni": "24704543",
+      "fecha_nacimiento": "1975-08-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2247045435/00"
+    },
+    "consulta": {
+      "fecha": "2017-01-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud\nDurante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural\nAdemás presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor\nAntecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs\nT4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "agrupacion_sindromica": "Examen físico- Rasgos Semiológicos: Neurología: - bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente",
+      "comentario": "la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: -Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto\nCuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal\nHernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd\nIv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,\nKPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit\nB12: ↓146\nOrina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 20 Marzo de 2017 Apellido y nombre: Cantarelli, Roxana Mariela. DNI: 24.704.543 Fecha de Nacimiento: 19/08/75 Dirección: calle 34 nº 1313. La Plata Teléfono: (0221) 424 1315/ 15-4082286 Obra Social: IOMA Nº de afiliado: 2247045435/00 Asistida en este Centro desde: 11/01/17 Síntomas principales: según su propio relato:- enfermedad actual: -Agosto del año 2016 descenso visual marcado del ojo izquierdo con cefalea que llegó hasta la amaurosis duró un mes y medio y restituyó, recibió terapia vitamínica B12 por bajo dosaje (sin esterroides)?en otro Centro de Salud. Durante el mes de enero de 2017 se presenta una sensación parestésica y casi eléctrica de miembro superior derecho que en 24 hs. se extiende a todo el hemicuerpo, asociándose rápidamente un fallo motor ipsilateral con gran torpeza manual (caída de objetos y al ser diestra, dificultad seria en la escritura) y sobre la marcha por compromiso crural. Además presenta: sensación de cincha abdominal desde zona umbilical hacia distal bilateral; infecciones urinarias a repetición; fatiga y termosensibilidad al calor. Antecedente destacable: -personales grales.: -metrorragias x quistes de ovario+ anemia 2°+ hipotiroidismo con 50 Mcgrs. T4 /día-+ seno dérmico a nivel S2+ Cirugías: 2 cesáreas+ rodilla menisco +amigdalectomizada; -familiares: ascendencia Italianos. Examen físico- Rasgos Semiológicos: Neurología: - Síndrome bipiramidal predominio crural derecho neto.(hemiparesia braquiocrural derecha moderada ).+ Síndrome sensitivo bilateral parchado, incluido Sind. sensitivo superficial espinal con nivel C2-C4 a predominio izquierdo (a lo Brown-Séquard con relación al piramidalismo derecho Bq. preponderante). +Pares craneales: II par a izquierda(N.O.) + elementos vestíbulares. + esfinteriano vesical tipo eferente. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo. Diagnóstico: -Esclerosis Múltiple a Recaídas (OMS: 340). Comentarios: la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: -Inmunomas de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: -Inmunomas: Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 16",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

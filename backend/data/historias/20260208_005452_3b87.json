@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005452_3b87",
+  "estado": "validada",
+  "dedup_key": "DNI:22441067|F:2011-12-29|H:086751b4ee",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_3b87.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2011-12-29",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2011-12-29"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Estimado Colega de Obra Social La Plata, 29 de Diciembre de 2011 PRIMEDIC SALUD: S / D: Cumplo en responderle su requisitoria: según el paciente desde esa OS. surgió cuestionamiento de irregularidades en presentación del pedido de medicamento: Copaxone ( Copolímero I jeringas prellenadas de 20mg. /día x vía SC.) que fue interpretado como discontinuidad de la aplicación, hecho que no es tal; pues el mismo ha recibido desde este Hospital y Sección de Enfermedades Desmielinizantes, en algunas oportunidades, jeringas de Copaxone que donaron otros pacientes y que por la proximidad de vencimiento y para evitar su pérdida y el desperdicio del recurso, fueron dadas al Sr. Daniel Cáceres para poder aprovecharlas, como muchas veces antes había recibido cuando lamentablemente no contaba con cobertura Social, por lo que dejo debidamente aclarado que el paciente recibe, sin interrupción el esquema de administración completo: Copolimero I: 20mg. /día por vía Subcutánea. Sin duda este hecho solo puede haberle resultado a uds. en un ahorro momentáneo de la provisión. Sin más y aclarado el motivo de cierto espaciamiento en la presentación de recetas, lo saludo atte . y solicito URGENTE restitución del suministro de la terapia con Copaxone: jeringas prellenadas de 20mg. /día x vía SC. Espero con esto estar respondiendo su solicitud, pero no dude en comunicarse ante cualquier otra dificultad . Atte. Dr. Vétere Santiago A. Teléfono: 0221-4251717 interno Neurología/235. Lunes a viernes de 900 a 1300hs. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_3b87.doc"
+    },
+    "paciente": {
+      "nombre": "Caceres, Horacio Daniel",
+      "dni": "22441067",
+      "fecha_nacimiento": "1972-02-28",
+      "obra_social": "PRIMEDIC SALUD",
+      "nro_afiliado": "13285/00"
+    },
+    "consulta": {
+      "fecha": "2011-12-29",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": null,
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": "20 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2011-12-29"
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES Apellido y nombre: Caceres, Horacio Daniel. Fecha de Nacimiento: 28/02/72 DNI: 22.441.067 Dirección: calle 152 e/ 412 y 413 s/nº Arturo Seguí -Villa Elisa- Teléfono: (0221)-15-5025631/474-0331. Obra Social: PRIMEDIC SALUD. N° de afiliado: 13285/00 Estimado Colega de Obra Social La Plata, 29 de Diciembre de 2011 PRIMEDIC SALUD: S / D: Cumplo en responderle su requisitoria: según el paciente desde esa OS. surgió cuestionamiento de irregularidades en presentación del pedido de medicamento: Copaxone ( Copolímero I jeringas prellenadas de 20mg. /día x vía SC.) que fue interpretado como discontinuidad de la aplicación, hecho que no es tal; pues el mismo ha recibido desde este Hospital y Sección de Enfermedades Desmielinizantes, en algunas oportunidades, jeringas de Copaxone que donaron otros pacientes y que por la proximidad de vencimiento y para evitar su pérdida y el desperdicio del recurso, fueron dadas al Sr. Daniel Cáceres para poder aprovecharlas, como muchas veces antes había recibido cuando lamentablemente no contaba con cobertura Social, por lo que dejo debidamente aclarado que el paciente recibe, sin interrupción el esquema de administración completo: Copolimero I: 20mg. /día por vía Subcutánea. Sin duda este hecho solo puede haberle resultado a uds. en un ahorro momentáneo de la provisión. Sin más y aclarado el motivo de cierto espaciamiento en la presentación de recetas, lo saludo atte . y solicito URGENTE restitución del suministro de la terapia con Copaxone: jeringas prellenadas de 20mg. /día x vía SC. Espero con esto estar respondiendo su solicitud, pero no dude en comunicarse ante cualquier otra dificultad . Atte. Dr. Vétere Santiago A. Teléfono: 0221-4251717 interno Neurología/235. Lunes a viernes de 900 a 1300hs. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

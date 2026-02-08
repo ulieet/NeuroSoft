@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005448_d86d",
+  "estado": "validada",
+  "dedup_key": "DNI:24041633|F:2016-05-02|H:f9d86c234f",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_d86d.doc"
+    },
+    "paciente": {
+      "nombre": "Bonilla Mercader, Guadalupe",
+      "dni": "24041633",
+      "fecha_nacimiento": "1974-10-28",
+      "obra_social": "Colegio de Escribanos",
+      "nro_afiliado": "1-5444/20"
+    },
+    "consulta": {
+      "fecha": "2016-05-02",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en estudio. Comentario: Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2008-05-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 principales: cefalea de 15 años de evolución, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación\nRefiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal\nEn estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud\nAntecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico",
+      "estudios": "realizados: -Entre otros: 26/05/08, 30/06/08, 14/08/08 -Rutina Completa de laboratorio, lipidograma, clearence de creatinina, Recuento de plaquetas, KPTT y Coagulograma básico, AR, Monotest, Proteína C reactiva, VDRL, Serología HIV 1 y 2, IgG-toxoplasmosis, HTLV-1, IgG e IgM antifosfolipídico, anti-ADN, ANCA-P, ANCA-C, IgM Epstein Barr, IgG CMV, anti-Coagulante Lúpico: todo: negativo. -25/07/05, 20/05/08, 08/08/08, 11/06/09 y 09/04/16 RMN de Cerebro: múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, a predominio occipital y con incremento en tamaño y número en la RMN reciente del año 2016 ( n°≥ 20). -27/06/08: Potenciales Evocados: PEV: Conservados; PEA: TCC prolongado a izquierda; PESS: alterado a izquierda",
+      "evolucion": "La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 Síntomas principales: cefalea de 15 años de, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación\nRefiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal\nEn estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud\nAntecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial"
+    },
+    "texto_original": " NEUROLOGÍA. RESUMEN DE HISTORIA CLÍNICA. La Plata, 02 de Mayo de 2016. Apellido y nombre: Bonilla Mercader, Guadalupe DNI: 24.041.633 Fecha de Nacimiento: 28/10/74 Dirección: 15 nº 2249. La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 Síntomas principales: cefalea de 15 años de evolución, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación. Refiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal. En estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud. Antecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial. Estudios realizados: -Entre otros: 26/05/08, 30/06/08, 14/08/08 -Rutina Completa de laboratorio, lipidograma, clearence de creatinina, Recuento de plaquetas, KPTT y Coagulograma básico, AR, Monotest, Proteína C reactiva, VDRL, Serología HIV 1 y 2, IgG-toxoplasmosis, HTLV-1, IgG e IgM antifosfolipídico, anti-ADN, ANCA-P, ANCA-C, IgM Epstein Barr, IgG CMV, anti-Coagulante Lúpico: todo: negativo. -25/07/05, 20/05/08, 08/08/08, 11/06/09 y 09/04/16 RMN de Cerebro: múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, a predominio occipital y con incremento en tamaño y número en la RMN reciente del año 2016 ( n°≥ 20). -27/06/08: Potenciales Evocados: PEV: Conservados; PEA: TCC prolongado a izquierda; PESS: alterado a izquierda. Diagnóstico: paciente en estudio. Comentario: Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_d86d.doc"
+    },
+    "paciente": {
+      "nombre": "Bonilla Mercader, Guadalupe",
+      "dni": "24041633",
+      "fecha_nacimiento": "1974-10-28",
+      "obra_social": "Colegio de Escribanos",
+      "nro_afiliado": "1-5444/20"
+    },
+    "consulta": {
+      "fecha": "2016-05-02",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "paciente en estudio. Comentario: Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico. Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2008-05-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 principales: cefalea de 15 años de evolución, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación\nRefiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal\nEn estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud\nAntecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico",
+      "estudios": "realizados: -Entre otros: 26/05/08, 30/06/08, 14/08/08 -Rutina Completa de laboratorio, lipidograma, clearence de creatinina, Recuento de plaquetas, KPTT y Coagulograma básico, AR, Monotest, Proteína C reactiva, VDRL, Serología HIV 1 y 2, IgG-toxoplasmosis, HTLV-1, IgG e IgM antifosfolipídico, anti-ADN, ANCA-P, ANCA-C, IgM Epstein Barr, IgG CMV, anti-Coagulante Lúpico: todo: negativo. -25/07/05, 20/05/08, 08/08/08, 11/06/09 y 09/04/16 RMN de Cerebro: múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, a predominio occipital y con incremento en tamaño y número en la RMN reciente del año 2016 ( n°≥ 20). -27/06/08: Potenciales Evocados: PEV: Conservados; PEA: TCC prolongado a izquierda; PESS: alterado a izquierda",
+      "evolucion": "La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 Síntomas principales: cefalea de 15 años de, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación\nRefiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal\nEn estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud\nAntecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial"
+    },
+    "texto_original": " NEUROLOGÍA. RESUMEN DE HISTORIA CLÍNICA. La Plata, 02 de Mayo de 2016. Apellido y nombre: Bonilla Mercader, Guadalupe DNI: 24.041.633 Fecha de Nacimiento: 28/10/74 Dirección: 15 nº 2249. La Plata Teléfono: (0221) 15- 4633410 Obra Social: Colegio de Escribanos Nº de afiliado: 1-5444/20 Asistida: desde 09/12/08 Síntomas principales: cefalea de 15 años de evolución, predominante bifrontal supraorbitaria no lateralizada, con nauseas y vómitos episódicos, fosfenos o fenómenos campimétricos de visión en caño de escopeta, con sono y fotofobia, de 2 a 3 episodios/semanales, con alguna relación de intensidad con la menstruación. Refiere además cierta inestabilidad para la marcha y fallos del equilibrio y al menos dos episodios de tipo confusionales con trastorno de la memoria reciente y desorientación temporal. En estos últimos meses agrega calambres en mm.ii, exacerba los episodios de cefalea y presenta síntomas compatibles con fenómeno de Raynaud. Antecedente destacable: -(en el año 1999, aproximadamente):-Politrauma por accidente automovilístico con hematoma intrarrenal y hematuria. -(en el año 2001): cursando último trimestre embarazo: proteinuria e hipertensión arterial. Estudios realizados: -Entre otros: 26/05/08, 30/06/08, 14/08/08 -Rutina Completa de laboratorio, lipidograma, clearence de creatinina, Recuento de plaquetas, KPTT y Coagulograma básico, AR, Monotest, Proteína C reactiva, VDRL, Serología HIV 1 y 2, IgG-toxoplasmosis, HTLV-1, IgG e IgM antifosfolipídico, anti-ADN, ANCA-P, ANCA-C, IgM Epstein Barr, IgG CMV, anti-Coagulante Lúpico: todo: negativo. -25/07/05, 20/05/08, 08/08/08, 11/06/09 y 09/04/16 RMN de Cerebro: múltiples imágenes focales de la sustancia blanca periventriculares, centros semiovales, a predominio occipital y con incremento en tamaño y número en la RMN reciente del año 2016 ( n°≥ 20). -27/06/08: Potenciales Evocados: PEV: Conservados; PEA: TCC prolongado a izquierda; PESS: alterado a izquierda. Diagnóstico: paciente en estudio. Comentario: Debe realizarse una serie de estudios que permita definir etiología y así terapia ajustada a diagnóstico. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

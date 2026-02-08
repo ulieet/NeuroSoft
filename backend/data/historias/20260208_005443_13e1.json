@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005443_13e1",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2007-09-21|H:36dd2b1a15",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_13e1.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2007-09-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "Su proceso de lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de septiembre de 2007. . Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: Su proceso de lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos. Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: Gabapentín a una dosis de 600 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo y lo viene recibiendo (desde muestras gratis hospitalarias), con muy buena tolerancia y eficacia, desde el último mes. Solicito: - Gabapentín: a una dosis de 600 mg./día por vía oral: dos tomas de 300 mg. c/u./día. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_13e1.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2007-09-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "Su proceso de lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de septiembre de 2007. . Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentario: Su proceso de lesional cerebro- medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros inferiores le agravan la hipertonía, le dificulta la bipedestación y marcha, además de provocarle espasmos dolorosos nocturnos. Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: Gabapentín a una dosis de 600 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional (aprobado por la FDA) para éste objetivo y lo viene recibiendo (desde muestras gratis hospitalarias), con muy buena tolerancia y eficacia, desde el último mes. Solicito: - Gabapentín: a una dosis de 600 mg./día por vía oral: dos tomas de 300 mg. c/u./día. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

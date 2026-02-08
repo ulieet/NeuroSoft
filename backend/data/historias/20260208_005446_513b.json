@@ -1,0 +1,166 @@
+{
+  "id": "20260208_005446_513b",
+  "estado": "validada",
+  "dedup_key": "F:2004-04-14|DX:esclerosis múltiple|H:d45b495b9a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_513b.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2004-04-14",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-03-08",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como ejemplo destaca: -1978: hemihipoestesia faciobraquiocrual derecha, con Lhermitte, duró tres meses, se restituyó. -1991: episodio compatible con neuritis óptica izquierda, que llegó hasta la amaurosis, luego restituyó. -1998: nueva recaída con torpeza motora ante esfuerzos, con buena recuperación. -2000: Inicia terapia inmunomoduladora con Interferón: Rebif 3 veces/semana",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 14 de Abril de 2004. Nombre y apellido: Luis Berri. Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como ejemplo destaca: -1978: hemihipoestesia faciobraquiocrual derecha, con Lhermitte, duró tres meses, se restituyó. -1991: episodio compatible con neuritis óptica izquierda, que llegó hasta la amaurosis, luego restituyó. -1998: nueva recaída con torpeza motora ante esfuerzos, con buena recuperación. -2000: Inicia terapia inmunomoduladora con Interferón: Rebif 3 veces/semana. Recibe tratamiento para fatiga con 4-aminopiridina; para espasticidad con Lioresal (baclofén) y fenómenos sensitivos con Tryptanol (amitriptilina). -2001: se ajusta dosis de Rebif de 6MUI a 12MUI. La RNM de Cerebro de octubre de 2001 no muestra actividad ni nuevas lesiones. Suspende Lioresal. Paciente ambulatorio sin apoyo. -2002: Abril, importante empeoramiento en su paraparesia y equilibrio que lo obliga empleo de apoyo unilateral. -2002: Agosto, desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), empleo de apoyo unilateral(bastón), que no le permite desplazarse más de unos pocos metros sin descanso; empeora su fallo esfinteriano vesical, además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor). -2003: recibe varios pulsos de Metilprednisolona más Mitoxantrona, sin embargo continua creciendo su discapacidad hasta solo poder dar unos pocos pasos con apoyo bilateral y muy lentamente, se incorpora cierta torpeza manual a derecha. - Fecha de última consulta: 08/03/04. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones (OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005446_513b.doc"
+    },
+    "paciente": {
+      "nombre": "Luis Berri",
+      "dni": null,
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": null
+    },
+    "consulta": {
+      "fecha": "2004-04-14",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 6.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2004-03-08",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Fampiridina",
+        "droga": "Fampiridina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como ejemplo destaca: -1978: hemihipoestesia faciobraquiocrual derecha, con Lhermitte, duró tres meses, se restituyó. -1991: episodio compatible con neuritis óptica izquierda, que llegó hasta la amaurosis, luego restituyó. -1998: nueva recaída con torpeza motora ante esfuerzos, con buena recuperación. -2000: Inicia terapia inmunomoduladora con Interferón: Rebif 3 veces/semana",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "comentario": "para ser presentado ante quién corresponda",
+      "estudios": "Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN ENFERMEDADES DESMIELINIZANTES. RESUMEN DE HISTORIA CLÍNICA . La Plata, 14 de Abril de 2004. Nombre y apellido: Luis Berri. Dirección: 18 nº 280. La Plata. Pcia. de Bs.As. Tel.: (0221) 427-3682 Asistido en este servicio desde: setiembre de 1999. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como ejemplo destaca: -1978: hemihipoestesia faciobraquiocrual derecha, con Lhermitte, duró tres meses, se restituyó. -1991: episodio compatible con neuritis óptica izquierda, que llegó hasta la amaurosis, luego restituyó. -1998: nueva recaída con torpeza motora ante esfuerzos, con buena recuperación. -2000: Inicia terapia inmunomoduladora con Interferón: Rebif 3 veces/semana. Recibe tratamiento para fatiga con 4-aminopiridina; para espasticidad con Lioresal (baclofén) y fenómenos sensitivos con Tryptanol (amitriptilina). -2001: se ajusta dosis de Rebif de 6MUI a 12MUI. La RNM de Cerebro de octubre de 2001 no muestra actividad ni nuevas lesiones. Suspende Lioresal. Paciente ambulatorio sin apoyo. -2002: Abril, importante empeoramiento en su paraparesia y equilibrio que lo obliga empleo de apoyo unilateral. -2002: Agosto, desarrolló una nueva recaída que incremento su discapacidad (trepando a un EDSS: 6.0), empleo de apoyo unilateral(bastón), que no le permite desplazarse más de unos pocos metros sin descanso; empeora su fallo esfinteriano vesical, además de haber tenido que cambiar la terapia especifica de Interferón (inmunomodulador), a mitoxantrón (inmunosupresor). -2003: recibe varios pulsos de Metilprednisolona más Mitoxantrona, sin embargo continua creciendo su discapacidad hasta solo poder dar unos pocos pasos con apoyo bilateral y muy lentamente, se incorpora cierta torpeza manual a derecha. - Fecha de última consulta: 08/03/04. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural. - sensitivo-propioceptivo. - esfinteriano vesical , de tipo eferente. - pares craneanos: II a izq. - fatiga y termosensiblidad Estudios relacionados: -RMN de cerebro, en múltiples oportunidades: lesiones de la sustancia blanca periventricularles, potenciales evocados trimodales, evaluaciones urológicas y oftalmológicas. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas y remisiones (OMS:340). Tratamiento: sintomático- de los brotes (inmunosupresión )- de rehabilitación( kinesiológico). Comentarios: para ser presentado ante quién corresponda. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

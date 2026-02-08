@@ -1,0 +1,200 @@
+{
+  "id": "20260208_005455_b1ca",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2019-08-05|H:c33063b660",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005455_b1ca.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2019-08-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2019-06-25",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2019-08-05"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "30 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y RMN de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "comentario": "solicito continuidad para terapia de reciente inicio de -FIBRONEURINA: Fingolimod: 0,5mg/día cápsulas orales. -Fingolimod –Fibroneurina- es una terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación\nLa paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo sin maculopatía; se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (03/04/18), además de completar la evaluación cardiológica y ECG y bajo la supervisión del Dr\nN.Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis",
+      "estudios": "En febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES -URGENTE- RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Agosto de 2019 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y RMN de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída. Desarrolló otras recaídas a promedio de una por año con similares características. -Evolución al 05/08/19: persistieron crisis dolorosas que obligaron a ajuste de dosis de pregabalina. Desarrolló cierta leuco-linfopenia que obligó a titulación momentánea de dosis de Fibroneurina. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16, 05/05/17 y 07/03/18: múltiples imágenes focales (n ≥15) en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran cierta estabilidad lesional e inactividad Gd. Iv (-). RMN de cerebro y médula 25/06/19:persisten las múltiples imágenes focales conocidas suprae infratentoriales, sin evidencia de incremento en número ni tamaño; con muy tenue realce (casi imperceptible) en una focal frontal izquierda. Sin cambios de las múltiples imágenes cervicales y del cono que no captan Gd Iv.(-) inactivas. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmune con Fibroneurina 0,5 mg./día, oral . Comentario: solicito continuidad para terapia de reciente inicio de -FIBRONEURINA: Fingolimod: 0,5mg/día cápsulas orales. -Fingolimod –Fibroneurina- es una terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación. La paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo sin maculopatía; se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (03/04/18), además de completar la evaluación cardiológica y ECG y bajo la supervisión del Dr. N.Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis. Todo lo anterior hace más que justificable sobrada manera el uso continuado de Fingolimod/",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005455_b1ca.doc"
+    },
+    "paciente": {
+      "nombre": "Campisi, Sandra Victoria",
+      "dni": "13975304",
+      "fecha_nacimiento": "1959-12-09",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9613486531/01"
+    },
+    "consulta": {
+      "fecha": "2019-08-05",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": "1997-10-23",
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2014-02-26",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": "2000-11-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2019-06-25",
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": [
+            "infratentorial"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": "2019-08-05"
+      },
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "30 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad\nEDSS:4.0\nEn febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y RMN de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad",
+      "comentario": "solicito continuidad para terapia de reciente inicio de -FIBRONEURINA: Fingolimod: 0,5mg/día cápsulas orales. -Fingolimod –Fibroneurina- es una terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación\nLa paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo sin maculopatía; se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (03/04/18), además de completar la evaluación cardiológica y ECG y bajo la supervisión del Dr\nN.Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis",
+      "estudios": "En febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída",
+      "evolucion": ""
+    },
+    "texto_original": " HIGA “Gral. SAN MARTIN” LA PLATA SERVICIO DE NEUROLOGÍA SECCIÓN ENFERMEDADES DESMIELINIZANTES -URGENTE- RESUMEN DE HISTORIA CLÍNICA La Plata, 05 de Agosto de 2019 Apellido y Nombre: Campisi, Sandra Victoria. Fecha de Nacimiento: 09/12/59 Dirección: 12 Nº 679 Torre “J” Piso 2 Dto. A. La Plata. DNI: 13.975.304 Obra Social: IOMA Nº de afiliado: 9613486531/01 Inicio de la afección: 1993. Asistido en este servicio desde: 23/10/97. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas de afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontáneo, disminución de la fuerza con torpeza motora, trastornos en el equilibrio y coordinación, diplopía, neuralgia trigeminal, crisis de vértigo central, hipoacusia y zumbidos por compromiso de pares craneanos (V a izquierda, VI, VIII coclear y vestibular, IX y X a derecha), dolor parestesias y disestesias cervicofaciales irradiadas a cuello zona aurículo-occipital y hombro; fatiga creciente y termosensibilidad. EDSS:4.0. En febrero de 2014 un nuevo brote, con parestesias, disestesias y dolor cervico-facio-occipital a izquierda + fallos del equilibrio+ deterioro motor braquio-crural a derecha con repercusión sobre marcha) que obligó a terapia supresora esteroidea y RMN de médula cérvico- dorsal (26/02/14) con múltiples imágenes focales en parénquima medular de topografías cervical C2, C3, C4, C5 y C6, en unión bulbo espinal y bulbo protuberancial estas últimas activas (volcando Gadolinio), además de un foco espinal dorsal D12; es decir que además de un incremento en el número de las lesiones ya conocidas de la sustancia blanca medular, hubo nuevas y activas en zona muy delicada del tronco encefálico en total concordancia con parte de la sintomatología con la que cursó la recaída. Desarrolló otras recaídas a promedio de una por año con similares características. -Evolución al 05/08/19: persistieron crisis dolorosas que obligaron a ajuste de dosis de pregabalina. Desarrolló cierta leuco-linfopenia que obligó a titulación momentánea de dosis de Fibroneurina. Rasgos semiológicos: Agrupación sindrómica: - bipiramidalismo a predominio crural y derecho. -sensitivo superficial-propioceptivo congruente. -pares craneanos: V izq., VI, VIII coclear y vestibular, IX y X. - atáxico apendicular derecho. -fatiga y termosensibilidad. Estudios realizados: Rutina de laboratorio. ECG. Rx. de tórax. EEG. -22/10/97 Análisis del LCR: banda monoclonal -Potenciales evocados trimodales: con prolongación de las latencias en los auditivos y somatosensitivas. Entre otras muchas oportunidades: -RMN de cerebro18/11/98, 07/11/00, 28/07/09, 17/02/12, 20/04/16 y de médula cervical 14/10/97, 26/12/97, 12/01/11, 26/02/14,20/04/16, 05/05/17 y 07/03/18: múltiples imágenes focales (n ≥15) en la sustancia blanca periventricular, subcortical frontal, del tronco cerebral (bulbo-protuberancial) y médula cervical. Las últimas muestran cierta estabilidad lesional e inactividad Gd. Iv (-). RMN de cerebro y médula 25/06/19:persisten las múltiples imágenes focales conocidas suprae infratentoriales, sin evidencia de incremento en número ni tamaño; con muy tenue realce (casi imperceptible) en una focal frontal izquierda. Sin cambios de las múltiples imágenes cervicales y del cono que no captan Gd Iv.(-) inactivas. Diagnóstico: Esclerosis Múltiple, variante evolutiva a recaídas (OMS:340). Tratamiento: sintomático, de los brotes (inmunosupresión), de rehabilitación e inmune con Fibroneurina 0,5 mg./día, oral . Comentario: solicito continuidad para terapia de reciente inicio de -FIBRONEURINA: Fingolimod: 0,5mg/día cápsulas orales. -Fingolimod –Fibroneurina- es una terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación. La paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo sin maculopatía; se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (03/04/18), además de completar la evaluación cardiológica y ECG y bajo la supervisión del Dr. N.Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis. Todo lo anterior hace más que justificable sobrada manera el uso continuado de Fingolimod/",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

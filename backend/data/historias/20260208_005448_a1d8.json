@@ -1,0 +1,142 @@
+{
+  "id": "20260208_005448_a1d8",
+  "estado": "validada",
+  "dedup_key": "F:2005-04-07|DX:esclerosis múltiple|H:1ee0bc0226",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_a1d8.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2005-04-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-05-18",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acompañante Terapéutico",
+        "droga": "Acompañante Terapéutico",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, que recuperó, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis transversa aguda con cuadriparesia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente y de acuerdo a su requisitoria considera que por su proceso de base antes descripto y su pérdida funcional a claro predominio de miembros inferiores que se caracteriza por paraplejia con hipertonía espástica, dificultad en el aseo, la bipedestación, la confina gran parte o toda la jornada a la silla de ruedas sumado a parestesias y disestesias, fenómenos fulgurantes, espasmos dolorosos nocturnos, dificultades en el aseo, en mínimos desplazamientos y en su traslado, etc. es que se podría considera de mucha utilidad la asistencia de un Acompañante Terapéutico",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 6 octubre de 2014. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, que recuperó, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis transversa aguda con cuadriparesia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos. Diagnóstico: Espasticidad de MMII. debido a Esclerosis Múltiple a recaídas. Tratamiento: sintomático (fatiga, espasticidad, neuralgias), del brote, de rehabilitación. Comentarios: la paciente y de acuerdo a su requisitoria considera que por su proceso de base antes descripto y su pérdida funcional a claro predominio de miembros inferiores que se caracteriza por paraplejia con hipertonía espástica, dificultad en el aseo, la bipedestación, la confina gran parte o toda la jornada a la silla de ruedas sumado a parestesias y disestesias, fenómenos fulgurantes, espasmos dolorosos nocturnos, dificultades en el aseo, en mínimos desplazamientos y en su traslado, etc. es que se podría considera de mucha utilidad la asistencia de un Acompañante Terapéutico. Solicito: se considere y de acuerdo a disponibilidad la posibilidad de implementar un régimen de aproximadamente 4- 6 hs/día, de lunes a viernes, de acompañante terapéutico que asista y acompañe en requerimientos más indispensables para su status funcional actual. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_a1d8.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9621178332/00"
+    },
+    "consulta": {
+      "fecha": "2005-04-07",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": null,
+      "forma": "SP",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2005-04-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2009-05-18",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acompañante Terapéutico",
+        "droga": "Acompañante Terapéutico",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 9621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, que recuperó, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado\nEl último de los mismos con un cuadro de mielitis transversa aguda con cuadriparesia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente y de acuerdo a su requisitoria considera que por su proceso de base antes descripto y su pérdida funcional a claro predominio de miembros inferiores que se caracteriza por paraplejia con hipertonía espástica, dificultad en el aseo, la bipedestación, la confina gran parte o toda la jornada a la silla de ruedas sumado a parestesias y disestesias, fenómenos fulgurantes, espasmos dolorosos nocturnos, dificultades en el aseo, en mínimos desplazamientos y en su traslado, etc. es que se podría considera de mucha utilidad la asistencia de un Acompañante Terapéutico",
+      "estudios": "realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 6 octubre de 2014. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 9621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; urgencia urinaria y desde el día 30 de marzo último pasado cursó una amaurosis total con dolor en extrema mirada de ojo derecho, que recuperó, por lo que recibió terapia esteroidea a dosis supresora, con buen resultado. El último de los mismos con un cuadro de mielitis transversa aguda con cuadriparesia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo: s/p. -09/04/05-Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal, entre otras en fecha 18/05/09, que muestra lesiones confluentes desde C2 a D4, con un segmento de dilatación de D5 a D9, compatibles desmielinizantes, sin grandes cambios con respecto a estudios previos. Diagnóstico: Espasticidad de MMII. debido a Esclerosis Múltiple a recaídas. Tratamiento: sintomático (fatiga, espasticidad, neuralgias), del brote, de rehabilitación. Comentarios: la paciente y de acuerdo a su requisitoria considera que por su proceso de base antes descripto y su pérdida funcional a claro predominio de miembros inferiores que se caracteriza por paraplejia con hipertonía espástica, dificultad en el aseo, la bipedestación, la confina gran parte o toda la jornada a la silla de ruedas sumado a parestesias y disestesias, fenómenos fulgurantes, espasmos dolorosos nocturnos, dificultades en el aseo, en mínimos desplazamientos y en su traslado, etc. es que se podría considera de mucha utilidad la asistencia de un Acompañante Terapéutico. Solicito: se considere y de acuerdo a disponibilidad la posibilidad de implementar un régimen de aproximadamente 4- 6 hs/día, de lunes a viernes, de acompañante terapéutico que asista y acompañe en requerimientos más indispensables para su status funcional actual. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

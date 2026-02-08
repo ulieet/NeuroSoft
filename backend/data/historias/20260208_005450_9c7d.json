@@ -1,0 +1,190 @@
+{
+  "id": "20260208_005450_9c7d",
+  "estado": "validada",
+  "dedup_key": "DNI:13786141|F:2019-03-20|H:8c01f8a92f",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_9c7d.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2019-03-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-01-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2018-12-26",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2019-01-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Fecha de primera consulta: 02/03/99 Fecha de última consulta: 18/12/11 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio",
+      "agrupacion_sindromica": "Tratamientos previo: -Interferón b1ar. 12 MUI. 3 veces/semana SC. que no pudo sostener por falta de adherencia, intolerancia por gripal e inyectofobia; kinesiología motora; etc",
+      "comentario": "la paciente debe reiniciar con la terapia inmunomoduladora, ahora oral de: -Terflimida: Teriflunomida: 14mg/día tabletas orales\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "Marcha con apoyo unilateral (bastón) En últimos seis meses a desarrollado al menos dos recaídas con incremento de la paresia crural a izquierda, de la ataxia, fallos para la marcha sostenida , episodios de caída que es evidenciado inclusive con nueva de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional , supratentorial a derecha y de hemisferio cerebeloso derecho\nRasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. Última rutina laboratorio : 26/12/18 : s/p. -RMN. de cerebro (entre otras 06/11/03, 10/02/06): múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas, periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad en la citada en primer tèrmino\nRMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional: supratentorial a derecha y de hemisferio cerebeloso derecho. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE-REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Marzo de 2019. Nombre y apellido: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Fecha de primera consulta: 02/03/99 Fecha de última consulta: 18/12/11 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Marcha con apoyo unilateral (bastón) En últimos seis meses a desarrollado al menos dos recaídas con incremento de la paresia crural a izquierda, de la ataxia, fallos para la marcha sostenida , episodios de caída que es evidenciado inclusive con nueva RMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional , supratentorial a derecha y de hemisferio cerebeloso derecho. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. Última rutina laboratorio : 26/12/18 : s/p. -RMN. de cerebro (entre otras 06/11/03, 10/02/06): múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas, periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad en la citada en primer tèrmino. RMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional: supratentorial a derecha y de hemisferio cerebeloso derecho. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). En ACTIVIDAD clínica y por imágenes. Tratamientos previo: -Interferón b1ar. 12 MUI. 3 veces/semana SC. que no pudo sostener por falta de adherencia, intolerancia por síndrome gripal e inyectofobia; kinesiología motora; etc. Comentario: la paciente debe reiniciar con la terapia inmunomoduladora, ahora oral de: -Terflimida: Teriflunomida: 14mg/día tabletas orales. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente reiteración: -Terflimida: Teriflunomida: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005450_9c7d.doc"
+    },
+    "paciente": {
+      "nombre": "Breganciano, Mirta Susana",
+      "dni": "13786141",
+      "fecha_nacimiento": "1959-05-05",
+      "obra_social": "OSPIP",
+      "nro_afiliado": "157508/01"
+    },
+    "consulta": {
+      "fecha": "2019-03-20",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-01-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2018-12-26",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2019-01-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Semanal",
+        "estado": "Suspendido",
+        "inicio": null
+      },
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Fecha de primera consulta: 02/03/99 Fecha de última consulta: 18/12/11 principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio",
+      "agrupacion_sindromica": "Tratamientos previo: -Interferón b1ar. 12 MUI. 3 veces/semana SC. que no pudo sostener por falta de adherencia, intolerancia por gripal e inyectofobia; kinesiología motora; etc",
+      "comentario": "la paciente debe reiniciar con la terapia inmunomoduladora, ahora oral de: -Terflimida: Teriflunomida: 14mg/día tabletas orales\nEl objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral\nSe trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación",
+      "estudios": "Marcha con apoyo unilateral (bastón) En últimos seis meses a desarrollado al menos dos recaídas con incremento de la paresia crural a izquierda, de la ataxia, fallos para la marcha sostenida , episodios de caída que es evidenciado inclusive con nueva de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional , supratentorial a derecha y de hemisferio cerebeloso derecho\nRasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio\nInmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. Última rutina laboratorio : 26/12/18 : s/p. -RMN. de cerebro (entre otras 06/11/03, 10/02/06): múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas, periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad en la citada en primer tèrmino\nRMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional: supratentorial a derecha y de hemisferio cerebeloso derecho. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes\nSS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE-REITERACIÓN RESUMEN DE HISTORIA CLÍNICA La Plata, 20 de Marzo de 2019. Nombre y apellido: Breganciano, Mirta Susana Fecha de Nacimiento: 05/05/59 Dirección: 110 A y 12. Berazategui Teléfono: 42610488 DNI:13.786.141 Obra Social: OSPIP nº de afiliado: 157508/01 Fecha de primera consulta: 02/03/99 Fecha de última consulta: 18/12/11 Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros a predominio inferior e izquierdo, disminución de la fuerza con torpeza motora de cuatro miembros a predominio crural izquierdo, trastornos en el equilibrio y coordinación con marcha inestable y episodios de caída fácil, crisis vertiginosas, episodio de disminución de la visión central, hipoacusia izquierda, fatiga y termosensibilidad. Marcha con apoyo unilateral (bastón) En últimos seis meses a desarrollado al menos dos recaídas con incremento de la paresia crural a izquierda, de la ataxia, fallos para la marcha sostenida , episodios de caída que es evidenciado inclusive con nueva RMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional , supratentorial a derecha y de hemisferio cerebeloso derecho. Rasgos semiológicos: - bipiramidalismo a predominio crural izquierdo. - sensitivo-propioceptivo congruente. - atáxico axial y apendicular. - pares craneanos: V R3 a izquierda, VII a derecha, VIII coclear y vestibular a izquierda, - de fatiga y termosensibilidad Estudios realizados: rutina completa de laboratorio. Inmunocolagenograma: fenómeno LE, ANA, Artritest, C3, C4: s/p. Última rutina laboratorio : 26/12/18 : s/p. -RMN. de cerebro (entre otras 06/11/03, 10/02/06): múltiples imágenes hipointensas en T1 e hiperintensas en T2 en centros semiovales y coronas radiatas, periventriculares, una de las mismas en corona radiata derecha periventricular refuerza con el contraste IV de gadolinio: impresiona como lesiones desmielinizantes en actividad en la citada en primer tèrmino. RMN de cerebro 09/01/19 con claro incremento lesional en número ( nº≥ 20 de imposible conteo x coalescencia lesional principalmente en casquetes occipitales), así como al menos en dos sectores focales captación del gadolinio IV : Actividad Lesional: supratentorial a derecha y de hemisferio cerebeloso derecho. -Potenciales Evocados: -Tronco Cerebral: a izquierda ausentes. SS de mm. inferiores: latencias prolongadas a derecha y ausentes a izquierda. Diagnóstico: Esclerosis Múltiple a Recaídas y Remisiones (OMS:340). En ACTIVIDAD clínica y por imágenes. Tratamientos previo: -Interferón b1ar. 12 MUI. 3 veces/semana SC. que no pudo sostener por falta de adherencia, intolerancia por síndrome gripal e inyectofobia; kinesiología motora; etc. Comentario: la paciente debe reiniciar con la terapia inmunomoduladora, ahora oral de: -Terflimida: Teriflunomida: 14mg/día tabletas orales. El objetivo es controlar el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras), retrasando la discapacidad acumulativa y prevenir la atrofia cerebral. Se trata de un producto aprobado por FDA y de uso en EEUU para este fin y por ANMAT de Argentina, con esta precisa y clara indicación. Bibliografía mínima respaldatoria: -TEMSO Trial Group. Randomized trial of oral Teriflunomide for Relapsing Multiple Sclerosis. N Engl J Med. 2011; 365(14): 1293-1303. O¨Connor-P, Wolinsky JS, Confavreux C et al. -TOWER, results from a phase III, placebo-controlled study the Efficacy and Safety of Teriflunomide in patients with relapsing MS. ECTRIMS 2012. Lyon, France. Kappos L, Comi G, Confavreux C. et al. -TENERE Trial Group. A multicentre, randomized, parallel-group, rater blinded study comparing the effectiveness and safety of Teriflunomide and Interferon Beta-1a in patients with relapsing multiple sclerosis. CMSC ACTRIMS 2012. San Diego California. Vermersch P, Czlonkowska A, Grimaldi LME, et al. Solicito: Urgente reiteración: -Terflimida: Teriflunomida: 14mg. comprimidos recubiertos x 28 = 1(un) envase/ 28días. Tratamiento prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "20260208_005445_8eb1",
+  "estado": "validada",
+  "dedup_key": "DNI:35415368|F:2017-09-11|H:c7d586ddde",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_8eb1.doc"
+    },
+    "paciente": {
+      "nombre": "Bengoechea, Iratxe Maia",
+      "dni": "35415368",
+      "fecha_nacimiento": "1990-11-13",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2111400555/40"
+    },
+    "consulta": {
+      "fecha": "2017-09-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "- Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-01-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología",
+      "estudios": "realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-)\nOrina Completa\nEntre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd\nIV\n(activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd\nIV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd\nIV (inactivas), incluso en MT. + imagen quística pineal sin cambios. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI\nHallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 11 de Septiembre de 2017. Apellido y nombre: Bengoechea, Iratxe Maia. DNI: 35.415.368 Fecha de Nacimiento: 13/11/90 Domicilio: 4 n° 1565 e/64 y 65. La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 Síntomas principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda. Estudios realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-). Orina Completa. Entre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd. IV. (activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd. IV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd. IV (inactivas), incluso en MT. + imagen quística pineal sin cambios. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI. Hallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal. Diagnóstico: - Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_8eb1.doc"
+    },
+    "paciente": {
+      "nombre": "Bengoechea, Iratxe Maia",
+      "dni": "35415368",
+      "fecha_nacimiento": "1990-11-13",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2111400555/40"
+    },
+    "consulta": {
+      "fecha": "2017-09-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "- Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-01-19",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología",
+      "estudios": "realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-)\nOrina Completa\nEntre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd\nIV\n(activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd\nIV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd\nIV (inactivas), incluso en MT. + imagen quística pineal sin cambios. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI\nHallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 11 de Septiembre de 2017. Apellido y nombre: Bengoechea, Iratxe Maia. DNI: 35.415.368 Fecha de Nacimiento: 13/11/90 Domicilio: 4 n° 1565 e/64 y 65. La Plata Obra Social: IOMA Nº de afiliado: 2111400555/40 Asistida: desde 07/05/13 Síntomas principales: inicia 28 de Diciembre de 2012 con: descenso visual marcado de ojo izquierdo, con visión bulto y dolor a movilidad ocular, es decir un cuadro compatible claramente con Neuritis Óptica y por el que recibió terapia esteroidea con buena respuesta; superada ese evento desarrolló un nuevo síntoma con temblor grosero de miembro superior izquierdo asociado a paresia y torpeza motora (más notoria evidente y discapacitante en paciente con dominancia manual a izquierda) y ya más recientemente, es decir desde marzo de este año 2013 parestesias e hipoestesias de miembros,; todo lo descripto asociado a incremento sostenido de la fatiga. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda. Estudios realizados: - laboratorios 15/01/13, 25/02/13 y 25/04/13: -TSH, T3 y T4, hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, HDL, LDL, Trigliceridos, lípidos totales y quilomicrones, ERS, ionograma venoso, dosaje de ac. fólico y vitamina B12, Artritest(-) FAN (-), anti ADN(-), VDRL(-), SSa(Ro), SSb(La), Angiotensina Convertasa (ECA), Complemento C3 y C 4, Proteinograma electroforético, Serología HIV 1 y 2 (-). Orina Completa. Entre otros estudios: s/p. – -RMN de cerebro-19/01/13 múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 5), dentro de los cuales al menos tres realzan con Gd. IV. (activas). 21/06/14: .reducción del tamaño de imágenes focales frontales, que aun captan tenue Gd. IV (activas)+ aparición de otras no vista en examen del año 2013, con una n° ≥ 15-18 + quiste pineal de 7 mm+sinusopatía-. 22/09/15: sin cambios significativos en número de las múltiples imágenes focales periventriculares, con descenso del tamaño de muchas de ellas, ausencia de captación de Gd. IV (inactivas), incluso en MT. + imagen quística pineal sin cambios. -Potenciales Evocados Visuales -08/01/13: diferencia inter-latencia de P100 mayor a10 miliseg (mayor a izquierda), con atenuación de la amplitud del PEV del OI. Hallazgos compatibles con compromiso de vía óptica a izquierda. -Tomografía por Coherencia Óptica -26/04/13: con foco en mácula se observan ambos ojos una disminución del espesor retinal. Diagnóstico: - Enfermedad desmielinizante primaria del Sistema Nervioso Central: OMS. 340. Comentario: la paciente desarrolló por su proceso de parestesias, con paresia, torpeza y temblor de miembros superiores cierta postura antálgica que repercute sobre zona cervical y debe ser controlada y corregida, por lo que solicito diez sesiones de kinesiología. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

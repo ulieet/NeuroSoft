@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005444_3647",
+  "estado": "validada",
+  "dedup_key": "DNI:5215821|F:2016-11-01|H:17d2a9ecff",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_3647.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2016-11-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "debido a que el paciente presenta un gran deterioro que lo postra gran parte de la jornada y obliga al empleo de una silla de ruedas para su desplazamiento más mínimo, es que es indispensable un cuidado domiciliario multidisciplinario de -Enfermería diaria de 24 hs\n(en tres turnos de 8hs.) que asista y faciliten desempeño de las actividades mínimas de la vida diaria, ayude a evitar complicaciones como escaras, colaboren en el manejo de la espasticidad, eviten lesiones por decúbito, favoreciendo la administración de fármacos que recibe, asista en la atención de vejiga neurógena y manejo de esfínteres + Kinesiología:-Motora: 3 veces /semana, para tratar paraparesia espástica en particular con ejercitación de flexo-extensión/elongación que asegure la apertura de triple-flexión forzada de mm. ii., así favorezca la higiene genital, además de trastorno del equilibrio y de mm. ss, etc. + Terapia Ocupacional: con al menos 2 sesiones semanales para rehabilitar la funcionalidad de ambos mm. ss. + Control y cuidado clínico gral. 2 veces /mes, etc",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 1/11/16 Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentarios: debido a que el paciente presenta un gran deterioro que lo postra gran parte de la jornada y obliga al empleo de una silla de ruedas para su desplazamiento más mínimo, es que es indispensable un cuidado domiciliario multidisciplinario de -Enfermería diaria de 24 hs. (en tres turnos de 8hs.) que asista y faciliten desempeño de las actividades mínimas de la vida diaria, ayude a evitar complicaciones como escaras, colaboren en el manejo de la espasticidad, eviten lesiones por decúbito, favoreciendo la administración de fármacos que recibe, asista en la atención de vejiga neurógena y manejo de esfínteres + Kinesiología:-Motora: 3 veces /semana, para tratar paraparesia espástica en particular con ejercitación de flexo-extensión/elongación que asegure la apertura de triple-flexión forzada de mm. ii., así favorezca la higiene genital, además de trastorno del equilibrio y de mm. ss, etc. + Terapia Ocupacional: con al menos 2 sesiones semanales para rehabilitar la funcionalidad de ambos mm. ss. + Control y cuidado clínico gral. 2 veces /mes, etc. Solicito: cobertura para: -Internación Domiciliaria: que contemple al menos modalidades de: -Enfermería diaria: 24 /hs. jornada: 3 turnos de 8 hs. c/u. + Kinesiología: 3 veces/s. +Terapia Ocupacional: 2 veces/s. + Cuidado Clínico: 2veces/mes., etc. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005444_3647.doc"
+    },
+    "paciente": {
+      "nombre": "Basaldua Oscar A",
+      "dni": "5215821",
+      "fecha_nacimiento": "1945-06-19",
+      "obra_social": "IOMA",
+      "nro_afiliado": "9505215821/00"
+    },
+    "consulta": {
+      "fecha": "2016-11-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2000-08-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "No informado"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Kinesiología",
+        "droga": "Kinesiología",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Terapia Ocupacional",
+        "droga": "Terapia Ocupacional",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente",
+      "antecedentes": "",
+      "examen_fisico": "Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "agrupacion_sindromica": "Rasgos semiológicos: - bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal",
+      "comentario": "debido a que el paciente presenta un gran deterioro que lo postra gran parte de la jornada y obliga al empleo de una silla de ruedas para su desplazamiento más mínimo, es que es indispensable un cuidado domiciliario multidisciplinario de -Enfermería diaria de 24 hs\n(en tres turnos de 8hs.) que asista y faciliten desempeño de las actividades mínimas de la vida diaria, ayude a evitar complicaciones como escaras, colaboren en el manejo de la espasticidad, eviten lesiones por decúbito, favoreciendo la administración de fármacos que recibe, asista en la atención de vejiga neurógena y manejo de esfínteres + Kinesiología:-Motora: 3 veces /semana, para tratar paraparesia espástica en particular con ejercitación de flexo-extensión/elongación que asegure la apertura de triple-flexión forzada de mm. ii., así favorezca la higiene genital, además de trastorno del equilibrio y de mm. ss, etc. + Terapia Ocupacional: con al menos 2 sesiones semanales para rehabilitar la funcionalidad de ambos mm. ss. + Control y cuidado clínico gral. 2 veces /mes, etc",
+      "estudios": "realizados: -Rutina de laboratorio\nECG\nRx de tórax\nElectromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 1/11/16 Nombre y apellido: Basaldua Oscar A. DNI: 5.215.821 Fecha de Nacimiento: 19/06/45 Dirección: Obligado nº29 Chascomus. Teléfono: (02241) -424-998. Obra Social: IOMA Nº de afiliado: 9505215821/00 Asistido en este servicio desde: 12 de Mayo de 2004. Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, Lhermitte espontaneo, disminución de la fuerza hemicorporal inicialmente a izquierda y luego a derecha, siempre a predominio crural, hipoacusia bilateral a predominio izquierdo, urgencia urinaria con episódica incontinencia y constipación creciente. Rasgos semiológicos: - Sindrome bipiramidal predominio crural e izquierda. -Sindrome sensitivo superficial y profundo ipsilateral. -Sindrome esfinteriano mixto vésico-rectal. Estudios realizados: -Rutina de laboratorio. ECG. Rx de tórax. Electromiografía. -Punción lumbar con evaluación del LCR (22/08/00): bandas oligoclonales de IgG, por Isoelctrofoco. -RMN de encéfalo(14/08/00): donde se observan: múltiples imágenes de la sustancia blanca periventricular, callosomarginales, centros semiovales de ambos hemisferios cerebrales a predominio del izquierdo. Diagnóstico: Esclerosis Múltiple (OMS: 340) a recaídas y remisiones. Tratamiento: de los brotes: en cada brote con corticoterapia en pulso oral o IV. Comentarios: debido a que el paciente presenta un gran deterioro que lo postra gran parte de la jornada y obliga al empleo de una silla de ruedas para su desplazamiento más mínimo, es que es indispensable un cuidado domiciliario multidisciplinario de -Enfermería diaria de 24 hs. (en tres turnos de 8hs.) que asista y faciliten desempeño de las actividades mínimas de la vida diaria, ayude a evitar complicaciones como escaras, colaboren en el manejo de la espasticidad, eviten lesiones por decúbito, favoreciendo la administración de fármacos que recibe, asista en la atención de vejiga neurógena y manejo de esfínteres + Kinesiología:-Motora: 3 veces /semana, para tratar paraparesia espástica en particular con ejercitación de flexo-extensión/elongación que asegure la apertura de triple-flexión forzada de mm. ii., así favorezca la higiene genital, además de trastorno del equilibrio y de mm. ss, etc. + Terapia Ocupacional: con al menos 2 sesiones semanales para rehabilitar la funcionalidad de ambos mm. ss. + Control y cuidado clínico gral. 2 veces /mes, etc. Solicito: cobertura para: -Internación Domiciliaria: que contemple al menos modalidades de: -Enfermería diaria: 24 /hs. jornada: 3 turnos de 8 hs. c/u. + Kinesiología: 3 veces/s. +Terapia Ocupacional: 2 veces/s. + Cuidado Clínico: 2veces/mes., etc. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

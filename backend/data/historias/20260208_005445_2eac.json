@@ -1,0 +1,178 @@
+{
+  "id": "20260208_005445_2eac",
+  "estado": "validada",
+  "dedup_key": "DNI:38494812|F:2016-10-19|H:a6b24ef82a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_2eac.doc"
+    },
+    "paciente": {
+      "nombre": "s: Benitez-Gomez, Ana Julia",
+      "dni": "38494812",
+      "fecha_nacimiento": "1995-04-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "X238494812/00"
+    },
+    "consulta": {
+      "fecha": "2016-10-19",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-05-30",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2015-12-19",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-03-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: la paciente desarrolló en un curso de brotes y remisiones, un cuadro de múltiples síntomas de afección multifocal del sistema nervioso central, caracterizado por: a mediados del año 2009: escotoma central del ojo derecho (respetó de visión periférica), duró algo más de 2 semanas, - 2012: diplopía visión lejana binocular que persistió por 10 días, -Junio de 2015: hipoestesia crural de muslo derecho, permaneció así por al menos dos semanas\nOtros fenómenos: sensación parcheada de parestesias e hipoestesias desde zona infra-mamaria, asociada a cierta torpeza motora de miembros inferiores, fatiga y termosensibilidad",
+      "antecedentes": "generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con RMN de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac\nValproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora: -Interferón Beta 1a-recombinante, libre de albúmina: -Rebif-NF- Cartuchos Multidoiss: 3 veces/semana, por Vía SC, en Cartuchos Trisemanales para uso con dispositivo electrónico multidosis, con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Antecedentes generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac\nValproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES - URGENTE- RESUMEN DE HISTORIA NEUROLÓGICA La Plata, 19 de Octubre de 2016. Apellido y nombres: Benitez-Gomez, Ana Julia. Fecha de nacimiento: 07/04/95. Edad: 21 años Dirección: Calle 3 nº 654 ½ depto.2°6. La Plata. Teléfono: (2944) 728172 Obra Social: IOMA. N° de afiliado: X238494812/00 DNI: 38.494.812 Asistida en esta Sección desde: 30/05/16. Antecedentes generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con RMN de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac. Valproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis. Síntomas principales: la paciente desarrolló en un curso de brotes y remisiones, un cuadro de múltiples síntomas de afección multifocal del sistema nervioso central, caracterizado por: a mediados del año 2009: escotoma central del ojo derecho (respetó de visión periférica), duró algo más de 2 semanas, - 2012: diplopía visión lejana binocular que persistió por 10 días, -Junio de 2015: hipoestesia crural de muslo derecho, permaneció así por al menos dos semanas. Otros fenómenos: sensación parcheada de parestesias e hipoestesias desde zona infra-mamaria, asociada a cierta torpeza motora de miembros inferiores, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad. Estudios realizados: entre otros, -19/12/15, 31/05/16 Rutinas de laboratorio gral., TSH. -Laboratorio especial: Factor Reumatoideo, Proteina-C-Reactiva, FAN, anti-ADN, SSa (Ro), SSb (La), -Serología para VIH 1 y 2, hidatidosis(-), 29/01/16 Toxoplasmosis(-) TAC de cuerpo entero(-): Todo lo anterior es sin particularidades o Negativo. -Examen del LCR -21/01/16: Bandas Oligoclonales de IgG en LCR con suero normal:, es decir un patrón tipo II. -RMN de cerebro 24/11/15 y 27/02/16: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en subcortex; algunas de estas con realce con Gd. IV (activas), además de una imagen focal en pedúnculo cerebeloso medio derecho; en la segunda mencionada se observa inactivación de algunas imágenes y aparición de otras nuevas, no presentes en el estudio de noviembre de 2015. Los hallazgos concuerdan con proceso desmielinizante, EM dinámica y en actividad. -RMN de c/ cervical y dorsal 07/03/16: múltiples imagen focal en topografías del cordón medular cervical y dorsal alto, unión bulbo-medular . Los hallazgos mencionados son compatibles con focos desmielinizantes. Diagnóstico: OMS: 340, Esclerosis Múltiple ACTIVA, variante evolutiva a Recaídas y Remisiones. Comentario: la paciente debe continuar con la terapia inmunomoduladora: -Interferón Beta 1a-recombinante, libre de albúmina: -Rebif-NF- Cartuchos Multidoiss: 3 veces/semana, por Vía SC, en Cartuchos Trisemanales para uso con dispositivo electrónico multidosis, con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: Urgente continuidad Rebif-NF. Interferón beta 1ª-r, libre de albúmina: de 12 MUI (44Mcgrs.) c/u., presentación en: -Cartuchos Semanales, es decir para 3 aplicaciones/semana = 4 Cartuchos Tridosis, para 12 aplicaciones = 1 envase/28dias. Tratamiento Prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005445_2eac.doc"
+    },
+    "paciente": {
+      "nombre": "s: Benitez-Gomez, Ana Julia",
+      "dni": "38494812",
+      "fecha_nacimiento": "1995-04-07",
+      "obra_social": "IOMA",
+      "nro_afiliado": "X238494812/00"
+    },
+    "consulta": {
+      "fecha": "2016-10-19",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2016-05-30",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2015-12-19",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-03-07",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: la paciente desarrolló en un curso de brotes y remisiones, un cuadro de múltiples síntomas de afección multifocal del sistema nervioso central, caracterizado por: a mediados del año 2009: escotoma central del ojo derecho (respetó de visión periférica), duró algo más de 2 semanas, - 2012: diplopía visión lejana binocular que persistió por 10 días, -Junio de 2015: hipoestesia crural de muslo derecho, permaneció así por al menos dos semanas\nOtros fenómenos: sensación parcheada de parestesias e hipoestesias desde zona infra-mamaria, asociada a cierta torpeza motora de miembros inferiores, fatiga y termosensibilidad",
+      "antecedentes": "generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con RMN de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac\nValproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis",
+      "examen_fisico": "Agrupación sindrómica: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora: -Interferón Beta 1a-recombinante, libre de albúmina: -Rebif-NF- Cartuchos Multidoiss: 3 veces/semana, por Vía SC, en Cartuchos Trisemanales para uso con dispositivo electrónico multidosis, con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "Antecedentes generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac\nValproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES - URGENTE- RESUMEN DE HISTORIA NEUROLÓGICA La Plata, 19 de Octubre de 2016. Apellido y nombres: Benitez-Gomez, Ana Julia. Fecha de nacimiento: 07/04/95. Edad: 21 años Dirección: Calle 3 nº 654 ½ depto.2°6. La Plata. Teléfono: (2944) 728172 Obra Social: IOMA. N° de afiliado: X238494812/00 DNI: 38.494.812 Asistida en esta Sección desde: 30/05/16. Antecedentes generales: -Crisis Ausencias, ocasionalmente generalizadas a Tónico Clónica desde 11años de edad con RMN de cerebro normal (desde 2006 al 2015, según refiere?), tratada con DFh y Ac. Valproico sin lograr eficacia, luego CBZ.200mg.3/día, que actualmente recibe, libre de crisis. Síntomas principales: la paciente desarrolló en un curso de brotes y remisiones, un cuadro de múltiples síntomas de afección multifocal del sistema nervioso central, caracterizado por: a mediados del año 2009: escotoma central del ojo derecho (respetó de visión periférica), duró algo más de 2 semanas, - 2012: diplopía visión lejana binocular que persistió por 10 días, -Junio de 2015: hipoestesia crural de muslo derecho, permaneció así por al menos dos semanas. Otros fenómenos: sensación parcheada de parestesias e hipoestesias desde zona infra-mamaria, asociada a cierta torpeza motora de miembros inferiores, fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: -bipiramidalismo predominio derecho y crural + sensitivo superficial y profundo congruente + II a derecha y oculomotores (VI par)+ elementos cerebelosos+ fatiga y termosensibilidad. Estudios realizados: entre otros, -19/12/15, 31/05/16 Rutinas de laboratorio gral., TSH. -Laboratorio especial: Factor Reumatoideo, Proteina-C-Reactiva, FAN, anti-ADN, SSa (Ro), SSb (La), -Serología para VIH 1 y 2, hidatidosis(-), 29/01/16 Toxoplasmosis(-) TAC de cuerpo entero(-): Todo lo anterior es sin particularidades o Negativo. -Examen del LCR -21/01/16: Bandas Oligoclonales de IgG en LCR con suero normal:, es decir un patrón tipo II. -RMN de cerebro 24/11/15 y 27/02/16: múltiples imágenes focales de la sustancia blanca periventriculares bilaterales predominantes en topografía pericallosa, de coronas radiatas y centros semiovales, también en subcortex; algunas de estas con realce con Gd. IV (activas), además de una imagen focal en pedúnculo cerebeloso medio derecho; en la segunda mencionada se observa inactivación de algunas imágenes y aparición de otras nuevas, no presentes en el estudio de noviembre de 2015. Los hallazgos concuerdan con proceso desmielinizante, EM dinámica y en actividad. -RMN de c/ cervical y dorsal 07/03/16: múltiples imagen focal en topografías del cordón medular cervical y dorsal alto, unión bulbo-medular . Los hallazgos mencionados son compatibles con focos desmielinizantes. Diagnóstico: OMS: 340, Esclerosis Múltiple ACTIVA, variante evolutiva a Recaídas y Remisiones. Comentario: la paciente debe continuar con la terapia inmunomoduladora: -Interferón Beta 1a-recombinante, libre de albúmina: -Rebif-NF- Cartuchos Multidoiss: 3 veces/semana, por Vía SC, en Cartuchos Trisemanales para uso con dispositivo electrónico multidosis, con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 -OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. - Multiple Sclerosis 2002; 8: 19-23. Solicito: Urgente continuidad Rebif-NF. Interferón beta 1ª-r, libre de albúmina: de 12 MUI (44Mcgrs.) c/u., presentación en: -Cartuchos Semanales, es decir para 3 aplicaciones/semana = 4 Cartuchos Tridosis, para 12 aplicaciones = 1 envase/28dias. Tratamiento Prolongado. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

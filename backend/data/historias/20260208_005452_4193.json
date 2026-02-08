@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005452_4193",
+  "estado": "validada",
+  "dedup_key": "DNI:30464325|F:2013-12-23|H:c658d2b56a",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_4193.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty-Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2013-12-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-12-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "30 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nCon posterior restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff\nAdemás de parestesias e hipoestesias de miembros",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "solicito continuidad para: -Fingolimod –Lebrina- terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación",
+      "estudios": "Durante mes de julio de 2017 una “falla terapéutica o falta de respuesta”: caracterizada por una que mostró incremento de lesiones en T2 y ACVTIVIDAD lesional con al menos tres imágenes captando Gd\nIV(+):ACTIVA obligó al pase a terapia de: -Lebrina: Fingolimod: 0,5mg/día cápsulas orales",
+      "evolucion": "al 1°/10/20: paciente estable, libre de recaídas,, no debió internarse ni recibir esteroides, no desarrolló incremento de discapacidad ni nuevos síntomas y muestra adherencia a la terapia en cuestión: Lebrina que recibe"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 1° de Octubre de 2020. Apellido y nombre: Calvetty-Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Con posterior restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Además de parestesias e hipoestesias de miembros. Durante mes de julio de 2017 una “falla terapéutica o falta de respuesta”: caracterizada por una RMN que mostró incremento de lesiones en T2 y ACVTIVIDAD lesional con al menos tres imágenes captando Gd. IV(+):ACTIVA obligó al pase a terapia de: -Lebrina: Fingolimod: 0,5mg/día cápsulas orales. Evolución al 1°/10/20: paciente estable, libre de recaídas,, no debió internarse ni recibir esteroides, no desarrolló incremento de discapacidad ni nuevos síntomas y muestra adherencia a la terapia en cuestión: Lebrina que recibe. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. -23/12/13 y 07/07/17-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, varias incluso en la última citada que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E. Múltiple: OMS:340 ). Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340): ACTIVA. Tratamiento: hasta la fecha: inició con Interferón B1ar. 12MUI, 3 veces/semana x vías SC que debió ser reemplazado por Lebrina /Fingolimod 0,5 mg./ día oral por la actividad lesional - de los brotes: corticoterapia IV y oral.. Comentario: solicito continuidad para: -Fingolimod –Lebrina- terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación. Lebrina es un Fingolimod con estudios de bioequivalencia (febrero de 2016); que el paciente recibe con gran suceso de eficacia y tolerancia hasta la fecha sin efectos adversos: por ende “INSUSTITUIBLE”. El paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo (Dra. Julieta Mattano) sin maculopatía (06/10/17); se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (26/09/17), además de completar la evaluación cardiológica y ECG (09/10/17) y bajo la supervisión del Dr. Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis. Todo lo anterior hace más que justificable sobrada manera el uso inmediato continuado de Fingolimod: Lebrina- Bibliografía respaldatoria mínima: -Transforms. Estudio de Fyngolimod aleatorizado, doble ciego, doble simulación y con controles activos contra Interferón B1arIM 1vez/semana de 30Mcgrs., de un año de duración. N Engl J Med 2010;362:402-415. -Freedoms. Estudio de Fyngolimod aleatorizado, doble ciego, con controles con placebo, de dos años de duración. N Engl J Med 2010;362:387-401. -Modulation of S1P Signaling.",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005452_4193.doc"
+    },
+    "paciente": {
+      "nombre": "Calvetty-Ramos, Boris",
+      "dni": "30464325",
+      "fecha_nacimiento": "1983-09-30",
+      "obra_social": "Banco Provincia- AMEBPBA",
+      "nro_afiliado": "41387"
+    },
+    "consulta": {
+      "fecha": "2013-12-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2013-12-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0,5 mg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "30 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14\nCon posterior restitución de su agudeza visual cercana a: 9/10\nPersiste fenómeno de Uthoff\nAdemás de parestesias e hipoestesias de miembros",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "solicito continuidad para: -Fingolimod –Lebrina- terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms\nEl objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo\nSe trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación",
+      "estudios": "Durante mes de julio de 2017 una “falla terapéutica o falta de respuesta”: caracterizada por una que mostró incremento de lesiones en T2 y ACVTIVIDAD lesional con al menos tres imágenes captando Gd\nIV(+):ACTIVA obligó al pase a terapia de: -Lebrina: Fingolimod: 0,5mg/día cápsulas orales",
+      "evolucion": "al 1°/10/20: paciente estable, libre de recaídas,, no debió internarse ni recibir esteroides, no desarrolló incremento de discapacidad ni nuevos síntomas y muestra adherencia a la terapia en cuestión: Lebrina que recibe"
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, 1° de Octubre de 2020. Apellido y nombre: Calvetty-Ramos, Boris DNI: 30.464.325 Fecha de Nacimiento: 30/09/83 Dirección: C. Gral. Belgrano nº 298. Esq. 529, Tolosa. La Plata. Teléfono: (0221) 15-5913907 Obra Social: Banco Provincia- AMEBPBA Nº de afiliado: 41387 /9 / 0 Síntomas principales: en un curso de brote y remisión parcial, síntoma compatible con afección focal de la sustancia blanca del sistema nervioso central, evento caracterizado por: sensación de encandilamiento inicial y que en 72 horas alcanzó pérdida visual del ojo izquierdo a predominio central del campo visual asociado claramente con dolor a la motilidad lateral del mismo, que llegó a la amaurosis y es compatible con episodio de neuritis óptica; que obligó a la internación hospitalaria y al empleo de supresión esteroidea IV con pulsos de metilprednisolona x 3 días consecutivos y posterior descenso escalonado oral que culminó el 20/01/14. Con posterior restitución de su agudeza visual cercana a: 9/10. Persiste fenómeno de Uthoff. Además de parestesias e hipoestesias de miembros. Durante mes de julio de 2017 una “falla terapéutica o falta de respuesta”: caracterizada por una RMN que mostró incremento de lesiones en T2 y ACVTIVIDAD lesional con al menos tres imágenes captando Gd. IV(+):ACTIVA obligó al pase a terapia de: -Lebrina: Fingolimod: 0,5mg/día cápsulas orales. Evolución al 1°/10/20: paciente estable, libre de recaídas,, no debió internarse ni recibir esteroides, no desarrolló incremento de discapacidad ni nuevos síntomas y muestra adherencia a la terapia en cuestión: Lebrina que recibe. Estudios realizados: - 24-26/12/13 Rutinas de laboratorio, IgG para Toxoplasma, AR por Latex, Proteína C reactiva, Punción lumbar para examen de LCR, -Evaluación por clínica médica, oftalmología y neurología, de otro centro de salud . -14/03/14: rutina completa de laboratorio, proteínas totales y albúmina, - Inmuno-reumatológico con Factor Reumatoideo: RR o Prueba de Látex, FAN, Complemento C3 y C4. - Evaluación de : VDRL, KPTT, recuento plaquetas. IgG e IgM anticardiolipinas. -23/12/13 y 07/07/17-RMN de encéfalo: con múltiples imágenes focales de la sustancia blanca profunda y subcortex, predominio periventriculares en ambos hemisferios cerebrales, centros semiovales y coronas radiatas, principalmente a izquierda, varias incluso en la última citada que realzan con contraste de gadolinio IV. compatibles con placas de desmielinización en actividad (E. Múltiple: OMS:340 ). Diagnóstico: -Esclerosis Múltiple, variante evolutiva a recaídas y remisiones(OMS:340): ACTIVA. Tratamiento: hasta la fecha: inició con Interferón B1ar. 12MUI, 3 veces/semana x vías SC que debió ser reemplazado por Lebrina /Fingolimod 0,5 mg./ día oral por la actividad lesional - de los brotes: corticoterapia IV y oral.. Comentario: solicito continuidad para: -Fingolimod –Lebrina- terapia específica para Esclerosis Múltiple, incluso con superior eficacia probada a través de estudios como Transforms y Freedoms. El objetivo de la misma es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapias inmunosupresora más agresiva, retrasando la progresión y discapacidad acumulativa, previniendo la atrofia cerebral (agujeros negros acumulativos) y Actividad lesional de RMN., aprovechando incluso el potencial efecto directo sobre neuronas en receptores SP1 de neuro-protección y regeneración, como se desprende de los resultados sobre atrofia cerebral de los ensayos clínicos de Fase 3; como por supuesto incrementar la adherencia - Paciente bajo plan de vigilancia y manejo de riesgo. Se trata de un fármaco aprobado por la ANMAT de la Argentina, con esta precisa indicación. Lebrina es un Fingolimod con estudios de bioequivalencia (febrero de 2016); que el paciente recibe con gran suceso de eficacia y tolerancia hasta la fecha sin efectos adversos: por ende “INSUSTITUIBLE”. El paciente cumplió la evaluación Oftalmológica con profesional Oftamólogo (Dra. Julieta Mattano) sin maculopatía (06/10/17); se constató por laboratorio serología positiva de IgG para Herpes Varicela Zoster (26/09/17), además de completar la evaluación cardiológica y ECG (09/10/17) y bajo la supervisión del Dr. Hugo Ruiz, en el Centro de Cardiología La Plata (Diagnóstico Cardiológico) recibió la 1° dosis. Todo lo anterior hace más que justificable sobrada manera el uso inmediato continuado de Fingolimod: Lebrina- Bibliografía respaldatoria mínima: -Transforms. Estudio de Fyngolimod aleatorizado, doble ciego, doble simulación y con controles activos contra Interferón B1arIM 1vez/semana de 30Mcgrs., de un año de duración. N Engl J Med 2010;362:402-415. -Freedoms. Estudio de Fyngolimod aleatorizado, doble ciego, con controles con placebo, de dos años de duración. N Engl J Med 2010;362:387-401. -Modulation of S1P Signaling.",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

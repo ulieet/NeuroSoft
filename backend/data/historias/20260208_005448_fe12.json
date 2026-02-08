@@ -1,0 +1,130 @@
+{
+  "id": "20260208_005448_fe12",
+  "estado": "validada",
+  "dedup_key": "F:2017-06-08|DX:proceso desmielinizante primario central, del tipo nmo (oms: 341). tratamiento: sintomático, del brote, de rehabilitación motora. comentario: su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos. además su piramidalismo a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturno por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -pregabalina a una dosis de 450 mg./día por vía oral. dicho fármaco consta con una vasta y extensa experiencia nacional e internacional para éste objetivo y lo viene recibiendo con muy buena tolerancia y eficacia, desde hace meses. además con la terapia antiespástica: baclofen a una dosis que se fue ajustando alternativamente hasta que en la actualidad recibe 30 mg./día por vía oral. tratamiento sintomático: continuidad para- pregabalina: a una dosis de 450 mg../día por vía oral= dos tomas de 150 mg. c/u./día+ dos tomas de 75mg.c/u= 60 comp. /mes de 150 mg.+ 60 comp./mes de 75mg. - y -baclofen (lioresal) comprimido de 10 mg. c/u . x 1 1/2 (un envase y medio) de 60 comprimidos c/u/mes= 90 comprimidos/mes. - dosis actual:-3 comprimidos/día, es decir que para 30 días =90 comprimidos/mes. debe recibir también terapia analgésica antiinflamatoria por contracturas: ibuprofeno 400-800 mg./día oral. por su anemia, acidificar orina y fatiga: complejo vitamínico (marathon): tratamiento prolongado. se está tramitando ante la os terapia de fondo o sobre el curso del proceso (azatioprina/imuran. comp. 50 mg. x 3 /día oral). atte. dr. vétere santiago a.|H:bce28a0e2d",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_fe12.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2017-06-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Proceso Desmielinizante Primario Central, del tipo NMO (OMS: 341). Tratamiento: sintomático, del brote, de rehabilitación motora. Comentario: Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos. Además su piramidalismo a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturno Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -PREGABALINA a una dosis de 450 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional para éste objetivo y lo viene recibiendo con muy buena tolerancia y eficacia, desde hace meses. Además con la terapia antiespástica: Baclofen a una dosis que se fue ajustando alternativamente hasta que en la actualidad recibe 30 mg./día por vía oral. Tratamiento sintomático: continuidad para- Pregabalina: a una dosis de 450 mg../día por vía oral= dos tomas de 150 mg. c/u./día+ dos tomas de 75mg.c/u= 60 comp. /mes de 150 mg.+ 60 comp./mes de 75mg. - y -Baclofen (Lioresal) comprimido de 10 mg. c/u . x 1 1/2 (un envase y medio) de 60 comprimidos c/u/mes= 90 comprimidos/mes. - Dosis actual:-3 comprimidos/día, es decir que para 30 días =90 comprimidos/mes. Debe recibir también terapia analgésica antiinflamatoria por contracturas: Ibuprofeno 400-800 mg./día oral. Por su anemia, acidificar orina y fatiga: Complejo vitamínico (Marathon): Tratamiento prolongado. Se está tramitando ante la OS terapia de fondo o sobre el curso del proceso (Azatioprina/Imuran. Comp. 50 mg. x 3 /día oral). Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-04-03",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": "450 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal, en curso - Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo 09/04/05: s/p. 18/09/13: varias imágenes focales cerebrales: en la rodilla del cuerpo calloso, subcortex parietal izquierdo, otra en mesencéfalo en el pedúnculo cerebral izquierdo, etc. -Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 8 de Junio de 2017. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal, en curso - Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo 09/04/05: s/p. 18/09/13: varias imágenes focales cerebrales: en la rodilla del cuerpo calloso, subcortex parietal izquierdo, otra en mesencéfalo en el pedúnculo cerebral izquierdo, etc. -Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Proceso Desmielinizante Primario Central, del tipo NMO (OMS: 341). Tratamiento: sintomático, del brote, de rehabilitación motora. Comentario: Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos. Además su piramidalismo a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturno Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -PREGABALINA a una dosis de 450 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional para éste objetivo y lo viene recibiendo con muy buena tolerancia y eficacia, desde hace meses. Además con la terapia antiespástica: Baclofen a una dosis que se fue ajustando alternativamente hasta que en la actualidad recibe 30 mg./día por vía oral. Tratamiento sintomático: continuidad para- Pregabalina: a una dosis de 450 mg../día por vía oral= dos tomas de 150 mg. c/u./día+ dos tomas de 75mg.c/u= 60 comp. /mes de 150 mg.+ 60 comp./mes de 75mg. - y -Baclofen (Lioresal) comprimido de 10 mg. c/u . x 1 1/2 (un envase y medio) de 60 comprimidos c/u/mes= 90 comprimidos/mes. - Dosis actual:-3 comprimidos/día, es decir que para 30 días =90 comprimidos/mes. Debe recibir también terapia analgésica antiinflamatoria por contracturas: Ibuprofeno 400-800 mg./día oral. Por su anemia, acidificar orina y fatiga: Complejo vitamínico (Marathon): Tratamiento prolongado. Se está tramitando ante la OS terapia de fondo o sobre el curso del proceso (Azatioprina/Imuran. Comp. 50 mg. x 3 /día oral). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005448_fe12.doc"
+    },
+    "paciente": {
+      "nombre": "Brantiuk, Debora Alejandra",
+      "dni": null,
+      "fecha_nacimiento": "1969-12-23",
+      "obra_social": "IOMA",
+      "nro_afiliado": "8621178332/00"
+    },
+    "consulta": {
+      "fecha": "2017-06-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Proceso Desmielinizante Primario Central, del tipo NMO (OMS: 341). Tratamiento: sintomático, del brote, de rehabilitación motora. Comentario: Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos. Además su piramidalismo a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturno Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -PREGABALINA a una dosis de 450 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional para éste objetivo y lo viene recibiendo con muy buena tolerancia y eficacia, desde hace meses. Además con la terapia antiespástica: Baclofen a una dosis que se fue ajustando alternativamente hasta que en la actualidad recibe 30 mg./día por vía oral. Tratamiento sintomático: continuidad para- Pregabalina: a una dosis de 450 mg../día por vía oral= dos tomas de 150 mg. c/u./día+ dos tomas de 75mg.c/u= 60 comp. /mes de 150 mg.+ 60 comp./mes de 75mg. - y -Baclofen (Lioresal) comprimido de 10 mg. c/u . x 1 1/2 (un envase y medio) de 60 comprimidos c/u/mes= 90 comprimidos/mes. - Dosis actual:-3 comprimidos/día, es decir que para 30 días =90 comprimidos/mes. Debe recibir también terapia analgésica antiinflamatoria por contracturas: Ibuprofeno 400-800 mg./día oral. Por su anemia, acidificar orina y fatiga: Complejo vitamínico (Marathon): Tratamiento prolongado. Se está tramitando ante la OS terapia de fondo o sobre el curso del proceso (Azatioprina/Imuran. Comp. 50 mg. x 3 /día oral). Atte. Dr. Vétere Santiago A.",
+      "codigo": null,
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-04-03",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Pregabalina",
+        "droga": "Pregabalina",
+        "dosis": "450 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 8621178332/00 principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado\nEl último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos",
+      "estudios": "Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal, en curso - Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo 09/04/05: s/p. 18/09/13: varias imágenes focales cerebrales: en la rodilla del cuerpo calloso, subcortex parietal izquierdo, otra en mesencéfalo en el pedúnculo cerebral izquierdo, etc. -Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa\nAnticoagulante Lúpico\nCélulas LE\nAnti-ADN\nComplemento\nAc anticardiolipinas\nVDRL\nElectromiograma\nEEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 8 de Junio de 2017. Apellido y nombre: Brantiuk, Debora Alejandra. DNI: 21.178. 332 Fecha de Nacimiento: 23/12/69 Dirección: España y Castelli. San Vicente. Teléfono: 02225-483775. Obra Social: IOMA Nº de afiliado: 8621178332/00 Síntomas principales: en un curso de brote y remisión al menos tres eventos compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: paresia con torpeza motora notoria, asociada a parestesias e hipoestesias de miembro superior derecho que duró algo más de 20 días y restituyó lentamente no ad integrum, en esa oportunidad fue estudiada con EMG. que resultó ser s/p; además presentó urgencia urinaria y una amaurosis total con dolor en extrema mirada de ojo derecho, por lo que recibió oportunamente terapia esteroidea a dosis supresora, con buen resultado. El último de los eventos se caracterizó por con un cuadro de mielitis trasversa aguda con cuadriplejia con compromiso motor, sensitivo y esfinteriano, que obligó a internación prolongada incluyendo UTI, sesiones de plasmaferesis y pulsos de metilprednisolona IV. Durante el mes de marzo del año 2006 debió internarse en esta Sala de neurología para ajuste diagnóstico y terapéutico: manejo de vejiga, repitieron estudios por imágenes, inmunes, de vejiga, y en enero de 2010, un nuevo empeoramiento obligó a reprogramar la estrategia terapéutica Desde lunes 03 de abril de 2017 desarrolló una nueva recaída caracterizada por parestesias con hipoestesia severa con Lhermitte+ parálisis completa de miembros inferiores+ incontinencia vésico-rectal, en curso - Estudios realizados: -07/04/05 Rutina Completa de laboratorio mínima: s/p. -04/04/05-Tc de cerebro:s/p. -RMN de encéfalo 09/04/05: s/p. 18/09/13: varias imágenes focales cerebrales: en la rodilla del cuerpo calloso, subcortex parietal izquierdo, otra en mesencéfalo en el pedúnculo cerebral izquierdo, etc. -Potencial Evocado Visual: alterado compatible con afección prequiasmática a derecha. -Serología para HIV: negativa. Anticoagulante Lúpico. Células LE. Anti-ADN. Complemento. Ac anticardiolipinas. VDRL. Electromiograma. EEG. - RMN de médula espinal que muestra una lesión desde C2 a D4, con un segmento de dilatación de D5 a D9. Diagnóstico: Proceso Desmielinizante Primario Central, del tipo NMO (OMS: 341). Tratamiento: sintomático, del brote, de rehabilitación motora. Comentario: Su proceso lesional medular le origina fenómenos sensitivos positivos (en más) que se tornan dolorosos y discapacitantes del tipo parestésicos, disestésicos, fulgurantes que incluyen Lhermitte irradiados a miembros superiores e inferiores incluso en faja torácica le agravan la hipertonía, le dificulta la bipedestación, además de provocarle espasmos dolorosos nocturnos. Además su piramidalismo a predominio de miembros inferiores le confiere hipertonía espástica, lo que le dificulta el aseo, la bipedestación y le provoca espasmos dolorosos nocturno Por lo tanto debe continuar con la terapia analgésica especial, con el objeto de controlar el dolor neuropático, donde otros intentos han fracasado sistemáticamente (antiepilépticos, antidepresivos), solicito entonces: continuidad para: -PREGABALINA a una dosis de 450 mg./día por vía oral. Dicho fármaco consta con una vasta y extensa experiencia nacional e internacional para éste objetivo y lo viene recibiendo con muy buena tolerancia y eficacia, desde hace meses. Además con la terapia antiespástica: Baclofen a una dosis que se fue ajustando alternativamente hasta que en la actualidad recibe 30 mg./día por vía oral. Tratamiento sintomático: continuidad para- Pregabalina: a una dosis de 450 mg../día por vía oral= dos tomas de 150 mg. c/u./día+ dos tomas de 75mg.c/u= 60 comp. /mes de 150 mg.+ 60 comp./mes de 75mg. - y -Baclofen (Lioresal) comprimido de 10 mg. c/u . x 1 1/2 (un envase y medio) de 60 comprimidos c/u/mes= 90 comprimidos/mes. - Dosis actual:-3 comprimidos/día, es decir que para 30 días =90 comprimidos/mes. Debe recibir también terapia analgésica antiinflamatoria por contracturas: Ibuprofeno 400-800 mg./día oral. Por su anemia, acidificar orina y fatiga: Complejo vitamínico (Marathon): Tratamiento prolongado. Se está tramitando ante la OS terapia de fondo o sobre el curso del proceso (Azatioprina/Imuran. Comp. 50 mg. x 3 /día oral). Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

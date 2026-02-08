@@ -1,0 +1,150 @@
+{
+  "id": "20260208_005443_7924",
+  "estado": "validada",
+  "dedup_key": "DNI:13551922|F:2005-05-12|H:a524595f22",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_7924.doc"
+    },
+    "paciente": {
+      "nombre": "Barrios, Carlos Alberto",
+      "dni": "13551922",
+      "fecha_nacimiento": "1959-11-22",
+      "obra_social": "INSSJ y P (PAMI)",
+      "nro_afiliado": "620"
+    },
+    "consulta": {
+      "fecha": "2005-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia. La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales). Además el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora. Por lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: Interferón beta 1ª-r (REBIF), ampollas prellenadas de 12 MUI c/u (44 mcgrs), 1 envase por 12 ampollas para 28 días (3 ampollas/semana)= 3-4 envases /trimestre= 6-7 envases /semestre, aproximadamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-09-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 0223- 470-1025 Obra Social: INSSJ y P (PAMI). nº de afiliado: 620 135519228 GP00 Inicio de la afección: 1999 aproximadamente principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha con episódicas caídas, con especial debilidad de miembros a derecha, trastornos en el equilibrio y coordinación, neuritis óptica derecha y posterior fenómeno de Uthoff, visión doble, oscilopsia, vértigo, urgencia urinaria con episódica incontinencia, fatiga creciente",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. -elementos cerebelosos. - pares craneanos: oculomotores, OIN a izq., II derecha. - esfinteriano vesical. - fatiga",
+      "agrupacion_sindromica": "",
+      "comentario": "debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia\nLa elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales)\nAdemás el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora\nPor lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente",
+      "estudios": "Estudio realizado: La de cerebro del 09/09/03 mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares perpendiculares al cuerpo calloso, en el bulbo raquídeo, la protuberancia y el mesencéfalo; compatibles con proceso desmielinizante",
+      "evolucion": ""
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA URGENTE Mar del Plata, 12 de mayo de 2005. Apellido y Nombre: Barrios, Carlos Alberto. DNI: 13.551.922 Fecha de Nacimiento: 22/11/59 Dirección: Rivadavia nº7235. Mar del Plata. Teléfono: 0223- 470-1025 Obra Social: INSSJ y P (PAMI). nº de afiliado: 620 135519228 GP00 Inicio de la afección: 1999 aproximadamente Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha con episódicas caídas, con especial debilidad de miembros a derecha, trastornos en el equilibrio y coordinación, neuritis óptica derecha y posterior fenómeno de Uthoff, visión doble, oscilopsia, vértigo, urgencia urinaria con episódica incontinencia, fatiga creciente. Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. -elementos cerebelosos. - pares craneanos: oculomotores, OIN a izq., II derecha. - esfinteriano vesical. - fatiga. Estudio realizado: La RMN. de cerebro del 09/09/03 mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares perpendiculares al cuerpo calloso, en el bulbo raquídeo, la protuberancia y el mesencéfalo; compatibles con proceso desmielinizante. Diagnóstico: ESCLEROSIS MÚLTIPE, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia. La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales). Además el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora. Por lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: Interferón beta 1ª-r (REBIF), ampollas prellenadas de 12 MUI c/u (44 mcgrs), 1 envase por 12 ampollas para 28 días (3 ampollas/semana)= 3-4 envases /trimestre= 6-7 envases /semestre, aproximadamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005443_7924.doc"
+    },
+    "paciente": {
+      "nombre": "Barrios, Carlos Alberto",
+      "dni": "13551922",
+      "fecha_nacimiento": "1959-11-22",
+      "obra_social": "INSSJ y P (PAMI)",
+      "nro_afiliado": "620"
+    },
+    "consulta": {
+      "fecha": "2005-05-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "ESCLEROSIS MÚLTIPE, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia. La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales). Además el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora. Por lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: Interferón beta 1ª-r (REBIF), ampollas prellenadas de 12 MUI c/u (44 mcgrs), 1 envase por 12 ampollas para 28 días (3 ampollas/semana)= 3-4 envases /trimestre= 6-7 envases /semestre, aproximadamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2003-09-09",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 mcg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: 0223- 470-1025 Obra Social: INSSJ y P (PAMI). nº de afiliado: 620 135519228 GP00 Inicio de la afección: 1999 aproximadamente principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha con episódicas caídas, con especial debilidad de miembros a derecha, trastornos en el equilibrio y coordinación, neuritis óptica derecha y posterior fenómeno de Uthoff, visión doble, oscilopsia, vértigo, urgencia urinaria con episódica incontinencia, fatiga creciente",
+      "antecedentes": "",
+      "examen_fisico": "bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. -elementos cerebelosos. - pares craneanos: oculomotores, OIN a izq., II derecha. - esfinteriano vesical. - fatiga",
+      "agrupacion_sindromica": "",
+      "comentario": "debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia\nLa elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales)\nAdemás el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora\nPor lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente",
+      "estudios": "Estudio realizado: La de cerebro del 09/09/03 mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares perpendiculares al cuerpo calloso, en el bulbo raquídeo, la protuberancia y el mesencéfalo; compatibles con proceso desmielinizante",
+      "evolucion": ""
+    },
+    "texto_original": " RESUMEN DE HISTORIA CLÍNICA URGENTE Mar del Plata, 12 de mayo de 2005. Apellido y Nombre: Barrios, Carlos Alberto. DNI: 13.551.922 Fecha de Nacimiento: 22/11/59 Dirección: Rivadavia nº7235. Mar del Plata. Teléfono: 0223- 470-1025 Obra Social: INSSJ y P (PAMI). nº de afiliado: 620 135519228 GP00 Inicio de la afección: 1999 aproximadamente Síntomas principales: en un curso de brotes y remisiones, múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: parestesias e hipoestesias de miembros, disminución de la fuerza con torpeza motora y dificultades para la marcha con episódicas caídas, con especial debilidad de miembros a derecha, trastornos en el equilibrio y coordinación, neuritis óptica derecha y posterior fenómeno de Uthoff, visión doble, oscilopsia, vértigo, urgencia urinaria con episódica incontinencia, fatiga creciente. Rasgos semiológicos: - bipiramidalismo a predominio crural y derecho. - sensitivo-propioceptivo congruente. -elementos cerebelosos. - pares craneanos: oculomotores, OIN a izq., II derecha. - esfinteriano vesical. - fatiga. Estudio realizado: La RMN. de cerebro del 09/09/03 mostró múltiples imágenes en la sustancia blanca del SNC: periventriculares perpendiculares al cuerpo calloso, en el bulbo raquídeo, la protuberancia y el mesencéfalo; compatibles con proceso desmielinizante. Diagnóstico: ESCLEROSIS MÚLTIPE, variante evolutiva a recaídas y remisiones(OMS:340). Comentarios: debido a que el paciente ha desarrollado varias recaídas en los últimos meses con empeoramiento ostensible de su capacidad de marcha sostenida y del equilibrio; es que el paciente debe pasar a un interferón de mayor eficacia. La elección del Rebif por sobre el Avonex obedece a la evidencia científica dada a través de estudios como PRISMS a 2 años, PRISMS a 4 años, EVIDENCE, etc. en los cuales queda manifiesta la superioridad de Interferones a mayor dosis y mayor número de aplicaciones; evidencia que además sirvió para que en EEUU la FDA aprobara al Rebif como medicamento distinto (pues no son genéricos iguales). Además el paciente a pesar de recibir Avonex por VARIOS años continuó brotando, incrementó su discapacidad (EDSS) y el deterioro en sus sistemas funcionales, es decir existen razones científicas más que contundentes y suficientes evidencias clínica, para cambiar la terapia inmunomoduladora. Por lo antes expuesto debe pasar de inmediato a: Rebif cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales) donde Rebif figura expresamente. Bibliografía respaldatoria: (Rebif) - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480. Solicito: Interferón beta 1ª-r (REBIF), ampollas prellenadas de 12 MUI c/u (44 mcgrs), 1 envase por 12 ampollas para 28 días (3 ampollas/semana)= 3-4 envases /trimestre= 6-7 envases /semestre, aproximadamente. (No existen dos genéricos de este producto por lo que no puede ser cambiado o sustituido por otro nombre comercial distinto al Rebif). Ruego se respete la precisa indicación del médico tratante. Atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

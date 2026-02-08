@@ -1,0 +1,182 @@
+{
+  "id": "20260208_005447_50c0",
+  "estado": "validada",
+  "dedup_key": "DNI:28052632|F:2013-12-12|H:4a0dc158fe",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_50c0.doc"
+    },
+    "paciente": {
+      "nombre": "Bogado, Laura Analía",
+      "dni": "28052632",
+      "fecha_nacimiento": "1980-03-11",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2280526324/00"
+    },
+    "consulta": {
+      "fecha": "2013-12-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2010-06-04",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "medular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2010-06-04",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2010-06-04"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2280526324/00 Asistida: desde 04/06/13 principales: inicia Mayo de 2004 con: descenso visual marcado de ojo derecho en oportunidad de cursar 2° mes de puerperio y estando amamantando, en 72 hs. alcanzó una visión luz-sombra y sin dolor a movilidad ocular, con duración de varios días y recuperación parcial de un cuadro compatible claramente con Neuritis Óptica. 2° Recaída hacia fines del mismo año caracterizada por vértigo que duró también días y recupero en este caso ad-integrum. 3° Brote: durante el año 2005, consistió en paraparesia con compromiso sensitivo asociado a predominio izquierdo, sin recuperación integra. 4°Recaída( 2009): Neuritis óptica derecha. 5° Recidiva (a inicios 2010):Hemi-hipoestesia braquiocrural izquierda, con menor componente motor. 6° Brote (fin del 2010):Paraparesia moderada, con episodios de caída. 7° Recaída (Octubre de 2011) Repite Neuritis óptica derecha, dolorosa x la que recibió esteroides IV",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda, pero con nivel espinal desde T6-T7",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora: Interferón Beta 1a-recombinante, libre de albúmina: -Rebif NF: 12MUI.(44Mcgrs.c/u), 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe solicita continuidad para suministro de Cartuchos Trisemanales para uso con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: - laboratorios entre otros 10/01/12, 11/06/12, - hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, ERS, ionograma venoso, dosaje de vitamina B12, CPK,\nOrina Completa",
+      "evolucion": ""
+    },
+    "texto_original": " URGENTE RESUMEN DE HISTORIA CLÍNICO- NEUROLÓGICA La Plata, 12 de Diciembre de 2013. Apellido y nombre: Bogado, Laura Analía DNI: 28.052.632 Fecha de Nacimiento: 11/03/80 Domicilio: 68 n° 2236 e/139 y 140. La Plata Teléfono: (0221) 456-1160. Obra Social: IOMA Nº de afiliado: 2280526324/00 Asistida: desde 04/06/13 Síntomas principales: inicia Mayo de 2004 con: descenso visual marcado de ojo derecho en oportunidad de cursar 2° mes de puerperio y estando amamantando, en 72 hs. alcanzó una visión luz-sombra y sin dolor a movilidad ocular, con duración de varios días y recuperación parcial de un cuadro compatible claramente con Neuritis Óptica. 2° Recaída hacia fines del mismo año caracterizada por vértigo que duró también días y recupero en este caso ad-integrum. 3° Brote: durante el año 2005, consistió en paraparesia con compromiso sensitivo asociado a predominio izquierdo, sin recuperación integra. 4°Recaída( 2009): Neuritis óptica derecha. 5° Recidiva (a inicios 2010):Hemi-hipoestesia braquiocrural izquierda, con menor componente motor. 6° Brote (fin del 2010):Paraparesia moderada, con episodios de caída. 7° Recaída (Octubre de 2011) Repite Neuritis óptica derecha, dolorosa x la que recibió esteroides IV. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda, pero con nivel espinal desde T6-T7. Estudios realizados: - laboratorios entre otros 10/01/12, 11/06/12, - hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, ERS, ionograma venoso, dosaje de vitamina B12, CPK, . Orina Completa. Entre otros estudios: s/p. – *La paciente refiere que otros estudios de laboratorio especiales se le realizaron para arribar al diagnóstico (IOMA tendrá copias?), durante las primeras Internaciones en Hospital Español de La Plata, pero que no porta actualmente. -RMN de cerebro y médula cèrvico-dorsal-04/06/10: múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 8), una en topografía paraventricular posterior izquierda que realza con contraste IV, de igual forma una nueva lesión intramedular Cervical en topografía de C3 activa(realza con Gd IV. -RMN de cerebro y médula cèrvico-dorsal-05/05/11- :además de las ya conocidas, una nueva lesión cortico-subcortical parietal derecha y de igual forma se agrega una nueva lesión intramedular Cervical (además de la de C3) y que no existía en la previa, esta nueva imagen en topografía de C5-C6. -Otros estudios por Imágenes: -RMN de cerebro y médula cérvico-dorsal: 16/03/12: agrega imagen focal intramedular dorsal D1-D2 de 3mm. y ya bajo tratamiento especifico con Rebif en fecha 26/06/12 donde se estabilizaron las imágenes y no presentan actividad. -24/06/13: RMN de cerebro una imagen en rodilla del cuerpo calloso de 5 mm a izquierda, realza con Gd. IV: intensa actividad + otra de 5mm en asta occipital del ventrículo lateral derecho, también activa. -En la RMN dorsal una imagen sin realce con Gd. en topografía medularT1-T2 de 4,5 mm. La RMN cervical muestra imágenes focales en C3a derecha y C5-C6 a izquierda sin realce con Gd. IV. -Examen del Liquido Cefalorraquídeo -23/06/10: concentración IgG: 4,9mg/dl. Bandas Oligoclonales de IgG: tipo II presencia en LCR con ausencia en plasma. Diagnóstico: - Esclerosis Múltiple a Recaídas: OMS. 340. Comentario: la paciente debe continuar con la terapia inmunomoduladora: Interferón Beta 1a-recombinante, libre de albúmina: -Rebif NF: 12MUI.(44Mcgrs.c/u), 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se solicita continuidad para suministro de Cartuchos Trisemanales para uso con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005447_50c0.doc"
+    },
+    "paciente": {
+      "nombre": "Bogado, Laura Analía",
+      "dni": "28052632",
+      "fecha_nacimiento": "1980-03-11",
+      "obra_social": "IOMA",
+      "nro_afiliado": "2280526324/00"
+    },
+    "consulta": {
+      "fecha": "2013-12-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2010-06-04",
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": [
+            "periventricular",
+            "medular",
+            "cortical"
+          ]
+        },
+        {
+          "fecha": "2010-06-04",
+          "actividad": "Activa",
+          "gd": "Positiva",
+          "regiones": [
+            "medular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": null,
+          "gd": "Positiva",
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": "2010-06-04"
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Obra Social: IOMA Nº de afiliado: 2280526324/00 Asistida: desde 04/06/13 principales: inicia Mayo de 2004 con: descenso visual marcado de ojo derecho en oportunidad de cursar 2° mes de puerperio y estando amamantando, en 72 hs. alcanzó una visión luz-sombra y sin dolor a movilidad ocular, con duración de varios días y recuperación parcial de un cuadro compatible claramente con Neuritis Óptica. 2° Recaída hacia fines del mismo año caracterizada por vértigo que duró también días y recupero en este caso ad-integrum. 3° Brote: durante el año 2005, consistió en paraparesia con compromiso sensitivo asociado a predominio izquierdo, sin recuperación integra. 4°Recaída( 2009): Neuritis óptica derecha. 5° Recidiva (a inicios 2010):Hemi-hipoestesia braquiocrural izquierda, con menor componente motor. 6° Brote (fin del 2010):Paraparesia moderada, con episodios de caída. 7° Recaída (Octubre de 2011) Repite Neuritis óptica derecha, dolorosa x la que recibió esteroides IV",
+      "antecedentes": "",
+      "examen_fisico": "Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda, pero con nivel espinal desde T6-T7",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar con la terapia inmunomoduladora: Interferón Beta 1a-recombinante, libre de albúmina: -Rebif NF: 12MUI.(44Mcgrs.c/u), 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe solicita continuidad para suministro de Cartuchos Trisemanales para uso con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF\nB1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días\nSe trata de la dosificación ajustada según el estudio PRISMS\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente\nEs un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles",
+      "estudios": "realizados: - laboratorios entre otros 10/01/12, 11/06/12, - hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, ERS, ionograma venoso, dosaje de vitamina B12, CPK,\nOrina Completa",
+      "evolucion": ""
+    },
+    "texto_original": " URGENTE RESUMEN DE HISTORIA CLÍNICO- NEUROLÓGICA La Plata, 12 de Diciembre de 2013. Apellido y nombre: Bogado, Laura Analía DNI: 28.052.632 Fecha de Nacimiento: 11/03/80 Domicilio: 68 n° 2236 e/139 y 140. La Plata Teléfono: (0221) 456-1160. Obra Social: IOMA Nº de afiliado: 2280526324/00 Asistida: desde 04/06/13 Síntomas principales: inicia Mayo de 2004 con: descenso visual marcado de ojo derecho en oportunidad de cursar 2° mes de puerperio y estando amamantando, en 72 hs. alcanzó una visión luz-sombra y sin dolor a movilidad ocular, con duración de varios días y recuperación parcial de un cuadro compatible claramente con Neuritis Óptica. 2° Recaída hacia fines del mismo año caracterizada por vértigo que duró también días y recupero en este caso ad-integrum. 3° Brote: durante el año 2005, consistió en paraparesia con compromiso sensitivo asociado a predominio izquierdo, sin recuperación integra. 4°Recaída( 2009): Neuritis óptica derecha. 5° Recidiva (a inicios 2010):Hemi-hipoestesia braquiocrural izquierda, con menor componente motor. 6° Brote (fin del 2010):Paraparesia moderada, con episodios de caída. 7° Recaída (Octubre de 2011) Repite Neuritis óptica derecha, dolorosa x la que recibió esteroides IV. Examen Físico-Neurológico: leve nistagmus bilateral, leve temblor de acción de miembros, hipoestesia superficial predominio neto sobre mm. a. izquierda, pero con nivel espinal desde T6-T7. Estudios realizados: - laboratorios entre otros 10/01/12, 11/06/12, - hemograma completo, glucemia, urea y creatinina, hepatograma completo, recuento de plaquetas, colesterol total, ERS, ionograma venoso, dosaje de vitamina B12, CPK, . Orina Completa. Entre otros estudios: s/p. – *La paciente refiere que otros estudios de laboratorio especiales se le realizaron para arribar al diagnóstico (IOMA tendrá copias?), durante las primeras Internaciones en Hospital Español de La Plata, pero que no porta actualmente. -RMN de cerebro y médula cèrvico-dorsal-04/06/10: múltiples imágenes focales de la sustancia blanca cerebral periventriculares, bilaterales y callososeptales, (n° ≥ 8), una en topografía paraventricular posterior izquierda que realza con contraste IV, de igual forma una nueva lesión intramedular Cervical en topografía de C3 activa(realza con Gd IV. -RMN de cerebro y médula cèrvico-dorsal-05/05/11- :además de las ya conocidas, una nueva lesión cortico-subcortical parietal derecha y de igual forma se agrega una nueva lesión intramedular Cervical (además de la de C3) y que no existía en la previa, esta nueva imagen en topografía de C5-C6. -Otros estudios por Imágenes: -RMN de cerebro y médula cérvico-dorsal: 16/03/12: agrega imagen focal intramedular dorsal D1-D2 de 3mm. y ya bajo tratamiento especifico con Rebif en fecha 26/06/12 donde se estabilizaron las imágenes y no presentan actividad. -24/06/13: RMN de cerebro una imagen en rodilla del cuerpo calloso de 5 mm a izquierda, realza con Gd. IV: intensa actividad + otra de 5mm en asta occipital del ventrículo lateral derecho, también activa. -En la RMN dorsal una imagen sin realce con Gd. en topografía medularT1-T2 de 4,5 mm. La RMN cervical muestra imágenes focales en C3a derecha y C5-C6 a izquierda sin realce con Gd. IV. -Examen del Liquido Cefalorraquídeo -23/06/10: concentración IgG: 4,9mg/dl. Bandas Oligoclonales de IgG: tipo II presencia en LCR con ausencia en plasma. Diagnóstico: - Esclerosis Múltiple a Recaídas: OMS. 340. Comentario: la paciente debe continuar con la terapia inmunomoduladora: Interferón Beta 1a-recombinante, libre de albúmina: -Rebif NF: 12MUI.(44Mcgrs.c/u), 3 veces/semana, por Vía SC, cuyo objetivo es disminuir el número y la gravedad de las recaídas, así como la cantidad de internaciones y la terapia inmunosupresora (esteroides, entre otras) más agresiva, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se solicita continuidad para suministro de Cartuchos Trisemanales para uso con el denominado RebiSmart: 3 aplicaciones semanales en 1(un) cartucho, es decir 4 cartuchos mensuales para 12 aplicaciones= 1(un) envase/28dias con 4(cuatro) cartuchos tridosis de INF. B1ar, libre de albúmina: Rebif NF de 44 Microgrs.12 MUI. c/u. cada 28 días. Se trata de la dosificación ajustada según el estudio PRISMS. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales), donde Rebif figura expresamente. Es un medicamento aprobado por el ANMAT de la Argentina y por la FDA de los EEUU, con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Bibliografía respaldatoria: Rebif, - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

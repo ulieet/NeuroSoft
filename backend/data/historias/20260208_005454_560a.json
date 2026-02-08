@@ -1,0 +1,116 @@
+{
+  "id": "20260208_005454_560a",
+  "estado": "validada",
+  "dedup_key": "DNI:13975304|F:2004-03-01|H:4e09159899",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_560a.doc"
+    },
+    "paciente": {
+      "nombre": "responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia",
+      "dni": "13975304",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "266522/2/01"
+    },
+    "consulta": {
+      "fecha": "2004-03-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, viene siendo denegada por Uds. o al menos no proveen de dicho fármaco a vuestra afiliada\nLe envío la presente para deslindar mi responsabilidad como Médico Asistente en lo que a la administración del fármaco corresponde, siendo mi indicación del Copaxone permanente y sin interrupción alguna, pues la Esclerosis Múltiple es una enfermedad con alto potencial discapacitante, a veces con consecuencias irreparables para la salud\nQueda muy claro que esta paciente responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia\nEs así que por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales)\nQueda bajo su exclusiva responsabilidad la provisión sistemática del Copaxone y la permanente continuidad del mismo, además de las consecuencias que pueda representar en la salud de vuestra afiliada si así no ocurriera, tal como viene sucediendo en la actualidad\nSe adjunta Historia Clínica\nSin otro particular lo saludo atte\nDr\nSantiago A\nVétere.",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. Sres. de la Obra Social Bancaria Argentina La Plata, 01 de marzo de 2004. S / D: Me dirijo a Ud. y por su intermedio a quien corresponda, tengan a bien resolver a la menor brevedad posible el tramite para la cobertura del Acetato de Glatiramer (Copaxone), para vuestra afiliada: Campisi, Sandra Victoria con DNI:13.975.304, con Número de afiliado: 266522/2/01 con diagnóstico de Esclerosis Múltiple a Recaídas (OMS 340). Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Estudios Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, viene siendo denegada por Uds. o al menos no proveen de dicho fármaco a vuestra afiliada. Le envío la presente para deslindar mi responsabilidad como Médico Asistente en lo que a la administración del fármaco corresponde, siendo mi indicación del Copaxone permanente y sin interrupción alguna, pues la Esclerosis Múltiple es una enfermedad con alto potencial discapacitante, a veces con consecuencias irreparables para la salud. Queda muy claro que esta paciente responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia. Es así que por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Queda bajo su exclusiva responsabilidad la provisión sistemática del Copaxone y la permanente continuidad del mismo, además de las consecuencias que pueda representar en la salud de vuestra afiliada si así no ocurriera, tal como viene sucediendo en la actualidad. Se adjunta Historia Clínica. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005454_560a.doc"
+    },
+    "paciente": {
+      "nombre": "responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia",
+      "dni": "13975304",
+      "fecha_nacimiento": null,
+      "obra_social": null,
+      "nro_afiliado": "266522/2/01"
+    },
+    "consulta": {
+      "fecha": "2004-03-01",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Acetato de Glatiramer",
+        "droga": "Acetato de Glatiramer",
+        "dosis": null,
+        "frecuencia": "Diario",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "",
+      "antecedentes": "",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "",
+      "estudios": "Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, viene siendo denegada por Uds. o al menos no proveen de dicho fármaco a vuestra afiliada\nLe envío la presente para deslindar mi responsabilidad como Médico Asistente en lo que a la administración del fármaco corresponde, siendo mi indicación del Copaxone permanente y sin interrupción alguna, pues la Esclerosis Múltiple es una enfermedad con alto potencial discapacitante, a veces con consecuencias irreparables para la salud\nQueda muy claro que esta paciente responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia\nEs así que por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra\nSección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales)\nQueda bajo su exclusiva responsabilidad la provisión sistemática del Copaxone y la permanente continuidad del mismo, además de las consecuencias que pueda representar en la salud de vuestra afiliada si así no ocurriera, tal como viene sucediendo en la actualidad\nSe adjunta Historia Clínica\nSin otro particular lo saludo atte\nDr\nSantiago A\nVétere.",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA. SECCIÓN DE ENFERMEDADES DESMIELINIZANTES. Sres. de la Obra Social Bancaria Argentina La Plata, 01 de marzo de 2004. S / D: Me dirijo a Ud. y por su intermedio a quien corresponda, tengan a bien resolver a la menor brevedad posible el tramite para la cobertura del Acetato de Glatiramer (Copaxone), para vuestra afiliada: Campisi, Sandra Victoria con DNI:13.975.304, con Número de afiliado: 266522/2/01 con diagnóstico de Esclerosis Múltiple a Recaídas (OMS 340). Dicha solicitud que fuera pedida con detallado informe de Historia Clínica y Estudios Complementarios, además de Bibliografía y avales Científicos para el mencionado fármaco, viene siendo denegada por Uds. o al menos no proveen de dicho fármaco a vuestra afiliada. Le envío la presente para deslindar mi responsabilidad como Médico Asistente en lo que a la administración del fármaco corresponde, siendo mi indicación del Copaxone permanente y sin interrupción alguna, pues la Esclerosis Múltiple es una enfermedad con alto potencial discapacitante, a veces con consecuencias irreparables para la salud. Queda muy claro que esta paciente responde satisfactoriamente al Copaxone ya que desde hace varios años presenta excelente eficacia y tolerancia. Es así que por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan, debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al Boletín Oficial N° 30.089, 1ra. Sección, página 8 del jueves 13 de febrero de 2003 del Plan Médico Obligatorio (o Administración de Programas Especiales). Queda bajo su exclusiva responsabilidad la provisión sistemática del Copaxone y la permanente continuidad del mismo, además de las consecuencias que pueda representar en la salud de vuestra afiliada si así no ocurriera, tal como viene sucediendo en la actualidad. Se adjunta Historia Clínica. Sin otro particular lo saludo atte. Dr. Santiago A. Vétere. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}

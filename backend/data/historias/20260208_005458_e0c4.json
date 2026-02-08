@@ -1,0 +1,190 @@
+{
+  "id": "20260208_005458_e0c4",
+  "estado": "validada",
+  "dedup_key": "DNI:35563454|F:2017-06-22|H:e92da9b4b8",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_e0c4.doc"
+    },
+    "paciente": {
+      "nombre": "Moralejo, Gabriela",
+      "dni": "35563454",
+      "fecha_nacimiento": "1991-12-03",
+      "obra_social": "INSSJ y P/ PAMI",
+      "nro_afiliado": "150701192102GP02"
+    },
+    "consulta": {
+      "fecha": "2017-06-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-06-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (02392) 15- 442713 Obra Social: INSSJ y P/ PAMI Nº de afiliado: 150701192102GP02 Asistida en este Centro desde: 22/06/17 principales: según su propio relato:- enfermedad actual: -16/05/17: desarrolló visión doble lejana horizontal a extrema mirada lateral a derecha al principio es decir los primeros días el ojo excursionaba a la lateralidad derecha pero luego casi quedó sin poder de exoducción a derecha y tendía a la aducción espontanea, duró más de 10 días y restituyó íntegramente sin que mediara tratamiento",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: no se observa actualmente compromiso de pares craneales, tono y fuerza muscular conservadas, sensibilidad superficial y profunda conservada, ROT: 2/4 generalizados\nReflejo plantar flexor bilateral. : todo: s/p",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Blastoferón de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: -Blastoferón Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "Antecedente destacable: -personales grales.: -desarrolló ya la primera vez que se le aplicó el contraste IV de Gadolinio en oportunidad de la 1° un cuadro de alergia que debió recibir dexametasona+ difenhidramina",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, ….. Septiembre de 2017 Apellido y nombre: Moralejo, Gabriela. DNI: 35.563.454 Fecha de Nacimiento: 03/12/91 Dirección: Mitre nº 111, Depto. 1° Trenque Lauquen. Teléfono: (02392) 15- 442713 Obra Social: INSSJ y P/ PAMI Nº de afiliado: 150701192102GP02 Asistida en este Centro desde: 22/06/17 Síntomas principales: según su propio relato:- enfermedad actual: -16/05/17: desarrolló visión doble lejana horizontal a extrema mirada lateral a derecha al principio es decir los primeros días el ojo excursionaba a la lateralidad derecha pero luego casi quedó sin poder de exoducción a derecha y tendía a la aducción espontanea, duró más de 10 días y restituyó íntegramente sin que mediara tratamiento. Antecedente destacable: -personales grales.: -desarrolló ya la primera vez que se le aplicó el contraste IV de Gadolinio en oportunidad de la 1° RMN. un cuadro de alergia que debió recibir dexametasona+ difenhidramina. Examen físico- Rasgos Semiológicos: Neurología: no se observa actualmente compromiso de pares craneales, tono y fuerza muscular conservadas, sensibilidad superficial y profunda conservada, ROT: 2/4 generalizados. Reflejo plantar flexor bilateral. : todo: s/p. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo. Diagnóstico: -Esclerosis Múltiple a Recaídas (OMS: 340). Comentarios: la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Blastoferón de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: -Blastoferón Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente: -Blastoferón (INTERFERON beta 1ª-r): 12MUI., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamient",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260208_005458_e0c4.doc"
+    },
+    "paciente": {
+      "nombre": "Moralejo, Gabriela",
+      "dni": "35563454",
+      "fecha_nacimiento": "1991-12-03",
+      "obra_social": "INSSJ y P/ PAMI",
+      "nro_afiliado": "150701192102GP02"
+    },
+    "consulta": {
+      "fecha": "2017-06-22",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2017-06-22",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2016-10-14",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2016-09-06",
+          "actividad": null,
+          "gd": null,
+          "regiones": []
+        },
+        {
+          "fecha": "2017-01-10",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Interferón Beta-1a",
+        "droga": "Interferón Beta-1a",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Interferón",
+        "droga": "Interferón",
+        "dosis": "44 Mcg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "Teléfono: (02392) 15- 442713 Obra Social: INSSJ y P/ PAMI Nº de afiliado: 150701192102GP02 Asistida en este Centro desde: 22/06/17 principales: según su propio relato:- enfermedad actual: -16/05/17: desarrolló visión doble lejana horizontal a extrema mirada lateral a derecha al principio es decir los primeros días el ojo excursionaba a la lateralidad derecha pero luego casi quedó sin poder de exoducción a derecha y tendía a la aducción espontanea, duró más de 10 días y restituyó íntegramente sin que mediara tratamiento",
+      "antecedentes": "",
+      "examen_fisico": "Rasgos Semiológicos: Neurología: no se observa actualmente compromiso de pares craneales, tono y fuerza muscular conservadas, sensibilidad superficial y profunda conservada, ROT: 2/4 generalizados\nReflejo plantar flexor bilateral. : todo: s/p",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Blastoferón de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral\nPor lo cual se solicita: -Blastoferón Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles\nEs un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación",
+      "estudios": "Antecedente destacable: -personales grales.: -desarrolló ya la primera vez que se le aplicó el contraste IV de Gadolinio en oportunidad de la 1° un cuadro de alergia que debió recibir dexametasona+ difenhidramina",
+      "evolucion": ""
+    },
+    "texto_original": " HOSPITAL INTERZONAL GENERAL DE AGUDOS “ Gral. SAN MARTIN” SERVICIO DE NEUROLOGÍA SECCIÓN DE ENFERMEDADES DESMIELINIZANTES URGENTE RESUMEN DE HISTORIA CLÍNICA La Plata, ….. Septiembre de 2017 Apellido y nombre: Moralejo, Gabriela. DNI: 35.563.454 Fecha de Nacimiento: 03/12/91 Dirección: Mitre nº 111, Depto. 1° Trenque Lauquen. Teléfono: (02392) 15- 442713 Obra Social: INSSJ y P/ PAMI Nº de afiliado: 150701192102GP02 Asistida en este Centro desde: 22/06/17 Síntomas principales: según su propio relato:- enfermedad actual: -16/05/17: desarrolló visión doble lejana horizontal a extrema mirada lateral a derecha al principio es decir los primeros días el ojo excursionaba a la lateralidad derecha pero luego casi quedó sin poder de exoducción a derecha y tendía a la aducción espontanea, duró más de 10 días y restituyó íntegramente sin que mediara tratamiento. Antecedente destacable: -personales grales.: -desarrolló ya la primera vez que se le aplicó el contraste IV de Gadolinio en oportunidad de la 1° RMN. un cuadro de alergia que debió recibir dexametasona+ difenhidramina. Examen físico- Rasgos Semiológicos: Neurología: no se observa actualmente compromiso de pares craneales, tono y fuerza muscular conservadas, sensibilidad superficial y profunda conservada, ROT: 2/4 generalizados. Reflejo plantar flexor bilateral. : todo: s/p. Estudios realizados: -Potencial Evocado Visual 14/10/16: P100 de OD: 105-107 y de OI: 178-185 miliseg. por lo que se aprecia marcado incremento de latencia para OI. con morfología sugestiva de compromiso desmielinizante de la vía electrogénica a izquierda. -RMN de cerebro 06/09/16: múltiples imágenes focales en sustancia blanca cerebral (n°≥ 12) predominio periventricular bilateral y pericallosas, además de subcortex (fibras en U), sin agujeros negros. –RMN 10/01/17: persisten en gral. las múltiples imágenes focales cerebrales bilaterales antes descriptas, aparecen algunos agujeros negros y se destaca en STIR Nervio óptico izquierdo hiperintenso en todo su trayecto. Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. -RMN de médula cervical y dorsal 06/09/16: la señal de la médula espinal cervical, dorsal y cono: es Normal. Hernias discales en C3-C4, C4-C5, T8, T9, T11, T12, y L1. –RMN 10/01/17: al menos se visualiza cuatro imagen focal en topografía espinal intra-medular cervical de C2-C3, C4 (mayor tamaño , llegando medir 13 mm en sentido longitudinal o sagital de la médula), C7 y dorsal de T1 compatible con foco de desmielinización, que no captan Gd. Iv (-) inactivos; resto médula espinal s/p. -Cuadro imagenológico compatible con focos de desmielinización de dispersión en tiempo y espacio. - Laboratorio de Rutina y especial 13/09/16:ERS: 30 mm 1°h, FAN(-), FR(-), Complemento C3-C4,. KPTT, recuento de plaquetas, IgG-IgM anticardiolipinas(-), Veneno de Víbora de Russell(-), serología VIH(-), Siphilis TP(-), dosaje de vit. B12: ↓146. Orina turbia con Hb+++ mucus, hematíes 10-15/campo, con Urocultivo (-).– IgG anti-Aquoporina-IV- NMO 22/02/17:Negativo. Diagnóstico: -Esclerosis Múltiple a Recaídas (OMS: 340). Comentarios: la paciente debe iniciar Urgente por lo antes expresado, con la terapia inmunomoduladora de Interferón B1ar, de alta dosis y aplicación: Blastoferón de 12MUI. =44Mcgrs. c/u., 3 veces por semana por vía SC., con el objetivo de: disminuir el número y la gravedad de las recaídas, la carga y acumulación lesional claramente in crescendo de la RMN, así como evitar internaciones y la terapia inmunosupresora más agresiva, retrasando la discapacidad acumulativa y previniendo la acumulación de agujeros negros y la atrofia cerebral. Por lo cual se solicita: -Blastoferón Interferón B1ar, 44 Mcgrs.= 12 MUI. c/u. para aplicación en 3 días semanales, por vía subcutánea. es decir 12 jeringas para 28 días. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con las consecuencias que estas originan (a veces irreparables), debe administrarse hasta que aparezca una terapia superior o efectos adversos insostenibles. Es un medicamento con cobertura 100% a cargo de la Obra Social, aprobado por el ANMAT de la Argentina con esta precisa indicación. Bibliografía respaldatoria: - Nature Biotechnology 2011 .Vol. 29 Num.4 Pag.310-312 - PRISMS 2 años. Lancet 1998; 352: 1498-1504. - PRISMS 4 años. Neurology 2001; 56: 1628-1636. - INCOMIN Neurology 2001; vol.248: supl.3 / vol.56: supl.2 - OWIMS Neurology 1999; 53: 679-686. - EVIDENCE. Neurology 2002; 59: 1496-1506. - Revista Neurológica Argentina 2000; 25: 142-145. - Medicina (Buenos Aires) 2001; 61:470-480 - Journal of Interferon &Cytokine Research 2011 .Vol.31 Num.4. Pag.383-392 Solicito: Urgente: -Blastoferón (INTERFERON beta 1ª-r): 12MUI., JERINGAS PRELLENADAS DE 12 MUI. c/u. (44 mcgrs.), 1 ENVASE DE 12 JERINGAS/28 DÍAS = 3 JERINGAS/SEMANA (LUNES MIERCOLES Y VIERNES), = 12 JERINGAS/ 28 DÍAS, = 1 ENVASE/28 DÍAS.= 6(seis) envases/semestre. Así sucesivamente, Tratamient",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "nivel_criticidad": "medio"
+}
