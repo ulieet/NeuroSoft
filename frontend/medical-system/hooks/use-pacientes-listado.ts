@@ -1,113 +1,73 @@
-
 "use client"
 
 import { useState, useEffect, useMemo } from "react"
-import {
-  obtenerPacientes,
-  obtenerHistoriasPorPacienteId,
-  inicializarDatosDeEjemplo,
-  obtenerEdadPaciente,
-  type Paciente,
-  type FiltrosPaciente,
-} from "@/lib/almacen-datos"
+import { getPacientes, getHistoriasDePaciente, PacienteBackend } from "@/lib/api-pacientes"
+import { obtenerEdadPaciente } from "@/lib/almacen-datos"
 
 export function usePacientesListado() {
-  const [pacientes, setPacientes] = useState<Paciente[]>([])
+  const [pacientes, setPacientes] = useState<PacienteBackend[]>([])
   const [estaCargando, setEstaCargando] = useState(false)
-  const [obrasSocialesDisponibles, setObrasSocialesDisponibles] = useState<string[]>([])
+  const [conteosHistorias, setConteosHistorias] = useState<Record<string, number>>({})
 
   const [terminoBusqueda, setTerminoBusqueda] = useState("")
-  const [filtros, setFiltros] = useState<FiltrosPaciente>({})
+  const [filtros, setFiltros] = useState<any>({ obraSocial: "todas", sexo: "todos" })
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
 
   useEffect(() => {
     cargarPacientes()
   }, [])
 
-  const cargarPacientes = () => {
+  const cargarPacientes = async () => {
     setEstaCargando(true)
-    inicializarDatosDeEjemplo()
-    const data = obtenerPacientes()
+    const data = await getPacientes()
     setPacientes(data)
 
-    const obras = [...new Set(data.map((p) => p.obraSocial).filter(Boolean))].sort()
-    setObrasSocialesDisponibles(obras)
-
+    // Cargar conteos de historias para cada paciente en segundo plano
+    const counts: Record<string, number> = {}
+    await Promise.all(data.map(async (p) => {
+      const historias = await getHistoriasDePaciente(p.dni)
+      counts[p.id] = historias.length
+    }))
+    setConteosHistorias(counts)
     setEstaCargando(false)
   }
 
   const pacientesFiltrados = useMemo(() => {
-    let resultado = pacientes.filter((paciente) => {
-      // 1. Filtros avanzados
-      if (filtros.obraSocial && paciente.obraSocial !== filtros.obraSocial) return false
-      if (filtros.sexo && paciente.sexo !== filtros.sexo) return false
-      if (filtros.edadMin || filtros.edadMax) {
-        const edad = obtenerEdadPaciente(paciente.fechaNacimiento)
-        if (filtros.edadMin && edad < filtros.edadMin) return false
-        if (filtros.edadMax && edad > filtros.edadMax) return false
-      }
-
-      // 2. Búsqueda por término
-      if (terminoBusqueda) {
-        const busqueda = terminoBusqueda.toLowerCase()
-        const nombreCompleto = `${paciente.apellido}, ${paciente.nombre}`.toLowerCase()
-        const dni = paciente.dni.toString()
-        if (!nombreCompleto.includes(busqueda) && !dni.includes(terminoBusqueda)) {
-          return false
-        }
-      }
-      return true
+    let resultado = pacientes.filter((p) => {
+      const coincideBusqueda = 
+        p.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()) || 
+        p.dni.includes(terminoBusqueda)
+      
+      const coincideOS = filtros.obraSocial === "todas" || p.obra_social === filtros.obraSocial
+      
+      return coincideBusqueda && coincideOS
     })
 
-    // 3. Ordenamiento
     resultado.sort((a, b) => {
-      const nombreA = `${a.apellido}, ${a.nombre}`.toLowerCase()
-      const nombreB = `${b.apellido}, ${b.nombre}`.toLowerCase()
-
-      if (nombreA < nombreB) return sortOrder === "asc" ? -1 : 1
-      if (nombreA > nombreB) return sortOrder === "asc" ? 1 : -1
-      return 0
+      if (sortOrder === "asc") return a.nombre.localeCompare(b.nombre)
+      return b.nombre.localeCompare(a.nombre)
     })
 
     return resultado
-  }, [pacientes, filtros, terminoBusqueda, sortOrder])
+  }, [pacientes, terminoBusqueda, filtros, sortOrder])
 
-  const manejarCambioFiltro = (id: keyof FiltrosPaciente, value: string | number) => {
-    const valorLimpio = value === "todos" || value === "" ? undefined : String(value)
-    let valorFinal: string | number | undefined = valorLimpio
-    
-    if (id.startsWith("edad")) {
-      const valorNum = Number(valorLimpio)
-      valorFinal = valorNum && valorNum > 0 ? valorNum : undefined
-    }
-
-    setFiltros((prev) => ({ ...prev, [id]: valorFinal }))
+  const manejarCambioFiltro = (id: string, value: string) => {
+    setFiltros((prev: any) => ({ ...prev, [id]: value }))
   }
-
-  const limpiarFiltros = () => {
-    setFiltros({})
-    setTerminoBusqueda("")
-  }
-
-  const obtenerConteoHistorias = (pacienteId: number) => {
-    return obtenerHistoriasPorPacienteId(pacienteId).length
-  }
-
-  const hayFiltrosActivos = Object.values(filtros).some((v) => v !== undefined) || terminoBusqueda !== ""
 
   return {
     pacientesFiltrados,
     estaCargando,
-    obrasSocialesDisponibles,
+    obrasSocialesDisponibles: Array.from(new Set(pacientes.map(p => p.obra_social).filter(Boolean))) as string[],
     terminoBusqueda,
     setTerminoBusqueda,
     filtros,
     manejarCambioFiltro,
     sortOrder,
     setSortOrder,
-    limpiarFiltros,
+    limpiarFiltros: () => { setTerminoBusqueda(""); setFiltros({ obraSocial: "todas" }) },
     cargarPacientes,
-    obtenerConteoHistorias,
-    hayFiltrosActivos,
+    obtenerConteoHistorias: (id: string) => conteosHistorias[id] || 0,
+    hayFiltrosActivos: terminoBusqueda !== "" || filtros.obraSocial !== "todas"
   }
 }

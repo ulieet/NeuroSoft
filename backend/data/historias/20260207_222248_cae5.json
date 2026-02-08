@@ -1,0 +1,69 @@
+{
+  "id": "20260207_222248_cae5",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:23281254|F:2015-06-12|H:41af37f81e",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOC (Legacy)",
+      "nombre_archivo": "historia_20260207_222248_cae5.doc"
+    },
+    "paciente": {
+      "nombre": "Camayo, Roxana Verónica",
+      "dni": "23281254",
+      "fecha_nacimiento": "1973-05-31",
+      "obra_social": "IOMA",
+      "nro_afiliado": "K232812549/00"
+    },
+    "consulta": {
+      "fecha": "2015-06-12",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "OMS: 340 + depresión reactiva. Comentarios: la paciente presenta un componente distímico hacia el polo displacentero: Depresivo, probablemente reactivo a su enfermedad de base neurológica por lo que recibe terapia antidepresiva con Paroxetina: 20-30 mg. /día x vía oral. Solicito: cobertura para asegurar tratamiento continuo antidepresivo con: AROPAX: paroxetina de 20 mg. x 30 comp. + 10 mg. x 30 comp. /mes= 30 mg. /día oral /día. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A.",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": null
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2011-08-18",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": "2011-07-25",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "medular"
+          ]
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso de brotes y remisiones, desarrolló en al menos los tres últimos años (desde 2008) múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora y dificultad para la marcha y la manipulación de objetos y caída de los mismos, crisis vertiginosas a repetición, fallos del equilibrio con dificultad para subir o bajar escaleras e imposibilidad para correr, parestesias e hipoestesias hemicorporales, Lhermitte espontáneo\nFatiga y termosensibilidad",
+      "antecedentes": "",
+      "examen_fisico": "Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente. - elementos cerebelosos axial y apendicular. - pares craneanos: VIII vestibular. - fatiga y termosensibilidad",
+      "agrupacion_sindromica": "Rasgos semiológicos: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente. - elementos cerebelosos axial y apendicular. - pares craneanos: VIII vestibular. - fatiga y termosensibilidad",
+      "comentario": "la paciente presenta un componente distímico hacia el polo displacentero: Depresivo, probablemente reactivo a su enfermedad de base neurológica por lo que recibe terapia antidepresiva con Paroxetina: 20-30 mg. /día x vía oral",
+      "estudios": "realizados: -RMN de cerebro (18/08/11): múltiples imágenes de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos y en ambos hemisferios cerebelosos\nCompatibles con proceso desmielinizante crónico. -RMN de médula Cervical y Dorsal (25/07/11 y 18/08/11): múltiples imágenes focales intramedulares cérvico-dorsales\nCompatibles con proceso desmielinizante crónico",
+      "evolucion": ""
+    },
+    "texto_original": " URGENTE RESUMEN DE HISTORIA CLÍNICO-NEUROLÓGICA La Plata, 12 de Junio de 2015. Apellido y nombre: Camayo, Roxana Verónica DNI: 23.281.254 Fecha de Nacimiento: 31/05/73 Dirección: 25 n° 455 (e/41 y 42). La Plata. Teléfono: (0221) 15-5223470 Obra Social: IOMA nº de afiliado: K232812549/00 Asistida desde: 13/09/11 Antecedente destacables: -hipotiroidismo secundario a exéresis quirúrgica de la glándula por tumoración a los 14 años de edad, hoy con terapia supletoria de T4: 100Mcgrs. /día oral. Síntomas principales: en un curso de brotes y remisiones, desarrolló en al menos los tres últimos años (desde 2008) múltiples síntomas compatibles con afección de la sustancia blanca del sistema nervioso central, como: disminución de la fuerza del hemicuerpo derecho con creciente torpeza motora y dificultad para la marcha y la manipulación de objetos y caída de los mismos, crisis vertiginosas a repetición, fallos del equilibrio con dificultad para subir o bajar escaleras e imposibilidad para correr, parestesias e hipoestesias hemicorporales, Lhermitte espontáneo. Fatiga y termosensibilidad. Rasgos semiológicos: Agrupación sindrómica: - leve bipiramidalismo predominio derecho y crural. - sensitivo superficial y profundo congruente. - elementos cerebelosos axial y apendicular. - pares craneanos: VIII vestibular. - fatiga y termosensibilidad. Estudios realizados: -RMN de cerebro (18/08/11): múltiples imágenes de la sustancia blanca periventriculares, centros semiovales, calloso-marginal bilaterales perpendiculares a los ventrículos y en ambos hemisferios cerebelosos. Compatibles con proceso desmielinizante crónico. -RMN de médula Cervical y Dorsal (25/07/11 y 18/08/11): múltiples imágenes focales intramedulares cérvico-dorsales. Compatibles con proceso desmielinizante crónico. Diagnóstico: OMS: 340 + depresión reactiva. Comentarios: la paciente presenta un componente distímico hacia el polo displacentero: Depresivo, probablemente reactivo a su enfermedad de base neurológica por lo que recibe terapia antidepresiva con Paroxetina: 20-30 mg. /día x vía oral. Solicito: cobertura para asegurar tratamiento continuo antidepresivo con: AROPAX: paroxetina de 20 mg. x 30 comp. + 10 mg. x 30 comp. /mes= 30 mg. /día oral /día. Tratamiento Prolongado. Atte. Dr. Vétere Santiago A. ",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}
