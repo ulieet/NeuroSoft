@@ -1,4 +1,3 @@
-# app/utils/patterns.py
 import re
 
 MESES_ES = {

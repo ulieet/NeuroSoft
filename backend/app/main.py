@@ -16,16 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- REGISTRO DE RUTAS ---
 
-# 1. IMPORTACIONES: Quitamos el prefix porque el router interno ya dice "/importaciones/historias"
 app.include_router(importaciones.router, tags=["Importaciones"])
-
-# 2. HISTORIAS Y PACIENTES: Sin prefix porque ya lo definen ellos mismos
 app.include_router(historias.router, tags=["Historias"])
 app.include_router(pacientes.router, tags=["Pacientes"])
-
-# 3. REPORTES: Aquí SI dejamos el prefix porque el service solo define "/general"
 app.include_router(reportes.router, prefix="/reportes", tags=["Reportes"])
 
 @app.get("/")

@@ -52,7 +52,6 @@ import {
   type HistoriaResumen,
 } from "@/lib/api-historias";
 
-// --- Helpers de Fecha y Badges ---
 const coincideFecha = (storedDate: string | null | undefined, search: string) => {
   if (!storedDate) return false;
   if (!search) return true;
@@ -256,7 +255,6 @@ export default function PaginaHistorias() {
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Cabecera y Botones */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h1 className="text-2xl font-bold">Historias Clínicas</h1>
@@ -327,7 +325,7 @@ export default function PaginaHistorias() {
               </div>
             ) : (
               <div className="overflow-x-auto">
-                <Table className="table-fixed w-full"> {/* Bloqueamos el layout de la tabla */}
+                <Table className="table-fixed w-full"> 
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[90px]">ID</TableHead>

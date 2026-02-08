@@ -1,5 +1,3 @@
-# backend/app/services/nlp_service.py
-
 from typing import Dict, Any, List, Optional
 import re
 import os

@@ -1,11 +1,11 @@
-# app/api/historias.py
 from fastapi import APIRouter, HTTPException
 import os
 import json
 from typing import List, Dict, Any
+from fastapi.responses import FileResponse 
 
 DATA_DIR = "./data/historias"
-UPLOAD_DIR = "./uploads"  # Definimos la ruta de uploads
+UPLOAD_DIR = "./uploads"  
 
 router = APIRouter()
 
@@ -34,7 +34,6 @@ def listar_historias():
         with open(os.path.join(DATA_DIR, fname), "r", encoding="utf-8") as f:
             try:
                 h = json.load(f)
-                # Priorizamos la data validada
                 data_source = h.get("validada") or h.get("borrador") or {}
                 enf = data_source.get("enfermedad", {})
                 paciente = data_source.get("paciente", {})
@@ -85,11 +84,9 @@ def eliminar_historia(id_historia: str):
         raise HTTPException(status_code=404, detail="Historia no encontrada")
     
     try:
-        # 1. Cargar el JSON primero para saber qué archivo físico borrar
         with open(json_path, "r", encoding="utf-8") as f:
             historia = json.load(f)
         
-        # 2. Intentar borrar el archivo físico en /uploads
         try:
             borrador = historia.get("borrador", {})
             if borrador:
@@ -104,14 +101,12 @@ def eliminar_historia(id_historia: str):
         except Exception as e_file:
             print(f"WARNING: No se pudo eliminar el archivo físico: {e_file}")
 
-        # 3. Finalmente borrar el JSON (metadatos)
         os.remove(json_path)
         return {"mensaje": "Historia y archivo físico eliminados correctamente", "id": id_historia}
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al eliminar la historia: {str(e)}")
 
-# --- NUEVO ENDPOINT PARA VALIDACIÓN MASIVA ---
 @router.post("/historias/validacion-masiva", summary="Aprobar todos los pendientes")
 def validar_todas_las_historias():
     if not os.path.exists(DATA_DIR):
@@ -126,7 +121,6 @@ def validar_todas_las_historias():
         with open(path, "r", encoding="utf-8") as f:
             h = json.load(f)
         
-        # Si no está validada, la aprobamos automáticamente
         if h.get("estado") != "validada":
             borrador = h.get("borrador")
             if borrador:
@@ -139,14 +133,14 @@ def validar_todas_las_historias():
                     json.dump(h, f, ensure_ascii=False, indent=2)
                 count += 1
 
-    return {"procesadas": count, "mensaje": "Validación masiva completada"}# app/api/historias.py
+    return {"procesadas": count, "mensaje": "Validación masiva completada"}
 from fastapi import APIRouter, HTTPException
 import os
 import json
 from typing import List, Dict, Any
 
 DATA_DIR = "./data/historias"
-UPLOAD_DIR = "./uploads"  # Definimos la ruta de uploads
+UPLOAD_DIR = "./uploads"  
 
 router = APIRouter()
 
@@ -240,11 +234,9 @@ def eliminar_historia(id_historia: str):
         raise HTTPException(status_code=404, detail="Historia no encontrada")
     
     try:
-        # 1. Cargar el JSON primero para saber qué archivo físico borrar
         with open(json_path, "r", encoding="utf-8") as f:
             historia = json.load(f)
         
-        # 2. Intentar borrar el archivo físico en /uploads
         try:
             borrador = historia.get("borrador", {})
             if borrador:
@@ -259,14 +251,12 @@ def eliminar_historia(id_historia: str):
         except Exception as e_file:
             print(f"WARNING: No se pudo eliminar el archivo físico: {e_file}")
 
-        # 3. Finalmente borrar el JSON (metadatos)
         os.remove(json_path)
         return {"mensaje": "Historia y archivo físico eliminados correctamente", "id": id_historia}
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al eliminar la historia: {str(e)}")
 
-# --- NUEVO ENDPOINT PARA VALIDACIÓN MASIVA ---
 @router.post("/historias/validacion-masiva", summary="Aprobar todos los pendientes")
 def validar_todas_las_historias():
     if not os.path.exists(DATA_DIR):
@@ -281,7 +271,6 @@ def validar_todas_las_historias():
         with open(path, "r", encoding="utf-8") as f:
             h = json.load(f)
         
-        # Si no está validada, la aprobamos automáticamente
         if h.get("estado") != "validada":
             borrador = h.get("borrador")
             if borrador:
@@ -296,3 +285,34 @@ def validar_todas_las_historias():
 
     return {"procesadas": count, "mensaje": "Validación masiva completada"}
 
+@router.get("/historias/{id_historia}/archivo", summary="Descargar documento original")
+def descargar_archivo_original(id_historia: str):
+    """
+    Busca dentro del JSON de la historia el nombre del archivo original
+    y lo sirve desde la carpeta UPLOAD_DIR.
+    """
+    try:
+        historia = _load_historia(id_historia)
+    except HTTPException:
+        raise HTTPException(status_code=404, detail="Historia no encontrada")
+
+    borrador = historia.get("borrador", {})
+    fuente = borrador.get("fuente", {})
+    nombre_archivo = fuente.get("nombre_archivo")
+
+    if not nombre_archivo:
+        nombre_archivo = historia.get("nombre_archivo")
+
+    if not nombre_archivo:
+        raise HTTPException(status_code=404, detail="Esta historia no tiene un archivo original asociado")
+
+    file_path = os.path.join(UPLOAD_DIR, nombre_archivo)
+
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail=f"El archivo '{nombre_archivo}' no se encuentra en el servidor")
+
+    return FileResponse(
+        path=file_path,
+        filename=nombre_archivo,
+        media_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    )

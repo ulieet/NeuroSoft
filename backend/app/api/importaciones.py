@@ -1,4 +1,3 @@
-# app/api/importaciones.py
 from fastapi import APIRouter, UploadFile, File, HTTPException
 import os
 import json
@@ -6,7 +5,7 @@ from datetime import datetime
 from typing import Dict, Any
 import hashlib
 
-from app.services import nlp_service, patient_service # <--- IMPORTAR EL NUEVO SERVICIO
+from app.services import nlp_service, patient_service 
 
 router = APIRouter()
 
@@ -58,7 +57,6 @@ async def importar_historia(file: UploadFile = File(...)):
         print(f"Error procesando NLP: {e}")
         raise HTTPException(status_code=500, detail=f"Error al procesar el archivo: {str(e)}")
 
-    # --- NUEVO: CREAR O ACTUALIZAR PACIENTE ---
     try:
         if borrador.get("paciente"):
             patient_service.upsert_paciente_from_nlp(borrador["paciente"])

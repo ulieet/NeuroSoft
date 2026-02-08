@@ -197,7 +197,6 @@ export default function ImportarHistoriasPage() {
   return (
     <MedicalLayout currentPage="historias">
       <div className="space-y-6">
-        {/* Header */}
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm" asChild>
             <a href="/historias">
@@ -214,7 +213,6 @@ export default function ImportarHistoriasPage() {
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-6">
-            {/* Upload Area */}
             <Card>
               <CardHeader>
                 <CardTitle>Seleccionar Archivos</CardTitle>
@@ -236,10 +234,8 @@ export default function ImportarHistoriasPage() {
                     <p className="text-sm text-muted-foreground">
                       Formatos soportados: .doc, .docx (máximo 10MB por archivo)
                     </p>
-                    {/* LO NUEVO A PEGAR: */}
                   <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
                     
-                    {/* Botón 1: Archivos Sueltos (El que ya tenías) */}
                     <Button asChild>
                       <label htmlFor="file-upload" className="cursor-pointer">
                         Seleccionar Archivos
@@ -254,10 +250,8 @@ export default function ImportarHistoriasPage() {
                       className="hidden"
                     />
 
-                    {/* Separador visual */}
                     <span className="text-xs text-muted-foreground">- O -</span>
 
-                    {/* Botón 2: Carpeta Completa (El nuevo) */}
                     <Button asChild variant="secondary">
                       <label htmlFor="folder-upload" className="cursor-pointer">
                         Subir Carpeta Completa
@@ -266,7 +260,7 @@ export default function ImportarHistoriasPage() {
                     <input
                       id="folder-upload"
                       type="file"
-                      // @ts-expect-error: atributo no estándar
+                      // @ts-expect-error
                       webkitdirectory=""
                       directory=""
                       multiple
@@ -280,7 +274,6 @@ export default function ImportarHistoriasPage() {
               </CardContent>
             </Card>
 
-            {/* Files List */}
             {files.length > 0 && (
               <Card>
                 <CardHeader>
@@ -332,15 +325,6 @@ export default function ImportarHistoriasPage() {
                               <div>
                                 <strong>Fecha:</strong> {file.extractedData.fecha}
                               </div>
-                              <div>
-                                <strong>Diagnóstico:</strong> {file.extractedData.diagnostico}
-                              </div>
-                              <div>
-                                <strong>Síntomas:</strong> {file.extractedData.sintomas.length > 0 ? file.extractedData.sintomas.join(", ") : "-"}
-                              </div>
-                              <div>
-                                <strong>Tratamiento:</strong> {file.extractedData.tratamiento}
-                              </div>
                             </div>
                           </div>
                         )}
@@ -360,7 +344,6 @@ export default function ImportarHistoriasPage() {
             )}
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-6">
             <Card className="sticky top-24">
               <CardHeader>

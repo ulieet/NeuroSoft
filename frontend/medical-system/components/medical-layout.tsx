@@ -24,7 +24,6 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Mobile sidebar */}
       <div className={`fixed inset-0 z-50 lg:hidden ${sidebarOpen ? "block" : "hidden"}`}>
         <div className="fixed inset-0 bg-gray-600 bg-opacity-75" onClick={() => setSidebarOpen(false)} />
         <div className="fixed inset-y-0 left-0 flex w-64 flex-col bg-card border-r border-border">
@@ -56,7 +55,6 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
         </div>
       </div>
 
-      {/* Desktop sidebar */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
         <div className="flex flex-col flex-grow bg-card border-r border-border">
           <div className="flex h-16 items-center px-4">
@@ -96,9 +94,7 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
         </div>
       </div>
 
-      {/* Main content */}
       <div className="lg:pl-64">
-        {/* Top bar */}
         <div className="sticky top-0 z-40 flex h-16 items-center gap-x-4 border-b border-border bg-card px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
           <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setSidebarOpen(true)}>
             <Menu className="h-5 w-5" />
@@ -112,7 +108,6 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
           </div>
         </div>
 
-        {/* Page content */}
         <main className="py-6">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</div>
         </main>

@@ -28,10 +28,10 @@ def clasificar_potencia(med_name):
 def generar_estadisticas_generales():
     if not os.path.exists(DATA_DIR): os.makedirs(DATA_DIR)
     
-    patient_latest = {} # DNI -> Ultima historia para métricas actuales
-    all_records = []    # Todas las historias para métricas históricas (ARR)
+    patient_latest = {} 
+    all_records = []    
     
-    # 1. ESCANEO TOTAL DE ARCHIVOS JSON
+    # ESCANEO TOTAL DE ARCHIVOS JSON
     archivos = [f for f in os.listdir(DATA_DIR) if f.endswith(".json")]
     for fname in archivos:
         try:

@@ -10,7 +10,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { UserPlus, FileText, RefreshCw } from "lucide-react"
 import { BarraBusquedaFiltros } from "@/app/pacientes/components/filtros"
 
-// IMPORTANTE: Usamos tu Hook que ya tiene la lógica de conteo de historias
 import { usePacientesListado } from "@/hooks/use-pacientes-listado"
 
 export default function PaginaPacientesSuspense() {
@@ -31,7 +30,6 @@ export default function PaginaPacientesSuspense() {
 function PaginaPacientes() {
   const router = useRouter()
   
-  // Extraemos todo lo necesario de tu Hook
   const {
     pacientesFiltrados,
     estaCargando,
@@ -44,7 +42,7 @@ function PaginaPacientes() {
     setSortOrder,
     limpiarFiltros,
     cargarPacientes,
-    obtenerConteoHistorias, // <--- Esta es la clave para el número de historias
+    obtenerConteoHistorias, 
     hayFiltrosActivos
   } = usePacientesListado()
 
@@ -63,7 +61,7 @@ function PaginaPacientes() {
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
             </Button>
-            <Button className="bg-[#003e66] hover:bg-[#002a45]" onClick={() => router.push("/pacientes/nuevo")}>
+            <Button className="bg-primary" onClick={() => router.push("/pacientes/nuevo")}>
               <UserPlus className="mr-2 h-4 w-4" /> Nuevo Paciente
             </Button>
           </div>
@@ -73,7 +71,6 @@ function PaginaPacientes() {
           terminoBusqueda={terminoBusqueda}
           onTerminoBusquedaChange={setTerminoBusqueda}
           filtros={filtros} 
-          // Ajustamos para que coincida con la firma del Hook (obra_social)
           onFiltrosChange={(id: any, val: any) => manejarCambioFiltro(id, val)}
           obrasSocialesDisponibles={obrasSocialesDisponibles}
           onLimpiarFiltros={limpiarFiltros}
@@ -113,7 +110,6 @@ function PaginaPacientes() {
                         className="cursor-pointer hover:bg-muted/50 transition-colors" 
                         onClick={() => router.push(`/pacientes/detalle?id=${p.id}`)}
                       >
-                        {/* Nombre: quitamos comas y ponemos en negrita sutil */}
                         <TableCell className="font-medium">
                            {p.nombre.replace(/,/g, '')}
                         </TableCell>

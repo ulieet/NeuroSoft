@@ -38,7 +38,6 @@ export default async function Dashboard() {
     <MedicalLayout currentPage="dashboard">
       <div className="space-y-8 animate-in fade-in duration-500">
         
-        {/* SECCIÓN PRINCIPAL: IMPORTACIÓN */}
       
         <Card className="relative overflow-hidden border-2 border-[#003e66]/20 bg-linear-to-r from-white to-slate-50 shadow-sm">
           <div className="pointer-events-none absolute top-0 right-0 p-4 opacity-5">
@@ -63,7 +62,6 @@ export default async function Dashboard() {
           </CardContent>
         </Card>
 
-        {/* METRICAS DE COHORTE */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Card className="border-l-4 border-l-[#003e66] shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -110,7 +108,6 @@ export default async function Dashboard() {
           </Card>
         </div>
 
-        {/* ACCIONES SECUNDARIAS */}
         <div className="grid grid-cols-1 gap-6">
           <Card className="shadow-sm">
             <CardHeader>
