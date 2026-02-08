@@ -38,7 +38,6 @@ import {
 
 import { BASE_URL } from "@/lib/api-historias"
 
-// --- HELPERS ---
 const generarOpcionesEDSS = () => {
   const opciones = []
   for (let i = 0; i <= 10; i += 0.5) {
@@ -48,7 +47,6 @@ const generarOpcionesEDSS = () => {
 }
 const opcionesEDSS = generarOpcionesEDSS()
 
-// --- COMPONENTE PRINCIPAL ---
 function PaginaEditarHistoria() {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -60,7 +58,6 @@ function PaginaEditarHistoria() {
   const [estaGuardando, setEstaGuardando] = useState(false);
   const [formData, setFormData] = useState<Partial<HistoriaClinica>>({})
 
-  // --- 1. CARGA DE DATOS (Backend con Fallback a Local) ---
   useEffect(() => {
     if (!historiaId) {
       setEstaCargando(false)
@@ -70,7 +67,6 @@ function PaginaEditarHistoria() {
     const cargarDatos = async () => {
       setEstaCargando(true)
 
-      // A. Intentar cargar desde Backend (Python)
       try {
         const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`)
         
@@ -83,7 +79,6 @@ function PaginaEditarHistoria() {
           const enf = fuenteDatos.enfermedad || {}
           const cons = fuenteDatos.consulta || {}
 
-          // Normalización de Nombre/Apellido
           let nombre = pInfo.nombre || ""
           let apellido = ""
           if (nombre && nombre.includes(",")) {
@@ -106,38 +101,30 @@ function PaginaEditarHistoria() {
             fechaRegistro: "", observaciones: ""
           })
 
-          // Mapeo Backend -> Estado del Formulario
           setFormData({
             id: data.id,
             pacienteId: historiaId,
             fecha: (cons.fecha || "").split('T')[0], 
             
-            // Diagnóstico
             diagnostico: enf.diagnostico || "",
             codigoDiagnostico: enf.codigo || "",
             formaEvolutiva: enf.forma || "",
             patologia: "Neurología", 
             
-            // Evolución
             fechaInicioEnfermedad: (enf.fecha_inicio || "").split('T')[0],
             escalaEDSS: enf.edss,
             
-            // --- CORRECCIÓN 1: Leer Estado y Criticidad correctamente ---
-            // Normalizamos 'pendiente' a 'pendiente_validacion' para que el Select lo detecte
+           
             estado: data.estado === "pendiente" ? "pendiente_validacion" : data.estado,
-            // Priorizamos la criticidad de la raíz (guardada anteriormente) o del borrador
             nivelCriticidad: data.nivel_criticidad || fuenteDatos.nivel_criticidad || "medio",
 
-            // Cuadro Clínico (Textos)
             sintomasPrincipales: fuenteDatos.secciones_texto?.sintomas_principales || fuenteDatos.texto_original || "",
             antecedentes: fuenteDatos.secciones_texto?.antecedentes || "",
             agrupacionSindromica: fuenteDatos.secciones_texto?.agrupacion_sindromica || "",
             examenFisico: fuenteDatos.secciones_texto?.examen_fisico || "",
-            
-            // Plan
+        
             tratamiento: fuenteDatos.secciones_texto?.comentario || "", 
 
-            // Medicamentos (Array)
             medicamentos: (fuenteDatos.tratamientos || []).map((t: any) => ({
               droga: t.molecula || t.droga || "",
               dosis: t.dosis || "",
@@ -145,7 +132,6 @@ function PaginaEditarHistoria() {
               estado: "Activo"
             })),
 
-            // Estudios
             estudiosComplementarios: {
               puncionLumbar: fuenteDatos.complementarios?.puncion_lumbar?.realizada || false,
               examenLCR: false,
@@ -160,7 +146,6 @@ function PaginaEditarHistoria() {
         console.warn("Backend error, local fallback...", error)
       }
 
-      // B. Fallback Local Storage (Si falla el backend)
       const hist = obtenerHistoriaClinicaPorId(historiaId)
       if (hist) {
         setFormData({
@@ -182,7 +167,6 @@ function PaginaEditarHistoria() {
     cargarDatos()
   }, [historiaId])
 
-  // --- HANDLERS DE CAMBIO ---
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
@@ -201,7 +185,6 @@ function PaginaEditarHistoria() {
     }
   }
 
-  // --- GESTIÓN DE MEDICAMENTOS (CRUD Array) ---
   const handleMedicamentoChange = (index: number, field: keyof Medicamento, value: string) => {
     setFormData(prev => {
       if (!prev || !prev.medicamentos) return prev;
@@ -225,15 +208,12 @@ function PaginaEditarHistoria() {
     }));
   };
 
-  // --- GUARDADO (Backend + Local Sync) ---
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!historiaId) return;
     setEstaGuardando(true)
 
-    // 1. Preparar Payload para api/historias.py
     const payloadBackend = {
-      // --- CORRECCIÓN 2: Enviar explícitamente Estado y Criticidad ---
       estado: formData.estado, 
       nivel_criticidad: formData.nivelCriticidad, 
       
@@ -272,7 +252,6 @@ function PaginaEditarHistoria() {
     };
 
     try {
-      // 2. Enviar a Backend
       const res = await fetch(`${BASE_URL}/historias/${historiaId}/validacion`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -283,7 +262,6 @@ function PaginaEditarHistoria() {
         throw new Error("Error al guardar en el servidor");
       }
 
-      // 3. Actualizar Local Storage (Éxito)
       const historiasLocales = obtenerHistoriasClinicas();
       const index = historiasLocales.findIndex(h => h.id === historiaId);
       const historiaA_Guardar = { ...formData, id: historiaId } as HistoriaClinica;
@@ -300,7 +278,6 @@ function PaginaEditarHistoria() {
         description: "La historia clínica ha sido validada en el servidor.",
       })
       
-      // Redirigir al detalle
       setTimeout(() => {
         router.push(`/historias/detalle?id=${historiaId}`)
       }, 500)
@@ -313,7 +290,6 @@ function PaginaEditarHistoria() {
         variant: "destructive"
       })
       
-      // 4. Fallback: Guardar localmente aunque falle el back
       const historiasLocales = obtenerHistoriasClinicas();
       const index = historiasLocales.findIndex(h => h.id === historiaId);
       const historiaA_Guardar = { ...formData, id: historiaId } as HistoriaClinica;
@@ -496,7 +472,6 @@ function PaginaEditarHistoria() {
               </Card>
             </div>
 
-            {/* COLUMNA DERECHA (Datos de Estado / Sticky) */}
             <div className="space-y-6">
               <Card className="sticky top-24">
                 <CardHeader>
@@ -508,7 +483,6 @@ function PaginaEditarHistoria() {
                     <Select value={formData.estado} onValueChange={(v) => handleSelectChange("estado", v)}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        {/* CORRECCIÓN 3: Usar valor extendido para que coincida con el backend */}
                         <SelectItem value="pendiente_validacion">Pendiente</SelectItem>
                         <SelectItem value="validada">Validada</SelectItem>
                       </SelectContent>

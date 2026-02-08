@@ -13,7 +13,6 @@ interface FiltrosAvanzadosProps {
   onFiltrosChange: (id: keyof FiltrosHistoria, value: string | number) => void
 }
 
-// Helper para generar el desplegable de EDSS
 const generarOpcionesEDSS = () => {
   const opciones = [];
   for (let i = 0; i <= 10; i += 0.5) {
@@ -21,16 +20,13 @@ const generarOpcionesEDSS = () => {
   }
   return opciones;
 }
-// Usamos useMemo para que esto no se recalcule en cada render
 const opcionesEDSS = generarOpcionesEDSS();
 
 
 export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosProps) {
-  // Estado local para los dropdowns
   const [patologiasDisponibles, setPatologiasDisponibles] = useState<string[]>([])
   const [medicamentosDisponibles, setMedicamentosDisponibles] = useState<string[]>([])
   
-  // Estado local para manejar los badges de selección múltiple
   const [patologiasSeleccionadas, setPatologiasSeleccionadas] = useState<string[]>([])
   const [medicamentosSeleccionados, setMedicamentosSeleccionados] = useState<string[]>([])
 
@@ -48,14 +44,12 @@ export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosP
     setPatologiasDisponibles(Array.from(setPatologias).sort())
     setMedicamentosDisponibles(Array.from(setMedicamentos).sort())
     
-    // Sincronizar estado local con los filtros que vienen de la página
     setPatologiasSeleccionadas(filtros.patologia?.split("|") || [])
     setMedicamentosSeleccionados(filtros.medicamento?.split("|") || [])
 
   }, [filtros.patologia, filtros.medicamento])
 
   
-  // --- Handlers ---
 
   const manejarCambioInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;

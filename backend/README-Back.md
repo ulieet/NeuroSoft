@@ -13,7 +13,7 @@ Quick start
 4. uvicorn app.main:app --reload --port 8000
 
 
-## 📌 Descripción General
+## Descripción General
 
 Este backend implementa la **Fase 4** del proyecto Seminario (Grupo 21), específicamente el **módulo de Historias Clínicas**, que incluye:
 
@@ -33,7 +33,7 @@ El objetivo es integrar este backend con el **frontend en React** que desarrolla
 
 ---
 
-## 📁 Estructura del Backend (real y actualizada)
+##  Estructura del Backend (real y actualizada)
 
 ```text
 backend/
@@ -135,7 +135,7 @@ fecha_consulta
 
 otros metadatos básicos
 
-🧠 3. Obtener borrador (salida de IA/NLP)
+ 3. Obtener borrador (salida de IA/NLP)
 GET /historias/{id}/borrador
 
 Devuelve el borrador bruto generado por el motor de IA, incluyendo:
@@ -154,7 +154,7 @@ Tratamientos farmacológicos extraídos por bloques ("Solicito:", "Indicación:"
 
 Texto original.
 
-✏️ 4. Validar historia
+4. Validar historia
 PATCH /historias/{id}/validacion
 
 Permite que el profesional corrija / complete la información.

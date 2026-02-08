@@ -16,7 +16,6 @@ import {
 import { getPaciente, getHistoriasDePaciente, PacienteBackend } from "@/lib/api-pacientes"
 import { BASE_URL } from "@/lib/api-historias"
 
-// --- MOTOR DE IDENTIFICACIÓN CLÍNICA ---
 const DMT_KEYWORDS = [
   "interfer", "rebif", "betaferon", "avonex", "copaxon", "glatiramer", "cop-i",
   "natalizumab", "tysabri", "fingolimod", "gilenya", "ocrelizumab", "ocrevus", 
@@ -29,7 +28,6 @@ const normalizarTexto = (str: string) =>
 
 const identificarDMT = (tratamientos: any[]) => {
   if (!tratamientos || !Array.isArray(tratamientos)) return null;
-  // Buscamos en toda la lista de la historia el primer fármaco que sea un modulador (DMT)
   return tratamientos.find((t: any) => {
     const txt = normalizarTexto(`${t.droga || ""} ${t.molecula || ""}`);
     return DMT_KEYWORDS.some(key => txt.includes(key));
@@ -94,12 +92,10 @@ function DetalleAnalisisContent() {
   const analisis = useMemo(() => {
     if (historiasRaw.length === 0) return null;
 
-    // 1. Ordenar por fecha real del JSON
     const ordenadas = [...historiasRaw].sort((a, b) => 
       new Date(a.consulta?.fecha || 0).getTime() - new Date(b.consulta?.fecha || 0).getTime()
     );
 
-    // 2. Extraer datos recorriendo el JSON
     const registros = ordenadas.map(h => {
       const todosTrats = h.tratamientos || [];
       const tDMT = identificarDMT(todosTrats);
@@ -108,7 +104,6 @@ function DetalleAnalisisContent() {
       const dosis = tDMT?.dosis || "";
       const frecuencia = tDMT?.frecuencia || "";
 
-      // Buscamos intolerancia en el campo o en el comentario médico
       const esIntolerante = tDMT?.tolerancia === false || 
                             (h.secciones_texto?.comentario || "").toLowerCase().includes("intolerancia");
 
@@ -128,16 +123,13 @@ function DetalleAnalisisContent() {
       };
     });
 
-    // 3. Métricas
     let switches = 0;
     let intolerancias = 0;
     for (let i = 0; i < registros.length; i++) {
-      // Solo cuenta switch si hay un cambio real entre dos drogas conocidas
       if (i > 0 && registros[i].dmt !== registros[i - 1].dmt && registros[i].dmt !== "Sin DMT") switches++;
       if (!registros[i].tolerancia) intolerancias++;
     }
 
-    // 4. Intervalos (Hitos EDSS)
     const intervalos = [];
     if (registros.length > 0) {
       let edssActual = registros[0].edss;
@@ -181,7 +173,6 @@ function DetalleAnalisisContent() {
         </div>
       </div>
 
-      {/* METRICAS PRINCIPALES */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Card className="border-t-4 border-t-blue-500"><CardHeader className="pb-2 text-xs font-bold uppercase text-slate-500">Total Consultas</CardHeader><CardContent className="text-3xl font-bold">{historiasRaw.length}</CardContent></Card>
         <Card className="border-t-4 border-t-orange-500"><CardHeader className="pb-2 text-xs font-bold uppercase text-slate-500">Switches de DMT</CardHeader><CardContent className="text-3xl font-bold text-orange-600">{analisis.switches}</CardContent></Card>
@@ -193,7 +184,6 @@ function DetalleAnalisisContent() {
         <CardContent><div className="h-72"><ResponsiveContainer width="100%" height="100%"><LineChart data={analisis.registros}><CartesianGrid strokeDasharray="3 3" vertical={false}/><XAxis dataKey="fecha" tick={{fontSize: 12}}/><YAxis domain={[0, 10]} ticks={[0, 2, 4, 6, 8, 10]}/><Tooltip/><Line type="stepAfter" dataKey="edss" stroke="#003e66" strokeWidth={4} dot={{r: 6, fill: "#003e66", strokeWidth: 2, stroke: "#fff"}}/></LineChart></ResponsiveContainer></div></CardContent>
       </Card>
 
-      {/* --- SECCION SOPORTE Y REHABILITACION (GRANDE Y VISUAL) --- */}
       {analisis.soporte.length > 0 && (
         <Card className="border-l-8 border-l-cyan-500 bg-cyan-50/20 shadow-md">
           <CardHeader>
@@ -215,7 +205,6 @@ function DetalleAnalisisContent() {
         </Card>
       )}
 
-      {/* HITOS EDSS */}
       <Card>
         <CardHeader><CardTitle className="text-lg flex items-center gap-2 text-slate-700"><Clock className="h-5 w-5 text-[#003e66]" /> Hitos de Progresión y Estabilidad</CardTitle></CardHeader>
         <CardContent>
@@ -236,7 +225,6 @@ function DetalleAnalisisContent() {
         </CardContent>
       </Card>
 
-      {/* HISTORICO DMT DETALLADO */}
       <Card>
         <CardHeader><CardTitle className="text-lg flex items-center gap-2 text-slate-700"><Pill className="h-5 w-5 text-[#003e66]" /> Histórico Detallado de Inmunomoduladores (DMT)</CardTitle></CardHeader>
         <CardContent>

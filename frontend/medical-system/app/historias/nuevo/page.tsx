@@ -21,7 +21,6 @@ import {
   type EstudioComplementario,
 } from "@/lib/almacen-datos"
 
-// Helper para generar el desplegable de EDSS
 const generarOpcionesEDSS = () => {
   const opciones = []
   for (let i = 0; i <= 10; i += 0.5) {
@@ -38,15 +37,12 @@ const estadoInicialHistoria: Partial<HistoriaClinica> = {
   escalaEDSS: undefined,
   estado: "pendiente", 
   medico: "Dr. Rodríguez", 
-  
-  // Nuevos campos iniciales vacíos
   sintomasPrincipales: "",
   antecedentes: "",
   agrupacionSindromica: "",
-  
   examenFisico: "",
   estudiosComplementarios: { puncionLumbar: false, examenLCR: false, texto: "" },
-  tratamiento: "", // Esto ahora será la justificación
+  tratamiento: "", 
   evolucion: "",
   fechaImportacion: new Date().toISOString(),
   medicamentos: [],
@@ -58,15 +54,11 @@ function PaginaNuevaHistoria() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const pacienteIdParam = searchParams.get("pacienteId")
-
   const [pacienteSeleccionado, setPacienteSeleccionado] = useState<Paciente | null>(null) 
   const [estaGuardando, setEstaGuardando] = useState(false)
   const [estaCargando, setEstaCargando] = useState(true)
-  
-  // Estado del formulario
   const [formData, setFormData] = useState<Partial<HistoriaClinica>>(estadoInicialHistoria)
-  
-  // Estado para medicamentos como string simple (separado por comas)
+
   const [medicamentosInput, setMedicamentosInput] = useState("")
 
   useEffect(() => {
@@ -75,13 +67,11 @@ function PaginaNuevaHistoria() {
       return
     }
     
-    // --- CORRECCIÓN: Ya no convertimos a Number ---
-    // El ID se maneja como string directamente
+    
     const pac = obtenerPacientePorId(pacienteIdParam)
     
     if (pac) {
       setPacienteSeleccionado(pac)
-      // Asignamos el ID string directamente
       setFormData((prev) => ({ ...prev, pacienteId: pacienteIdParam }))
     } else {
       alert("Paciente no encontrado")
@@ -130,15 +120,14 @@ function PaginaNuevaHistoria() {
       return
     }
 
-    // Convertir string de medicamentos (separado por comas) a array de objetos
     const listaMedicamentos: Medicamento[] = medicamentosInput
       .split(",")
       .map(item => item.trim())
       .filter(item => item !== "")
       .map(nombre => ({
         droga: nombre,
-        dosis: "",     // Valor por defecto
-        estado: "Activo" // Valor por defecto
+        dosis: "",    
+        estado: "Activo" 
       }))
 
     const datosCompletos = {
@@ -170,7 +159,6 @@ function PaginaNuevaHistoria() {
   }
 
   if (!pacienteSeleccionado) {
-     // Fallback visual por si el redirect falla o tarda
      return null;
   }
 

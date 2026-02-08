@@ -13,7 +13,6 @@ import {
   Shield, Activity, BrainCircuit, RefreshCw, AlertTriangle 
 } from 'lucide-react'
 
-// --- Tipos de Datos (Coinciden con el Backend) ---
 type MotivoDMTEntry = { motivo: string; porcentaje: number; color: string };
 type SoporteEntry = { name: string; value: number; color: string };
 type FormaTerapiaEntry = { forma: string; alta_eficacia: number; moderada: number; sin_tratamiento: number; };
@@ -75,7 +74,6 @@ export default function ReportesPage() {
 
   useEffect(() => { fetchStats(); }, []);
 
-  // Estado de Error
   if (error) {
     return (
       <MedicalLayout currentPage="reportes">
@@ -91,7 +89,6 @@ export default function ReportesPage() {
     );
   }
 
-  // Estado de Carga
   if (loading || !generalData) {
     return (
       <MedicalLayout currentPage="reportes">
