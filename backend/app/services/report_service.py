@@ -10,6 +10,37 @@ DATA_DIR = "./data/historias"
 HIGH_EFF = ["natalizumab", "tysabri", "ocrelizumab", "ocrevus", "rituximab", "mabthera", "alemtuzumab", "lemtrada", "cladribina", "mavenclad", "fingolimod", "gilenya", "siponimod", "mayzent", "ofatumumab", "kesimpta"]
 MOD_EFF = ["dimetil", "fumarato", "tecfidera", "dimeful", "teriflunomida", "aubagio", "interferon", "interferón", "rebif", "betaferon", "avonex", "blastoferon", "blastoferón", "glatiramer", "copaxone"]
 
+EMPTY_STATS = {
+    "resumen_general": {
+        "total_pacientes": 0,
+        "historias_registradas": 0,
+        "promedio_edad_diagnostico": 0,
+        "promedio_edad_actual": 0,
+        "porcentaje_femenino": 0
+    },
+    "kpis_em": {
+        "pacientes_neda3": 0,
+        "arr_promedio": 0,
+        "tiempo_a_edss_6_0_promedio": 0,
+        "porcentaje_boc_positivas": 0
+    },
+    "discapacidad_y_progression": {
+        "relacion_forma_terapia": [],
+        "edss_progresion_historica": []
+    },
+    "tratamiento_dmt": {
+        "uso_dmt_actual": [],
+        "motivos_cambio_dmt": []
+    },
+    "neuroimagen": {
+        "conteo_lcr": 0,
+        "conteo_rmn_total": 0,
+        "porcentaje_atrofia_reportada": 0,
+        "actividad_rmn_bianual": []
+    },
+    "tratamiento_soporte": []
+}
+
 def clasificar_potencia(med_name):
     if not med_name or med_name == "Sin Tratamiento": return "sin_tratamiento"
     m = med_name.lower()
@@ -31,7 +62,8 @@ def get_age(birth, ref=None):
     except: return 0
 
 def generar_estadisticas_generales():
-    if not os.path.exists(DATA_DIR): return {} 
+    if not os.path.exists(DATA_DIR): 
+        return EMPTY_STATS 
 
     # DEDUPLICACIÓN
     patient_map = {} 
@@ -52,9 +84,10 @@ def generar_estadisticas_generales():
 
     historias = [p["data"] for p in patient_map.values()]
     total = len(historias)
-    if total == 0: return {}
+    
+    if total == 0: 
+        return EMPTY_STATS
 
-    # VARIABLES
     neda_count = 0
     arr_brotes = 0
     motivos = []
@@ -115,7 +148,6 @@ def generar_estadisticas_generales():
             for r in rmn_list:
                 act = str(r.get("actividad", "")).lower()
                 gd = str(r.get("gd", "")).lower()
-                # Corrección: Solo cuenta como activa si no es "inactiva"
                 if "activa" in act and "inactiva" not in act: actividad_rmn = True
                 if "positiva" in gd: actividad_rmn = True
         
@@ -126,8 +158,6 @@ def generar_estadisticas_generales():
             rmn_stats["inactivos"] += 1
 
         # CLÍNICA: CORRECCIÓN CRÍTICA
-        # Solo miramos Evolución y Comentario (el presente). 
-        # Ignoramos 'sintomas_principales' y 'antecedentes' porque hablan del pasado.
         full_txt = (txt.get("evolucion") or "").lower() + " " + (txt.get("comentario") or "").lower()
         
         tiene_brote = False
