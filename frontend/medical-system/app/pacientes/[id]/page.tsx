@@ -9,7 +9,6 @@ import { ArrowLeft, Edit, FileText, Plus, RefreshCw, Trash, User, Calendar } fro
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-// Importamos el nuevo servicio
 import { 
   getPaciente, 
   getHistoriasDePaciente, 
@@ -21,7 +20,6 @@ export default function PaginaDetallePaciente() {
   const searchParams = useSearchParams()
   const router = useRouter()
   
-  // EL CAMBIO CLAVE: ID es string, no number
   const patientId = searchParams.get("id") 
 
   const [paciente, setPaciente] = useState<PacienteBackend | null>(null)
@@ -38,11 +36,9 @@ export default function PaginaDetallePaciente() {
     setLoading(true)
     if (!patientId) return;
 
-    // 1. Cargar Paciente
     const dataPaciente = await getPaciente(patientId)
     setPaciente(dataPaciente)
 
-    // 2. Cargar sus Historias
     if (dataPaciente) {
         const dataHistorias = await getHistoriasDePaciente(patientId)
         setHistorias(dataHistorias)
@@ -74,7 +70,6 @@ export default function PaginaDetallePaciente() {
   return (
     <MedicalLayout currentPage="pacientes">
       <div className="space-y-6">
-        {/* Header */}
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="icon" onClick={() => router.back()}>
             <ArrowLeft className="h-4 w-4" />
@@ -90,7 +85,6 @@ export default function PaginaDetallePaciente() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* Columna Izquierda: Datos Personales */}
           <div className="md:col-span-1 space-y-6">
             <Card>
               <CardHeader>
@@ -115,7 +109,6 @@ export default function PaginaDetallePaciente() {
             </Card>
           </div>
 
-          {/* Columna Derecha: Historias Clínicas */}
           <div className="md:col-span-2">
             <Card>
               <CardHeader>

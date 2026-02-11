@@ -10,7 +10,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { 
   Download, TrendingUp, Clock, AlertTriangle, Pill, 
-  ArrowLeft, RefreshCw, Check, Activity, ShieldCheck
+  ArrowLeft, RefreshCw, Check, Activity, 
 } from 'lucide-react'
 
 import { getPaciente, getHistoriasDePaciente, PacienteBackend } from "@/lib/api-pacientes"

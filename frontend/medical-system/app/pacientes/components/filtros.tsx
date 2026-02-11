@@ -30,7 +30,6 @@ export function BarraBusquedaFiltros({
   return (
     <div className="p-4 flex flex-col md:flex-row gap-3">
       
-      {/* BUSCADOR */}
       <div className="relative flex-1">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
         <Input
@@ -41,7 +40,6 @@ export function BarraBusquedaFiltros({
         />
       </div>
 
-      {/* SELECT OBRA SOCIAL AZUL MARINO */}
       <div className="w-full md:w-64">
         <Select
           value={filtros.obra_social}
@@ -64,7 +62,6 @@ export function BarraBusquedaFiltros({
         </Select>
       </div>
 
-      {/* BOTONES AUXILIARES */}
       <div className="flex gap-2">
         <Button 
           variant="outline" 

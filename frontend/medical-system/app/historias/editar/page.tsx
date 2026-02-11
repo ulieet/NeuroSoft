@@ -301,7 +301,6 @@ function PaginaEditarHistoria() {
     }
   }
 
-  // --- RENDER ---
 
   if (estaCargando) {
     return (
@@ -336,7 +335,6 @@ function PaginaEditarHistoria() {
       <form onSubmit={handleSubmit}>
         <div className="space-y-6">
           
-          {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
               <a href={`/historias/detalle?id=${historiaId}`}><ArrowLeft className="h-4 w-4" /></a>
@@ -349,10 +347,8 @@ function PaginaEditarHistoria() {
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             
-            {/* COLUMNA IZQUIERDA (Datos Clínicos) */}
             <div className="lg:col-span-2 space-y-6">
               
-              {/* 1. Datos Generales */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
@@ -365,7 +361,6 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
 
-              {/* 2. Cuadro Clínico (Textareas) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle>
@@ -390,7 +385,6 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
 
-              {/* 3. Diagnóstico */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><Brain className="h-5 w-5" />Diagnóstico</CardTitle>
@@ -415,7 +409,6 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
               
-              {/* 4. Índices Clave (EDSS) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><TrendingUp className="h-5 w-5" />Índices Clave</CardTitle>
@@ -440,7 +433,6 @@ function PaginaEditarHistoria() {
                 </CardContent>
               </Card>
 
-              {/* 5. Plan Terapéutico (Medicamentos Dinámicos) */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><Pill className="h-5 w-5" />Plan Terapéutico</CardTitle>

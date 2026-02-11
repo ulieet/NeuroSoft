@@ -1,9 +1,6 @@
-// frontend/medical-system/lib/api-pacientes.ts
 
-// Usamos localhost para asegurar que coincida con el navegador
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-// --- INTERFACES ---
 export interface PacienteBackend {
   id: string; 
   nombre: string;
@@ -23,9 +20,7 @@ export interface HistoriaBackend {
   medico: string | null;
 }
 
-// --- FETCHERS ---
 
-// 1. ESTA ES LA FUNCIÓN QUE FALTABA PARA VER LA LISTA
 export async function getPacientes(): Promise<PacienteBackend[]> {
   try {
     const res = await fetch(`${API_URL}/pacientes`, { cache: "no-store" });

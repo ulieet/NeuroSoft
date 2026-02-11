@@ -20,15 +20,12 @@ export function usePacientesListado() {
     try {
       const data = await getPacientes()
       setPacientes(data)
-      // Solución al delay: Liberamos la UI apenas tenemos los pacientes
       setEstaCargando(false)
 
-      // Los conteos se calculan después, sin bloquear la pantalla
       const counts: Record<string, number> = {}
       for (const p of data) {
         const historias = await getHistoriasDePaciente(p.dni)
         counts[p.id] = historias.length
-        // Vamos actualizando de a poco para que se vea dinámico
         setConteosHistorias(prev => ({ ...prev, [p.id]: historias.length }))
       }
     } catch (error) {

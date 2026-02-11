@@ -169,7 +169,6 @@ def listar_historias():
         with open(os.path.join(DATA_DIR, fname), "r", encoding="utf-8") as f:
             try:
                 h = json.load(f)
-                # Priorizamos la data validada
                 data_source = h.get("validada") or h.get("borrador") or {}
                 enf = data_source.get("enfermedad", {})
                 paciente = data_source.get("paciente", {})

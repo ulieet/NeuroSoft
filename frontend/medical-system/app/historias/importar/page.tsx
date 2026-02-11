@@ -9,14 +9,13 @@ import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Upload, FileText, CheckCircle, AlertCircle, X, Loader2 } from "lucide-react"
 
-// CAMBIO 1: Agregamos fileObject para guardar el archivo binario real
 interface UploadedFile {
   id: string
   name: string
   size: number
   status: "pending" | "processing" | "completed" | "error"
   progress: number
-  fileObject: File // <--- Importante: Aquí guardamos el archivo real para enviarlo
+  fileObject: File 
   extractedData?: {
     paciente: string
     fecha: string
@@ -59,7 +58,6 @@ export default function ImportarHistoriasPage() {
 
   const handleFiles = (fileList: File[]) => {
     const newFiles: UploadedFile[] = fileList.map((file) => {
-      // 1. Validamos la extensión AQUÍ MISMO
       const name = file.name.toLowerCase();
       const esValido = name.endsWith(".doc") || name.endsWith(".docx") || name.endsWith(".pdf");
 
@@ -67,11 +65,9 @@ export default function ImportarHistoriasPage() {
         id: Math.random().toString(36).substr(2, 9),
         name: file.name,
         size: file.size,
-        // 2. Si es válido queda 'pending', si no, pasa directo a 'error'
         status: esValido ? "pending" : "error",
         progress: 0,
         fileObject: file,
-        // 3. Mensaje de error explicativo si falla
         error: esValido ? undefined : "Error: Formato no permitido. Solo .doc, .docx o .pdf"
       };
     })
@@ -83,28 +79,23 @@ export default function ImportarHistoriasPage() {
     setFiles((prev) => prev.filter((file) => file.id !== id))
   }
 
-  // CAMBIO 2 y 3: Lógica real de procesamiento con Fetch al Backend
   const processFiles = async () => {
     setIsProcessing(true)
 
     for (const file of files) {
       if (file.status === "pending") {
-        // 1. Actualizar estado a procesando
         setFiles((prev) => prev.map((f) => (f.id === file.id ? { ...f, status: "processing", progress: 50 } : f)))
 
         try {
-          // 2. Preparar el envío del archivo
           const formData = new FormData()
-          formData.append("file", file.fileObject) // 'file' debe coincidir con el parámetro en FastAPI
+          formData.append("file", file.fileObject) 
 
-          // 3. Llamada al Backend (FastAPI)
           const response = await fetch("http://127.0.0.1:8000/importaciones/historias", {
             method: "POST",
             body: formData,
           })
 
           if (!response.ok) {
-            // Manejar error si el backend responde 4xx o 5xx (ej. Duplicado 409)
             const errorData = await response.json().catch(() => ({}))
             throw new Error(errorData.detail || "Error al procesar en el servidor")
           }
@@ -112,21 +103,16 @@ export default function ImportarHistoriasPage() {
           const backendData = await response.json()
           console.log("Respuesta Backend:", backendData)
 
-          // 4. Mapear la respuesta del Backend a la estructura del Frontend
-          // Nota: Ajusta estas claves según lo que devuelva exactamente tu 'borrador' de FastAPI
           const mappedData = {
             paciente: backendData.borrador?.paciente?.nombre || "No detectado",
             fecha: backendData.borrador?.consulta?.fecha || "No detectada",
             diagnostico: backendData.borrador?.diagnostico || "No detectado",
-            // Si el backend devuelve array de sintomas, úsalo, si no, array vacío
             sintomas: backendData.borrador?.sintomas || [], 
-            // Convertimos la lista de medicamentos a string si viene como array
             tratamiento: Array.isArray(backendData.borrador?.tratamientos) 
               ? backendData.borrador.tratamientos.map((t: any) => `${t.molecula} ${t.dosis || ''}`).join(", ") 
               : "No detectado"
           }
 
-          // 5. Marcar como completado con datos reales
           setFiles((prev) =>
             prev.map((f) =>
               f.id === file.id

@@ -91,7 +91,6 @@ export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosP
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4 border rounded-lg bg-muted/50">
       
-      {/* --- FILTROS DE HISTORIA (Patología y Medicamento) --- */}
       <div className="space-y-2 md:col-span-2">
         <Label>Patologías</Label>
         <Select onValueChange={(v) => manejarSeleccionMultiple("patologia", v)}>
@@ -138,7 +137,6 @@ export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosP
         )}
       </div>
       
-      {/* --- FILTROS DE PACIENTE (Edad Actual y Sexo) --- */}
       <div className="space-y-2">
         <Label htmlFor="sexo">Sexo (Paciente)</Label>
         <Select value={filtros.sexo || "todos"} onValueChange={(v) => manejarCambioSelect("sexo", v)}>
@@ -151,7 +149,6 @@ export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosP
         </Select>
       </div>
       
-      {/* --- CAMBIO: Input único para Edad Actual --- */}
       <div className="space-y-2">
         <Label htmlFor="edad">Edad Actual (años)</Label>
         <Input id="edad" type="number" placeholder="Ej: 42" min="0" value={filtros.edad || ""} onChange={manejarCambioInput} />
@@ -184,7 +181,6 @@ export function FiltrosAvanzados({ filtros, onFiltrosChange }: FiltrosAvanzadosP
         </Select>
       </div>
 
-      {/* --- FILTROS DE ENFERMEDAD (Valor único) --- */}
       
       <div className="space-y-2">
         <Label htmlFor="edadInicioEnfermedad">Edad Inicio Síntomas (años)</Label>

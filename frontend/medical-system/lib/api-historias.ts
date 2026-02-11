@@ -1,4 +1,3 @@
-// frontend/medical-system/lib/api-historias.ts
 
 import { 
   obtenerHistoriasClinicas, 
@@ -25,7 +24,6 @@ export type HistoriaResumen = {
   fecha_consulta?: string | null;
 };
 
-// 🔹 HELPER: Fetch con Timeout (falla rápido si no hay backend)
 async function fetchWithTimeout(url: string, options: RequestInit = {}, timeout = 2000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
@@ -42,22 +40,18 @@ async function fetchWithTimeout(url: string, options: RequestInit = {}, timeout 
   }
 }
 
-// --- LISTAR (Con Timeout y Fallback) ---
 export async function listarHistorias(): Promise<HistoriaResumen[]> {
   try {
-    // Intentamos conectar por 2 segundos máximo
     const res = await fetchWithTimeout(`${BASE_URL}/historias`, { cache: "no-store" }, 2000);
     
     if (!res.ok) throw new Error("Backend error");
     
     const data = await res.json();
-    // Aseguramos que data sea un array, o extraemos la propiedad correcta
     if (Array.isArray(data)) return data;
     if (data && Array.isArray(data.items)) return data.items;
     return [];
 
   } catch (error) {
-    // Si falla o tarda más de 2s, usamos datos locales al instante
     console.warn("Backend OFF o lento. Usando datos locales.");
     
     if (typeof window !== "undefined") {
@@ -66,7 +60,6 @@ export async function listarHistorias(): Promise<HistoriaResumen[]> {
       const pacientesLocales = obtenerPacientes();
 
       return historiasLocales.map((h) => {
-        // Ojo: h.pacienteId ahora es string en tu nuevo almacen-datos
         const paciente = pacientesLocales.find((p) => String(p.id) === String(h.pacienteId));
         let estadoMapped: string = h.estado;
         if (h.estado === "pendiente") estadoMapped = "pendiente_validacion";
@@ -112,12 +105,10 @@ export async function eliminarHistoriaRemota(id: string): Promise<void> {
   }
 }
 
-// --- IMPORTAR ---
 export async function importarHistoriaArchivo(file: File) {
   try {
     const formData = new FormData();
     formData.append("file", file);
-    // Damos un poco más de tiempo para subir archivos (5s) por si hay que abrir Word
     const res = await fetchWithTimeout(`${BASE_URL}/importaciones/historias`, {
       method: "POST",
       body: formData,
@@ -138,7 +129,6 @@ export type HistoriaBorrador = {
   forma?: string | null;
 };
 
-// --- OBTENER BORRADOR ---
 export async function obtenerBorrador(id: string): Promise<HistoriaBorrador> {
   try {
     const res = await fetchWithTimeout(`${BASE_URL}/historias/${id}/borrador`, { cache: "no-store" }, 2000);
@@ -148,7 +138,6 @@ export async function obtenerBorrador(id: string): Promise<HistoriaBorrador> {
   } catch (error) {
     console.warn("Usando borrador local (fallback)");
     if (typeof window !== "undefined") {
-      // AQUÍ ESTABA EL ERROR: No usamos Number(id) ni parseInt
       const hLocal = obtenerHistoriaClinicaPorId(id); 
       if (hLocal) {
          return {
@@ -163,10 +152,8 @@ export async function obtenerBorrador(id: string): Promise<HistoriaBorrador> {
   }
 }
 
-// --- VALIDAR (Con Timeout y Fallback) ---
 export async function autoValidarHistoria(id: string): Promise<void> {
   try {
-    // 1. Intento Backend (Rápido)
     const resBorrador = await fetchWithTimeout(`${BASE_URL}/historias/${id}/borrador`, { cache: "no-store" }, 2000);
     if (!resBorrador.ok) throw new Error("Backend offline");
     
@@ -184,9 +171,7 @@ export async function autoValidarHistoria(id: string): Promise<void> {
   } catch (error) {
     console.warn(`Backend OFF. Validando historia ${id} localmente.`);
     
-    // 2. Fallback Local
     if (typeof window !== "undefined") {
-      // AQUÍ TAMBIÉN: Usamos el ID como string directo
       const historiaLocal = obtenerHistoriaClinicaPorId(id);
       
       if (historiaLocal) {
@@ -194,7 +179,6 @@ export async function autoValidarHistoria(id: string): Promise<void> {
           ...historiaLocal,
           estado: "validada"
         });
-        // Simulamos un mini delay para feedback visual (300ms)
         await new Promise(resolve => setTimeout(resolve, 300));
         return; 
       }
@@ -204,7 +188,6 @@ export async function autoValidarHistoria(id: string): Promise<void> {
 }
 
 export async function validarHistoria(id: string, payload: any): Promise<void> {
-   // Wrapper simple para validación manual
    try {
       const res = await fetchWithTimeout(`${BASE_URL}/historias/${id}/validacion`, {
         method: "PATCH",
@@ -213,9 +196,7 @@ export async function validarHistoria(id: string, payload: any): Promise<void> {
       }, 3000);
       if (!res.ok) throw new Error("Error backend");
    } catch (e) {
-      // Fallback local para validación manual
       if (typeof window !== "undefined") {
-        // AQUÍ TAMBIÉN: Usamos el ID como string
         const h = obtenerHistoriaClinicaPorId(id);
         if (h) {
            modificarHistoriaClinica(id, { ...h, ...payload, estado: "validada" });

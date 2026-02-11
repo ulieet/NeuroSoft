@@ -30,7 +30,6 @@ const generarOpcionesEDSS = () => {
 }
 const opcionesEDSS = generarOpcionesEDSS()
 
-// --- Estado Inicial de la Historia ---
 const estadoInicialHistoria: Partial<HistoriaClinica> = {
   fecha: new Date().toISOString().split("T")[0], 
   diagnostico: "",
@@ -81,7 +80,6 @@ function PaginaNuevaHistoria() {
 
   }, [pacienteIdParam, router])
 
-  // --- Handlers del Formulario ---
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
@@ -166,7 +164,6 @@ function PaginaNuevaHistoria() {
     <MedicalLayout currentPage="historias">
       <form onSubmit={handleSubmit}>
         <div className="space-y-6">
-          {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" asChild>
               <a href={"/pacientes?redirect_to=nueva_historia"}>
@@ -179,12 +176,9 @@ function PaginaNuevaHistoria() {
             </div>
           </div>
 
-          {/* Formulario */}
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-            {/* Columna Izquierda (Campos) */}
             <div className="lg:col-span-2 space-y-6">
               
-              {/* Card: Paciente y Consulta */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
@@ -211,7 +205,6 @@ function PaginaNuevaHistoria() {
                 </CardContent>
               </Card>
 
-              {/* Card: Cuadro Clínico */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle>
