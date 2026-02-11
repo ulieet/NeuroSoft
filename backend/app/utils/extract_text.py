@@ -69,10 +69,8 @@ def _extract_from_doc_antiword(file_path: str):
             logger.error(f"Antiword falló: {err_msg}")
             return "", 0, "Error DOC (Antiword)"
             
-        # Decodificamos manualmente ignorando caracteres ilegales
         text = result.stdout.decode('utf-8', errors='ignore')
         
-        # Si utf-8 falla (devuelve vacío), intentamos latin-1
         if not text.strip():
              text = result.stdout.decode('latin-1', errors='ignore')
 
