@@ -25,15 +25,12 @@ def _save_historia(historia: Dict[str, Any]):
 
 @router.post("/historias", summary="Crear nueva historia clínica manual")
 def crear_historia(historia: Dict[str, Any] = Body(...)):
-    # 1. Generar ID si no existe
     if "id" not in historia or not historia["id"]:
         historia["id"] = str(uuid.uuid4())
     
-    # 2. Asegurar campos mínimos
     if "estado" not in historia:
         historia["estado"] = "pendiente"
         
-    # 3. Guardar
     try:
         _save_historia(historia)
         return historia
@@ -52,14 +49,12 @@ def listar_historias():
         with open(os.path.join(DATA_DIR, fname), "r", encoding="utf-8") as f:
             try:
                 h = json.load(f)
-                
-                # Intentamos obtener datos de estructura importada (anidada)
+
                 data_source = h.get("validada") or h.get("borrador") or {}
                 enf = data_source.get("enfermedad", {})
                 paciente = data_source.get("paciente", {})
                 consulta = data_source.get("consulta", {})
                 
-                # Si no hay estructura anidada, buscamos en la raíz (historia manual)
                 paciente_final = paciente if paciente else h.get("paciente_snapshot", {})
                 diagnostico_final = enf.get("diagnostico") if enf.get("diagnostico") else h.get("diagnostico")
                 forma_final = enf.get("forma") if enf.get("forma") else h.get("formaEvolutiva")
@@ -86,8 +81,7 @@ def listar_historias():
 def obtener_borrador(id_historia: str):
     h = _load_historia(id_historia)
     
-    # Si la historia es manual (plana), simulamos la estructura "borrador"
-    # para que el frontend (vista detalle) pueda leerla sin romperse.
+   
     if "borrador" not in h and "validada" not in h:
         borrador_simulado = {
             "paciente": h.get("paciente_snapshot", {}),
@@ -193,7 +187,6 @@ def validar_todas_las_historias():
         
         if h.get("estado") != "validada":
             borrador = h.get("borrador")
-            # Autovalidación si es manual
             if not borrador: 
                 h["validada"] = h.copy() 
             else:

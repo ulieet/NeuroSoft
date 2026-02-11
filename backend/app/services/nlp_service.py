@@ -105,18 +105,25 @@ def _extract_paciente_nombre(text: str) -> Optional[str]:
             return l
     return "Paciente Desconocido"
 
+# ESTA ES LA FUNCIÓN QUE CORREGIMOS PARA QUE ENCUENTRE EL DNI
 def _extract_dni(text: str) -> Optional[str]:
     lineas = _get_logical_lines(text)
+    
+    # Patrones más agresivos para encontrar el DNI en cualquier parte
     patterns = [
-        r"DNI\s*[:\.\-]?\s*(\d{1,2}[\.,]?\d{3}[\.,]?\d{3})",
+        r"DNI\s*[:\.\-]?\s*(\d{1,2}[\.,]?\d{3}[\.,]?\d{3})", # DNI explícito (ej: 29.371.624)
         r"(?:Documento|Doc)\s*[:\.\-]?\s*([\d\.]+(?:\s*\d)?)",
-        r"\bDNI\b.*?(\d{7,8})"
+        r"(?:HC|H\.C\.|Historia Cl[ií]nica)\s*[:\.\-]?\s*([\d\.]+)",
+        r"\bDNI\b.*?(\d{7,8})" # DNI mencionado en medio de texto
     ]
-    for linea in lineas[:60]:
+    
+    for linea in lineas[:60]: # Buscamos en las primeras 60 líneas
         for pat in patterns:
             m = re.search(pat, linea, flags=re.IGNORECASE)
             if m:
-                return re.sub(r"[^\d]", "", m.group(1))
+                dni_limpio = re.sub(r"[^\d]", "", m.group(1))
+                if 6 <= len(dni_limpio) <= 8:
+                    return dni_limpio
     return None
 
 def _extract_datos_extra_paciente(text: str) -> Dict[str, Optional[str]]:
@@ -124,13 +131,21 @@ def _extract_datos_extra_paciente(text: str) -> Dict[str, Optional[str]]:
     
     m_fn = re.search(r"(?:nacimiento|f\. nac|nac)\s*[:\.\-]?\s*([\d]{1,2}[/\-][\d]{1,2}[/\-][\d]{2,4})", text, re.IGNORECASE)
     if m_fn:
-        data["fecha_nacimiento"] = m_fn.group(1) 
+        try:
+            partes = re.split(r"[/\-]", m_fn.group(1))
+            if len(partes) == 3:
+                d, m, y = partes
+                # Aquí llamamos a la función con la lógica del paso 1
+                data["fecha_nacimiento"] = normalize_fecha(d, m, y)
+        except: pass
         
     m_os = re.search(r"(?:obra social|o\.s\.|cobertura)\s*[:\.]\s*([^:\n\r]+)", text, re.IGNORECASE)
     if m_os:
         raw = m_os.group(1).strip()
-        clean = re.split(r"(?i)\s+(?:n[ro°º\.]+(?:\s*de)?|afiliado|socio|credencial)", raw)[0].strip()
-        data["obra_social"] = re.sub(r"(?i)[\s.,\-_Nº°]+$", "", clean).strip()
+        clean = re.split(r"(?i)\s+(?:n[ro°º\.]+(?:\s*de)?|afiliado|socio|credencial|beneficiario|plan)", raw)[0].strip()
+        clean = re.sub(r"(?i)[\s.,\-_Nº°]+$", "", clean).strip()
+        if len(clean) > 1:
+            data["obra_social"] = clean
 
     m_af = re.search(r"(?:n[ro°º\.]?\s*de\s*)?afiliado\s*[:\.]?\s*([\w\d\/\-]+)", text, re.IGNORECASE)
     if m_af:
@@ -265,29 +280,20 @@ def _extract_evolucion_bloque(text: str) -> str:
 def _extract_puncion(text: str):
     t = text.lower()
     if "bandas oligoclonales" in t or "lcr" in t or "liquido cefalo" in t:
-        bandas = "Positivas" if any(x in t for x in ["positiv", "tipo 2", "presencia"]) else "Negativas" if "negativ" in t else None
+        bandas = "Positivas" if any(x in t for x in ["positiv", "tipo 2", "presencia"]) else "Negativas" if "negativ" in t else "No informado"
         return {"realizada": True, "bandas": bandas}
     return {"realizada": False, "bandas": None}
 
 def _extract_rmn(text: str) -> List[Dict[str, Any]]:
     rmn_list = []
     lineas = _get_logical_lines(text)
-    
     for i, linea in enumerate(lineas):
         if "rmn" in linea.lower() or "resonancia" in linea.lower():
             fecha = _find_fecha(linea)
             if not fecha and i > 0: fecha = _find_fecha(lineas[i-1]) 
-            actividad = None
-            low = linea.lower()
-            if "inactiva" in low:
-                actividad = "Inactiva"
-            elif "activa" in low:
-                actividad = "Activa"
-            
-            gd = "Positiva" if "gd +" in low or "realce" in low else None
-            
-            regiones = [r for r in ["periventricular", "infratentorial", "medular", "cortical"] if r in low]
-            
+            actividad = "Activa" if "activa" in linea.lower() else "Inactiva" if "inactiva" in linea.lower() else None
+            gd = "Positiva" if "gd +" in linea.lower() or "realce" in linea.lower() else None
+            regiones = [r for r in ["periventricular", "infratentorial", "medular", "cortical"] if r in linea.lower()]
             if fecha or actividad or gd or regiones:
                 rmn_list.append({"fecha": fecha, "actividad": actividad, "gd": gd, "regiones": regiones})
     return rmn_list

@@ -1,7 +1,6 @@
 import os
 import subprocess
 import logging
-import platform  # <--- Necesario para detectar el sistema operativo
 from docx import Document
 import pdfplumber
 
@@ -20,11 +19,7 @@ def extract_text(file_path: str):
     elif ext == ".docx":
         return _extract_from_docx(file_path)
     elif ext == ".doc":
-        # --- LÓGICA HÍBRIDA ---
-        if platform.system() == "Windows":
-            return _extract_from_doc_win32(file_path)
-        else:
-            return _extract_from_doc_antiword(file_path)
+        return _extract_from_doc_antiword(file_path)
     elif ext == ".txt":
         return _extract_from_txt(file_path)
     else:
@@ -59,11 +54,10 @@ def _extract_from_docx(file_path: str):
 
 def _extract_from_doc_antiword(file_path: str):
     """
-    Usa 'antiword' (SOLO PARA LINUX/DOCKER).
+    Usa 'antiword' vía subprocess. Requiere tener 'antiword' instalado.
+    Corrección: Maneja la decodificación manualmente para evitar crash en Windows (cp1252).
     """
     try:
-        # En Linux/Docker no hay problemas de path con espacios usualmente, 
-        # pero subprocess maneja bien la lista de argumentos.
         result = subprocess.run(
             ['antiword', '-w', '0', file_path], 
             stdout=subprocess.PIPE, 
@@ -75,56 +69,22 @@ def _extract_from_doc_antiword(file_path: str):
             logger.error(f"Antiword falló: {err_msg}")
             return "", 0, "Error DOC (Antiword)"
             
+        # Decodificamos manualmente ignorando caracteres ilegales
         text = result.stdout.decode('utf-8', errors='ignore')
+        
+        # Si utf-8 falla (devuelve vacío), intentamos latin-1
         if not text.strip():
              text = result.stdout.decode('latin-1', errors='ignore')
 
         pages = max(1, len(text) // 3000)
-        return text, pages, "DOC (Legacy Linux)"
+        return text, pages, "DOC (Legacy)"
         
     except FileNotFoundError:
-        logger.error("Error: 'antiword' no está instalado en el contenedor.")
-        return "Error: Falta instalar antiword.", 0, "Error Config"
+        logger.error("Error: 'antiword' no está instalado o no está en el PATH.")
+        return "Error: Falta instalar antiword en el sistema.", 0, "Error Config"
     except Exception as e:
-        logger.error(f"Error Antiword: {e}")
+        logger.error(f"Error genérico leyendo DOC {file_path}: {e}")
         return "", 0, "Error DOC"
-
-def _extract_from_doc_win32(file_path: str):
-    """
-    Usa 'pywin32' (SOLO PARA WINDOWS LOCAL).
-    Importamos win32com aquí dentro para que no falle en Linux al inicio.
-    """
-    try:
-        import win32com.client as win32
-        import pythoncom
-        
-        # Necesario si se ejecuta en hilos secundarios
-        pythoncom.CoInitialize()
-        
-        word = win32.Dispatch("Word.Application")
-        word.Visible = False
-        
-        # Path absoluto es obligatorio para COM objects
-        abs_path = os.path.abspath(file_path)
-        
-        doc = word.Documents.Open(abs_path)
-        text = doc.Range().Text
-        doc.Close()
-        word.Quit()
-        
-        pages = max(1, len(text) // 3000)
-        return text, pages, "DOC (Legacy Win)"
-        
-    except ImportError:
-        return "Error: pywin32 no instalado.", 0, "Error Lib"
-    except Exception as e:
-        logger.error(f"Error Win32: {e}")
-        # Intentamos cerrar word por si quedó abierto
-        try:
-            word.Quit()
-        except:
-            pass
-        return "", 0, "Error DOC Win32"
 
 def _extract_from_txt(file_path: str):
     try:

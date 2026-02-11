@@ -1,16 +1,7 @@
-
-El frontend maneja esto principalmente en dos lugares:
-
-
-En la página de detalles (app/historias/detalle/page.tsx): Si una historia está "pendiente", muestra un botón "Validar Historia". Al hacer clic, llama a la función handleValidarHistoria, que simplemente actualiza el estado a "validada" y llama a modificarHistoriaClinica.
-
-2. En la página de edición (app/historias/editar/page.tsx): Permite cambiar el estado manualmente a través de un menú desplegable. Ambas acciones terminan llamando a modificarHistoriaClinica.
-
-
 1. PROPÓSITO DEL SISTEMA
 -------------------------
 
-Este documento describe la arquitectura de datos y las funcionalidades esperadas del backend para el sistema NeuroSoft / NeuroClinic.
+Este documento describe la arquitectura de datos y las funcionalidades esperadas para el sistema NeuroSoft / NeuroClinic.
 
 El objetivo es crear un Sistema de Gestión de Historias Clínicas (EHR) enfocado en neurología. El frontend (Next.js) está diseñado para:
 
@@ -223,7 +214,7 @@ frontend/medical-system/
 ├── app/                            # App Router (Rutas y Páginas)
 │   │
 │   ├── analisis/
-│   │   └── page.tsx                # **NUEVA PÁGINA:** Dashboard de análisis y tendencias de paciente (Curvas EDSS, cambios DMT, etc.).
+│   │   └── page.tsx                # Dashboard de análisis y tendencias de paciente (Curvas EDSS, cambios DMT, etc.).
 │   │
 │   ├── historias/                  # Módulo de Gestión de Historias Clínicas
 │   │   ├── components/
@@ -243,7 +234,7 @@ frontend/medical-system/
 │   │   │   ├── filtros.tsx         # Barra de búsqueda y filtros demográficos (Edad, Sexo).
 │   │   │   ├── info-medica.tsx     # Card de resumen (Obra Social, Afiliado).
 │   │   │   ├── info-personal.tsx   # Card de datos filiatorios.
-│   │   │   **└── paciente-selector.tsx # NUEVO COMPONENTE: Tabla reutilizable para seleccionar un paciente de la lista.**
+│   │   │   └── paciente-selector.tsx #Tabla reutilizable para seleccionar un paciente de la lista.
 │   │   │   └── tabla-historias.tsx # Historial médico embebido en el perfil.
 │   │   ├── detalle/
 │   │   │   └── page.tsx            # Perfil 360° del paciente + Línea de tiempo.
@@ -255,7 +246,7 @@ frontend/medical-system/
 │   │
 │   ├── reportes/
 │   │   ├── loading.tsx             # Estado de carga para gráficos pesados.
-│   │   └── page.tsx                # **NUEVA PÁGINA :** Dashboard estadístico (Recharts: Tortas y Barras).
+│   │   └── page.tsx                # Dashboard estadístico (Recharts: Tortas y Barras).
 │   │
 │   ├── globals.css                 # Estilos globales y variables de Tailwind/Shadcn.
 │   ├── layout.tsx                  # Root Layout. Envuelve la app (Fuentes, Analytics).
@@ -276,7 +267,7 @@ frontend/medical-system/
 │
 ├── hooks/                          # Hooks personalizados de React
 │   ├── use-mobile.ts               # Detección de viewport móvil para el Sidebar.
-│   **└── use-pacientes-listado.ts**     **# Hook utilizado por paciente-selector.tsx**
+│   └── use-pacientes-listado.ts# Hook utilizado por paciente-selector.tsx
 │   └── use-toast.ts                # Hook para disparar notificaciones (success/error).
 │
 ├── lib/                            # Lógica de Negocio y Utilidades

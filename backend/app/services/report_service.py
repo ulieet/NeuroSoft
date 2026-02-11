@@ -6,7 +6,6 @@ from datetime import datetime
 
 DATA_DIR = "./data/historias"
 
-# --- CONFIGURACIÓN DE EFICACIA ---
 HIGH_EFF = ["natalizumab", "tysabri", "ocrelizumab", "ocrevus", "rituximab", "mabthera", "alemtuzumab", "lemtrada", "cladribina", "mavenclad", "fingolimod", "gilenya", "siponimod", "mayzent", "ofatumumab", "kesimpta"]
 MOD_EFF = ["dimetil", "fumarato", "tecfidera", "dimeful", "teriflunomida", "aubagio", "interferon", "interferón", "rebif", "betaferon", "avonex", "blastoferon", "blastoferón", "glatiramer", "copaxone"]
 
@@ -28,8 +27,7 @@ def get_age(birth, ref=None):
     except: return 0
 
 def generar_estadisticas_generales():
-    # --- 1. ESTRUCTURA POR DEFECTO (Evita el Application Error) ---
-    # Si no hay datos, page.tsx recibirá esto y mostrará 0s en lugar de romperse
+   
     reporte_base = {
         "resumen_general": {
             "total_pacientes": 0, "historias_registradas": 0,
