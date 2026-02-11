@@ -157,11 +157,10 @@ def generar_estadisticas_generales():
         else:
             rmn_stats["inactivos"] += 1
 
-        # CLÍNICA: CORRECCIÓN CRÍTICA
+        # CLÍNICA
         full_txt = (txt.get("evolucion") or "").lower() + " " + (txt.get("comentario") or "").lower()
         
         tiene_brote = False
-        # Buscamos palabras de alarma
         if re.search(r"(present[oó]|nuevo|actual|reciente).{1,40}(brote|reca[ií]da|episodio)", full_txt):
             tiene_brote = True
         

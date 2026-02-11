@@ -277,8 +277,6 @@ def _extract_rmn(text: str) -> List[Dict[str, Any]]:
         if "rmn" in linea.lower() or "resonancia" in linea.lower():
             fecha = _find_fecha(linea)
             if not fecha and i > 0: fecha = _find_fecha(lineas[i-1]) 
-            
-            # --- CORRECCIÓN AQUÍ: Orden Inverso (Primero Inactiva, luego Activa) ---
             actividad = None
             low = linea.lower()
             if "inactiva" in low:
