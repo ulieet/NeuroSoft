@@ -6,7 +6,6 @@ from datetime import datetime
 
 DATA_DIR = "./data/historias"
 
-# --- CONFIGURACIÓN DE EFICACIA ---
 HIGH_EFF = ["natalizumab", "tysabri", "ocrelizumab", "ocrevus", "rituximab", "mabthera", "alemtuzumab", "lemtrada", "cladribina", "mavenclad", "fingolimod", "gilenya", "siponimod", "mayzent", "ofatumumab", "kesimpta"]
 MOD_EFF = ["dimetil", "fumarato", "tecfidera", "dimeful", "teriflunomida", "aubagio", "interferon", "interferón", "rebif", "betaferon", "avonex", "blastoferon", "blastoferón", "glatiramer", "copaxone"]
 
@@ -27,13 +26,43 @@ def get_age(birth, ref=None):
         else:
             return 0
         r = datetime.now() if not ref else datetime.strptime(ref.split('T')[0], "%Y-%m-%d")
-        return r.year - b.year - ((r.month, r.day) < (b.month, b.day))
+        return r.year - b.year - ((r.month, r.day) < (birth.month, birth.day))
     except: return 0
 
 def generar_estadisticas_generales():
-    if not os.path.exists(DATA_DIR): return {} 
+    reporte_base = {
+        "resumen_general": {
+            "total_pacientes": 0, 
+            "historias_registradas": 0,
+            "promedio_edad_diagnostico": 0, 
+            "promedio_edad_actual": 0, 
+            "porcentaje_femenino": 0
+        },
+        "kpis_em": {
+            "pacientes_neda3": 0.0, 
+            "arr_promedio": 0.0,
+            "tiempo_a_edss_6_0_promedio": 14.5, 
+            "porcentaje_boc_positivas": 0
+        },
+        "discapacidad_y_progression": {
+            "relacion_forma_terapia": [], 
+            "edss_progresion_historica": []
+        },
+        "tratamiento_dmt": {
+            "uso_dmt_actual": [], 
+            "motivos_cambio_dmt": []
+        },
+        "neuroimagen": {
+            "conteo_lcr": 0, 
+            "conteo_rmn_total": 0, 
+            "porcentaje_atrofia_reportada": 0,
+            "actividad_rmn_bianual": [{"periodo": "Actual", "activos": 0, "inactivos": 0}]
+        },
+        "tratamiento_soporte": []
+    }
 
-    # DEDUPLICACIÓN
+    if not os.path.exists(DATA_DIR): return reporte_base 
+
     patient_map = {} 
     archivos = [f for f in os.listdir(DATA_DIR) if f.endswith(".json") and not f.startswith("hc_bundle")]
     
@@ -42,7 +71,7 @@ def generar_estadisticas_generales():
             with open(os.path.join(DATA_DIR, fname), 'r', encoding="utf-8") as f:
                 raw = json.load(f)
                 data = raw.get("borrador") or raw 
-                dni = data.get("paciente", {}).get("dni", "").replace(".", "")
+                dni = str(data.get("paciente", {}).get("dni", "")).replace(".", "").strip()
                 fecha = data.get("consulta", {}).get("fecha") or "1900-01-01"
                 
                 if dni:
@@ -52,9 +81,8 @@ def generar_estadisticas_generales():
 
     historias = [p["data"] for p in patient_map.values()]
     total = len(historias)
-    if total == 0: return {}
+    if total == 0: return reporte_base 
 
-    # VARIABLES
     neda_count = 0
     arr_brotes = 0
     motivos = []
@@ -81,12 +109,10 @@ def generar_estadisticas_generales():
         compl = d.get("complementarios", {})
         txt = d.get("secciones_texto", {}) or {}
 
-        # Demografía
         nombre = pac.get("nombre", "").lower()
         if any(x in nombre for x in ["maria", "paola", "laura", "julia", "sofia", "valentina"]): genero_fem += 1
         edades_actuales.append(get_age(pac.get("fecha_nacimiento")))
 
-        # Tratamiento y Formas
         dmt_name = "Sin Tratamiento"
         for t in trats:
             if t.get("estado") == "Activo":
@@ -105,17 +131,14 @@ def generar_estadisticas_generales():
         else:
             formas_clinicas[forma]["sin_tratamiento"] += 1
 
-        # NEDA-3
         es_neda = True
         actividad_rmn = False
         
-        # RMN (Lógica estricta)
         rmn_list = compl.get("rmn", [])
         if rmn_list:
             for r in rmn_list:
                 act = str(r.get("actividad", "")).lower()
                 gd = str(r.get("gd", "")).lower()
-                # Corrección: Solo cuenta como activa si no es "inactiva"
                 if "activa" in act and "inactiva" not in act: actividad_rmn = True
                 if "positiva" in gd: actividad_rmn = True
         
@@ -125,18 +148,13 @@ def generar_estadisticas_generales():
         else:
             rmn_stats["inactivos"] += 1
 
-        # CLÍNICA: CORRECCIÓN CRÍTICA
-        # Solo miramos Evolución y Comentario (el presente). 
-        # Ignoramos 'sintomas_principales' y 'antecedentes' porque hablan del pasado.
         full_txt = (txt.get("evolucion") or "").lower() + " " + (txt.get("comentario") or "").lower()
         
         tiene_brote = False
-        # Buscamos palabras de alarma
         if re.search(r"(present[oó]|nuevo|actual|reciente).{1,40}(brote|reca[ií]da|episodio)", full_txt):
             tiene_brote = True
         
-        # Inmunidad: Si dice explícitamente "libre de", anulamos el brote
-        if "libre de reca" in full_txt or "sin reca" in full_txt or "sin nuevos brotes" in full_txt:
+        if any(x in full_txt for x in ["libre de reca", "sin reca", "sin nuevos brotes"]):
             tiene_brote = False
             
         if tiene_brote:
@@ -145,12 +163,11 @@ def generar_estadisticas_generales():
             
         if es_neda and not actividad_rmn: neda_count += 1
 
-        # MOTIVOS DE CAMBIO
         found = False
         if tiene_brote or actividad_rmn or "falla" in full_txt: 
             motivos.append("Falla Terapéutica")
             found = True
-        elif "adverso" in full_txt or "intolerancia" in full_txt:
+        elif any(x in full_txt for x in ["adverso", "intolerancia"]):
             motivos.append("Seguridad/EA")
             found = True
         elif "embarazo" in full_txt:
@@ -163,14 +180,12 @@ def generar_estadisticas_generales():
         if not found:
             motivos.append("Continuidad / Estable")
             
-        # Biomarcadores
         if "atrofia" in (txt.get("estudios") or "").lower(): atrofia_count += 1
         lcr = compl.get("puncion_lumbar", {})
         if lcr.get("realizada"):
             boc_total += 1
             if "positiv" in str(lcr.get("bandas", "")).lower(): boc_pos += 1
 
-    # --- RETORNO DE DATOS ---
     uso_dmt_chart = []
     for k, v in dmts_count.items():
         if k == "Sin Tratamiento": continue
@@ -199,8 +214,8 @@ def generar_estadisticas_generales():
             "porcentaje_femenino": int((genero_fem/total)*100) if total else 0
         },
         "kpis_em": {
-            "pacientes_neda3": round(neda_count/total, 2),
-            "arr_promedio": round(arr_brotes/total, 2),
+            "pacientes_neda3": round(neda_count/total, 2) if total else 0.0,
+            "arr_promedio": round(arr_brotes/total, 2) if total else 0.0,
             "tiempo_a_edss_6_0_promedio": 14.5,
             "porcentaje_boc_positivas": int((boc_pos/boc_total)*100) if boc_total else 0
         },
