@@ -1,0 +1,76 @@
+{
+  "id": "20260211_174352_6f1f",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:20086706|F:2023-08-23|H:44ea27e812",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174352_6f1f.docx"
+    },
+    "paciente": {
+      "nombre": "Fernández, Paola Andrea",
+      "dni": "20086706",
+      "fecha_nacimiento": "27/05/1974",
+      "obra_social": "OSDE",
+      "nro_afiliado": "T86397676/00"
+    },
+    "consulta": {
+      "fecha": "2023-08-23",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 2.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2023-08-23",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Inactiva",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Teriflunomida",
+        "droga": "Teriflunomida",
+        "dosis": "14 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2020: episodio sensitivo con parestesias que restituyó ad integrum. neuritis óptica / disminución de visión central. crisis vertiginosas. dolor neuropático tipo fulgurante y Lhermitte. parestesias e hipoestesias. fatiga y termosensibilidad. constipación pertinaz",
+      "antecedentes": "familiares: hermano con diabetes",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Datos semiológicos: elementos esfinterianos vésico-rectales + bipiramidal a predominio crural + R\nHoffman bilateral + ataxia axial leve\nEDSS: 2.5",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Teriflunomida (Aubagio) 14 mg 1 vez/día por vía Oral\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio TOWER",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (23/08/2023): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros)\nSin cambios significativos respecto a estudios previos\n(Inactiva, Gd Negativa)\n(Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2)",
+      "evolucion": "Libre de recaídas clínicas en el último año\nEstabilidad clínica y radiológica\nDatos semiológicos: elementos esfinterianos vésico-rectales + síndrome bipiramidal a predominio crural + R\nHoffman bilateral + ataxia axial leve\nEDSS: 2.5"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 23 de Agosto de 2023 Apellido y nombre: Fernández, Paola Andrea. DNI: 20.086.706 Fecha de Nacimiento: 27/05/1974 Dirección: 13 bis Nº 3798. La Plata. Teléfono: (0221) 409-1977 / 15- 3783722 Obra Social: OSDE nº de afiliado: T86397676/00 Asistida desde: 10/08/13 Antecedente personales: -cervicalgia + -EPOC leve. Antecedentes familiares: hermano con diabetes. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2020: episodio sensitivo con parestesias que restituyó ad integrum. neuritis óptica / disminución de visión central. crisis vertiginosas. dolor neuropático tipo fulgurante y Lhermitte. parestesias e hipoestesias. fatiga y termosensibilidad. constipación pertinaz. Evolución: Libre de recaídas clínicas en el último año. Estabilidad clínica y radiológica. Datos semiológicos: elementos esfinterianos vésico-rectales + síndrome bipiramidal a predominio crural + R. Hoffman bilateral + ataxia axial leve. EDSS: 2.5. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (23/08/2023): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros). Sin cambios significativos respecto a estudios previos. (Inactiva, Gd Negativa). (Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2). Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Teriflunomida (Aubagio) 14 mg 1 vez/día por vía Oral. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio TOWER. Motivo de la indicación: inicio tratamiento. Además, tratamiento sintomático: -Gabapentín: 600 mg/día (dolor neuropático). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Aubagio (Teriflunomida): 14 mg, 1 vez/día = 1 envase/mensual. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}

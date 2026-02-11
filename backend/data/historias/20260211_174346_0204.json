@@ -1,0 +1,76 @@
+{
+  "id": "20260211_174346_0204",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:21434414|F:2023-10-15|H:2e1b9f0aeb",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174346_0204.docx"
+    },
+    "paciente": {
+      "nombre": "Gómez, Federico",
+      "dni": "21434414",
+      "fecha_nacimiento": "24/03/1979",
+      "obra_social": "IOMA",
+      "nro_afiliado": "B13999315/00"
+    },
+    "consulta": {
+      "fecha": "2023-10-15",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 2.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2023-10-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Inactiva",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Cladribina",
+        "droga": "Cladribina",
+        "dosis": "10 mg",
+        "frecuencia": "Semanal",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2016: episodio sensitivo con parestesias que restituyó ad integrum. parestesias e hipoestesias. disestesias con hiperestesias quemantes. fatiga y termosensibilidad. constipación pertinaz. urgencia urinaria con episodios de incontinencia. disminución de la fuerza con torpeza motora",
+      "antecedentes": "familiares: sin antecedentes neurológicos relevantes",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Datos semiológicos: bipiramidal a predominio crural + hemihipoestesia con nivel sensitivo dorsal + elementos mínimos de bipiramidalismo\nEDSS: 2.5",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Cladribina (Mavenclad) 10 mg Ciclos anuales (Semana 1 y 5) por vía Oral\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio CLARITY\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE\nAprobado por ANMAT con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (15/10/2023): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15)\nSin cambios significativos respecto a estudios previos\n(Inactiva, Gd Negativa)\n(Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Trimodales: somatosensitivos de MMII con alteración en latencias",
+      "evolucion": "Libre de recaídas clínicas en el último año\nEstabilidad clínica y radiológica\nDatos semiológicos: síndrome bipiramidal a predominio crural + hemihipoestesia con nivel sensitivo dorsal + elementos mínimos de bipiramidalismo\nEDSS: 2.5"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 15 de Octubre de 2023 Apellido y nombre: Gómez, Federico. DNI: 21.434.414 Fecha de Nacimiento: 24/03/1979 Dirección: calle 650 e/ 2 y 3 s/n° 427. La Plata. Teléfono: (0221) 486-9935 / 15- 2458591 Obra Social: IOMA nº de afiliado: B13999315/00 Asistida desde: 03/04/17 Antecedente personales: -ansiedad + -rosácea + -diabetes tipo 2 + -tabaquismo + -alergia a abejas. Antecedentes familiares: sin antecedentes neurológicos relevantes. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2016: episodio sensitivo con parestesias que restituyó ad integrum. parestesias e hipoestesias. disestesias con hiperestesias quemantes. fatiga y termosensibilidad. constipación pertinaz. urgencia urinaria con episodios de incontinencia. disminución de la fuerza con torpeza motora. Evolución: Libre de recaídas clínicas en el último año. Estabilidad clínica y radiológica. Datos semiológicos: síndrome bipiramidal a predominio crural + hemihipoestesia con nivel sensitivo dorsal + elementos mínimos de bipiramidalismo. EDSS: 2.5. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (15/10/2023): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15). Sin cambios significativos respecto a estudios previos. (Inactiva, Gd Negativa). (Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Trimodales: somatosensitivos de MMII con alteración en latencias. Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Cladribina (Mavenclad) 10 mg Ciclos anuales (Semana 1 y 5) por vía Oral. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio CLARITY. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Mavenclad (Cladribina): 10 mg, Ciclos anuales (Semana 1 y 5) = Caja x tabletas. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}
