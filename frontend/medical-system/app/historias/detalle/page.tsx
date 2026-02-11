@@ -478,10 +478,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
             
-             <Card><CardHeader><CardTitle>Metadatos</CardTitle></CardHeader>
-              <CardContent className="space-y-3">
-                <div><p className="text-sm font-medium text-muted-foreground">ID Interno</p><p className="text-xs font-mono break-all">{historia.id}</p></div>
-              </CardContent></Card>
+             
           </div>
         </div>
       </div>

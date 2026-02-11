@@ -303,7 +303,7 @@ export default function ImportarHistoriasPage() {
 
                         {file.status === "completed" && file.extractedData && (
                           <div className="mt-3 p-3 bg-muted rounded-lg">
-                            <h4 className="font-medium mb-2">Datos Extraídos (IA):</h4>
+                            <h4 className="font-medium mb-2">Datos Extraídos:</h4>
                             <div className="grid grid-cols-1 gap-2 text-sm">
                               <div>
                                 <strong>Paciente:</strong> {file.extractedData.paciente}

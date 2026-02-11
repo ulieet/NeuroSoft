@@ -394,8 +394,8 @@ export default function PaginaHistorias() {
                     {historiasFiltradas.map((h) => (
                       <TableRow key={h.id} className="cursor-pointer hover:bg-muted/50 transition-colors" onClick={() => router.push(`/historias/detalle?id=${h.id}`)}>
                         <TableCell className="font-mono text-[10px] text-muted-foreground truncate" title={h.id}>
-                          #{h.id.substring(0, 6)}
-                        </TableCell>
+    #{h.id} 
+  </TableCell>
                         
                         <TableCell className="truncate max-w-[180px]">
                           <div className="font-medium truncate" title={h.paciente?.nombre || ""}>
