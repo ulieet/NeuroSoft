@@ -23,7 +23,6 @@ def _save_historia(historia: Dict[str, Any]):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(historia, f, ensure_ascii=False, indent=2)
 
-# --- NUEVO: Endpoint para guardar historia manual ---
 @router.post("/historias", summary="Crear nueva historia clínica manual")
 def crear_historia(historia: Dict[str, Any] = Body(...)):
     # 1. Generar ID si no existe
