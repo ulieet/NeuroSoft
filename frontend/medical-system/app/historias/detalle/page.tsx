@@ -466,7 +466,6 @@ function PaginaDetalleHistoria() {
                 <div><p className="text-sm font-medium text-muted-foreground">Grado Discapacidad (EDSS)</p><p className="text-xl font-bold">{historia.escalaEDSS ?? <span className="text-sm font-normal text-muted-foreground italic">No reportado</span>}</p></div>
                 <Separator />
                 <div><p className="text-sm font-medium text-muted-foreground">Edad Inicio Síntomas</p><p className="text-base">{edadInicioSintomas !== null ? `${edadInicioSintomas} años` : "—"}</p></div>
-                <div><p className="text-sm font-medium text-muted-foreground">Tiempo de Evolución</p><p className="text-base">{tiempoEvolucion !== null ? `${tiempoEvolucion} años` : "—"}</p></div>
               </CardContent>
             </Card>
 
