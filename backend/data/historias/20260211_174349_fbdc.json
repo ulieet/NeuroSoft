@@ -1,0 +1,84 @@
+{
+  "id": "20260211_174349_fbdc",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:39891263|F:2020-10-11|H:084358b027",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174349_fbdc.docx"
+    },
+    "paciente": {
+      "nombre": "Alvarez, María Laura",
+      "dni": "39891263",
+      "fecha_nacimiento": "14/06/1977",
+      "obra_social": "OSDE",
+      "nro_afiliado": "D50308572/00"
+    },
+    "consulta": {
+      "fecha": "2020-10-11",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 3.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2020-10-11",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Natalizumab",
+        "droga": "Natalizumab",
+        "dosis": "300 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": "80 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2015: episodio sensitivo con parestesias que restituyó ad integrum -(Actual) October 2020: presenta nuevo episodio motor con debilidad crural derecha.. disminución de la fuerza con torpeza motora. parestesias e hipoestesias. neuritis óptica / disminución de visión central. disestesias con hiperestesias quemantes",
+      "antecedentes": "familiares: madre con artritis reumatoidea",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Natalizumab (Tysabri) 300 mg Mensual (cada 28 días) por vía EV\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio AFFIRM",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (11/10/2020): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15)\nSe observan 2 nuevas lesiones T2, una de ellas con realce de Gadolinio (+)\nActividad inflamatoria\n(Activa, Gd Positiva). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Trimodales: somatosensitivos de MMII con alteración en latencias. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2)",
+      "evolucion": "Presentó recaída clínica reciente\nSe constata progresión del EDSS y actividad radiológica\nDatos semiológicos: R\nHoffman bilateral + Romberg + + hemihipoestesia con nivel sensitivo dorsal + ataxia axial leve\nEDSS: 3.5"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 11 de Octubre de 2020 Apellido y nombre: Alvarez, María Laura. DNI: 39.891.263 Fecha de Nacimiento: 14/06/1977 Dirección: calle 650 e/ 2 y 3 s/n° 427. La Plata. Teléfono: (0221) 485-6409 / 15- 6266630 Obra Social: OSDE nº de afiliado: D50308572/00 Asistida desde: 17/05/23 Antecedente personales: -migraña + -hipertensión arterial + -síndrome de túnel carpiano. Antecedentes familiares: madre con artritis reumatoidea. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) mayo 2015: episodio sensitivo con parestesias que restituyó ad integrum -(Actual) October 2020: presenta nuevo episodio motor con debilidad crural derecha.. disminución de la fuerza con torpeza motora. parestesias e hipoestesias. neuritis óptica / disminución de visión central. disestesias con hiperestesias quemantes. Evolución: Presentó recaída clínica reciente. Se constata progresión del EDSS y actividad radiológica. Datos semiológicos: R. Hoffman bilateral + Romberg + + hemihipoestesia con nivel sensitivo dorsal + ataxia axial leve. EDSS: 3.5. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (11/10/2020): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15). Se observan 2 nuevas lesiones T2, una de ellas con realce de Gadolinio (+). Actividad inflamatoria. (Activa, Gd Positiva). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Trimodales: somatosensitivos de MMII con alteración en latencias. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2). Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Natalizumab (Tysabri) 300 mg Mensual (cada 28 días) por vía EV. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio AFFIRM. Motivo de la indicación: falla por actividad clínica/radiológica. Además, tratamiento sintomático: -Baclofeno: 40-80 mg/día (espasticidad/hipertonía). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Tysabri (Natalizumab): 300 mg, Mensual (cada 28 días) = 1 vial. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}

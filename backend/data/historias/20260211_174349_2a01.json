@@ -1,0 +1,76 @@
+{
+  "id": "20260211_174349_2a01",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:39891263|F:2021-09-15|H:38972be34f",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174349_2a01.docx"
+    },
+    "paciente": {
+      "nombre": "Alvarez, María Laura",
+      "dni": "39891263",
+      "fecha_nacimiento": "14/06/1977",
+      "obra_social": "OSDE",
+      "nro_afiliado": "D50308572/00"
+    },
+    "consulta": {
+      "fecha": "2021-09-15",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2021-09-15",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Activa",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0.5 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2014: episodio sensitivo con parestesias que restituyó ad integrum -(Actual) September 2021: presenta nuevo episodio motor con debilidad crural derecha.. disminución de la fuerza con torpeza motora. crisis vertiginosas. urgencia urinaria con episodios de incontinencia. constipación pertinaz. trastornos del equilibrio y coordinación con marcha inestable",
+      "antecedentes": "familiares: madre con artritis reumatoidea",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "Hoffman bilateral + hemihipoestesia con nivel sensitivo dorsal + bipiramidal a predominio crural\nEDSS: 4.0",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Fingolimod (Gilenya) 0.5 mg 1 vez/día por vía Oral\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio FREEDOMS",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (15/09/2021): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros)\nSe observan 2 nuevas lesiones T2, una de ellas con realce de Gadolinio (+)\nActividad inflamatoria\n(Activa, Gd Positiva). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2)",
+      "evolucion": "Presentó recaída clínica reciente\nSe constata progresión del EDSS y actividad radiológica\nDatos semiológicos: ataxia axial leve + elementos esfinterianos vésico-rectales + R\nHoffman bilateral + hemihipoestesia con nivel sensitivo dorsal + síndrome bipiramidal a predominio crural\nEDSS: 4.0"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 15 de Septiembre de 2021 Apellido y nombre: Alvarez, María Laura. DNI: 39.891.263 Fecha de Nacimiento: 14/06/1977 Dirección: calle 650 e/ 2 y 3 s/n° 427. La Plata. Teléfono: (0221) 485-6409 / 15- 6266630 Obra Social: OSDE nº de afiliado: D50308572/00 Asistida desde: 17/05/23 Antecedente personales: -tabaquismo + -hipertensión arterial + -alergia a abejas + -rosácea + -migraña. Antecedentes familiares: madre con artritis reumatoidea. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2014: episodio sensitivo con parestesias que restituyó ad integrum -(Actual) September 2021: presenta nuevo episodio motor con debilidad crural derecha.. disminución de la fuerza con torpeza motora. crisis vertiginosas. urgencia urinaria con episodios de incontinencia. constipación pertinaz. trastornos del equilibrio y coordinación con marcha inestable. Evolución: Presentó recaída clínica reciente. Se constata progresión del EDSS y actividad radiológica. Datos semiológicos: ataxia axial leve + elementos esfinterianos vésico-rectales + R. Hoffman bilateral + hemihipoestesia con nivel sensitivo dorsal + síndrome bipiramidal a predominio crural. EDSS: 4.0. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (15/09/2021): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros). Se observan 2 nuevas lesiones T2, una de ellas con realce de Gadolinio (+). Actividad inflamatoria. (Activa, Gd Positiva). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2). Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Fingolimod (Gilenya) 0.5 mg 1 vez/día por vía Oral. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio FREEDOMS. Motivo de la indicación: falla por actividad clínica/radiológica. Además, tratamiento sintomático: -Tizanidina: 6-12 mg/día (espasticidad). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Gilenya (Fingolimod): 0.5 mg, 1 vez/día = 1 envase/28 días. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}

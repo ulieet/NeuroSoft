@@ -1,0 +1,76 @@
+{
+  "id": "20260211_174347_df2d",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:45194490|F:2021-11-21|H:e32f6d1277",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174347_df2d.docx"
+    },
+    "paciente": {
+      "nombre": "López, Juan Pablo",
+      "dni": "45194490",
+      "fecha_nacimiento": "01/08/1985",
+      "obra_social": "IOMA",
+      "nro_afiliado": "S20570592/00"
+    },
+    "consulta": {
+      "fecha": "2021-11-21",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 1.5
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2021-11-21",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Inactiva",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": true,
+        "bandas": "Positivas"
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Ocrelizumab",
+        "droga": "Ocrelizumab",
+        "dosis": "600 mg",
+        "frecuencia": "Mensual",
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2017: episodio sensitivo con parestesias que restituyó ad integrum. parestesias e hipoestesias. constipación pertinaz. urgencia urinaria con episodios de incontinencia. neuritis óptica / disminución de visión central",
+      "antecedentes": "familiares: madre con artritis reumatoidea",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Ocrelizumab (Ocrevus) 600 mg Semestral por vía EV\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio OPERA\nEs un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE\nAprobado por ANMAT con esta precisa indicación\nPor ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (21/11/2021): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros)\nSin cambios significativos respecto a estudios previos\n(Inactiva, Gd Negativa)\n(Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2)",
+      "evolucion": "Libre de recaídas clínicas en el último año\nEstabilidad clínica y radiológica\nDatos semiológicos: elementos mínimos de bipiramidalismo + ataxia axial leve + elementos esfinterianos vésico-rectales\nEDSS: 1.5"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 21 de Noviembre de 2021 Apellido y nombre: López, Juan Pablo. DNI: 45.194.490 Fecha de Nacimiento: 01/08/1985 Dirección: calle 650 e/ 2 y 3 s/n° 427. La Plata. Teléfono: (0221) 446-6038 / 15- 5017343 Obra Social: IOMA nº de afiliado: S20570592/00 Asistida desde: 03/12/25 Antecedente personales: -tabaquismo + -migraña + -síndrome de túnel carpiano + -rosácea + -EPOC leve. Antecedentes familiares: madre con artritis reumatoidea. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2017: episodio sensitivo con parestesias que restituyó ad integrum. parestesias e hipoestesias. constipación pertinaz. urgencia urinaria con episodios de incontinencia. neuritis óptica / disminución de visión central. Evolución: Libre de recaídas clínicas en el último año. Estabilidad clínica y radiológica. Datos semiológicos: elementos mínimos de bipiramidalismo + ataxia axial leve + elementos esfinterianos vésico-rectales. EDSS: 1.5. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (21/11/2021): múltiples lesiones periventriculares, algunas hipointensas en T1 (agujeros negros). Sin cambios significativos respecto a estudios previos. (Inactiva, Gd Negativa). (Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados Visuales: P100 OD 112 ms / OI 108 ms. -Punción lumbar con evaluación del LCR: bandas oligoclonales de IgG Positivas (Tipo 2). Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Ocrelizumab (Ocrevus) 600 mg Semestral por vía EV. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio OPERA. Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Ocrevus (Ocrelizumab): 600 mg, Semestral = 1 vial. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}

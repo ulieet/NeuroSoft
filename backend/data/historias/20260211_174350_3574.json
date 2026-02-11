@@ -1,0 +1,84 @@
+{
+  "id": "20260211_174350_3574",
+  "estado": "pendiente_validacion",
+  "dedup_key": "DNI:35514355|F:2019-06-08|H:9c1dd0669c",
+  "borrador": {
+    "estado": "Procesado",
+    "fuente": {
+      "tipo": "DOCX",
+      "nombre_archivo": "historia_20260211_174350_3574.docx"
+    },
+    "paciente": {
+      "nombre": "Martínez, Florencia",
+      "dni": "35514355",
+      "fecha_nacimiento": "25/06/1985",
+      "obra_social": "OSDEPYM",
+      "nro_afiliado": "P12601580/00"
+    },
+    "consulta": {
+      "fecha": "2019-06-08",
+      "medico": null
+    },
+    "enfermedad": {
+      "diagnostico": "Esclerosis Múltiple",
+      "codigo": "G35",
+      "forma": "RR",
+      "fecha_inicio": null,
+      "edss": 4.0
+    },
+    "complementarios": {
+      "rmn": [
+        {
+          "fecha": "2019-06-08",
+          "actividad": null,
+          "gd": null,
+          "regiones": [
+            "periventricular"
+          ]
+        },
+        {
+          "fecha": null,
+          "actividad": "Inactiva",
+          "gd": null,
+          "regiones": []
+        }
+      ],
+      "puncion_lumbar": {
+        "realizada": false,
+        "bandas": null
+      }
+    },
+    "tratamientos": [
+      {
+        "molecula": "Fingolimod",
+        "droga": "Fingolimod",
+        "dosis": "0.5 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      },
+      {
+        "molecula": "Baclofeno",
+        "droga": "Baclofeno",
+        "dosis": "600 mg",
+        "frecuencia": null,
+        "estado": "Activo",
+        "inicio": null
+      }
+    ],
+    "secciones_texto": {
+      "sintomas_principales": "principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2012: episodio sensitivo con parestesias que restituyó ad integrum. trastornos del equilibrio y coordinación con marcha inestable. dolor neuropático tipo fulgurante y Lhermitte. parestesias e hipoestesias. fatiga y termosensibilidad",
+      "antecedentes": "familiares: abuela materna con LLC",
+      "examen_fisico": "",
+      "agrupacion_sindromica": "",
+      "comentario": "la paciente debe continuar Urgente con la terapia inmunomoduladora: Fingolimod (Gilenya) 0.5 mg 1 vez/día por vía Oral\nEl objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral\nSe trata de la dosificación ajustada según el estudio FREEDOMS",
+      "estudios": "realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (08/06/2019): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15)\nSin cambios significativos respecto a estudios previos\n(Inactiva, Gd Negativa)\n(Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados: latencias bilaterales en límite superior de normalidad. -RMN volumétrica: se describen signos de atrofia cerebral leve (disminución de volumen)",
+      "evolucion": "Libre de recaídas clínicas en el último año\nEstabilidad clínica y radiológica\nDatos semiológicos: elementos mínimos de bipiramidalismo + ataxia axial leve + hemihipoestesia con nivel sensitivo dorsal\nEDSS: 4.0"
+    },
+    "texto_original": "HOSPITAL INTERZONAL GENERAL DE AGUDOS “Gral. SAN MARTIN” -La Plata- SERVICIO DE NEUROLOGÍA - SECCIÓN DE ENFERMEDADES DESMIELINIZANTES RESUMEN DE HISTORIA CLÍNICA La Plata, 08 de Junio de 2019 Apellido y nombre: Martínez, Florencia. DNI: 35.514.355 Fecha de Nacimiento: 25/06/1985 Dirección: 44 Nº 1234. La Plata. Teléfono: (0221) 435-7906 / 15- 5232413 Obra Social: OSDEPYM nº de afiliado: P12601580/00 Asistida desde: 24/09/11 Antecedente personales: -alergia a abejas + -EPOC leve. Antecedentes familiares: abuela materna con LLC. Síntomas principales: en un curso muy claro de brotes y remisiones, desarrolló al menos dos recaídas compatibles con afección multifocal de la sustancia blanca del sistema nervioso central, como: -(1°) octubre 2012: episodio sensitivo con parestesias que restituyó ad integrum. trastornos del equilibrio y coordinación con marcha inestable. dolor neuropático tipo fulgurante y Lhermitte. parestesias e hipoestesias. fatiga y termosensibilidad. Evolución: Libre de recaídas clínicas en el último año. Estabilidad clínica y radiológica. Datos semiológicos: elementos mínimos de bipiramidalismo + ataxia axial leve + hemihipoestesia con nivel sensitivo dorsal. EDSS: 4.0. Estudios realizados: entre otros: -Laboratorio de rutina completo (hemograma, hepatograma, función renal, TSH/T4L según corresponda). -RMN de cerebro (08/06/2019): múltiples imágenes focales cerebrales en la sustancia blanca a predominio periventriculares bilaterales pericallosas (n°≥ 15). Sin cambios significativos respecto a estudios previos. (Inactiva, Gd Negativa). (Inactiva, Gd Negativa). -RMN de médula: Sin cambios focales espinales evidentes en el control. -Potenciales Evocados: latencias bilaterales en límite superior de normalidad. -RMN volumétrica: se describen signos de atrofia cerebral leve (disminución de volumen). Diagnóstico: Esclerosis Múltiple Forma RR. (CIE-10 G35). Comentario: la paciente debe continuar Urgente con la terapia inmunomoduladora: Fingolimod (Gilenya) 0.5 mg 1 vez/día por vía Oral. El objetivo es disminuir el número y la gravedad de las recaídas, retrasando la discapacidad acumulativa y previniendo la atrofia cerebral. Se trata de la dosificación ajustada según el estudio FREEDOMS. Motivo de la indicación: inicio tratamiento. Además, tratamiento sintomático: -Gabapentín: 600 mg/día (dolor neuropático). -Baclofeno: 40-80 mg/día (espasticidad/hipertonía). Es un medicamento con cobertura 100% a cargo de la Obra Social, de acuerdo al PMO/APE. Aprobado por ANMAT con esta precisa indicación. Por ninguna razón debe discontinuarse su administración pues se correrían riesgos de recaídas con consecuencias a veces irreparables. Bibliografía respaldatoria: PRISMS (Lancet 1998); AFFIRM (NEJM 2006); CLARITY (NEJM 2010). Solicito: URGENTE continuidad para: -Gilenya (Fingolimod): 0.5 mg, 1 vez/día = 1 envase/28 días. Tratamiento Prolongado. -Ruego se respete la precisa indicación- Atte. Dr. Vétere Santiago A. Neurología Clínica",
+    "confidencia": {
+      "forma": "Media"
+    }
+  },
+  "validada": null
+}
