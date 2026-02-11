@@ -64,7 +64,6 @@ function PaginaEditarPaciente() {
       const exito = await updatePaciente(patientId, formData)
       
       if (exito) {
-        alert("Paciente modificado con éxito")
         router.push(`/pacientes/detalle?id=${patientId}`)
       } else {
         alert("No se pudieron guardar los cambios en el servidor")

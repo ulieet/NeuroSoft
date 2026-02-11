@@ -260,9 +260,10 @@ function PaginaDetallePaciente() {
             <Card>
               <CardHeader><CardTitle>Acciones</CardTitle></CardHeader>
               <CardContent className="space-y-3">
-                <Button className="w-full" onClick={() => router.push("/historias/importar")}>
-                  <Plus className="mr-2 h-4 w-4" /> Nueva Historia
-                </Button>
+                <Button 
+                  className="w-full" 
+                  onClick={() => router.push(`/historias/nuevo?pacienteId=${patientId}`)}>
+          <Plus className="mr-2 h-4 w-4" /> Nueva Historia</Button>
                 
                 <Button variant="outline" className="w-full" onClick={() => router.push(`/pacientes/editar?id=${paciente.id}`)}>
                   <Edit className="mr-2 h-4 w-4" /> Editar Datos
