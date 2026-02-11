@@ -45,13 +45,16 @@ import {
 
 import {
   obtenerEdadPaciente,
+  obtenerHistoriaClinicaPorId,
+  obtenerPacientePorId,
   type HistoriaClinica,
   type Paciente,
 } from "@/lib/almacen-datos"
 
-import { BASE_URL, eliminarHistoriaRemota } from "@/lib/api-historias" 
+import { BASE_URL, eliminarHistoriaRemota } from "@/lib/api-historias"
+import { getPaciente as getPacienteAPI } from "@/lib/api-pacientes" // Importamos para buscar el perfil completo
 
-
+// --- HELPERS DE FORMATO ---
 const formatearFechaVista = (fechaStr?: string | null) => {
   if (!fechaStr || fechaStr.trim() === "") return "—";
   if (fechaStr.includes("-")) {
@@ -165,43 +168,78 @@ function PaginaDetalleHistoria() {
     const cargarDatos = async () => {
       setEstaCargando(true)
       try {
-        const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`);
-        if (res.ok) {
-          const data = await res.json();
-          setDatosBackendOriginales(data); 
+        // 1. INTENTAR BACKEND PARA LA HISTORIA
+        const resH = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`);
+        
+        if (resH.ok) {
+          const dataH = await resH.json();
+          setDatosBackendOriginales(dataH); 
 
-          const fuenteDatos = data.validada || data.borrador || {};
+          const fuenteDatos = dataH.validada || dataH.borrador || {};
           const pInfo = fuenteDatos.paciente || {};
           const enf = fuenteDatos.enfermedad || {};
           const cons = fuenteDatos.consulta || {};
           
-          let nombre = pInfo.nombre || "";
+          // Mapeo de nombre/apellido (El servidor suele mandar "Apellido, Nombre")
+          let nombreComp = pInfo.nombre || "";
           let apellido = "";
-          if (nombre.includes(",")) {
-            const partes = nombre.split(",");
+          let nombre = "";
+          if (nombreComp.includes(",")) {
+            const partes = nombreComp.split(",");
             apellido = partes[0].trim();
             nombre = partes[1].trim();
+          } else {
+            apellido = nombreComp;
           }
 
-          setPaciente({
-            id: historiaId, nombre, apellido, dni: pInfo.dni || "",
-            fechaNacimiento: pInfo.fecha_nacimiento || "", 
-            sexo: "", telefono: "", email: "", direccion: "",
-            obraSocial: pInfo.obra_social || "", numeroAfiliado: pInfo.nro_afiliado || "",
-            fechaRegistro: new Date().toISOString(), observaciones: ""
-          });
+          const dniPaciente = pInfo.dni || "";
 
+          // --- CARGA DEL PERFIL COMPLETO DEL PACIENTE ---
+          // Intentamos obtener el perfil completo para no depender solo de lo que hay en la historia
+          const perfilRemoto = await getPacienteAPI(dniPaciente);
+          
+          if (perfilRemoto) {
+            setPaciente({
+              id: String(perfilRemoto.id),
+              nombre: perfilRemoto.nombre.split(",")[1]?.trim() || perfilRemoto.nombre,
+              apellido: perfilRemoto.nombre.split(",")[0]?.trim() || "",
+              dni: perfilRemoto.dni,
+              fechaNacimiento: perfilRemoto.fecha_nacimiento || "",
+              sexo: "", telefono: "", email: "", direccion: "",
+              obraSocial: perfilRemoto.obra_social || "",
+              numeroAfiliado: perfilRemoto.nro_afiliado || "",
+              fechaRegistro: "", observaciones: ""
+            });
+          } else {
+            // Fallback: Buscar en LocalStorage si el servidor no tiene el perfil completo
+            const pLocal = obtenerPacientePorId(dniPaciente);
+            if (pLocal) {
+              setPaciente(pLocal);
+            } else {
+              // Si no existe perfil en ningún lado, usamos lo poco que trajo la historia
+              setPaciente({
+                id: dniPaciente, nombre, apellido, dni: dniPaciente,
+                fechaNacimiento: pInfo.fecha_nacimiento || "", 
+                sexo: "", telefono: "", email: "", direccion: "",
+                obraSocial: pInfo.obra_social || "", 
+                numeroAfiliado: pInfo.nro_afiliado || "",
+                fechaRegistro: new Date().toISOString(), observaciones: ""
+              });
+            }
+          }
+
+          // Mapeo de Historia
           setHistoria({
-            id: data.id,
-            pacienteId: historiaId,
+            id: dataH.id,
+            pacienteId: dniPaciente,
             fecha: cons.fecha || "",
             diagnostico: enf.diagnostico || "",
             codigoDiagnostico: enf.codigo,
             formaEvolutiva: enf.forma,
             fechaInicioEnfermedad: enf.fecha_inicio,
             escalaEDSS: enf.edss,
-            estado: data.estado, 
-            nivelCriticidad: data.nivel_criticidad || fuenteDatos.nivel_criticidad || "medio",
+            estado: dataH.estado, 
+            nivelCriticidad: dataH.nivel_criticidad || fuenteDatos.nivel_criticidad || "medio",
             medico: cons.medico || "",
             sintomasPrincipales: fuenteDatos.secciones_texto?.sintomas_principales || fuenteDatos.texto_original || "",
             antecedentes: fuenteDatos.secciones_texto?.antecedentes || "",
@@ -222,10 +260,26 @@ function PaginaDetalleHistoria() {
             },
             patologia: "Neurología" 
           });
+        } else {
+          // 2. FALLBACK TOTAL LOCAL STORAGE (Si falla el servidor)
+          cargarDesdeLocalStorage();
         }
-      } catch (error) { console.warn("Error:", error); }
+      } catch (error) { 
+        console.warn("Error de conexión. Cargando datos locales.");
+        cargarDesdeLocalStorage();
+      }
       setEstaCargando(false)
     }
+
+    const cargarDesdeLocalStorage = () => {
+      const hLocal = obtenerHistoriaClinicaPorId(historiaId);
+      if (hLocal) {
+        setHistoria(hLocal);
+        const pLocal = obtenerPacientePorId(hLocal.pacienteId);
+        if (pLocal) setPaciente(pLocal);
+      }
+    }
+
     cargarDatos()
   }, [historiaId])
 
@@ -342,6 +396,7 @@ function PaginaDetalleHistoria() {
               </CardContent>
             </Card>
 
+            {/* Resto del componente (Cuadro Clínico, Diagnóstico, etc.) se mantiene igual */}
             <Card>
               <CardHeader><CardTitle className="flex items-center gap-2"><ClipboardList className="h-5 w-5" />Cuadro Clínico</CardTitle></CardHeader>
               <CardContent className="space-y-4">
@@ -356,16 +411,11 @@ function PaginaDetalleHistoria() {
             <Card>
               <CardHeader><CardTitle className="flex items-center gap-2"><Brain className="h-5 w-5" />Diagnóstico</CardTitle></CardHeader>
               <CardContent className="space-y-5"> 
-                  
                   <div className="w-full">
                     <p className="text-sm font-medium text-muted-foreground mb-1">Diagnóstico Principal</p>
-                    <p className="text-md font-semibold leading-relaxed text-balance">
-                      {mostrarDato(historia.diagnostico)}
-                    </p>
+                    <p className="text-md font-semibold leading-relaxed text-balance">{mostrarDato(historia.diagnostico)}</p>
                   </div>
-                  
                   <Separator />
-                  
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                     <div>
                       <p className="text-sm font-medium text-muted-foreground">Código (CIE-10)</p>
@@ -432,7 +482,6 @@ function PaginaDetalleHistoria() {
              <Card><CardHeader><CardTitle>Metadatos</CardTitle></CardHeader>
               <CardContent className="space-y-3">
                 <div><p className="text-sm font-medium text-muted-foreground">ID Interno</p><p className="text-xs font-mono break-all">{historia.id}</p></div>
-                <div><p className="text-sm font-medium text-muted-foreground">Médico</p><p className="text-sm">{mostrarDato(historia.medico)}</p></div>
               </CardContent></Card>
           </div>
         </div>
