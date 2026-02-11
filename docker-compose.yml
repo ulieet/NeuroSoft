@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    container_name: neurosoft_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - /app/venv
+    environment:
+      - DATABASE_URL=sqlite:///./neurosoft.db
+    restart: always
+
+  frontend:
+    build: ./frontend/medical-system
+    container_name: neurosoft_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: always
