@@ -31,10 +31,8 @@ import {
 
 import { eliminarHistoriaRemota } from "@/lib/api-historias"
 
-// --- HELPER DE FORMATO DE FECHA ---
 const formatearFechaVista = (fechaStr?: string | null) => {
   if (!fechaStr) return "-";
-  // Si la fecha viene como YYYY-MM-DD
   if (fechaStr.includes("-")) {
     const partes = fechaStr.split("-");
     if (partes.length === 3 && partes[0].length === 4) {
@@ -182,7 +180,6 @@ function PaginaDetallePaciente() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-muted-foreground">Nacimiento</p>
-                    {/* APLICACIÓN DEL FORMATO DD/MM/YYYY */}
                     <p>{formatearFechaVista(paciente.fecha_nacimiento)}</p>
                   </div>
                   <div>
@@ -226,7 +223,6 @@ function PaginaDetallePaciente() {
                           <TableCell>
                             <div className="flex items-center gap-2">
                               <Calendar className="h-4 w-4 text-muted-foreground" />
-                              {/* TAMBIÉN PODEMOS FORMATEAR AQUÍ SI ES NECESARIO */}
                               {formatearFechaVista(h.fecha_consulta)}
                             </div>
                           </TableCell>
@@ -264,9 +260,10 @@ function PaginaDetallePaciente() {
             <Card>
               <CardHeader><CardTitle>Acciones</CardTitle></CardHeader>
               <CardContent className="space-y-3">
-                <Button className="w-full" onClick={() => router.push("/historias/importar")}>
-                  <Plus className="mr-2 h-4 w-4" /> Nueva Historia
-                </Button>
+                <Button 
+                  className="w-full" 
+                  onClick={() => router.push(`/historias/nuevo?pacienteId=${patientId}`)}>
+          <Plus className="mr-2 h-4 w-4" /> Nueva Historia</Button>
                 
                 <Button variant="outline" className="w-full" onClick={() => router.push(`/pacientes/editar?id=${paciente.id}`)}>
                   <Edit className="mr-2 h-4 w-4" /> Editar Datos

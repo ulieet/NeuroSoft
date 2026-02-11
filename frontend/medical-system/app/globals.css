@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 
 :root {
-  /* Updated to beautiful blue/cyan medical colors */
   --background: oklch(0.98 0.02 220);
   --foreground: oklch(0.15 0.05 220);
   --card: oklch(1 0 0);
@@ -39,7 +38,6 @@
 }
 
 .dark {
-  /* Updated dark mode with blue/cyan tones */
   --background: oklch(0.08 0.02 220);
   --foreground: oklch(0.95 0.02 220);
   --card: oklch(0.12 0.03 220);
@@ -75,7 +73,6 @@
 }
 
 @theme inline {
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

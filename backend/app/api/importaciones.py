@@ -1,12 +1,10 @@
-# app/api/importaciones.py
 from fastapi import APIRouter, UploadFile, File, HTTPException
 import os
 import json
 from datetime import datetime
-from typing import Dict, Any
 import hashlib
 
-from app.services import nlp_service, patient_service # <--- IMPORTAR EL NUEVO SERVICIO
+from app.services import nlp_service, patient_service 
 
 router = APIRouter()
 
@@ -46,11 +44,11 @@ async def importar_historia(file: UploadFile = File(...)):
     new_filename = f"historia_{ts}_{random_suffix}{ext}"
     file_path = os.path.join(UPLOAD_DIR, new_filename)
 
-    # 1) Guardar archivo físico
+    #  Guardar archivo físico
     with open(file_path, "wb") as buffer:
         buffer.write(await file.read())
 
-    # 2) Procesar con NLP
+    # Procesar con NLP
     try:
         borrador = nlp_service.process(file_path)
     except Exception as e:
@@ -58,18 +56,15 @@ async def importar_historia(file: UploadFile = File(...)):
         print(f"Error procesando NLP: {e}")
         raise HTTPException(status_code=500, detail=f"Error al procesar el archivo: {str(e)}")
 
-    # --- NUEVO: CREAR O ACTUALIZAR PACIENTE ---
     try:
         if borrador.get("paciente"):
             patient_service.upsert_paciente_from_nlp(borrador["paciente"])
     except Exception as e:
         print(f"Advertencia: No se pudo guardar el paciente maestro: {e}")
-    # ------------------------------------------
 
-    # 3) Construir huella clínica
     dedup_key = build_dedup_key(borrador)
 
-    # 4) Verificar duplicados
+    # Verificar duplicados
     for fname in os.listdir(DATA_DIR):
         if not fname.endswith(".json"):
             continue
@@ -85,7 +80,7 @@ async def importar_historia(file: UploadFile = File(...)):
         except json.JSONDecodeError:
             continue
 
-    # 5) Armar objeto historia
+    # Armar objeto historia
     historia = {
         "id": ts + "_" + random_suffix,
         "estado": "pendiente_validacion",
@@ -94,7 +89,7 @@ async def importar_historia(file: UploadFile = File(...)):
         "validada": None
     }
 
-    # 6) Guardar historia en JSON
+    # Guardar historia en JSON
     historia_path = os.path.join(DATA_DIR, f"{historia['id']}.json")
     with open(historia_path, "w", encoding="utf-8") as f:
         json.dump(historia, f, ensure_ascii=False, indent=2)

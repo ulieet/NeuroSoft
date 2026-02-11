@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+backend/data/
+backend/uploads/
+.vscode/
+*.db
+*.pyc
+__pycache__/

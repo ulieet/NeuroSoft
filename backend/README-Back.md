@@ -1,68 +1,66 @@
-# Backend - NeuroClinic (Grupo 21 - Seminario)
+# Backend - NeuroSoft (Grupo 21 - Seminario)
 
-🧩 **README — Backend del Sistema de Historias Clínicas** Proyecto Seminario – Grupo 21  
-**FastAPI • NLP Clínico (IA simbólica) • Validación • Deduplicación**
-
----
-
-Quick start
------------
-1. cd backend
-2. python -m venv venv && source venv/bin/activate
-3. pip install -r requirements.txt
-4. uvicorn app.main:app --reload --port 8000
-
-
-## 📌 Descripción General
-
-Este backend implementa la **Fase 4** del proyecto Seminario (Grupo 21), específicamente el **módulo de Historias Clínicas**, que incluye:
-
-- Importación de archivos **PDF, DOCX y DOC (Word 97-2003)**.
-- Extracción automática de información clínica (**NLP basado en reglas y bloques**).
-- Generación de **borradores estructurados** a partir de texto libre.
-- Validación y corrección manual por profesionales.
-- Prevención de historias duplicadas (deduplicación clínica inteligente).
-- Persistencia en **archivos JSON** (sin BD real todavía).
-
-El objetivo es integrar este backend con el **frontend en React** que desarrolla el equipo para que el neurólogo pueda:
-
-- Cargar historias clínicas históricas.
-- Revisar / corregir lo que extrajo el módulo de IA.
-- Guardar historias ya validadas.
-- Usar esos datos más adelante (análisis, reportes, filtros, etc.).
+🧩 **NeuroSoft — Backend del Sistema de Historias Clínicas**
+**Proyecto Seminario – UTN FRLP – Grupo 21**
+**FastAPI • NLP Clínico (IA simbólica) • SQLite (SQLAlchemy) • Faker Data**
 
 ---
 
-## 📁 Estructura del Backend (real y actualizada)
+## 🚀 Quick Start (Puesta en marcha rápida)
 
-```text
+Sigue estos pasos para levantar el entorno completo con base de datos y datos de prueba:
+
+```bash
+# 1. Entrar al directorio
+cd backend
+
+# 2. Crear y activar entorno virtual (Windows Git Bash)
+python -m venv venv
+source venv/Scripts/activate
+
+# 3. Instalar dependencias
+pip install -r requirements.txt
+# (Incluye: fastapi, uvicorn, sqlalchemy, faker, pdfplumber, python-docx, pywin32)
+
+# 4. 🧪 (Opcional) Generar datos de prueba
+# Crea 30 historias clínicas sintéticas con IA (Faker) para poblar el sistema
+python factory.py --out data/historias
+
+# 5. 🗄️ Inicializar y Migrar Base de Datos
+# Lee los JSONs generados (o existentes) y crea el archivo 'neurosoft.db'
+python migrar_db.py
+
+# 6. Ejecutar el Servidor
+python -m uvicorn app.main:app --reload --port 8000
+
 backend/
 │
 ├── app/
 │   ├── api/
-│   │   ├── historias.py        # Listado y acceso a historias
+│   │   ├── historias.py        # Listado y acceso a historias (Lee de BD ahora)
 │   │   ├── importaciones.py    # Importación de PDF/DOCX/DOC + deduplicación
-│   │   ├── pacientes.py        # (reservado para futuras extensiones)
-│   │   ├── reportes.py         # (fase 4.5, no implementado)
+│   │   ├── pacientes.py        # (Activo) Gestión de pacientes en BD
+│   │   ├── reportes.py         # ✅ (Implementado) Endpoints del Dashboard KPI
 │   │   └── validaciones.py     # Endpoints de validación manual
 │   │
 │   ├── core/
 │   │   ├── config.py
-│   │   ├── database.py         # Placeholder (futuro pasaje a BD real)
+│   │   ├── database.py         # ✅ (Actualizado) Conexión SQLite + SessionLocal
 │   │   └── security.py         # Placeholder (autenticación futura)
 │   │
 │   ├── mock/
 │   │   └── historias_list.json # Datos de ejemplo / mocks
 │   │
-│   ├── models/
-│   │   ├── diagnostico.py
-│   │   ├── estudio.py
-│   │   ├── historia.py
+│   ├── models/                 # 🗄️ Modelos de Base de Datos (ORM)
+│   │   ├── models.py           # ✅ (Nuevo) Tablas: Paciente y HistoriaClinica
+│   │   ├── diagnostico.py      # (Lógica de negocio / Legacy)
+│   │   ├── estudio.py          # (Lógica de negocio / Legacy)
+│   │   ├── historia.py         # (Lógica de negocio / Legacy)
 │   │   ├── importacion.py
 │   │   ├── paciente.py
 │   │   └── tratamiento.py
 │   │
-│   ├── schemas/
+│   ├── schemas/                # Esquemas Pydantic (Validación de entrada/salida)
 │   │   ├── diagnostico_schema.py
 │   │   ├── estudio_schema.py
 │   │   ├── historia_schema.py
@@ -72,17 +70,17 @@ backend/
 │   │
 │   ├── services/
 │   │   ├── import_service.py   # Orquestación de importaciones
-│   │   ├── nlp_service.py      # Motor de IA/NLP clínico (extracción inteligente)
-│   │   └── report_service.py   # (reservado para reportes fase 4.5)
+│   │   ├── nlp_service.py      # Motor de IA/NLP clínico
+│   │   └── report_service.py   # ✅ (Implementado) Lógica de KPIs leyendo de SQL
 │   │
 │   ├── utils/
 │   │   ├── conversions.py
-│   │   ├── extract_text.py     # Lectura de PDF, DOCX y DOC (vía pywin32)
-│   │   ├── normalize.py        # Normalizaciones (fechas, moléculas, forma, etc.)
+│   │   ├── extract_text.py     # Lectura de PDF, DOCX y DOC
+│   │   ├── normalize.py        # Normalizaciones
 │   │   ├── parsing.py
-│   │   ├── patterns.py         # Patrones clínicos (RMN, LCR, fármacos, etc.)
+│   │   ├── patterns.py         # Patrones clínicos
 │   │   ├── regex_patterns.py
-│   │   └── segmenter.py        # Segmentación en secciones (síntomas, estudios, dx, etc.)
+│   │   └── segmenter.py        # Segmentación en secciones
 │   │
 │   ├── tests/
 │   │   └── test_placeholder.py
@@ -90,160 +88,228 @@ backend/
 │   └── main.py                 # Punto de entrada FastAPI
 │
 ├── data/
-│   └── historias/              # JSON de historias procesadas y validadas
+│   └── historias/              # (Temporal) Destino de los JSON generados por Factory
 │
 ├── uploads/                    # Archivos subidos por los usuarios
 │
+├── factory.py                  # ✅ (Nuevo) Generador de datos con Faker
+├── migrar_db.py                # ✅ (Nuevo) Script para pasar JSON -> SQLite
+├── limpiar_db.py               # ✅ (Nuevo) Script opcional para vaciar la BD
+├── neurosoft.db                # ✅ (Nuevo) Archivo de Base de Datos (Ignorar en Git)
 ├── .env.example
 ├── docker-compose.yml
 ├── Dockerfile
-├── README.md
+├── README.md                   # Actualizado con instrucciones de DB y Faker
 └── requirements.txt
 
-🚀 Endpoints Implementados
-📥 1. Importación de Historias
-POST /importaciones/historias
 
-Recibe un archivo PDF, DOCX o DOC (multipart/form-data).
+📝 Descripción General
+Este backend implementa el núcleo lógico de NeuroSoft, un sistema inteligente para la gestión de historias clínicas de Esclerosis Múltiple.
 
-Guarda el archivo físico en uploads/.
+🔄 Evolución Técnica
 
-Procesa el documento con nlp_service.process().
+El sistema ha evolucionado de una persistencia basada en archivos planos a una Base de Datos Relacional (SQLite) gestionada con SQLAlchemy. Esto permite:
+Integridad Referencial: Relación sólida entre Pacientes e Historias.
+Analítica en Tiempo Real: Cálculo inmediato de KPIs como NEDA (No Evidence of Disease Activity), prevalencia de brotes y adherencia al tratamiento.
+Escalabilidad: Manejo eficiente de grandes volúmenes de historias sin depender del sistema de archivos.
 
-Genera un borrador clínico estructurado.
 
-Calcula una huella clínica (dedup_key) que incluye hash del contenido para permitir múltiples documentos por fecha.
+El objetivo es asistir al neurólogo permitiéndole:
 
-Guarda la historia en data/historias/{id}.json.
+Importar historias históricas (PDF/Word) y extraer datos automáticamente.
+Validar y corregir la información extraída por la IA.
+Visualizar la evolución del paciente mediante un Dashboard analítico.
 
-Si la huella ya existe (mismo contenido exacto) → responde 409 Conflict.
+🌟 Características Clave
+1. 🧠 Motor de NLP Clínico (IA Simbólica)
+El motor de extracción (nlp_service.py) utiliza reglas heurísticas avanzadas y reconocimiento de patrones por bloques para estructurar texto libre:
 
-🔍 2. Listar historias
-GET /historias
+Datos Filiatorios: Extrae DNI, Nombre, Obra Social y Nro de Afiliado.
+Diagnóstico: Identifica el tipo (RR, SP, PP), códigos OMS y fechas de inicio.
+Tratamientos (Extracción por Bloques): Busca cabeceras como "Solicito:", "Indico:" o "Rp/" y captura el contenido hasta la firma, detectando drogas comerciales, genéricos y dosis, incluso con errores de tipeo.
+Neuroimágenes (RMN Multilínea): Analiza informes complejos detectando actividad (Gadolinio positivo / nuevas lesiones) a través de múltiples líneas de texto.
 
-Devuelve una lista con datos generales de todas las historias almacenadas:
+Brotes: Detecta recaídas clínicas en la evolución y descartando falsos positivos (ej. "libre de brotes").
 
-id
+2. 📊 Dashboard Estadístico (Nuevo)
+Gracias a la integración con SQLite, el sistema genera reportes visuales en tiempo real:
+NEDA-3: Cálculo automático basado en la triada: sin brotes, sin progresión de EDSS y sin actividad en RMN.
+Uso de DMTs: Distribución de terapias (Alta eficacia vs. Moderada).
+Motivos de Cambio: Análisis de rotación de tratamientos (Falla terapéutica, Seguridad, Planificación familiar).
 
-estado (pendiente_validacion | validada)
+3. 🧪 Generador de Datos (Faker)
+Incluye un script (factory.py) capaz de generar cohortes de pacientes sintéticos indistinguibles de datos reales.
+Genera nombres, fechas y evoluciones médicas coherentes.
+Simula trayectorias de enfermedad (pacientes estables vs. activos).
+Ideal para pruebas de estrés y demostraciones sin comprometer datos reales.
 
-diagnostico
+4. 🚫 Deduplicación Inteligente
+El sistema genera una "huella clínica" (hash del contenido + DNI + fecha) para permitir cargar múltiples documentos del mismo paciente, pero rechazando duplicados exactos.
 
-forma (si está disponible)
+Método,Endpoint,Descripción
+POST,/importaciones/historias,"Sube PDF/DOCX, procesa con IA, deduplica y guarda borrador."
+GET,/historias,Lista historias paginadas leyendo directamente de la BD.
+GET,/reportes/dashboard,"Devuelve JSON con KPIs calculados (NEDA, DMTs, Demografía)."
+PATCH,/historias/{id}/validacion,Permite al médico corregir y validar el borrador de la IA.
 
-fecha_consulta
+Gemini said
+Aquí tienes la fusión definitiva. He combinado la profundidad técnica de tu README antiguo (que explicaba muy bien el NLP y la lógica de extracción) con la arquitectura moderna del nuevo (SQLite, Faker, Reportes).
 
-otros metadatos básicos
+Este documento cuenta la historia completa de tu proyecto: desde la IA simbólica hasta la persistencia profesional en base de datos.
 
-🧠 3. Obtener borrador (salida de IA/NLP)
-GET /historias/{id}/borrador
+Copia y pega esto en tu README.md:
 
-Devuelve el borrador bruto generado por el motor de IA, incluyendo:
+Markdown
+# Backend - NeuroSoft (Grupo 21 - Seminario)
 
-Datos extendidos del paciente (nombre, DNI, nacimiento, obra social, afiliado).
+🧩 **NeuroSoft — Backend del Sistema de Historias Clínicas**
+**Proyecto Seminario – UTN FRLP – Grupo 21**
+**FastAPI • NLP Clínico (IA simbólica) • SQLite (SQLAlchemy) • Faker Data**
 
-Datos de la consulta (fecha inteligente).
+---
 
-Diagnóstico, código OMS y forma clínica sugerida.
+## 🚀 Quick Start (Puesta en marcha rápida)
 
-Secciones de texto completas: Síntomas y Antecedentes.
+Sigue estos pasos para levantar el entorno completo con base de datos y datos de prueba:
 
-Complementarios (RMN multilínea, Punción lumbar).
+```bash
+# 1. Entrar al directorio
+cd backend
 
-Tratamientos farmacológicos extraídos por bloques ("Solicito:", "Indicación:").
+# 2. Crear y activar entorno virtual (Windows Git Bash)
+python -m venv venv
+source venv/Scripts/activate
 
-Texto original.
-
-✏️ 4. Validar historia
-PATCH /historias/{id}/validacion
-
-Permite que el profesional corrija / complete la información.
-
-Recibe un JSON con los campos corregidos.
-
-Actualiza el archivo data/historias/{id}.json cambiando el estado a "validada".
-
-🧠 Módulo de IA / NLP Clínico
-El motor de IA se encuentra en app/services/nlp_service.py y ha sido potenciado para manejar documentos complejos y antiguos.
-
-🔍 ¿Qué extrae automáticamente?
-1. Paciente (Datos Filiatorios)
-
-Nombre y Apellido.
-
-DNI.
-
-Fecha de Nacimiento (con lógica para no confundirla con la fecha de consulta).
-
-Obra Social y Número de Afiliado.
-
-2. Consulta
-
-Fecha de consulta (prioriza encabezados como "La Plata, 11 de Octubre..." sobre otras fechas en el texto).
-
-3. Enfermedad / Diagnóstico
-
-Diagnóstico principal (ej. "Esclerosis múltiple").
-
-Código CIE/OMS (ej. "OMS-340").
-
-Forma clínica (RR, SP, PP) inferida del texto.
-
-Fecha de inicio de la enfermedad.
-
-EDSS (si se explicita).
-
-4. Secciones de Texto (Nuevo)
-
-Extrae bloques completos de "Síntomas" y "Antecedentes" para facilitar la lectura del médico sin tener que buscar en todo el documento.
-
-5. Estudios Complementarios
-
-RMN Inteligente:
-
-Detecta múltiples estudios en el mismo documento.
-
-Lee a través de múltiples líneas (memoria de contexto).
-
-Identifica actividad ("Activa"/"Inactiva"), uso de Gadolinio (incluyendo variantes como "volcado de Gd", "Gd.IV (+)") y regiones afectadas.
-
-Punción lumbar / LCR: Detección de bandas oligoclonales.
-
-6. Tratamientos (Lógica de Bloques)
-
-Utiliza una estrategia de "Extracción por Bloques": busca cabeceras como "Solicito:", "Tratamiento:", "Indico:", "Rp/" y captura todo el contenido hasta la firma.
-
-Esto permite detectar medicamentos con errores de tipeo o variantes (ej. "Interferón" con tilde, "Dimeful" mapeado a Dimetil Fumarato).
-
-Extrae: Molécula normalizada, Dosis, Estado (Activo/Suspendido) y Fecha de inicio si está cerca.
-
-🚫 Sistema de Deduplicación
-El sistema genera una huella clínica (dedup_key) robusta:
-
-Combina DNI + Fecha Consulta + Hash del Texto.
-
-Esto permite cargar múltiples documentos del mismo día (ej. un informe de RMN y una consulta) siempre que su contenido sea diferente, evitando bloqueos erróneos.
-
-📄 Soporte de Archivos
-PDF (texto seleccionable).
-
-DOCX (Word moderno).
-
-DOC (Word 97-2003): Soporte nativo en Windows mediante pywin32 para leer archivos antiguos de hospitales.
-
-✔ Estado de Implementación – Fase 4
-
-4.1✅ ListoImportación de PDF, DOCX y DOC, guardado en uploads/.
-4.2✅ ListoMotor NLP avanzado: Bloques, RMN multilínea, Datos extra paciente.4.3✅ Backend listoEndpoints de listado, borrador y validación + persistencia JSON.
-4.3✅ Frontend integradoPantallas de importación, listado, detalle y validación totalmente funcionales.
-4.4⏳ PróximoMotor clínico avanzado (tendencias, actividad, progresión).4.5❌ No iniciadoReportes (gráficos, estadísticas).
-
-🛠 Instalación y ejecución
-Requerimientos Asegúrate de instalar las dependencias, incluyendo el soporte para .doc (pywin32):
-
+# 3. Instalar dependencias
 pip install -r requirements.txt
-# Si estás en Windows y vas a usar archivos .doc:
-pip install pywin32
+# (Incluye: fastapi, uvicorn, sqlalchemy, faker, pdfplumber, python-docx, pywin32)
 
-EJECUTAR SERVIDOR
-uvicorn app.main:app --reload
+# 4. 🧪 (Opcional) Generar datos de prueba
+# Crea 30 historias clínicas sintéticas con IA (Faker) para poblar el sistema
+python factory.py --out data/historias
+
+# 5. 🗄️ Inicializar y Migrar Base de Datos
+# Lee los JSONs generados (o existentes) y crea el archivo 'neurosoft.db'
+python migrar_db.py
+
+# 6. Ejecutar el Servidor
+python -m uvicorn app.main:app --reload --port 8000
+📝 Descripción General
+Este backend implementa el núcleo lógico de NeuroSoft, un sistema inteligente para la gestión de historias clínicas de Esclerosis Múltiple.
+
+🔄 Evolución Técnica
+El sistema ha evolucionado de una persistencia basada en archivos planos a una Base de Datos Relacional (SQLite) gestionada con SQLAlchemy. Esto permite:
+
+Integridad Referencial: Relación sólida entre Pacientes e Historias.
+
+Analítica en Tiempo Real: Cálculo inmediato de KPIs como NEDA (No Evidence of Disease Activity), prevalencia de brotes y adherencia al tratamiento.
+
+Escalabilidad: Manejo eficiente de grandes volúmenes de historias sin depender del sistema de archivos.
+
+El objetivo es asistir al neurólogo permitiéndole:
+
+Importar historias históricas (PDF/Word) y extraer datos automáticamente.
+
+Validar y corregir la información extraída por la IA.
+
+Visualizar la evolución del paciente mediante un Dashboard analítico.
+
+🏗 Arquitectura del Backend
+Plaintext
+backend/
+│
+├── app/
+│   ├── api/
+│   │   ├── historias.py        # Endpoints CRUD (Lee de SQLite)
+│   │   ├── importaciones.py    # Subida de PDF/DOCX + Procesamiento NLP
+│   │   ├── reportes.py         # ✅ Dashboard y estadísticas (SQL)
+│   │   ├── pacientes.py        # Gestión de pacientes únicos
+│   │   └── validaciones.py     # Endpoints de validación manual
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   └── database.py         # 🔌 Conexión SQLAlchemy a 'neurosoft.db'
+│   │
+│   ├── models/                 # 🗄️ Modelos ORM (Tablas)
+│   │   └── models.py           # Definición de tablas Paciente e HistoriaClinica
+│   │
+│   ├── services/
+│   │   ├── nlp_service.py      # 🧠 Motor de IA/NLP clínico (Regex + Bloques)
+│   │   └── report_service.py   # Lógica de KPIs (NEDA, EDSS, Drogas)
+│   │
+│   ├── utils/
+│   │   ├── extract_text.py     # Lectura de PDF (pdfplumber) y DOCX
+│   │   └── segmenter.py        # Segmentación inteligente de texto médico
+│   │
+│   └── main.py                 # Punto de entrada FastAPI
+│
+├── data/
+│   └── historias/              # (Temporal) JSONs generados por el Factory
+│
+├── factory.py                  # 🏭 Generador de datos sintéticos (Faker)
+├── migrar_db.py                # 🔄 Script de migración JSON -> SQLite
+├── neurosoft.db                # 🗄️ Base de Datos (autogenerada)
+├── requirements.txt
+└── README.md
+🌟 Características Clave
+1. 🧠 Motor de NLP Clínico (IA Simbólica)
+El motor de extracción (nlp_service.py) utiliza reglas heurísticas avanzadas y reconocimiento de patrones por bloques para estructurar texto libre:
+
+Datos Filiatorios: Extrae DNI, Nombre, Obra Social y Nro de Afiliado.
+
+Diagnóstico: Identifica el tipo (RR, SP, PP), códigos OMS y fechas de inicio.
+
+Tratamientos (Extracción por Bloques): Busca cabeceras como "Solicito:", "Indico:" o "Rp/" y captura el contenido hasta la firma, detectando drogas comerciales, genéricos y dosis, incluso con errores de tipeo.
+
+Neuroimágenes (RMN Multilínea): Analiza informes complejos detectando actividad (Gadolinio positivo / nuevas lesiones) a través de múltiples líneas de texto.
+
+Brotes: Detecta recaídas clínicas en la evolución y descartando falsos positivos (ej. "libre de brotes").
+
+2. 📊 Dashboard Estadístico (Nuevo)
+Gracias a la integración con SQLite, el sistema genera reportes visuales en tiempo real:
+
+NEDA-3: Cálculo automático basado en la triada: sin brotes, sin progresión de EDSS y sin actividad en RMN.
+
+Uso de DMTs: Distribución de terapias (Alta eficacia vs. Moderada).
+
+Motivos de Cambio: Análisis de rotación de tratamientos (Falla terapéutica, Seguridad, Planificación familiar).
+
+3. 🧪 Generador de Datos (Faker)
+Incluye un script (factory.py) capaz de generar cohortes de pacientes sintéticos indistinguibles de datos reales.
+
+Genera nombres, fechas y evoluciones médicas coherentes.
+
+Simula trayectorias de enfermedad (pacientes estables vs. activos).
+
+Ideal para pruebas de estrés y demostraciones sin comprometer datos reales.
+
+4. 🚫 Deduplicación Inteligente
+El sistema genera una "huella clínica" (hash del contenido + DNI + fecha) para permitir cargar múltiples documentos del mismo paciente, pero rechazando duplicados exactos.
+
+🚀 Endpoints Principales
+Método	Endpoint	Descripción
+POST	/importaciones/historias	Sube PDF/DOCX, procesa con IA, deduplica y guarda borrador.
+GET	/historias	Lista historias paginadas leyendo directamente de la BD.
+GET	/reportes/dashboard	Devuelve JSON con KPIs calculados (NEDA, DMTs, Demografía).
+PATCH	/historias/{id}/validacion	Permite al médico corregir y validar el borrador de la IA.
+
+✔ Estado de Implementación
+✅ 4.1 Importación: Soporte robusto para PDF (pdfplumber), DOCX y DOC Legacy (pywin32).
+
+✅ 4.2 Motor NLP: Extracción por bloques, RMN multilínea y heurísticas de fechas.
+
+✅ 4.3 Persistencia: Migración completa a SQLite + SQLAlchemy.
+
+✅ 4.4 Datos Sintéticos: Generador factory.py implementado.
+
+✅ 4.5 Reportes: Dashboard completo funcionando con datos reales de la BD.
+
+🛠 Requerimientos Técnicos
+Lenguaje: Python 3.10+
+Librerías Clave:
+fastapi / uvicorn: API Server.
+sqlalchemy: ORM para SQLite.
+faker: Generación de datos sintéticos.
+pdfplumber: Extracción de texto de PDFs modernos.
+python-docx: Lectura de archivos Word modernos.
+pywin32: Soporte exclusivo de Windows para archivos .doc antiguos (Word 97-2003).

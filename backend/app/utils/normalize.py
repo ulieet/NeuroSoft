@@ -1,4 +1,3 @@
-# app/utils/normalize.py
 from datetime import date
 from .patterns import MESES_ES, FORMAS, MOLECULAS
 from datetime import datetime
@@ -24,7 +23,6 @@ def normalize_fecha(d, m, y):
             else:
                 year += 2000
         
-        # Validar rangos básicos
         if not (1 <= month <= 12): return None
         if not (1 <= day <= 31): return None
         if year < 1900 or year > 2100: return None
@@ -49,7 +47,6 @@ def norm_molecula(texto):
     if not texto: return None
     for m in MOLECULAS:
         if m.lower().replace("-", "").replace(" ", "") in texto.lower().replace("-", "").replace(" ", ""):
-            # Devolver versión prolija (la lista contiene variantes)
             if "interferon beta 1a" in m.lower():
                 return "Interferón beta-1a"
             if "interferon beta 1b" in m.lower():

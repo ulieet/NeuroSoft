@@ -8,10 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ArrowLeft, Save, RefreshCw, AlertCircle } from "lucide-react"
 
-// IMPORTANTE: Usamos la API real
 import { 
   getPaciente, 
   updatePaciente, 
@@ -22,7 +20,6 @@ function PaginaEditarPaciente() {
   const router = useRouter()
   const searchParams = useSearchParams()
   
-  // El ID ahora es un String (DNI)
   const patientId = searchParams.get("id")
 
   const [formData, setFormData] = useState<Partial<PacienteBackend> | null>(null)
@@ -64,11 +61,9 @@ function PaginaEditarPaciente() {
     
     setEstaGuardando(true)
     try {
-      // Llamada a la API para actualizar el JSON en el backend
       const exito = await updatePaciente(patientId, formData)
       
       if (exito) {
-        alert("Paciente modificado con éxito")
         router.push(`/pacientes/detalle?id=${patientId}`)
       } else {
         alert("No se pudieron guardar los cambios en el servidor")
@@ -115,7 +110,6 @@ function PaginaEditarPaciente() {
     <MedicalLayout currentPage="pacientes">
       <form onSubmit={handleSubmit}>
         <div className="space-y-6 max-w-5xl mx-auto">
-          {/* Cabecera */}
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" onClick={() => router.back()} type="button">
               <ArrowLeft className="h-4 w-4" />
@@ -168,7 +162,6 @@ function PaginaEditarPaciente() {
               </Card>
             </div>
 
-            {/* Panel de Acciones Lateral */}
             <div className="space-y-6">
               <Card className="sticky top-24">
                 <CardHeader>

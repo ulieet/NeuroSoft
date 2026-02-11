@@ -6,7 +6,6 @@ from typing import Dict, Any, List
 PACIENTES_DIR = "./data/pacientes"
 
 def _get_path(dni: str) -> str:
-    # Limpiamos el DNI para usarlo de nombre de archivo
     clean_dni = "".join(filter(str.isdigit, str(dni)))
     if not clean_dni:
         return None
@@ -18,7 +17,6 @@ def upsert_paciente_from_nlp(paciente_data: Dict[str, Any]):
     """
     print(f"\n--- INTENTO DE REGISTRO DE PACIENTE ---")
     
-    # 1. Asegurar que el directorio existe
     if not os.path.exists(PACIENTES_DIR):
         try:
             os.makedirs(PACIENTES_DIR, exist_ok=True)
@@ -32,7 +30,6 @@ def upsert_paciente_from_nlp(paciente_data: Dict[str, Any]):
     
     print(f"DATOS RECIBIDOS -> Nombre: '{nombre}', DNI: '{dni}'")
 
-    # 2. Validación estricta
     if not dni:
         print(" FALLO: No se guarda paciente porque el DNI es nulo o vacío.")
         return None
@@ -49,7 +46,6 @@ def upsert_paciente_from_nlp(paciente_data: Dict[str, Any]):
     
     paciente_existente = {}
     
-    # 3. Intentar cargar existente para preservar datos viejos
     if os.path.exists(path):
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -58,20 +54,17 @@ def upsert_paciente_from_nlp(paciente_data: Dict[str, Any]):
         except Exception as e:
             print(f"⚠️ Error leyendo paciente existente: {e}. Se sobrescribirá.")
 
-    # 4. Mezclar datos (Prioridad a lo nuevo si existe, sino mantenemos lo viejo)
     nuevo_paciente = {
-        "id": clean_dni, # Usamos DNI limpio como ID consistente
-        "dni": dni,      # Guardamos el DNI original con puntos si se quiere mostrar así
+        "id": clean_dni, 
+        "dni": dni,      
         "nombre": paciente_data.get("nombre") or paciente_existente.get("nombre"),
         "fecha_nacimiento": paciente_data.get("fecha_nacimiento") or paciente_existente.get("fecha_nacimiento"),
         "obra_social": paciente_data.get("obra_social") or paciente_existente.get("obra_social"),
         "nro_afiliado": paciente_data.get("nro_afiliado") or paciente_existente.get("nro_afiliado"),
         "ultima_actualizacion": datetime.now().isoformat(),
-        # Preservar observaciones si existían
         "observaciones": paciente_existente.get("observaciones", "")
     }
 
-    # 5. Guardar
     try:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(nuevo_paciente, f, ensure_ascii=False, indent=2)
@@ -92,7 +85,6 @@ def get_all_pacientes() -> List[Dict[str, Any]]:
         try:
             with open(os.path.join(PACIENTES_DIR, fname), "r", encoding="utf-8") as f:
                 data = json.load(f)
-                # Asegurar ID
                 if "id" not in data:
                     data["id"] = data.get("dni", "").replace(".", "")
                 lista.append(data)
@@ -111,7 +103,6 @@ def get_paciente_by_id(id_paciente: str):
     return None
 
 def delete_paciente_by_id(id_paciente: str) -> bool:
-    # Limpiamos el ID por seguridad para encontrar el archivo correcto
     clean_id = "".join(filter(str.isdigit, str(id_paciente)))
     path = os.path.join(PACIENTES_DIR, f"{clean_id}.json")
     
@@ -136,7 +127,6 @@ def crear_nuevo_paciente(data: Dict[str, Any]):
         
     path = os.path.join(PACIENTES_DIR, f"{clean_id}.json")
     
-    # Preparamos el objeto con la estructura correcta
     nuevo_paciente = {
         "id": clean_id,
         "dni": dni,
@@ -157,10 +147,6 @@ def crear_nuevo_paciente(data: Dict[str, Any]):
         print(f"Error creando archivo: {e}")
         return None
 
-# backend/app/services/patient_service.py
-
-
-# backend/app/services/patient_service.py
 
 def crear_paciente_manual(data: Dict[str, Any]):
     dni = str(data.get("dni", "")).strip()
@@ -171,7 +157,6 @@ def crear_paciente_manual(data: Dict[str, Any]):
         
     path = os.path.join(PACIENTES_DIR, f"{clean_dni}.json")
     
-    # Estructura idéntica a la que espera tu página de Detalle
     nuevo_paciente = {
         "id": clean_dni,
         "dni": dni,
@@ -199,11 +184,9 @@ def update_paciente(id_paciente: str, data: Dict[str, Any]):
         return None
 
     try:
-        # Cargamos lo que hay para no perder campos que no enviamos
         with open(path, "r", encoding="utf-8") as f:
             paciente_actual = json.load(f)
         
-        # Actualizamos los campos recibidos
         paciente_actual.update(data)
         paciente_actual["ultima_actualizacion"] = datetime.now().isoformat()
 

@@ -27,7 +27,8 @@ import {
   History,
   Activity,
   Clock,
-  ShieldCheck 
+  ShieldCheck,
+  Download 
 } from "lucide-react"
 
 import {
@@ -43,8 +44,6 @@ import {
 } from "@/components/ui/alert-dialog"
 
 import {
-  obtenerHistoriaClinicaPorId,
-  obtenerPacientePorId,
   obtenerEdadPaciente,
   type HistoriaClinica,
   type Paciente,
@@ -52,7 +51,6 @@ import {
 
 import { BASE_URL, eliminarHistoriaRemota } from "@/lib/api-historias" 
 
-// --- HELPERS VISUALES Y LÓGICOS ---
 
 const formatearFechaVista = (fechaStr?: string | null) => {
   if (!fechaStr || fechaStr.trim() === "") return "—";
@@ -156,7 +154,6 @@ function PaginaDetalleHistoria() {
   const [estaEliminando, setEstaEliminando] = useState(false) 
   const [estaValidando, setEstaValidando] = useState(false)
   
-  // Estado para no perder la estructura original del Backend al validar
   const [datosBackendOriginales, setDatosBackendOriginales] = useState<any>(null)
 
   useEffect(() => {
@@ -171,7 +168,7 @@ function PaginaDetalleHistoria() {
         const res = await fetch(`${BASE_URL}/historias/${historiaId}/borrador`);
         if (res.ok) {
           const data = await res.json();
-          setDatosBackendOriginales(data); // Guardamos TODO el JSON
+          setDatosBackendOriginales(data); 
 
           const fuenteDatos = data.validada || data.borrador || {};
           const pInfo = fuenteDatos.paciente || {};
@@ -220,7 +217,7 @@ function PaginaDetalleHistoria() {
             tratamiento: fuenteDatos.secciones_texto?.comentario || "", 
             estudiosComplementarios: {
               puncionLumbar: fuenteDatos.complementarios?.puncion_lumbar?.realizada || false,
-              examenLCR: fuenteDatos.complementarios?.lcr?.realizado || false, // CORRECCIÓN TS
+              examenLCR: fuenteDatos.complementarios?.lcr?.realizado || false,
               texto: fuenteDatos.complementarios?.rmn ? JSON.stringify(fuenteDatos.complementarios.rmn) : ""
             },
             patologia: "Neurología" 
@@ -232,20 +229,18 @@ function PaginaDetalleHistoria() {
     cargarDatos()
   }, [historiaId])
 
-  // --- LÓGICA DE VALIDACIÓN CORREGIDA ---
   const handleValidarHistoria = async () => {
     if (!historiaId || !datosBackendOriginales) return;
     setEstaValidando(true);
 
     try {
-      // Usamos la estructura original (borrador o validada actual) para no perder datos
       const payloadOriginal = datosBackendOriginales.borrador || datosBackendOriginales.validada;
       
       const res = await fetch(`${BASE_URL}/historias/${historiaId}/validacion`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          ...payloadOriginal, // Enviamos la estructura compleja (enfermedad, secciones_texto, etc)
+          ...payloadOriginal, 
           estado: "validada"
         })
       });
@@ -270,6 +265,11 @@ function PaginaDetalleHistoria() {
     finally { setEstaEliminando(false); }
   }
 
+  const descargarArchivo = () => {
+    const url = `${BASE_URL}/historias/${historiaId}/archivo`;
+    window.open(url, '_blank');
+  };
+
   if (estaCargando) return <div className="flex items-center justify-center min-h-[400px]"><RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" /><p className="ml-2">Cargando...</p></div>
   if (!historia || !paciente) return <div className="p-10 text-center"><Button onClick={() => router.push("/historias")}><ArrowLeft className="mr-2 h-4 w-4" />Volver</Button></div>
 
@@ -290,10 +290,19 @@ function PaginaDetalleHistoria() {
           </div>
           
           <div className="flex flex-wrap gap-2"> 
-            {/* BOTÓN DE VALIDACIÓN AZUL MARINO */}
+            
+            <Button 
+                variant="outline" 
+                className="border-[#003e66] text-[#003e66] hover:bg-blue-50"
+                onClick={descargarArchivo}
+            >
+                <Download className="mr-2 h-4 w-4" />
+                Abrir Original
+            </Button>
+
             {historia.estado !== "validada" && (
               <Button 
-                className="bg-[#003e66] hover:bg-[#002d4d] text-white shadow-sm"
+                className="bg-primary text-white shadow-sm"
                 onClick={handleValidarHistoria}
                 disabled={estaValidando}
               >
@@ -346,11 +355,31 @@ function PaginaDetalleHistoria() {
 
             <Card>
               <CardHeader><CardTitle className="flex items-center gap-2"><Brain className="h-5 w-5" />Diagnóstico</CardTitle></CardHeader>
-              <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div><p className="text-sm font-medium text-muted-foreground">Diagnóstico Principal</p><p className="text-base font-semibold">{mostrarDato(historia.diagnostico)}</p></div>
-                  <div><p className="text-sm font-medium text-muted-foreground">Código (CIE-10)</p><p className="text-base font-mono">{mostrarDato(historia.codigoDiagnostico)}</p></div>
-                  <div><p className="text-sm font-medium text-muted-foreground">Forma Evolutiva</p><p className="text-base">{mostrarDato(historia.formaEvolutiva)}</p></div>
-                  <div><p className="text-sm font-medium text-muted-foreground">Categoría</p><p className="text-base">{mostrarDato(historia.patologia)}</p></div>
+              <CardContent className="space-y-5"> 
+                  
+                  <div className="w-full">
+                    <p className="text-sm font-medium text-muted-foreground mb-1">Diagnóstico Principal</p>
+                    <p className="text-md font-semibold leading-relaxed text-balance">
+                      {mostrarDato(historia.diagnostico)}
+                    </p>
+                  </div>
+                  
+                  <Separator />
+                  
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Código (CIE-10)</p>
+                      <p className="text-base font-mono mt-0.5">{mostrarDato(historia.codigoDiagnostico)}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Forma Evolutiva</p>
+                      <p className="text-base mt-0.5">{mostrarDato(historia.formaEvolutiva)}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Categoría</p>
+                      <p className="text-base mt-0.5">{mostrarDato(historia.patologia)}</p>
+                    </div>
+                  </div>
               </CardContent>
             </Card>
 

@@ -1,12 +1,9 @@
-# backend/app/utils/extract_text.py
-
 import os
 import subprocess
 import logging
 from docx import Document
 import pdfplumber
 
-# Configurar logger
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -47,10 +44,8 @@ def _extract_from_docx(file_path: str):
     text = ""
     try:
         doc = Document(file_path)
-        # Extraer párrafos
         full_text = [para.text for para in doc.paragraphs]
         text = "\n".join(full_text)
-        # Estimación aproximada de páginas (Word no guarda paginación fija en el XML)
         pages = max(1, len(text) // 3000) 
         return text, pages, "DOCX"
     except Exception as e:
@@ -63,7 +58,6 @@ def _extract_from_doc_antiword(file_path: str):
     Corrección: Maneja la decodificación manualmente para evitar crash en Windows (cp1252).
     """
     try:
-        # IMPORTANTE: Quitamos text=True para recibir bytes crudos y evitar el UnicodeDecodeError automático
         result = subprocess.run(
             ['antiword', '-w', '0', file_path], 
             stdout=subprocess.PIPE, 

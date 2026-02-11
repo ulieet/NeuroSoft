@@ -1,19 +1,17 @@
-
 "use client"
 
+import React from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { RefreshCw } from "lucide-react" 
 import { cn } from "@/lib/utils" 
 
 import { BarraBusquedaFiltros } from "@/app/pacientes/components/filtros"
 import { usePacientesListado } from "@/hooks/use-pacientes-listado"
 
 interface PacienteListadoSelectorProps {
-    onSelectPaciente: (pacienteId: number) => void;
-    selectedPacienteId: number | null; 
+    onSelectPaciente: (pacienteId: string) => void; 
+    selectedPacienteId: string | null; 
 }
 
 export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = ({ 
@@ -31,7 +29,6 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
         sortOrder,
         setSortOrder,
         limpiarFiltros,
-        cargarPacientes,
         obtenerConteoHistorias,
         hayFiltrosActivos
     } = usePacientesListado()
@@ -42,14 +39,14 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                 <h3 className="text-lg font-semibold text-muted-foreground">
                     Búsqueda y Selección de Paciente
                 </h3>
-            
             </div>
             
             <BarraBusquedaFiltros
                 terminoBusqueda={terminoBusqueda}
                 onTerminoBusquedaChange={setTerminoBusqueda}
                 filtros={filtros}
-                onFiltrosChange={manejarCambioFiltro}
+
+                onFiltrosChange={(id: any, value: any) => manejarCambioFiltro(id, value)}
                 obrasSocialesDisponibles={obrasSocialesDisponibles}
                 onLimpiarFiltros={limpiarFiltros}
                 sortOrder={sortOrder}
@@ -68,7 +65,7 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                         <Table>
                             <TableHeader>
                                 <TableRow>
-                                    <TableHead>Apellido y Nombre (DNI)</TableHead>
+                                    <TableHead>Nombre y Apellido (DNI)</TableHead>
                                     <TableHead>Obra Social</TableHead>
                                     <TableHead className="text-right">Historias</TableHead> 
                                 </TableRow>
@@ -94,17 +91,21 @@ export const PacienteListadoSelector: React.FC<PacienteListadoSelectorProps> = (
                                         >
                                             <TableCell>
                                                 <div className="font-medium">
-                                                    {paciente.apellido}, {paciente.nombre}
+                                                    {/* LIMPIEZA DE NOMBRE: Quitamos la coma aquí */}
+                                                    {paciente.nombre.replace(/,/g, '')}
                                                 </div>
                                                 <div className="text-sm text-muted-foreground font-mono">
                                                     DNI: {paciente.dni}
                                                 </div>
                                             </TableCell>
                                             <TableCell>
-                                                <Badge variant="outline">{paciente.obraSocial}</Badge>
+                                                {/* Usamos obra_social que es el campo real del backend */}
+                                                <Badge variant="outline">{paciente.obra_social || "S/D"}</Badge>
                                             </TableCell>
                                             <TableCell className="text-right">
-                                                <Badge variant="secondary">{obtenerConteoHistorias(paciente.id)} historias</Badge>
+                                                <Badge variant="secondary">
+                                                    {obtenerConteoHistorias(paciente.id)} historias
+                                                </Badge>
                                             </TableCell>
                                             <TableCell className="text-right">
                                                 {selectedPacienteId === paciente.id && (

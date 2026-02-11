@@ -1,113 +1,68 @@
-
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
-import {
-  obtenerPacientes,
-  obtenerHistoriasPorPacienteId,
-  inicializarDatosDeEjemplo,
-  obtenerEdadPaciente,
-  type Paciente,
-  type FiltrosPaciente,
-} from "@/lib/almacen-datos"
+import { useState, useEffect, useMemo, useCallback } from "react"
+import { getPacientes, getHistoriasDePaciente, PacienteBackend } from "@/lib/api-pacientes"
+
+export interface FiltrosPaciente {
+  obra_social: string
+}
 
 export function usePacientesListado() {
-  const [pacientes, setPacientes] = useState<Paciente[]>([])
-  const [estaCargando, setEstaCargando] = useState(false)
-  const [obrasSocialesDisponibles, setObrasSocialesDisponibles] = useState<string[]>([])
-
+  const [pacientes, setPacientes] = useState<PacienteBackend[]>([])
+  const [estaCargando, setEstaCargando] = useState(true)
+  const [conteosHistorias, setConteosHistorias] = useState<Record<string, number>>({})
   const [terminoBusqueda, setTerminoBusqueda] = useState("")
-  const [filtros, setFiltros] = useState<FiltrosPaciente>({})
+  const [filtros, setFiltros] = useState<FiltrosPaciente>({ obra_social: "todas" })
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
 
-  useEffect(() => {
-    cargarPacientes()
+  const cargarPacientes = useCallback(async () => {
+    setEstaCargando(true)
+    try {
+      const data = await getPacientes()
+      setPacientes(data)
+      setEstaCargando(false)
+
+      const counts: Record<string, number> = {}
+      for (const p of data) {
+        const historias = await getHistoriasDePaciente(p.dni)
+        counts[p.id] = historias.length
+        setConteosHistorias(prev => ({ ...prev, [p.id]: historias.length }))
+      }
+    } catch (error) {
+      console.error("Error:", error)
+      setEstaCargando(false)
+    }
   }, [])
 
-  const cargarPacientes = () => {
-    setEstaCargando(true)
-    inicializarDatosDeEjemplo()
-    const data = obtenerPacientes()
-    setPacientes(data)
-
-    const obras = [...new Set(data.map((p) => p.obraSocial).filter(Boolean))].sort()
-    setObrasSocialesDisponibles(obras)
-
-    setEstaCargando(false)
-  }
+  useEffect(() => { cargarPacientes() }, [cargarPacientes])
 
   const pacientesFiltrados = useMemo(() => {
-    let resultado = pacientes.filter((paciente) => {
-      // 1. Filtros avanzados
-      if (filtros.obraSocial && paciente.obraSocial !== filtros.obraSocial) return false
-      if (filtros.sexo && paciente.sexo !== filtros.sexo) return false
-      if (filtros.edadMin || filtros.edadMax) {
-        const edad = obtenerEdadPaciente(paciente.fechaNacimiento)
-        if (filtros.edadMin && edad < filtros.edadMin) return false
-        if (filtros.edadMax && edad > filtros.edadMax) return false
-      }
-
-      // 2. Búsqueda por término
-      if (terminoBusqueda) {
-        const busqueda = terminoBusqueda.toLowerCase()
-        const nombreCompleto = `${paciente.apellido}, ${paciente.nombre}`.toLowerCase()
-        const dni = paciente.dni.toString()
-        if (!nombreCompleto.includes(busqueda) && !dni.includes(terminoBusqueda)) {
-          return false
-        }
-      }
-      return true
+    return pacientes.filter((p) => {
+      const nombreLimpio = p.nombre.toLowerCase().replace(/,/g, '')
+      const terminoLimpio = terminoBusqueda.toLowerCase()
+      const coincideBusqueda = nombreLimpio.includes(terminoLimpio) || p.dni.includes(terminoBusqueda)
+      const coincideOS = filtros.obra_social === "todas" || p.obra_social === filtros.obra_social
+      return coincideBusqueda && coincideOS
+    }).sort((a, b) => {
+      return sortOrder === "asc" 
+        ? a.nombre.localeCompare(b.nombre) 
+        : b.nombre.localeCompare(a.nombre)
     })
-
-    // 3. Ordenamiento
-    resultado.sort((a, b) => {
-      const nombreA = `${a.apellido}, ${a.nombre}`.toLowerCase()
-      const nombreB = `${b.apellido}, ${b.nombre}`.toLowerCase()
-
-      if (nombreA < nombreB) return sortOrder === "asc" ? -1 : 1
-      if (nombreA > nombreB) return sortOrder === "asc" ? 1 : -1
-      return 0
-    })
-
-    return resultado
-  }, [pacientes, filtros, terminoBusqueda, sortOrder])
-
-  const manejarCambioFiltro = (id: keyof FiltrosPaciente, value: string | number) => {
-    const valorLimpio = value === "todos" || value === "" ? undefined : String(value)
-    let valorFinal: string | number | undefined = valorLimpio
-    
-    if (id.startsWith("edad")) {
-      const valorNum = Number(valorLimpio)
-      valorFinal = valorNum && valorNum > 0 ? valorNum : undefined
-    }
-
-    setFiltros((prev) => ({ ...prev, [id]: valorFinal }))
-  }
-
-  const limpiarFiltros = () => {
-    setFiltros({})
-    setTerminoBusqueda("")
-  }
-
-  const obtenerConteoHistorias = (pacienteId: number) => {
-    return obtenerHistoriasPorPacienteId(pacienteId).length
-  }
-
-  const hayFiltrosActivos = Object.values(filtros).some((v) => v !== undefined) || terminoBusqueda !== ""
+  }, [pacientes, terminoBusqueda, filtros, sortOrder])
 
   return {
     pacientesFiltrados,
     estaCargando,
-    obrasSocialesDisponibles,
+    obrasSocialesDisponibles: Array.from(new Set(pacientes.map(p => p.obra_social).filter(Boolean))) as string[],
     terminoBusqueda,
     setTerminoBusqueda,
     filtros,
-    manejarCambioFiltro,
+    manejarCambioFiltro: (id: keyof FiltrosPaciente, value: string) => setFiltros(prev => ({ ...prev, [id]: value })),
     sortOrder,
     setSortOrder,
-    limpiarFiltros,
+    limpiarFiltros: () => { setTerminoBusqueda(""); setFiltros({ obra_social: "todas" }) },
     cargarPacientes,
-    obtenerConteoHistorias,
-    hayFiltrosActivos,
+    obtenerConteoHistorias: (id: string) => conteosHistorias[id] || 0,
+    hayFiltrosActivos: terminoBusqueda !== "" || filtros.obra_social !== "todas"
   }
 }

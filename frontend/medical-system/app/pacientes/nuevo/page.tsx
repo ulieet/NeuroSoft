@@ -12,8 +12,6 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ArrowLeft, Save, RefreshCw } from "lucide-react"
-
-// Usamos la API real
 import { createPaciente } from "@/lib/api-pacientes"
 
 export default function PaginaNuevoPaciente() {
@@ -50,7 +48,7 @@ export default function PaginaNuevoPaciente() {
     setEstaGuardando(true)
 
     const payload = {
-      nombre: `${formData.apellido}, ${formData.nombre}`, // Formato para el Detalle
+      nombre: `${formData.apellido}, ${formData.nombre}`, 
       dni: formData.dni,
       fecha_nacimiento: formData.fecha_nacimiento,
       obra_social: formData.obra_social,
@@ -62,7 +60,7 @@ export default function PaginaNuevoPaciente() {
     
     if (exito) {
       alert("Paciente registrado con éxito")
-      router.push(`/pacientes/detalle?id=${formData.dni}`) // Redirigir a su nueva ficha
+      router.push(`/pacientes/detalle?id=${formData.dni}`) 
     } else {
       alert("Error al guardar en el servidor")
       setEstaGuardando(false)

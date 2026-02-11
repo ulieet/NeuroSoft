@@ -9,7 +9,11 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "NeuroClinic - Sistema de Gestión de Historias Clínicas",
   description: "Sistema profesional para la gestión de historias clínicas neurológicas",
-  generator: "v0.app",
+  
+  icons: {
+    icon: "/icono.png", 
+  
+  },
 }
 
 export default function RootLayout({
