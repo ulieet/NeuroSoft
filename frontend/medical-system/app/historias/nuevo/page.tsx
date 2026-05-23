@@ -11,10 +11,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ArrowLeft, Save, RefreshCw, Brain, Pill, FlaskConical, User, TrendingUp, ClipboardList } from "lucide-react"
-
+import { getPaciente } from "@/lib/api-pacientes"
+// Importamos solo tipos, ya no usamos agregarHistoriaClinica local
 import {
   obtenerPacientePorId, 
-  agregarHistoriaClinica,
   type HistoriaClinica,
   type Paciente,
   type Medicamento,
@@ -30,13 +30,12 @@ const generarOpcionesEDSS = () => {
 }
 const opcionesEDSS = generarOpcionesEDSS()
 
-// --- Estado Inicial de la Historia ---
 const estadoInicialHistoria: Partial<HistoriaClinica> = {
   fecha: new Date().toISOString().split("T")[0], 
   diagnostico: "",
   escalaEDSS: undefined,
   estado: "pendiente", 
-  medico: "Dr. Rodríguez", 
+  medico: "", 
   sintomasPrincipales: "",
   antecedentes: "",
   agrupacionSindromica: "",
@@ -62,26 +61,55 @@ function PaginaNuevaHistoria() {
   const [medicamentosInput, setMedicamentosInput] = useState("")
 
   useEffect(() => {
-    if (!pacienteIdParam) {
-      router.replace("/pacientes?redirect_to=nueva_historia")
-      return
+    const cargarPaciente = async () => {
+      if (!pacienteIdParam) {
+        router.replace("/pacientes?redirect_to=nueva_historia")
+        return
+      }
+      
+      setEstaCargando(true)
+
+      let pac: Paciente | undefined | any = obtenerPacientePorId(pacienteIdParam)
+      
+      if (!pac) {
+        try {
+          const pacApi = await getPaciente(pacienteIdParam)
+          if (pacApi) {
+            pac = {
+              id: pacApi.id,
+              nombre: pacApi.nombre,
+              apellido: "",          
+              dni: pacApi.dni,
+              fechaNacimiento: pacApi.fecha_nacimiento || "",
+              obraSocial: pacApi.obra_social || "",
+              numeroAfiliado: pacApi.nro_afiliado || "",
+              observaciones: pacApi.observaciones || "",
+              sexo: "",
+              telefono: "",
+              email: "",
+              direccion: "",
+              fechaRegistro: new Date().toISOString(),
+            }
+          }
+        } catch (error) {
+          console.error("Error buscando paciente en backend:", error)
+        }
+      }
+
+      if (pac) {
+        setPacienteSeleccionado(pac)
+        setFormData((prev) => ({ ...prev, pacienteId: pacienteIdParam }))
+      } else {
+        alert("Paciente no encontrado ni local ni remotamente")
+        router.replace("/pacientes?redirect_to=nueva_historia")
+      }
+      setEstaCargando(false)
     }
-    
-    
-    const pac = obtenerPacientePorId(pacienteIdParam)
-    
-    if (pac) {
-      setPacienteSeleccionado(pac)
-      setFormData((prev) => ({ ...prev, pacienteId: pacienteIdParam }))
-    } else {
-      alert("Paciente no encontrado")
-      router.replace("/pacientes?redirect_to=nueva_historia")
-    }
-    setEstaCargando(false)
+
+    cargarPaciente()
 
   }, [pacienteIdParam, router])
 
-  // --- Handlers del Formulario ---
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target
     setFormData((prev) => ({ ...prev, [id]: value }))
@@ -110,11 +138,11 @@ function PaginaNuevaHistoria() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setEstaGuardando(true)
 
-    if (!formData.pacienteId) {
+    if (!formData.pacienteId || !pacienteSeleccionado) {
       alert("Error: No hay paciente seleccionado.")
       setEstaGuardando(false)
       return
@@ -130,19 +158,41 @@ function PaginaNuevaHistoria() {
         estado: "Activo" 
       }))
 
+    // Construimos el objeto completo
+    // Agregamos 'paciente_snapshot' para que el backend (lista) pueda mostrar datos básicos
     const datosCompletos = {
       ...estadoInicialHistoria, 
       ...formData,
       medicamentos: listaMedicamentos,
+      paciente_snapshot: {
+         nombre: pacienteSeleccionado.nombre,
+         apellido: pacienteSeleccionado.apellido,
+         dni: pacienteSeleccionado.dni
+      }
     }
 
     try {
-      const nuevaHistoria = agregarHistoriaClinica(datosCompletos as Omit<HistoriaClinica, "id">)
-      alert("Historia Clínica creada con éxito")
-      router.push(`/historias/detalle?id=${nuevaHistoria.id}`)
+      // LLAMADA AL BACKEND
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const res = await fetch(`${apiUrl}/historias`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(datosCompletos),
+      });
+
+      if (!res.ok) {
+         throw new Error("Error en la respuesta del servidor");
+      }
+      
+      const historiaGuardada = await res.json();
+      
+      alert("Historia Clínica guardada en el servidor con éxito")
+      // Redirigir usando el ID que nos devolvió el backend
+      router.push(`/historias/detalle?id=${historiaGuardada.id}`)
+
     } catch (error) {
       console.error(error)
-      alert("Error al crear la historia")
+      alert("Error al guardar la historia en el servidor")
       setEstaGuardando(false)
     }
   }
@@ -161,6 +211,10 @@ function PaginaNuevaHistoria() {
   if (!pacienteSeleccionado) {
      return null;
   }
+
+  const nombreMostrado = pacienteSeleccionado.apellido 
+    ? `${pacienteSeleccionado.apellido}, ${pacienteSeleccionado.nombre}`
+    : pacienteSeleccionado.nombre;
 
   return (
     <MedicalLayout currentPage="historias">
@@ -189,12 +243,12 @@ function PaginaNuevaHistoria() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2"><User className="h-5 w-5" />Datos Generales</CardTitle>
                 </CardHeader>
-                <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="space-y-2 sm:col-span-2">
+                <CardContent className="grid grid-cols-1 gap-6">
+                  <div className="space-y-2">
                     <Label htmlFor="pacienteNombre">Paciente *</Label>
                     <Input 
                       id="pacienteNombre" 
-                      value={`${pacienteSeleccionado.apellido}, ${pacienteSeleccionado.nombre} (DNI: ${pacienteSeleccionado.dni})`} 
+                      value={`${nombreMostrado} (DNI: ${pacienteSeleccionado.dni})`} 
                       disabled 
                       className="font-medium"
                     />
@@ -203,10 +257,6 @@ function PaginaNuevaHistoria() {
                   <div className="space-y-2">
                     <Label htmlFor="fecha">Fecha de Emisión *</Label>
                     <Input id="fecha" type="date" value={formData.fecha} onChange={handleChange} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="medico">Médico Firmante</Label>
-                    <Input id="medico" value={formData.medico} onChange={handleChange} />
                   </div>
                 </CardContent>
               </Card>
@@ -372,8 +422,8 @@ function PaginaNuevaHistoria() {
                     <Select value={formData.estado} onValueChange={(v) => handleSelectChange("estado", v)}>
                       <SelectTrigger id="estado"><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="pendiente">Borrador</SelectItem>
-                        <SelectItem value="validada">Finalizado</SelectItem>
+                        <SelectItem value="pendiente">Pendiente</SelectItem>
+                        <SelectItem value="validada">Validada</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

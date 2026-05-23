@@ -56,7 +56,7 @@ export function MedicalLayout({ children, currentPage = "dashboard" }: MedicalLa
       </div>
 
       <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
-        <div className="flex flex-col flex-grow bg-card border-r border-border">
+        <div className="flex flex-col grow bg-card border-r border-border">
           <div className="flex h-16 items-center px-4">
             <div className="flex items-center gap-2">
               <Stethoscope className="h-8 w-8 text-secondary" />

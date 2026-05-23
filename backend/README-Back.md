@@ -1,12 +1,12 @@
 # Backend - NeuroSoft (Grupo 21 - Seminario)
 
-🧩 **NeuroSoft — Backend del Sistema de Historias Clínicas**
+**NeuroSoft — Backend del Sistema de Historias Clínicas**
 **Proyecto Seminario – UTN FRLP – Grupo 21**
 **FastAPI • NLP Clínico (IA simbólica) • SQLite (SQLAlchemy) • Faker Data**
 
 ---
 
-## 🚀 Quick Start (Puesta en marcha rápida)
+##  Quick Start (Puesta en marcha rápida)
 
 Sigue estos pasos para levantar el entorno completo con base de datos y datos de prueba:
 
@@ -39,26 +39,13 @@ backend/
 │   ├── api/
 │   │   ├── historias.py        # Listado y acceso a historias (Lee de BD ahora)
 │   │   ├── importaciones.py    # Importación de PDF/DOCX/DOC + deduplicación
-│   │   ├── pacientes.py        # (Activo) Gestión de pacientes en BD
-│   │   ├── reportes.py         # ✅ (Implementado) Endpoints del Dashboard KPI
-│   │   └── validaciones.py     # Endpoints de validación manual
+│   │   ├── pacientes.py        #  Gestión de pacientes en BD
+│   │   ├── reportes.py         #  Endpoints del Dashboard KPI
 │   │
-│   ├── core/
-│   │   ├── config.py
-│   │   ├── database.py         # ✅ (Actualizado) Conexión SQLite + SessionLocal
-│   │   └── security.py         # Placeholder (autenticación futura)
 │   │
 │   ├── mock/
 │   │   └── historias_list.json # Datos de ejemplo / mocks
 │   │
-│   ├── models/                 # 🗄️ Modelos de Base de Datos (ORM)
-│   │   ├── models.py           # ✅ (Nuevo) Tablas: Paciente y HistoriaClinica
-│   │   ├── diagnostico.py      # (Lógica de negocio / Legacy)
-│   │   ├── estudio.py          # (Lógica de negocio / Legacy)
-│   │   ├── historia.py         # (Lógica de negocio / Legacy)
-│   │   ├── importacion.py
-│   │   ├── paciente.py
-│   │   └── tratamiento.py
 │   │
 │   ├── schemas/                # Esquemas Pydantic (Validación de entrada/salida)
 │   │   ├── diagnostico_schema.py
@@ -71,7 +58,7 @@ backend/
 │   ├── services/
 │   │   ├── import_service.py   # Orquestación de importaciones
 │   │   ├── nlp_service.py      # Motor de IA/NLP clínico
-│   │   └── report_service.py   # ✅ (Implementado) Lógica de KPIs leyendo de SQL
+│   │   └── report_service.py   #  Lógica de KPIs leyendo de SQL
 │   │
 │   ├── utils/
 │   │   ├── conversions.py

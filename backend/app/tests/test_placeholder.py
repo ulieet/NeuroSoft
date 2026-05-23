@@ -1,1 +1,0 @@
-# Placeholder de tests (vacío)

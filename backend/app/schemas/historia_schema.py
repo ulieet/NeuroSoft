@@ -1,1 +1,0 @@
-# Esquema HistoriaClinica (placeholder)

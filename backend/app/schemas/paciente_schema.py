@@ -1,1 +1,0 @@
-# Esquema Paciente (placeholder)

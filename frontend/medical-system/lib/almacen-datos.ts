@@ -1,10 +1,8 @@
-// frontend/medical-system/lib/almacen-datos.ts
 
 "use client"
 
 import datosDeEjemplo from "@/public/datos-ejemplo.json"
 
-// --- INTERFACES ACTUALIZADAS (ID STRING) ---
 export interface Paciente {
   id: string  
   nombre: string
@@ -48,14 +46,12 @@ export interface HistoriaClinica {
   estado: "validada" | "pendiente" | "error"
   medico: string
   
-  // --- CAMPOS NUEVOS AGREGADOS ---
   sintomasPrincipales?: string
   antecedentes?: string
   agrupacionSindromica?: string
-  // ------------------------------
 
-  motivoConsulta?: string // <--- AHORA OPCIONAL
-  anamnesis?: string      // <--- AHORA OPCIONAL
+  motivoConsulta?: string
+  anamnesis?: string      
   
   examenFisico: string
   estudiosComplementarios?: EstudioComplementario
@@ -71,13 +67,13 @@ export interface HistoriaClinica {
   motivoCambioTratamiento?: string 
 }
 
-// --- CLAVES DE STORAGE ---
+// CLAVES DE STORAGE
 const CLAVES_STORAGE = {
   PACIENTES: "neuroclinic_pacientes",
   HISTORIAS: "neuroclinic_historias",
 }
 
-// --- FUNCIONES DE PACIENTES (CRUD) ---
+//FUNCIONES DE PACIENTES (CRUD) 
 export function obtenerPacientes(): Paciente[] {
   if (typeof window === "undefined") return []
   const data = localStorage.getItem(CLAVES_STORAGE.PACIENTES)
@@ -122,7 +118,7 @@ export function eliminarPaciente(id: string): void {
   guardarHistoriasClinicas(historias)
 }
 
-// --- FUNCIONES DE HISTORIAS (CRUD) ---
+//FUNCIONES DE HISTORIAS (CRUD) 
 export function obtenerHistoriasClinicas(): HistoriaClinica[] {
   if (typeof window === "undefined") return []
   const data = localStorage.getItem(CLAVES_STORAGE.HISTORIAS)
@@ -149,7 +145,7 @@ export function agregarHistoriaClinica(historia: Omit<HistoriaClinica, "id">): H
   const historias = obtenerHistoriasClinicas()
   const nuevaHistoria: HistoriaClinica = {
     ...historia,
-    id: Date.now().toString(), // ID String
+    id: Date.now().toString(), 
   }
   guardarHistoriasClinicas([...historias, nuevaHistoria])
   return nuevaHistoria
@@ -169,7 +165,6 @@ export function eliminarHistoriaClinica(id: string): void {
   guardarHistoriasClinicas(historias)
 }
 
-// --- IMPORTAR / EXPORTAR / INICIALIZAR ---
 export function inicializarDatosDeEjemplo(): void {
   if (typeof window === "undefined") return;
   const pacientes = localStorage.getItem(CLAVES_STORAGE.PACIENTES)
@@ -178,7 +173,6 @@ export function inicializarDatosDeEjemplo(): void {
     const pacientesEjemplo = datosDeEjemplo.pacientes as unknown as Paciente[]
     const historiasEjemplo = datosDeEjemplo.historias as unknown as HistoriaClinica[] 
     
-    // Convertimos IDs a string al vuelo para evitar conflictos
     const pacientesFixed = pacientesEjemplo.map(p => ({...p, id: String(p.id)}));
     const historiasFixed = historiasEjemplo.map(h => ({...h, id: String(h.id), pacienteId: String(h.pacienteId)}));
 
@@ -232,7 +226,7 @@ export function exportarAJSON(): string {
   return JSON.stringify(data, null, 2)
 }
 
-// --- UTILIDADES ---
+
 function calcularAnios(fechaInicioStr: string, fechaFinStr?: string): number {
   if (!fechaInicioStr) return 0;
   const fechaInicio = new Date(fechaInicioStr);
@@ -272,7 +266,6 @@ export interface FiltrosHistoria {
 export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClinica[] {
   let historias = obtenerHistoriasClinicas()
   const pacientes = obtenerPacientes()
-  // const hoy = new Date().toISOString(); 
 
   if (filtros.patologia) {
     const patologias = filtros.patologia.split("|").map(p => p.toLowerCase())
@@ -299,8 +292,7 @@ export function filtrarHistoriasClinicas(filtros: FiltrosHistoria): HistoriaClin
   return historias
 }
 
-// --- ANÁLISIS ---
-export function obtenerAnalisisDePaciente(pacienteId: string) { // ID String
+export function obtenerAnalisisDePaciente(pacienteId: string) { 
   const paciente = obtenerPacientePorId(pacienteId)
   if (!paciente) return null
 

@@ -103,7 +103,6 @@ export default function ReportesPage() {
   return (
     <MedicalLayout currentPage="reportes">
       <div className="space-y-8 animate-in fade-in duration-700">
-        {/* Header */}
         <div className="flex justify-between items-end">
           <div>
             <h1 className="text-3xl font-bold text-[#003e66]">Reportes Generales de Cohorte</h1>
@@ -114,7 +113,6 @@ export default function ReportesPage() {
           <Button variant="outline" onClick={() => window.print()}><Download className="mr-2 h-4 w-4" /> Exportar PDF</Button>
         </div>
 
-        {/* KPI CARDS */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-4">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -161,7 +159,6 @@ export default function ReportesPage() {
             </Card>
         </div>
 
-        {/* GRÁFICOS SECCIÓN 1 */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <Card>
                 <CardHeader>
@@ -209,7 +206,6 @@ export default function ReportesPage() {
             </Card>
         </div>
 
-        {/* GRÁFICOS SECCIÓN 2 */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             <Card className="lg:col-span-2">
                 <CardHeader>
@@ -264,7 +260,6 @@ export default function ReportesPage() {
               </Card>
         </div>
 
-        {/* SECCIÓN 3: BIOMARCADORES Y SOPORTE */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
               <Card>
                 <CardHeader><CardTitle className="text-lg flex items-center gap-2 text-slate-700"><FileText className="h-5 w-5 text-[#003e66]" /> Biomarcadores e Imagen</CardTitle></CardHeader>

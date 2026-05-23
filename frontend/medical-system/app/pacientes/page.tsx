@@ -124,7 +124,6 @@ function PaginaPacientes() {
                           </Badge>
                         </TableCell>
 
-                        {/* CONTEO REAL: Usamos la función del Hook */}
                         <TableCell className="text-center">
                           <div className="inline-flex items-center justify-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">
                             <FileText className="h-3 w-3 opacity-50" />

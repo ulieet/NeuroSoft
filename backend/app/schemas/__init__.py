@@ -1,1 +1,0 @@
-# Esquemas Pydantic (placeholder)
