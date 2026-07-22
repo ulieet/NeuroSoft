@@ -206,3 +206,13 @@ export async function validarHistoria(id: string, payload: any): Promise<void> {
       throw e;
    }
 }
+
+export async function eliminarTodasLasHistoriasRemotas(): Promise<void> {
+  const res = await fetch(`${BASE_URL}/historias`, {
+    method: "DELETE",
+  });
+
+  if (!res.ok) {
+    throw new Error("Error al eliminar todas las historias del servidor");
+  }
+}

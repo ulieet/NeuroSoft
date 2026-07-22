@@ -24,12 +24,15 @@ import {
   FileInput,
   Plus,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Trash
 } from "lucide-react";
 
 import {
   listarHistorias,
   validarHistoriasMasivas,
+  eliminarHistoriaRemota,
+  eliminarTodasLasHistoriasRemotas,
   type HistoriaResumen,
 } from "@/lib/api-historias";
 
@@ -271,6 +274,62 @@ export default function PaginaHistorias() {
     }
   };
 
+  const manejarEliminarHistoria = async (id: string) => {
+    if (!confirm("¿Estás seguro de que deseas eliminar esta historia clínica de forma permanente?")) return;
+    try {
+      setEstaCargando(true);
+      try {
+        await eliminarHistoriaRemota(id);
+      } catch (err) {
+        console.warn("No se pudo eliminar en el servidor, intentando local:", err);
+      }
+      
+      if (typeof window !== "undefined") {
+        const { eliminarHistoriaClinica } = await import("@/lib/almacen-datos");
+        eliminarHistoriaClinica(id);
+      }
+      
+      alert("Historia clínica eliminada correctamente.");
+      await cargarHistorias();
+    } catch (err: any) {
+      alert("Error al eliminar la historia clínica: " + (err.message || err));
+    } finally {
+      setEstaCargando(false);
+    }
+  };
+
+  const manejarEliminarTodas = async () => {
+    if (historias.length === 0) {
+      alert("No hay historias clínicas para eliminar.");
+      return;
+    }
+    const confirmacion = confirm(
+      "¿Estás ABSOLUTAMENTE seguro de que deseas eliminar TODAS las historias clínicas, pacientes y borradores del sistema?\n\nEsta acción es irreversible y reiniciará la base de datos."
+    );
+    if (!confirmacion) return;
+
+    try {
+      setEstaCargando(true);
+      try {
+        await eliminarTodasLasHistoriasRemotas();
+      } catch (err) {
+        console.warn("No se pudo eliminar masivamente en el servidor, intentando local:", err);
+      }
+
+      if (typeof window !== "undefined") {
+        localStorage.removeItem("neuroclinic_pacientes");
+        localStorage.removeItem("neuroclinic_historias");
+      }
+
+      alert("Sistema reiniciado. Se eliminaron todos los datos correctamente.");
+      await cargarHistorias();
+    } catch (err: any) {
+      alert("Error al reiniciar el sistema: " + (err.message || err));
+    } finally {
+      setEstaCargando(false);
+    }
+  };
+
   const manejarRefrescar = () => { void cargarHistorias(); };
 
   if (!mounted) return <div className="p-6 text-muted-foreground">Cargando...</div>;
@@ -288,6 +347,10 @@ export default function PaginaHistorias() {
             <Button variant="outline" size="sm" onClick={manejarRefrescar} disabled={estaCargando}>
               <RefreshCw className={`mr-2 h-4 w-4 ${estaCargando ? "animate-spin" : ""}`} />
               Refrescar
+            </Button>
+            <Button variant="destructive" size="sm" onClick={manejarEliminarTodas} disabled={estaCargando || historias.length === 0}>
+              <Trash className="mr-2 h-4 w-4" />
+              Borrar Todas
             </Button>
             <Button asChild variant="secondary" size="sm">
                 <a href="/pacientes?redirect_to=nueva_historia"><Plus className="mr-2 h-4 w-4"/>Nueva Manual</a>
@@ -388,6 +451,7 @@ export default function PaginaHistorias() {
                       <TableHead className="w-[200px]">Diagnóstico</TableHead>
                       <TableHead className="w-[140px]">Forma</TableHead>
                       <TableHead className="w-[110px]">Estado</TableHead>
+                      <TableHead className="w-[80px] text-right">Acciones</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -417,6 +481,18 @@ export default function PaginaHistorias() {
                         </TableCell>
                         
                         <TableCell>{getEstadoBadge(h.estado)}</TableCell>
+                        
+                        <TableCell className="text-right" onClick={(e) => e.stopPropagation()}>
+                          <Button 
+                            variant="ghost" 
+                            size="icon" 
+                            className="h-8 w-8 text-destructive hover:text-destructive hover:bg-destructive/10"
+                            onClick={() => manejarEliminarHistoria(h.id)}
+                            title="Eliminar Historia"
+                          >
+                            <Trash className="h-4 w-4" />
+                          </Button>
+                        </TableCell>
                       </TableRow>
                     ))}
                   </TableBody>

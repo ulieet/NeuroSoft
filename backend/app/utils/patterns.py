@@ -34,3 +34,16 @@ RE_MES_ANO = re.compile(r"\b([a-záéíóú]+)\s+(\d{4})", re.IGNORECASE)
 RE_DX = re.compile(r"(diagn[oó]stico|impresi[oó]n diagn[oó]stica)\s*[:\-]?\s*(.+)", re.IGNORECASE)
 
 VERBOS_TRATAMIENTO = ["inicia", "inició", "inicia tratamiento", "comienza", "mantiene", "continúa", "cambia a", "suspende"]
+
+FAMILIAS_SECCIONES = {
+    "sintomas": [r"s[ií]?ntomas", r"motivo de consulta", r"enfermedad actual", r"anamnesis", r"cuadro cl[ií]?nico"],
+    "antecedentes": [r"antecedentes personales", r"antecedentes patol[oó]?gicos", r"antecedentes", r"app", r"historia personal"],
+    "examen_fisico": [r"examen f[ií]?sico", r"examen neurol[oó]?gico", r"rasgos semiol[oó]?gicos"],
+    "agrupacion_sindromica": [r"agrupaci[oó]?n\s+sindr[oó]?mica", r"s[ií]ndromes?\s*[:\.]"],
+    "estudios": [r"estudios complementarios", r"estudios", r"laboratorio", r"rmn", r"potenciales"],
+    "diagnostico": [r"diagn[oó]?stico\s+principal", r"diagn[oó]?stico", r"imp\.?\s*diag\.?", r"cuadro presuntivo"],
+    "diagnosticos_diferenciales": [r"diagn[oó]?sticos?\s+(?:presuntivos?[/\s]*diferenciales?|diferenciales?|presuntivos?)", r"en\s+estudio\s+para\s+descartar", r"descarte\s+de"],
+    "comentario": [r"comentarios?\s*m[eé]dicos?", r"comentarios?", r"conclusi[oó]?n", r"observaciones", r"discusi[oó]?n", r"nota\s+final", r"justificaci[oó]?n"],
+    "evolucion": [r"evoluci[oó]?n\s*:", r"notas?\s+de\s+evoluci[oó]?n"],
+    "tratamiento": [r"tratamiento", r"indicaciones", r"plan\s+terap[eé]?utico"]
+}

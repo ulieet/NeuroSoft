@@ -46,7 +46,7 @@ const normalizarNombreDMT = (nombre: string) => {
 };
 
 const formatearFechaVista = (fechaStr?: string | null) => {
-  if (!fechaStr) return "—";
+  if (!fechaStr || typeof fechaStr !== "string") return "—";
   const partes = fechaStr.split("T")[0].split("-");
   return partes.length === 3 ? `${partes[2]}/${partes[1]}/${partes[0]}` : fechaStr;
 };

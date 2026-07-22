@@ -38,15 +38,19 @@ export function usePacientesListado() {
 
   const pacientesFiltrados = useMemo(() => {
     return pacientes.filter((p) => {
-      const nombreLimpio = p.nombre.toLowerCase().replace(/,/g, '')
+      const nombrePaciente = p.nombre || "Paciente Desconocido"
+      const nombreLimpio = nombrePaciente.toLowerCase().replace(/,/g, '')
       const terminoLimpio = terminoBusqueda.toLowerCase()
-      const coincideBusqueda = nombreLimpio.includes(terminoLimpio) || p.dni.includes(terminoBusqueda)
+      const dniPaciente = p.dni || ""
+      const coincideBusqueda = nombreLimpio.includes(terminoLimpio) || dniPaciente.includes(terminoBusqueda)
       const coincideOS = filtros.obra_social === "todas" || p.obra_social === filtros.obra_social
       return coincideBusqueda && coincideOS
     }).sort((a, b) => {
+      const nombreA = a.nombre || "Paciente Desconocido"
+      const nombreB = b.nombre || "Paciente Desconocido"
       return sortOrder === "asc" 
-        ? a.nombre.localeCompare(b.nombre) 
-        : b.nombre.localeCompare(a.nombre)
+        ? nombreA.localeCompare(nombreB) 
+        : nombreB.localeCompare(nombreA)
     })
   }, [pacientes, terminoBusqueda, filtros, sortOrder])
 

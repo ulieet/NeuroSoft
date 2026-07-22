@@ -132,9 +132,20 @@ def obtener_historia_completa(id_historia: str):
     h = _load_historia(id_historia)
     return h
 
+from app.services import profile_service
+
 @router.patch("/historias/{id_historia}/validacion", summary="Validar historia individual")
 def validar_historia(id_historia: str, historia_validada: Dict[str, Any]):
     h = _load_historia(id_historia)
+    borrador = h.get("borrador", {})
+    
+    # Registrar silenciosamente el feedback (diff entre borrador original y lo validado)
+    try:
+        medico_id = historia_validada.get("medico_id")
+        profile_service.record_validation_feedback(id_historia, borrador, historia_validada, medico_id)
+    except Exception as ex:
+        print(f"[WARN] Error al registrar feedback de validación: {ex}")
+
     h["validada"] = historia_validada
     h["estado"] = historia_validada.get("estado", "validada") 
     h["nivel_criticidad"] = historia_validada.get("nivel_criticidad", "medio")
@@ -170,6 +181,58 @@ def eliminar_historia(id_historia: str):
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al eliminar la historia: {str(e)}")
+
+@router.delete("/historias", summary="Eliminar todas las historias clínicas y reiniciar el sistema")
+def eliminar_todas_las_historias():
+    import shutil
+    
+    # 1. Borrar todas las historias clínicas (.json)
+    if os.path.exists(DATA_DIR):
+        for fname in os.listdir(DATA_DIR):
+            fpath = os.path.join(DATA_DIR, fname)
+            try:
+                if os.path.isfile(fpath):
+                    os.remove(fpath)
+                elif os.path.isdir(fpath):
+                    shutil.rmtree(fpath)
+            except Exception as e:
+                print(f"Error eliminando {fpath}: {e}")
+                
+    # 2. Borrar todos los archivos subidos (uploads)
+    if os.path.exists(UPLOAD_DIR):
+        for fname in os.listdir(UPLOAD_DIR):
+            fpath = os.path.join(UPLOAD_DIR, fname)
+            try:
+                if os.path.isfile(fpath):
+                    os.remove(fpath)
+                elif os.path.isdir(fpath):
+                    shutil.rmtree(fpath)
+            except Exception as e:
+                print(f"Error eliminando {fpath}: {e}")
+                
+    # 3. Borrar todos los pacientes (.json)
+    PACIENTES_DIR = "./data/pacientes"
+    if os.path.exists(PACIENTES_DIR):
+        for fname in os.listdir(PACIENTES_DIR):
+            fpath = os.path.join(PACIENTES_DIR, fname)
+            try:
+                if os.path.isfile(fpath):
+                    os.remove(fpath)
+            except Exception as e:
+                print(f"Error eliminando {fpath}: {e}")
+                
+    # 4. Borrar todos los jobs de importación
+    JOBS_DIR = "./data/jobs"
+    if os.path.exists(JOBS_DIR):
+        for fname in os.listdir(JOBS_DIR):
+            fpath = os.path.join(JOBS_DIR, fname)
+            try:
+                if os.path.isfile(fpath):
+                    os.remove(fpath)
+            except Exception as e:
+                print(f"Error eliminando {fpath}: {e}")
+                
+    return {"mensaje": "Todas las historias clínicas, pacientes y subidas fueron eliminadas correctamente."}
 
 @router.post("/historias/validacion-masiva", summary="Aprobar todos los pendientes")
 def validar_todas_las_historias():

@@ -28,7 +28,8 @@ import {
   Activity,
   Clock,
   ShieldCheck,
-  Download 
+  Download,
+  Users
 } from "lucide-react"
 
 import {
@@ -56,7 +57,7 @@ import { getPaciente as getPacienteAPI } from "@/lib/api-pacientes" // Importamo
 
 // --- HELPERS DE FORMATO ---
 const formatearFechaVista = (fechaStr?: string | null) => {
-  if (!fechaStr || fechaStr.trim() === "") return "—";
+  if (!fechaStr || typeof fechaStr !== "string" || fechaStr.trim() === "") return "—";
   if (fechaStr.includes("-")) {
     const partes = fechaStr.split("T")[0].split("-");
     if (partes.length === 3) {
@@ -71,18 +72,31 @@ const mostrarDato = (dato: string | null | undefined) => {
   return dato && dato.trim() !== "" ? dato : "—";
 }
 
-function calcularAnios(fechaInicioStr?: string, fechaFinStr?: string): number | null {
-  if (!fechaInicioStr) return null;
-  const fechaInicio = new Date(fechaInicioStr);
-  if (isNaN(fechaInicio.getTime())) return null;
+function calcularEdadEntreFechas(fechaNacimientoStr?: string, fechaEventoStr?: string): number | null {
+  if (!fechaNacimientoStr || !fechaEventoStr) return null;
+  const nac = new Date(fechaNacimientoStr);
+  const evento = new Date(fechaEventoStr);
+  if (isNaN(nac.getTime()) || isNaN(evento.getTime())) return null;
 
-  const fechaFin = fechaFinStr ? new Date(fechaFinStr) : new Date(); 
-  let anios = fechaFin.getFullYear() - fechaInicio.getFullYear();
-  const mes = fechaFin.getMonth() - fechaInicio.getMonth();
-  if (mes < 0 || (mes === 0 && fechaFin.getDate() < fechaInicio.getDate())) {
+  let anios = evento.getFullYear() - nac.getFullYear();
+  const mes = evento.getMonth() - nac.getMonth();
+  if (mes < 0 || (mes === 0 && evento.getDate() < nac.getDate())) {
     anios--;
   }
-  return anios > 0 ? anios : 0;
+  return anios >= 0 ? anios : null;
+}
+
+function calcularAniosHastaHoy(fechaInicioStr?: string): number | null {
+  if (!fechaInicioStr) return null;
+  const inicio = new Date(fechaInicioStr);
+  if (isNaN(inicio.getTime())) return null;
+  const hoy = new Date();
+  let anios = hoy.getFullYear() - inicio.getFullYear();
+  const mes = hoy.getMonth() - inicio.getMonth();
+  if (mes < 0 || (mes === 0 && hoy.getDate() < inicio.getDate())) {
+    anios--;
+  }
+  return anios >= 0 ? anios : null;
 }
 
 const getEstadoBadge = (estado: string) => {
@@ -121,20 +135,48 @@ const renderizarRMN = (textoJson?: string) => {
     return (
       <div className="space-y-3">
         {datos.map((rmn: any, index: number) => (
-          <div key={index} className="border rounded-md p-3 text-sm bg-card shadow-sm">
-            <div className="flex items-center gap-2 mb-2 font-medium text-primary">
-              <Calendar className="h-4 w-4" />
-              <span>{formatearFechaVista(rmn.fecha)}</span>
+          <div key={index} className="border rounded-md p-3 text-sm bg-card shadow-sm space-y-2">
+            <div className="flex items-center justify-between border-b pb-1.5">
+              <span className="font-semibold text-primary">{rmn.tipo_estudio || "RMN"}</span>
+              {rmn.fecha && (
+                <div className="flex items-center gap-1 text-xs text-muted-foreground font-medium">
+                  <Calendar className="h-3.5 w-3.5" />
+                  <span>{formatearFechaVista(rmn.fecha)}</span>
+                </div>
+              )}
             </div>
-            <div className="grid grid-cols-2 gap-2 text-muted-foreground">
-              <div><span className="block text-xs font-semibold text-foreground">Actividad:</span>{rmn.actividad === "Activa" ? <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Activa</Badge> : rmn.actividad || "—"}</div>
-              <div><span className="block text-xs font-semibold text-foreground">Gadolinio (Gd):</span>{rmn.gd === "Positiva" ? <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Positiva</Badge> : rmn.gd || "—"}</div>
+            {rmn.hallazgos && (
+              <p className="text-xs text-foreground/90 leading-relaxed italic">{rmn.hallazgos}</p>
+            )}
+            <div className="flex flex-wrap gap-2 text-muted-foreground pt-1">
+              {rmn.actividad && (
+                <div className="flex items-center gap-1">
+                  <span className="text-[11px] font-medium text-muted-foreground">Actividad:</span>
+                  {rmn.actividad === "Activa" ? (
+                    <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Activa</Badge>
+                  ) : (
+                    <Badge variant="outline" className="h-5 px-1.5 text-[10px]">{rmn.actividad}</Badge>
+                  )}
+                </div>
+              )}
+              {rmn.gd && (
+                <div className="flex items-center gap-1">
+                  <span className="text-[11px] font-medium text-muted-foreground">Gd:</span>
+                  {rmn.gd === "Captante" || rmn.gd === "Positiva" ? (
+                    <Badge variant="destructive" className="h-5 px-1.5 text-[10px]">Captante</Badge>
+                  ) : (
+                    <Badge variant="outline" className="h-5 px-1.5 text-[10px]">{rmn.gd}</Badge>
+                  )}
+                </div>
+              )}
             </div>
             {rmn.regiones && rmn.regiones.length > 0 && (
-              <div className="mt-2 pt-2 border-t border-dashed">
-                <span className="block text-xs font-semibold text-foreground mb-1">Regiones:</span>
+              <div className="pt-1.5 border-t border-dashed">
+                <span className="block text-[11px] font-semibold text-foreground mb-1">Regiones afectación:</span>
                 <div className="flex flex-wrap gap-1">
-                  {rmn.regiones.map((reg: string, i: number) => (<Badge key={i} variant="outline" className="text-xs px-1 h-5 bg-muted/50">{reg}</Badge>))}
+                  {rmn.regiones.map((reg: string, i: number) => (
+                    <Badge key={i} variant="outline" className="text-[10px] px-1.5 h-4 bg-muted/50">{reg}</Badge>
+                  ))}
                 </div>
               </div>
             )}
@@ -199,11 +241,12 @@ function PaginaDetalleHistoria() {
           const perfilRemoto = await getPacienteAPI(dniPaciente);
           
           if (perfilRemoto) {
+            const pNombre = perfilRemoto.nombre || "Paciente Desconocido";
             setPaciente({
               id: String(perfilRemoto.id),
-              nombre: perfilRemoto.nombre.split(",")[1]?.trim() || perfilRemoto.nombre,
-              apellido: perfilRemoto.nombre.split(",")[0]?.trim() || "",
-              dni: perfilRemoto.dni,
+              nombre: pNombre.includes(",") ? (pNombre.split(",")[1]?.trim() || pNombre) : pNombre,
+              apellido: pNombre.includes(",") ? (pNombre.split(",")[0]?.trim() || "") : "",
+              dni: perfilRemoto.dni || "",
               fechaNacimiento: perfilRemoto.fecha_nacimiento || "",
               sexo: "", telefono: "", email: "", direccion: "",
               obraSocial: perfilRemoto.obra_social || "",
@@ -327,8 +370,8 @@ function PaginaDetalleHistoria() {
   if (estaCargando) return <div className="flex items-center justify-center min-h-[400px]"><RefreshCw className="h-8 w-8 animate-spin text-muted-foreground" /><p className="ml-2">Cargando...</p></div>
   if (!historia || !paciente) return <div className="p-10 text-center"><Button onClick={() => router.push("/historias")}><ArrowLeft className="mr-2 h-4 w-4" />Volver</Button></div>
 
-  const edadInicioSintomas = calcularAnios(paciente.fechaNacimiento, historia.fechaInicioEnfermedad)
-  const tiempoEvolucion = calcularAnios(historia.fechaInicioEnfermedad)
+  const edadInicioSintomas = calcularEdadEntreFechas(paciente.fechaNacimiento, historia.fechaInicioEnfermedad)
+  const tiempoEvolucion = calcularAniosHastaHoy(historia.fechaInicioEnfermedad)
 
   return (
     <MedicalLayout currentPage="historias">
@@ -402,7 +445,24 @@ function PaginaDetalleHistoria() {
               <CardContent className="space-y-4">
                   <div><h4 className="text-sm font-bold mb-1">Síntomas / Enfermedad Actual</h4><p className="text-sm text-muted-foreground whitespace-pre-wrap">{mostrarDato(historia.sintomasPrincipales)}</p></div>
                   <Separator />
-                  {historia.antecedentes && (<><div><h4 className="text-sm font-bold mb-1 flex items-center gap-2"><History className="w-3 h-3" /> Antecedentes</h4><p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.antecedentes}</p></div><Separator /></>)}
+                  {historia.antecedentes && (
+                    <>
+                      <div>
+                        <h4 className="text-sm font-bold mb-1 flex items-center gap-2"><History className="w-3 h-3" /> Antecedentes Personales</h4>
+                        <p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.antecedentes}</p>
+                      </div>
+                      <Separator />
+                    </>
+                  )}
+                  {datosBackendOriginales?.borrador?.secciones_texto?.antecedentes_familiares && (
+                    <>
+                      <div>
+                        <h4 className="text-sm font-bold mb-1 flex items-center gap-2"><Users className="w-3 h-3" /> Antecedentes Familiares</h4>
+                        <p className="text-sm text-muted-foreground whitespace-pre-wrap">{datosBackendOriginales.borrador.secciones_texto.antecedentes_familiares}</p>
+                      </div>
+                      <Separator />
+                    </>
+                  )}
                   {historia.agrupacionSindromica && (<><div><h4 className="text-sm font-bold mb-1 flex items-center gap-2"><Activity className="w-3 h-3" /> Agrupación Sindrómica</h4><p className="text-sm text-muted-foreground whitespace-pre-wrap">{historia.agrupacionSindromica}</p></div><Separator /></>)}
                   <div><h4 className="text-sm font-bold mb-1">Examen Físico</h4><p className="text-sm text-muted-foreground whitespace-pre-wrap">{mostrarDato(historia.examenFisico)}</p></div>
               </CardContent>
@@ -430,6 +490,21 @@ function PaginaDetalleHistoria() {
                       <p className="text-base mt-0.5">{mostrarDato(historia.patologia)}</p>
                     </div>
                   </div>
+                  {datosBackendOriginales?.borrador?.enfermedad?.diagnosticos_diferenciales && datosBackendOriginales.borrador.enfermedad.diagnosticos_diferenciales.length > 0 && (
+                    <>
+                      <Separator className="my-2" />
+                      <div>
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">Diagnósticos Presuntivos / Diferenciales</p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {datosBackendOriginales.borrador.enfermedad.diagnosticos_diferenciales.map((dif: string, index: number) => (
+                            <Badge key={index} variant="outline" className="bg-slate-50 text-slate-700 border-slate-300 font-normal text-xs py-0.5">
+                              {dif}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  )}
               </CardContent>
             </Card>
 
@@ -465,16 +540,97 @@ function PaginaDetalleHistoria() {
               <CardContent className="space-y-4">
                 <div><p className="text-sm font-medium text-muted-foreground">Grado Discapacidad (EDSS)</p><p className="text-xl font-bold">{historia.escalaEDSS ?? <span className="text-sm font-normal text-muted-foreground italic">No reportado</span>}</p></div>
                 <Separator />
-                <div><p className="text-sm font-medium text-muted-foreground">Edad Inicio Síntomas</p><p className="text-base">{edadInicioSintomas !== null ? `${edadInicioSintomas} años` : "—"}</p></div>
+                <div><p className="text-sm font-medium text-muted-foreground">Edad Inicio Síntomas</p><p className="text-base">{edadInicioSintomas !== null ? `${edadInicioSintomas} años` : <span className="text-sm font-normal text-muted-foreground italic">No reportado</span>}</p></div>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader><CardTitle className="flex items-center gap-2"><FlaskConical className="h-5 w-5" />Estudios</CardTitle></CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center justify-between"><span className="text-sm font-medium">Punción Lumbar</span>{getBadgeSiNo(historia.estudiosComplementarios?.puncionLumbar)}</div>
+              <CardHeader><CardTitle className="flex items-center gap-2"><FlaskConical className="h-5 w-5" />Estudios Complementarios</CardTitle></CardHeader>
+              <CardContent className="space-y-5">
+                {/* Punción Lumbar */}
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-semibold">Punción Lumbar</span>
+                    {getBadgeSiNo(historia.estudiosComplementarios?.puncionLumbar)}
+                  </div>
+                  {datosBackendOriginales?.borrador?.complementarios?.puncion_lumbar?.bandas && (
+                    <div className="flex items-center justify-between text-xs text-muted-foreground">
+                      <span>Bandas Oligoclonales (LCR):</span>
+                      <Badge variant="outline" className="font-semibold text-foreground">
+                        {datosBackendOriginales.borrador.complementarios.puncion_lumbar.bandas}
+                      </Badge>
+                    </div>
+                  )}
+                </div>
+
                 <Separator />
-                <div><p className="text-sm font-medium mb-2 flex items-center gap-2"><ScanEye className="h-4 w-4"/> Resonancia Magnética</p><div className="max-h-80 overflow-y-auto">{renderizarRMN(historia.estudiosComplementarios?.texto)}</div></div>
+
+                {/* Resonancia Magnética */}
+                <div>
+                  <p className="text-sm font-semibold mb-2 flex items-center gap-2"><ScanEye className="h-4 w-4"/> Resonancia Magnética</p>
+                  <div className="max-h-80 overflow-y-auto">{renderizarRMN(historia.estudiosComplementarios?.texto)}</div>
+                </div>
+
+                {/* Potenciales Evocados */}
+                {datosBackendOriginales?.borrador?.complementarios?.potenciales_evocados && datosBackendOriginales.borrador.complementarios.potenciales_evocados.length > 0 && (
+                  <>
+                    <Separator />
+                    <div>
+                      <p className="text-sm font-semibold mb-2">Potenciales Evocados (PEV / PESS / PEAT)</p>
+                      <div className="space-y-2">
+                        {datosBackendOriginales.borrador.complementarios.potenciales_evocados.map((pot: any, idx: number) => (
+                          <div key={idx} className="border rounded p-2.5 text-xs bg-slate-50 space-y-1">
+                            <div className="flex items-center justify-between font-medium text-slate-800">
+                              <span>{pot.tipo_estudio || "Potenciales Evocados"}</span>
+                              {pot.fecha && <span className="text-[11px] text-muted-foreground">{formatearFechaVista(pot.fecha)}</span>}
+                            </div>
+                            {pot.hallazgos && <p className="text-slate-600 italic leading-snug">{pot.hallazgos}</p>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {/* Laboratorios y Serologías */}
+                {datosBackendOriginales?.borrador?.complementarios?.laboratorios && datosBackendOriginales.borrador.complementarios.laboratorios.length > 0 && (
+                  <>
+                    <Separator />
+                    <div>
+                      <p className="text-sm font-semibold mb-2">Laboratorios y Serologías</p>
+                      <div className="space-y-2">
+                        {datosBackendOriginales.borrador.complementarios.laboratorios.map((lab: any, idx: number) => (
+                          <div key={idx} className="border rounded p-2 text-xs bg-slate-50 space-y-1">
+                            <span className="font-medium text-primary block">{lab.estudio}</span>
+                            <p className="text-slate-600 leading-snug">{lab.resultado}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {/* Otros Estudios (EEG / Ecocardiograma / TAC) */}
+                {datosBackendOriginales?.borrador?.complementarios?.otros_estudios && datosBackendOriginales.borrador.complementarios.otros_estudios.length > 0 && (
+                  <>
+                    <Separator />
+                    <div>
+                      <p className="text-sm font-semibold mb-2">Otros Estudios (EEG / Eco)</p>
+                      <div className="space-y-2">
+                        {datosBackendOriginales.borrador.complementarios.otros_estudios.map((otro: any, idx: number) => (
+                          <div key={idx} className="border rounded p-2 text-xs bg-slate-50 space-y-1">
+                            <div className="flex items-center justify-between font-medium text-slate-800">
+                              <span>{otro.tipo}</span>
+                              {otro.fecha && <span className="text-[11px] text-muted-foreground">{formatearFechaVista(otro.fecha)}</span>}
+                            </div>
+                            {otro.hallazgos && <p className="text-slate-600 italic">{otro.hallazgos}</p>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+
               </CardContent>
             </Card>
             

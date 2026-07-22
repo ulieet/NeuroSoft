@@ -111,7 +111,7 @@ function PaginaPacientes() {
                         onClick={() => router.push(`/pacientes/detalle?id=${p.id}`)}
                       >
                         <TableCell className="font-medium">
-                           {p.nombre.replace(/,/g, '')}
+                           {(p.nombre || "Paciente Desconocido").replace(/,/g, '')}
                         </TableCell>
                         
                         <TableCell className="font-mono text-xs text-muted-foreground">

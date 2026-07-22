@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-07-21T23:20:07.016609",
+    "accion": "agregar_glosario",
+    "tipo": "abreviatura",
+    "origen": "FNG",
+    "destino": "Fingolimod",
+    "aprobado_por": "dr_default",
+    "version_resultante": 2
+  },
+  {
+    "timestamp": "2026-07-21T23:21:02.815171",
+    "accion": "agregar_glosario",
+    "tipo": "abreviatura",
+    "origen": "FNG",
+    "destino": "Fingolimod",
+    "aprobado_por": "dr_default",
+    "version_resultante": 3
+  }
+]

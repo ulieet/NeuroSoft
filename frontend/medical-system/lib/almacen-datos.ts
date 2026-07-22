@@ -25,13 +25,19 @@ export interface Medicamento {
   dosis?: string
   frecuencia?: string
   tolerancia?: boolean
-  estado?: string   
+  estado?: string
+  inicio?: string
+  fin?: string
+  motivo_suspension?: string
 }
 
 export interface EstudioComplementario {
   puncionLumbar: boolean
   examenLCR: boolean
   texto: string
+  potencialesEvocados?: any[]
+  laboratorios?: any[]
+  otrosEstudios?: any[]
 }
 
 export interface HistoriaClinica {

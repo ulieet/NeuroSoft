@@ -31,6 +31,13 @@ export default function ImportarHistoriasPage() {
   const [isProcessing, setIsProcessing] = useState(false)
   const [dragActive, setDragActive] = useState(false)
 
+  // Estados para el progreso global del lote
+  const [globalProgress, setGlobalProgress] = useState(0)
+  const [currentFileIndex, setCurrentFileIndex] = useState(0)
+  const [totalToProcess, setTotalToProcess] = useState(0)
+  const [waitCountdown, setWaitCountdown] = useState<number | null>(null)
+  const [currentActionMessage, setCurrentActionMessage] = useState("")
+
   const handleDrag = (e: React.DragEvent) => {
     e.preventDefault()
     e.stopPropagation()
@@ -59,7 +66,7 @@ export default function ImportarHistoriasPage() {
   const handleFiles = (fileList: File[]) => {
     const newFiles: UploadedFile[] = fileList.map((file) => {
       const name = file.name.toLowerCase();
-      const esValido = name.endsWith(".doc") || name.endsWith(".docx") || name.endsWith(".pdf");
+      const esValido = name.endsWith(".doc") || name.endsWith(".docx") || name.endsWith(".pdf") || name.endsWith(".zip");
 
       return {
         id: Math.random().toString(36).substr(2, 9),
@@ -68,7 +75,7 @@ export default function ImportarHistoriasPage() {
         status: esValido ? "pending" : "error",
         progress: 0,
         fileObject: file,
-        error: esValido ? undefined : "Error: Formato no permitido. Solo .doc, .docx o .pdf"
+        error: esValido ? undefined : "Error: Formato no permitido. Solo .doc, .docx, .pdf o .zip"
       };
     })
 
@@ -80,70 +87,178 @@ export default function ImportarHistoriasPage() {
   }
 
   const processFiles = async () => {
+    const pendingFiles = files.filter(f => f.status === "pending")
+    if (pendingFiles.length === 0) return
+
+    const total = pendingFiles.length
+    const hasZip = pendingFiles.some(f => f.name.toLowerCase().endsWith(".zip"))
+
+    const confirmText = hasZip
+      ? `Has seleccionado un archivo ZIP. El servidor lo descomprimirá y procesará todas las historias clínicas contenidas usando Inteligencia Artificial.\n\nEsto se realiza en el servidor y es 100% gratuito.\n\n¿Deseas iniciar el procesamiento?`
+      : `Has seleccionado ${total} archivos para procesar.\n\nSe enviarán en lote al servidor y se procesarán de forma optimizada utilizando Inteligencia Artificial (Smart Batching).\n\nEsto tardará aproximadamente 2 a 3 minutos y es 100% gratuito.\n\n¿Deseas iniciar el procesamiento?`;
+
+    if (total > 1 && !window.confirm(confirmText)) return
+
     setIsProcessing(true)
+    setTotalToProcess(total)
+    setCurrentFileIndex(0)
+    setGlobalProgress(0)
+    setWaitCountdown(null)
+    setCurrentActionMessage("Subiendo archivos al servidor...")
 
-    for (const file of files) {
-      if (file.status === "pending") {
-        setFiles((prev) => prev.map((f) => (f.id === file.id ? { ...f, status: "processing", progress: 50 } : f)))
+    // Poner todos los pendientes en "processing"
+    setFiles((prev) =>
+      prev.map((f) => f.status === "pending" ? { ...f, status: "processing", progress: 10 } : f)
+    )
 
+    try {
+      const formData = new FormData()
+      pendingFiles.forEach((file) => {
+        formData.append("files", file.fileObject)
+      })
+
+      const uploadResponse = await fetch("http://127.0.0.1:8000/importaciones/lote", {
+        method: "POST",
+        body: formData,
+      })
+
+      if (!uploadResponse.ok) {
+        const errorData = await uploadResponse.json().catch(() => ({}))
+        throw new Error(errorData.detail || "Error al iniciar el lote en el servidor")
+      }
+
+      const jobData = await uploadResponse.json()
+      const jobId = jobData.job_id
+      console.log("Job de importación creado:", jobId)
+
+      setCurrentActionMessage("Procesando lote en segundo plano...")
+
+      // Polling loop
+      const pollInterval = setInterval(async () => {
         try {
-          const formData = new FormData()
-          formData.append("file", file.fileObject) 
+          const pollResponse = await fetch(`http://127.0.0.1:8000/importaciones/job/${jobId}`)
+          if (!pollResponse.ok) return
 
-          const response = await fetch("http://127.0.0.1:8000/importaciones/historias", {
-            method: "POST",
-            body: formData,
-          })
+          const statusData = await pollResponse.json()
+          console.log("Estado del Job:", statusData)
 
-          if (!response.ok) {
-            const errorData = await response.json().catch(() => ({}))
-            throw new Error(errorData.detail || "Error al procesar en el servidor")
-          }
+          const processed = statusData.processed || 0
+          const totalCount = statusData.total || total
+          const successes = statusData.successes || {}
+          const errors = statusData.errors || []
 
-          const backendData = await response.json()
-          console.log("Respuesta Backend:", backendData)
+          setTotalToProcess(totalCount)
+          setCurrentFileIndex(processed)
+          setGlobalProgress(totalCount > 0 ? Math.round((processed / totalCount) * 100) : 0)
 
-          const mappedData = {
-            paciente: backendData.borrador?.paciente?.nombre || "No detectado",
-            fecha: backendData.borrador?.consulta?.fecha || "No detectada",
-            diagnostico: backendData.borrador?.diagnostico || "No detectado",
-            sintomas: backendData.borrador?.sintomas || [], 
-            tratamiento: Array.isArray(backendData.borrador?.tratamientos) 
-              ? backendData.borrador.tratamientos.map((t: any) => `${t.molecula} ${t.dosis || ''}`).join(", ") 
-              : "No detectado"
-          }
+          // Actualizar estado de archivos individuales
+          setFiles((prev) => {
+            const errorMap = new Map<string, string>()
+            errors.forEach((err: any) => {
+              if (err.filename) errorMap.set(err.filename, err.error || "Error desconocido")
+            })
 
-          setFiles((prev) =>
-            prev.map((f) =>
-              f.id === file.id
-                ? {
-                    ...f,
-                    status: "completed",
-                    progress: 100,
-                    extractedData: mappedData,
-                  }
-                : f,
-            ),
-          )
-        } catch (error: any) {
-          console.error("Error subiendo archivo:", error)
-          setFiles((prev) =>
-            prev.map((f) =>
-              f.id === file.id
-                ? {
-                    ...f,
+            // 1. Mapear archivos existentes en la interfaz
+            let updatedFiles = prev.map((f) => {
+              if (f.status === "completed" || f.status === "error") {
+                return f
+              }
+
+              if (errorMap.has(f.name)) {
+                return {
+                  ...f,
+                  status: "error" as const,
+                  progress: 0,
+                  error: errorMap.get(f.name),
+                }
+              }
+
+              if (successes[f.name]) {
+                const summary = successes[f.name]
+                return {
+                  ...f,
+                  status: "completed" as const,
+                  progress: 100,
+                  extractedData: {
+                    paciente: summary.paciente,
+                    fecha: summary.fecha,
+                    diagnostico: summary.diagnostico,
+                    sintomas: [],
+                    tratamiento: "",
+                  },
+                }
+              }
+
+              return {
+                ...f,
+                status: "processing" as const,
+                progress: totalCount > 0 ? Math.round((processed / totalCount) * 100) : 50,
+              }
+            })
+
+            // 2. Agregar archivos extraídos de ZIP procesados exitosamente
+            Object.keys(successes).forEach((filename) => {
+              const existe = updatedFiles.some((f) => f.name === filename)
+              if (!existe) {
+                updatedFiles.push({
+                  id: Math.random().toString(36).substr(2, 9),
+                  name: filename,
+                  size: 0,
+                  status: "completed",
+                  progress: 100,
+                  fileObject: new File([], filename),
+                  extractedData: {
+                    paciente: successes[filename].paciente,
+                    fecha: successes[filename].fecha,
+                    diagnostico: successes[filename].diagnostico,
+                    sintomas: [],
+                    tratamiento: "",
+                  },
+                })
+              }
+            })
+
+            // 3. Agregar archivos extraídos de ZIP que fallaron
+            errors.forEach((err: any) => {
+              const filename = err.filename
+              if (filename) {
+                const existe = updatedFiles.some((f) => f.name === filename)
+                if (!existe) {
+                  updatedFiles.push({
+                    id: Math.random().toString(36).substr(2, 9),
+                    name: filename,
+                    size: 0,
                     status: "error",
                     progress: 0,
-                    error: error.message || "Error de conexión",
-                  }
-                : f,
-            ),
-          )
-        }
-      }
-    }
+                    fileObject: new File([], filename),
+                    error: err.error || "Error de extracción",
+                  })
+                }
+              }
+            })
 
-    setIsProcessing(false)
+            return updatedFiles
+          })
+
+          if (statusData.status === "completed") {
+            clearInterval(pollInterval)
+            setCurrentActionMessage("¡Procesamiento finalizado!")
+            setIsProcessing(false)
+          }
+        } catch (pollErr) {
+          console.error("Error al consultar estado del job:", pollErr)
+        }
+      }, 2000)
+
+    } catch (error: any) {
+      console.error("Error al procesar lote:", error)
+      setCurrentActionMessage(`Error: ${error.message || "No se pudo conectar con el servidor"}`)
+      setIsProcessing(false)
+
+      setFiles((prev) =>
+        prev.map((f) => f.status === "processing" ? { ...f, status: "error", error: error.message || "Error al enviar lote" } : f)
+      )
+    }
   }
 
   const formatFileSize = (bytes: number) => {
@@ -192,7 +307,7 @@ export default function ImportarHistoriasPage() {
           <div>
             <h1 className="text-2xl font-bold text-balance">Importar Historias Clínicas</h1>
             <p className="text-muted-foreground">
-              Carga archivos .doc/.docx para extraer automáticamente los datos médicos
+              Carga archivos .doc/.docx, .pdf o .zip para extraer automáticamente los datos médicos
             </p>
           </div>
         </div>
@@ -202,7 +317,7 @@ export default function ImportarHistoriasPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Seleccionar Archivos</CardTitle>
-                <CardDescription>Arrastra archivos .doc/.docx aquí o haz clic para seleccionar</CardDescription>
+                <CardDescription>Arrastra archivos .doc/.docx, .pdf o .zip aquí o haz clic para seleccionar</CardDescription>
               </CardHeader>
               <CardContent>
                 <div
@@ -218,7 +333,7 @@ export default function ImportarHistoriasPage() {
                   <div className="space-y-2">
                     <p className="text-lg font-medium">Arrastra archivos aquí</p>
                     <p className="text-sm text-muted-foreground">
-                      Formatos soportados: .doc, .docx (máximo 10MB por archivo)
+                      Formatos soportados: .doc, .docx, .pdf, .zip (máximo 10MB por archivo)
                     </p>
                   <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
                     
@@ -231,7 +346,7 @@ export default function ImportarHistoriasPage() {
                       id="file-upload"
                       type="file"
                       multiple
-                      accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                      accept=".doc,.docx,.pdf,.zip,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/zip,application/x-zip-compressed"
                       onChange={handleFileInput}
                       className="hidden"
                     />
@@ -331,6 +446,34 @@ export default function ImportarHistoriasPage() {
           </div>
 
           <div className="space-y-6">
+            {isProcessing && (
+              <Card className="border-blue-200 bg-blue-50/20 shadow-sm">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-sm font-semibold flex items-center justify-between">
+                    <span>Progreso General</span>
+                    <Badge variant="secondary" className="font-mono">
+                      {currentFileIndex} / {totalToProcess}
+                    </Badge>
+                  </CardTitle>
+                  <CardDescription className="text-xs flex items-center justify-between">
+                    <span>{currentActionMessage}</span>
+                    {waitCountdown !== null && (
+                      <span className="font-bold text-blue-600 ml-1">
+                        (esperando {waitCountdown}s...)
+                      </span>
+                    )}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Progress value={globalProgress} className="h-2" />
+                  <div className="text-[10px] text-muted-foreground flex justify-between">
+                    <span>Completado: {globalProgress}%</span>
+                    <span>Modo Lote (Gratuito)</span>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             <Card className="sticky top-24">
               <CardHeader>
                 <CardTitle>Acciones</CardTitle>
@@ -368,7 +511,7 @@ export default function ImportarHistoriasPage() {
                   <div className="w-5 h-5 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold mt-0.5">
                     1
                   </div>
-                  <p>Selecciona o arrastra archivos .doc/.docx con historias clínicas</p>
+                  <p>Selecciona o arrastra archivos .doc/.docx, .pdf o .zip con historias clínicas</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <div className="w-5 h-5 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold mt-0.5">
